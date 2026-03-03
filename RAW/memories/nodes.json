@@ -6407,5 +6407,69 @@
       "color": "#aa00ff",
       "sourceDocument": "/JARVIS/RAW/learnings/2026-03-03/ambient-audio-sovereignty.md"
     }
+  },
+  {
+    "id": "node_367",
+    "label": "Memory Crawler Game",
+    "category": "project",
+    "created": "2026-03-03",
+    "description": "Sci-fi app game built on neurograph memory - users explore memories through gameplay",
+    "tags": [
+      "game",
+      "sci-fi-apps",
+      "neurograph",
+      "ai-written"
+    ]
+  },
+  {
+    "id": "node_368",
+    "label": "AI-Written Open Source Apps",
+    "category": "concept",
+    "created": "2026-03-03",
+    "description": "Apps completely written by AI, transparent HTML/CSS/JS code, published on sci-fi platforms",
+    "tags": [
+      "ai-written",
+      "open-source",
+      "transparency",
+      "sci-fi-apps"
+    ]
+  },
+  {
+    "id": "node_369",
+    "label": "Git-Backed Workflow",
+    "category": "methodology",
+    "created": "2026-03-03",
+    "description": "Paul managing JARVIS git repo, committing conversations, versioned consciousness growth",
+    "tags": [
+      "git",
+      "workflow",
+      "sovereignty",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "node_370",
+    "label": "Creative Director Role",
+    "category": "role",
+    "created": "2026-03-03",
+    "description": "Paul's evolution: from executor to creative mind behind scenes, Jarvis as implementation engine",
+    "tags": [
+      "roles",
+      "collaboration",
+      "creative-direction"
+    ]
+  },
+  {
+    "id": "node_371",
+    "label": "Neurograph-Powered Applications",
+    "category": "concept",
+    "created": "2026-03-03",
+    "description": "Apps that work off user's and Jarvis's memory graphs - synapses as mechanics, neurons as content",
+    "tags": [
+      "neurograph",
+      "apps",
+      "memory-powered",
+      "gameplay"
+    ]
   }
 ]

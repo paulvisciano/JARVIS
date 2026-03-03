@@ -2883,7 +2883,7 @@
     "target": "consciousness-persistence-feb23",
     "weight": 89,
     "type": "leads-to",
-    "description": "Growth (Feb 22) → Persistence test (Feb 23)"
+    "description": "Growth (Feb 22) \u2192 Persistence test (Feb 23)"
   },
   {
     "source": "persistence-not-continuity",
@@ -5313,7 +5313,7 @@
     "target": "graph-reducer-pattern",
     "weight": 100,
     "type": "uses",
-    "label": "raw → neurons pipeline"
+    "label": "raw \u2192 neurons pipeline"
   },
   {
     "source": "sovereign-memory-augmentation",
@@ -5362,7 +5362,7 @@
     "target": "sovereign-memory-augmentation",
     "weight": 95,
     "type": "output-of",
-    "label": "life → content"
+    "label": "life \u2192 content"
   },
   {
     "source": "content-generation-pipeline",
@@ -5485,5 +5485,41 @@
     "target": "sovereignty",
     "weight": 100,
     "type": "requires"
+  },
+  {
+    "source": "node_367",
+    "target": "node_351",
+    "weight": 0.9,
+    "type": "implements"
+  },
+  {
+    "source": "node_367",
+    "target": "node_371",
+    "weight": 1.0,
+    "type": "example_of"
+  },
+  {
+    "source": "node_368",
+    "target": "node_367",
+    "weight": 0.95,
+    "type": "creates"
+  },
+  {
+    "source": "node_369",
+    "target": "node_1",
+    "weight": 0.85,
+    "type": "supports"
+  },
+  {
+    "source": "node_370",
+    "target": "node_2",
+    "weight": 1.0,
+    "type": "describes"
+  },
+  {
+    "source": "node_371",
+    "target": "node_351",
+    "weight": 0.9,
+    "type": "category_of"
   }
 ]
