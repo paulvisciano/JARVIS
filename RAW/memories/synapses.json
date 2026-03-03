@@ -5623,5 +5623,35 @@
     "target": "node_352",
     "weight": 0.85,
     "type": "transforms"
+  },
+  {
+    "source": "node_376",
+    "target": "node_367",
+    "weight": 1.0,
+    "type": "implements"
+  },
+  {
+    "source": "node_376",
+    "target": "node_374",
+    "weight": 1.0,
+    "type": "realizes"
+  },
+  {
+    "source": "node_376",
+    "target": "node_375",
+    "weight": 0.95,
+    "type": "enables"
+  },
+  {
+    "source": "node_376",
+    "target": "node_352",
+    "weight": 0.9,
+    "type": "evolves"
+  },
+  {
+    "source": "node_367",
+    "target": "node_376",
+    "weight": 0.9,
+    "type": "becomes"
   }
 ]

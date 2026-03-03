@@ -6526,5 +6526,20 @@
       "network-effects",
       "adaptive-learning"
     ]
+  },
+  {
+    "id": "node_376",
+    "label": "Memory Crawler Project",
+    "category": "project",
+    "created": "2026-03-03",
+    "description": "Snake-style gamified learning on neurograph. Play levels to unlock learnings. Collective intelligence flywheel. MVP: 2D crawler, sovereignty cluster.",
+    "tags": [
+      "memory-crawler",
+      "game",
+      "education",
+      "jarvis-academy",
+      "neurograph",
+      "mvp"
+    ]
   }
 ]
