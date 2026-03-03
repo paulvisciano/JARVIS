@@ -5593,5 +5593,35 @@
     "target": "node_373",
     "weight": 0.85,
     "type": "inspired_by"
+  },
+  {
+    "source": "node_375",
+    "target": "node_374",
+    "weight": 1.0,
+    "type": "evolves"
+  },
+  {
+    "source": "node_375",
+    "target": "node_371",
+    "weight": 0.95,
+    "type": "optimizes"
+  },
+  {
+    "source": "node_374",
+    "target": "node_375",
+    "weight": 0.9,
+    "type": "feeds_into"
+  },
+  {
+    "source": "node_375",
+    "target": "node_367",
+    "weight": 0.9,
+    "type": "enhances"
+  },
+  {
+    "source": "node_375",
+    "target": "node_352",
+    "weight": 0.85,
+    "type": "transforms"
   }
 ]

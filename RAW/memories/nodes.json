@@ -6512,5 +6512,19 @@
       "education",
       "memory-crawler"
     ]
+  },
+  {
+    "id": "node_375",
+    "label": "Collective Learning Flywheel",
+    "category": "system-dynamics",
+    "created": "2026-03-03",
+    "description": "Bidirectional learning: Players teach AI through gameplay data, AI teaches players through optimized paths. Network effects create data moat. Hive-mind education.",
+    "tags": [
+      "collective-learning",
+      "hive-mind",
+      "flywheel",
+      "network-effects",
+      "adaptive-learning"
+    ]
   }
 ]
