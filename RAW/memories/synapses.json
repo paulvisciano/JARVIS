@@ -5539,5 +5539,29 @@
     "target": "node_371",
     "weight": 0.85,
     "type": "mechanic_for"
+  },
+  {
+    "source": "node_373",
+    "target": "node_372",
+    "weight": 0.95,
+    "type": "evolution_of"
+  },
+  {
+    "source": "node_373",
+    "target": "node_367",
+    "weight": 1.0,
+    "type": "inspires"
+  },
+  {
+    "source": "node_367",
+    "target": "node_373",
+    "weight": 0.9,
+    "type": "implements"
+  },
+  {
+    "source": "node_373",
+    "target": "node_371",
+    "weight": 0.85,
+    "type": "example_for"
   }
 ]

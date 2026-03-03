@@ -6484,5 +6484,19 @@
       "arcade",
       "memory-crawler-inspiration"
     ]
+  },
+  {
+    "id": "node_373",
+    "label": "Snake 3D Mechanics",
+    "category": "game-mechanic",
+    "created": "2026-03-03",
+    "description": "Modern Snake evolution: 3D cube navigation, dual scoring (length+time), global leaderboards. Inspiration for Memory Crawler's multi-D graph traversal.",
+    "tags": [
+      "snake-3d",
+      "game-design",
+      "3d-navigation",
+      "memory-crawler",
+      "leaderboard"
+    ]
   }
 ]
