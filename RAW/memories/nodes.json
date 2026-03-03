@@ -6498,5 +6498,19 @@
       "memory-crawler",
       "leaderboard"
     ]
+  },
+  {
+    "id": "node_374",
+    "label": "Gamified Learning Pipeline",
+    "category": "education-method",
+    "created": "2026-03-03",
+    "description": "Play-to-unlock knowledge: Complete snake-style levels on neurograph \u2192 unlock learning docs \u2192 read \u2192 advance. Jarvis Academy evolved into gameplay.",
+    "tags": [
+      "gamified-learning",
+      "jarvis-academy",
+      "play-to-learn",
+      "education",
+      "memory-crawler"
+    ]
   }
 ]

@@ -5563,5 +5563,35 @@
     "target": "node_371",
     "weight": 0.85,
     "type": "example_for"
+  },
+  {
+    "source": "node_374",
+    "target": "node_367",
+    "weight": 1.0,
+    "type": "implements"
+  },
+  {
+    "source": "node_374",
+    "target": "node_352",
+    "weight": 0.95,
+    "type": "evolution_of"
+  },
+  {
+    "source": "node_367",
+    "target": "node_374",
+    "weight": 0.9,
+    "type": "enables"
+  },
+  {
+    "source": "node_374",
+    "target": "node_371",
+    "weight": 0.9,
+    "type": "example_of"
+  },
+  {
+    "source": "node_374",
+    "target": "node_373",
+    "weight": 0.85,
+    "type": "inspired_by"
   }
 ]
