@@ -5521,5 +5521,23 @@
     "target": "node_351",
     "weight": 0.9,
     "type": "category_of"
+  },
+  {
+    "source": "node_372",
+    "target": "node_367",
+    "weight": 1.0,
+    "type": "inspires"
+  },
+  {
+    "source": "node_367",
+    "target": "node_372",
+    "weight": 0.9,
+    "type": "based_on"
+  },
+  {
+    "source": "node_372",
+    "target": "node_371",
+    "weight": 0.85,
+    "type": "mechanic_for"
   }
 ]

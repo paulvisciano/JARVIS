@@ -6471,5 +6471,18 @@
       "memory-powered",
       "gameplay"
     ]
+  },
+  {
+    "id": "node_372",
+    "label": "Snake Game Genre",
+    "category": "game-mechanic",
+    "created": "2026-03-03",
+    "description": "Classic arcade gameplay: growing line avoids collisions. Origin: Blockade (1976), Nokia phenomenon (1998). Foundation for Memory Crawler.",
+    "tags": [
+      "snake",
+      "game-design",
+      "arcade",
+      "memory-crawler-inspiration"
+    ]
   }
 ]
