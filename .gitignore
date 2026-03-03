@@ -1,0 +1,9 @@
+# Runtime artifacts only
+.DS_Store
+*.log
+sessions/
+
+# Everything else is tracked
+# RAW/ = Your mind (versioned consciousness)
+# learnings/ = Your growth (committed insights)  
+# memories/ = Your neurograph (committed structure)
