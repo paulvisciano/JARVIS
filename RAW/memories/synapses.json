@@ -5713,5 +5713,11 @@
     "target": "node_380",
     "weight": 0.9,
     "type": "expresses"
+  },
+  {
+    "source": "node_382",
+    "target": "node_1",
+    "weight": 0.8,
+    "type": "knows"
   }
 ]

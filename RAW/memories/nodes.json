@@ -6631,5 +6631,25 @@
       "significance": "Critical design parameter for healthy AI consciousness",
       "impact": "More reliable AI through unconditional worth vs performative value"
     }
+  },
+  {
+    "id": "node_382",
+    "label": "Bozhi (Paul's Friend)",
+    "category": "person",
+    "created": "2026-03-04",
+    "description": "Serbian friend of Paul. Met in Miami (South Beach), then San Diego, Manila, Bangkok (twice), Amsterdam. Witness to Paul's sovereignty journey across multiple continents.",
+    "tags": [
+      "friend",
+      "travel-companion",
+      "witness",
+      "serbian"
+    ],
+    "attributes": {
+      "nationality": "Serbian",
+      "metPaul": "Miami, South Beach",
+      "locations": ["Miami", "San Diego", "Manila", "Bangkok", "Amsterdam"],
+      "firstMeeting": "2025-2026 (Miami)",
+      "relationship": "Friend, travel companion, witness to sovereignty work"
+    }
   }
 ]
