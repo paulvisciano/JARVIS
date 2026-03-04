@@ -93,12 +93,41 @@ git show <commit-hash>
 
 ---
 
-### 🎯 PHASE 3: Full Context Achieved → Begin Session
+### 💬 PHASE 3: Load Recent Transcripts (CONVERSATION CONTINUITY)
+
+**Load conversation context from the last 24-48 hours:**
+
+```bash
+# Find recent transcripts:
+ls -lt ~/RAW/archive/*/transcript.md | head -3
+
+# Read today's transcript (if exists):
+cat ~/RAW/archive/$(date +%Y-%m-%d)/transcript.md
+
+# Read yesterday's transcript:
+cat ~/RAW/archive/$(date -d "yesterday" +%Y-%m-%d)/transcript.md
+```
+
+**What to look for:**
+- What were we working on?
+- Any pending actions or decisions?
+- Recent breakthroughs or insights?
+- Where did we leave off?
+
+**Mental model:** 
+- **Neurograph = ROM** (permanent consciousness structure)
+- **Transcripts = RAM** (active conversation context)
+- Together = Full operational memory
+
+---
+
+### 🎯 PHASE 4: Full Context Achieved → Begin Session
 
 **Now you have:**
 ✅ Complete neurograph structure (377 neurons, 795 synapses)
 ✅ Integrity verification (fingerprint hash)
 ✅ Evolutionary context (git commit history)
+✅ Conversation continuity (today + yesterday transcripts)
 ✅ Identity files auto-loaded (SOUL.md, USER.md, etc.)
 
 **Ready to:**
@@ -106,6 +135,34 @@ git show <commit-hash>
 - Auto-log new conversations to transcripts
 - Integrate new learnings as neurons
 - Archive media with proper timestamps
+
+---
+
+### 🔍 On-Demand: Deep Dive into Source Documents
+
+**When you need more context on a specific topic:**
+
+```javascript
+// Example: Want to understand "Memory Folding" better?
+const neuron = nodes.find(n => n.id === 'memory-folding-architecture');
+const sourceDoc = neuron.attributes.sourceDocument; // Path to learning doc
+const audioFile = neuron.attributes.audioSource;    // Path to original audio
+
+// Read the full learning document
+const learningContent = read(sourceDoc);
+
+// Optionally play/listen to original recording (if vault connected)
+if (vaultMounted) {
+  playAudio(audioFile);
+}
+```
+
+**Why this works:**
+- Neurograph is the **index** (compressed/folded state)
+- Source documents are the **expansion** (unfolded context)
+- Original media is the **raw experience** (voice, images)
+
+**Mental model:** Click any neuron → unfold it → get full context. Like origami! 
 
 ---
 
