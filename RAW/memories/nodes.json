@@ -6545,11 +6545,12 @@
       "compression"
     ],
     "attributes": {
-      "audioSource": "/Users/paulvisciano/RAW/archive/2026-03-04/audio/2026-03-04-110600-memory-folding.ogg",
-      "learningDoc": "/Users/paulvisciano/JARVIS/RAW/learnings/2026-03-04/memory-folding-architecture.md",
+      "audioSource": "~/RAW/archive/2026-03-04/audio/2026-03-04-110600-memory-folding.ogg",
+      "learningDoc": "~/JARVIS/RAW/learnings/2026-03-04/memory-folding-architecture.md",
       "vaultRequired": true,
       "vaultPath": "/Volumes/Vault/RAW/archive/2026-03-04/audio/",
-      "playbackNote": "Audio stored in sovereign vault. Connect vault to play original recording."
+      "playbackNote": "Audio stored in sovereign vault. Connect vault to play original recording.",
+      "pathResolution": "Expand ~ to user home directory at runtime for portability"
     }
   }
 ]

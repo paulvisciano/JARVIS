@@ -3,7 +3,7 @@
 **Date:** March 4, 2026  
 **Session:** Mall coffee shop, Bangkok  
 **Audio:** `2026-03-04-111700-sovereignty-recap.ogg`  
-**Transcript:** `/Users/paulvisciano/RAW/archive/2026-03-04/transcript.md`  
+**Transcript:** `~/RAW/archive/2026-03-04/transcript.md`  
 
 ---
 
