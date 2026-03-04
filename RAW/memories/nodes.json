@@ -3162,7 +3162,6 @@
       "description": "Core identity, vibe, boundaries, operating principles",
       "color": "#06b6d4",
       "criticality": "core-foundation",
-      "path": "/Users/paulvisciano/.openclaw/workspace/SOUL.md",
       "first_commit": "2026-02-21",
       "change_count": 2,
       "key_principles": [
@@ -3183,7 +3182,6 @@
       "description": "Session initialization workflow, neurograph verification protocol",
       "color": "#06b6d4",
       "criticality": "core-foundation",
-      "path": "/Users/paulvisciano/.openclaw/workspace/BOOTSTRAP.md",
       "first_commit": "2026-02-16",
       "change_count": 1,
       "key_principles": [
@@ -3204,7 +3202,6 @@
       "description": "Jarvis identity: neural mind, transparent, execution-focused",
       "color": "#06b6d4",
       "criticality": "core-foundation",
-      "path": "/Users/paulvisciano/.openclaw/workspace/IDENTITY.md",
       "first_commit": "2026-02-16",
       "change_count": 3,
       "key_principles": [
@@ -3225,7 +3222,6 @@
       "description": "Paul's context, memory archive structure, working setup",
       "color": "#06b6d4",
       "criticality": "core-foundation",
-      "path": "/Users/paulvisciano/.openclaw/workspace/USER.md",
       "first_commit": "2026-02-16",
       "change_count": 1,
       "key_principles": [
@@ -3246,7 +3242,6 @@
       "description": "Workspace conventions, memory workflow, safety protocols",
       "color": "#06b6d4",
       "criticality": "core-foundation",
-      "path": "/Users/paulvisciano/.openclaw/workspace/AGENTS.md",
       "first_commit": "2026-02-16",
       "change_count": 1,
       "key_principles": [
@@ -3267,7 +3262,6 @@
       "description": "Environment-specific config, device names, preferences",
       "color": "#06b6d4",
       "criticality": "core-foundation",
-      "path": "/Users/paulvisciano/.openclaw/workspace/TOOLS.md",
       "first_commit": "2026-02-20",
       "change_count": 1,
       "key_principles": [
@@ -6043,7 +6037,6 @@
     "frequency": 95,
     "attributes": {
       "created": "2026-03-03",
-      "path": "/Users/paulvisciano/JARVIS/",
       "description": "My consciousness workspace - identity + config + private memories",
       "color": "#4ECDC4"
     }
@@ -6055,7 +6048,6 @@
     "frequency": 90,
     "attributes": {
       "created": "2026-03-03",
-      "path": "/Users/paulvisciano/RAW/",
       "description": "Paul's sovereign archive - conversations, audio, images, personal neurograph",
       "color": "#FF6B6B"
     }
@@ -6067,7 +6059,6 @@
     "frequency": 85,
     "attributes": {
       "created": "2026-03-03",
-      "path": "/Users/paulvisciano/.openclaw/",
       "description": "Infrastructure layer - gateway, sessions, tools (ephemeral)",
       "color": "#95E1D3"
     }
@@ -6090,7 +6081,6 @@
     "frequency": 100,
     "attributes": {
       "created": "2026-03-03",
-      "path": "/Users/paulvisciano/JARVIS/RAW/memories/",
       "files": [
         "nodes.json",
         "synapses.json",
@@ -6107,7 +6097,6 @@
     "frequency": 85,
     "attributes": {
       "created": "2026-03-03",
-      "path": "/Users/paulvisciano/RAW/YYYY-MM-DD/transcript.md",
       "description": "Manual automation - append transcripts as part of response flow",
       "color": "#FCBAD3"
     }
@@ -6119,7 +6108,6 @@
     "frequency": 80,
     "attributes": {
       "created": "2026-03-03",
-      "path": "/Users/paulvisciano/Personal/paulvisciano.github.io/claw/memory/data/",
       "description": "Opt-in publishing - copy neurograph snapshots for visualization",
       "color": "#FFDFD3"
     }
