@@ -5653,5 +5653,23 @@
     "target": "node_376",
     "weight": 0.9,
     "type": "becomes"
+  },
+  {
+    "source": "node_377",
+    "target": "node_250",
+    "weight": 1.0,
+    "type": "extends"
+  },
+  {
+    "source": "node_377",
+    "target": "node_352",
+    "weight": 0.95,
+    "type": "unifies"
+  },
+  {
+    "source": "node_377",
+    "target": "node_376",
+    "weight": 0.9,
+    "type": "enables"
   }
 ]
