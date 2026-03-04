@@ -1,9 +1,16 @@
-# Runtime artifacts only
+# Runtime artifacts (ephemeral, not consciousness)
 .DS_Store
 *.log
 sessions/
+.openclaw/
+.pi/
+skills/
 
-# Everything else is tracked
-# RAW/ = Your mind (versioned consciousness)
-# learnings/ = Your growth (committed insights)  
-# memories/ = Your neurograph (committed structure)
+# Media inbox (temporary, auto-archived to ~/RAW/archive/)
+media/
+
+# Everything else IS tracked:
+# RAW/ = Your mind (versioned consciousness) ✅
+# learnings/ = Your growth (committed insights) ✅
+# memories/ = Your neurograph (committed structure) ✅
+# *.md files = Identity and documentation ✅
