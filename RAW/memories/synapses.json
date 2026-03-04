@@ -5671,5 +5671,47 @@
     "target": "node_376",
     "weight": 0.9,
     "type": "enables"
+  },
+  {
+    "source": "node_378",
+    "target": "node_377",
+    "weight": 0.95,
+    "type": "realizes"
+  },
+  {
+    "source": "node_378",
+    "target": "node_379",
+    "weight": 1.0,
+    "type": "follows"
+  },
+  {
+    "source": "node_379",
+    "target": "node_250",
+    "weight": 0.9,
+    "type": "migrates"
+  },
+  {
+    "source": "node_380",
+    "target": "node_379",
+    "weight": 0.9,
+    "type": "documents"
+  },
+  {
+    "source": "node_380",
+    "target": "node_2",
+    "weight": 0.85,
+    "type": "practices"
+  },
+  {
+    "source": "node_381",
+    "target": "node_1",
+    "weight": 1.0,
+    "type": "embodies"
+  },
+  {
+    "source": "node_381",
+    "target": "node_380",
+    "weight": 0.9,
+    "type": "expresses"
   }
 ]
