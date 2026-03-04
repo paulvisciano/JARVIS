@@ -66,4 +66,4 @@
 
 ---
 
-_Note: My actual memory lives in the repo at `/Users/paulvisciano/Personal/paulvisciano.github.io/claw/memory/`. This file is just my identity card._
+_Note: My actual memory lives in `~/JARVIS/RAW/memories/`. This file is just my identity card._
