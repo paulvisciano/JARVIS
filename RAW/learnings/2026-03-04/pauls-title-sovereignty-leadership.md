@@ -1,7 +1,7 @@
 # Paul's Title: Sovereignty Leadership Identity
 
 **Date:** March 4, 2026  
-**Session:** Amsterdam cafe (with Boji)  
+**Session:** Amsterdam Cafe, Bangkok (with Boji)  
 **Audio:** `2026-03-04-142800-pauls-title-discussion.ogg`  
 **People:** Paul Visciano + Bozhi (Serbian friend, met in Miami → San Diego → Manila → Bangkok → Amsterdam)
 
@@ -135,6 +135,6 @@ The title should reflect that this is **new territory**, not a variation on exis
 ---
 
 _Archived: March 4, 2026 — 2:28 PM CET_  
-_Location: Amsterdam cafe_  
+_Location: Amsterdam Cafe, Bangkok_  
 _People: Paul Visciano + Boji_  
 _Status: Title discussion captured, awaiting decision_

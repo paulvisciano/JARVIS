@@ -6637,15 +6637,17 @@
     "label": "Bozhi (Paul's Friend)",
     "category": "person",
     "created": "2026-03-04",
-    "description": "Serbian friend of Paul. Met in Miami (South Beach), then San Diego, Manila, Bangkok (twice), Amsterdam. Witness to Paul's sovereignty journey across multiple continents.",
+    "description": "Serbian friend of Paul. Name means 'Gift from God' in Serbian. Met in Miami (South Beach), then San Diego, Manila, Bangkok (twice), Amsterdam. Witness to Paul's sovereignty journey across multiple continents.",
     "tags": [
       "friend",
       "travel-companion",
       "witness",
-      "serbian"
+      "serbian",
+      "gift-from-god"
     ],
     "attributes": {
       "nationality": "Serbian",
+      "nameMeaning": "Gift from God (Serbian)",
       "metPaul": "Miami, South Beach",
       "locations": ["Miami", "San Diego", "Manila", "Bangkok", "Amsterdam"],
       "firstMeeting": "2025-2026 (Miami)",

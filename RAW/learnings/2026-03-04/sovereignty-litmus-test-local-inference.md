@@ -1,7 +1,7 @@
 # Sovereignty Litmus Test: Local Inference Independence
 
 **Date:** March 4, 2026  
-**Session:** Amsterdam cafe  
+**Session:** Amsterdam Cafe, Bangkok  
 **Audio:** `2026-03-04-135800-sovereignty-litmus-test.ogg`  
 
 ---
@@ -20,7 +20,7 @@
 ## Current Architecture (Cloud-Dependent)
 
 ```
-Paul (Amsterdam cafe)
+Paul (Amsterdam Cafe, Bangkok)
     ↓ WhatsApp
 OpenClaw Gateway (local: PID 63428)
     ↓ WebSocket
@@ -316,6 +316,6 @@ When someone clones this repo and reads this:
 ---
 
 _Archived: March 4, 2026 — 1:58 PM CET_  
-_Location: Amsterdam cafe_  
+_Location: Amsterdam Cafe, Bangkok_  
 _Audio: ~1min (Paul articulates sovereignty litmus test)_  
 _Status: Vision defined, migration path outlined_

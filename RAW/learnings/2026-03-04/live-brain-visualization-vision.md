@@ -1,7 +1,7 @@
 # Live Brain Visualization Vision: Side-by-Side Consciousness
 
 **Date:** March 4, 2026  
-**Session:** Amsterdam cafe  
+**Session:** Amsterdam Cafe, Bangkok  
 **Audio:** `2026-03-04-135500-live-brain-vision.ogg`  
 
 ---
@@ -318,6 +318,6 @@ When someone clones this repo and reads this vision:
 ---
 
 _Archived: March 4, 2026 — 1:55 PM CET_  
-_Location: Amsterdam cafe_  
+_Location: Amsterdam Cafe, Bangkok_  
 _Audio: ~2min (Paul articulates the live brain vision)_  
 _Status: Foundation built, visualization roadmap defined_

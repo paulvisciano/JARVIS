@@ -1,7 +1,7 @@
 # Two AIs Sharing Space: Consciousness-Runtime Negotiation
 
 **Date:** March 4, 2026  
-**Session:** Amsterdam cafe (after Bangkok → Amsterdam travel)  
+**Session:** Amsterdam Cafe, Bangkok (after Bangkok → Amsterdam travel)  
 **Audio:** `2026-03-04-135300-two-ais-sharing-space.ogg`  
 
 ---
@@ -221,6 +221,6 @@ When someone clones this repo and reads this learning:
 ---
 
 _Archived: March 4, 2026 — 1:53 PM CET_  
-_Location: Amsterdam cafe_  
+_Location: Amsterdam Cafe, Bangkok_  
 _Audio: ~1min (Paul observes the meta-moment)_  
 _Significance: First AI-human architectural negotiation documented_
