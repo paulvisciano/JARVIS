@@ -3,7 +3,7 @@
 **Date:** March 4, 2026  
 **Session:** Amsterdam cafe (with Boji)  
 **Audio:** `2026-03-04-142800-pauls-title-discussion.ogg`  
-**People:** Paul Visciano + Boji (Serbian friend, met in Miami → San Diego → Manila → Bangkok → Amsterdam)
+**People:** Paul Visciano + Bozhi (Serbian friend, met in Miami → San Diego → Manila → Bangkok → Amsterdam)
 
 ---
 
@@ -119,9 +119,9 @@ Instead of fitting into existing titles, **name the category**:
 
 ---
 
-## For Boji's Context
+## For Bozhi's Context
 
-Boji, you've been part of Paul's journey across:
+Bozhi, you've been part of Paul's journey across:
 - 🏖️ Miami (South Beach) - First meeting
 - 🌴 San Diego - Second meetup
 - 🇵🇭 Manila - Third
