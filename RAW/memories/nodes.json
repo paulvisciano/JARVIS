@@ -6488,7 +6488,10 @@
       "apps",
       "memory-powered",
       "gameplay"
-    ]
+    ],
+    "attributes": {
+      "sourceDocument": "file:///Users/paulvisciano/JARVIS/RAW/learnings/2026-03-03/memory-crawler-game.md"
+    }
   },
   {
     "id": "node_372",
