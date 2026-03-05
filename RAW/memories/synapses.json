@@ -7833,5 +7833,40 @@
     "weight": 85,
     "type": "confirmed-by",
     "label": "confirmed by"
+  },
+  {
+    "source": "local-vs-published-states",
+    "target": "github-privacy-disclaimer",
+    "weight": 95,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "local-vs-published-states",
+    "target": "vault-architecture",
+    "weight": 93,
+    "type": "demonstrates",
+    "label": "demonstrates"
+  },
+  {
+    "source": "local-vs-published-states",
+    "target": "physical-sovereignty-model",
+    "weight": 92,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "local-vs-published-states",
+    "target": "ui-validation-moment",
+    "weight": 90,
+    "type": "validates",
+    "label": "validates"
+  },
+  {
+    "source": "transparency",
+    "target": "local-vs-published-states",
+    "weight": 88,
+    "type": "balanced-with",
+    "label": "balanced with privacy"
   }
 ]

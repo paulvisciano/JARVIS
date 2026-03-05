@@ -7241,5 +7241,32 @@
         "Visualization as epistemic technology (see isolation, clusters, bridges)"
       ]
     }
+  },
+  {
+    "id": "local-vs-published-states",
+    "label": "Local vs. Published States (Hybrid Workflow)",
+    "category": "validation",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T19:30:00+07:00"
+    ],
+    "attributes": {
+      "type": "proof",
+      "created": "2026-03-05",
+      "description": "Visualization shows file path for unpublished learnings. Not a bug \u2014 a feature. Sovereignty through selective publishing.",
+      "sourceDocument": "RAW/learnings/2026-03-05/local-vs-published-states.md",
+      "quote": "Since the learning is not published yet you don't see it... but you get this nice prompt",
+      "discoveredAt": "Volleyball session, reviewing visualization behavior",
+      "workflow": {
+        "private": "Draft locally \u2192 no pressure to publish \u2192 full control",
+        "published": "Review \u2192 sync \u2192 public deployment \u2192 optional"
+      },
+      "benefits": [
+        "Work privately without exposure",
+        "Choose what to share selectively",
+        "No 404 errors \u2014 system guides you to local file",
+        "Revoke publication anytime (just don't sync)"
+      ]
+    }
   }
 ]
