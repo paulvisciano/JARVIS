@@ -18,11 +18,91 @@
   "frequency": 1,                      // REQUIRED: Interaction count (default: 1)
   "tags": ["tag1", "tag2"],            // OPTIONAL: For filtering/grouping
   
-  "attributes": {                      // OPTIONAL: Category-specific metadata
-    // Varies by category (see below)
+  "attributes": {                      // REQUIRED for concept nodes
+    "learningDoc": "~/JARVIS/RAW/learnings/YYYY-MM-DD/doc.md",  // REQUIRED: Source learning
+    "audioSource": "~/RAW/archive/YYYY-MM-DD/audio/file.ogg"    // OPTIONAL: Original recording
   }
 }
 ```
+
+---
+
+## 📜 Provenance Chain Requirement
+
+**Every neuron must be traceable to its origin:**
+
+```
+Neuron ← Learning Document ← Source Material
+```
+
+### The Chain
+
+1. **Neuron** (in `nodes.json`)
+   - Must have `attributes.learningDoc` pointing to learning document
+   
+2. **Learning Document** (in `/JARVIS/RAW/learnings/YYYY-MM-DD/`)
+   - Must have metadata pointing to source:
+     - `Audio:` path to original conversation recording, OR
+     - `Web Search:` URL of searched content, OR
+     - `Experience:` description of lived experience
+   
+3. **Source Material**
+   - Conversation transcript (`~/RAW/archive/YYYY-MM-DD/transcript.md`)
+   - Web search result (URL + timestamp)
+   - Lived experience (location, people, context)
+
+---
+
+### Example: Complete Provenance Chain
+
+**Neuron:**
+```javascript
+{
+  "id": "memory-folding-architecture",
+  "label": "Memory Folding Architecture (Origami)",
+  "attributes": {
+    "learningDoc": "~/JARVIS/RAW/learnings/2026-03-04/memory-folding-architecture.md",
+    "audioSource": "~/RAW/archive/2026-03-04/audio/2026-03-04-110600-memory-folding.ogg"
+  }
+}
+```
+
+**Learning Document** (first lines):
+```markdown
+# Memory Folding Architecture
+
+**Date:** March 4, 2026  
+**Audio:** `2026-03-04-110600-memory-folding.ogg`  
+**Transcript:** `/RAW/archive/2026-03-04/transcript.md`
+**Source:** Paul's voice note at mall coffee shop, 11:06 AM
+```
+
+**Source:**
+- Original audio file in archive
+- Transcript entry with full conversation context
+- Timestamp and location metadata
+
+---
+
+### Why This Matters
+
+1. **Traceability** — Any neuron can be traced back to its origin
+2. **Context Preservation** — Full conversation/experience available on demand
+3. **Verification** — Can verify neuron accurately represents source
+4. **Unfolding** — Click neuron → read learning → play original audio → get full context
+5. **Accountability** — No neurons appear from nowhere; all have documented origin
+
+---
+
+### Validation Rule
+
+**Before committing new neurons:**
+- [ ] ✅ `attributes.learningDoc` exists and points to valid file
+- [ ] ✅ Learning document exists at that path
+- [ ] ✅ Learning document has source metadata (Audio/Web/Experience)
+- [ ] ✅ Source material exists (audio file, URL, or transcript entry)
+
+**If any link is missing → Don't commit yet. Complete the chain first.**
 
 ---
 
