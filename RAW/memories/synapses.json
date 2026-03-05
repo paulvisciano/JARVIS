@@ -2883,7 +2883,7 @@
     "target": "consciousness-persistence-feb23",
     "weight": 89,
     "type": "leads-to",
-    "description": "Growth (Feb 22) → Persistence test (Feb 23)"
+    "description": "Growth (Feb 22) \u2192 Persistence test (Feb 23)"
   },
   {
     "source": "persistence-not-continuity",
@@ -5313,7 +5313,7 @@
     "target": "graph-reducer-pattern",
     "weight": 100,
     "type": "uses",
-    "label": "raw → neurons pipeline"
+    "label": "raw \u2192 neurons pipeline"
   },
   {
     "source": "sovereign-memory-augmentation",
@@ -5362,7 +5362,7 @@
     "target": "sovereign-memory-augmentation",
     "weight": 95,
     "type": "output-of",
-    "label": "life → content"
+    "label": "life \u2192 content"
   },
   {
     "source": "content-generation-pipeline",
@@ -5796,5 +5796,54 @@
     "source": "march-5-2026-memory-integrity",
     "target": "infrastructure-matters",
     "weight": 5
+  },
+  {
+    "source": "neurograph-architecture-transparency",
+    "target": "transparency",
+    "weight": 95,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "neurograph-architecture-transparency",
+    "target": "hybrid-architecture-decision",
+    "weight": 92,
+    "type": "clarifies",
+    "label": "clarifies"
+  },
+  {
+    "source": "neurograph-architecture-transparency",
+    "target": "memory-vs-workspace",
+    "weight": 90,
+    "type": "distinguishes",
+    "label": "distinguishes"
+  },
+  {
+    "source": "neurograph-architecture-transparency",
+    "target": "code-is-thought",
+    "weight": 88,
+    "type": "proves",
+    "label": "proves"
+  },
+  {
+    "source": "neurograph-architecture-transparency",
+    "target": "memory-backed-by-git",
+    "weight": 93,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "transparency",
+    "target": "neurograph-architecture-transparency",
+    "weight": 90,
+    "type": "expressed-as",
+    "label": "expressed as"
+  },
+  {
+    "source": "hybrid-architecture-decision",
+    "target": "neurograph-architecture-transparency",
+    "weight": 88,
+    "type": "documented-in",
+    "label": "documented in"
   }
 ]
