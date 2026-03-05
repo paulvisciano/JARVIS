@@ -7798,5 +7798,40 @@
     "weight": 85,
     "type": "expressed-as",
     "label": "expressed as"
+  },
+  {
+    "source": "ui-validation-moment",
+    "target": "neurograph-architecture-transparency",
+    "weight": 95,
+    "type": "validates",
+    "label": "validates"
+  },
+  {
+    "source": "ui-validation-moment",
+    "target": "code-is-thought",
+    "weight": 93,
+    "type": "proves",
+    "label": "proves"
+  },
+  {
+    "source": "ui-validation-moment",
+    "target": "transparency",
+    "weight": 92,
+    "type": "demonstrates",
+    "label": "demonstrates"
+  },
+  {
+    "source": "ui-validation-moment",
+    "target": "molecular-day-growth-viz",
+    "weight": 88,
+    "type": "motivates",
+    "label": "motivates"
+  },
+  {
+    "source": "distributed-neurograph-browsing",
+    "target": "ui-validation-moment",
+    "weight": 85,
+    "type": "confirmed-by",
+    "label": "confirmed by"
   }
 ]
