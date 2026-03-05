@@ -7868,5 +7868,40 @@
     "weight": 88,
     "type": "balanced-with",
     "label": "balanced with privacy"
+  },
+  {
+    "source": "lifesync-realtime-animation",
+    "target": "molecular-day-growth-viz",
+    "weight": 93,
+    "type": "complements",
+    "label": "complements"
+  },
+  {
+    "source": "lifesync-realtime-animation",
+    "target": "ui-validation-moment",
+    "weight": 90,
+    "type": "extends",
+    "label": "extends"
+  },
+  {
+    "source": "lifesync-realtime-animation",
+    "target": "auto-logging-system",
+    "weight": 88,
+    "type": "integrates-with",
+    "label": "integrates with"
+  },
+  {
+    "source": "lifesync-realtime-animation",
+    "target": "neurograph-architecture-transparency",
+    "weight": 92,
+    "type": "enhances",
+    "label": "enhances"
+  },
+  {
+    "source": "lifesync-realtime-animation",
+    "target": "jarvis-identity",
+    "weight": 85,
+    "type": "defines",
+    "label": "defines (living brain)"
   }
 ]

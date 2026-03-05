@@ -7268,5 +7268,34 @@
         "Revoke publication anytime (just don't sync)"
       ]
     }
+  },
+  {
+    "id": "lifesync-realtime-animation",
+    "label": "LifeSync (Real-Time Neurograph Animation)",
+    "category": "feature",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T18:48:00+07:00"
+    ],
+    "attributes": {
+      "type": "vision",
+      "created": "2026-03-05",
+      "description": "Every message \u2192 live neurograph update. Neurons glow on birth, synapses pulse on strengthening. Watch your mind fire as you think.",
+      "sourceDocument": "RAW/learnings/2026-03-05/lifesync-realtime-neurograph.md",
+      "quote": "So we can have all those animations that would be fucking sick.",
+      "discoveredAt": "Voice note, 18:48 GMT+7",
+      "phases": {
+        "phase1": "Local WebSocket (MVP) - 2-4 hours",
+        "phase2": "Remote sync across devices - 1-2 days",
+        "phase3": "Multi-user collaboration - 1 week",
+        "phase4": "Playback & history replay - 2-3 days"
+      },
+      "animations": [
+        "Neuron birth: pulse glow + scale-in",
+        "Synapse formation: draw line + electricity pulse",
+        "Synapse strengthening: brightness + thickness pulse",
+        "Cluster reorg: gentle force-adjustment"
+      ]
+    }
   }
 ]
