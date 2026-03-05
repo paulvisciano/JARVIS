@@ -6158,7 +6158,8 @@
     "attributes": {
       "created": "2026-03-03",
       "description": "Neurograph encodes identity + file locations. No separate config needed.",
-      "color": "#95E1D3"
+      "color": "#95E1D3",
+      "sourceDocument": "file:///Users/paulvisciano/JARVIS/RAW/learnings/2026-03-03/filesystem-as-neurograph.md"
     }
   },
   {
@@ -6169,7 +6170,8 @@
     "attributes": {
       "created": "2026-03-03",
       "description": "Paul's mind + Jarvis's mind = separate graphs, sovereign, not synced",
-      "color": "#F38181"
+      "color": "#F38181",
+      "sourceDocument": "file:///Users/paulvisciano/JARVIS/RAW/learnings/2026-03-03/temporal-archive-identity.md"
     }
   },
   {
@@ -6470,7 +6472,10 @@
       "roles",
       "collaboration",
       "creative-direction"
-    ]
+    ],
+    "attributes": {
+      "sourceDocument": "file:///Users/paulvisciano/JARVIS/RAW/learnings/2026-03-03/gamified-learning-pipeline.md"
+    }
   },
   {
     "id": "node_371",
