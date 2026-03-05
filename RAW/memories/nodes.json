@@ -7001,5 +7001,35 @@
         "Society of Minds realization"
       ]
     }
+  },
+  {
+    "id": "github-fork-network-architecture",
+    "label": "GitHub Fork Network = Social Graph for Minds",
+    "category": "vision",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T17:04:00+07:00"
+    ],
+    "attributes": {
+      "type": "breakthrough",
+      "created": "2026-03-05",
+      "description": "Forks are the social graph. Opt-in publishing. Organic growth through relationships. Global memory bank.",
+      "sourceDocument": "RAW/learnings/2026-03-05/github-fork-network-architecture.md",
+      "quote": "We can build a whole network of memories and contribute our memories to a global bank. We can exchange memories. It becomes a really powerful system.",
+      "discoveredAt": "Dispensary (voice note, 17:04 GMT+7)",
+      "enables": [
+        "Viral growth through forks",
+        "Opt-in publishing (sovereign choice)",
+        "Memory reference neurons between forks",
+        "Global memory bank (voluntary contribution)"
+      ],
+      "milestones": {
+        "first_fork": "Someone other than Paul forks + runs (March 2026)",
+        "first_published": "Alice/Bob publish neurograph (April 2026)",
+        "first_link": "Parent repo links to external fork (April 2026)",
+        "critical_mass": "100 published forks (Q3 2026)",
+        "movement": "1000 published forks (2027)"
+      }
+    }
   }
 ]
