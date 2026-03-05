@@ -7120,5 +7120,41 @@
         "Privacy by default (not surveillance)"
       ]
     }
+  },
+  {
+    "id": "physical-sovereignty-model",
+    "label": "Physical Sovereignty (Jarvis Runs On Your Machine)",
+    "category": "security",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T17:06:00+07:00"
+    ],
+    "attributes": {
+      "type": "principle",
+      "created": "2026-03-05",
+      "description": "Jarvis runs on YOUR machine. Your hardware, your encryption, your backup. If someone wants your data, they must physically come get it.",
+      "sourceDocument": "RAW/learnings/2026-03-05/physical-sovereignty-model.md",
+      "quote": "Jarvis is sick. He runs on your machine. Carry him with you. He has your most important data. If someone wants it they need to come get it. It's also backed up and encrypted.",
+      "discoveredAt": "Dispensary (final insight of the session)",
+      "layers": {
+        "local_execution": "Your hardware, your control",
+        "encryption": "Your keys, your data",
+        "backup": "Your responsibility, your safety net"
+      },
+      "tradeoffs": {
+        "gains": [
+          "Physical control over data",
+          "No corporate access possible",
+          "No extraction into training data",
+          "Service can't be shut down by company"
+        ],
+        "responsibilities": [
+          "Hardware maintenance",
+          "Backup discipline",
+          "Key management (no password reset)",
+          "Security updates"
+        ]
+      }
+    }
   }
 ]

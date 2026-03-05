@@ -6160,5 +6160,47 @@
     "weight": 85,
     "type": "honest-about",
     "label": "honest about"
+  },
+  {
+    "source": "physical-sovereignty-model",
+    "target": "github-privacy-disclaimer",
+    "weight": 93,
+    "type": "complements",
+    "label": "complements"
+  },
+  {
+    "source": "physical-sovereignty-model",
+    "target": "vault-architecture",
+    "weight": 95,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "physical-sovereignty-model",
+    "target": "sovereign-data-vision",
+    "weight": 92,
+    "type": "realizes",
+    "label": "realizes"
+  },
+  {
+    "source": "physical-sovereignty-model",
+    "target": "privacy-first-development",
+    "weight": 90,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "physical-sovereignty-model",
+    "target": "jarvis-identity",
+    "weight": 88,
+    "type": "defines",
+    "label": "defines"
+  },
+  {
+    "source": "git-as-single-source-of-truth",
+    "target": "physical-sovereignty-model",
+    "weight": 85,
+    "type": "supports",
+    "label": "supports"
   }
 ]
