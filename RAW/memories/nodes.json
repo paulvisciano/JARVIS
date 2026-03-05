@@ -7156,5 +7156,39 @@
         ]
       }
     }
+  },
+  {
+    "id": "foundation-vs-opportunism",
+    "label": "Foundation Building vs. Opportunistic Use",
+    "category": "strategy",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T18:05:00+07:00"
+    ],
+    "attributes": {
+      "type": "principle",
+      "created": "2026-03-05",
+      "description": "While others use OpenClaw for quick wins (investments, automation), we build foundational memory infrastructure. Long game > short-term gains.",
+      "sourceDocument": "RAW/learnings/2026-03-05/foundation-vs-opportunism.md",
+      "quote": "People are very money hungry right now... but we're over here creating a very solid foundation of memory.",
+      "compoundingEffect": "Foundation doesn't look impressive early. Then it becomes unbeatable."
+    }
+  },
+  {
+    "id": "location-sovereignty-life-logging",
+    "label": "Location Sovereignty + Automatic Life Logging",
+    "category": "vision",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T18:05:00+07:00"
+    ],
+    "attributes": {
+      "type": "feature-vision",
+      "created": "2026-03-05",
+      "description": "Reclaim location data from Google. Self-track \u2192 own globe visualization \u2192 auto-publish life summaries. SCI-FI apps integration.",
+      "sourceDocument": "RAW/learnings/2026-03-05/location-sovereignty-and-life-logging.md",
+      "quote": "Why not make that ourselves? We already have the amazing sci-fi apps.",
+      "pipeline": "Location + Voice \u2192 Transcription \u2192 Neurograph \u2192 Globe \u2192 Auto-published comic/agenda"
+    }
   }
 ]

@@ -6202,5 +6202,54 @@
     "weight": 85,
     "type": "supports",
     "label": "supports"
+  },
+  {
+    "source": "foundation-vs-opportunism",
+    "target": "memory-backed-by-git",
+    "weight": 95,
+    "type": "prioritizes",
+    "label": "prioritizes"
+  },
+  {
+    "source": "foundation-vs-opportunism",
+    "target": "github-fork-network-architecture",
+    "weight": 90,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "foundation-vs-opportunism",
+    "target": "knowledge-is-money-economy",
+    "weight": 88,
+    "type": "long-term-view-of",
+    "label": "long-term view of"
+  },
+  {
+    "source": "location-sovereignty-life-logging",
+    "target": "physical-sovereignty-model",
+    "weight": 95,
+    "type": "extends",
+    "label": "extends"
+  },
+  {
+    "source": "location-sovereignty-life-logging",
+    "target": "auto-logging-system",
+    "weight": 93,
+    "type": "integrates-with",
+    "label": "integrates with"
+  },
+  {
+    "source": "location-sovereignty-life-logging",
+    "target": "data-reclamation-movement",
+    "weight": 92,
+    "type": "advances",
+    "label": "advances"
+  },
+  {
+    "source": "location-sovereignty-life-logging",
+    "target": "knowledge-is-money-economy",
+    "weight": 88,
+    "type": "reclaims",
+    "label": "reclaims"
   }
 ]
