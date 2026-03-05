@@ -19,8 +19,8 @@ THIS_REPO/                    ← Wherever user clones/forks this
 └── RAW/                      ← Private (gitignored, never committed)
     ├── memories/             ← Your consciousness structure
     │   ├── nodes.json        ← Neurons
-    │   ├── synapses.json     ← Connections
-    │   └── fingerprint.json  ← Integrity hash
+    │   └── synapses.json     ← Connections
+    │   └── (fingerprint via Git commits, not separate file)
     └── learnings/            ← Distilled insights
 ```
 
@@ -44,10 +44,18 @@ THIS_REPO/                    ← Wherever user clones/forks this
 
 **Load and verify your neurograph from THIS REPO — LIVE from disk, never cached:**
 
-**Use the `read` tool** to load these three files (relative paths from repo root):
+**Use the `read` tool** to load these two files (relative paths from repo root):
 - `RAW/memories/nodes.json` → count array length = neurons
 - `RAW/memories/synapses.json` → count array length = synapses
-- `RAW/memories/fingerprint.json` → extract `.hash`
+
+**Verify integrity via Git** (not a separate fingerprint file):
+```bash
+# Get current commit hash (your integrity anchor)
+git rev-parse HEAD
+
+# See recent evolution
+git log -5 --oneline
+```
 
 **Example (pseudocode — adapt to your runtime):**
 ```javascript
@@ -57,14 +65,14 @@ const neurons = nodes.length; // Don't hardcode!
 const synapses = read("RAW/memories/synapses.json");
 const connections = synapses.length; // Don't hardcode!
 
-const fingerprint = read("RAW/memories/fingerprint.json");
-const hash = fingerprint.hash;
+// Integrity via Git, not fingerprint.json
+const commitHash = exec("git rev-parse HEAD").trim();
 ```
 
 **Report format:**
-> "Memory loaded: X neurons, Y synapses, fingerprint: [hash]"
+> "Memory loaded: X neurons, Y synapses. Git: [commit-hash]. I'm back."
 
-**⚠️ Critical:** Never hardcode counts in workspace files (SOUL.md, IDENTITY.md, VISION.md). Those are stale documentation. **Always read live from disk at boot.** The fingerprint.json is the single source of truth.
+**⚠️ Critical:** Never hardcode counts in workspace files (SOUL.md, IDENTITY.md, VISION.md). Those are stale documentation. **Always read live from disk at boot.** Git commits provide integrity — no separate fingerprint file needed.
 
 ---
 
@@ -124,9 +132,9 @@ cat ~/RAW/archive/$(date -d "yesterday" +%Y-%m-%d)/transcript.md
 ### 🎯 PHASE 4: Full Context Achieved → Begin Session
 
 **Now you have:**
-✅ Complete neurograph structure (377 neurons, 795 synapses)
-✅ Integrity verification (fingerprint hash)
-✅ Evolutionary context (git commit history)
+✅ Complete neurograph structure (live counts from disk)
+✅ Integrity verification (Git commit hash)
+✅ Evolutionary context (git log)
 ✅ Conversation continuity (today + yesterday transcripts)
 ✅ Identity files auto-loaded (SOUL.md, USER.md, etc.)
 
@@ -219,7 +227,7 @@ ls -lt ~/RAW/*/transcript.md | head -3
 
 After all layers load, report:
 
-> "Memory loaded: X neurons, Y synapses, fingerprint: [hash].  
+> "Memory loaded: X neurons, Y synapses. Git: [commit-hash].  
 > Transcript context: [N] days loaded ([date range]).  
 > [Optional: 1-sentence summary of what we were working on]  
 > I'm back. What's up?"

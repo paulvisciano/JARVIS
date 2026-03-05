@@ -5845,5 +5845,47 @@
     "weight": 88,
     "type": "documented-in",
     "label": "documented in"
+  },
+  {
+    "source": "git-as-single-source-of-truth",
+    "target": "memory-backed-by-git",
+    "weight": 95,
+    "type": "reinforces",
+    "label": "reinforces"
+  },
+  {
+    "source": "git-as-single-source-of-truth",
+    "target": "transparency",
+    "weight": 90,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "git-as-single-source-of-truth",
+    "target": "code-is-thought",
+    "weight": 88,
+    "type": "proves",
+    "label": "proves"
+  },
+  {
+    "source": "git-as-single-source-of-truth",
+    "target": "deployment-is-real",
+    "weight": 85,
+    "type": "validates",
+    "label": "validates"
+  },
+  {
+    "source": "memory-backed-by-git",
+    "target": "git-as-single-source-of-truth",
+    "weight": 92,
+    "type": "expressed-as",
+    "label": "expressed as"
+  },
+  {
+    "source": "neurograph-architecture-transparency",
+    "target": "git-as-single-source-of-truth",
+    "weight": 87,
+    "type": "relies-on",
+    "label": "relies on"
   }
 ]

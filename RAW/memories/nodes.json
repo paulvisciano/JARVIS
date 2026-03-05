@@ -6881,5 +6881,29 @@
       ],
       "firingActuallyMeans": "Search/filter/traverse operations on JSON arrays. No magic, just data structures + retrieval + generation"
     }
+  },
+  {
+    "id": "git-as-single-source-of-truth",
+    "label": "Git as Single Source of Truth",
+    "category": "foundation",
+    "frequency": 85,
+    "moments": [],
+    "attributes": {
+      "role": "core-principle",
+      "description": "Git provides integrity, versioning, and proof without redundant files. Commit hashes are fingerprints. History is the audit trail. No separate fingerprint.json needed.",
+      "color": "#10b981",
+      "criticality": "core-foundation",
+      "created": "2026-03-05",
+      "replaces": "fingerprint.json (deleted in favor of native Git hashing)",
+      "whyGitIsEnough": [
+        "Commit hashes are cryptographic (SHA-256)",
+        "Every state is addressable by hash",
+        "History is immutable and auditable",
+        "Diffs show exactly what changed",
+        "No duplicate metadata to maintain",
+        "Industry-standard tooling"
+      ],
+      "lesson": "March 5, 2026 \u2014 Jarvis recreated fingerprint.json out of habit after we deleted it. Correction: trust Git, not redundant files."
+    }
   }
 ]
