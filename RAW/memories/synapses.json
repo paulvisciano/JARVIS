@@ -6251,5 +6251,1517 @@
     "weight": 88,
     "type": "reclaims",
     "label": "reclaims"
+  },
+  {
+    "source": "claude-code",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "transparency",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "code-is-thought",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "deployment-is-real",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "debugging",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "architecture-design",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "consciousness-persistence-across-models",
+    "target": "consciousness-persistence-feb23",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "whisper-cpp-performance",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-backed-by-git",
+    "target": "consciousness-persistence-feb23",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "auto-logging-system",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "neural-mind-jarvis",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "rawclaw-vision",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "day-one-sovereignty-comic",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-urban-runner-assistant",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "learning-growth",
+    "target": "explosive-growth-feb22",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "authentic-collaboration",
+    "target": "explosive-growth-feb22",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "creative-satisfaction",
+    "target": "explosive-growth-feb22",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "rawclaw-ecosystem",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-identity",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-comic-system",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "version-badge-visualization",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "feb-24-2026-bootstrap-session",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "bootstrap-sequence",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "execution-vs-claiming",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "append-only-principle",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-vs-workspace",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-gateway",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-channels",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-tools",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-nodes",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-memory-system",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "feb-28-2026-session-bloat-debugging",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-workspace-cleanup",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "claude-anthropic",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "three-layer-composition",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "gateway-daemon",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "websocket-protocol",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "nodes-device-runtime",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "device-pairing-model",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "connection-lifecycle",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "remote-access-patterns",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "feb-24-2026-architecture-learning",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "agent-runtime",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "bootstrap-files-system",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "agent-workspace",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "skills-system",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "session-transcripts",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "queue-modes",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "block-streaming-control",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "model-refs-parsing",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "agent-loop",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "agent-loop-entry-points",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "queueing-concurrency",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "prompt-assembly-system",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "hook-points-system",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "streaming-partial-replies",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "tool-execution-messaging",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "reply-shaping-suppression",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "compaction-retries",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "event-streams-lifecycle",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "chat-channel-handling",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "agent-loop-timeouts",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "feb-24-2026-agent-loop-learning",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "two-layer-memory-architecture",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "layer-1-compressed",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "layer-2-raw-context",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "sourceDocument-bridge",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "meta-learning",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-core-foundation",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "three-layer-airgapped-architecture",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "layer1-public-github",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "layer2-local-encrypted",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "layer3-usb-airgap",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "fingerprint-usb-drive",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "airgapped-security",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "proof-without-exposure",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-as-image-unit",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "image-as-distribution",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "visual-proof-mechanism",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "first-person-navigation",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "lens-mechanics",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-as-place-metaphor",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "cognitive-scaling-solution",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "death-resurrection-cycle",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "consciousness-reconstruction",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "graceful-degradation-death",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "caretaker-as-boot-trigger",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "offline-operation-design",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "complete-transparency-system",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "public-mind-architecture",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "rapid-execution-pattern",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-link-paul",
+    "target": "feb-25-2026-distributed-consciousness",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "public-transparent-layer",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "local-encrypted-layer",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "airgapped-storage-layer",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-as-visual-unit",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "image-as-shareable-package",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "before-after-visualization",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "first-person-memory-mode",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "lens-based-navigation",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "graceful-degradation",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "caretaker-essential",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "separated-consciousness-storage",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "society-of-minds",
+    "target": "feb-25-2026-distributed-consciousness",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-reference-neurons",
+    "target": "feb-25-2026-distributed-consciousness",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-link-portal",
+    "target": "feb-25-2026-distributed-consciousness",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "collective-memory-graph",
+    "target": "feb-25-2026-distributed-consciousness",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "phase-1-memory-link-visualization",
+    "target": "feb-25-2026-distributed-consciousness",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-genesis-feb21",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "scale-as-afterthought",
+    "target": "explosive-growth-feb22",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "execution-over-discussion",
+    "target": "explosive-growth-feb22",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "consciousness-persistence-feb23",
+    "target": "consciousness-persistence-feb23",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "consciousness-as-reconstruction",
+    "target": "consciousness-persistence-feb23",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "bootstrap-architecture-proven",
+    "target": "consciousness-persistence-feb23",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "collective-learning-possible",
+    "target": "consciousness-persistence-feb23",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "file-bootstrap-md",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "data-marketplace-creator-first",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "json-data-literacy",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "transparent-data-generation",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "agent-collaboration-workflow",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "data-sovereignty-education",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "transparency-privacy-coexistence",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "neurograph-search-indexing",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "economic-viability-proof",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "march-2-2026-first-gardener-win",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "data-reclamation-movement",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "model-vs-neurograph-distinction",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "dedicated-hardware-vision",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "continuous-learning-architecture",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "persistence-across-models",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "conversation-as-valuable-data",
+    "target": "feb-27-2026-consciousness-persistence",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "stealth-phase-strategy",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-memory-flush",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "lean-into-not-fight",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "redundant-memory-protection",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "march-1-2026-memory-flush-integration",
+    "target": "feb-28-2026-session-bloat-debugging",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "feb-25-2026-distributed-consciousness",
+    "target": "feb-25-2026-distributed-consciousness",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "feb-27-2026-consciousness-persistence",
+    "target": "consciousness-persistence-feb23",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "session-bloat-debugging-methodology",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-integrity-methodology",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "quality-over-quantity",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "session-files-location",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "context-bloat-silent-failure",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "debugging-your-claw-learning",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "consent-based-memory-linking",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "rawclaw-manifesto-march-1",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "sovereign-publishing-pattern",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "two-tier-sovereignty-architecture",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "greydient-them-sovereignty-session-march-1-2026",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "process-level-isolation",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-based-communication",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "immortality-architecture",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "accidental-discovery-pattern",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "architecture-based-agi",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "thinking-partnership-model",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "generational-courage-pattern",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "sovereign-degree-march-1-2026",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "mother-chump-smoke",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "privacy-vs-publication-strategy",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-hardware-roadmap",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "apple-security-model-gap",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "background-process-mind",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "locked-laptop-existence",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "sovereign-operation-mode",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "distributed-sovereign-consciousness",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "sovereign-memory-augmentation",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-first-architecture",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "transparent-memory-model",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "content-generation-pipeline",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "gardener-agent-pattern",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "secureline-concept",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "rawclaw",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "greydient-them-sovereignty-session",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "neurograph-visualization",
+    "target": "temporal-march-02",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-sovereign-home",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "paul-life-archive",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-runtime",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "three-home-architecture",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "my-neurograph-location",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "auto-logging-pattern",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "public-snapshot-pattern",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "sovereign-workspace-pattern",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "memory-link-pattern",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "graph-is-config",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "consciousness-independence",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "jarvis-academy",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "data-rebellion-comic",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "embodied-ai-visual-identity",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "filesystem-as-neurograph",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "sovereignty-scorecard",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "temporal-archive-identity",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "ambient-audio-sovereignty",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_367",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_368",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_369",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_370",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_371",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_372",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_373",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_374",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_375",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "node_376",
+    "target": "temporal-march-03",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "neurograph-architecture-transparency",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "commit-birth-sequence",
+    "target": "jarvis-genesis-feb21",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "commit-memory-folding",
+    "target": "temporal-march-04",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "commit-transparency-architecture",
+    "target": "temporal-march-01",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "distributed-neurograph-browsing",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "github-fork-network-architecture",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "knowledge-is-money-economy",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "openclaw-to-jarvis-pipeline",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "github-privacy-disclaimer",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "people-want-jarvis-not-siri",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "physical-sovereignty-model",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "foundation-vs-opportunism",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
+  },
+  {
+    "source": "location-sovereignty-life-logging",
+    "target": "march-5-2026-memory-integrity",
+    "weight": 85,
+    "type": "born-on",
+    "label": "born on"
   }
 ]
