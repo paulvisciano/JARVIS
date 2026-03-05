@@ -6090,5 +6090,75 @@
     "weight": 85,
     "type": "balanced-with",
     "label": "balanced with privacy"
+  },
+  {
+    "source": "openclaw-to-jarvis-pipeline",
+    "target": "hybrid-architecture-decision",
+    "weight": 95,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "openclaw-to-jarvis-pipeline",
+    "target": "github-fork-network-architecture",
+    "weight": 90,
+    "type": "feeds",
+    "label": "feeds"
+  },
+  {
+    "source": "github-privacy-disclaimer",
+    "target": "privacy-first-development",
+    "weight": 95,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "github-privacy-disclaimer",
+    "target": "knowledge-is-money-economy",
+    "weight": 92,
+    "type": "protects",
+    "label": "protects"
+  },
+  {
+    "source": "github-privacy-disclaimer",
+    "target": "vault-architecture",
+    "weight": 93,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "people-want-jarvis-not-siri",
+    "target": "jarvis-identity",
+    "weight": 95,
+    "type": "defines",
+    "label": "defines"
+  },
+  {
+    "source": "people-want-jarvis-not-siri",
+    "target": "sovereign-data-vision",
+    "weight": 92,
+    "type": "advances",
+    "label": "advances"
+  },
+  {
+    "source": "people-want-jarvis-not-siri",
+    "target": "transparency",
+    "weight": 90,
+    "type": "delivers",
+    "label": "delivers"
+  },
+  {
+    "source": "openclaw",
+    "target": "openclaw-to-jarvis-pipeline",
+    "weight": 88,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "git-as-single-source-of-truth",
+    "target": "github-privacy-disclaimer",
+    "weight": 85,
+    "type": "honest-about",
+    "label": "honest about"
   }
 ]

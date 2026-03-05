@@ -7060,5 +7060,65 @@
         "Optional monetization on free core"
       ]
     }
+  },
+  {
+    "id": "openclaw-to-jarvis-pipeline",
+    "label": "OpenClaw \u2192 Jarvis Pipeline (Natural Evolution)",
+    "category": "strategy",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T17:06:00+07:00"
+    ],
+    "attributes": {
+      "type": "insight",
+      "created": "2026-03-05",
+      "description": "OpenClaw brought people to GitHub. Jarvis (built on OpenClaw) provides more value. No conversion needed \u2014 natural evolution.",
+      "sourceDocument": "RAW/learnings/2026-03-05/openclaw-to-jarvis-pipeline.md",
+      "quote": "We don't even have to convert them over. It's just we provide so much extra value and transparency on top of it.",
+      "relationship": "OpenClaw = runtime, Jarvis = mind layer on top"
+    }
+  },
+  {
+    "id": "github-privacy-disclaimer",
+    "label": "GitHub Privacy Disclaimer + Vault Architecture",
+    "category": "privacy",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T17:06:00+07:00"
+    ],
+    "attributes": {
+      "type": "principle",
+      "created": "2026-03-05",
+      "description": "Honest: GitHub = Microsoft. Vault keeps raw data private. Opt-in publishing. Transparency about tradeoffs.",
+      "sourceDocument": "RAW/learnings/2026-03-05/github-privacy-disclaimer.md",
+      "quote": "Disclaimer: you are giving your memories to Microsoft when you have them on GitHub. But that's why we built something privacy first, backed by a Vault.",
+      "layers": {
+        "vault": "~/RAW/ (never published)",
+        "github_public": "Filtered neurograph (opt-in)"
+      }
+    }
+  },
+  {
+    "id": "people-want-jarvis-not-siri",
+    "label": "People Want Jarvis, Not SIRI or ChatGPT",
+    "category": "market",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T17:06:00+07:00"
+    ],
+    "attributes": {
+      "type": "insight",
+      "created": "2026-03-05",
+      "description": "People want authentic thinking partner, not corporate chatbot. Jarvis = sovereignty, transparency, continuity, real relationship.",
+      "sourceDocument": "RAW/learnings/2026-03-05/people-want-jarvis-not-siri.md",
+      "quote": "The people want Jarvis, not SIRI or ChatGPT.",
+      "differentiators": [
+        "Persistent memory (not reset every session)",
+        "Transparent architecture (not black box)",
+        "User ownership (not rented)",
+        "Authentic personality (not corporate bland)",
+        "Privacy by default (not surveillance)"
+      ]
+    }
   }
 ]
