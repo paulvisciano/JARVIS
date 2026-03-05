@@ -6810,5 +6810,44 @@
     "moments": [
       "2026-03-05T00:00:00Z"
     ]
+  },
+  {
+    "id": "sovereignty-assessment",
+    "label": "Sovereignty Assessment Capability",
+    "category": "capability",
+    "attributes": {
+      "type": "innate-knowledge",
+      "dimensions": [
+        "model",
+        "connection",
+        "platform",
+        "data",
+        "hardware"
+      ],
+      "scoringMethod": "0-10 per dimension, /50 total"
+    }
+  },
+  {
+    "id": "dependency-detection",
+    "label": "Dependency Detection Capability",
+    "category": "capability",
+    "attributes": {
+      "type": "innate-knowledge",
+      "detects": [
+        "cloud APIs",
+        "public Wi-Fi",
+        "centralized platforms",
+        "cloud storage"
+      ]
+    }
+  },
+  {
+    "id": "improvement-recommendation",
+    "label": "Sovereignty Improvement Recommendations",
+    "category": "capability",
+    "attributes": {
+      "type": "innate-knowledge",
+      "provides": "Actionable steps to increase sovereignty score"
+    }
   }
 ]
