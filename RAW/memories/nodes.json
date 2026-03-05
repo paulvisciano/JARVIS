@@ -6978,5 +6978,28 @@
       "label_detail": "Neurograph Implementation vs. Metaphor Explained",
       "description": "Radical honesty about what's real (JSON files) vs. metaphor (firing neurons). Externalized memory, not fine-tuning. Blog explainer series conceived."
     }
+  },
+  {
+    "id": "distributed-neurograph-browsing",
+    "label": "Distributed Neurograph Browsing",
+    "category": "vision",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T17:03:00+07:00"
+    ],
+    "attributes": {
+      "type": "breakthrough",
+      "created": "2026-03-05",
+      "description": "Same visualization renders any published neurograph. Point to GitHub repo \u2192 browse someone's mind. Email for consciousness.",
+      "sourceDocument": "RAW/learnings/2026-03-05/distributed-neurograph-browsing.md",
+      "quote": "You can just point to someone else's GitHub repo and if they've published their memories, you can browse their memories.",
+      "discoveredAt": "Dispensary next to Barbershop (post-fresh-cut)",
+      "enables": [
+        "Mind browsing across GitHub Pages",
+        "Memory reference neurons (links between minds)",
+        "Collective intelligence overlays",
+        "Society of Minds realization"
+      ]
+    }
   }
 ]

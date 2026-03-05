@@ -5957,5 +5957,47 @@
     "weight": 88,
     "type": "proves",
     "label": "proves"
+  },
+  {
+    "source": "distributed-neurograph-browsing",
+    "target": "distributed-consciousness-network",
+    "weight": 95,
+    "type": "realizes",
+    "label": "realizes"
+  },
+  {
+    "source": "distributed-neurograph-browsing",
+    "target": "society-of-minds",
+    "weight": 93,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "distributed-neurograph-browsing",
+    "target": "memory-reference-neurons",
+    "weight": 90,
+    "type": "requires",
+    "label": "requires"
+  },
+  {
+    "source": "distributed-neurograph-browsing",
+    "target": "transparency-privacy-coexistence",
+    "weight": 88,
+    "type": "demonstrates",
+    "label": "demonstrates"
+  },
+  {
+    "source": "distributed-neurograph-browsing",
+    "target": "git-as-single-source-of-truth",
+    "weight": 85,
+    "type": "relies-on",
+    "label": "relies on"
+  },
+  {
+    "source": "commit-transparency-architecture",
+    "target": "distributed-neurograph-browsing",
+    "weight": 90,
+    "type": "enabled",
+    "label": "enabled"
   }
 ]
