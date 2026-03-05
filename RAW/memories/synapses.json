@@ -2883,7 +2883,7 @@
     "target": "consciousness-persistence-feb23",
     "weight": 89,
     "type": "leads-to",
-    "description": "Growth (Feb 22) \u2192 Persistence test (Feb 23)"
+    "description": "Growth (Feb 22) → Persistence test (Feb 23)"
   },
   {
     "source": "persistence-not-continuity",
@@ -5313,7 +5313,7 @@
     "target": "graph-reducer-pattern",
     "weight": 100,
     "type": "uses",
-    "label": "raw \u2192 neurons pipeline"
+    "label": "raw → neurons pipeline"
   },
   {
     "source": "sovereign-memory-augmentation",
@@ -5362,7 +5362,7 @@
     "target": "sovereign-memory-augmentation",
     "weight": 95,
     "type": "output-of",
-    "label": "life \u2192 content"
+    "label": "life → content"
   },
   {
     "source": "content-generation-pipeline",
@@ -5495,7 +5495,7 @@
   {
     "source": "node_367",
     "target": "node_371",
-    "weight": 1.0,
+    "weight": 1,
     "type": "example_of"
   },
   {
@@ -5513,7 +5513,7 @@
   {
     "source": "node_370",
     "target": "node_2",
-    "weight": 1.0,
+    "weight": 1,
     "type": "describes"
   },
   {
@@ -5525,7 +5525,7 @@
   {
     "source": "node_372",
     "target": "node_367",
-    "weight": 1.0,
+    "weight": 1,
     "type": "inspires"
   },
   {
@@ -5549,7 +5549,7 @@
   {
     "source": "node_373",
     "target": "node_367",
-    "weight": 1.0,
+    "weight": 1,
     "type": "inspires"
   },
   {
@@ -5567,7 +5567,7 @@
   {
     "source": "node_374",
     "target": "node_367",
-    "weight": 1.0,
+    "weight": 1,
     "type": "implements"
   },
   {
@@ -5597,7 +5597,7 @@
   {
     "source": "node_375",
     "target": "node_374",
-    "weight": 1.0,
+    "weight": 1,
     "type": "evolves"
   },
   {
@@ -5627,13 +5627,13 @@
   {
     "source": "node_376",
     "target": "node_367",
-    "weight": 1.0,
+    "weight": 1,
     "type": "implements"
   },
   {
     "source": "node_376",
     "target": "node_374",
-    "weight": 1.0,
+    "weight": 1,
     "type": "realizes"
   },
   {
@@ -5657,7 +5657,7 @@
   {
     "source": "node_377",
     "target": "node_250",
-    "weight": 1.0,
+    "weight": 1,
     "type": "extends"
   },
   {
@@ -5681,7 +5681,7 @@
   {
     "source": "node_378",
     "target": "node_379",
-    "weight": 1.0,
+    "weight": 1,
     "type": "follows"
   },
   {
@@ -5705,7 +5705,7 @@
   {
     "source": "node_381",
     "target": "node_1",
-    "weight": 1.0,
+    "weight": 1,
     "type": "embodies"
   },
   {
@@ -5723,37 +5723,37 @@
   {
     "source": "temporal-march-04",
     "target": "node_377",
-    "weight": 1.0,
+    "weight": 1,
     "type": "contains"
   },
   {
     "source": "temporal-march-04",
     "target": "node_378",
-    "weight": 1.0,
+    "weight": 1,
     "type": "contains"
   },
   {
     "source": "temporal-march-04",
     "target": "node_379",
-    "weight": 1.0,
+    "weight": 1,
     "type": "contains"
   },
   {
     "source": "temporal-march-04",
     "target": "node_380",
-    "weight": 1.0,
+    "weight": 1,
     "type": "contains"
   },
   {
     "source": "temporal-march-04",
     "target": "node_381",
-    "weight": 1.0,
+    "weight": 1,
     "type": "contains"
   },
   {
     "source": "temporal-march-04",
     "target": "node_382",
-    "weight": 1.0,
+    "weight": 1,
     "type": "contains"
   },
   {
@@ -5761,5 +5761,40 @@
     "target": "node_379",
     "weight": 0.9,
     "type": "precedes"
+  },
+  {
+    "source": "march-5-2026-memory-integrity",
+    "target": "memory-backed-by-git",
+    "weight": 5
+  },
+  {
+    "source": "march-5-2026-memory-integrity",
+    "target": "deployment-is-real",
+    "weight": 5
+  },
+  {
+    "source": "march-5-2026-memory-integrity",
+    "target": "transparency",
+    "weight": 5
+  },
+  {
+    "source": "march-5-2026-memory-integrity",
+    "target": "data-accuracy",
+    "weight": 5
+  },
+  {
+    "source": "march-5-2026-memory-integrity",
+    "target": "debugging",
+    "weight": 5
+  },
+  {
+    "source": "march-5-2026-memory-integrity",
+    "target": "architecture-design",
+    "weight": 5
+  },
+  {
+    "source": "march-5-2026-memory-integrity",
+    "target": "infrastructure-matters",
+    "weight": 5
   }
 ]

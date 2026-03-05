@@ -6807,7 +6807,8 @@
     "attributes": {
       "created": "2026-03-05",
       "description": "Fingerprint = Git commit hash, temporal node frequencies fixed, 41 source links backfilled, session archival automated, neurograph rendering repaired",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/memory/raw/2026-03-05/transcript.md"
     },
     "moments": [
       "2026-03-05T00:00:00Z"
