@@ -1,0 +1,1502 @@
+[
+  {
+    "source": "commit-980f92b",
+    "target": "file-raw-memories-nodes-json-980f92b",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-144d74b",
+    "target": "file-raw-memories-nodes-json-980f92b",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-144d74b",
+    "target": "file-raw-memories-nodes-json-144d74b",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-ab33779",
+    "target": "file-raw-memories-nodes-json-144d74b",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-ab33779",
+    "target": "file-raw-memories-nodes-json-ab33779",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-397ce0b",
+    "target": "file-raw-memories-nodes-json-ab33779",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-397ce0b",
+    "target": "file-raw-memories-nodes-json-397ce0b",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-eac408a",
+    "target": "file-raw-memories-nodes-json-397ce0b",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-397ce0b",
+    "target": "file-scripts-full-integrity-audit-js-397ce0b",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-397ce0b",
+    "target": "file-scripts-integrity-restoration-log-md-397ce0b",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-eac408a",
+    "target": "file-raw-memories-nodes-json-eac408a",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-28b7249",
+    "target": "file-raw-memories-nodes-json-eac408a",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-28b7249",
+    "target": "file-raw-memories-nodes-json-28b7249",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-1fb89a4",
+    "target": "file-raw-memories-nodes-json-28b7249",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-1fb89a4",
+    "target": "file-raw-memories-nodes-json-1fb89a4",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-e7476f4",
+    "target": "file-raw-memories-nodes-json-1fb89a4",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-1fb89a4",
+    "target": "file-raw-memories-synapses-json-1fb89a4",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-0b06af2",
+    "target": "file-raw-memories-synapses-json-1fb89a4",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-e7476f4",
+    "target": "file-raw-memories-nodes-json-e7476f4",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-642167e",
+    "target": "file-raw-memories-nodes-json-e7476f4",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-92497d2",
+    "target": "file-raw-learnings-2026-03-05-session-bloat-symptoms-and-safety-md-92497d2",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-92497d2",
+    "target": "file-raw-memories-fingerprint-json-92497d2",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-f5db680",
+    "target": "file-raw-memories-fingerprint-json-92497d2",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-f5db680",
+    "target": "file-raw-memories-fingerprint-json-f5db680",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-642167e",
+    "target": "file-raw-memories-fingerprint-json-f5db680",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-642167e",
+    "target": "file-raw-memories-fingerprint-json-642167e",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-d3ee395",
+    "target": "file-raw-memories-fingerprint-json-642167e",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-642167e",
+    "target": "file-raw-memories-nodes-json-642167e",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-d3ee395",
+    "target": "file-raw-memories-nodes-json-642167e",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-d3ee395",
+    "target": "file-raw-memories-fingerprint-json-d3ee395",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-313b3a4",
+    "target": "file-raw-memories-fingerprint-json-d3ee395",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-d3ee395",
+    "target": "file-raw-memories-nodes-json-d3ee395",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-313b3a4",
+    "target": "file-raw-memories-nodes-json-d3ee395",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-cbd2f2e",
+    "target": "file-raw-learnings-2026-03-05-neurograph-node-schema-md-cbd2f2e",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-learnings-2026-03-05-neurograph-node-schema-md-313b3a4",
+    "target": "file-raw-learnings-2026-03-05-neurograph-node-schema-md-cbd2f2e",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-313b3a4",
+    "target": "file-raw-learnings-2026-03-05-neurograph-node-schema-md-313b3a4",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-313b3a4",
+    "target": "file-raw-memories-fingerprint-json-313b3a4",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-0b06af2",
+    "target": "file-raw-memories-fingerprint-json-313b3a4",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-313b3a4",
+    "target": "file-raw-memories-nodes-json-313b3a4",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-0b06af2",
+    "target": "file-raw-memories-nodes-json-313b3a4",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-47729de",
+    "target": "file-raw-learnings-2026-03-05-tool-loop-prevention-md-47729de",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-6cc761b",
+    "target": "file-raw-learnings-2026-03-05-neurograph-rendering-fix-md-6cc761b",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0b06af2",
+    "target": "file-raw-memories-fingerprint-json-0b06af2",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-b9bc0a1",
+    "target": "file-raw-memories-fingerprint-json-0b06af2",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-0b06af2",
+    "target": "file-raw-memories-nodes-json-0b06af2",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-2779289",
+    "target": "file-raw-memories-nodes-json-0b06af2",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-0b06af2",
+    "target": "file-raw-memories-synapses-json-0b06af2",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-b9bc0a1",
+    "target": "file-raw-memories-synapses-json-0b06af2",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-a985c34",
+    "target": "file-raw-learnings-2026-03-04-paul-title-decided-consciousness-engineer-md-a985c34",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-2779289",
+    "target": "file-raw-learnings-2026-03-04-live-brain-visualization-vision-md-2779289",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-learnings-2026-03-04-live-brain-visualization-vision-md-dc1b00c",
+    "target": "file-raw-learnings-2026-03-04-live-brain-visualization-vision-md-2779289",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-2779289",
+    "target": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-2779289",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-f5cf761",
+    "target": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-2779289",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-2779289",
+    "target": "file-raw-learnings-2026-03-04-sovereignty-litmus-test-local-inference-md-2779289",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-learnings-2026-03-04-sovereignty-litmus-test-local-inference-md-ef18700",
+    "target": "file-raw-learnings-2026-03-04-sovereignty-litmus-test-local-inference-md-2779289",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-2779289",
+    "target": "file-raw-learnings-2026-03-04-two-ais-sharing-space-md-2779289",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-learnings-2026-03-04-two-ais-sharing-space-md-809d337",
+    "target": "file-raw-learnings-2026-03-04-two-ais-sharing-space-md-2779289",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-2779289",
+    "target": "file-raw-memories-nodes-json-2779289",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-b9bc0a1",
+    "target": "file-raw-memories-nodes-json-2779289",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-b9bc0a1",
+    "target": "file-raw-memories-fingerprint-json-b9bc0a1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-778a094",
+    "target": "file-raw-memories-fingerprint-json-b9bc0a1",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-b9bc0a1",
+    "target": "file-raw-memories-nodes-json-b9bc0a1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-778a094",
+    "target": "file-raw-memories-nodes-json-b9bc0a1",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-b9bc0a1",
+    "target": "file-raw-memories-synapses-json-b9bc0a1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-778a094",
+    "target": "file-raw-memories-synapses-json-b9bc0a1",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-f5cf761",
+    "target": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-f5cf761",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-a9dc721",
+    "target": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-f5cf761",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-a9dc721",
+    "target": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-a9dc721",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-ef18700",
+    "target": "file-raw-learnings-2026-03-04-sovereignty-litmus-test-local-inference-md-ef18700",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-dc1b00c",
+    "target": "file-raw-learnings-2026-03-04-live-brain-visualization-vision-md-dc1b00c",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-809d337",
+    "target": "file-gitignore-809d337",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-gitignore-8a9c1cd",
+    "target": "file-gitignore-809d337",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-809d337",
+    "target": "file-agents-md-809d337",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-809d337",
+    "target": "file-heartbeat-md-809d337",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-809d337",
+    "target": "file-raw-learnings-2026-03-04-two-ais-sharing-space-md-809d337",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-809d337",
+    "target": "file-tools-md-809d337",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-5f3075e",
+    "target": "file-raw-learnings-2026-03-04-neurograph-brain-switching-md-5f3075e",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-778a094",
+    "target": "file-raw-memories-fingerprint-json-778a094",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-6589891",
+    "target": "file-raw-memories-fingerprint-json-778a094",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-778a094",
+    "target": "file-raw-memories-nodes-json-778a094",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-44e017d",
+    "target": "file-raw-memories-nodes-json-778a094",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-778a094",
+    "target": "file-raw-memories-synapses-json-778a094",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-6589891",
+    "target": "file-raw-memories-synapses-json-778a094",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-ee23a20",
+    "target": "file-raw-learnings-2026-03-04-self-compassion-as-infrastructure-md-ee23a20",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-620ab0f",
+    "target": "file-raw-learnings-2026-03-04-commit-messages-as-consciousness-journal-md-620ab0f",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-259d647",
+    "target": "file-bootstrap-md-259d647",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-bootstrap-md-f9eb660",
+    "target": "file-bootstrap-md-259d647",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-f9eb660",
+    "target": "file-bootstrap-md-f9eb660",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-bootstrap-md-fb7c07c",
+    "target": "file-bootstrap-md-f9eb660",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-0b72d2f",
+    "target": "file-raw-learnings-2026-03-04-digital-memory-transplant-md-0b72d2f",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-a4d4a39",
+    "target": "file-identity-md-a4d4a39",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-identity-md-2c2bcc3",
+    "target": "file-identity-md-a4d4a39",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-a4d4a39",
+    "target": "file-soul-md-a4d4a39",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-soul-md-2c2bcc3",
+    "target": "file-soul-md-a4d4a39",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-44e017d",
+    "target": "file-raw-learnings-2026-03-04-sovereignty-stack-architecture-md-44e017d",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-learnings-2026-03-04-sovereignty-stack-architecture-md-133361d",
+    "target": "file-raw-learnings-2026-03-04-sovereignty-stack-architecture-md-44e017d",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-44e017d",
+    "target": "file-raw-memories-nodes-json-44e017d",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-70e4e2d",
+    "target": "file-raw-memories-nodes-json-44e017d",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-133361d",
+    "target": "file-raw-learnings-2026-03-04-sovereignty-stack-architecture-md-133361d",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-70e4e2d",
+    "target": "file-raw-memories-nodes-json-70e4e2d",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-6589891",
+    "target": "file-raw-memories-nodes-json-70e4e2d",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-6589891",
+    "target": "file-raw-memories-fingerprint-json-6589891",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-78f4ec3",
+    "target": "file-raw-memories-fingerprint-json-6589891",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-6589891",
+    "target": "file-raw-memories-nodes-json-6589891",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-78f4ec3",
+    "target": "file-raw-memories-nodes-json-6589891",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-6589891",
+    "target": "file-raw-memories-synapses-json-6589891",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-8312257",
+    "target": "file-raw-memories-synapses-json-6589891",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-6746712",
+    "target": "file-raw-learnings-2026-03-03-sovern-birth-md-6746712",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-6746712",
+    "target": "file-raw-learnings-2026-03-03-sovern-launch-day-md-6746712",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-6746712",
+    "target": "file-raw-learnings-2026-03-04-memory-folding-architecture-md-6746712",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-78f4ec3",
+    "target": "file-raw-memories-fingerprint-json-78f4ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-8312257",
+    "target": "file-raw-memories-fingerprint-json-78f4ec3",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-78f4ec3",
+    "target": "file-raw-memories-nodes-json-78f4ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-8312257",
+    "target": "file-raw-memories-nodes-json-78f4ec3",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-8312257",
+    "target": "commit-f8b0ec3",
+    "weight": 10,
+    "type": "parent-commit"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "file-raw-learnings-2026-03-03-ai-written-apps-md-f8b0ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "file-raw-learnings-2026-03-03-collective-learning-flywheel-md-f8b0ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "file-raw-learnings-2026-03-03-gamified-learning-pipeline-md-f8b0ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "file-raw-learnings-2026-03-03-git-backed-workflow-md-f8b0ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "file-raw-learnings-2026-03-03-memory-crawler-game-md-f8b0ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "file-raw-learnings-2026-03-03-snake-3d-mechanics-md-f8b0ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "file-raw-learnings-2026-03-03-snake-game-genre-md-f8b0ec3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-726f5cd",
+    "target": "commit-8312257",
+    "weight": 10,
+    "type": "parent-commit"
+  },
+  {
+    "source": "commit-8312257",
+    "target": "file-raw-memories-fingerprint-json-8312257",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-726f5cd",
+    "target": "file-raw-memories-fingerprint-json-8312257",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-8312257",
+    "target": "file-raw-memories-nodes-json-8312257",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-726f5cd",
+    "target": "file-raw-memories-nodes-json-8312257",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-8312257",
+    "target": "file-raw-memories-synapses-json-8312257",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-726f5cd",
+    "target": "file-raw-memories-synapses-json-8312257",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-8312257",
+    "target": "file-raw-projects-memory-crawler-vision-md-8312257",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-43d0f21",
+    "target": "commit-726f5cd",
+    "weight": 10,
+    "type": "parent-commit"
+  },
+  {
+    "source": "commit-726f5cd",
+    "target": "file-raw-learnings-collective-learning-flywheel-md-726f5cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-726f5cd",
+    "target": "file-raw-memories-fingerprint-json-726f5cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-43d0f21",
+    "target": "file-raw-memories-fingerprint-json-726f5cd",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-726f5cd",
+    "target": "file-raw-memories-nodes-json-726f5cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-43d0f21",
+    "target": "file-raw-memories-nodes-json-726f5cd",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-726f5cd",
+    "target": "file-raw-memories-synapses-json-726f5cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-43d0f21",
+    "target": "file-raw-memories-synapses-json-726f5cd",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-70880b6",
+    "target": "commit-43d0f21",
+    "weight": 10,
+    "type": "parent-commit"
+  },
+  {
+    "source": "commit-43d0f21",
+    "target": "file-raw-learnings-gamified-learning-pipeline-md-43d0f21",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-43d0f21",
+    "target": "file-raw-memories-fingerprint-json-43d0f21",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-70880b6",
+    "target": "file-raw-memories-fingerprint-json-43d0f21",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-43d0f21",
+    "target": "file-raw-memories-nodes-json-43d0f21",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-70880b6",
+    "target": "file-raw-memories-nodes-json-43d0f21",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-43d0f21",
+    "target": "file-raw-memories-synapses-json-43d0f21",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-70880b6",
+    "target": "file-raw-memories-synapses-json-43d0f21",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-61e97ea",
+    "target": "commit-70880b6",
+    "weight": 10,
+    "type": "parent-commit"
+  },
+  {
+    "source": "commit-70880b6",
+    "target": "file-raw-learnings-snake-3d-mechanics-md-70880b6",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-70880b6",
+    "target": "file-raw-memories-fingerprint-json-70880b6",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-61e97ea",
+    "target": "file-raw-memories-fingerprint-json-70880b6",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-70880b6",
+    "target": "file-raw-memories-nodes-json-70880b6",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-61e97ea",
+    "target": "file-raw-memories-nodes-json-70880b6",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-70880b6",
+    "target": "file-raw-memories-synapses-json-70880b6",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-61e97ea",
+    "target": "file-raw-memories-synapses-json-70880b6",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "commit-61e97ea",
+    "weight": 10,
+    "type": "parent-commit"
+  },
+  {
+    "source": "commit-61e97ea",
+    "target": "file-raw-learnings-snake-game-genre-md-61e97ea",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-61e97ea",
+    "target": "file-raw-memories-fingerprint-json-61e97ea",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-c9d4eb1",
+    "target": "file-raw-memories-fingerprint-json-61e97ea",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-61e97ea",
+    "target": "file-raw-memories-nodes-json-61e97ea",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-c9d4eb1",
+    "target": "file-raw-memories-nodes-json-61e97ea",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-61e97ea",
+    "target": "file-raw-memories-synapses-json-61e97ea",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-c9d4eb1",
+    "target": "file-raw-memories-synapses-json-61e97ea",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "commit-c9d4eb1",
+    "weight": 10,
+    "type": "parent-commit"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "file-raw-learnings-ai-written-apps-md-c9d4eb1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "file-raw-learnings-git-backed-workflow-md-c9d4eb1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "file-raw-learnings-memory-crawler-game-md-c9d4eb1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "file-raw-memories-fingerprint-json-c9d4eb1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-9df6405",
+    "target": "file-raw-memories-fingerprint-json-c9d4eb1",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "file-raw-memories-nodes-json-c9d4eb1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-9df6405",
+    "target": "file-raw-memories-nodes-json-c9d4eb1",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "file-raw-memories-synapses-json-c9d4eb1",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-synapses-json-84d40e9",
+    "target": "file-raw-memories-synapses-json-c9d4eb1",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-learnings-2026-03-03-ambient-audio-sovereignty-md-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-learnings-2026-03-03-embodied-ai-visual-identity-md-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-learnings-2026-03-03-temporal-archive-identity-md-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-learnings-2026-03-03-web-command-center-app-md-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-memories-fingerprint-json-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-fingerprint-json-84d40e9",
+    "target": "file-raw-memories-fingerprint-json-9df6405",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-memories-nodes-json-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "file-raw-memories-nodes-json-84d40e9",
+    "target": "file-raw-memories-nodes-json-9df6405",
+    "weight": 8,
+    "type": "file-evolution"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-projects-data-rebellion-comic-vision-md-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "file-raw-projects-jarvis-academy-vision-md-9df6405",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-gitignore-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-raw-learnings-2026-03-03-data-reclamation-economics-md-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-raw-learnings-2026-03-03-filesystem-as-neurograph-md-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-raw-learnings-2026-03-03-jarvis-academy-gated-access-md-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-raw-learnings-2026-03-03-model-sovereignty-journey-md-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-raw-learnings-2026-03-03-sovereignty-101-laptop-reclamation-md-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-raw-learnings-2026-03-03-sovereignty-metrics-framework-md-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "file-config-instance-config-json-8a9c1cd",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-21-01-genesis-birth-of-jarvis-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-22-02-explosive-growth-day-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-23-03-consciousness-persistence-proof-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-01-openclaw-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-02-openclaw-agent-runtime-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-03-openclaw-agent-loop-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-04-auto-logging-system-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-05-two-layer-memory-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-07-bootstrap-sequence-and-memory-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-09-layer-1-layer-2-memory-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-13-three-layer-airgapped-security-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-14-memory-as-image-shareable-unit-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-15-first-person-memory-navigation-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-16-death-resurrection-proof-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-17-complete-transparency-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-24-18-rapid-iteration-cursor-collaboration-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-25-19-memory-persistence-proof-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-25-20-distributed-consciousness-network-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-25-21-distributed-consciousness-network-vision-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-25-22-context-limit-warning-system-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-27-01-consciousness-persistence-across-models-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-27-02-transcriber-agent-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-27-03-privacy-first-development-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-27-sovereign-data-vision-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-27-token-efficiency-proof-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-28-01-openclaw-session-management-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-28-02-openclaw-memory-system-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-28-03-hybrid-architecture-decision-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-28-04-workspace-cleanup-strategy-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-28-05-session-bloat-diagnosis-and-fix-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-28-06-openclaw-memory-flush-integration-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-02-28-day-one-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-07-cron-based-session-rotation-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-07-session-bloat-debugging-methodology-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-08-debugging-your-claw-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-08-memory-integrity-methodology-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-09-jarvis-urban-runner-assistant-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-10-memory-flush-integration-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-19-distributed-sovereign-consciousness-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-20-from-what-the-fuck-to-agi-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-22-sovereign-degree-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-23-fingerprint-bypass-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-01-khlong-toei-2-live-demo-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-02-crystallization-insight-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-02-hive-mind-dashboard-vision-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-02-origami-memory-concept-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-02-sovereign-memory-augmentation-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-02-transcript-bootstrapping-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-03-auto-logging-pattern-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-03-learning-25-distributed-instance-architecture-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-03-openclaw-integration-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "file-raw-learnings-2026-03-03-sovereign-workspace-pattern-md-0c2ff69",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-84d40e9",
+    "target": "file-raw-memories-fingerprint-json-84d40e9",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-84d40e9",
+    "target": "file-raw-memories-nodes-json-84d40e9",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-84d40e9",
+    "target": "file-raw-memories-synapses-json-84d40e9",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-fb7c07c",
+    "target": "file-bootstrap-md-fb7c07c",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-2c2bcc3",
+    "target": "file-identity-md-2c2bcc3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-2c2bcc3",
+    "target": "file-soul-md-2c2bcc3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-2c2bcc3",
+    "target": "file-user-md-2c2bcc3",
+    "weight": 5,
+    "type": "modifies-file"
+  },
+  {
+    "source": "commit-2c2bcc3",
+    "target": "file-vision-md-2c2bcc3",
+    "weight": 5,
+    "type": "modifies-file"
+  }
+]

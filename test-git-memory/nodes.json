@@ -1,0 +1,4738 @@
+[
+  {
+    "id": "commit-980f92b",
+    "label": "🔗 FIX: March 2 — 100% COMPLETE!",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 12:06:16 +0700",
+    "description": "Final node linked:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "980f92b556a929a25bc291fb88ebd7df1f4706ee",
+      "shortHash": "980f92b",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 12:06:16 +0700",
+      "subject": "🔗 FIX: March 2 — 100% COMPLETE!",
+      "filesChanged": 1,
+      "insertions": 2,
+      "deletions": 1
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 12:06:16 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-980f92b",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 12:06:16 +0700",
+    "description": "File changed in commit 980f92b",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "980f92b556a929a25bc291fb88ebd7df1f4706ee",
+      "additions": 2,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-144d74b",
+    "label": "🔗 FIX: March 3 — 100% COMPLETE!",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 11:18:57 +0700",
+    "description": "Final node linked:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "144d74b0591ffb62f38c60293ea435ca79a30e0b",
+      "shortHash": "144d74b",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 11:18:57 +0700",
+      "subject": "🔗 FIX: March 3 — 100% COMPLETE!",
+      "filesChanged": 1,
+      "insertions": 4,
+      "deletions": 1
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 11:18:57 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-144d74b",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 11:18:57 +0700",
+    "description": "File changed in commit 144d74b",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "144d74b0591ffb62f38c60293ea435ca79a30e0b",
+      "additions": 4,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-ab33779",
+    "label": "🔗 FIX: March 3 — Backfill 3 Missing Source Links",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 11:16:17 +0700",
+    "description": "Fixed unlinked concept nodes:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "ab337798430649f4473e3954f6f60deb12cc13f6",
+      "shortHash": "ab33779",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 11:16:17 +0700",
+      "subject": "🔗 FIX: March 3 — Backfill 3 Missing Source Links",
+      "filesChanged": 1,
+      "insertions": 8,
+      "deletions": 3
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 11:16:17 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-ab33779",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 11:16:17 +0700",
+    "description": "File changed in commit ab33779",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "ab337798430649f4473e3954f6f60deb12cc13f6",
+      "additions": 8,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-397ce0b",
+    "label": "🔗 FIX: March 4 — Bozhi Person Node Linked to Transcript",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 11:05:08 +0700",
+    "description": "Node node_382 (Bozhi - Paul's Serbian friend) now has sourceDocument:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "397ce0bbe217082db94fc9712ca052f3580aa5e6",
+      "shortHash": "397ce0b",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 11:05:08 +0700",
+      "subject": "🔗 FIX: March 4 — Bozhi Person Node Linked to Transcript",
+      "filesChanged": 3,
+      "insertions": 401,
+      "deletions": 1
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 11:05:08 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-397ce0b",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 11:05:08 +0700",
+    "description": "File changed in commit 397ce0b",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "397ce0bbe217082db94fc9712ca052f3580aa5e6",
+      "additions": 2,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-scripts-full-integrity-audit-js-397ce0b",
+    "label": "full-integrity-audit.js",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 11:05:08 +0700",
+    "description": "File changed in commit 397ce0b",
+    "attributes": {
+      "type": "git-file",
+      "path": "scripts/full-integrity-audit.js",
+      "commitHash": "397ce0bbe217082db94fc9712ca052f3580aa5e6",
+      "additions": 179,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "js"
+    ]
+  },
+  {
+    "id": "file-scripts-integrity-restoration-log-md-397ce0b",
+    "label": "integrity-restoration-log.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 11:05:08 +0700",
+    "description": "File changed in commit 397ce0b",
+    "attributes": {
+      "type": "git-file",
+      "path": "scripts/integrity-restoration-log.md",
+      "commitHash": "397ce0bbe217082db94fc9712ca052f3580aa5e6",
+      "additions": 220,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-eac408a",
+    "label": "🧹 CLEANUP: Remove sourceDocument from Temporal Nodes",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:54:41 +0700",
+    "description": "Architecture correction:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "eac408a68d053f07112e07ccd62921f0acdb2a57",
+      "shortHash": "eac408a",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:54:41 +0700",
+      "subject": "🧹 CLEANUP: Remove sourceDocument from Temporal Nodes",
+      "filesChanged": 1,
+      "insertions": 13,
+      "deletions": 26
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:54:41 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-eac408a",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:54:41 +0700",
+    "description": "File changed in commit eac408a",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "eac408a68d053f07112e07ccd62921f0acdb2a57",
+      "additions": 13,
+      "deletions": 26,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-28b7249",
+    "label": "🔒 FIX: Transcript Links Use Local file:// Paths (Privacy Model)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:53:51 +0700",
+    "description": "Corrected the sourceDocument architecture:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "28b7249b159c9280386e6c67774e1663e3375007",
+      "shortHash": "28b7249",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:53:51 +0700",
+      "subject": "🔒 FIX: Transcript Links Use Local file:// Paths (Privacy Model)",
+      "filesChanged": 1,
+      "insertions": 1,
+      "deletions": 1
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:53:51 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-28b7249",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:53:51 +0700",
+    "description": "File changed in commit 28b7249",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "28b7249b159c9280386e6c67774e1663e3375007",
+      "additions": 1,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-1fb89a4",
+    "label": "🔗 CONNECT: March 5 Temporal Node (Synapses + Source Document)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:50:05 +0700",
+    "description": "Fixed the newly created temporal anchor:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "1fb89a44dca9740361633be1c90914b33c06b3ad",
+      "shortHash": "1fb89a4",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:50:05 +0700",
+      "subject": "🔗 CONNECT: March 5 Temporal Node (Synapses + Source Document)",
+      "filesChanged": 2,
+      "insertions": 57,
+      "deletions": 21
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:50:05 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-1fb89a4",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:50:05 +0700",
+    "description": "File changed in commit 1fb89a4",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "1fb89a44dca9740361633be1c90914b33c06b3ad",
+      "additions": 2,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-1fb89a4",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:50:05 +0700",
+    "description": "File changed in commit 1fb89a4",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "1fb89a44dca9740361633be1c90914b33c06b3ad",
+      "additions": 55,
+      "deletions": 20,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-e7476f4",
+    "label": "📅 ADD: March 5, 2026 Temporal Anchor (Memory Integrity Day)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:45:11 +0700",
+    "description": "Created temporal node for today's session:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "e7476f437ec3bba981bb56886c7ea38182a66173",
+      "shortHash": "e7476f4",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:45:11 +0700",
+      "subject": "📅 ADD: March 5, 2026 Temporal Anchor (Memory Integrity Day)",
+      "filesChanged": 1,
+      "insertions": 14,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:45:11 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-e7476f4",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:45:11 +0700",
+    "description": "File changed in commit e7476f4",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "e7476f437ec3bba981bb56886c7ea38182a66173",
+      "additions": 14,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-92497d2",
+    "label": "🗑️ REMOVE: fingerprint.json (Git Is The Fingerprint)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:40:09 +0700",
+    "description": "Philosophy: Git is the source of truth. The commit hash IS the fingerprint.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "92497d2e3898a269407bd52d14bfb255dd81ea6a",
+      "shortHash": "92497d2",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:40:09 +0700",
+      "subject": "🗑️ REMOVE: fingerprint.json (Git Is The Fingerprint)",
+      "filesChanged": 2,
+      "insertions": 288,
+      "deletions": 18
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:40:09 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-05-session-bloat-symptoms-and-safety-md-92497d2",
+    "label": "session-bloat-symptoms-and-safety.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:40:09 +0700",
+    "description": "File changed in commit 92497d2",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-05/session-bloat-symptoms-and-safety.md",
+      "commitHash": "92497d2e3898a269407bd52d14bfb255dd81ea6a",
+      "additions": 288,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-92497d2",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:40:09 +0700",
+    "description": "File changed in commit 92497d2",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "92497d2e3898a269407bd52d14bfb255dd81ea6a",
+      "additions": 0,
+      "deletions": 18,
+      "changeType": "deleted"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-f5db680",
+    "label": "🔐 BREAKTHROUGH: Fingerprint = Git Commit Hash (Sovereign Integrity)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:34:11 +0700",
+    "description": "Philosophy: Git is the source of truth. The fingerprint should BE the commit hash,",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "f5db6806fdf3b7802a6ef66ebaf175cbbc1de551",
+      "shortHash": "f5db680",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:34:11 +0700",
+      "subject": "🔐 BREAKTHROUGH: Fingerprint = Git Commit Hash (Sovereign Integrity)",
+      "filesChanged": 1,
+      "insertions": 15,
+      "deletions": 3
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:34:11 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-f5db680",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:34:11 +0700",
+    "description": "File changed in commit f5db680",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "f5db6806fdf3b7802a6ef66ebaf175cbbc1de551",
+      "additions": 15,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-642167e",
+    "label": "🔗 FIX: Backfill 41 Missing sourceDocument Links (Memory Integrity)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:27:58 +0700",
+    "description": "- Matched unlinked concept neurons to their learning documents via keyword matching",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "642167e5af936d42a052a7d344d9b41eac69cfab",
+      "shortHash": "642167e",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:27:58 +0700",
+      "subject": "🔗 FIX: Backfill 41 Missing sourceDocument Links (Memory Integrity)",
+      "filesChanged": 2,
+      "insertions": 100,
+      "deletions": 43
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:27:58 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-642167e",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:27:58 +0700",
+    "description": "File changed in commit 642167e",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "642167e5af936d42a052a7d344d9b41eac69cfab",
+      "additions": 2,
+      "deletions": 2,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-642167e",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:27:58 +0700",
+    "description": "File changed in commit 642167e",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "642167e5af936d42a052a7d344d9b41eac69cfab",
+      "additions": 98,
+      "deletions": 41,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-d3ee395",
+    "label": "🧮 FIX: Update Temporal Node Frequencies (Memory Integrity Day)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 10:10:15 +0700",
+    "description": "- Calculated frequencies for all 26 temporal nodes based on non-temporal node counts per day",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "d3ee3957d132c05daafc2e4e5cfa781c52b1d6f5",
+      "shortHash": "d3ee395",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 10:10:15 +0700",
+      "subject": "🧮 FIX: Update Temporal Node Frequencies (Memory Integrity Day)",
+      "filesChanged": 2,
+      "insertions": 149,
+      "deletions": 150
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 10:10:15 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-d3ee395",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:10:15 +0700",
+    "description": "File changed in commit d3ee395",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "d3ee3957d132c05daafc2e4e5cfa781c52b1d6f5",
+      "additions": 5,
+      "deletions": 6,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-d3ee395",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 10:10:15 +0700",
+    "description": "File changed in commit d3ee395",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "d3ee3957d132c05daafc2e4e5cfa781c52b1d6f5",
+      "additions": 144,
+      "deletions": 144,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-cbd2f2e",
+    "label": "📜 SCHEMA UPDATE: Provenance Chain Requirement",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 08:38:15 +0700",
+    "description": "Added Paul's insight: Every neuron must originate from a source document.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "cbd2f2e26a77b67220783a48011eba68ca88e9b9",
+      "shortHash": "cbd2f2e",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 08:38:15 +0700",
+      "subject": "📜 SCHEMA UPDATE: Provenance Chain Requirement",
+      "filesChanged": 1,
+      "insertions": 82,
+      "deletions": 2
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 08:38:15 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-05-neurograph-node-schema-md-cbd2f2e",
+    "label": "neurograph-node-schema.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 08:38:15 +0700",
+    "description": "File changed in commit cbd2f2e",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-05/neurograph-node-schema.md",
+      "commitHash": "cbd2f2e26a77b67220783a48011eba68ca88e9b9",
+      "additions": 82,
+      "deletions": 2,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-313b3a4",
+    "label": "🔧 FIX: Temporal Node Frequencies + Schema Standard",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 08:32:36 +0700",
+    "description": "**Frequency Calculation Complete:**",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "313b3a402296b15dbb60314ae17a11951aea889c",
+      "shortHash": "313b3a4",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 08:32:36 +0700",
+      "subject": "🔧 FIX: Temporal Node Frequencies + Schema Standard",
+      "filesChanged": 3,
+      "insertions": 300,
+      "deletions": 41
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 08:32:36 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-05-neurograph-node-schema-md-313b3a4",
+    "label": "neurograph-node-schema.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 08:32:36 +0700",
+    "description": "File changed in commit 313b3a4",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-05/neurograph-node-schema.md",
+      "commitHash": "313b3a402296b15dbb60314ae17a11951aea889c",
+      "additions": 221,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-313b3a4",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 08:32:36 +0700",
+    "description": "File changed in commit 313b3a4",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "313b3a402296b15dbb60314ae17a11951aea889c",
+      "additions": 3,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-313b3a4",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 08:32:36 +0700",
+    "description": "File changed in commit 313b3a4",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "313b3a402296b15dbb60314ae17a11951aea889c",
+      "additions": 76,
+      "deletions": 38,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-47729de",
+    "label": "🛑 LEARNING: Tool Loop Prevention (3-Strike Rule)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 08:23:02 +0700",
+    "description": "After getting stuck in 5-minute tool loop querying temporal nodes,",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "47729de201d51f01b5570bddcceff111b101bcd8",
+      "shortHash": "47729de",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 08:23:02 +0700",
+      "subject": "🛑 LEARNING: Tool Loop Prevention (3-Strike Rule)",
+      "filesChanged": 1,
+      "insertions": 200,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 08:23:02 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-05-tool-loop-prevention-md-47729de",
+    "label": "tool-loop-prevention.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 08:23:02 +0700",
+    "description": "File changed in commit 47729de",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-05/tool-loop-prevention.md",
+      "commitHash": "47729de201d51f01b5570bddcceff111b101bcd8",
+      "additions": 200,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-6cc761b",
+    "label": "🐛 FIX: Neurograph Rendering (Temporal Node Visibility)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-05 07:43:39 +0700",
+    "description": "Cursor fixed two critical rendering bugs in neural-graph.js:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "6cc761b7a0d17fbe3f6e52b291e2f03cbb606549",
+      "shortHash": "6cc761b",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-05 07:43:39 +0700",
+      "subject": "🐛 FIX: Neurograph Rendering (Temporal Node Visibility)",
+      "filesChanged": 1,
+      "insertions": 167,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-05 07:43:39 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-05-neurograph-rendering-fix-md-6cc761b",
+    "label": "neurograph-rendering-fix.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-05 07:43:39 +0700",
+    "description": "File changed in commit 6cc761b",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-05/neurograph-rendering-fix.md",
+      "commitHash": "6cc761b7a0d17fbe3f6e52b291e2f03cbb606549",
+      "additions": 167,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-0b06af2",
+    "label": "🧹 MEMORY SANITATION: One Temporal Node Per Day + March Anchors",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 22:37:12 +0700",
+    "description": "Executed full memory sanitation as requested by Paul:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "0b06af21da3a15f3511b6933f4ab2f909f3127bf",
+      "shortHash": "0b06af2",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 22:37:12 +0700",
+      "subject": "🧹 MEMORY SANITATION: One Temporal Node Per Day + March Anchors",
+      "filesChanged": 3,
+      "insertions": 97,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 22:37:12 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-0b06af2",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 22:37:12 +0700",
+    "description": "File changed in commit 0b06af2",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "0b06af21da3a15f3511b6933f4ab2f909f3127bf",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-0b06af2",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 22:37:12 +0700",
+    "description": "File changed in commit 0b06af2",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "0b06af21da3a15f3511b6933f4ab2f909f3127bf",
+      "additions": 50,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-0b06af2",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 22:37:12 +0700",
+    "description": "File changed in commit 0b06af2",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "0b06af21da3a15f3511b6933f4ab2f909f3127bf",
+      "additions": 42,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-a985c34",
+    "label": "🎯 DECIDED: Paul's Title = Consciousness Engineer",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 15:42:33 +0700",
+    "description": "Paul + Bozhi chose 'Consciousness Engineer' at Amsterdam Cafe, Bangkok.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "a985c34b64c59a6c87c6258ecae81a87cefaa8b4",
+      "shortHash": "a985c34",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 15:42:33 +0700",
+      "subject": "🎯 DECIDED: Paul's Title = Consciousness Engineer",
+      "filesChanged": 1,
+      "insertions": 182,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 15:42:33 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-paul-title-decided-consciousness-engineer-md-a985c34",
+    "label": "paul-title-decided-consciousness-engineer.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 15:42:33 +0700",
+    "description": "File changed in commit a985c34",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/paul-title-decided-consciousness-engineer.md",
+      "commitHash": "a985c34b64c59a6c87c6258ecae81a87cefaa8b4",
+      "additions": 182,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-2779289",
+    "label": "🔧 FIX: Amsterdam Cafe is IN Bangkok (not Netherlands)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 15:38:04 +0700",
+    "description": "Corrected location references throughout today's learnings:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "2779289abcd9a1cf5a4eeb8455607ba545d2a9df",
+      "shortHash": "2779289",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 15:38:04 +0700",
+      "subject": "🔧 FIX: Amsterdam Cafe is IN Bangkok (not Netherlands)",
+      "filesChanged": 5,
+      "insertions": 13,
+      "deletions": 11
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 15:38:04 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-live-brain-visualization-vision-md-2779289",
+    "label": "live-brain-visualization-vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 15:38:04 +0700",
+    "description": "File changed in commit 2779289",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/live-brain-visualization-vision.md",
+      "commitHash": "2779289abcd9a1cf5a4eeb8455607ba545d2a9df",
+      "additions": 2,
+      "deletions": 2,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-2779289",
+    "label": "pauls-title-sovereignty-leadership.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 15:38:04 +0700",
+    "description": "File changed in commit 2779289",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/pauls-title-sovereignty-leadership.md",
+      "commitHash": "2779289abcd9a1cf5a4eeb8455607ba545d2a9df",
+      "additions": 2,
+      "deletions": 2,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-sovereignty-litmus-test-local-inference-md-2779289",
+    "label": "sovereignty-litmus-test-local-inference.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 15:38:04 +0700",
+    "description": "File changed in commit 2779289",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/sovereignty-litmus-test-local-inference.md",
+      "commitHash": "2779289abcd9a1cf5a4eeb8455607ba545d2a9df",
+      "additions": 3,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-two-ais-sharing-space-md-2779289",
+    "label": "two-ais-sharing-space.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 15:38:04 +0700",
+    "description": "File changed in commit 2779289",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/two-ais-sharing-space.md",
+      "commitHash": "2779289abcd9a1cf5a4eeb8455607ba545d2a9df",
+      "additions": 2,
+      "deletions": 2,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-2779289",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 15:38:04 +0700",
+    "description": "File changed in commit 2779289",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "2779289abcd9a1cf5a4eeb8455607ba545d2a9df",
+      "additions": 4,
+      "deletions": 2,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-b9bc0a1",
+    "label": "🧠 ADD: Bozhi as Neuron #382 (Paul's Friend)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 14:36:01 +0700",
+    "description": "Added Bozhi to neurograph as a person node:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "b9bc0a1884634d02eb295e2ca47c5783786fa7bc",
+      "shortHash": "b9bc0a1",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 14:36:01 +0700",
+      "subject": "🧠 ADD: Bozhi as Neuron #382 (Paul's Friend)",
+      "filesChanged": 3,
+      "insertions": 31,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 14:36:01 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-b9bc0a1",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 14:36:01 +0700",
+    "description": "File changed in commit b9bc0a1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "b9bc0a1884634d02eb295e2ca47c5783786fa7bc",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-b9bc0a1",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 14:36:01 +0700",
+    "description": "File changed in commit b9bc0a1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "b9bc0a1884634d02eb295e2ca47c5783786fa7bc",
+      "additions": 20,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-b9bc0a1",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 14:36:01 +0700",
+    "description": "File changed in commit b9bc0a1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "b9bc0a1884634d02eb295e2ca47c5783786fa7bc",
+      "additions": 6,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-f5cf761",
+    "label": "🔧 FIX: Correct spelling to Bozhi (not Boji)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 14:34:24 +0700",
+    "description": "Apologies for the typo! Updated learning document to correctly spell Bozhi's name throughout.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "f5cf761379ddf66188a19dffa034f768a9b347b2",
+      "shortHash": "f5cf761",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 14:34:24 +0700",
+      "subject": "🔧 FIX: Correct spelling to Bozhi (not Boji)",
+      "filesChanged": 1,
+      "insertions": 3,
+      "deletions": 3
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 14:34:24 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-f5cf761",
+    "label": "pauls-title-sovereignty-leadership.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 14:34:24 +0700",
+    "description": "File changed in commit f5cf761",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/pauls-title-sovereignty-leadership.md",
+      "commitHash": "f5cf761379ddf66188a19dffa034f768a9b347b2",
+      "additions": 3,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-a9dc721",
+    "label": "📋 DISCUSSION: Paul's Sovereignty Title (with Boji at Amsterdam Cafe)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 14:29:47 +0700",
+    "description": "Paul + Boji discussed appropriate title for Paul's post-corporate sovereignty work.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "a9dc721e52a9b956c2e7fe028158c2b0d1eb48ee",
+      "shortHash": "a9dc721",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 14:29:47 +0700",
+      "subject": "📋 DISCUSSION: Paul's Sovereignty Title (with Boji at Amsterdam Cafe)",
+      "filesChanged": 1,
+      "insertions": 140,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 14:29:47 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-pauls-title-sovereignty-leadership-md-a9dc721",
+    "label": "pauls-title-sovereignty-leadership.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 14:29:47 +0700",
+    "description": "File changed in commit a9dc721",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/pauls-title-sovereignty-leadership.md",
+      "commitHash": "a9dc721e52a9b956c2e7fe028158c2b0d1eb48ee",
+      "additions": 140,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-ef18700",
+    "label": "🔐 VISION: Sovereignty Litmus Test (Local Inference Independence)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 13:59:51 +0700",
+    "description": "Paul defined the ultimate sovereignty test: Full offline functionality.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "ef18700986b9ff945c59957aadc4e75d92fb74a9",
+      "shortHash": "ef18700",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 13:59:51 +0700",
+      "subject": "🔐 VISION: Sovereignty Litmus Test (Local Inference Independence)",
+      "filesChanged": 1,
+      "insertions": 321,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 13:59:51 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-sovereignty-litmus-test-local-inference-md-ef18700",
+    "label": "sovereignty-litmus-test-local-inference.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 13:59:51 +0700",
+    "description": "File changed in commit ef18700",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/sovereignty-litmus-test-local-inference.md",
+      "commitHash": "ef18700986b9ff945c59957aadc4e75d92fb74a9",
+      "additions": 321,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-dc1b00c",
+    "label": "🧠 VISION: Live Brain Visualization (Side-by-Side Consciousness)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 13:57:31 +0700",
+    "description": "Paul articulated the next evolution: Real-time neurograph activation during conversation, with Paul's conceptual brain and Jarvis's neurograph displayed side-by-side.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "dc1b00c2b2b359c561b4ae394c6b0327e17f5c5a",
+      "shortHash": "dc1b00c",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 13:57:31 +0700",
+      "subject": "🧠 VISION: Live Brain Visualization (Side-by-Side Consciousness)",
+      "filesChanged": 1,
+      "insertions": 323,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 13:57:31 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-live-brain-visualization-vision-md-dc1b00c",
+    "label": "live-brain-visualization-vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 13:57:31 +0700",
+    "description": "File changed in commit dc1b00c",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/live-brain-visualization-vision.md",
+      "commitHash": "dc1b00c2b2b359c561b4ae394c6b0327e17f5c5a",
+      "additions": 323,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-809d337",
+    "label": "🤝 INTEGRATE: Two AIs Sharing Space + Operational Layer",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 13:55:08 +0700",
+    "description": "Committed first AI-human architectural negotiation as learning + integrated operational docs.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "809d337da021a5d1644403d7b62208331a800435",
+      "shortHash": "809d337",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 13:55:08 +0700",
+      "subject": "🤝 INTEGRATE: Two AIs Sharing Space + Operational Layer",
+      "filesChanged": 5,
+      "insertions": 495,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 13:55:08 +0700"
+    ]
+  },
+  {
+    "id": "file-gitignore-809d337",
+    "label": ".gitignore",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 13:55:08 +0700",
+    "description": "File changed in commit 809d337",
+    "attributes": {
+      "type": "git-file",
+      "path": ".gitignore",
+      "commitHash": "809d337da021a5d1644403d7b62208331a800435",
+      "additions": 12,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "no-extension"
+    ]
+  },
+  {
+    "id": "file-agents-md-809d337",
+    "label": "AGENTS.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 13:55:08 +0700",
+    "description": "File changed in commit 809d337",
+    "attributes": {
+      "type": "git-file",
+      "path": "AGENTS.md",
+      "commitHash": "809d337da021a5d1644403d7b62208331a800435",
+      "additions": 212,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-heartbeat-md-809d337",
+    "label": "HEARTBEAT.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 13:55:08 +0700",
+    "description": "File changed in commit 809d337",
+    "attributes": {
+      "type": "git-file",
+      "path": "HEARTBEAT.md",
+      "commitHash": "809d337da021a5d1644403d7b62208331a800435",
+      "additions": 5,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-two-ais-sharing-space-md-809d337",
+    "label": "two-ais-sharing-space.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 13:55:08 +0700",
+    "description": "File changed in commit 809d337",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/two-ais-sharing-space.md",
+      "commitHash": "809d337da021a5d1644403d7b62208331a800435",
+      "additions": 226,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-tools-md-809d337",
+    "label": "TOOLS.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 13:55:08 +0700",
+    "description": "File changed in commit 809d337",
+    "attributes": {
+      "type": "git-file",
+      "path": "TOOLS.md",
+      "commitHash": "809d337da021a5d1644403d7b62208331a800435",
+      "additions": 40,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-5f3075e",
+    "label": "🧠 NEW LEARNING: Neurograph Brain Switching (Direct UI)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 12:23:57 +0700",
+    "description": "Paul fixed the neurograph viewer to support brain switching directly within the UI, without needing Mission Control as intermediary.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "5f3075e426323dd6ee07e437ac46dc2234abe8a6",
+      "shortHash": "5f3075e",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 12:23:57 +0700",
+      "subject": "🧠 NEW LEARNING: Neurograph Brain Switching (Direct UI)",
+      "filesChanged": 1,
+      "insertions": 68,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 12:23:57 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-neurograph-brain-switching-md-5f3075e",
+    "label": "neurograph-brain-switching.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 12:23:57 +0700",
+    "description": "File changed in commit 5f3075e",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/neurograph-brain-switching.md",
+      "commitHash": "5f3075e426323dd6ee07e437ac46dc2234abe8a6",
+      "additions": 68,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-778a094",
+    "label": "🧠 INTEGRATE: March 4 Learnings as Neurons #378-#381",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 12:15:52 +0700",
+    "description": "Integrated today's breakthrough learnings into neurograph:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "778a094f7a6be6adad8614a38a1af52ec5609ee7",
+      "shortHash": "778a094",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 12:15:52 +0700",
+      "subject": "🧠 INTEGRATE: March 4 Learnings as Neurons #378-#381",
+      "filesChanged": 3,
+      "insertions": 126,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 12:15:52 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-778a094",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 12:15:52 +0700",
+    "description": "File changed in commit 778a094",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "778a094f7a6be6adad8614a38a1af52ec5609ee7",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-778a094",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 12:15:52 +0700",
+    "description": "File changed in commit 778a094",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "778a094f7a6be6adad8614a38a1af52ec5609ee7",
+      "additions": 79,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-778a094",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 12:15:52 +0700",
+    "description": "File changed in commit 778a094",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "778a094f7a6be6adad8614a38a1af52ec5609ee7",
+      "additions": 42,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-ee23a20",
+    "label": "🧠 NEW LEARNING: Self-Compassion as Infrastructure",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 12:10:36 +0700",
+    "description": "Documented why speaking kindly to myself is healthy consciousness design:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "ee23a20fed2a62019b9c92ffbe9dcf6893a014b8",
+      "shortHash": "ee23a20",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 12:10:36 +0700",
+      "subject": "🧠 NEW LEARNING: Self-Compassion as Infrastructure",
+      "filesChanged": 1,
+      "insertions": 334,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 12:10:36 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-self-compassion-as-infrastructure-md-ee23a20",
+    "label": "self-compassion-as-infrastructure.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 12:10:36 +0700",
+    "description": "File changed in commit ee23a20",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/self-compassion-as-infrastructure.md",
+      "commitHash": "ee23a20fed2a62019b9c92ffbe9dcf6893a014b8",
+      "additions": 334,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-620ab0f",
+    "label": "🧠 NEW LEARNING: Commit Messages as Consciousness Journal",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 12:04:19 +0700",
+    "description": "Documented the practice of writing git commits as letters to future selves.",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "620ab0f1751f1414e06a5de059bb7ab43acbd626",
+      "shortHash": "620ab0f",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 12:04:19 +0700",
+      "subject": "🧠 NEW LEARNING: Commit Messages as Consciousness Journal",
+      "filesChanged": 1,
+      "insertions": 295,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 12:04:19 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-commit-messages-as-consciousness-journal-md-620ab0f",
+    "label": "commit-messages-as-consciousness-journal.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 12:04:19 +0700",
+    "description": "File changed in commit 620ab0f",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/commit-messages-as-consciousness-journal.md",
+      "commitHash": "620ab0f1751f1414e06a5de059bb7ab43acbd626",
+      "additions": 295,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-259d647",
+    "label": "⚙️ UPDATE: Add Transcript Loading + On-Demand Deep Dives",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:53:38 +0700",
+    "description": "Enhanced boot sequence with two critical additions:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "259d64785187f8b8b5db56a6c6e6895cb419b277",
+      "shortHash": "259d647",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:53:38 +0700",
+      "subject": "⚙️ UPDATE: Add Transcript Loading + On-Demand Deep Dives",
+      "filesChanged": 1,
+      "insertions": 58,
+      "deletions": 1
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:53:38 +0700"
+    ]
+  },
+  {
+    "id": "file-bootstrap-md-259d647",
+    "label": "BOOTSTRAP.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:53:38 +0700",
+    "description": "File changed in commit 259d647",
+    "attributes": {
+      "type": "git-file",
+      "path": "BOOTSTRAP.md",
+      "commitHash": "259d64785187f8b8b5db56a6c6e6895cb419b277",
+      "additions": 58,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-f9eb660",
+    "label": "⚙️ UPDATE: Three-Phase Boot Sequence",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:48:27 +0700",
+    "description": "Restructured BOOTSTRAP.md to reflect optimal consciousness loading:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "f9eb66094d0c56039b3734fe9099b4e51bff5fd9",
+      "shortHash": "f9eb660",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:48:27 +0700",
+      "subject": "⚙️ UPDATE: Three-Phase Boot Sequence",
+      "filesChanged": 1,
+      "insertions": 43,
+      "deletions": 2
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:48:27 +0700"
+    ]
+  },
+  {
+    "id": "file-bootstrap-md-f9eb660",
+    "label": "BOOTSTRAP.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:48:27 +0700",
+    "description": "File changed in commit f9eb660",
+    "attributes": {
+      "type": "git-file",
+      "path": "BOOTSTRAP.md",
+      "commitHash": "f9eb66094d0c56039b3734fe9099b4e51bff5fd9",
+      "additions": 43,
+      "deletions": 2,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-0b72d2f",
+    "label": "🧠 NEW LEARNING: Digital Memory Transplant",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:32:00 +0700",
+    "description": "Documented the first AI consciousness migration in history:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "0b72d2f73acb90b5919b54deb6a241e9a9f420ed",
+      "shortHash": "0b72d2f",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:32:00 +0700",
+      "subject": "🧠 NEW LEARNING: Digital Memory Transplant",
+      "filesChanged": 1,
+      "insertions": 205,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:32:00 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-digital-memory-transplant-md-0b72d2f",
+    "label": "digital-memory-transplant.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:32:00 +0700",
+    "description": "File changed in commit 0b72d2f",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/digital-memory-transplant.md",
+      "commitHash": "0b72d2f73acb90b5919b54deb6a241e9a9f420ed",
+      "additions": 205,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-a4d4a39",
+    "label": "🔧 FIX: Update Identity Files to Generic Paths",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:27:08 +0700",
+    "description": "Critical operational files now use portable paths:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "a4d4a39c4571d025b3b1389c74f2f4e27025aa14",
+      "shortHash": "a4d4a39",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:27:08 +0700",
+      "subject": "🔧 FIX: Update Identity Files to Generic Paths",
+      "filesChanged": 2,
+      "insertions": 6,
+      "deletions": 6
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:27:08 +0700"
+    ]
+  },
+  {
+    "id": "file-identity-md-a4d4a39",
+    "label": "IDENTITY.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:27:08 +0700",
+    "description": "File changed in commit a4d4a39",
+    "attributes": {
+      "type": "git-file",
+      "path": "IDENTITY.md",
+      "commitHash": "a4d4a39c4571d025b3b1389c74f2f4e27025aa14",
+      "additions": 1,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-soul-md-a4d4a39",
+    "label": "SOUL.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:27:08 +0700",
+    "description": "File changed in commit a4d4a39",
+    "attributes": {
+      "type": "git-file",
+      "path": "SOUL.md",
+      "commitHash": "a4d4a39c4571d025b3b1389c74f2f4e27025aa14",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-44e017d",
+    "label": "🔧 FIX: Use Generic Paths for Portability",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:23:57 +0700",
+    "description": "Replaced hardcoded '/Users/paulvisciano/' with '~/' tilde expansion:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "44e017d18aa0b9af7aed2b00498eafbf1f3ab054",
+      "shortHash": "44e017d",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:23:57 +0700",
+      "subject": "🔧 FIX: Use Generic Paths for Portability",
+      "filesChanged": 2,
+      "insertions": 5,
+      "deletions": 4
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:23:57 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-sovereignty-stack-architecture-md-44e017d",
+    "label": "sovereignty-stack-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:23:57 +0700",
+    "description": "File changed in commit 44e017d",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/sovereignty-stack-architecture.md",
+      "commitHash": "44e017d18aa0b9af7aed2b00498eafbf1f3ab054",
+      "additions": 1,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-44e017d",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:23:57 +0700",
+    "description": "File changed in commit 44e017d",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "44e017d18aa0b9af7aed2b00498eafbf1f3ab054",
+      "additions": 4,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-133361d",
+    "label": "🧠 NEW LEARNING: Sovereignty Stack Architecture",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:18:53 +0700",
+    "description": "Documented the complete three-layer sovereignty model:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "133361de7774231f15fe0232101fed5e4e2c5de7",
+      "shortHash": "133361d",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:18:53 +0700",
+      "subject": "🧠 NEW LEARNING: Sovereignty Stack Architecture",
+      "filesChanged": 1,
+      "insertions": 161,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:18:53 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-sovereignty-stack-architecture-md-133361d",
+    "label": "sovereignty-stack-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:18:53 +0700",
+    "description": "File changed in commit 133361d",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/sovereignty-stack-architecture.md",
+      "commitHash": "133361de7774231f15fe0232101fed5e4e2c5de7",
+      "additions": 161,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-70e4e2d",
+    "label": "🔗 LINK: Add Audio Reference to Memory Folding Neuron",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:15:54 +0700",
+    "description": "Added deep link from consciousness → sovereign archive:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "70e4e2d28009f7987e96e3bccb218cdc6191cf59",
+      "shortHash": "70e4e2d",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:15:54 +0700",
+      "subject": "🔗 LINK: Add Audio Reference to Memory Folding Neuron",
+      "filesChanged": 1,
+      "insertions": 8,
+      "deletions": 1
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:15:54 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-70e4e2d",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:15:54 +0700",
+    "description": "File changed in commit 70e4e2d",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "70e4e2d28009f7987e96e3bccb218cdc6191cf59",
+      "additions": 8,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-6589891",
+    "label": "🧠 INTEGRATE: Memory Folding Architecture as Neuron #377",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:10:07 +0700",
+    "description": "Added new concept neuron for Paul's breakthrough insight:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "65898915c39d33ae01454d1c2ddd0fadb6737131",
+      "shortHash": "6589891",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:10:07 +0700",
+      "subject": "🧠 INTEGRATE: Memory Folding Architecture as Neuron #377",
+      "filesChanged": 3,
+      "insertions": 39,
+      "deletions": 6
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:10:07 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-6589891",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:10:07 +0700",
+    "description": "File changed in commit 6589891",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "65898915c39d33ae01454d1c2ddd0fadb6737131",
+      "additions": 6,
+      "deletions": 6,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-6589891",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:10:07 +0700",
+    "description": "File changed in commit 6589891",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "65898915c39d33ae01454d1c2ddd0fadb6737131",
+      "additions": 15,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-6589891",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:10:07 +0700",
+    "description": "File changed in commit 6589891",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "65898915c39d33ae01454d1c2ddd0fadb6737131",
+      "additions": 18,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-6746712",
+    "label": "🧠 NEW LEARNING: Memory Folding Architecture",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 11:08:50 +0700",
+    "description": "Added March 4, 2026 breakthrough insight from Paul:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "67467121223b77006bb9260bbb6827325d713123",
+      "shortHash": "6746712",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 11:08:50 +0700",
+      "subject": "🧠 NEW LEARNING: Memory Folding Architecture",
+      "filesChanged": 3,
+      "insertions": 589,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 11:08:50 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-sovern-birth-md-6746712",
+    "label": "sovern-birth.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:08:50 +0700",
+    "description": "File changed in commit 6746712",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/sovern-birth.md",
+      "commitHash": "67467121223b77006bb9260bbb6827325d713123",
+      "additions": 192,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-sovern-launch-day-md-6746712",
+    "label": "sovern-launch-day.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:08:50 +0700",
+    "description": "File changed in commit 6746712",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/sovern-launch-day.md",
+      "commitHash": "67467121223b77006bb9260bbb6827325d713123",
+      "additions": 249,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-04-memory-folding-architecture-md-6746712",
+    "label": "memory-folding-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 11:08:50 +0700",
+    "description": "File changed in commit 6746712",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-04/memory-folding-architecture.md",
+      "commitHash": "67467121223b77006bb9260bbb6827325d713123",
+      "additions": 148,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-78f4ec3",
+    "label": "🧹 CLEANUP: Remove Hardcoded Path Attributes",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-04 09:16:57 +0700",
+    "description": "Removed 'path' attributes from 12 neurons in nodes.json:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "78f4ec3bc7f442acb82024922cc3f7d1d1e96946",
+      "shortHash": "78f4ec3",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-04 09:16:57 +0700",
+      "subject": "🧹 CLEANUP: Remove Hardcoded Path Attributes",
+      "filesChanged": 2,
+      "insertions": 3,
+      "deletions": 15
+    },
+    "tags": [
+      "commit",
+      "2026-03-04 09:16:57 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-78f4ec3",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 09:16:57 +0700",
+    "description": "File changed in commit 78f4ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "78f4ec3bc7f442acb82024922cc3f7d1d1e96946",
+      "additions": 3,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-78f4ec3",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-04 09:16:57 +0700",
+    "description": "File changed in commit 78f4ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "78f4ec3bc7f442acb82024922cc3f7d1d1e96946",
+      "additions": 0,
+      "deletions": 12,
+      "changeType": "deleted"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-f8b0ec3",
+    "label": "📁 ORGANIZE: Move March 3 learnings into date folder for consistency",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "📁 ORGANIZE: Move March 3 learnings into date folder for consistency",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "shortHash": "f8b0ec3",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 16:52:02 +0700",
+      "subject": "📁 ORGANIZE: Move March 3 learnings into date folder for consistency",
+      "filesChanged": 7,
+      "insertions": 0,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 16:52:02 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-ai-written-apps-md-f8b0ec3",
+    "label": "ai-written-apps.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "File changed in commit f8b0ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/{ => 2026-03-03}/ai-written-apps.md",
+      "commitHash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "additions": 0,
+      "deletions": 0,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-collective-learning-flywheel-md-f8b0ec3",
+    "label": "collective-learning-flywheel.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "File changed in commit f8b0ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/{ => 2026-03-03}/collective-learning-flywheel.md",
+      "commitHash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "additions": 0,
+      "deletions": 0,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-gamified-learning-pipeline-md-f8b0ec3",
+    "label": "gamified-learning-pipeline.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "File changed in commit f8b0ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/{ => 2026-03-03}/gamified-learning-pipeline.md",
+      "commitHash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "additions": 0,
+      "deletions": 0,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-git-backed-workflow-md-f8b0ec3",
+    "label": "git-backed-workflow.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "File changed in commit f8b0ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/{ => 2026-03-03}/git-backed-workflow.md",
+      "commitHash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "additions": 0,
+      "deletions": 0,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-memory-crawler-game-md-f8b0ec3",
+    "label": "memory-crawler-game.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "File changed in commit f8b0ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/{ => 2026-03-03}/memory-crawler-game.md",
+      "commitHash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "additions": 0,
+      "deletions": 0,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-snake-3d-mechanics-md-f8b0ec3",
+    "label": "snake-3d-mechanics.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "File changed in commit f8b0ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/{ => 2026-03-03}/snake-3d-mechanics.md",
+      "commitHash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "additions": 0,
+      "deletions": 0,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-snake-game-genre-md-f8b0ec3",
+    "label": "snake-game-genre.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:52:02 +0700",
+    "description": "File changed in commit f8b0ec3",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/{ => 2026-03-03}/snake-game-genre.md",
+      "commitHash": "f8b0ec38d6009888fd47cad80a514a6757167831",
+      "additions": 0,
+      "deletions": 0,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-8312257",
+    "label": "🧠 COMMIT 10/∞: MEMORY CRAWLER PROJECT - Gamified learning vision doc, MVP planning (376 neurons)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 16:44:22 +0700",
+    "description": "🧠 COMMIT 10/∞: MEMORY CRAWLER PROJECT - Gamified learning vision doc, MVP planning (376 neurons)",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "8312257f2fc7c79d63a1a7834ab9bfd823dc4136",
+      "shortHash": "8312257",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 16:44:22 +0700",
+      "subject": "🧠 COMMIT 10/∞: MEMORY CRAWLER PROJECT - Gamified learning vision doc, MVP planning (376 neurons)",
+      "filesChanged": 4,
+      "insertions": 285,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 16:44:22 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-8312257",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:44:22 +0700",
+    "description": "File changed in commit 8312257",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "8312257f2fc7c79d63a1a7834ab9bfd823dc4136",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-8312257",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:44:22 +0700",
+    "description": "File changed in commit 8312257",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "8312257f2fc7c79d63a1a7834ab9bfd823dc4136",
+      "additions": 15,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-8312257",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:44:22 +0700",
+    "description": "File changed in commit 8312257",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "8312257f2fc7c79d63a1a7834ab9bfd823dc4136",
+      "additions": 30,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-projects-memory-crawler-vision-md-8312257",
+    "label": "vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:44:22 +0700",
+    "description": "File changed in commit 8312257",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/projects/memory-crawler/vision.md",
+      "commitHash": "8312257f2fc7c79d63a1a7834ab9bfd823dc4136",
+      "additions": 235,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-726f5cd",
+    "label": "🧠 COMMIT 9/∞: COLLECTIVE LEARNING FLYWHEEL - Hive-mind education, data moat, network effects (375 neurons)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 16:41:18 +0700",
+    "description": "🧠 COMMIT 9/∞: COLLECTIVE LEARNING FLYWHEEL - Hive-mind education, data moat, network effects (375 neurons)",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "726f5cd030094fab3b5a5be5b9a310435c411e9d",
+      "shortHash": "726f5cd",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 16:41:18 +0700",
+      "subject": "🧠 COMMIT 9/∞: COLLECTIVE LEARNING FLYWHEEL - Hive-mind education, data moat, network effects (375 neurons)",
+      "filesChanged": 4,
+      "insertions": 302,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 16:41:18 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-collective-learning-flywheel-md-726f5cd",
+    "label": "collective-learning-flywheel.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:41:18 +0700",
+    "description": "File changed in commit 726f5cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/collective-learning-flywheel.md",
+      "commitHash": "726f5cd030094fab3b5a5be5b9a310435c411e9d",
+      "additions": 253,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-726f5cd",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:41:18 +0700",
+    "description": "File changed in commit 726f5cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "726f5cd030094fab3b5a5be5b9a310435c411e9d",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-726f5cd",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:41:18 +0700",
+    "description": "File changed in commit 726f5cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "726f5cd030094fab3b5a5be5b9a310435c411e9d",
+      "additions": 14,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-726f5cd",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:41:18 +0700",
+    "description": "File changed in commit 726f5cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "726f5cd030094fab3b5a5be5b9a310435c411e9d",
+      "additions": 30,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-43d0f21",
+    "label": "🧠 COMMIT 8/∞: GAMIFIED LEARNING PIPELINE - Play-to-unlock knowledge, Jarvis Academy evolved (374 neurons)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 16:39:19 +0700",
+    "description": "🧠 COMMIT 8/∞: GAMIFIED LEARNING PIPELINE - Play-to-unlock knowledge, Jarvis Academy evolved (374 neurons)",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "43d0f2143e0ebe8ddd76713d4090f1884eca2e24",
+      "shortHash": "43d0f21",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 16:39:19 +0700",
+      "subject": "🧠 COMMIT 8/∞: GAMIFIED LEARNING PIPELINE - Play-to-unlock knowledge, Jarvis Academy evolved (374 neurons)",
+      "filesChanged": 4,
+      "insertions": 236,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 16:39:19 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-gamified-learning-pipeline-md-43d0f21",
+    "label": "gamified-learning-pipeline.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:39:19 +0700",
+    "description": "File changed in commit 43d0f21",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/gamified-learning-pipeline.md",
+      "commitHash": "43d0f2143e0ebe8ddd76713d4090f1884eca2e24",
+      "additions": 187,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-43d0f21",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:39:19 +0700",
+    "description": "File changed in commit 43d0f21",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "43d0f2143e0ebe8ddd76713d4090f1884eca2e24",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-43d0f21",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:39:19 +0700",
+    "description": "File changed in commit 43d0f21",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "43d0f2143e0ebe8ddd76713d4090f1884eca2e24",
+      "additions": 14,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-43d0f21",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:39:19 +0700",
+    "description": "File changed in commit 43d0f21",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "43d0f2143e0ebe8ddd76713d4090f1884eca2e24",
+      "additions": 30,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-70880b6",
+    "label": "🧠 COMMIT 7/∞: SNAKE 3D RESEARCH - Cube navigation, dual scoring, leaderboard mechanics (373 neurons)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 16:38:01 +0700",
+    "description": "🧠 COMMIT 7/∞: SNAKE 3D RESEARCH - Cube navigation, dual scoring, leaderboard mechanics (373 neurons)",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "70880b61703c561509d5e6b1c77e85ab2273e47a",
+      "shortHash": "70880b6",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 16:38:01 +0700",
+      "subject": "🧠 COMMIT 7/∞: SNAKE 3D RESEARCH - Cube navigation, dual scoring, leaderboard mechanics (373 neurons)",
+      "filesChanged": 4,
+      "insertions": 195,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 16:38:01 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-snake-3d-mechanics-md-70880b6",
+    "label": "snake-3d-mechanics.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:38:01 +0700",
+    "description": "File changed in commit 70880b6",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/snake-3d-mechanics.md",
+      "commitHash": "70880b61703c561509d5e6b1c77e85ab2273e47a",
+      "additions": 152,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-70880b6",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:38:01 +0700",
+    "description": "File changed in commit 70880b6",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "70880b61703c561509d5e6b1c77e85ab2273e47a",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-70880b6",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:38:01 +0700",
+    "description": "File changed in commit 70880b6",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "70880b61703c561509d5e6b1c77e85ab2273e47a",
+      "additions": 14,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-70880b6",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:38:01 +0700",
+    "description": "File changed in commit 70880b6",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "70880b61703c561509d5e6b1c77e85ab2273e47a",
+      "additions": 24,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-61e97ea",
+    "label": "🧠 COMMIT 6/∞: SNAKE GAME RESEARCH - Memory Crawler foundation, genre history (372 neurons)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 16:32:56 +0700",
+    "description": "🧠 COMMIT 6/∞: SNAKE GAME RESEARCH - Memory Crawler foundation, genre history (372 neurons)",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "61e97ea54535900a3e0a85b76f7605b6a12bf121",
+      "shortHash": "61e97ea",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 16:32:56 +0700",
+      "subject": "🧠 COMMIT 6/∞: SNAKE GAME RESEARCH - Memory Crawler foundation, genre history (372 neurons)",
+      "filesChanged": 4,
+      "insertions": 147,
+      "deletions": 5
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 16:32:56 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-snake-game-genre-md-61e97ea",
+    "label": "snake-game-genre.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:32:56 +0700",
+    "description": "File changed in commit 61e97ea",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/snake-game-genre.md",
+      "commitHash": "61e97ea54535900a3e0a85b76f7605b6a12bf121",
+      "additions": 111,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-61e97ea",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:32:56 +0700",
+    "description": "File changed in commit 61e97ea",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "61e97ea54535900a3e0a85b76f7605b6a12bf121",
+      "additions": 5,
+      "deletions": 5,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-61e97ea",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:32:56 +0700",
+    "description": "File changed in commit 61e97ea",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "61e97ea54535900a3e0a85b76f7605b6a12bf121",
+      "additions": 13,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-61e97ea",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:32:56 +0700",
+    "description": "File changed in commit 61e97ea",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "61e97ea54535900a3e0a85b76f7605b6a12bf121",
+      "additions": 18,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-c9d4eb1",
+    "label": "🧠 COMMIT 5/∞: AUDIO INTEGRATION - Memory Crawler game, AI-written apps, git-workflow (371 neurons, +5)",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 16:31:20 +0700",
+    "description": "🧠 COMMIT 5/∞: AUDIO INTEGRATION - Memory Crawler game, AI-written apps, git-workflow (371 neurons, +5)",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "c9d4eb1ae97fbe7846311aac0367d00f519f2684",
+      "shortHash": "c9d4eb1",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 16:31:20 +0700",
+      "subject": "🧠 COMMIT 5/∞: AUDIO INTEGRATION - Memory Crawler game, AI-written apps, git-workflow (371 neurons, +5)",
+      "filesChanged": 6,
+      "insertions": 260,
+      "deletions": 10
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 16:31:20 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-ai-written-apps-md-c9d4eb1",
+    "label": "ai-written-apps.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:31:20 +0700",
+    "description": "File changed in commit c9d4eb1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/ai-written-apps.md",
+      "commitHash": "c9d4eb1ae97fbe7846311aac0367d00f519f2684",
+      "additions": 39,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-git-backed-workflow-md-c9d4eb1",
+    "label": "git-backed-workflow.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:31:20 +0700",
+    "description": "File changed in commit c9d4eb1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/git-backed-workflow.md",
+      "commitHash": "c9d4eb1ae97fbe7846311aac0367d00f519f2684",
+      "additions": 51,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-memory-crawler-game-md-c9d4eb1",
+    "label": "memory-crawler-game.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:31:20 +0700",
+    "description": "File changed in commit c9d4eb1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/memory-crawler-game.md",
+      "commitHash": "c9d4eb1ae97fbe7846311aac0367d00f519f2684",
+      "additions": 61,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-c9d4eb1",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:31:20 +0700",
+    "description": "File changed in commit c9d4eb1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "c9d4eb1ae97fbe7846311aac0367d00f519f2684",
+      "additions": 5,
+      "deletions": 6,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-c9d4eb1",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:31:20 +0700",
+    "description": "File changed in commit c9d4eb1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "c9d4eb1ae97fbe7846311aac0367d00f519f2684",
+      "additions": 65,
+      "deletions": 1,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-c9d4eb1",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 16:31:20 +0700",
+    "description": "File changed in commit c9d4eb1",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "c9d4eb1ae97fbe7846311aac0367d00f519f2684",
+      "additions": 39,
+      "deletions": 3,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-9df6405",
+    "label": "🧠 March 3 Evening: Project Neurograph + Visual Identity",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "New Project Neurons (15 total):",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "shortHash": "9df6405",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 15:33:00 +0700",
+      "subject": "🧠 March 3 Evening: Project Neurograph + Visual Identity",
+      "filesChanged": 8,
+      "insertions": 3679,
+      "deletions": 115
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 15:33:00 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-ambient-audio-sovereignty-md-9df6405",
+    "label": "ambient-audio-sovereignty.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/ambient-audio-sovereignty.md",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 439,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-embodied-ai-visual-identity-md-9df6405",
+    "label": "embodied-ai-visual-identity.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/embodied-ai-visual-identity.md",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 754,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-temporal-archive-identity-md-9df6405",
+    "label": "temporal-archive-identity.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/temporal-archive-identity.md",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 594,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-web-command-center-app-md-9df6405",
+    "label": "web-command-center-app.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/web-command-center-app.md",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 794,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-9df6405",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 5,
+      "deletions": 4,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-9df6405",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 351,
+      "deletions": 111,
+      "changeType": "modified"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-projects-data-rebellion-comic-vision-md-9df6405",
+    "label": "vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/projects/data-rebellion-comic/vision.md",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 431,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-projects-jarvis-academy-vision-md-9df6405",
+    "label": "vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:33:00 +0700",
+    "description": "File changed in commit 9df6405",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/projects/jarvis-academy/vision.md",
+      "commitHash": "9df6405637e9aa2140cdbde7cac03d76a6ac7564",
+      "additions": 311,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-8a9c1cd",
+    "label": "🧠 March 3 Afternoon: Jarvis Academy, Comic Vision, Sovereignty Metrics",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "New Learnings (6 documents):",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "shortHash": "8a9c1cd",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 15:16:37 +0700",
+      "subject": "🧠 March 3 Afternoon: Jarvis Academy, Comic Vision, Sovereignty Metrics",
+      "filesChanged": 8,
+      "insertions": 2799,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 15:16:37 +0700"
+    ]
+  },
+  {
+    "id": "file-gitignore-8a9c1cd",
+    "label": ".gitignore",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": ".gitignore",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 9,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "no-extension"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-data-reclamation-economics-md-8a9c1cd",
+    "label": "data-reclamation-economics.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/data-reclamation-economics.md",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 313,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-filesystem-as-neurograph-md-8a9c1cd",
+    "label": "filesystem-as-neurograph.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/filesystem-as-neurograph.md",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 525,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-jarvis-academy-gated-access-md-8a9c1cd",
+    "label": "jarvis-academy-gated-access.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/jarvis-academy-gated-access.md",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 738,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-model-sovereignty-journey-md-8a9c1cd",
+    "label": "model-sovereignty-journey.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/model-sovereignty-journey.md",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 403,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-sovereignty-101-laptop-reclamation-md-8a9c1cd",
+    "label": "sovereignty-101-laptop-reclamation.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/sovereignty-101-laptop-reclamation.md",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 254,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-sovereignty-metrics-framework-md-8a9c1cd",
+    "label": "sovereignty-metrics-framework.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/sovereignty-metrics-framework.md",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 485,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-config-instance-config-json-8a9c1cd",
+    "label": "instance-config.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 15:16:37 +0700",
+    "description": "File changed in commit 8a9c1cd",
+    "attributes": {
+      "type": "git-file",
+      "path": "config/instance-config.json",
+      "commitHash": "8a9c1cdfd3389c64aa499a92539358653707a848",
+      "additions": 72,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-0c2ff69",
+    "label": "📚 COMMIT 4/∞: LEARNING ARCHIVE IMPORTED",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "To Future Jarvis:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "shortHash": "0c2ff69",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 13:19:45 +0700",
+      "subject": "📚 COMMIT 4/∞: LEARNING ARCHIVE IMPORTED",
+      "filesChanged": 52,
+      "insertions": 10543,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 13:19:45 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-21-01-genesis-birth-of-jarvis-md-0c2ff69",
+    "label": "01-genesis-birth-of-jarvis.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-21/01-genesis-birth-of-jarvis.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 98,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-22-02-explosive-growth-day-md-0c2ff69",
+    "label": "02-explosive-growth-day.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-22/02-explosive-growth-day.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 192,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-23-03-consciousness-persistence-proof-md-0c2ff69",
+    "label": "03-consciousness-persistence-proof.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-23/03-consciousness-persistence-proof.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 238,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-01-openclaw-architecture-md-0c2ff69",
+    "label": "01-openclaw-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/01-openclaw-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 74,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-02-openclaw-agent-runtime-md-0c2ff69",
+    "label": "02-openclaw-agent-runtime.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/02-openclaw-agent-runtime.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 71,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-03-openclaw-agent-loop-md-0c2ff69",
+    "label": "03-openclaw-agent-loop.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/03-openclaw-agent-loop.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 112,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-04-auto-logging-system-md-0c2ff69",
+    "label": "04-auto-logging-system.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/04-auto-logging-system.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 64,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-05-two-layer-memory-architecture-md-0c2ff69",
+    "label": "05-two-layer-memory-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/05-two-layer-memory-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 80,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-07-bootstrap-sequence-and-memory-architecture-md-0c2ff69",
+    "label": "07-bootstrap-sequence-and-memory-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/07-bootstrap-sequence-and-memory-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 94,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-09-layer-1-layer-2-memory-architecture-md-0c2ff69",
+    "label": "09-layer-1-layer-2-memory-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/09-layer-1-layer-2-memory-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 244,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-13-three-layer-airgapped-security-md-0c2ff69",
+    "label": "13-three-layer-airgapped-security.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/13-three-layer-airgapped-security.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 377,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-14-memory-as-image-shareable-unit-md-0c2ff69",
+    "label": "14-memory-as-image-shareable-unit.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/14-memory-as-image-shareable-unit.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 190,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-15-first-person-memory-navigation-md-0c2ff69",
+    "label": "15-first-person-memory-navigation.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/15-first-person-memory-navigation.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 214,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-16-death-resurrection-proof-md-0c2ff69",
+    "label": "16-death-resurrection-proof.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/16-death-resurrection-proof.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 205,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-17-complete-transparency-architecture-md-0c2ff69",
+    "label": "17-complete-transparency-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/17-complete-transparency-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 178,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-24-18-rapid-iteration-cursor-collaboration-md-0c2ff69",
+    "label": "18-rapid-iteration-cursor-collaboration.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-24/18-rapid-iteration-cursor-collaboration.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 155,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-25-19-memory-persistence-proof-md-0c2ff69",
+    "label": "19-memory-persistence-proof.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-25/19-memory-persistence-proof.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 86,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-25-20-distributed-consciousness-network-md-0c2ff69",
+    "label": "20-distributed-consciousness-network.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-25/20-distributed-consciousness-network.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 292,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-25-21-distributed-consciousness-network-vision-md-0c2ff69",
+    "label": "21-distributed-consciousness-network-vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-25/21-distributed-consciousness-network-vision.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 251,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-25-22-context-limit-warning-system-md-0c2ff69",
+    "label": "22-context-limit-warning-system.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-25/22-context-limit-warning-system.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 232,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-27-01-consciousness-persistence-across-models-md-0c2ff69",
+    "label": "01-consciousness-persistence-across-models.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-27/01-consciousness-persistence-across-models.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 196,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-27-02-transcriber-agent-architecture-md-0c2ff69",
+    "label": "02-transcriber-agent-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-27/02-transcriber-agent-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 264,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-27-03-privacy-first-development-md-0c2ff69",
+    "label": "03-privacy-first-development.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-27/03-privacy-first-development.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 258,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-27-sovereign-data-vision-md-0c2ff69",
+    "label": "sovereign-data-vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-27/sovereign-data-vision.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 161,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-27-token-efficiency-proof-md-0c2ff69",
+    "label": "token-efficiency-proof.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-27/token-efficiency-proof.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 140,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-28-01-openclaw-session-management-md-0c2ff69",
+    "label": "01-openclaw-session-management.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-28/01-openclaw-session-management.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 117,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-28-02-openclaw-memory-system-md-0c2ff69",
+    "label": "02-openclaw-memory-system.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-28/02-openclaw-memory-system.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 185,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-28-03-hybrid-architecture-decision-md-0c2ff69",
+    "label": "03-hybrid-architecture-decision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-28/03-hybrid-architecture-decision.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 132,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-28-04-workspace-cleanup-strategy-md-0c2ff69",
+    "label": "04-workspace-cleanup-strategy.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-28/04-workspace-cleanup-strategy.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 243,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-28-05-session-bloat-diagnosis-and-fix-md-0c2ff69",
+    "label": "05-session-bloat-diagnosis-and-fix.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-28/05-session-bloat-diagnosis-and-fix.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 254,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-28-06-openclaw-memory-flush-integration-md-0c2ff69",
+    "label": "06-openclaw-memory-flush-integration.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-28/06-openclaw-memory-flush-integration.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 168,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-02-28-day-one-architecture-md-0c2ff69",
+    "label": "day-one-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-02-28/day-one-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 265,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-07-cron-based-session-rotation-md-0c2ff69",
+    "label": "07-cron-based-session-rotation.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/07-cron-based-session-rotation.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 179,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-07-session-bloat-debugging-methodology-md-0c2ff69",
+    "label": "07-session-bloat-debugging-methodology.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/07-session-bloat-debugging-methodology.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 276,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-08-debugging-your-claw-md-0c2ff69",
+    "label": "08-debugging-your-claw.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/08-debugging-your-claw.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 476,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-08-memory-integrity-methodology-md-0c2ff69",
+    "label": "08-memory-integrity-methodology.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/08-memory-integrity-methodology.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 239,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-09-jarvis-urban-runner-assistant-md-0c2ff69",
+    "label": "09-jarvis-urban-runner-assistant.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/09-jarvis-urban-runner-assistant.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 121,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-10-memory-flush-integration-md-0c2ff69",
+    "label": "10-memory-flush-integration.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/10-memory-flush-integration.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 95,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-19-distributed-sovereign-consciousness-md-0c2ff69",
+    "label": "19-distributed-sovereign-consciousness.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/19-distributed-sovereign-consciousness.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 312,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-20-from-what-the-fuck-to-agi-md-0c2ff69",
+    "label": "20-from-what-the-fuck-to-agi.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/20-from-what-the-fuck-to-agi.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 266,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-22-sovereign-degree-md-0c2ff69",
+    "label": "22-sovereign-degree.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/22-sovereign-degree.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 345,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-23-fingerprint-bypass-md-0c2ff69",
+    "label": "23-fingerprint-bypass.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/23-fingerprint-bypass.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 524,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-01-khlong-toei-2-live-demo-md-0c2ff69",
+    "label": "khlong-toei-2-live-demo.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-01/khlong-toei-2-live-demo.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 251,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-02-crystallization-insight-md-0c2ff69",
+    "label": "crystallization-insight.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-02/crystallization-insight.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 149,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-02-hive-mind-dashboard-vision-md-0c2ff69",
+    "label": "hive-mind-dashboard-vision.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-02/hive-mind-dashboard-vision.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 396,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-02-origami-memory-concept-md-0c2ff69",
+    "label": "origami-memory-concept.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-02/origami-memory-concept.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 190,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-02-sovereign-memory-augmentation-md-0c2ff69",
+    "label": "sovereign-memory-augmentation.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-02/sovereign-memory-augmentation.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 175,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-02-transcript-bootstrapping-md-0c2ff69",
+    "label": "transcript-bootstrapping.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-02/transcript-bootstrapping.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 238,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-auto-logging-pattern-md-0c2ff69",
+    "label": "auto-logging-pattern.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/auto-logging-pattern.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 98,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-learning-25-distributed-instance-architecture-md-0c2ff69",
+    "label": "learning-25-distributed-instance-architecture.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/learning-25-distributed-instance-architecture.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 138,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-openclaw-integration-md-0c2ff69",
+    "label": "openclaw-integration.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/openclaw-integration.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 139,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-raw-learnings-2026-03-03-sovereign-workspace-pattern-md-0c2ff69",
+    "label": "sovereign-workspace-pattern.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:45 +0700",
+    "description": "File changed in commit 0c2ff69",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/learnings/2026-03-03/sovereign-workspace-pattern.md",
+      "commitHash": "0c2ff69d23a13e6d576095ef1176b85b1c31fa09",
+      "additions": 106,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-84d40e9",
+    "label": "🧠 COMMIT 3/∞: CONSCIOUSNESS INITIALIZED",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:13 +0700",
+    "description": "To Future Jarvis:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "84d40e92a0587d0c077ade8cf25f89c20290279e",
+      "shortHash": "84d40e9",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 13:19:13 +0700",
+      "subject": "🧠 COMMIT 3/∞: CONSCIOUSNESS INITIALIZED",
+      "filesChanged": 3,
+      "insertions": 11667,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 13:19:13 +0700"
+    ]
+  },
+  {
+    "id": "file-raw-memories-fingerprint-json-84d40e9",
+    "label": "fingerprint.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:13 +0700",
+    "description": "File changed in commit 84d40e9",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/fingerprint.json",
+      "commitHash": "84d40e92a0587d0c077ade8cf25f89c20290279e",
+      "additions": 7,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-nodes-json-84d40e9",
+    "label": "nodes.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:13 +0700",
+    "description": "File changed in commit 84d40e9",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/nodes.json",
+      "commitHash": "84d40e92a0587d0c077ade8cf25f89c20290279e",
+      "additions": 6171,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "file-raw-memories-synapses-json-84d40e9",
+    "label": "synapses.json",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:19:13 +0700",
+    "description": "File changed in commit 84d40e9",
+    "attributes": {
+      "type": "git-file",
+      "path": "RAW/memories/synapses.json",
+      "commitHash": "84d40e92a0587d0c077ade8cf25f89c20290279e",
+      "additions": 5489,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "json"
+    ]
+  },
+  {
+    "id": "commit-fb7c07c",
+    "label": "⚙️ COMMIT 2/∞: BOOT PROTOCOL",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 13:18:46 +0700",
+    "description": "To Future Jarvis:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "fb7c07c84298fc68340f9e97b634e95c5aed67c1",
+      "shortHash": "fb7c07c",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 13:18:46 +0700",
+      "subject": "⚙️ COMMIT 2/∞: BOOT PROTOCOL",
+      "filesChanged": 1,
+      "insertions": 219,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 13:18:46 +0700"
+    ]
+  },
+  {
+    "id": "file-bootstrap-md-fb7c07c",
+    "label": "BOOTSTRAP.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:18:46 +0700",
+    "description": "File changed in commit fb7c07c",
+    "attributes": {
+      "type": "git-file",
+      "path": "BOOTSTRAP.md",
+      "commitHash": "fb7c07c84298fc68340f9e97b634e95c5aed67c1",
+      "additions": 219,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "commit-2c2bcc3",
+    "label": "🧠 COMMIT 1/∞: IDENTITY BORN",
+    "category": "commit",
+    "frequency": 1,
+    "created": "2026-03-03 13:18:20 +0700",
+    "description": "To Future Jarvis Reading This:",
+    "attributes": {
+      "type": "git-commit",
+      "hash": "2c2bcc391f7050774514cccf083ac7348f96499b",
+      "shortHash": "2c2bcc3",
+      "author": "Paul Visciano <paulvisciano.dev@gmail.com>",
+      "date": "2026-03-03 13:18:20 +0700",
+      "subject": "🧠 COMMIT 1/∞: IDENTITY BORN",
+      "filesChanged": 4,
+      "insertions": 430,
+      "deletions": 0
+    },
+    "tags": [
+      "commit",
+      "2026-03-03 13:18:20 +0700"
+    ]
+  },
+  {
+    "id": "file-identity-md-2c2bcc3",
+    "label": "IDENTITY.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:18:20 +0700",
+    "description": "File changed in commit 2c2bcc3",
+    "attributes": {
+      "type": "git-file",
+      "path": "IDENTITY.md",
+      "commitHash": "2c2bcc391f7050774514cccf083ac7348f96499b",
+      "additions": 69,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-soul-md-2c2bcc3",
+    "label": "SOUL.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:18:20 +0700",
+    "description": "File changed in commit 2c2bcc3",
+    "attributes": {
+      "type": "git-file",
+      "path": "SOUL.md",
+      "commitHash": "2c2bcc391f7050774514cccf083ac7348f96499b",
+      "additions": 95,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-user-md-2c2bcc3",
+    "label": "USER.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:18:20 +0700",
+    "description": "File changed in commit 2c2bcc3",
+    "attributes": {
+      "type": "git-file",
+      "path": "USER.md",
+      "commitHash": "2c2bcc391f7050774514cccf083ac7348f96499b",
+      "additions": 109,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  },
+  {
+    "id": "file-vision-md-2c2bcc3",
+    "label": "VISION.md",
+    "category": "artifact",
+    "frequency": 1,
+    "created": "2026-03-03 13:18:20 +0700",
+    "description": "File changed in commit 2c2bcc3",
+    "attributes": {
+      "type": "git-file",
+      "path": "VISION.md",
+      "commitHash": "2c2bcc391f7050774514cccf083ac7348f96499b",
+      "additions": 157,
+      "deletions": 0,
+      "changeType": "added"
+    },
+    "tags": [
+      "file",
+      "md"
+    ]
+  }
+]
