@@ -7763,5 +7763,40 @@
     "weight": 85,
     "type": "born-on",
     "label": "born on"
+  },
+  {
+    "source": "slogan-explore-memory-space-time",
+    "target": "distributed-neurograph-browsing",
+    "weight": 90,
+    "type": "describes",
+    "label": "describes"
+  },
+  {
+    "source": "slogan-explore-memory-space-time",
+    "target": "location-sovereignty-life-logging",
+    "weight": 88,
+    "type": "includes",
+    "label": "includes (space)"
+  },
+  {
+    "source": "slogan-explore-memory-space-time",
+    "target": "temporal-archive-identity",
+    "weight": 88,
+    "type": "includes",
+    "label": "includes (time)"
+  },
+  {
+    "source": "slogan-explore-memory-space-time",
+    "target": "jarvis-identity",
+    "weight": 92,
+    "type": "defines",
+    "label": "defines"
+  },
+  {
+    "source": "people-want-jarvis-not-siri",
+    "target": "slogan-explore-memory-space-time",
+    "weight": 85,
+    "type": "expressed-as",
+    "label": "expressed as"
   }
 ]

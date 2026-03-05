@@ -7190,5 +7190,34 @@
       "quote": "Why not make that ourselves? We already have the amazing sci-fi apps.",
       "pipeline": "Location + Voice \u2192 Transcription \u2192 Neurograph \u2192 Globe \u2192 Auto-published comic/agenda"
     }
+  },
+  {
+    "id": "slogan-explore-memory-space-time",
+    "label": "Explore Your Memory in Space-Time (Slogan)",
+    "category": "branding",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T18:37:00+07:00"
+    ],
+    "attributes": {
+      "type": "slogan",
+      "created": "2026-03-05",
+      "description": "Official slogan. Captures spatial + temporal + conceptual navigation. Evocative, accurate, inspiring.",
+      "sourceDocument": "RAW/learnings/2026-03-05/slogan-explore-memory-space-time.md",
+      "quote": "Explore your memory in space time",
+      "discoveredAt": "Heading to volleyball, 18:37 GMT+7",
+      "whyItWorks": [
+        "Captures full vision (memory + space + time)",
+        "Sci-fi credibility (sounds like Christopher Nolan)",
+        "Technically accurate (literal description)",
+        "Emotionally resonant (exploration > obligation)"
+      ],
+      "usageContexts": [
+        "Website hero",
+        "App store description",
+        "Social media tagline",
+        "Email signature"
+      ]
+    }
   }
 ]
