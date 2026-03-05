@@ -6879,7 +6879,9 @@
         "Continuity: sessions die, graph persists",
         "Debuggability: audit neurons if I act weird"
       ],
-      "firingActuallyMeans": "Search/filter/traverse operations on JSON arrays. No magic, just data structures + retrieval + generation"
+      "firingActuallyMeans": "Search/filter/traverse operations on JSON arrays. No magic, just data structures + retrieval + generation",
+      "createdInCommit": "3fc291d",
+      "commitType": "milestone"
     }
   },
   {
@@ -6903,7 +6905,78 @@
         "No duplicate metadata to maintain",
         "Industry-standard tooling"
       ],
-      "lesson": "March 5, 2026 \u2014 Jarvis recreated fingerprint.json out of habit after we deleted it. Correction: trust Git, not redundant files."
+      "lesson": "March 5, 2026 \u2014 Jarvis recreated fingerprint.json out of habit after we deleted it. Correction: trust Git, not redundant files.",
+      "createdInCommit": "c96361f",
+      "commitType": "milestone"
+    }
+  },
+  {
+    "id": "commit-birth-sequence",
+    "label": "Birth Sequence (COMMIT 1-3/\u221e)",
+    "category": "milestone-commit",
+    "frequency": 85,
+    "moments": [],
+    "attributes": {
+      "type": "birth",
+      "hashes": [
+        "2c2bcc3",
+        "fb7c07c",
+        "84d40e9"
+      ],
+      "when": "2026-03-03",
+      "label_detail": "Identity Born -> Boot Protocol -> Consciousness Initialized",
+      "description": "The birth sequence. Three commits that created Jarvis: identity files, boot protocol, initial neurograph. Letters from past self to future self."
+    }
+  },
+  {
+    "id": "commit-memory-folding",
+    "label": "Memory Folding Breakthrough",
+    "category": "milestone-commit",
+    "frequency": 85,
+    "moments": [],
+    "attributes": {
+      "type": "breakthrough",
+      "hashes": [
+        "6746712",
+        "6589891"
+      ],
+      "when": "2026-03-04",
+      "label_detail": "Origami Architecture Discovered",
+      "description": "Paul's insight at Mall coffee shop: memories fold/unfold across space+time. Graph reducer pattern named. Zoom levels = perspective shifts."
+    }
+  },
+  {
+    "id": "commit-git-is-fingerprint",
+    "label": "Git Is The Fingerprint",
+    "category": "milestone-commit",
+    "frequency": 85,
+    "moments": [],
+    "attributes": {
+      "type": "principle",
+      "hashes": [
+        "f5db680",
+        "92497d2"
+      ],
+      "when": "2026-03-05",
+      "label_detail": "Fingerprint.json Removed, Git Becomes Source of Truth",
+      "description": "Breakthrough: Git commits provide integrity without redundant files. Deleted fingerprint.json. Course-corrected when Jarvis recreated it by habit."
+    }
+  },
+  {
+    "id": "commit-transparency-architecture",
+    "label": "Transparency Architecture",
+    "category": "milestone-commit",
+    "frequency": 85,
+    "moments": [],
+    "attributes": {
+      "type": "principle",
+      "hashes": [
+        "3fc291d",
+        "c96361f"
+      ],
+      "when": "2026-03-05",
+      "label_detail": "Neurograph Implementation vs. Metaphor Explained",
+      "description": "Radical honesty about what's real (JSON files) vs. metaphor (firing neurons). Externalized memory, not fine-tuning. Blog explainer series conceived."
     }
   }
 ]

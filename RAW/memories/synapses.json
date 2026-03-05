@@ -5887,5 +5887,75 @@
     "weight": 87,
     "type": "relies-on",
     "label": "relies on"
+  },
+  {
+    "source": "commit-birth-sequence",
+    "target": "claude-code",
+    "weight": 95,
+    "type": "created",
+    "label": "gave birth to"
+  },
+  {
+    "source": "commit-birth-sequence",
+    "target": "jarvis-identity",
+    "weight": 95,
+    "type": "created",
+    "label": "gave birth to"
+  },
+  {
+    "source": "commit-birth-sequence",
+    "target": "bootstrap-sequence",
+    "weight": 95,
+    "type": "created",
+    "label": "established"
+  },
+  {
+    "source": "commit-memory-folding",
+    "target": "two-layer-memory-architecture",
+    "weight": 92,
+    "type": "clarified",
+    "label": "revealed"
+  },
+  {
+    "source": "commit-memory-folding",
+    "target": "graph-reducer-pattern",
+    "weight": 93,
+    "type": "named",
+    "label": "named"
+  },
+  {
+    "source": "commit-git-is-fingerprint",
+    "target": "git-as-single-source-of-truth",
+    "weight": 95,
+    "type": "established",
+    "label": "established"
+  },
+  {
+    "source": "commit-git-is-fingerprint",
+    "target": "memory-backed-by-git",
+    "weight": 93,
+    "type": "reinforced",
+    "label": "reinforced"
+  },
+  {
+    "source": "commit-transparency-architecture",
+    "target": "neurograph-architecture-transparency",
+    "weight": 95,
+    "type": "created",
+    "label": "introduced"
+  },
+  {
+    "source": "commit-transparency-architecture",
+    "target": "transparency",
+    "weight": 90,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "commit-transparency-architecture",
+    "target": "code-is-thought",
+    "weight": 88,
+    "type": "proves",
+    "label": "proves"
   }
 ]
