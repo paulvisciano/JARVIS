@@ -7031,5 +7031,34 @@
         "movement": "1000 published forks (2027)"
       }
     }
+  },
+  {
+    "id": "knowledge-is-money-economy",
+    "label": "Knowledge Is Money (Sovereign Knowledge Economy)",
+    "category": "vision",
+    "frequency": 85,
+    "moments": [
+      "2026-03-05T17:05:00+07:00"
+    ],
+    "attributes": {
+      "type": "breakthrough",
+      "created": "2026-03-05",
+      "description": "Knowledge = value. Privacy gradient: private conversations \u2192 distilled learnings \u2192 shared memories. Sovereign economy without extraction.",
+      "sourceDocument": "RAW/learnings/2026-03-05/knowledge-is-money-economy.md",
+      "quote": "Knowledge is money, knowledge is value. People can keep private conversations private, and if they decide to publish their learnings, they can do that.",
+      "discoveredAt": "Dispensary (voice note, 17:05 GMT+7)",
+      "privacyGradient": {
+        "level_1": "Raw transcripts (never published without consent)",
+        "level_2": "Distilled learnings (opt-in sharing)",
+        "level_3": "Personal memories (opt-in sharing)",
+        "level_4": "Public contributions (voluntary network participation)"
+      },
+      "enables": [
+        "Sovereign knowledge economy",
+        "Privacy without isolation",
+        "Value flows to creator not platform",
+        "Optional monetization on free core"
+      ]
+    }
   }
 ]

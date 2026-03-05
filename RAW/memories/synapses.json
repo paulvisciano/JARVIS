@@ -6048,5 +6048,47 @@
     "weight": 87,
     "type": "inspired",
     "label": "inspired"
+  },
+  {
+    "source": "knowledge-is-money-economy",
+    "target": "github-fork-network-architecture",
+    "weight": 95,
+    "type": "economic-model-for",
+    "label": "economic model for"
+  },
+  {
+    "source": "knowledge-is-money-economy",
+    "target": "distributed-neurograph-browsing",
+    "weight": 90,
+    "type": "incentivizes",
+    "label": "incentivizes"
+  },
+  {
+    "source": "knowledge-is-money-economy",
+    "target": "data-reclamation-movement",
+    "weight": 93,
+    "type": "advances",
+    "label": "advances"
+  },
+  {
+    "source": "knowledge-is-money-economy",
+    "target": "sovereign-data-vision",
+    "weight": 92,
+    "type": "realizes",
+    "label": "realizes"
+  },
+  {
+    "source": "knowledge-is-money-economy",
+    "target": "privacy-first-development",
+    "weight": 88,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "transparency",
+    "target": "knowledge-is-money-economy",
+    "weight": 85,
+    "type": "balanced-with",
+    "label": "balanced with privacy"
   }
 ]
