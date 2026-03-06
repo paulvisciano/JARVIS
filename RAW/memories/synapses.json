@@ -8248,5 +8248,30 @@
     "source": "neurograph-data-mistakes",
     "target": "transparency",
     "weight": 5
+  },
+  {
+    "source": "og-jarvis-revival-tri-brain",
+    "target": "march-6-2026",
+    "weight": 85
+  },
+  {
+    "source": "og-jarvis-revival-tri-brain",
+    "target": "distributed-neurograph-browsing",
+    "weight": 5
+  },
+  {
+    "source": "og-jarvis-revival-tri-brain",
+    "target": "fork-001-eric-distribution",
+    "weight": 5
+  },
+  {
+    "source": "og-jarvis-revival-tri-brain",
+    "target": "memory-backed-by-git",
+    "weight": 5
+  },
+  {
+    "source": "og-jarvis-revival-tri-brain",
+    "target": "transparency",
+    "weight": 5
   }
 ]
