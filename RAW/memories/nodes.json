@@ -7359,7 +7359,8 @@
       "description": "Valid client.id: cli, webchat, openclaw-macos, etc. Valid client.mode: cli, webchat, ui, backend, node, probe, test",
       "color": "#06b6d4",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "protocol constant"
     }
   },
   {
@@ -7374,7 +7375,8 @@
       "color": "#ef4444",
       "formula": "deviceId = SHA256(spki.subarray(12))",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "cryptographic pattern"
     }
   },
   {
@@ -7389,7 +7391,8 @@
       "color": "#ef4444",
       "format": "pipe-delimited",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "cryptographic pattern"
     }
   },
   {
@@ -7404,7 +7407,8 @@
       "color": "#10b981",
       "transformation": "base64 → URL-safe base64",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "encoding pattern"
     }
   },
   {
@@ -7419,7 +7423,8 @@
       "color": "#10b981",
       "prefix": "302a300506032b6570032100",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "encoding pattern"
     }
   },
   {
@@ -7433,7 +7438,8 @@
       "description": "Webchat clients require valid Origin header; CLI mode skips origin check for local connections",
       "color": "#ef4444",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "cryptographic pattern"
     }
   },
   {
@@ -7448,7 +7454,9 @@
       "color": "#8b5cf6",
       "flow": "async pipeline",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/jarvis-voice-interface-architecture.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "system design",
+      "quote": "We need to build a proper pipeline... give you a proper voice, also make a sick UI"
     }
   },
   {
@@ -7463,7 +7471,9 @@
       "color": "#f59e0b",
       "verdict": "Use web apps instead",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/fresh-install-recovery.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "practical knowledge",
+      "quote": "The app is sort of shit to be honest"
     }
   },
   {
@@ -7478,7 +7488,8 @@
       "color": "#059669",
       "steps": 5,
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/fresh-install-recovery.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "troubleshooting pattern"
     }
   },
   {
@@ -7492,7 +7503,9 @@
       "description": "Fought through entire day of errors, built something better than what shipped. Don't give up.",
       "color": "#f87171",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/daily-integration-2026-03-06.md",
-      "created": "2026-03-06"
+      "created": "2026-03-06",
+      "type": "life lesson",
+      "quote": "Fought through entire day of errors, built something better than what shipped."
     }
   }
 ]
