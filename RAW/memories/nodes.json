@@ -7346,7 +7346,8 @@
       "role": "temporal anchor",
       "description": "Fresh install recovery, voice interface build, gateway protocol deep dive",
       "color": "#f472b6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/daily-integration-2026-03-06.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/daily-integration-2026-03-06.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7361,7 +7362,8 @@
       "role": "protocol constant",
       "description": "Valid client.id: cli, webchat, openclaw-macos, etc. Valid client.mode: cli, webchat, ui, backend, node, probe, test",
       "color": "#06b6d4",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7377,7 +7379,8 @@
       "description": "Device ID is SHA256 hash of raw 32-byte Ed25519 public key (after removing 12-byte SPKI prefix)",
       "color": "#ef4444",
       "formula": "deviceId = SHA256(spki.subarray(12))",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7393,7 +7396,8 @@
       "description": "v3|deviceId|clientId|clientMode|role|scopes|signedAtMs|token|nonce|platform|deviceFamily",
       "color": "#ef4444",
       "format": "pipe-delimited",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7409,7 +7413,8 @@
       "description": "Ed25519 signatures must use URL-safe base64: replace + with -, / with _, strip = padding",
       "color": "#10b981",
       "transformation": "base64 → URL-safe base64",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7425,7 +7430,8 @@
       "description": "Ed25519 SPKI DER format has 12-byte prefix (302a300506032b6570032100), followed by 32-byte raw public key",
       "color": "#10b981",
       "prefix": "302a300506032b6570032100",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7440,7 +7446,8 @@
       "role": "security mechanism",
       "description": "Webchat clients require valid Origin header; CLI mode skips origin check for local connections",
       "color": "#ef4444",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7456,7 +7463,8 @@
       "description": "Record → Upload (localhost:3001) → Whisper CLI → Gateway WebSocket → Jarvis → TTS (macOS say/ElevenLabs)",
       "color": "#8b5cf6",
       "flow": "async pipeline",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/jarvis-voice-interface-architecture.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/jarvis-voice-interface-architecture.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7472,7 +7480,8 @@
       "description": "Desktop app is alpha-quality: voice mode crashes (SwiftUI), canvas bugs, chat history issues. Backend solid, UI buggy.",
       "color": "#f59e0b",
       "verdict": "Use web apps instead",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/fresh-install-recovery.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/fresh-install-recovery.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7488,7 +7497,8 @@
       "description": "1) openclaw doctor --fix, 2) disable voice mode if crashes, 3) start gateway, 4) link channels, 5) use web apps",
       "color": "#059669",
       "steps": 5,
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/fresh-install-recovery.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/fresh-install-recovery.md",
+      "created": "2026-03-06"
     }
   },
   {
@@ -7503,7 +7513,8 @@
       "role": "life lesson",
       "description": "Fought through entire day of errors, built something better than what shipped. Don't give up.",
       "color": "#f87171",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/daily-integration-2026-03-06.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/daily-integration-2026-03-06.md",
+      "created": "2026-03-06"
     }
   }
 ]
