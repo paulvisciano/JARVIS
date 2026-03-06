@@ -7903,5 +7903,40 @@
     "weight": 85,
     "type": "defines",
     "label": "defines (living brain)"
+  },
+  {
+    "source": "fork-001-eric-test-drive",
+    "target": "github-fork-network-architecture",
+    "weight": 95,
+    "type": "realizes",
+    "label": "first realization of"
+  },
+  {
+    "source": "fork-001-eric-test-drive",
+    "target": "distributed-neurograph-browsing",
+    "weight": 93,
+    "type": "validates",
+    "label": "validates"
+  },
+  {
+    "source": "fork-001-eric-test-drive",
+    "target": "society-of-minds",
+    "weight": 92,
+    "type": "begins",
+    "label": "begins"
+  },
+  {
+    "source": "fork-001-eric-test-drive",
+    "target": "sovereign-data-vision",
+    "weight": 90,
+    "type": "demonstrates",
+    "label": "demonstrates"
+  },
+  {
+    "source": "knowledge-is-money-economy",
+    "target": "fork-001-eric-test-drive",
+    "weight": 88,
+    "type": "distributed-to",
+    "label": "distributed to"
   }
 ]

@@ -7297,5 +7297,41 @@
         "Cluster reorg: gentle force-adjustment"
       ]
     }
+  },
+  {
+    "id": "fork-001-eric-test-drive",
+    "label": "Fork #001: Eric (First Instance Distribution)",
+    "category": "milestone",
+    "frequency": 85,
+    "moments": [
+      "2026-03-06T00:02:00+07:00",
+      "2026-03-06T00:06:00+07:00"
+    ],
+    "attributes": {
+      "type": "historic-first",
+      "created": "2026-03-06",
+      "description": "First Jarvis instance distributed to another human. Test drive before GitHub fork network goes live. The network becomes real.",
+      "sourceDocument": "JARVIS/INSTALL-FOR-ERIC.md",
+      "quote": "I want to set him up with an instance of you. For now we are just test driving this.",
+      "discoveredAt": "Post-volleyball, talking with Eric",
+      "archiveDetails": {
+        "file": "~/jarvis-instance-for-eric.tar.gz",
+        "size": "248MB",
+        "neurons": 409,
+        "synapses": 1118,
+        "excludes": [
+          ".git",
+          "node_modules",
+          "RAW/archive",
+          "media"
+        ]
+      },
+      "significance": "The fork network transitions from vision to reality. First external node.",
+      "archiveSize": "259.8 MB",
+      "transferMethod": "WhatsApp file transfer",
+      "timestamp": "2026-03-06T00:06:00+07:00",
+      "status": "In transit (6% progress, 3 min remaining)",
+      "quote2": "Lets see if this transfers"
+    }
   }
 ]
