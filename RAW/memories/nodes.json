@@ -7355,9 +7355,7 @@
     "label": "Gateway Client Constants",
     "category": "infrastructure",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "protocol constant",
       "description": "Valid client.id: cli, webchat, openclaw-macos, etc. Valid client.mode: cli, webchat, ui, backend, node, probe, test",
@@ -7371,9 +7369,7 @@
     "label": "Device ID = SHA256(Raw Ed25519 Key)",
     "category": "security",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "cryptographic pattern",
       "description": "Device ID is SHA256 hash of raw 32-byte Ed25519 public key (after removing 12-byte SPKI prefix)",
@@ -7388,9 +7384,7 @@
     "label": "V3 Signature Payload Format",
     "category": "security",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "protocol format",
       "description": "v3|deviceId|clientId|clientMode|role|scopes|signedAtMs|token|nonce|platform|deviceFamily",
@@ -7405,9 +7399,7 @@
     "label": "URL-Safe Base64 for Signatures",
     "category": "technique",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "encoding pattern",
       "description": "Ed25519 signatures must use URL-safe base64: replace + with -, / with _, strip = padding",
@@ -7422,9 +7414,7 @@
     "label": "SPKI Prefix Extraction",
     "category": "technique",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "cryptographic technique",
       "description": "Ed25519 SPKI DER format has 12-byte prefix (302a300506032b6570032100), followed by 32-byte raw public key",
@@ -7439,9 +7429,7 @@
     "label": "Gateway Origin Checking",
     "category": "security",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "security mechanism",
       "description": "Webchat clients require valid Origin header; CLI mode skips origin check for local connections",
@@ -7455,9 +7443,7 @@
     "label": "Voice Pipeline Architecture",
     "category": "architecture",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "system design",
       "description": "Record → Upload (localhost:3001) → Whisper CLI → Gateway WebSocket → Jarvis → TTS (macOS say/ElevenLabs)",
@@ -7472,9 +7458,7 @@
     "label": "Desktop App Limitations",
     "category": "insight",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "practical knowledge",
       "description": "Desktop app is alpha-quality: voice mode crashes (SwiftUI), canvas bugs, chat history issues. Backend solid, UI buggy.",
@@ -7489,9 +7473,7 @@
     "label": "Fresh Install Recovery Pattern",
     "category": "pattern",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "troubleshooting pattern",
       "description": "1) openclaw doctor --fix, 2) disable voice mode if crashes, 3) start gateway, 4) link channels, 5) use web apps",
@@ -7506,9 +7488,7 @@
     "label": "Persistence Pays Off",
     "category": "value",
     "frequency": 1,
-    "moments": [
-      "2026-03-06T00:00:00Z"
-    ],
+    "moments": [],
     "attributes": {
       "role": "life lesson",
       "description": "Fought through entire day of errors, built something better than what shipped. Don't give up.",
