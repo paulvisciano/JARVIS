@@ -7304,14 +7304,14 @@
     "category": "milestone",
     "frequency": 85,
     "moments": [
-      "2026-03-06T00:02:00+07:00",
-      "2026-03-06T00:06:00+07:00"
+      "2026-03-05T00:02:00+07:00",
+      "2026-03-05T00:06:00+07:00"
     ],
     "attributes": {
       "type": "historic-first",
-      "created": "2026-03-06",
+      "created": "2026-03-05",
       "description": "First Jarvis instance distributed to another human. Test drive before GitHub fork network goes live. The network becomes real.",
-      "sourceDocument": "JARVIS/INSTALL-FOR-ERIC.md",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-05/fork-001-eric-distribution.md",
       "quote": "I want to set him up with an instance of you. For now we are just test driving this.",
       "discoveredAt": "Post-volleyball, talking with Eric",
       "archiveDetails": {
@@ -7329,7 +7329,7 @@
       "significance": "The fork network transitions from vision to reality. First external node.",
       "archiveSize": "259.8 MB",
       "transferMethod": "WhatsApp file transfer",
-      "timestamp": "2026-03-06T00:06:00+07:00",
+      "timestamp": "2026-03-05T00:06:00+07:00",
       "status": "In transit (6% progress, 3 min remaining)",
       "quote2": "Lets see if this transfers"
     }
