@@ -7340,7 +7340,7 @@
     "category": "temporal",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "temporal anchor",
@@ -7356,7 +7356,7 @@
     "category": "infrastructure",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "protocol constant",
@@ -7372,7 +7372,7 @@
     "category": "security",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "cryptographic pattern",
@@ -7389,7 +7389,7 @@
     "category": "security",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "protocol format",
@@ -7406,7 +7406,7 @@
     "category": "technique",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "encoding pattern",
@@ -7423,7 +7423,7 @@
     "category": "technique",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "cryptographic technique",
@@ -7440,7 +7440,7 @@
     "category": "security",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "security mechanism",
@@ -7456,7 +7456,7 @@
     "category": "architecture",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "system design",
@@ -7473,7 +7473,7 @@
     "category": "insight",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "practical knowledge",
@@ -7490,7 +7490,7 @@
     "category": "pattern",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "troubleshooting pattern",
@@ -7507,7 +7507,7 @@
     "category": "value",
     "frequency": 1,
     "moments": [
-      "2026-03-06"
+      "2026-03-06T00:00:00Z"
     ],
     "attributes": {
       "role": "life lesson",
