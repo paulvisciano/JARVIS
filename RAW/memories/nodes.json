@@ -7507,5 +7507,22 @@
       "type": "life lesson",
       "quote": "Fought through entire day of errors, built something better than what shipped."
     }
+  },
+  {
+    "id": "neurograph-data-mistakes",
+    "label": "Neurograph Data Mistakes",
+    "category": "learning",
+    "frequency": 1,
+    "attributes": {
+      "role": "meta-learning",
+      "type": "process lesson",
+      "description": "Study existing patterns before creating new nodes. Fix data, not code. Match exact structure (fields, order, formats).",
+      "color": "#f59e0b",
+      "quote": "The code works. The data is wrong.",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/JARVIS/main/RAW/learnings/2026-03-06/neurograph-data-mistakes.md",
+      "created": "2026-03-06",
+      "criticality": "high"
+    },
+    "moments": []
   }
 ]
