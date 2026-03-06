@@ -8151,70 +8151,87 @@
   },
   {
     "source": "march-6-2026",
-    "target": "memory-backed-by-git"
+    "target": "memory-backed-by-git",
+    "weight": 5
   },
   {
     "source": "march-6-2026",
-    "target": "deployment-is-real"
+    "target": "deployment-is-real",
+    "weight": 5
   },
   {
     "source": "march-6-2026",
-    "target": "transparency"
+    "target": "transparency",
+    "weight": 5
   },
   {
     "source": "march-6-2026",
-    "target": "debugging-diagnosis"
+    "target": "debugging-diagnosis",
+    "weight": 5
   },
   {
     "source": "march-6-2026",
-    "target": "architecture-design"
+    "target": "architecture-design",
+    "weight": 5
   },
   {
     "source": "march-6-2026",
-    "target": "infrastructure-matters"
+    "target": "infrastructure-matters",
+    "weight": 5
   },
   {
     "source": "march-6-2026",
-    "target": "code-is-thought"
+    "target": "code-is-thought",
+    "weight": 5
   },
   {
     "source": "gateway-client-constants",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "device-id-computation",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "v3-signature-payload",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "url-safe-base64-signatures",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "spki-prefix-extraction",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "gateway-origin-checking",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "voice-pipeline-architecture",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "desktop-app-limitations",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "fresh-install-recovery-pattern",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   },
   {
     "source": "persistence-pays-off",
-    "target": "march-6-2026"
+    "target": "march-6-2026",
+    "weight": 85
   }
 ]
