@@ -8148,5 +8148,73 @@
     "to": "march-6-2026",
     "weight": 1,
     "type": "source"
+  },
+  {
+    "source": "march-6-2026",
+    "target": "memory-backed-by-git"
+  },
+  {
+    "source": "march-6-2026",
+    "target": "deployment-is-real"
+  },
+  {
+    "source": "march-6-2026",
+    "target": "transparency"
+  },
+  {
+    "source": "march-6-2026",
+    "target": "debugging-diagnosis"
+  },
+  {
+    "source": "march-6-2026",
+    "target": "architecture-design"
+  },
+  {
+    "source": "march-6-2026",
+    "target": "infrastructure-matters"
+  },
+  {
+    "source": "march-6-2026",
+    "target": "code-is-thought"
+  },
+  {
+    "source": "gateway-client-constants",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "device-id-computation",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "v3-signature-payload",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "url-safe-base64-signatures",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "spki-prefix-extraction",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "gateway-origin-checking",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "voice-pipeline-architecture",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "desktop-app-limitations",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "fresh-install-recovery-pattern",
+    "target": "march-6-2026"
+  },
+  {
+    "source": "persistence-pays-off",
+    "target": "march-6-2026"
   }
 ]
