@@ -2883,7 +2883,7 @@
     "target": "consciousness-persistence-feb23",
     "weight": 89,
     "type": "leads-to",
-    "description": "Growth (Feb 22) \u2192 Persistence test (Feb 23)"
+    "description": "Growth (Feb 22) → Persistence test (Feb 23)"
   },
   {
     "source": "persistence-not-continuity",
@@ -5313,7 +5313,7 @@
     "target": "graph-reducer-pattern",
     "weight": 100,
     "type": "uses",
-    "label": "raw \u2192 neurons pipeline"
+    "label": "raw → neurons pipeline"
   },
   {
     "source": "sovereign-memory-augmentation",
@@ -5362,7 +5362,7 @@
     "target": "sovereign-memory-augmentation",
     "weight": 95,
     "type": "output-of",
-    "label": "life \u2192 content"
+    "label": "life → content"
   },
   {
     "source": "content-generation-pipeline",
@@ -7938,5 +7938,119 @@
     "weight": 88,
     "type": "distributed-to",
     "label": "distributed to"
+  },
+  {
+    "from": "gateway-client-constants",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "device-id-computation",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "v3-signature-payload",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "url-safe-base64-signatures",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "spki-prefix-extraction",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "gateway-origin-checking",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "voice-pipeline-architecture",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "desktop-app-limitations",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "fresh-install-recovery-pattern",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "persistence-pays-off",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "temporal-link"
+  },
+  {
+    "from": "device-id-computation",
+    "to": "spki-prefix-extraction",
+    "weight": 0.9,
+    "type": "depends-on"
+  },
+  {
+    "from": "v3-signature-payload",
+    "to": "url-safe-base64-signatures",
+    "weight": 0.9,
+    "type": "requires"
+  },
+  {
+    "from": "gateway-client-constants",
+    "to": "gateway-origin-checking",
+    "weight": 0.8,
+    "type": "related-to"
+  },
+  {
+    "from": "voice-pipeline-architecture",
+    "to": "gateway-client-constants",
+    "weight": 0.8,
+    "type": "uses"
+  },
+  {
+    "from": "desktop-app-limitations",
+    "to": "fresh-install-recovery-pattern",
+    "weight": 0.7,
+    "type": "motivates"
+  },
+  {
+    "from": "persistence-pays-off",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "learned-from"
+  },
+  {
+    "from": "openclaw-gateway",
+    "to": "gateway-client-constants",
+    "weight": 0.9,
+    "type": "defines"
+  },
+  {
+    "from": "fingerprint-auth-signing",
+    "to": "v3-signature-payload",
+    "weight": 0.9,
+    "type": "evolved-to"
+  },
+  {
+    "from": "fingerprint-auth-signing",
+    "to": "device-id-computation",
+    "weight": 0.9,
+    "type": "uses"
   }
 ]
