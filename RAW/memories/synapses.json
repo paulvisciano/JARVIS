@@ -8052,5 +8052,101 @@
     "to": "device-id-computation",
     "weight": 0.9,
     "type": "uses"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "memory-backed-by-git",
+    "weight": 1,
+    "type": "builds-on"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "deployment-is-reality",
+    "weight": 1,
+    "type": "demonstrates"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "code-is-thought",
+    "weight": 1,
+    "type": "embodies"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "transparency",
+    "weight": 0.9,
+    "type": "practices"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "persistence-pays-off",
+    "weight": 1,
+    "type": "learned"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "debugging-diagnosis",
+    "weight": 1,
+    "type": "exercised"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "architecture-design",
+    "weight": 0.9,
+    "type": "created"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "infrastructure-matters",
+    "weight": 1,
+    "type": "validated"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "jarvis-neural-mind",
+    "weight": 0.9,
+    "type": "extends"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "sovereign-infrastructure",
+    "weight": 1,
+    "type": "advances"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "openclaw-gateway",
+    "weight": 1,
+    "type": "integrated-with"
+  },
+  {
+    "from": "march-6-2026",
+    "to": "voice-interface",
+    "weight": 1,
+    "type": "built"
+  },
+  {
+    "from": "memory-backed-by-git",
+    "to": "march-6-2026",
+    "weight": 0.8,
+    "type": "evidence"
+  },
+  {
+    "from": "deployment-is-reality",
+    "to": "march-6-2026",
+    "weight": 0.8,
+    "type": "proof"
+  },
+  {
+    "from": "debugging-diagnosis",
+    "to": "march-6-2026",
+    "weight": 0.8,
+    "type": "case-study"
+  },
+  {
+    "from": "persistence-pays-off",
+    "to": "march-6-2026",
+    "weight": 1,
+    "type": "source"
   }
 ]
