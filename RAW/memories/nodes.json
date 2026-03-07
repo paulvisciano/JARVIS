@@ -7552,5 +7552,43 @@
       ]
     },
     "moments": []
+  },
+  {
+    "id": "corporate-data-trap",
+    "label": "Corporate Data Trap",
+    "category": "concept",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "sovereignty concept",
+      "description": "4-step extraction: free backup → AI analysis → delete local → 'how do they know so much?' Corporations extract value from your data, sell insights back to you.",
+      "color": "#ef4444",
+      "sourceDocument": "{BASE_URL}/RAW/learnings/2026-03-07/corporate-data-trap-lesson.md",
+      "created": "2026-03-07",
+      "related": [
+        "ownership-vs-consumption",
+        "data-sovereignty-education",
+        "analysis-sovereignty"
+      ]
+    }
+  },
+  {
+    "id": "analysis-sovereignty",
+    "label": "Analysis Sovereignty",
+    "category": "principle",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "sovereignty principle",
+      "description": "Not just storing data locally — owning the analysis too. Run your own OCR, build your own graphs, extract your own insights. Corporate: they analyze you. Sovereign: you analyze for yourself.",
+      "color": "#f97316",
+      "sourceDocument": "{BASE_URL}/RAW/learnings/2026-03-07/corporate-data-trap-lesson.md",
+      "created": "2026-03-07",
+      "related": [
+        "sovereignty",
+        "ownership-vs-consumption",
+        "corporate-data-trap"
+      ]
+    }
   }
 ]

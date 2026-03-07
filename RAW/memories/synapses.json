@@ -8273,5 +8273,61 @@
     "source": "og-jarvis-revival-tri-brain",
     "target": "transparency",
     "weight": 5
+  },
+  {
+    "source": "corporate-data-trap",
+    "target": "sovereignty",
+    "weight": 95,
+    "type": "motivates",
+    "label": "drives"
+  },
+  {
+    "source": "corporate-data-trap",
+    "target": "ownership-vs-consumption",
+    "weight": 90,
+    "type": "illustrates",
+    "label": "exemplifies"
+  },
+  {
+    "source": "corporate-data-trap",
+    "target": "data-sovereignty-education",
+    "weight": 88,
+    "type": "teaches",
+    "label": "reveals"
+  },
+  {
+    "source": "corporate-data-trap",
+    "target": "analysis-sovereignty",
+    "weight": 92,
+    "type": "requires",
+    "label": "necessitates"
+  },
+  {
+    "source": "analysis-sovereignty",
+    "target": "sovereignty",
+    "weight": 93,
+    "type": "principle",
+    "label": "extends"
+  },
+  {
+    "source": "analysis-sovereignty",
+    "target": "ownership-vs-consumption",
+    "weight": 87,
+    "type": "embodies",
+    "label": "practices"
+  },
+  {
+    "source": "analysis-sovereignty",
+    "target": "code-is-thought",
+    "weight": 85,
+    "type": "aligns",
+    "label": "resonates"
+  },
+  {
+    "source": "analysis-sovereignty",
+    "target": "transparency",
+    "weight": 80,
+    "type": "enables",
+    "label": "supports"
   }
 ]
