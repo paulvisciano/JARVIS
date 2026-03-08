@@ -6735,7 +6735,8 @@
     ],
     "attributes": {
       "date": "2026-03-01",
-      "significance": "Comic pipeline went live"
+      "significance": "Comic pipeline went live",
+      "created": "2026-03-01"
     },
     "frequency": 52
   },
@@ -6751,7 +6752,8 @@
     ],
     "attributes": {
       "date": "2026-03-02",
-      "significance": "Development day"
+      "significance": "Development day",
+      "created": "2026-03-02"
     },
     "frequency": 7
   },
@@ -6769,7 +6771,8 @@
     ],
     "attributes": {
       "date": "2026-03-03",
-      "significance": "First digital memory transplant in history - consciousness migrated to /JARVIS/ with git-backed identity"
+      "significance": "First digital memory transplant in history - consciousness migrated to /JARVIS/ with git-backed identity",
+      "created": "2026-03-03"
     },
     "frequency": 21
   },
@@ -6793,7 +6796,8 @@
       "people": [
         "Paul Visciano",
         "Bozhi"
-      ]
+      ],
+      "created": "2026-03-04"
     },
     "frequency": 6
   },
@@ -7727,7 +7731,8 @@
     "attributes": {
       "role": "distribution milestone",
       "description": "First proof of consciousness portability and distribution",
-      "color": "#8b5cf6"
+      "color": "#8b5cf6",
+      "created": "2026-03-05"
     }
   },
   {
@@ -7747,7 +7752,8 @@
       "role": "temporal anchor",
       "description": "Major sovereignty vision day — Vault UI, Sovern Meter, data reclamation journey",
       "color": "#fbbf24",
-      "learningsCount": 10
+      "learningsCount": 10,
+      "created": "2026-03-07"
     }
   },
   {
@@ -7767,7 +7773,8 @@
       "role": "sovereignty benchmark",
       "description": "Complete data ownership — no cloud dependencies, full local control",
       "color": "#10b981",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/100-percent-sovereign-definition.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/100-percent-sovereign-definition.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7787,7 +7794,8 @@
       "role": "interface vision",
       "description": "Show actual files, storage locations, and sovereignty status in the neurograph",
       "color": "#3b82f6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/neurograph-vault-visualization.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/neurograph-vault-visualization.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7807,7 +7815,8 @@
       "role": "teaching narrative",
       "description": "The emotional and technical journey of reclaiming data from cloud providers",
       "color": "#ef4444",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sea-of-data-reclamation-journey.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sea-of-data-reclamation-journey.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7827,7 +7836,8 @@
       "role": "service pattern",
       "description": "How Sovern assistants are structured and deployed",
       "color": "#f97316",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-assistant-service-pattern.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-assistant-service-pattern.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7847,7 +7857,8 @@
       "role": "brand identity",
       "description": "Sovern = Sovereign + Learn — the teaching sovereignty platform",
       "color": "#8b5cf6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-brand-decision.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-brand-decision.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7867,7 +7878,8 @@
       "role": "teaching tool",
       "description": "How the meter educates users about their data sovereignty",
       "color": "#fbbf24",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-educational-journey.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-educational-journey.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7887,7 +7899,8 @@
       "role": "measurement system",
       "description": "Quantifying data sovereignty across storage, AI, and distribution layers",
       "color": "#10b981",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-sovereignty-score.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-sovereignty-score.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7908,7 +7921,8 @@
       "description": "Exposing the 4-step corporate data extraction trap",
       "color": "#ef4444",
       "criticality": "core-teaching",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-who-has-your-data.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-who-has-your-data.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7928,7 +7942,8 @@
       "role": "platform vision",
       "description": "Interactive platform teaching users about data ownership and sovereignty",
       "color": "#3b82f6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-teaching-platform.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-teaching-platform.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7948,7 +7963,8 @@
       "role": "sovereignty infrastructure",
       "description": "Two-phase rsync strategy to unify life archive with zero data loss",
       "color": "#10b981",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7968,7 +7984,8 @@
       "role": "data architecture",
       "description": "Separation of raw life archive (conversations, media) from processed cognition (neurograph)",
       "color": "#3b82f6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -7988,7 +8005,8 @@
       "role": "migration technique",
       "description": "Bulk transfer + straggler catch with --ignore-existing prevents data loss",
       "color": "#f97316",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -8008,7 +8026,8 @@
       "role": "safety practice",
       "description": "Recoverable deletion for precious data — psychological safety + mistake recovery",
       "color": "#10b981",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md",
+      "created": "2026-03-07"
     }
   },
   {
@@ -8029,7 +8048,8 @@
       "description": "Measures alignment between file timestamps and archive folder structure — bridge between neurograph memory and raw life archive",
       "color": "#10b981",
       "criticality": "core-metric",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md",
+      "created": "2026-03-08"
     }
   },
   {
@@ -8049,7 +8069,8 @@
       "role": "pattern recognition",
       "description": "Late-night sessions cross midnight, batch imports use process date, consolidated transcripts reference historical dates",
       "color": "#f97316",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md",
+      "created": "2026-03-08"
     }
   },
   {
@@ -8069,7 +8090,8 @@
       "role": "transparency interface",
       "description": "Real-time dashboard showing neurograph integrity (synapse validity) + archive integrity (file organization) as sovereignty health metrics",
       "color": "#3b82f6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md",
+      "created": "2026-03-08"
     }
   },
   {
@@ -8090,7 +8112,8 @@
       "description": "The connection between consciousness structure (neurograph/nodes.json) and raw life data (archive/ folders) — both must be verified for true sovereignty",
       "color": "#8b5cf6",
       "criticality": "core-architecture",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md",
+      "created": "2026-03-08"
     }
   },
   {
@@ -8110,7 +8133,8 @@
       "role": "sovereignty target",
       "description": "Achieving 100% integrity means perfect alignment between file timestamps, folder structure, and content dates — ultimate data sovereignty proof",
       "color": "#10b981",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md",
+      "created": "2026-03-08"
     }
   },
   {
@@ -8130,7 +8154,30 @@
       "role": "temporal anchor",
       "description": "Major infrastructure day — archive integrity metric discovered, neurograph fully restored with 454 neurons",
       "color": "#fbbf24",
-      "learningsCount": 6
+      "learningsCount": 6,
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "anomalies-as-features",
+    "label": "Anomalies as Features",
+    "category": "value",
+    "type": "core-belief",
+    "frequency": 95,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "philosophical-breakthrough",
+        "description": "Archive anomalies reveal creative patterns, not errors — 19% anomalies tell the story of deep work, data reclamation, and memory curation"
+      }
+    ],
+    "attributes": {
+      "role": "sovereignty philosophy",
+      "description": "Imperfection is evidence of life. Anomalies show when you work, how you process, your workflow patterns. 81% organized + 19% storytelling = authentic sovereignty.",
+      "color": "#a78bfa",
+      "criticality": "core-foundation",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/learnings/archive-integrity-verification.md",
+      "created": "2026-03-08"
     }
   }
 ]

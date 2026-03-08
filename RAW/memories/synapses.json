@@ -8679,5 +8679,40 @@
     "weight": 95,
     "type": "follows",
     "label": "day after"
+  },
+  {
+    "source": "anomalies-as-features",
+    "target": "transparency",
+    "weight": 95,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "anomalies-as-features",
+    "target": "archive-integrity-verification",
+    "weight": 95,
+    "type": "reframes",
+    "label": "reframes"
+  },
+  {
+    "source": "anomalies-as-features",
+    "target": "100-percent-archive-integrity",
+    "weight": 90,
+    "type": "redefines",
+    "label": "redefines"
+  },
+  {
+    "source": "anomalies-as-features",
+    "target": "deployment-is-reality",
+    "weight": 88,
+    "type": "extends",
+    "label": "extends"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "anomalies-as-features",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
   }
 ]
