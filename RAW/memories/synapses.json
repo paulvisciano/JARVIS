@@ -8532,5 +8532,47 @@
     "weight": 88,
     "type": "practices",
     "label": "practices"
+  },
+  {
+    "source": "memory-archive-consolidation",
+    "target": "archive-first-architecture",
+    "weight": 90,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "memory-archive-consolidation",
+    "target": "two-phase-sync-strategy",
+    "weight": 95,
+    "type": "uses",
+    "label": "uses"
+  },
+  {
+    "source": "memory-archive-consolidation",
+    "target": "trash-over-rm",
+    "weight": 88,
+    "type": "practices",
+    "label": "practices"
+  },
+  {
+    "source": "archive-first-architecture",
+    "target": "sovereign-data-vision",
+    "weight": 85,
+    "type": "supports",
+    "label": "supports"
+  },
+  {
+    "source": "two-phase-sync-strategy",
+    "target": "zero-data-loss",
+    "weight": 90,
+    "type": "ensures",
+    "label": "ensures"
+  },
+  {
+    "source": "trash-over-rm",
+    "target": "safety-over-convenience",
+    "weight": 85,
+    "type": "embodies",
+    "label": "embodies"
   }
 ]

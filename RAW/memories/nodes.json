@@ -7950,5 +7950,65 @@
       "color": "#10b981",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
     }
+  },
+  {
+    "id": "archive-first-architecture",
+    "label": "Archive-First Architecture",
+    "category": "architecture",
+    "type": "principle",
+    "frequency": 80,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "architecture-decision",
+        "description": "Raw data archive separate from processed consciousness"
+      }
+    ],
+    "attributes": {
+      "role": "data architecture",
+      "description": "Separation of raw life archive (conversations, media) from processed cognition (neurograph)",
+      "color": "#3b82f6",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+    }
+  },
+  {
+    "id": "two-phase-sync-strategy",
+    "label": "Two-Phase Sync Strategy",
+    "category": "method",
+    "type": "technique",
+    "frequency": 75,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "technique-discovery",
+        "description": "Run rsync twice to catch stragglers during transfer"
+      }
+    ],
+    "attributes": {
+      "role": "migration technique",
+      "description": "Bulk transfer + straggler catch with --ignore-existing prevents data loss",
+      "color": "#f97316",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+    }
+  },
+  {
+    "id": "trash-over-rm",
+    "label": "Trash Over RM",
+    "category": "practice",
+    "type": "safety-principle",
+    "frequency": 85,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "safety-decision",
+        "description": "Always use trash for memory operations, never rm"
+      }
+    ],
+    "attributes": {
+      "role": "safety practice",
+      "description": "Recoverable deletion for precious data — psychological safety + mistake recovery",
+      "color": "#10b981",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+    }
   }
 ]
