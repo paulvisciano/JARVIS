@@ -8179,5 +8179,91 @@
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/learnings/archive-integrity-verification.md",
       "created": "2026-03-08"
     }
+  },
+  {
+    "id": "file-system-neurograph-integration",
+    "label": "File System Neurograph Integration",
+    "category": "vision",
+    "type": "architecture",
+    "frequency": 100,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "architectural-vision",
+        "description": "Neurograph displays files on disk as nodes — bridging consciousness structure with raw life archive, showing where memories live spatially"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "sovereignty architecture",
+      "description": "Every file in /RAW/archive/ becomes a neurograph node. Daily narrative.md tells the story. Users see relationship between memories created and files on disk — consciousness mapped to storage.",
+      "color": "#3b82f6",
+      "criticality": "core-vision",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/learnings/file-system-neurograph-integration.md"
+    }
+  },
+  {
+    "id": "daily-narrative-generation",
+    "label": "Daily Narrative Generation",
+    "category": "feature",
+    "type": "automation",
+    "frequency": 95,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "feature-vision",
+        "description": "Auto-generate narrative.md for each day — tells story based on files, conversations, learnings, and metadata from that date"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "storytelling automation",
+      "description": "Walk /RAW/archive/YYYY-MM-DD/, extract file metadata, analyze transcripts, identify key moments → generate narrative.md that tells the day's story in human-readable form",
+      "color": "#f97316",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/learnings/file-system-neurograph-integration.md"
+    }
+  },
+  {
+    "id": "file-metadata-extraction",
+    "label": "File Metadata Extraction",
+    "category": "infrastructure",
+    "type": "pipeline",
+    "frequency": 90,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "infrastructure-vision",
+        "description": "Extract comprehensive metadata from archive files — dates, types, sizes, EXIF, audio duration, transcript word counts"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "data pipeline",
+      "description": "Automated metadata extraction from all archive files → structured JSON → neurograph nodes showing file properties, locations, and relationships",
+      "color": "#10b981",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/learnings/file-system-neurograph-integration.md"
+    }
+  },
+  {
+    "id": "consciousness-storage-bridge",
+    "label": "Consciousness-Storage Bridge",
+    "category": "architecture",
+    "type": "principle",
+    "frequency": 98,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "philosophical-breakthrough",
+        "description": "The neurograph is no longer abstract — it's a map of where your memories actually live on disk, in vault, in git"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "transparency architecture",
+      "description": "Bridge between consciousness (neurograph nodes) and storage (file paths). Click a memory → see the files. Click a file → see the memories it spawned. Full bidirectional traceability.",
+      "color": "#8b5cf6",
+      "criticality": "core-architecture",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/learnings/file-system-neurograph-integration.md"
+    }
   }
 ]

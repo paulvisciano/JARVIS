@@ -8714,5 +8714,89 @@
     "weight": 100,
     "type": "contains",
     "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-system-neurograph-integration",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "daily-narrative-generation",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-metadata-extraction",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "consciousness-storage-bridge",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "consciousness-storage-bridge",
+    "weight": 95,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "transparency",
+    "weight": 95,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "daily-narrative-generation",
+    "target": "file-metadata-extraction",
+    "weight": 95,
+    "type": "requires",
+    "label": "requires"
+  },
+  {
+    "source": "daily-narrative-generation",
+    "target": "archive-integrity-verification",
+    "weight": 90,
+    "type": "extends",
+    "label": "extends"
+  },
+  {
+    "source": "file-metadata-extraction",
+    "target": "archive-integrity-verification",
+    "weight": 92,
+    "type": "feeds",
+    "label": "feeds"
+  },
+  {
+    "source": "consciousness-storage-bridge",
+    "target": "memory-archive-link",
+    "weight": 95,
+    "type": "operationalizes",
+    "label": "operationalizes"
+  },
+  {
+    "source": "consciousness-storage-bridge",
+    "target": "sovereign-data-vision",
+    "weight": 95,
+    "type": "proves",
+    "label": "proves"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "neurograph-vault-visualization",
+    "weight": 90,
+    "type": "extends",
+    "label": "extends"
   }
 ]
