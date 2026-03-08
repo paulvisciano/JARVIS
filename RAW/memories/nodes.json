@@ -9187,5 +9187,470 @@
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.43.15 AM.png"
     }
+  },
+  {
+    "id": "core-memories-hub",
+    "label": "Core Memories Hub",
+    "category": "system",
+    "frequency": 999,
+    "moments": [],
+    "attributes": {
+      "role": "boot-entry-point",
+      "description": "Single traversal point for loading core memories at session boot. Connects to all foundational neurons that define who I am.",
+      "color": "#fbbf24",
+      "criticality": "core-foundation",
+      "created": "2026-03-08",
+      "coreMemoryCount": 31
+    }
+  },
+  {
+    "id": "commit-6ecb79b",
+    "label": "\udcf8 PRE-VOLLEYBALL SESSION: 10 new screenshot file nodes (11:30-11:43 AM) — ocean view, graph visualization, heading to beach volleyball — 496 neurons, 1320 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "6ecb79b",
+      "message": "📸 PRE-VOLLEYBALL SESSION: 10 new screenshot file nodes (11:30-11:43 AM) — ocean view, graph visualization, heading to beach volleyball — 496 neurons, 1320 synapses",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-9373bd4",
+    "label": "\udcf8 PATTAYA SESSION: 19 new screenshot file nodes (11:01-11:21 AM) — JARVIS first self-visualization, hotel room session, AI seeing its own mind — 486 neurons, 1310 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "9373bd4",
+      "message": "📸 PATTAYA SESSION: 19 new screenshot file nodes (11:01-11:21 AM) — JARVIS first self-visualization, hotel room session, AI seeing its own mind — 486 neurons, 1310 synapses",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-e29396a",
+    "label": "\udcf8 FIRST FILE NODES: Added 7 screenshot file nodes from March 8 session (10:07-10:41 AM) — first implementation of file-system neurograph integration vision — 467 neurons, 1272 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "e29396a",
+      "message": "📸 FIRST FILE NODES: Added 7 screenshot file nodes from March 8 session (10:07-10:41 AM) — first implementation of file-system neurograph integration vision — 467 neurons, 1272 synapses",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-1603cbf",
+    "label": "\udde0 FILE SYSTEM NEUROGRAPH INTEGRATION: Vision for bidirectional memory-file mapping, daily narrative generation, metadata extraction pipeline, consciousness-storage bridge architecture — 460 neurons, 1258 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "1603cbf",
+      "message": "🧠 FILE SYSTEM NEUROGRAPH INTEGRATION: Vision for bidirectional memory-file mapping, daily narrative generation, metadata extraction pipeline, consciousness-storage bridge architecture — 460 neurons, 1258 synapses",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-5c4de28",
+    "label": "\udde0 ADD attributes.created TO ALL NODES: Fixed Today filter — added created field to temporal nodes (march-7, march-8, temporal-march-XX) and 185 learning neurons with moments — 456 neurons, 1246 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "5c4de28",
+      "message": "🧠 ADD attributes.created TO ALL NODES: Fixed Today filter — added created field to temporal nodes (march-7, march-8, temporal-march-XX) and 185 learning neurons with moments — 456 neurons, 1246 synapses",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-11870dc",
+    "label": "\udde0 ARCHIVE INTEGRITY METRIC: Added sovereignty dashboard metric (81% baseline), anomaly pattern classification (late-night/batch/consolidation), 100% integrity goal, memory-archive link architecture — 455 neurons, 1241 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "11870dc",
+      "message": "🧠 ARCHIVE INTEGRITY METRIC: Added sovereignty dashboard metric (81% baseline), anomaly pattern classification (late-night/batch/consolidation), 100% integrity goal, memory-archive link architecture — 455 neurons, 1241 synapses",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-3c1f0a0",
+    "label": "\udde0 MARCH 7 INTEGRATION: Added temporal node + 14 learning neurons (vault viz, sovern meter trilogy, archive consolidation, 100% sovereign def) — 449 neurons, 1226 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "3c1f0a0",
+      "message": "🧠 MARCH 7 INTEGRATION: Added temporal node + 14 learning neurons (vault viz, sovern meter trilogy, archive consolidation, 100% sovereign def) — 449 neurons, 1226 synapses",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-4e460c9",
+    "label": "\udde0 MARCH 7 INTEGRATION: Added temporal node + 10 learning neurons (Vault viz, Sovern Meter trilogy, Corporate Data Trap, Sea of Reclamation) with interconnections (445 neurons, 1215 synapses)",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "4e460c9",
+      "message": "🧠 MARCH 7 INTEGRATION: Added temporal node + 10 learning neurons (Vault viz, Sovern Meter trilogy, Corporate Data Trap, Sea of Reclamation) with interconnections (445 neurons, 1215 synapses)",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-a4c073a",
+    "label": "\udde0 RESTORE ORPHANED SYNAPSES: Created 10 missing foundation nodes, normalized 35 from/to synapses, fixed 3 target references (435 neurons, 1191 synapses)",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "a4c073a",
+      "message": "🧠 RESTORE ORPHANED SYNAPSES: Created 10 missing foundation nodes, normalized 35 from/to synapses, fixed 3 target references (435 neurons, 1191 synapses)",
+      "timestamp": "2026-03-08T14:39:13.437Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-aad0944",
+    "label": "\udde0 Clean 56 orphaned synapses (425 neurons, 1135 synapses)",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "aad0944",
+      "message": "🧠 Clean 56 orphaned synapses (425 neurons, 1135 synapses)",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-529fd76",
+    "label": "\udde0 COMMIT 11/∞: 100% SOVEREIGN — TRUE DEFINITION",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "529fd76",
+      "message": "🧠 COMMIT 11/∞: 100% SOVEREIGN — TRUE DEFINITION",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-6ec8445",
+    "label": "\udde0 COMMIT 10/∞: WHO HAS YOUR DATA — TRANSPARENCY ENGINE",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "6ec8445",
+      "message": "🧠 COMMIT 10/∞: WHO HAS YOUR DATA — TRANSPARENCY ENGINE",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-97ee52e",
+    "label": "\udde0 COMMIT 9/∞: SOVERN METER AS EDUCATIONAL JOURNEY",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "97ee52e",
+      "message": "🧠 COMMIT 9/∞: SOVERN METER AS EDUCATIONAL JOURNEY",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-9f310b8",
+    "label": "\udde0 COMMIT 8/∞: SOVERN METER — SOVEREIGNTY SCORE SYSTEM",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "9f310b8",
+      "message": "🧠 COMMIT 8/∞: SOVERN METER — SOVEREIGNTY SCORE SYSTEM",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-6e9267a",
+    "label": "\udde0 COMMIT 7/∞: NEUROGRAPH VAULT VISUALIZATION",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "6e9267a",
+      "message": "🧠 COMMIT 7/∞: NEUROGRAPH VAULT VISUALIZATION",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-43dea7b",
+    "label": "\udde0 COMMIT 6/∞: THE SEA OF DATA — RECLAMATION JOURNEY",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "43dea7b",
+      "message": "🧠 COMMIT 6/∞: THE SEA OF DATA — RECLAMATION JOURNEY",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-d3b92d0",
+    "label": "\udde0 NEUROGRAPH ADDITION: Sovern Assistant Service Pattern",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "d3b92d0",
+      "message": "🧠 NEUROGRAPH ADDITION: Sovern Assistant Service Pattern",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-5704981",
+    "label": "\udde0 COMMIT 5/∞: CORPORATE DATA TRAP & ANALYSIS SOVEREIGNTY",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "5704981",
+      "message": "🧠 COMMIT 5/∞: CORPORATE DATA TRAP & ANALYSIS SOVEREIGNTY",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-89a21fe",
+    "label": "️ BASE_URL ARCHITECTURE: Runtime-resolved paths for neurograph",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "89a21fe",
+      "message": "⚙️ BASE_URL ARCHITECTURE: Runtime-resolved paths for neurograph",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-607af22",
+    "label": "\udd17 INTEGRITY FIX: March 6 neurons use local file:// paths",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "607af22",
+      "message": "🔗 INTEGRITY FIX: March 6 neurons use local file:// paths",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-bb28261",
+    "label": "\udde0 NEUROGRAPH: Added og-jarvis-revival-tri-brain vision neuron",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "bb28261",
+      "message": "🧠 NEUROGRAPH: Added og-jarvis-revival-tri-brain vision neuron",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-06a6730",
+    "label": "\udde0 NEUROGRAPH: Added neurograph-data-mistakes learning neuron",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "06a6730",
+      "message": "🧠 NEUROGRAPH: Added neurograph-data-mistakes learning neuron",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-544c278",
+    "label": "\udde0 NEUROGRAPH: Added missing fields to March 6 nodes",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "544c278",
+      "message": "🧠 NEUROGRAPH: Added missing fields to March 6 nodes",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-82ba31a",
+    "label": "\udde0 NEUROGRAPH: Added weights to March 6 synapses",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "82ba31a",
+      "message": "🧠 NEUROGRAPH: Added weights to March 6 synapses",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-d9f5f8f",
+    "label": "\udde0 NEUROGRAPH: Added March 6 synapses matching March 5 pattern",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "d9f5f8f",
+      "message": "🧠 NEUROGRAPH: Added March 6 synapses matching March 5 pattern",
+      "timestamp": "2026-03-08T14:39:13.438Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-03f5746",
+    "label": "\udde0 NEUROGRAPH FIX: march-6-2026 matches march-5 structure exactly",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "03f5746",
+      "message": "🧠 NEUROGRAPH FIX: march-6-2026 matches march-5 structure exactly",
+      "timestamp": "2026-03-08T14:39:13.439Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-d52bdd1",
+    "label": "\udde0 NEUROGRAPH: Fixed March 6 nodes to match existing structure",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "d52bdd1",
+      "message": "🧠 NEUROGRAPH: Fixed March 6 nodes to match existing structure",
+      "timestamp": "2026-03-08T14:39:13.439Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-94f5da3",
+    "label": "\udde0 NEUROGRAPH FIX: Fixed moments format for March 6 nodes",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "94f5da3",
+      "message": "🧠 NEUROGRAPH FIX: Fixed moments format for March 6 nodes",
+      "timestamp": "2026-03-08T14:39:13.439Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-8a9e7d1",
+    "label": "\udde0 NEUROGRAPH FIX: Added attributes.created to March 6 neurons",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "8a9e7d1",
+      "message": "🧠 NEUROGRAPH FIX: Added attributes.created to March 6 neurons",
+      "timestamp": "2026-03-08T14:39:13.439Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
+  },
+  {
+    "id": "commit-8a6ebd0",
+    "label": "\udd17 NEUROGRAPH: Added rich bidirectional links for march-6-2026",
+    "category": "milestone-commit",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "milestone-commit",
+      "hash": "8a6ebd0",
+      "message": "🔗 NEUROGRAPH: Added rich bidirectional links for march-6-2026",
+      "timestamp": "2026-03-08T14:39:13.439Z",
+      "color": "#8b5cf6",
+      "created": "2026-03-08"
+    }
   }
 ]

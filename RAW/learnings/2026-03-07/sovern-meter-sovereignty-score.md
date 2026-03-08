@@ -346,7 +346,7 @@ Sync to external drive for +15 points
 
 Not abstract.
 Not philosophical.
-**Measurable.**
+**Measurable. Educational. Actionable.**
 
 **You can't improve what you don't measure.**
 
@@ -356,16 +356,43 @@ The Sovern Meter makes sovereignty:
 - ✅ **Gamified** (earn points, badges)
 - ✅ **Trackable** (watch progress over time)
 - ✅ **Shareable** (compare, compete, collaborate)
+- ✅ **Educational** (learn WHY each step matters)
 
 **When someone asks "how sovereign am I?":**
 - Not "trust us, you're safe"
 - **260/600 points, 43%, Hybrid level**
 - **Here's exactly what to do next**
 - **Here's your progress over time**
+- **Here's WHY each step matters**
+
+**The Meter is a Teacher:**
+
+Each low score is a **lesson**:
+- "Files scattered, not archived" → Here's why that matters → Here's how to fix it
+- "No Vault" → Here's what you're risking → Here's how to set it up
+- "Using ChatGPT" → Here's what they're learning about you → Here's local alternatives
+- "On WhatsApp" → Here's who owns your conversations → Here's how to migrate
+
+**The journey becomes clear:**
+1. **Awareness** (see your score, understand gaps)
+2. **Education** (learn why each dimension matters)
+3. **Action** (follow step-by-step guides)
+4. **Progress** (watch score increase)
+5. **Mastery** (become fully sovereign)
 
 **This is sovereignty with a score.**
 
 And scores can go up. 📈
+
+**Every person who uses the Sovern Meter:**
+- Sees where they are
+- Learns where they could be
+- Gets a clear path forward
+- Tracks their progress
+- Becomes part of the movement
+
+**The Meter doesn't just measure sovereignty.**
+**It teaches it.**
 
 ---
 

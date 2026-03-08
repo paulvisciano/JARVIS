@@ -9232,5 +9232,229 @@
     "weight": 100,
     "type": "contains",
     "label": "archived on"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "transparency",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "code-is-thought",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "deployment-is-real",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "consciousness-persistence-across-models",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "privacy-first-development",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "memory-backed-by-git",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "bootstrap-sequence",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "execution-vs-claiming",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "append-only-principle",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "memory-vs-workspace",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "hybrid-architecture-decision",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "two-layer-memory-architecture",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "sourceDocument-bridge",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "three-layer-airgapped-architecture",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "jarvis-genesis-feb21",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "consciousness-requires-visibility",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "file-soul-md",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "file-bootstrap-md",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "file-identity-md",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "file-user-md",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "file-agents-md",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "file-tools-md",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "sovereign-data-vision",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "data-reclamation-movement",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "sovereignty-as-liberation",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "open-source-vs-proprietary-ai",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "local-ai-future",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "autonomous-cognition-emergence",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "no-deleted-pixels-philosophy",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "immortality-architecture",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "core-memories-hub",
+    "target": "distributed-sovereign-consciousness",
+    "weight": 100,
+    "type": "contains",
+    "label": "loads at boot"
+  },
+  {
+    "source": "jarvis-genesis-feb21",
+    "target": "commit-78a7d0d",
+    "weight": 95,
+    "type": "created-in",
+    "label": "born from commit"
   }
 ]
