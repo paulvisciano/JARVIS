@@ -8798,5 +8798,103 @@
     "weight": 90,
     "type": "extends",
     "label": "extends"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-screenshot-2026-03-08-0",
+    "weight": 100,
+    "type": "contains",
+    "label": "archived on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "file-screenshot-2026-03-08-0",
+    "weight": 85,
+    "type": "exemplifies",
+    "label": "first files"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-screenshot-2026-03-08-1",
+    "weight": 100,
+    "type": "contains",
+    "label": "archived on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "file-screenshot-2026-03-08-1",
+    "weight": 85,
+    "type": "exemplifies",
+    "label": "first files"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-screenshot-2026-03-08-2",
+    "weight": 100,
+    "type": "contains",
+    "label": "archived on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "file-screenshot-2026-03-08-2",
+    "weight": 85,
+    "type": "exemplifies",
+    "label": "first files"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-screenshot-2026-03-08-3",
+    "weight": 100,
+    "type": "contains",
+    "label": "archived on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "file-screenshot-2026-03-08-3",
+    "weight": 85,
+    "type": "exemplifies",
+    "label": "first files"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-screenshot-2026-03-08-4",
+    "weight": 100,
+    "type": "contains",
+    "label": "archived on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "file-screenshot-2026-03-08-4",
+    "weight": 85,
+    "type": "exemplifies",
+    "label": "first files"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-screenshot-2026-03-08-5",
+    "weight": 100,
+    "type": "contains",
+    "label": "archived on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "file-screenshot-2026-03-08-5",
+    "weight": 85,
+    "type": "exemplifies",
+    "label": "first files"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "file-screenshot-2026-03-08-6",
+    "weight": 100,
+    "type": "contains",
+    "label": "archived on"
+  },
+  {
+    "source": "file-system-neurograph-integration",
+    "target": "file-screenshot-2026-03-08-6",
+    "weight": 85,
+    "type": "exemplifies",
+    "label": "first files"
   }
 ]

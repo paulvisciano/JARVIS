@@ -8265,5 +8265,173 @@
       "criticality": "core-architecture",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/learnings/file-system-neurograph-integration.md"
     }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-0",
+    "label": "10.07.11",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:07 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 234.7 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.07.11 AM.png",
+      "fileType": "image/png",
+      "size": 240348,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.07.11 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-1",
+    "label": "10.30.26",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:30 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 371.5 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.30.26 AM.png",
+      "fileType": "image/png",
+      "size": 380398,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.30.26 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-2",
+    "label": "10.39.06",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:39 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 382.3 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.06 AM.png",
+      "fileType": "image/png",
+      "size": 391478,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.06 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-3",
+    "label": "10.39.11",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:39 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 413.9 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.11 AM.png",
+      "fileType": "image/png",
+      "size": 423792,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.11 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-4",
+    "label": "10.39.28",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:39 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 316.2 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.28 AM.png",
+      "fileType": "image/png",
+      "size": 323775,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.28 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-5",
+    "label": "10.41.05",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:41 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 517.5 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.05 AM.png",
+      "fileType": "image/png",
+      "size": 529920,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.05 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-6",
+    "label": "10.41.27",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:41 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1279.0 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.27 AM.png",
+      "fileType": "image/png",
+      "size": 1309649,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.27 AM.png"
+    }
   }
 ]
