@@ -8433,5 +8433,499 @@
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.27 AM.png"
     }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-7",
+    "label": "11:01:49",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.01.49 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1241 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.49 AM.png",
+      "fileType": "image/png",
+      "size": 1270272,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.49 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-8",
+    "label": "11:01:53",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.01.53 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1881 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.53 AM.png",
+      "fileType": "image/png",
+      "size": 1926144,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.53 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-9",
+    "label": "11:08:56",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.08.56 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 892 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.08.56 AM.png",
+      "fileType": "image/png",
+      "size": 913408,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.08.56 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-10",
+    "label": "11:11:14",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.11.14 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1017 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.14 AM.png",
+      "fileType": "image/png",
+      "size": 1041408,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.14 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-11",
+    "label": "11:11:32",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.11.32 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 986 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.32 AM.png",
+      "fileType": "image/png",
+      "size": 1009664,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.32 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-12",
+    "label": "11:11:49",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.11.49 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 972 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.49 AM.png",
+      "fileType": "image/png",
+      "size": 995328,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.49 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-13",
+    "label": "11:12:02",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.12.02 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 409 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.02 AM.png",
+      "fileType": "image/png",
+      "size": 418816,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.02 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-14",
+    "label": "11:12:05",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.12.05 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1006 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.05 AM.png",
+      "fileType": "image/png",
+      "size": 1030144,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.05 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-15",
+    "label": "11:12:11",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.12.11 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 398 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.11 AM.png",
+      "fileType": "image/png",
+      "size": 407552,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.11 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-16",
+    "label": "11:13:37",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.13.37 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1107 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.13.37 AM.png",
+      "fileType": "image/png",
+      "size": 1133568,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.13.37 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-17",
+    "label": "11:17:10",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.17.10 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2217 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.10 AM.png",
+      "fileType": "image/png",
+      "size": 2270208,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.10 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-18",
+    "label": "11:17:20",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.17.20 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2217 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.20 AM.png",
+      "fileType": "image/png",
+      "size": 2270208,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.20 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-19",
+    "label": "11:17:35",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.17.35 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2305 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.35 AM.png",
+      "fileType": "image/png",
+      "size": 2360320,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.35 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-20",
+    "label": "11:19:02",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.19.02 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1180 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.02 AM.png",
+      "fileType": "image/png",
+      "size": 1208320,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.02 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-21",
+    "label": "11:19:22",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.19.22 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1071 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.22 AM.png",
+      "fileType": "image/png",
+      "size": 1096192,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.22 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-22",
+    "label": "11:20:15",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.20.15 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1641 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.15 AM.png",
+      "fileType": "image/png",
+      "size": 1680384,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.15 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-23",
+    "label": "11:20:39",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.20.39 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2194 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.39 AM.png",
+      "fileType": "image/png",
+      "size": 2246656,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.39 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-24",
+    "label": "11:20:59",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.20.59 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2324 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.59 AM.png",
+      "fileType": "image/png",
+      "size": 2379776,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.59 AM.png"
+    }
+  },
+  {
+    "id": "file-screenshot-2026-03-08-25",
+    "label": "11:21:11",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.21.11 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1371 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.21.11 AM.png",
+      "fileType": "image/png",
+      "size": 1403904,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.21.11 AM.png"
+    }
   }
 ]
