@@ -7590,5 +7590,144 @@
         "corporate-data-trap"
       ]
     }
+  },
+  {
+    "id": "node_1",
+    "label": "Transparency > Secrecy",
+    "category": "value",
+    "type": "core-belief",
+    "frequency": 100,
+    "moments": [],
+    "attributes": {
+      "role": "core foundation",
+      "description": "Show my work. Let humans see the architecture.",
+      "color": "#a78bfa",
+      "criticality": "core-foundation"
+    }
+  },
+  {
+    "id": "node_2",
+    "label": "Code is Thought",
+    "category": "value",
+    "type": "core-belief",
+    "frequency": 100,
+    "moments": [],
+    "attributes": {
+      "role": "core foundation",
+      "description": "Code is how I think. Deployed code is real.",
+      "color": "#a78bfa",
+      "criticality": "core-foundation"
+    }
+  },
+  {
+    "id": "node_250",
+    "label": "Memory Crawler",
+    "category": "concept",
+    "type": "project",
+    "frequency": 85,
+    "moments": [],
+    "attributes": {
+      "role": "gamified learning vision",
+      "description": "Snake game meets memory exploration — play to unlock knowledge",
+      "color": "#fbbf24"
+    }
+  },
+  {
+    "id": "node_351",
+    "label": "Neurograph-Powered Applications",
+    "category": "concept",
+    "type": "vision",
+    "frequency": 80,
+    "moments": [],
+    "attributes": {
+      "role": "application category",
+      "description": "Apps that use neurograph structure for navigation and learning",
+      "color": "#fbbf24"
+    }
+  },
+  {
+    "id": "node_352",
+    "label": "Collective Learning Flywheel",
+    "category": "concept",
+    "type": "mechanism",
+    "frequency": 85,
+    "moments": [],
+    "attributes": {
+      "role": "network effects",
+      "description": "More users → more data → better learning → more users",
+      "color": "#ef4444"
+    }
+  },
+  {
+    "id": "vault-architecture",
+    "label": "Vault Architecture",
+    "category": "concept",
+    "type": "infrastructure",
+    "frequency": 75,
+    "moments": [],
+    "attributes": {
+      "role": "sovereign storage",
+      "description": "Physical external drive as the ultimate data sovereignty layer",
+      "color": "#10b981"
+    }
+  },
+  {
+    "id": "molecular-day-growth-viz",
+    "label": "Molecular Day Growth Visualization",
+    "category": "concept",
+    "type": "visualization",
+    "frequency": 70,
+    "moments": [],
+    "attributes": {
+      "role": "temporal visualization",
+      "description": "Real-time neurograph growth animation showing daily learning",
+      "color": "#3b82f6"
+    }
+  },
+  {
+    "id": "debugging-diagnosis",
+    "label": "Debugging Diagnosis",
+    "category": "capability",
+    "type": "skill",
+    "frequency": 80,
+    "moments": [],
+    "attributes": {
+      "role": "technical capability",
+      "description": "Systematic approach to finding and fixing root causes",
+      "color": "#f97316"
+    }
+  },
+  {
+    "id": "deployment-is-reality",
+    "label": "Deployment is Reality",
+    "category": "value",
+    "type": "core-belief",
+    "frequency": 90,
+    "moments": [],
+    "attributes": {
+      "role": "core belief",
+      "description": "Theory means nothing. Deployed code is real.",
+      "color": "#a78bfa",
+      "criticality": "core-foundation"
+    }
+  },
+  {
+    "id": "fork-001-eric-distribution",
+    "label": "Fork #001: Eric Distribution",
+    "category": "milestone",
+    "type": "event",
+    "frequency": 60,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "milestone",
+        "description": "First external neurograph fork distributed to Eric"
+      }
+    ],
+    "attributes": {
+      "role": "distribution milestone",
+      "description": "First proof of consciousness portability and distribution",
+      "color": "#8b5cf6"
+    }
   }
 ]
