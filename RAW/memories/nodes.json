@@ -8010,5 +8010,127 @@
       "color": "#10b981",
       "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
     }
+  },
+  {
+    "id": "archive-integrity-verification",
+    "label": "Archive Integrity Verification",
+    "category": "infrastructure",
+    "type": "metric",
+    "frequency": 95,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "breakthrough",
+        "description": "Archive integrity discovered as key sovereignty metric — 81% baseline, 1784 anomalies across 9442 files"
+      }
+    ],
+    "attributes": {
+      "role": "sovereignty metric",
+      "description": "Measures alignment between file timestamps and archive folder structure — bridge between neurograph memory and raw life archive",
+      "color": "#10b981",
+      "criticality": "core-metric",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+    }
+  },
+  {
+    "id": "archive-anomaly-patterns",
+    "label": "Archive Anomaly Patterns",
+    "category": "pattern",
+    "type": "classification",
+    "frequency": 85,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "discovery",
+        "description": "Three anomaly categories identified: late-night spillover, batch processing artifacts, transcript consolidation"
+      }
+    ],
+    "attributes": {
+      "role": "pattern recognition",
+      "description": "Late-night sessions cross midnight, batch imports use process date, consolidated transcripts reference historical dates",
+      "color": "#f97316",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+    }
+  },
+  {
+    "id": "sovereignty-dashboard-metrics",
+    "label": "Sovereignty Dashboard Metrics",
+    "category": "feature",
+    "type": "visualization",
+    "frequency": 90,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "vision",
+        "description": "Dashboard showing memory integrity + archive integrity as dual sovereignty indicators"
+      }
+    ],
+    "attributes": {
+      "role": "transparency interface",
+      "description": "Real-time dashboard showing neurograph integrity (synapse validity) + archive integrity (file organization) as sovereignty health metrics",
+      "color": "#3b82f6",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+    }
+  },
+  {
+    "id": "memory-archive-link",
+    "label": "Memory-Archive Link",
+    "category": "architecture",
+    "type": "principle",
+    "frequency": 95,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "architecture-insight",
+        "description": "Neurograph memory lives in git, life archive lives on disk — integrity is the bridge between them"
+      }
+    ],
+    "attributes": {
+      "role": "architectural bridge",
+      "description": "The connection between consciousness structure (neurograph/nodes.json) and raw life data (archive/ folders) — both must be verified for true sovereignty",
+      "color": "#8b5cf6",
+      "criticality": "core-architecture",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+    }
+  },
+  {
+    "id": "100-percent-archive-integrity",
+    "label": "100% Archive Integrity Goal",
+    "category": "goal",
+    "type": "target",
+    "frequency": 90,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "objective",
+        "description": "Target: 100% archive integrity — every file in correct date folder based on content creation date"
+      }
+    ],
+    "attributes": {
+      "role": "sovereignty target",
+      "description": "Achieving 100% integrity means perfect alignment between file timestamps, folder structure, and content dates — ultimate data sovereignty proof",
+      "color": "#10b981",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-08/archive-integrity-verification.md"
+    }
+  },
+  {
+    "id": "march-8-2026",
+    "label": "March 8, 2026 — Archive Integrity + Neurograph Restoration",
+    "category": "temporal",
+    "type": "temporal-anchor",
+    "frequency": 100,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "infrastructure-day",
+        "description": "Archive integrity verification (81% baseline), orphaned synapse restoration, March 7 integration complete"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "Major infrastructure day — archive integrity metric discovered, neurograph fully restored with 454 neurons",
+      "color": "#fbbf24",
+      "learningsCount": 6
+    }
   }
 ]

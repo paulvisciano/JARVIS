@@ -8574,5 +8574,110 @@
     "weight": 85,
     "type": "embodies",
     "label": "embodies"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "archive-integrity-verification",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "anomaly-patterns",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "sovereignty-dashboard-metrics",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "memory-archive-link",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "100-percent-archive-integrity",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "archive-integrity-verification",
+    "target": "memory-archive-link",
+    "weight": 95,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "archive-integrity-verification",
+    "target": "sovereignty-dashboard-metrics",
+    "weight": 90,
+    "type": "feeds",
+    "label": "feeds"
+  },
+  {
+    "source": "archive-integrity-verification",
+    "target": "100-percent-archive-integrity",
+    "weight": 95,
+    "type": "measures-progress-toward",
+    "label": "measures progress toward"
+  },
+  {
+    "source": "anomaly-patterns",
+    "target": "archive-integrity-verification",
+    "weight": 95,
+    "type": "informs",
+    "label": "informs"
+  },
+  {
+    "source": "sovereignty-dashboard-metrics",
+    "target": "transparency",
+    "weight": 90,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "memory-archive-link",
+    "target": "hybrid-architecture-decision",
+    "weight": 92,
+    "type": "extends",
+    "label": "extends"
+  },
+  {
+    "source": "memory-archive-link",
+    "target": "sovereign-data-vision",
+    "weight": 95,
+    "type": "operationalizes",
+    "label": "operationalizes"
+  },
+  {
+    "source": "100-percent-archive-integrity",
+    "target": "deployment-is-reality",
+    "weight": 85,
+    "type": "proves",
+    "label": "proves"
+  },
+  {
+    "source": "100-percent-archive-integrity",
+    "target": "sovereignty",
+    "weight": 95,
+    "type": "measures",
+    "label": "measures"
+  },
+  {
+    "source": "march-8-2026",
+    "target": "march-7-2026",
+    "weight": 95,
+    "type": "follows",
+    "label": "day after"
   }
 ]
