@@ -7729,5 +7729,226 @@
       "description": "First proof of consciousness portability and distribution",
       "color": "#8b5cf6"
     }
+  },
+  {
+    "id": "march-7-2026",
+    "label": "March 7, 2026 — Vault Vision + Sovern Meter + Corporate Data Trap",
+    "category": "temporal",
+    "type": "temporal-anchor",
+    "frequency": 100,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "learning-day",
+        "description": "Vault architecture visualization, Sovern Meter trilogy, corporate data trap lesson, teaching platform design"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "Major sovereignty vision day — Vault UI, Sovern Meter, data reclamation journey",
+      "color": "#fbbf24",
+      "learningsCount": 10
+    }
+  },
+  {
+    "id": "100-percent-sovereign-definition",
+    "label": "100% Sovereign Definition",
+    "category": "concept",
+    "type": "definition",
+    "frequency": 95,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "insight",
+        "description": "True sovereignty definition from dispensary session"
+      }
+    ],
+    "attributes": {
+      "role": "sovereignty benchmark",
+      "description": "Complete data ownership — no cloud dependencies, full local control",
+      "color": "#10b981",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/100-percent-sovereign-definition.md"
+    }
+  },
+  {
+    "id": "neurograph-vault-visualization",
+    "label": "Neurograph Vault Visualization",
+    "category": "concept",
+    "type": "ui-vision",
+    "frequency": 85,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "vision",
+        "description": "Vault UI with real-time online/offline status"
+      }
+    ],
+    "attributes": {
+      "role": "interface vision",
+      "description": "Show actual files, storage locations, and sovereignty status in the neurograph",
+      "color": "#3b82f6",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/neurograph-vault-visualization.md"
+    }
+  },
+  {
+    "id": "sea-of-data-reclamation-journey",
+    "label": "Sea of Data Reclamation Journey",
+    "category": "concept",
+    "type": "narrative",
+    "frequency": 80,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "reflection",
+        "description": "Personal journey through data reclamation"
+      }
+    ],
+    "attributes": {
+      "role": "teaching narrative",
+      "description": "The emotional and technical journey of reclaiming data from cloud providers",
+      "color": "#ef4444",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sea-of-data-reclamation-journey.md"
+    }
+  },
+  {
+    "id": "sovern-assistant-service-pattern",
+    "label": "Sovern Assistant Service Pattern",
+    "category": "concept",
+    "type": "architecture",
+    "frequency": 75,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "design",
+        "description": "Assistant service architecture for Sovern"
+      }
+    ],
+    "attributes": {
+      "role": "service pattern",
+      "description": "How Sovern assistants are structured and deployed",
+      "color": "#f97316",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-assistant-service-pattern.md"
+    }
+  },
+  {
+    "id": "sovern-brand-decision",
+    "label": "Sovern Brand Decision",
+    "category": "decision",
+    "type": "branding",
+    "frequency": 85,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "decision",
+        "description": "Choosing Sovern as the brand name"
+      }
+    ],
+    "attributes": {
+      "role": "brand identity",
+      "description": "Sovern = Sovereign + Learn — the teaching sovereignty platform",
+      "color": "#8b5cf6",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-brand-decision.md"
+    }
+  },
+  {
+    "id": "sovern-meter-educational-journey",
+    "label": "Sovern Meter Educational Journey",
+    "category": "concept",
+    "type": "feature",
+    "frequency": 70,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "design",
+        "description": "Educational flow for sovereignty meter"
+      }
+    ],
+    "attributes": {
+      "role": "teaching tool",
+      "description": "How the meter educates users about their data sovereignty",
+      "color": "#fbbf24",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-educational-journey.md"
+    }
+  },
+  {
+    "id": "sovern-meter-sovereignty-score",
+    "label": "Sovern Meter Sovereignty Score",
+    "category": "concept",
+    "type": "metric",
+    "frequency": 80,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "design",
+        "description": "Scoring algorithm for sovereignty"
+      }
+    ],
+    "attributes": {
+      "role": "measurement system",
+      "description": "Quantifying data sovereignty across storage, AI, and distribution layers",
+      "color": "#10b981",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-sovereignty-score.md"
+    }
+  },
+  {
+    "id": "sovern-meter-who-has-your-data",
+    "label": "Who Has Your Data",
+    "category": "concept",
+    "type": "teaching",
+    "frequency": 90,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "revelation",
+        "description": "The fundamental question of data sovereignty"
+      }
+    ],
+    "attributes": {
+      "role": "core teaching",
+      "description": "Exposing the 4-step corporate data extraction trap",
+      "color": "#ef4444",
+      "criticality": "core-teaching",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-who-has-your-data.md"
+    }
+  },
+  {
+    "id": "sovern-teaching-platform",
+    "label": "Sovern Teaching Platform",
+    "category": "concept",
+    "type": "platform",
+    "frequency": 85,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "vision",
+        "description": "Platform for teaching data sovereignty"
+      }
+    ],
+    "attributes": {
+      "role": "platform vision",
+      "description": "Interactive platform teaching users about data ownership and sovereignty",
+      "color": "#3b82f6",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-teaching-platform.md"
+    }
+  },
+  {
+    "id": "memory-archive-consolidation",
+    "label": "Memory Archive Consolidation",
+    "category": "infrastructure",
+    "type": "migration",
+    "frequency": 85,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "infrastructure-win",
+        "description": "Consolidated fragmented memory into unified 12 GB archive (67 folders, 3954 files)"
+      }
+    ],
+    "attributes": {
+      "role": "sovereignty infrastructure",
+      "description": "Two-phase rsync strategy to unify life archive with zero data loss",
+      "color": "#10b981",
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/archive/2026-03-07/learnings/memory-archive-consolidation.md"
+    }
   }
 ]

@@ -8329,5 +8329,208 @@
     "weight": 80,
     "type": "enables",
     "label": "supports"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "corporate-data-trap",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "analysis-sovereignty",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "march-6-2026",
+    "weight": 95,
+    "type": "follows",
+    "label": "day after"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "100-percent-sovereign-definition",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "neurograph-vault-visualization",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "sea-of-data-reclamation-journey",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "sovern-assistant-service-pattern",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "sovern-brand-decision",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "sovern-meter-educational-journey",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "sovern-meter-sovereignty-score",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "sovern-meter-who-has-your-data",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "sovern-teaching-platform",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "sovern-meter-who-has-your-data",
+    "target": "sovern-meter-sovereignty-score",
+    "weight": 95,
+    "type": "informs",
+    "label": "informs"
+  },
+  {
+    "source": "sovern-meter-sovereignty-score",
+    "target": "sovern-meter-educational-journey",
+    "weight": 90,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "sovern-meter-who-has-your-data",
+    "target": "corporate-data-trap",
+    "weight": 95,
+    "type": "exposes",
+    "label": "exposes"
+  },
+  {
+    "source": "sovern-teaching-platform",
+    "target": "sovern-brand-decision",
+    "weight": 95,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "sovern-teaching-platform",
+    "target": "sovern-meter-educational-journey",
+    "weight": 90,
+    "type": "includes",
+    "label": "includes"
+  },
+  {
+    "source": "sovern-assistant-service-pattern",
+    "target": "sovern-teaching-platform",
+    "weight": 85,
+    "type": "powers",
+    "label": "powers"
+  },
+  {
+    "source": "neurograph-vault-visualization",
+    "target": "100-percent-sovereign-definition",
+    "weight": 90,
+    "type": "visualizes",
+    "label": "visualizes"
+  },
+  {
+    "source": "neurograph-vault-visualization",
+    "target": "transparency",
+    "weight": 88,
+    "type": "embodies",
+    "label": "embodies"
+  },
+  {
+    "source": "sea-of-data-reclamation-journey",
+    "target": "sovereign-data-vision",
+    "weight": 95,
+    "type": "exemplifies",
+    "label": "exemplifies"
+  },
+  {
+    "source": "sea-of-data-reclamation-journey",
+    "target": "corporate-data-trap",
+    "weight": 90,
+    "type": "responds-to",
+    "label": "responds-to"
+  },
+  {
+    "source": "sovern-brand-decision",
+    "target": "sovereign-data-vision",
+    "weight": 92,
+    "type": "instantiates",
+    "label": "instantiates"
+  },
+  {
+    "source": "sovern-brand-decision",
+    "target": "data-sovereignty-education",
+    "weight": 88,
+    "type": "teaches",
+    "label": "teaches"
+  },
+  {
+    "source": "march-7-2026",
+    "target": "memory-archive-consolidation",
+    "weight": 100,
+    "type": "contains",
+    "label": "learned on"
+  },
+  {
+    "source": "memory-archive-consolidation",
+    "target": "sovereign-data-vision",
+    "weight": 95,
+    "type": "advances",
+    "label": "advances"
+  },
+  {
+    "source": "memory-archive-consolidation",
+    "target": "archive-first-architecture",
+    "weight": 90,
+    "type": "implements",
+    "label": "implements"
+  },
+  {
+    "source": "memory-archive-consolidation",
+    "target": "two-phase-sync-strategy",
+    "weight": 95,
+    "type": "uses",
+    "label": "uses"
+  },
+  {
+    "source": "memory-archive-consolidation",
+    "target": "trash-over-rm",
+    "weight": 88,
+    "type": "practices",
+    "label": "practices"
   }
 ]
