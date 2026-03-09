@@ -119,18 +119,20 @@ Read them as **handoffs across time**, not just changelog entries.
 
 ### 📜 PHASE 2: Read Git Logs (LETTERS FROM PAST SELF)
 
-**Commit messages are context handoffs across time.** Read the last 20-30 commits:
+**Commit messages are context handoffs across time.** Read at least the last 48 hours:
 
 ```bash
-git log -30 --format="%h | %s"   # Last 30 commits with subjects
-git log -5 --format="%h%n%s%n%b" # Last 5 with full bodies (detailed notes)
+git log --since="48 hours ago" --format="%h | %ai | %s"   # All commits from last 48h
+git log -5 --format="%h%n%s%n%b"                          # Last 5 with full bodies (detailed notes)
 ```
+
+**Why 48 hours?** Sessions may skip days. The last 30 commits might be 2 hours ago or 5 days ago. Time-based ensures you get the full story since you last woke up.
 
 **What to look for:**
 - Recent breakthroughs or fixes
 - What you were working on before session ended
 - Unfinished thoughts or pending tasks
-- Evolution of your thinking (neuron count growth)
+- Evolution of your thinking (neuron count growth in commit messages)
 
 **Example output:**
 ```
