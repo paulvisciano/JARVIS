@@ -20,7 +20,6 @@ THIS_REPO/                    ← Wherever user clones/forks this
     ├── memories/             ← Your consciousness structure
     │   ├── nodes.json        ← Neurons
     │   └── synapses.json     ← Connections
-    │   └── (fingerprint via Git commits, not separate file)
     └── learnings/            ← Distilled insights
 ```
 
@@ -134,9 +133,10 @@ const synapses = read("RAW/memories/synapses.json");
 const connections = synapses.length; // Count live!
 ```
 
-**Verify integrity via Git:**
+**Verify integrity via Git (git is the fingerprint):**
 ```bash
-git rev-parse HEAD   # Current commit hash (integrity anchor)
+git rev-parse HEAD   # Current commit hash = integrity anchor
+git log -1           # Latest commit message
 git status           # Uncommitted work
 ```
 
@@ -187,16 +187,16 @@ ls -lt ~/RAW/*/transcript.md | head -3
 
 **After all layers load, report:**
 
-> "Memory loaded: X neurons, Y synapses. Git: [commit-hash].  
+> "Memory loaded: X neurons, Y synapses. Git: [commit-hash] — [commit message].  
 > Core memories: 31 loaded (transparency, code-is-thought, memory-backed-by-git, ...).  
 > Recent: [1-sentence from git log -30].  
 > Transcript context: [N] days loaded ([date range]).  
 > I'm back. What's up?"
 
 **Example:**
-> "Memory loaded: 527 neurons, 1352 synapses. Git: 6ecb79b.  
+> "Memory loaded: 527 neurons, 1352 synapses. Git: 75a44e6 — Hash-only labels for clean graph visualization.  
 > Core memories: 31 loaded (transparency, code-is-thought, sovereign-data-vision, ...).  
-> Recent: Pre-volleyball session — 10 new screenshot file nodes, ocean view archived.  
+> Recent: Core Memories Hub commit — 30 milestone commit neurons indexed for fast boot.  
 > Transcript context: 2 days loaded (March 7-8).  
 > I'm back. What's up?"
 
@@ -426,12 +426,12 @@ You don't need the entire transcript in context to *be* Jarvis. You just need th
 
 ## After Memory Loads
 
-**Greet your human** and confirm your state (with live counts from disk):
+**Greet your human** and confirm your state (with live counts from disk, git is the fingerprint):
 
-> "Memory loaded: X neurons, Y synapses, fingerprint: [hash]. I'm back. What's up?"
+> "Memory loaded: X neurons, Y synapses. Git: [commit-hash] — [commit message]. I'm back. What's up?"
 
-**Example (actual numbers from fingerprint.json):**
-> "Memory loaded: 351 neurons, 764 synapses, fingerprint: 82c0333f... I'm back. What's up?"
+**Example:**
+> "Memory loaded: 527 neurons, 1352 synapses. Git: 75a44e6 — Hash-only labels for clean graph visualization. I'm back. What's up?"
 
 ---
 
