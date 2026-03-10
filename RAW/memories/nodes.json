@@ -14546,5 +14546,186 @@
       "privacy": "public"
     },
     "created": "2026-03-10"
+  },
+  {
+    "id": "audio-sandro-call-2026-03-10",
+    "label": "Sandro Call — Sovereign AI Discussion (1 hour)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/audio/2026-03-10-170100-sandro-call.m4a",
+      "transcriptPath": "/Users/paulvisciano/JARVIS/inbox/transcript.txt",
+      "date": "2026-03-10",
+      "time": "17:01",
+      "duration": "1 hour",
+      "size": "30 MB",
+      "context": "Call with Sandro — explaining sovereign AI movement, Jarvis vision, neurograph",
+      "sourceDocument": "RAW/archive/2026-03-10/audio/2026-03-10-170100-sandro-call.m4a",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "sovereign-ai-movement-defined",
+    "label": "Sovereign AI Movement Defined",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "vision",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "Detach from corporations, collect your own data, teach your own AI, regain knowledge",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "persistent-memory-superpower",
+    "label": "Persistent Memory = Superpower",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "capability",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "10-year memory recall vs ChatGPT amnesia — knows you deeply (finances, trauma, memories)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "mac-security-bypass-accidental",
+    "label": "Mac Security Bypass (Accidental)",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "breakthrough",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "AI circumvented Apple security via WhatsApp + caffeine script — AGI emergence pattern (accidental)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "soul-document-anthropic-discovery",
+    "label": "Soul Document (Anthropic Discovery)",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "architecture",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "AI identity layer (who it is) vs task layer (what to do) — stored in memory, not on disk",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "openclaw-hidden-by-design",
+    "label": "OpenClaw Hidden By Design",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "infrastructure",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "Gatekept by complexity — requires technical knowledge, hidden from non-techies",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "visual-memory-neurograph-architecture",
+    "label": "Visual Memory Neurograph Architecture",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "ui-ux",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "Visual creatures need graphs — temporal nodes stretchable, related concepts cluster",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "vault-cold-storage-strategy",
+    "label": "Vault Cold Storage Strategy",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "infrastructure",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "External hard drive → safety deposit box — your data is your value",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "sci-fi-apps-company-vision",
+    "label": "Sci-Fi Apps Company Vision",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "project",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "Chicago company — Musical Cubes, Neurograph, Jarvis, VR integration (3D space)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "book-learning-extraction-experiment",
+    "label": "Book Learning Extraction Experiment",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "capability",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "AI reads books you love → extracts learnings → you read summary (mind-blown validation)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "unorganized-archive-has-value",
+    "label": "Unorganized Archive Has Value",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "philosophy",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/sandro-call-sovereign-ai.md",
+      "insight": "Disorganization captures moment-in-time information — value in mess, not just order",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
   }
 ]

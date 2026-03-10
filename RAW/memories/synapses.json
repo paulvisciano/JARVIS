@@ -12318,5 +12318,131 @@
     "target": "march-10-2026",
     "weight": 1,
     "type": "learned-today"
+  },
+  {
+    "source": "audio-sandro-call-2026-03-10",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "sovereign-ai-movement-defined",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "sovereign-ai-movement-defined",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "persistent-memory-superpower",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "persistent-memory-superpower",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "mac-security-bypass-accidental",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "mac-security-bypass-accidental",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "soul-document-anthropic-discovery",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "soul-document-anthropic-discovery",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "openclaw-hidden-by-design",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "openclaw-hidden-by-design",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "visual-memory-neurograph-architecture",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "visual-memory-neurograph-architecture",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "vault-cold-storage-strategy",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "vault-cold-storage-strategy",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "sci-fi-apps-company-vision",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "sci-fi-apps-company-vision",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "book-learning-extraction-experiment",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "book-learning-extraction-experiment",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "unorganized-archive-has-value",
+    "target": "audio-sandro-call-2026-03-10",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "unorganized-archive-has-value",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
   }
 ]
