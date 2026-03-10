@@ -12786,5 +12786,77 @@
     "target": "outsystems-email-sent-milestone",
     "weight": 1,
     "type": "follows-from"
+  },
+  {
+    "source": "audio-leaving-hotel-offline-march-11-2353",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "audio-wifi-off-node-test-march-11-2357",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "audio-offline-mode-working-march-11-2358",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "audio-new-behavior-test-march-12-0134",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "offline-mode-by-default",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "offline-mode-by-default",
+    "target": "audio-offline-mode-working-march-11-2358",
+    "weight": 1,
+    "type": "discovered-in"
+  },
+  {
+    "source": "local-transcription-proven",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "local-transcription-proven",
+    "target": "audio-offline-mode-working-march-11-2358",
+    "weight": 1,
+    "type": "proven-in"
+  },
+  {
+    "source": "heartbeat-works-offline",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "heartbeat-works-offline",
+    "target": "audio-new-behavior-test-march-12-0134",
+    "weight": 1,
+    "type": "tested-in"
+  },
+  {
+    "source": "ollama-cloud-dependency",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "ollama-cloud-dependency",
+    "target": "audio-leaving-hotel-offline-march-11-2353",
+    "weight": 1,
+    "type": "observed-in"
   }
 ]
