@@ -12858,5 +12858,77 @@
     "target": "audio-leaving-hotel-offline-march-11-2353",
     "weight": 1,
     "type": "observed-in"
+  },
+  {
+    "source": "audio-whats-going-on-jarvis-march-11-0147",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "audio-new-ui-test-march-11-0147",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "audio-testing-recording-latest-march-11-0151",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "audio-better-keeps-getting-better-march-11-0151",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "ui-testing-session-march-11",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "ui-feedback-positive",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "conversational-tone-emerges",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "rapid-iteration-validated",
+    "target": "march-11-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "ui-feedback-positive",
+    "target": "audio-better-keeps-getting-better-march-11-0151",
+    "weight": 1,
+    "type": "from-recording"
+  },
+  {
+    "source": "conversational-tone-emerges",
+    "target": "audio-whats-going-on-jarvis-march-11-0147",
+    "weight": 1,
+    "type": "from-recording"
+  },
+  {
+    "source": "ui-feedback-positive",
+    "target": "video-orb-ui-concept",
+    "weight": 1,
+    "type": "validates"
+  },
+  {
+    "source": "ui-testing-session-march-11",
+    "target": "video-orb-ui-concept",
+    "weight": 1,
+    "type": "tests"
   }
 ]

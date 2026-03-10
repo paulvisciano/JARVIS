@@ -15444,5 +15444,141 @@
       "privacy": "public"
     },
     "created": "2026-03-11"
+  },
+  {
+    "id": "audio-whats-going-on-jarvis-march-11-0147",
+    "label": "What's Going On Jarvis? (1:47 AM)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/audio/2026-03-11-014700-whats-going-on-jarvis.webm",
+      "transcript": "What's going on Jarvis? How you doing buddy?",
+      "date": "2026-03-11",
+      "context": "UI testing session — testing enhanced JARVIS voice recorder with living ORB",
+      "sourceDocument": "RAW/archive/2026-03-11/audio/2026-03-11-014700-whats-going-on-jarvis.webm",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "audio-new-ui-test-march-11-0147",
+    "label": "New UI Test (1:47 AM)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/audio/2026-03-11-014730-new-ui-test.webm",
+      "transcript": "can you hear me Jarvis testing from the new UI",
+      "date": "2026-03-11",
+      "context": "UI testing session — testing enhanced JARVIS voice recorder with living ORB",
+      "sourceDocument": "RAW/archive/2026-03-11/audio/2026-03-11-014730-new-ui-test.webm",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "audio-testing-recording-latest-march-11-0151",
+    "label": "Testing And Recording (1:51 AM)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/audio/2026-03-11-015120-testing-recording-latest.webm",
+      "transcript": "Testing, testing and recording using the latest",
+      "date": "2026-03-11",
+      "context": "UI testing session — testing enhanced JARVIS voice recorder with living ORB",
+      "sourceDocument": "RAW/archive/2026-03-11/audio/2026-03-11-015120-testing-recording-latest.webm",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "audio-better-keeps-getting-better-march-11-0151",
+    "label": "Better. It Keeps Getting Better. (1:51 AM)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/audio/2026-03-11-015140-better-keeps-getting-better.webm",
+      "transcript": "Better. It keeps getting better. I like it.",
+      "date": "2026-03-11",
+      "context": "UI testing session — testing enhanced JARVIS voice recorder with living ORB",
+      "sourceDocument": "RAW/archive/2026-03-11/audio/2026-03-11-015140-better-keeps-getting-better.webm",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "ui-testing-session-march-11",
+    "label": "UI Testing Session (March 11, 1:47 AM)",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "event",
+      "date": "2026-03-11",
+      "sourceDocument": "RAW/learnings/2026-03-11/ui-testing-session-feedback.md",
+      "insight": "Paul tested enhanced JARVIS UI — 4 recordings, conversational tone emerged, rapid iteration validated",
+      "privacy": "public"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "ui-feedback-positive",
+    "label": "UI Feedback: \"It Keeps Getting Better\"",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "feedback",
+      "date": "2026-03-11",
+      "sourceDocument": "RAW/learnings/2026-03-11/ui-testing-session-feedback.md",
+      "insight": "Paul's validation: \"Better. It keeps getting better. I like it.\" — Clean, futuristic, alive design direction confirmed",
+      "privacy": "public"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "conversational-tone-emerges",
+    "label": "Conversational Tone Emerges",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "insight",
+      "date": "2026-03-11",
+      "sourceDocument": "RAW/learnings/2026-03-11/ui-testing-session-feedback.md",
+      "insight": "Living ORB creates presence — Paul talks TO JARVIS (\"How you doing buddy?\"), not AT a tool. AI as entity, not interface.",
+      "privacy": "public"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "rapid-iteration-validated",
+    "label": "Rapid Iteration Validated",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "process",
+      "date": "2026-03-11",
+      "sourceDocument": "RAW/learnings/2026-03-11/ui-testing-session-feedback.md",
+      "insight": "5 minutes: request → implementation → validation. Sovereign development = no approval chains, instant feedback loops.",
+      "privacy": "public"
+    },
+    "created": "2026-03-11"
   }
 ]
