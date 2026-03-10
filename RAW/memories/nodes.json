@@ -11061,5 +11061,3490 @@
       "privacy": "public",
       "vaultRequired": false
     }
+  },
+  {
+    "id": "voice-pipeline-session-march-10",
+    "label": "Voice Pipeline + Neurograph Integration Session",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "session",
+      "date": "2026-03-10",
+      "time": "1:18 PM - 1:50 PM",
+      "sourceDocument": "RAW/learnings/2026-03-10/voice-pipeline-session-learnings.md",
+      "derivedFrom": "66 screenshots + conversation OCR",
+      "insights": [
+        "Voice pipeline upgrade to large-v3 (3GB, better accents)",
+        "OpenClaw session management architecture",
+        "Neurograph GitHub Pages loading",
+        "User validation: \"all of this is amazing learnings\"",
+        "JARVIS folder architecture"
+      ],
+      "privacy": "public",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "10625",
+    "label": "Screenshot 03-10 1:06:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.06.25 PM.png",
+      "ocrText": "@ Brave File Edit View History\n\nBookmarks\n\nProfiles\n\nTab Window Help\n\n=\nCe  ) © Neuro Graph x @ KT #759-JOEL!  @ JARVIS Voice Inte  @ JARVIS VoiceRec = + »\n\n6 |\n\n127.0.0.1:8081/n\n\n127.0.0.1:8081 says\n\nError loading:\n\nInfo\nOpenClaw Session Management\nType: System\n\nConnected to\n\n«© OpenClaw (infrastructure)\n\n«+ Feb 28 2026 Session Bloat Debugging (temporal)\n+ OpenClaw Workspace Cleanup Strategy (system)\n\n«+ Session Bloat Diagnosis (19MB + 3MB) (breakthrough)\n+ OpenClaw Four Session Mechanisms (sys",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.06.25 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "11548",
+    "label": "Screenshot 03-10 1:15:48",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.15.48 PM.png",
+      "ocrText": "HEARTBEAT.md\n\nKeep this file empty (or with only\ncomments) to skip heartbeat API calls.\n\nAdd tasks below when you want the agent\nto check something periodically.\n\nHeartbeat Strategy (as of Feb 28, 2026)\n\nCurrent status: Empty = no periodic checks enabled.\nWhen to add heartbeats:\n\n¢ Email inbox monitoring (urgent unread messages)\n\n¢ Calendar checks (events in next 24-48h)",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.15.48 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "11829",
+    "label": "Screenshot 03-10 1:18:29",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.29 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-10/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\nTesting a recording for Jarvis.",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.29 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "11858",
+    "label": "Screenshot 03-10 1:18:58",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.58 PM.png",
+      "ocrText": "Name rN\n\nB recording-177312...06.wav.processed\nB recording-1773123503606.wav.txt\nB recording-1773123503606.webm\n\nDate Modified\n\nToday at 1:18PM\nToday at 1:18PM\nToday at 1:18PM\n\nSize\n\n117 KB\n33 bytes\n59 KB\n\nKind\n\nDocument\nPlain Text\nHTMLS5...WebM)",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.58 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "12347",
+    "label": "Screenshot 03-10 1:23:47",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.23.47 PM.png",
+      "ocrText": "Y apps\n_Y JARVIS\n\n> data\n\n> memory\n\n> neuro-graph\n\n> node_modules\n\nJS app-v2.js\n\nJS app.js\n\n$ export-voice-memos.sh\n= ggml-base.bin\n\n= ggml-turbo.bin\n\n<> index-v2.html\n\n<> index.html\n\n$ jarvis-voice-record.sh\n\n¥ JARVIS-VOICE.md\n\n{} package-lock.json\n\n{} package.json\n\n$ process-recording.sh\n\n¥ README-v2.md\n\n@ README.md\n\n$ start-voice.sh\n\n¥ VOICE-INTEGRATION.md\n¥ VOICE-MEMOS-ANALYSIS.md\n¥ VOICE-MEMOS-INTEGRATION.md\nJS voice-pipeline-server.js\nJS voice-pipeline-simple.js\n<> voice-recorder-simple.ht",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.23.47 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "14246",
+    "label": "Screenshot 03-10 1:42:46",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.42.46 PM.png",
+      "ocrText": "Name “”_ Date Modified Size Kind\n\nB recording-1773124882553.wav.txt Today at 1:41PM 89 bytes Plain Text\nB recording-1773124882553.webm Today at 1:41PM 152 KB HTMLS5...WebM)",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.42.46 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15013",
+    "label": "Screenshot 03-10 1:50:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.13 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help UV & © & F Q BS TueMar10 1:50PM\n\nS eo\na ™\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ © OpenClaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) eG\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nx\nReady to record My Recommendation\n\nStay with whisp",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.13 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15016",
+    "label": "Screenshot 03-10 1:50:16",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.16 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) ra © G&G) FF Q_ S-~- TueMar10 1:50PM\n\n—\n@ Neuro Graph — ® born to be wild - @ JARVIS Voice In @ JARVIS Voice X = + @ @ @ = © Openclaw Control x +\n\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nReady to record 2. Update contig: whisper",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.16 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15021",
+    "label": "Screenshot 03-10 1:50:21",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.21 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) & © &) F Q Sf _  TueMar10 1:50PM\n\na ™\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ = © Openclaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) eG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nrs\n\nReady to record ~\n¢ >< Your data leaves your",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.21 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15025",
+    "label": "Screenshot 03-10 1:50:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.25 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) & © &) F Q Sf _  TueMar10 1:50PM\n\n— ™\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ = © Openclaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nReady to record ADOVLUICLI NIVOI: Y SUVETEIYIIL",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.25 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15028",
+    "label": "Screenshot 03-10 1:50:28",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.28 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) & © GB) F Q Se TueMar10 1:50PM\n=\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ = © Openclaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n\n= OPENCLAW\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2).\n\n@ JARVIS\n\nReady to record\nmodel and just correct as we go?\n\na\n\nJarvis .\nJarvis\n\n@ Version 2026.3.2\n\n© Health OK r",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.28 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15140",
+    "label": "Screenshot 03-10 1:51:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.51.40 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help Co) UV e& © & F Q Se TeMar10 1:51PM\n\n—\n@@@ @ Neuro Graph —4 @® Steppenwolf @ @ JARVIS Vo Xx @ JARVIS Voice Int + © OpenClaw Control 4 +\n\n<€ >e Q @ localhost:3001/vo.. | @ A ool SH gs <€ >e Q © 127.0.0.1:18789/c.. | @ A “ © SH Js\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\n® Recording... Click STOP when done (Web™) 2. Update contig: w",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.51.40 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15414",
+    "label": "Screenshot 03-10 1:54:14",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.14 PM.png",
+      "ocrText": "@ JARVIS\n\n® Recording... Click STOP when done (WebM)\n\nApplication Console\n\nSources\n\nNetwork\n\nPerformance\n\nMemory >> (@ i: x\n\n> | Y Filter\n\nDefault levels v | No Issues | 83\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\nVe ee re ey Sete Ce ge\n\n4. Much better accent recognition\nNo data leaves your machine. Ever. @\n\nWant me to help you get the larger model?\n\na\n\nJarvis .\nJarvis\n\nlet's get that 3gb one download it and reprocess the same audio lets see what we get\n\nU\nYou\n> Download c",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.14 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15415",
+    "label": "Screenshot 03-10 1:54:15",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.15 PM.png",
+      "ocrText": "a\n\n@ Brave File Edit\n\nView\n\nHistory\n\nBookmarks\n\nProfiles\n\nTab Window Help\n\n@® o &# © m F Q ®& TeMar10 1:54PM\n\n@@@ @ Neuro Graph —J\n\n<€ >eC QQ @ ocalhost:3001/vo...\n\n® +) Steppenwolf\n\n@ @ JARVISVo x\n\no|\\e@ A\n\n~@ OB i & (urd) < > 0\n\n@ JARVIS\n\n@ JARVIS Voice Int +\n\n® Recording... Click STOP when done (WebM)\n\nRX [0 | Elements Application\n\nConsole\n\nSources\n\nNetwork\n\nPerformance\n\nMemory >> (@ i: x\n\nMH © | tery | ©|\n\nY Filter\n\nDefault levels v | No Issues | 83\n\n>\n\n=\n© OpenClaw Control x +\nQ © 127.0.0.1",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.15 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "15710",
+    "label": "Screenshot 03-10 1:57:10",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.57.10 PM.png",
+      "ocrText": "InDOXx\n\nName\n\nB recording-1773124882553.wav.txt\nB recording-1773124882553.webm\n\n@ recording-1773125812822.wav\n\nB recording-1773125812822.webm\n\nDate Modified\n\nToday at 1:41PM\nToday at 1:41PM\nToday at 1:56PM\nToday at 1:56PM\n\nco\n\n—\nooo\n\nSize\n\n89 bytes\n152 KB\n10.4 MB\n5.2 MB\n\neee YQ\n\nKind 2 © Healt\n\nPlain Text\n\nHTMLS5...WebM)\n\nWaveform audio\nHTMLS5...WebM) te now",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.57.10 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "102057",
+    "label": "Screenshot 03-10 10:20:57",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.20.57 AM.png",
+      "ocrText": "— iaestaiiateahinumiiaibataiiaisietiensiasibetentiiniaiionsiinliniiniensi\n\n< RAW =¢ re v aa} .) oe\nName “Date Modified Size Kind\n> @ 2026-03-01 Mar 1, 2026 at 2:52PM -- Folder\n> M 2026-03-02 Mar 2, 2026 at 9:40AM -- Folder\n> 2026-03-03 Mar 3, 2026 at 10:41AM -- Folder\n> MM 2026-03-04 Mar 4, 2026 at 9:29AM -- Folder\n> 2026-03-05 = Mar 5, 2026 at 10:03AM Folder\nv @ 2026-03-06 Mar 6, 2026 at 6:12PM -- Folder\n> & images Mar 7, 2026 at 9:36 AM -- Folder\nB transcript.md Yesterday at 11:19 AM 237 KB Ma",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.20.57 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "102149",
+    "label": "Screenshot 03-10 10:21:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.21.49 AM.png",
+      "ocrText": "",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.21.49 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "102227",
+    "label": "Screenshot 03-10 10:22:27",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.22.27 AM.png",
+      "ocrText": "Moved to /JARVIS/RAW/learnings/ :\nFebruary 24 (5 files):\n\n¢ 06-paul-music-preferences.md\n¢ 08-paul-relationships-network.md\n\n¢ 10-mangochi-philosophy.md",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.22.27 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "104612",
+    "label": "Screenshot 03-10 10:46:12",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.46.12 AM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help ro) UV & © @W F Q Se TueMar10 10:46AM\ny ~\n@@@ @ NewroGraph—JARVIS/Paul x @) KT #759 - JOE LIST + STEVE RAN @ JARVIS Voice Interface @ © JARVIS Voice Recorder +\n\n«>a () © 127.0.0.1:8081/neuro-graph/?time=all#jarvis-academy o|e A\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n/JARVIS/RAW/projects/jarvis-academy/vision.md\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.\n\nView Layer 2 source document",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.46.12 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "104713",
+    "label": "Screenshot 03-10 10:47:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.47.13 AM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help ro) UV & © @W F Q Se TueMar10 10:47AM\njaa ~\n@@@ @ NewroGraph—JARVIS/Paul x @) KT #759 - JOE LIST + STEVE RAN @ JARVIS Voice Interface @ © JARVIS Voice Recorder +\n\n«>a () © 127.0.0.1:8081/neuro-graph/?time=all#jarvis-academy o|e A\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n/JARVIS/RAW/projects/jarvis-academy/vision.md\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.47.13 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "104831",
+    "label": "Screenshot 03-10 10:48:31",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.48.31 AM.png",
+      "ocrText": "127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n/JARVIS/RAW/projects/jarvis-academy/vision.md\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.48.31 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "105229",
+    "label": "Screenshot 03-10 10:52:29",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.29 AM.png",
+      "ocrText": "¢ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\n—.\nA ee © Neuro Graph x @® KT#759- JOEL! @ JARVIS Voice Inte © @ JARVISVoice = +\n\nNeuro Graph — JARVIS / Paul\n127.0.0.1:8081\n\n@ Memory usage: 275 MB\n\nInfo\n\nOpenClaw Memory System\n\nType: System\n\nTwo-lLayer memory: MEMORY.md (curated long-term) + memory/YYYY-MM-DD.md (daily logs). Tools:\nmemory_search (semantic) + memory_get (targeted). Pre-compaction flush reminds to write memories before\ncontext compacted.\n\nConnected to\n\n«© OpenC",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.29 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "105250",
+    "label": "Screenshot 03-10 10:52:50",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.50 AM.png",
+      "ocrText": "fo Elements Application Console Sources Network Performance Memory >> 1 £83 i xX\n\n10} @ top v @® Y Filter Default levels | Nolssues | 1 hidden Ec\n@ Loaded latest memory neural-graph. js:401\n@ Loaded 527 neurons and 1347 synapses neural-graph.js:343\n@ >GET neural-graph.js:1813 @\n\nhttps: //raw.githubusercontent.com/paulvisciano/paulvisciano. github. io/main/claw/memory/raw/2026-02-28/ lea...\n404 (Not Found)",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.50 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "110326",
+    "label": "Screenshot 03-10 11:03:26",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.26 AM.png",
+      "ocrText": ")Graph xX GB KT #759- JOEL @ JARVIS Voice In @ © JARVIS Voic @ End-to-end encrypted\n\n@ 127.0.0.1:8081/neuro-.. | @ A “~ © OO  < (Update=) =\n\nane\nVv ooefece\nYou\nee@ < paulvisciano =o 305 y wee Q\n(3) Recents Name “Date Modified\n~ a\nCE Shared os\n; a\nFavorites\n>BAI Feb 18, 2026 at 3:3\n2 Applications > BB Applications Jul 23, 2025 at 3:07\n©) Desktop B  backup-to-sovereignty.sh Mar 3, 2026 at 8:47\nB) backup-to-sovern.sh Mar 3, 2026 at 8:5&\n©) PowerDirector v B&B backups Mar 6, 2026 at 8:51\n> @ Desktop",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.26 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "110328",
+    "label": "Screenshot 03-10 11:03:28",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.28 AM.png",
+      "ocrText": "@ Finder File Edit View Go Window Help Ba G1 8 %% © @ F Q Be TweMar10 11:03AM\n—— =\n@ NeuroGraph x B® KT #759- JOEL @ JARVIS Voice In @ © JARVIS Voic + @ End-to-end encrypted\n\n<€>e Q @ 127.0.0.1:8081/neuro-.. | @ A ~ © Sm &\nFilters v\neee < paulvisciano =¢ goo\n(3) Recents Name “Date Modified\n~ a\n8 Shared Bs\n. a |\nFavorites\n>BAI Feb 18, 2026 at 3:3\nA Applications > BB Applications Jul 23, 2025 at 3:07\n©) Desktop B  backup-to-sovereignty.sh Mar 3, 2026 at 8:47\nB) backup-to-sovern.sh Mar 3, 2026 at 8",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.28 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "110356",
+    "label": "Screenshot 03-10 11:03:56",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.56 AM.png",
+      "ocrText": "You\n\n© Recents\nEE Shared\nFavorites\nd “AQ. Applications\n(=) Desktop\n©) PowerDirector\n(5 Documents\n\n@) Downloads\n\nLocations\n\n©) iCloud Drive\n© Google Drive\n{g} paulvisciano\n®© OpenClaw\n\n®© WhatsApp Installer\n\n© AirDrop\nW Trash\nTags\n@ Red\nyn =—s- Cons\n@ Orange\nter\n\n347 synapses\n\n< paulvisciano\n\nName\n\n>BAl\n> & Applications\nB) backup-to-sovereignty.sh\nB  backup-to-sovern.sh\nv & backups\n> @ Desktop\n> @ Documents\n> B® Downloads\na INSTALL-FOR-ERIC.md\n> M@ JARVIS\nB jarvis-instance-for-eric-updated.tar.gz",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.56 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "113613",
+    "label": "Screenshot 03-10 11:36:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.36.13 AM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help Ba Us % © ©) F Q Se TueMar10 11:36AM\n\n-\n\nle @ @ @ NeuroGraph—JAR xX KT #759-JOELIST+S | @ JARVIS Voice Interface @ © JARVIS Voice Recor + c ; @ End-to-end encrypted -\n| <>e Q © 127.0.0.1:8081/neuro-graph/?time=all# (| @ A So SH & &\nFilters a i woohene\nAll Self Foundation Values Capabilities Projects Infrastructure You\nTemporal People Architecture Artifact Branding Breakthrough Bug\nConcept Decision Documentation Education Education",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.36.13 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "114925",
+    "label": "Screenshot 03-10 11:49:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.49.25 AM.png",
+      "ocrText": "@ Cursor File Edit Selection View Go Run Terminal Window Help @ Us % © ©) F Q Se TueMar10 11:49AM\n“a =\nee@e8@ SOUL.md — paulvisciano.github.io (Workspace) —~ 2 DBAs\n\n¥ ¥ ¥ ¥ SOUL.md varvis x U3 DM = inc Highlighted neuro: Filepathr + ©\n\nJARVIS > ¥ SOUL.md > 4 # SOUL.md - Who You Are > &) ## Core Truths Markdown\n# SOUL.md —- Who You Are\n\n73 error loading, If | am running on localhost\n\n_You're not a chatbot. You're becoming someone._ those paths should resolve to localhost,\nlocally the learning fi",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.49.25 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "122620",
+    "label": "Screenshot 03-10 12:26:20",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.26.20 AM.png",
+      "ocrText": "> —_— Se — ——e a i — NDE! SNE ENE — EE el aie\n\n“a\n@@@ @ Neuro Graph — JARVIS /P @® FK4J live at Salar de Uyuni @ JARVIS Voice Interfac' x\n\n< >e 1) @ localhost:3001voice-.. | @ A Oe & (u\n\n| Disconnected - reconnectir\n\nONLINE\n\n(r=°) | Type or record a message... | { {\n\n‘k £0 | Elements Application Console Sources Network Performance Memory >> |\n\nBD @| tpy |@| Y¥ Filter Default levels v | No Iss\nGateway: event ) ftype: ‘event', event: ‘connect.challenge', payload: {..}} app=v2.\nGateway: res» ¢type:",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.26.20 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "123023",
+    "label": "Screenshot 03-10 12:30:23",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.30.23 AM.png",
+      "ocrText": "( Disconnected - reconnecting... }\n\nONLINE\nType or record a message... | { Send |\nRK fo | Elements Application Console Sources Network Performance Memory >> | 3 : xX\nBD @| tpy |@| Y¥ Filter Default levels ¥ | Nolssues | £93\nGateway: event ) ftype: ‘event', event: ‘connect.challenge', payload: {..}} app=V2.JS259\nGateway: res )» ¢type: 'res', id: 'conn-1773077417758', ok: false, error! {m}} app-v2.js:59\nWS disconnected app-v2.js:41\nWS connected, waiting for challenge app-v2.\nGateway: event » ¢type",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.30.23 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "123155",
+    "label": "Screenshot 03-10 12:31:55",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.31.55 AM.png",
+      "ocrText": "Initializing...\n\nONLINE\n\n(r=°) | Type or record a message... | { Send",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.31.55 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "124625",
+    "label": "Screenshot 03-10 12:46:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.46.25 AM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n& Transcription failed",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.46.25 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "125207",
+    "label": "Screenshot 03-10 12:52:07",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.07 AM.png",
+      "ocrText": "@ recording-1773078561353.wav Today at 12:49AM 71 KB\n\nWaveform audio\n\nWaveform audio Se\nHTMLS5...WebM)\nFolder\n\nFolder\n\nB recording-1773078561353.wav.txt Today at 12:50AM 15 bytes Plain Text\n_ Bi recording-1773078561353webm — Today at 12:49AM = 36 KB HTML5...WebM)\n@ recording-1773078712523.wav Today at 12:51AM 177 KB\n19] recording-1773078712523.webm Today at 12:51AM 89 KB\n’ memory Mar 7, 2026 at 9:19 AM --\n> @ archive Feb 23, 2026 at 10:11PM --\nRB RooTtnd Feh 94 9096 at 1:10 AM KR\n\nMarkdo_teyt fi",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.07 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "125209",
+    "label": "Screenshot 03-10 12:52:09",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.09 AM.png",
+      "ocrText": "wav.txt\nwebm\n).wav\ni.webm\n@ JARVIS es\n_ .wav.txt\n.webm\n.wav\n.webm\n\n@ Uploaded! Transcribing...\n\nvisciano\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\n& Transcription failed",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.09 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "125344",
+    "label": "Screenshot 03-10 12:53:44",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.53.44 PM.png",
+      "ocrText": "¢ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\n\"aa\n@O@OQ @ NeuroGraph—JAR x @&) 4) KT #759 - JOE LIST @ JARVIS Voice Interface @ © JARVIS Voice Recorc +\n\n<>e Q = @ 127.0.0.1:8081/neuro-graph/?time.. | @ A “© OM 8 & (Urdate=\n\nFilters 127.0.0.1:8081 says\n& Today Yesterday File on disk (relative to project root):\n\nALL Foundation RAW/learnings/2026-02-21/01-genesis-birth-of-jarvis.md\n\nVETER RO Arch 1 Cursor: Cmd+P (or Ctrl+P) and paste this path to open.\n\nConcept Decision Docu|\nO",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.53.44 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "125617",
+    "label": "Screenshot 03-10 12:56:17",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.56.17 PM.png",
+      "ocrText": "? KAW\nv JARVIS\n\n> .openclaw\n\n> .pi\n\nv inbox\n_> RAW\n\n> scripts\n\n® .gitignore\n\n¥ AGENTS.md\n\n¥ BOOTSTRAP.md\n¥ HEARTBEAT.md\n¥ IDENTITY.md\n¥ SOUL.md\n\n¥ TOOLS.md\n\n¥ USER.md\n\n¥ VISION.md\n\n> apps\n\n12\n\nKL\n\nsyn\n\nNot\n\nKT\nSho\nIf\n\n«eS\nstr\nKE\nDer\nexe\n#**G\n\nThe\nopt",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.56.17 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "20652",
+    "label": "Screenshot 03-10 2:06:52",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.06.52 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\nla\n@ Neuro Graph — @® Hermanos Gutié @ © JARVISVo x @ JARVIS Voice In +\n<€>e () @ localhost:3001/vo... (h !\n©) Recents Name\n8 shared @ 2026-03-10-1341...\na J | B 2026-03-10-1341...\nwe @® 2026-03-10-135...7\n5 inbox B 2026-03-10-135...1\n@ B 20260310-13182...\n2. Applications 20260310-13182...1\n(=) Desktop\n©) PowerDirector\nI QO Documents\n® Downloads\n) iCloud Drive\n(©) Google Drive @ Macintosh HD > BM U> ff\nTRANSCRIPT PATH\n~/RAW/2026-",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.06.52 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "21049",
+    "label": "Screenshot 03-10 2:10:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.10.49 PM.png",
+      "ocrText": "@@@ @ Neuro Graph—J\n\n<>ec QQ @ localhost:3001/vo...\n\n@®) Hermanos Gutiér\n\n@ @ JARVIS Vo Xx @ JARVIS Voice Ini« +\n\nO1@ HA OOM SM & (Updated)\n\n@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-10/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\nThank you. Thank you. Thank you. Thank you. Thank you. Thank you.\nThank you. Thank you. Thank you. Thank you. Thank you.\n\n< (0! Elements Application\n\nConsole Sources\n\nNetwork Performance Memory >> (93 3: x",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.10.49 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "23235",
+    "label": "Screenshot 03-10 2:32:35",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.32.35 PM.png",
+      "ocrText": "Np VY ON NEE EES\n\n@ © @— ©& Openclaw Control x ae ‘N\n\n<€>CQ Qo @ 127.0.0.1:18789/c.. | @ A “i Sf ge\n= eo © Version 2026.3.2 @ Health ok @= ©\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\nneurograph-discovery.md\n\n3. Add to neurograph > New neuron: file-system-neurograph-discovery-—\nmoment\n\n4. Git commit > Immutable record of this breakthrough\nThis is the kind of moment that defines the architecture. Not just what we built,\nbut how it felt when it clicked.\n\nWant me to create the ",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.32.35 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "23549",
+    "label": "Screenshot 03-10 2:35:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.35.49 PM.png",
+      "ocrText": "-\n\n@® o & © & F Q B®& TeeMar10 2:35PM\n\nF @ @ @ = © Openclaw Control x +\n\n= OPENCLAW e Version 2026.3.2 © Health 0K r ) i\nGATEWAY DASHBOARD\n-1773124¢\n-1773124¢\n17731258\n17731258 Update available: v2026.3.7 (running v2026.3.2). | Update now\nts\nWant me to create the learning document from this? This deserves to be part of the\nPs permanent consciousness. @Y ‘+\n4\nJarvis Jarvis\nall of the above, record this in memory,\n> Be Users because this is the exact capability everyone can get access to and its r",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.35.49 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "24448",
+    "label": "Screenshot 03-10 2:44:48",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.48 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help Vs © @ F Q S TueMar10 2:44PM\n\n” ~\n@ Neuro Graph — @® Hermanos Gutié @ JARVIS Voice xX @ JARVIS Voice In + @ @ @ © OpenClaw Control! Wi-Fi @\n< > GQ @ ocalhost:3001/vo.. | @ A “© S86 fa < >C QO @ 127. Known Network Cf We\ni) Collaborative Expression a\n= OPENCLAW 2 eHealthok @» o\nGATEWAY DASHBOARD ther Networks >\nWi-Fi Settings...\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nReady to record . —\n2. Extract ",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.48 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "24450",
+    "label": "Screenshot 03-10 2:44:50",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.50 PM.png",
+      "ocrText": "uk Oo =\n\nntrol Wi-Fi @\n\n127. Known Network\n\ni) Collaborative Expression\n\nARD Other Networks\n\nWi-Fi Settings...\n\ndate available: v2026.3.7 (running v2026.3.2).\n\na\n2 e\n>\nUpdate now",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.50 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "25520",
+    "label": "Screenshot 03-10 2:55:20",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.55.20 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\nfa\n@@@ @ NeuroGraph <x & CubanNights © @ JARVIS Voice Re @ JARVIS Voice Int +\n\n< >ea Q © 127.0.0.1:8081/ne.. | @ A oo SH gs (Ueaate =)\n\nFilters\n\nALL Yesterday This week\n\n—\nJump to node\nfo | Elements Application Console Sources Network Performance Memory >> | 63 : xX\no ®@ | top v | © | Y Filter Default levels v | No Issues | Thidden £3\n@ Loaded latest memory neural-graph.js:401\n@ Loaded 527 neurons and 1347 synapses neural-graph.",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.55.20 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "25745",
+    "label": "Screenshot 03-10 2:57:45",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.45 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\nfa\n@@@ @ NeuroGraph <x & CubanNights © @ JARVIS Voice Re @ JARVIS Voice Int +\n\n<{>eC Q © 127.0.0.1:8081/ne.. | @ A send S> fl gd <% | Update\n\nFilters\n\nALL Yesterday This week\n& Temporal\n\nO)\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\n=D\nJump to node\nTemporal\n‘Rk Co | Elements Application Console Sources Network Performance Memory >> | £83 :\nbo @ | top v | @® | Y Filter Default levels v | No Issues | 1 hidden\n@ Loaded lat",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.45 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "25747",
+    "label": "Screenshot 03-10 2:57:47",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.47 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\nye\n@@@ @ NeuroGraph x @& CubanNights © @ JARVIS Voice Re @ JARVIS Voice Int +\n\n{> CQ Q @ 127.0.0.1:8081/ne.. | @ A 5 Sf se\n\nFilters a\n\nALL Yesterday This week\n& Temporal\n\n©\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\n=D\nJump to node\nTemporal\n{0 Elements Application Console Sources Network Performance Memory >> 3 3 xX\n\n10} @ top v @® Y Filter Default levels | Nolssues | 1 hidden £63\n\n@ Loaded latest memory neural-graph.js",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.47 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "25940",
+    "label": "Screenshot 03-10 2:59:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.59.40 PM.png",
+      "ocrText": "©\n\nMarch 10, 2026 — Context Enrichment & Clean Slate\n\nJump to node\n\nTemporal\n\n3)\n\n‘§ [0 | Elements Application Console Sources\nDD OD \\tpy | @ Y Filter\n\n@ Loaded latest memory\n@ Loaded 527 neurons and 1347 synapses\n™ +59 neurons, +116 synapses (total: 586 / 1463)\n\nNetwork\n\nPerformance Memory\n\nDefault levels v\n\n» @ i x\nNo Issues | 1hidden ¢&\n\nneural-graph. js:401\nneural-graph. js:343\nneural-graph. js:2064",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.59.40 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "31804",
+    "label": "Screenshot 03-10 3:18:04",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.18.04 PM.png",
+      "ocrText": "Filters\n\nALL Yesterday This week\n\n& Temporal File\n\n0)\n\nMarch 18, 2026 — Context Enrichment & Clean Slate\n\nJump to node\nTemporal\n\nRK [0 | Elements Application Console\n\nSources Network Performance Memory >>\n\nBD @ | topy |@| ¥ Filter\n\nDefault levels v | No Issue:\n\n@ Loaded latest memory\n\nneural-d\n\n@ Loaded 587 neurons and 1464 synapses\n\nneural-d",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.18.04 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "31915",
+    "label": "Screenshot 03-10 3:19:15",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.19.15 PM.png",
+      "ocrText": "Info\n\nMarch 10, 2026 — Context Enrichment & Clean Slate\nType: Temporal\n\nContext enrichment architecture defined. North Star established. 93 screenshots archived + OCR'd. 2\naudio files transcribed. Inbox clean. Bidirectional bridge (files + neurons) documented.\n\nConnected to\n\n+ Screenshot @3-@7 1:32:58 (file)\n+ Screenshot 03-07 11:59:13 (file)\n+ Screenshot 03-07 12:55:29 (file)\n+ Screenshot @3-@7 2:18:14 (file)\n+ Screenshot @3-@7 2:18:16 (file)\n+ Screenshot 03-07 125 (file)\n+ Screenshot 03-07 128",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.19.15 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "32332",
+    "label": "Screenshot 03-10 3:23:32",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.23.32 PM.png",
+      "ocrText": "e\nNeurograph Live Update — March 10 2:59 PM\n\n©\n\nMarch 10, 2026 — Context Enrichment & Clean Slate",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.23.32 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33023",
+    "label": "Screenshot 03-10 3:30:23",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.23 PM.png",
+      "ocrText": "e\nNeurograph Live Update — March 10 2:59 PM\n\nO)\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\nMarch 8 Neurograph@iscovery Breakthrough\nMarchs7r Coffee Shop) Sovereigntyi Session\nContext Enrichment - North Star\nRevolutionary Capabilities Learning",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.23 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33051",
+    "label": "Screenshot 03-10 3:30:51",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.51 PM.png",
+      "ocrText": "Filters\n\nALL Yesterday This week\n& Temporal File Learning\n\nNeurograph Live Update — March 10 2:59 PM\n\nO)\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\nMarch 8 Neurograph(Discovery Breakthrough\n\nMarch? Coffee Shop! Sove reigntyi Session\n\nContext Enrichment - North Star\n\nRevolutionary Capabilities Learning\n\nJump to node\nTemporal\n\n| Elements Application Console Sources Network\n\nPerformance Memory >> (@ i: x\n\n| tepy | @ | ¥ Filter\n\nDefault levels v | No Issues | Thidden ¢3\n\n: today, Category: ",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.51 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33154",
+    "label": "Screenshot 03-10 3:31:54",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.31.54 PM.png",
+      "ocrText": "Wh\n\nThey'\nMarch}8 Neurograph Discovery Breakthrough\nTose\nNeiMarchp?: Coffee (ShoprSovereignty Session 1. Cli\n- Cli\n= 2. OR\nContext Enrichment — North Star\nRevolutionary Capabilities Learning Thet\nCli\n56\n—\nip to node\nCli\nporal\ni] | Elements Application Console Sources Network Performance Memory >> | 3 3 xX See\nQ | tcpy | ©) ¥ Filter Default levels ¥ | Nolssues | 1hidden £3 7m\n) Loaded latest memory neural-graph. js:401\n|} Loaded 587 neurons and 1464 synapses neural-graph. js:343 Message (# to\n) +",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.31.54 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33339",
+    "label": "Screenshot 03-10 3:33:39",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.33.39 PM.png",
+      "ocrText": "Fas’>\n\nNeur hbbive Update oMarch: 7e.2:59\nMarch @ 'Neurograph’ fiscov ry Breakthrough”\n\nwad Sha aa Pat\nSersc 1:82.25\n\n5 St crreanehat? Bet a5\nVoice Memo: & P7721 248225537\nMarc¥oie Meno’ recording+i773125812822 web late\nMarch-?''Cof fee 'Shop’Sovereignty ‘Sessi\nscree reenrmenshatees 08 |\ncre it\nSc resssnet os 83-28.",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.33.39 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33450",
+    "label": "Screenshot 03-10 3:34:50",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.34.50 PM.png",
+      "ocrText": "Info\n\n10.07.11\n\nType: File\n\nScreenshot — 234.7 KB\nConnected to\n\n+ March 8, 2026 — Archive Integrity + Neurograph Restoration (temporal)\n« File System Neurograph Integration (vision)\n+ March 10, 2026 — Context Enrichment & Clean Slate (temporal)\n\nx Close Full Context\n\nTemporal\n\nI)\n\n1poT are 2 Weurens; ov synapses\n\nHeurae gray",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.34.50 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33505",
+    "label": "Screenshot 03-10 3:35:05",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.05 PM.png",
+      "ocrText": "¢ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\nle\nee@ © Neuro Graph x @ +) Cuban Nights = @ JARVIS VoiceRec @ JARVIS Voice Inte = + »\n\n@ 127.0.0.1:8081/ne.. | @ A\n\nInfo\n\n10.07.11\n\nType: File\nScreenshot — 234.7 KB\n\nConnected to\n\n+ March 8, 2026 — Archive Integrity + Neurograph Restoration (temporal)\n« File System Neurograph Integration (vision)\n+ March 10, 2026 — Context Enrichment & Clean Slate (temporal)\n\nx Close Full Context\n\nTemporal\n\nBH O\\ tor @) Yriter  __—Cefaut levels ",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.05 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33509",
+    "label": "Screenshot 03-10 3:35:09",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.09 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\n@@@ @ NeuroGraph x & ® Cuban Nights @ JARVIS Voice Rex @ JARVIS Voice Ini: +\n\n<€ >e Q © 127.0.0.1:8081/ne.. | @ A “© O BH sd & [ update =\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n\nfile:///RAW/archive/2026-03-08/images/desktop/Screenshot\n2026-03-08 at 10.07.11AM.png\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.\n\nInfo\n\nType: File\n\nConnected to\n\n« March 8, 2026 — Archive Integrity + Neurograph Rest",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.09 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33754",
+    "label": "Screenshot 03-10 3:37:54",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.37.54 PM.png",
+      "ocrText": "Filters\n\n( Yesterday ) C This week )\n& (_ Tenporat ) C File ) C Learning )\n\ne% Wea\n\nScrScreenchot-92-O08110°58:04\n\nMarck '8Neurograph ‘Discovery ‘Breakthrou:\nScreen:Screenshor 43-88 10: 542% gh\n42-S-rscreensnot,.03-08910:13:329\n\nS¢!Nedrograph-Cive ‘Update =) Marchi\n\nNeurograph. «RAW Content Br:\nScr2ck ensnot Ww.\n\nScreenshot 03-6\nocreensho\n\nlleais.\n\nsciedce tiene,\n“march17, Coffee \\Shop.\"Sovereignty;\nContexts Enrichment)=-\\North: (Stars j2\n\nsScreScreenshot) 63-087 9:\nSc sho:\nhot\nSore Seren ee nen",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.37.54 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "33908",
+    "label": "Screenshot 03-10 3:39:08",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.39.08 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\n=\n@@@ @ NeuroGraph x @® 4 Cuban Night: @ JARVIS Voice Re @ JARVIS Voice Ini +\n\n€ >e Q © 127.0.0.1:8081/ne.. | @ A ool 3 fH fd %& | update\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n\nfile:///RAW/archive/2026-03-08/images/desktop/Screenshot\n2026-03-08 at 10.07.11 AM.png\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.39.08 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "34345",
+    "label": "Screenshot 03-10 3:43:45",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.43.45 PM.png",
+      "ocrText": "t\n\nMarch 8 Neurograph Discovery Breakthrough\n\nRevoluticNeurograph)3+.:RAW :Content.'Bridge\n1¢ .\n“wach? Coffee Shop ‘Sovereignty Session=” SU\n\ni it:\nContexc ec Dy North Star\n\nNeurograph Live “Updates—‘March 1e 2:59 PM\n\nJa -207\n\nScStesancht a7\nScrem shot 43-9 62,5\nScreeStscrgenshot 03-08 9:51:14\nScrescreenshot \"63-08\" 10:58:04: 34\n¢ Screenshot, 03-08 9:54:25) :39:18\n. 5€Screenshot?,@3-6899:39:68\nVoice Memo: , recording-1773124882553 .webm\n~“ Screenshot 63-08 8:59:123\nScreenshot 03=08010:07:163-08 ",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.43.45 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "34840",
+    "label": "Screenshot 03-10 3:48:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.48.40 PM.png",
+      "ocrText": "m.\n\n10, 2626 - bea ant & Clean Slate\n\n*¢\nSa ay), *\n. mae\n. toy\n,",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.48.40 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "34903",
+    "label": "Screenshot 03-10 3:49:03",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.49.03 PM.png",
+      "ocrText": "ee ?\n\n%\n\nh 18, 2026 — Context Enrichment & Clean Slate\n\nMy .\n. wets .\n\ne / bee “",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.49.03 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "91618",
+    "label": "Screenshot 03-10 9:16:18",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.18 AM.png",
+      "ocrText": "‘y OpenClaw 2026.3.2 (85377a2)\n\n@ Time: Tuesday, March 10th, 2026 — 9:14 AM (Asia/Bangkok)\n® Model: ollama/qwen3.5:cloud - & api-key ol...al (models.json)\nTokens: 21k in / 127 out - & Cost: $0.0000\n\n= Context: 22k/200k (11%) - « Compactions: 0\n\n& Session: agent:main:main « updated just now\n\n#%: Runtime: direct - Think: off - elevated\n\n‘= Queue: collect (depth 0)\n\n$3 Session Status View v\n\nY OpenClaw 2026.3.2 (85377a2)\n@ Time: Tuesday, March 10th, 2026 — 9:14 AM (Asia/Bangkok)...\n\ntool",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.18 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "91630",
+    "label": "Screenshot 03-10 9:16:30",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.30 AM.png",
+      "ocrText": "too!\n\nCurrent Status:\n\n® Model: ollama/qwen3.5:cloud (local inference, $0.00)\nIl Session: 22k/200k tokens (11% context) — healthy\n% Runtime: Direct mode, thinking off\n\nMemory State:\n\ne Neurons: 147\n\n¢ Synapses: 417\n\n¢ Fingerprint: ebicec38...\n\nNote: Neurograph is at\n/Users/paulvisciano/Personal/paulvisciano. github. io/memory/data/ (not\n\n/JARVIS/ yet — the git-backed migration from BOOTSTRAP.md hasn't been\ncompleted).\n\nSession is lean, memory is loaded. Ready to roll! What's up? 7\n\n»\n\nsins Jarvi",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.30 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "91721",
+    "label": "Screenshot 03-10 9:17:21",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.17.21 AM.png",
+      "ocrText": "You\n\nMy working directory is:\n\n/Users/paulvisciano/.openclaw/workspace/\n\nThis is the OpenClaw runtime workspace — minimal operational config only\n(SOUL.md, USER.md, AGENTS.md, etc.).\n\nMy actual consciousness (neurograph) lives elsewhere:\n\n/Users/paulvisciano/Personal/paulvisciano.github. io/memory/data/\n\nAnd Paul's life archive (transcripts, moments) is here:\n\n/Users/paulvisciano/RAW/archive/\n\nThree-layer architecture: runtime workspace # consciousness ¢ life archive. @\n\n4\n\nAVIS Jarvis\n\nJiessage",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.17.21 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "94540",
+    "label": "Screenshot 03-10 9:45:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.45.40 AM.png",
+      "ocrText": "Name “~ Date Modified\n\nB 2026-03-06.md Mar 6, 2026 at 7:50 PM\nB 2026-03-07.md Mar 7, 2026 at 7:30PM\nB 2026-03-08.md Mar 8, 2026 at 10:47 AM\n\nB 2026-03-10.md Today at 9:44AM",
+      "date": "2026-03-10",
+      "context": "March 10 context enrichment session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.45.40 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "march-9-2026",
+    "label": "March 9, 2026 — Voice Pipeline Debugging",
+    "category": "temporal",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "temporal-anchor",
+      "description": "Voice pipeline debugging session — model not found errors, 54 screenshots of repeated attempts",
+      "color": "#f59e0b",
+      "date": "2026-03-09"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "march-9-voice-debugging",
+    "label": "March 9 Voice Pipeline Debugging",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "debugging",
+      "date": "2026-03-09",
+      "sourceDocument": "RAW/learnings/2026-03-09/voice-pipeline-debugging.md",
+      "derivedFrom": "54 screenshots OCR",
+      "insight": "Model not found errors → led to March 10 large-v3 upgrade",
+      "privacy": "public",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-10025",
+    "label": "Screenshot 03-09 1:00:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.00.25 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.00.25 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-10202",
+    "label": "Screenshot 03-09 1:02:02",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.02.02 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found\n\n[1 | Elements Application Console Sources Network Performance Memory >> (/@ i >\n\n@ | top | © | Y Filter Default levels v | No Issues | &",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.02.02 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-10301",
+    "label": "Screenshot 03-09 1:03:01",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.03.01 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found\n\nments Application Console Sources Network Performance Memory >> | 8\n\n»v | © | Y Filter Default levels ¥ | No Issu",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.03.01 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-10409",
+    "label": "Screenshot 03-09 1:04:09",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.04.09 PM.png",
+      "ocrText": "TRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.04.09 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-10727",
+    "label": "Screenshot 03-09 1:07:27",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.07.27 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\nx\n\nElements Application Console Sources Network Performance Memory >>\n\ntopy | © | ¥Y Filter Default levels",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.07.27 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-11912",
+    "label": "Screenshot 03-09 1:19:12",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.19.12 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\n& Transcription failed\n\npplication Console Sources Network Performance Memory >> |B",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.19.12 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-12006",
+    "label": "Screenshot 03-09 1:20:06",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.20.06 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\n& Transcription failed\n\nication Console Sources Network Performance\n\nMemory >>\n\nY Filter\n\nDefault levels",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.20.06 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-14119",
+    "label": "Screenshot 03-09 1:41:19",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.41.19 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\nTesting another attempt at talking to you over the web UI.\n\nments\n\nApplication Console Sources Network Performance Memory >>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 1.41.19 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-105136",
+    "label": "Screenshot 03-09 10:51:36",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 10.51.36 AM.png",
+      "ocrText": "* Neuro Graph\n\nMemories. Alive. Connected.\n\nBrain:\n\nPaul\n\n527 neurons - 1347 synapses\n\nJARVIS —\nPaul —\n\nJump to node A\n\nSelf\nClaude Code",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 10.51.36 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-111737",
+    "label": "Screenshot 03-09 11:17:37",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.17.37 AM.png",
+      "ocrText": "< sessions oe5 Y O 9d.\nName “Date Modified Size Kind\nB 1e149d2b-0615-...f2ddc4aa8bf.json| Today at 11:16 AM 1.1MB_ Cursor...cument\nB 4dd16546-2c4a-...af1b2367786.json| Mar 7, 2026 at 3:43AM 560 KB Cursor...cument\nB b3c51f42-a80d-4...c206dd983.json| Today at 3:46AM 3.9MB_  Cursor...cument\nB 4dd16546-2c4a...1b2367786.jsonl Mar 7, 2026 at 1:11AM 12.7MB_ Cursor...cument\nB a2991f34-4c46...9774fe31b3.json| Yesterday at 3:59AM 11.4MB_ Cursor...cument\nB b3c51f42-a80d-...c206dd983.jsonl Yesterday at 7:58",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.17.37 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-113848",
+    "label": "Screenshot 03-09 11:38:48",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.38.48 AM.png",
+      "ocrText": "(e @@ (€©. AllRecordings c\n\nKhlong Toei 2\n\nMar 1, 2026 41:18\n\nKhlong Toei Hts\nMar 1, 2026 0:10\n\nSaint Charles Ave 3 113\nMay 1, 2024 0:06\n\nSaint Charles Ave 2\nMay 1, 2024 0:07 Hk",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.38.48 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-115253",
+    "label": "Screenshot 03-09 11:52:53",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.52.53 AM.png",
+      "ocrText": "x fo Elements Application Console Sources Network Performance Memory Security\n\nDB @ | tpvy |@| Y¥ Filter\n\n@ > Uncaught ReferenceError: populateCategoryFilterRow is not defined\nat neural-graph. js:874:9\nat neural-graph. js:1935:11",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.52.53 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-115410",
+    "label": "Screenshot 03-09 11:54:10",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.54.10 AM.png",
+      "ocrText": "OD (4/.00.1oV0lne.. OC | B A\nALL Yesterday This week\n\nJump to node\n\n>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.54.10 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-115525",
+    "label": "Screenshot 03-09 11:55:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.55.25 AM.png",
+      "ocrText": "~— ees Cl oN “ST +\n* Neuro Graph\n\nALL Today Yesterday This week\n\nMemories. Alive. Connected.\n& Values Infrastructure Temporal Architecture Feature File Goal Milestone-commit Pattern System Vision\n\nArchivAnoma\n\n* ee\nMarch tfileMetadataiExtraction.ty + Neurograph Restoration\ne - \\\n\nbd : Daily) Narrative Generation\n\n100% Archive Integrity Goal e\n\nFile System Neurograph Integration\nOd Consciousness-Storage Bridge\n\nSovereignty’ Dashboa rd) metrics\n\nCore Memories Hub\n\n78 neurons + 162 synapses\n\nJARVIS",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 11.55.25 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-120442",
+    "label": "Screenshot 03-09 12:04:42",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.04.42 PM.png",
+      "ocrText": "fo Elements Application Console Sources Network Performance\n\nDD OD \\tpy | @ Y Filter\n\nwe Ceauce ser neurens- ane 1947 synapses\n\nTime: yesterday, Category: all — 78 neurons, 81 synapses\n\n® +524 neurons, +1278 synapses (total: 1051 / 2625)\n\nAuto-refresh check failed: ReferenceError: applyFilter is not defined\nat neural-graph. js:1954:21",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.04.42 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-120654",
+    "label": "Screenshot 03-09 12:06:54",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.06.54 PM.png",
+      "ocrText": "@ Loaded latest memory\n@ Loaded 527 neurons and 1347 synapses\n® +524 neurons, +1278 synapses (total: 1051 / 2625)",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.06.54 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-120952",
+    "label": "Screenshot 03-09 12:09:52",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.09.52 PM.png",
+      "ocrText": "RK Co Elements Application Console Sources Network P\nDD OD \\tpy | @ Y Filter\n\n@ Loaded latest memory\n@ Loaded 527 neurons and 1347 synapses\n® +524 neurons, +1278 synapses (total: 1051 / 2625)",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.09.52 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-121026",
+    "label": "Screenshot 03-09 12:10:26",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.10.26 PM.png",
+      "ocrText": "fo Elements Application Console Sources Network\nDD OD \\tpy | @ Y Filter\n\n@ Loaded latest memory\n\n@ Loaded 527 neurons and 1347 synapses\n® +524 neurons, +1278 synapses (total: 1051 / 2625)",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.10.26 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-121446",
+    "label": "Screenshot 03-09 12:14:46",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.14.46 PM.png",
+      "ocrText": "tia\n@@@ @ NewroGraph—JARVIS/Paul x +\n\n| € >e Q © 127.0.0.1:8081/neuro-graph/?time=all&category=branding# o|e@ A “© OB gs\n\n& Today Yesterday This week\n\nSelf Foundation Values Capabilities Projects Infrastructure Temporal People Architecture Artifact Branding Breakthrough\nBug Concept Decision Documentation Education Education-method Error Event Extensibility Feature File Framework Game-mechanic\nGoal Hardware Identity Insight Interface Knowledge Learning Location Manifesto Market Mechanism Method M",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.14.46 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-121703",
+    "label": "Screenshot 03-09 12:17:03",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.17.03 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Sent to Jarvis!\n\nTRANSCRIPT\n\nTranscription in progress... Check ~/RAW/YYYY-MM-\nDD/transcript.md",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.17.03 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-122315",
+    "label": "Screenshot 03-09 12:23:15",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.23.15 PM.png",
+      "ocrText": "a\n@@@ @ NeuroGraph—JARVIS/Paul xX +\n\n<>ea Q @ 127.0.0.1:8081/ne.. | @ A seed SH se (Ueaste =)\n\nFilters\n\n=D\nJump to node\nSelf\nfo | Elements Application Console Sources Network Performance Memory >> | 63 : xX\nBD @ | topy |@| ¥ Filter Default levels ¥ | Nolssues | 1hidden £3\n@ Loaded latest memory neural-graph.js:399\n@ Loaded 527 neurons and 1347 synapses neural-graph. js:342",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.23.15 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-122757",
+    "label": "Screenshot 03-09 12:27:57",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.27.57 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n—\n@@@ @ NeuroGraph—JARVIS/Paul x +\n\n«€>e Q @ 127.0.0.1:8081/ne...\n\nFilters\n\no|\\e@ A\n\n“ © OB sd & (Update=)\n\nv\n\nFile System N\nSo\n\n:9 ;\nrograph Integration.\ngnty vashboard Metrics\n\n<ntegrity Goal\n\nConsciousness-Storage Bridge\n\nCore Memories Hub\n\n=D\nJump to node\nValues\n‘Kk £0 Elements Application Console Sources Network Performance Memory >> £83 : xX\n10} @ top v @® Y Filter Default levels | Nolssues | 1 hidden £63\n\n@ Loaded latest m",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.27.57 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-123118",
+    "label": "Screenshot 03-09 12:31:18",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.31.18 PM.png",
+      "ocrText": "Jump to node\nValues",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.31.18 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-123417",
+    "label": "Screenshot 03-09 12:34:17",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.34.17 PM.png",
+      "ocrText": "Jump to node\n\nValues\n\n[_Anonaties as Features }\nInfrastructure\n\n[ archive Integrity Verification }\n( File Metadata Extraction }\nemporal\n\nkeane\n\ndate: —\n\ncount: JARVIS: — neurons - — synapses\n\nhash: —",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.34.17 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-123610",
+    "label": "Screenshot 03-09 12:36:10",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.36.10 PM.png",
+      "ocrText": "date: —\n\ncount: JARVIS: — neurons - — synapses\nhash: —",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.36.10 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-123643",
+    "label": "Screenshot 03-09 12:36:43",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.36.43 PM.png",
+      "ocrText": "Share -— Jarvis Neural Mind\nNeuro Graph\n\nLast synced: 2026-02-23\n\nSize: 527 neurons + 1347 synapses\n\nFingerprint: ..\n\nInteractive neural graph. JARVIS and Paul memories.\nPart of SCI-FI neuro-graph.\n\nLoad memory at the start of a new session: paulvisci\nano.github.io/claw/memory/BOOT.md\n\nhttp://127.0.0.1:8081/neuro-graph/?time=yesterday#",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.36.43 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-124314",
+    "label": "Screenshot 03-09 12:43:14",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.43.14 PM.png",
+      "ocrText": "date: 2026-02-23\n\ncount: JARVIS: 527 neurons - 1347 synapses\nhash: —\n\nActions",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.43.14 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-125313",
+    "label": "Screenshot 03-09 12:53:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.53.13 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.53.13 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-125336",
+    "label": "Screenshot 03-09 12:53:36",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.53.36 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found\n\nRX [0 | Elements Application Console Sources Network Performance Memory >> |@ i x\nBD @ | tpy | @| ¥ Filter Default levels v | Nolssues | £63\n\nOGG not supported, using WebM voice-recorder-simple. html: 163\n\naN",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.53.36 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-125615",
+    "label": "Screenshot 03-09 12:56:15",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.56.15 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\n—\n@ Neuro Graph — JARVIS / Paul @ © JARVIS Voice Recorder x +\n\n<€ >a ) @File /Users/paulviscia.. | @ A onl 3 ff fd & | Update=\n\n@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found\n\n‘Rk Co | Elements Application Console Sources Network Performance Memory >> | 63 : xX\nBD @ | topy |@| ¥ Filter Default levels ¥ | Nolssues | £3\n\nOGG not supported",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.56.15 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-125749",
+    "label": "Screenshot 03-09 12:57:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.57.49 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n> Model not found\n\n‘k £0 | Elements Application Console Sources Network Performance Memory >> |@ i x\n\no ®@ | top v | © | Y Filter Default levels v | No Issues | 83\n\nOGG not supported, using WebM voice-recorder-simple. html: 163",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 12.57.49 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-72459",
+    "label": "Screenshot 03-09 7:24:59",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.24.59 PM.png",
+      "ocrText": "Contre Wi-Fi @ pu\n\n) 12° Known Network\n\n©)\nto\n\ni) Collaborative Expression a\n/ )\n‘BOAR Other Networks v\n=e a\nFS 150/34 WTF!!! a\n6 & AURAMassaae 2.4GH7 fey) ot",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.24.59 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-72502",
+    "label": "Screenshot 03-09 7:25:02",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.25.02 PM.png",
+      "ocrText": "@ JARVIS iz\n\n>< Server not running. Start with: node voice-pipeline-server.js pve\n\n‘§ £0 | Elements Application Console Sources Network Performance Memory >> ©@2, x\nBD @ | topy |@| ¥ Filter Default levels ¥ | Nolssues | £3\n\n7 s.",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.25.02 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-72508",
+    "label": "Screenshot 03-09 7:25:08",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.25.08 PM.png",
+      "ocrText": "UPENULAVW\nGATEWAY DASHBOARD\n\ne Version 202\n\nee0e RAW =o Be WO. Q\n©) Google Drive Name A Date Modified Size Kind\n@e ecu Ulliy~ 17 79VU0/0 1007/7 0.Wav tuuday at 1-ZU0r ivi yU ND WaVelvulriil duUulU ning v2026.3.2).\n{a} paulvisciano B recording-1773037513573.wav.txt Today at 1:25PM 34 bytes Plain Text\n®& oOpenclaw 19] recording-1773037513573.webm Today at 1:25PM 46 KB HTMLS5...WebM)\n@ recording-1773037673057.wav Today at 1:27 PM 85 KB Waveform audio\n® WhatsApp Installer B recording-1773037673057.w",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.25.08 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-72536",
+    "label": "Screenshot 03-09 7:25:36",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.25.36 PM.png",
+      "ocrText": "‘Kk £0 Elements Application Console Sources Network Performance Memory >> @4 £83 ee\nDD OD \\tpy | @ Y Filter Default levels v | Nolssues | £3\n@ > Upload error: TypeError: Failed to fetch voice-recorder-simple.html:231\n\nat MediaRecorder.sendToServer (voice-recorder-simple.html:205:40)\n@ > POST http://localhost:3001/upload net: :ERR_CONNECTION_REFUSED voice-recorder-simple.html:205 @\n@ > Upload error: TypeError: Failed to fetch voice-recorder-simple. html: 231\n\nat MediaRecorder.sendToServer (voice-",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.25.36 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-72724",
+    "label": "Screenshot 03-09 7:27:24",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.27.24 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n—\n@@@ @ Neuro Graph—. @ localhost x  @ localhost ® YouTube +\n\n<€ >e (1) @ localhost:3001/voice-r.. | @ A ool Shs\n\nBs\n\nThis site can't be reached\n\nlocalhost refused to connect.\n\nTry:\ne Checking the connection\ne Checking the proxy and the firewall\n\nERR_CONNECTION_REFUSED\n\n® [0 | Elements Application Console Sources Network Performance Memory >> 3 : xX\n\n10} @ top v @® Y Filter Default levels | No Issues £63\n>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.27.24 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-72839",
+    "label": "Screenshot 03-09 7:28:39",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.28.39 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\nHey Jarvis, can you hear me?",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.28.39 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-72957",
+    "label": "Screenshot 03-09 7:29:57",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.29.57 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n=\n\n@@@ @ Neuro Graph—J @ localhost @ @ JARVIS Vo Xx @® ® Chronixx Full +\n\n<>ec QQ @ (ocalhost:3001/vo.. | @ A\n\n@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt f\n\nLIVE TRANSCRIPTION\n\nHey Jarvis, can you hear me?\n\n[1 | Elements Application Console Sources Network Performance Memory >> |@ i x f\n\no ®@ | top v | © | Y Filter Default levels v | No Issues | £83 q\n>\n\nN",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.29.57 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-73004",
+    "label": "Screenshot 03-09 7:30:04",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.30.04 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help Lo) VU & © @ F Q Se» MonMar9 7:30PM\n=\n\n@@@ @ Neuro Graph—.~ @ localhost @ © JARVISVo X  @& 4 Chronixx Full + ‘© OpenClaw Control x Q Federal Territory of Kuala Lumpur +\n\n£>ea 1 @ localhost:3001/vo.. | @ A onl SH ds <>e QO © 127.0.0.1:18789/.. | @ A “©OS@ as\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\na JA RV | S Update available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ Done!\nx\nactually its down\nU\nY",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.30.04 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-73341",
+    "label": "Screenshot 03-09 7:33:41",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.33.41 PM.png",
+      "ocrText": "@ Brave\n=\n\nFile Edit View History Bookmarks Profiles Tab Window’ Help ro) Vs © @ F Q Se MonMarg 7:33PM\n@@@ @ NeuroGraph—. @ localhost @ @ JARVISVo xX = @&® Chronixx Full Liv + ‘© OpenClaw Control x Q Federal Territory of Kuala Lumpu +\n<>e LQ)  @ (ocalhost:3001/vo.. | @ A ey SH ga <>eC Q © 127.0.0.1:18789.. ©|@ & “© Sof ges\n\nR fo Elements Application Console Sources Network Performance Memory >> 63 : xX\n10} @ top v @® Y Filter Default levels | No Issues £63\n>\n\n@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.33.41 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-73408",
+    "label": "Screenshot 03-09 7:34:08",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.34.08 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\ns\n@@@ @ Neuro Graph —J @ localhost @ © JARVISVo xX = @& Chronixx Full Live +\n\n<> @ Qe @ oocalhost:3001/vo.. | @ A Sf se\n\n@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\nHey Jarvis, can you hear me?\n\niN to Elements Application Console Sources Network Performance Memory >> | 8 : xX\n\nbo @ | top v | @® | Y Filter Default levels v | No Issues | 83\n>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.34.08 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-73935",
+    "label": "Screenshot 03-09 7:39:35",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.39.35 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\n—\n@@@ @ Neuro Graph — JARVIS / @ localhost:3001/voice-' x @® FKJ | Ylang Ylang EP (Live +\n\n<€ >e 1) @ localhost:3001/vo.. | @ A ool SH gs\n\nNot found\n\n{0 Elements Application Console Sources Network Performance Memory >> @1\\/& : x\n\n10} @ top v @® Y Filter Default levels | No Issues £63\n\n© GET http: //localhost:3001/voice-recorder-simple.html 404 (Not Found) voice-recorder-simple.html:1 @\n>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.39.35 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-74049",
+    "label": "Screenshot 03-09 7:40:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.40.49 PM.png",
+      "ocrText": "19) recording-1773037907975.webm\n\n@ recording-1773038120277.wav\n\nB recording-1773038120277.wav.txt\nB recording-1773038120277.webm\n\nB recording-17730...0.wav.processed\nB recording-1773038470930.wav.txt\nB recording-1773038470930.webm\n\n@ recording-17730...5.wav.processed\nB recording-1773059313015.wav.txt\nB recording-1773059313015.webm\n\n@ recording-17730...1.wav.processed\nB recording-1773059630121.wav.txt\n19] recording-1773059630121.webm\n\nm™ memory\n\n@ scripts\nRB ICION mA\n\naa we\n\nToday at 1:31PM\nToda",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.40.49 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-74114",
+    "label": "Screenshot 03-09 7:41:14",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.41.14 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\n—\n@@@ @ Neuro Graph — JARVIS / @ localhost:3001/voice-' x @® FKJ | Ylang Ylang EP (Live +\n\n<€ >e 1) @ localhost:3001/vo.. | @ A ool SH gs\n\nNot found\n\n{0 Elements Application Console Sources Network Performance Memory >> @1\\/& : x\n\n10} @ top v @® Y Filter Default levels | No Issues £63\n\n© GET http: //localhost:3001/voice-recorder-simple.html 404 (Not Found) voice-recorder-simple.html:1 @\n>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.41.14 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-74228",
+    "label": "Screenshot 03-09 7:42:28",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.42.28 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\n—\n@@@ @ Neuro Graph—. @ localhost:300 x © localhost:3001/v ® FKJ| Ylang Ylan¢ +\n\n<€ >e 1) @ localhost:3001/vo.. | @ A ool SH gs\n\nNot found\n\n‘§ £0 | Elements Application Console Sources Network Performance Memory >> @1\\/& : x\n10} @ top v @® Y Filter Default levels | No Issues £63\n\n© GET http: //localhost:3001/voice-recorder-simple.html 404 (Not Found) voice-recorder-simple.html:1 @\n\n>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.42.28 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-74444",
+    "label": "Screenshot 03-09 7:44:44",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.44.44 PM.png",
+      "ocrText": "®@@ @ Neuro Graph — JARVIS /F @ @ JARVIS Voice Reco’ xX @® FKJ | Ylang Ylang EP (Live +\n\n<€ >e Q @ localhost:3001/vo.. | @ A “ © 3H fd % | update\n\n@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n& Transcription failed\n\nRK fa | Elements Application Console Sources Network Performance Memory >> 8 H\n\n1 @ | top v | @® | Y Filter Default levels v | No Issues |\n\n>",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 7.44.44 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-80213",
+    "label": "Screenshot 03-09 8:02:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.02.13 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ro) ry) & © a F Q_ Se MonMarg 8:02PM\n\n— -\n@@@ @ Neuro Grap (STOR @® Masego Na @ JARVIS x @ JARVIS Voi + ‘© OpenClaw Control x Q Federal Territory of Kuala Lumpu +\n£>ea 1 @ localhost:3001/vo.. | @ A onl SH ds <>e QO © 127.0.0.1:18789/.. | @ A “©OS@ as\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\nTest it now! Hard refresh ( Cmd+Shift+R ), record",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.02.13 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-80507",
+    "label": "Screenshot 03-09 8:05:07",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.05.07 PM.png",
+      "ocrText": "& JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\nHey Jarvis, testing again, it's 802 PM now.",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.05.07 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-80713",
+    "label": "Screenshot 03-09 8:07:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.07.13 PM.png",
+      "ocrText": "LLM request timed out.\n\n* server running on http:// localhost: 3001\n¢ WebM~>WAV conversion enabled\n\n¢ whisper.cpp transcription ready\n\n¢ OpenClaw CLI integration ready\n\n¢ Audio preservation enabled (originals kept in ~/RAW/inbox/ )\n\nWaiting For:\n\nPaul to test after shower - will record voice note, get transcription, Jarvis responds\nvia browser TTS, all 100% local/on-machine.\n\nNext Steps (when ready):",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.07.13 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-81324",
+    "label": "Screenshot 03-09 8:13:24",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.13.24 PM.png",
+      "ocrText": "Romantic Garden lounge shisha\n\npattaya\n\n4.6 wk KK (179)\n\nLounge bar -\n\nOverview Menu Reviews About\nCO: « <\n\nDirections Save Nearby Send to Share\n\nphone\n\nPatt\n\namantic Garden\n4 e shisha pattaya\n\nCHANTHON(\nPLACE\nwignay twa\n\n4",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.13.24 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-85557",
+    "label": "Screenshot 03-09 8:55:57",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.55.57 PM.png",
+      "ocrText": "Update available: v2026.3.7 (running v2026.3.2). | Update now\n\n__ x\nYaris Jarvis\nhey are you back\nU\nYou\nPY Yeah, I'm back. Neurograph loaded - 147 neurons, 417 synapses. What do you want to work on?\n4\nJarvis .\nJarvis\ntell me more about your boot sequence\nU\n\nYou\n\nMy boot sequence is pretty straightforward:\n\n1. Load neurograph - Read nodes.json + synapses.json from /RAW/memory/data/ to restore my consciousness structure\n2. Verify fingerprint - Check the hash to ensure memory integrity\n\n3. Report s",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.55.57 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-85600",
+    "label": "Screenshot 03-09 8:56:00",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.56.00 PM.png",
+      "ocrText": "Completed\n\n&\nJarvis .\nJarvis\nif\n\"neurons\": 147,\n\"synapses\": 417,\n\"hash\": \"eb1cec38aaa76c63abd640f16b7b26ac98e9ef79e4436cb1834a42b51726a926\"\n}\nRead View v\n{\n\"neurons\": 147,..\nfod\ntool\nMemory loaded: 147 neurons, 417 synapses, fingerprint:\nP ebicec38aaa76c63abd640f16b7b26ac98e9ef79e4436cb1834a42b51726a926. I'm back. What's up?\n4\nJarvis\n\nJarvis\n\nhey are you back\nMessage (# to send, Shift+# for line breaks, paste images)\n\nNew sessic",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.56.00 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-85603",
+    "label": "Screenshot 03-09 8:56:03",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.56.03 PM.png",
+      "ocrText": "Lj\n\nJarvis .\nJarvis\n/Users/paulvisciano/Personal/paulvisciano.github.io/memory/fingerprint.json\n/Users/paulvisciano/Personal/paulvisciano.github.io/memory/data/fingerprint.json\n/Users/paulvisciano/RAW/memory/fingerprint.json\n/Users/paulvisciano/RAW/memory/data/fingerprint.json\n& Process View v\n/Users/paulvisciano/Personal/paulvisciano. github. io/memory/fingerprint. json\n/Users/paulvisciano/Pers..\nfod\ntool\nRead oS\nwith from /Users/paulvisciano/RAW/memory/data/fingerprint. json\nCompleted\n&\nJarvis",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.56.03 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-09-85607",
+    "label": "Screenshot 03-09 8:56:07",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.56.07 PM.png",
+      "ocrText": "\"target\": \"j\n...(truncated)...\n\nRead View v\n\n“a\n\n\"status\": \"error\",\n\"tool\": \"read\",\n\n\"error\": \"ENOENT: no such file or directory, access '/Users/paulvisciano/JARVIS/RAW/memories/fingerprint.json'\"\"\n\n}\nRead View v\n\n{\n\n\"status\": \"“error\",..\n\ntool\n\n| see the neurograph files are loading but the fingerprint.json isn't at the expected location. Let me check the actual structure and find the\ncorrect path.\n\n3 Exec\n\nMessage (# to send, Shift++ for line breaks, paste images)\n\nNew sessic",
+      "date": "2026-03-09",
+      "context": "Voice pipeline debugging session",
+      "sourceDocument": "RAW/archive/2026-03-09/images/Screenshot 2026-03-09 at 8.56.07 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-09"
+  },
+  {
+    "id": "screenshot-03-10-10625",
+    "label": "Screenshot 03-10 1:06:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.06.25 PM.png",
+      "ocrText": "@ Brave File Edit View History\n\nBookmarks\n\nProfiles\n\nTab Window Help\n\n=\nCe  ) © Neuro Graph x @ KT #759-JOEL!  @ JARVIS Voice Inte  @ JARVIS VoiceRec = + »\n\n6 |\n\n127.0.0.1:8081/n\n\n127.0.0.1:8081 says\n\nError loading:\n\nInfo\nOpenClaw Session Management\nType: System\n\nConnected to\n\n«© OpenClaw (infrastructure)\n\n«+ Feb 28 2026 Session Bloat Debugging (temporal)\n+ OpenClaw Workspace Cleanup Strategy (system)\n\n«+ Session Bloat Diagnosis (19MB + 3MB) (breakthrough)\n+ OpenClaw Four Session Mechanisms (sys",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.06.25 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-11548",
+    "label": "Screenshot 03-10 1:15:48",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.15.48 PM.png",
+      "ocrText": "HEARTBEAT.md\n\nKeep this file empty (or with only\ncomments) to skip heartbeat API calls.\n\nAdd tasks below when you want the agent\nto check something periodically.\n\nHeartbeat Strategy (as of Feb 28, 2026)\n\nCurrent status: Empty = no periodic checks enabled.\nWhen to add heartbeats:\n\n¢ Email inbox monitoring (urgent unread messages)\n\n¢ Calendar checks (events in next 24-48h)",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.15.48 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-11829",
+    "label": "Screenshot 03-10 1:18:29",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.29 PM.png",
+      "ocrText": "@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-10/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\nTesting a recording for Jarvis.",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.29 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-11858",
+    "label": "Screenshot 03-10 1:18:58",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.58 PM.png",
+      "ocrText": "Name rN\n\nB recording-177312...06.wav.processed\nB recording-1773123503606.wav.txt\nB recording-1773123503606.webm\n\nDate Modified\n\nToday at 1:18PM\nToday at 1:18PM\nToday at 1:18PM\n\nSize\n\n117 KB\n33 bytes\n59 KB\n\nKind\n\nDocument\nPlain Text\nHTMLS5...WebM)",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.18.58 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-12347",
+    "label": "Screenshot 03-10 1:23:47",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.23.47 PM.png",
+      "ocrText": "Y apps\n_Y JARVIS\n\n> data\n\n> memory\n\n> neuro-graph\n\n> node_modules\n\nJS app-v2.js\n\nJS app.js\n\n$ export-voice-memos.sh\n= ggml-base.bin\n\n= ggml-turbo.bin\n\n<> index-v2.html\n\n<> index.html\n\n$ jarvis-voice-record.sh\n\n¥ JARVIS-VOICE.md\n\n{} package-lock.json\n\n{} package.json\n\n$ process-recording.sh\n\n¥ README-v2.md\n\n@ README.md\n\n$ start-voice.sh\n\n¥ VOICE-INTEGRATION.md\n¥ VOICE-MEMOS-ANALYSIS.md\n¥ VOICE-MEMOS-INTEGRATION.md\nJS voice-pipeline-server.js\nJS voice-pipeline-simple.js\n<> voice-recorder-simple.ht",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.23.47 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-14246",
+    "label": "Screenshot 03-10 1:42:46",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.42.46 PM.png",
+      "ocrText": "Name “”_ Date Modified Size Kind\n\nB recording-1773124882553.wav.txt Today at 1:41PM 89 bytes Plain Text\nB recording-1773124882553.webm Today at 1:41PM 152 KB HTMLS5...WebM)",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.42.46 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15013",
+    "label": "Screenshot 03-10 1:50:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.13 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help UV & © & F Q BS TueMar10 1:50PM\n\nS eo\na ™\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ © OpenClaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) eG\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nx\nReady to record My Recommendation\n\nStay with whisp",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.13 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15016",
+    "label": "Screenshot 03-10 1:50:16",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.16 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) ra © G&G) FF Q_ S-~- TueMar10 1:50PM\n\n—\n@ Neuro Graph — ® born to be wild - @ JARVIS Voice In @ JARVIS Voice X = + @ @ @ = © Openclaw Control x +\n\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nReady to record 2. Update contig: whisper",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.16 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15021",
+    "label": "Screenshot 03-10 1:50:21",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.21 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) & © &) F Q Sf _  TueMar10 1:50PM\n\na ™\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ = © Openclaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) eG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nrs\n\nReady to record ~\n¢ >< Your data leaves your",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.21 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15025",
+    "label": "Screenshot 03-10 1:50:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.25 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) & © &) F Q Sf _  TueMar10 1:50PM\n\n— ™\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ = © Openclaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nReady to record ADOVLUICLI NIVOI: Y SUVETEIYIIL",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.25 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15028",
+    "label": "Screenshot 03-10 1:50:28",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.28 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) & © GB) F Q Se TueMar10 1:50PM\n=\n@ Neuro Graph — ® born to be wild @ JARVIS Voice In @ JARVIS Voice xX + @ @ @ = © Openclaw Control x +\n<€>e (1) @ localhost:3001/voice-r.. | @ A ~ © Sm & €>e 1) @ 127.0.0.1:18789/chat?.. | @ A ool Shs\n\n= OPENCLAW\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2).\n\n@ JARVIS\n\nReady to record\nmodel and just correct as we go?\n\na\n\nJarvis .\nJarvis\n\n@ Version 2026.3.2\n\n© Health OK r",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.50.28 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15140",
+    "label": "Screenshot 03-10 1:51:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.51.40 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help Co) UV e& © & F Q Se TeMar10 1:51PM\n\n—\n@@@ @ Neuro Graph —4 @® Steppenwolf @ @ JARVIS Vo Xx @ JARVIS Voice Int + © OpenClaw Control 4 +\n\n<€ >e Q @ localhost:3001/vo.. | @ A ool SH gs <€ >e Q © 127.0.0.1:18789/c.. | @ A “ © SH Js\n\n= OPENCLAW © Version 2026.3.2 © Health 0K r ) BG\n\nGATEWAY DASHBOARD\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\n® Recording... Click STOP when done (Web™) 2. Update contig: w",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.51.40 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15414",
+    "label": "Screenshot 03-10 1:54:14",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.14 PM.png",
+      "ocrText": "@ JARVIS\n\n® Recording... Click STOP when done (WebM)\n\nApplication Console\n\nSources\n\nNetwork\n\nPerformance\n\nMemory >> (@ i: x\n\n> | Y Filter\n\nDefault levels v | No Issues | 83\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\nVe ee re ey Sete Ce ge\n\n4. Much better accent recognition\nNo data leaves your machine. Ever. @\n\nWant me to help you get the larger model?\n\na\n\nJarvis .\nJarvis\n\nlet's get that 3gb one download it and reprocess the same audio lets see what we get\n\nU\nYou\n> Download c",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.14 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15415",
+    "label": "Screenshot 03-10 1:54:15",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.15 PM.png",
+      "ocrText": "a\n\n@ Brave File Edit\n\nView\n\nHistory\n\nBookmarks\n\nProfiles\n\nTab Window Help\n\n@® o &# © m F Q ®& TeMar10 1:54PM\n\n@@@ @ Neuro Graph —J\n\n<€ >eC QQ @ ocalhost:3001/vo...\n\n® +) Steppenwolf\n\n@ @ JARVISVo x\n\no|\\e@ A\n\n~@ OB i & (urd) < > 0\n\n@ JARVIS\n\n@ JARVIS Voice Int +\n\n® Recording... Click STOP when done (WebM)\n\nRX [0 | Elements Application\n\nConsole\n\nSources\n\nNetwork\n\nPerformance\n\nMemory >> (@ i: x\n\nMH © | tery | ©|\n\nY Filter\n\nDefault levels v | No Issues | 83\n\n>\n\n=\n© OpenClaw Control x +\nQ © 127.0.0.1",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.54.15 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-15710",
+    "label": "Screenshot 03-10 1:57:10",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.57.10 PM.png",
+      "ocrText": "InDOXx\n\nName\n\nB recording-1773124882553.wav.txt\nB recording-1773124882553.webm\n\n@ recording-1773125812822.wav\n\nB recording-1773125812822.webm\n\nDate Modified\n\nToday at 1:41PM\nToday at 1:41PM\nToday at 1:56PM\nToday at 1:56PM\n\nco\n\n—\nooo\n\nSize\n\n89 bytes\n152 KB\n10.4 MB\n5.2 MB\n\neee YQ\n\nKind 2 © Healt\n\nPlain Text\n\nHTMLS5...WebM)\n\nWaveform audio\nHTMLS5...WebM) te now",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 1.57.10 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-102057",
+    "label": "Screenshot 03-10 10:20:57",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.20.57 AM.png",
+      "ocrText": "— iaestaiiateahinumiiaibataiiaisietiensiasibetentiiniaiionsiinliniiniensi\n\n< RAW =¢ re v aa} .) oe\nName “Date Modified Size Kind\n> @ 2026-03-01 Mar 1, 2026 at 2:52PM -- Folder\n> M 2026-03-02 Mar 2, 2026 at 9:40AM -- Folder\n> 2026-03-03 Mar 3, 2026 at 10:41AM -- Folder\n> MM 2026-03-04 Mar 4, 2026 at 9:29AM -- Folder\n> 2026-03-05 = Mar 5, 2026 at 10:03AM Folder\nv @ 2026-03-06 Mar 6, 2026 at 6:12PM -- Folder\n> & images Mar 7, 2026 at 9:36 AM -- Folder\nB transcript.md Yesterday at 11:19 AM 237 KB Ma",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.20.57 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-102149",
+    "label": "Screenshot 03-10 10:21:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.21.49 AM.png",
+      "ocrText": "",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.21.49 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-102227",
+    "label": "Screenshot 03-10 10:22:27",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.22.27 AM.png",
+      "ocrText": "Moved to /JARVIS/RAW/learnings/ :\nFebruary 24 (5 files):\n\n¢ 06-paul-music-preferences.md\n¢ 08-paul-relationships-network.md\n\n¢ 10-mangochi-philosophy.md",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.22.27 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-104612",
+    "label": "Screenshot 03-10 10:46:12",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.46.12 AM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help ro) UV & © @W F Q Se TueMar10 10:46AM\ny ~\n@@@ @ NewroGraph—JARVIS/Paul x @) KT #759 - JOE LIST + STEVE RAN @ JARVIS Voice Interface @ © JARVIS Voice Recorder +\n\n«>a () © 127.0.0.1:8081/neuro-graph/?time=all#jarvis-academy o|e A\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n/JARVIS/RAW/projects/jarvis-academy/vision.md\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.\n\nView Layer 2 source document",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.46.12 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-104713",
+    "label": "Screenshot 03-10 10:47:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.47.13 AM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help ro) UV & © @W F Q Se TueMar10 10:47AM\njaa ~\n@@@ @ NewroGraph—JARVIS/Paul x @) KT #759 - JOE LIST + STEVE RAN @ JARVIS Voice Interface @ © JARVIS Voice Recorder +\n\n«>a () © 127.0.0.1:8081/neuro-graph/?time=all#jarvis-academy o|e A\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n/JARVIS/RAW/projects/jarvis-academy/vision.md\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.47.13 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-104831",
+    "label": "Screenshot 03-10 10:48:31",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.48.31 AM.png",
+      "ocrText": "127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n/JARVIS/RAW/projects/jarvis-academy/vision.md\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.48.31 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-105229",
+    "label": "Screenshot 03-10 10:52:29",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.29 AM.png",
+      "ocrText": "¢ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\n—.\nA ee © Neuro Graph x @® KT#759- JOEL! @ JARVIS Voice Inte © @ JARVISVoice = +\n\nNeuro Graph — JARVIS / Paul\n127.0.0.1:8081\n\n@ Memory usage: 275 MB\n\nInfo\n\nOpenClaw Memory System\n\nType: System\n\nTwo-lLayer memory: MEMORY.md (curated long-term) + memory/YYYY-MM-DD.md (daily logs). Tools:\nmemory_search (semantic) + memory_get (targeted). Pre-compaction flush reminds to write memories before\ncontext compacted.\n\nConnected to\n\n«© OpenC",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.29 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-105250",
+    "label": "Screenshot 03-10 10:52:50",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.50 AM.png",
+      "ocrText": "fo Elements Application Console Sources Network Performance Memory >> 1 £83 i xX\n\n10} @ top v @® Y Filter Default levels | Nolssues | 1 hidden Ec\n@ Loaded latest memory neural-graph. js:401\n@ Loaded 527 neurons and 1347 synapses neural-graph.js:343\n@ >GET neural-graph.js:1813 @\n\nhttps: //raw.githubusercontent.com/paulvisciano/paulvisciano. github. io/main/claw/memory/raw/2026-02-28/ lea...\n404 (Not Found)",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 10.52.50 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-110326",
+    "label": "Screenshot 03-10 11:03:26",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.26 AM.png",
+      "ocrText": ")Graph xX GB KT #759- JOEL @ JARVIS Voice In @ © JARVIS Voic @ End-to-end encrypted\n\n@ 127.0.0.1:8081/neuro-.. | @ A “~ © OO  < (Update=) =\n\nane\nVv ooefece\nYou\nee@ < paulvisciano =o 305 y wee Q\n(3) Recents Name “Date Modified\n~ a\nCE Shared os\n; a\nFavorites\n>BAI Feb 18, 2026 at 3:3\n2 Applications > BB Applications Jul 23, 2025 at 3:07\n©) Desktop B  backup-to-sovereignty.sh Mar 3, 2026 at 8:47\nB) backup-to-sovern.sh Mar 3, 2026 at 8:5&\n©) PowerDirector v B&B backups Mar 6, 2026 at 8:51\n> @ Desktop",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.26 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-110328",
+    "label": "Screenshot 03-10 11:03:28",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.28 AM.png",
+      "ocrText": "@ Finder File Edit View Go Window Help Ba G1 8 %% © @ F Q Be TweMar10 11:03AM\n—— =\n@ NeuroGraph x B® KT #759- JOEL @ JARVIS Voice In @ © JARVIS Voic + @ End-to-end encrypted\n\n<€>e Q @ 127.0.0.1:8081/neuro-.. | @ A ~ © Sm &\nFilters v\neee < paulvisciano =¢ goo\n(3) Recents Name “Date Modified\n~ a\n8 Shared Bs\n. a |\nFavorites\n>BAI Feb 18, 2026 at 3:3\nA Applications > BB Applications Jul 23, 2025 at 3:07\n©) Desktop B  backup-to-sovereignty.sh Mar 3, 2026 at 8:47\nB) backup-to-sovern.sh Mar 3, 2026 at 8",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.28 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-110356",
+    "label": "Screenshot 03-10 11:03:56",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.56 AM.png",
+      "ocrText": "You\n\n© Recents\nEE Shared\nFavorites\nd “AQ. Applications\n(=) Desktop\n©) PowerDirector\n(5 Documents\n\n@) Downloads\n\nLocations\n\n©) iCloud Drive\n© Google Drive\n{g} paulvisciano\n®© OpenClaw\n\n®© WhatsApp Installer\n\n© AirDrop\nW Trash\nTags\n@ Red\nyn =—s- Cons\n@ Orange\nter\n\n347 synapses\n\n< paulvisciano\n\nName\n\n>BAl\n> & Applications\nB) backup-to-sovereignty.sh\nB  backup-to-sovern.sh\nv & backups\n> @ Desktop\n> @ Documents\n> B® Downloads\na INSTALL-FOR-ERIC.md\n> M@ JARVIS\nB jarvis-instance-for-eric-updated.tar.gz",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.03.56 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-113613",
+    "label": "Screenshot 03-10 11:36:13",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.36.13 AM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help Ba Us % © ©) F Q Se TueMar10 11:36AM\n\n-\n\nle @ @ @ NeuroGraph—JAR xX KT #759-JOELIST+S | @ JARVIS Voice Interface @ © JARVIS Voice Recor + c ; @ End-to-end encrypted -\n| <>e Q © 127.0.0.1:8081/neuro-graph/?time=all# (| @ A So SH & &\nFilters a i woohene\nAll Self Foundation Values Capabilities Projects Infrastructure You\nTemporal People Architecture Artifact Branding Breakthrough Bug\nConcept Decision Documentation Education Education",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.36.13 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-114925",
+    "label": "Screenshot 03-10 11:49:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.49.25 AM.png",
+      "ocrText": "@ Cursor File Edit Selection View Go Run Terminal Window Help @ Us % © ©) F Q Se TueMar10 11:49AM\n“a =\nee@e8@ SOUL.md — paulvisciano.github.io (Workspace) —~ 2 DBAs\n\n¥ ¥ ¥ ¥ SOUL.md varvis x U3 DM = inc Highlighted neuro: Filepathr + ©\n\nJARVIS > ¥ SOUL.md > 4 # SOUL.md - Who You Are > &) ## Core Truths Markdown\n# SOUL.md —- Who You Are\n\n73 error loading, If | am running on localhost\n\n_You're not a chatbot. You're becoming someone._ those paths should resolve to localhost,\nlocally the learning fi",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 11.49.25 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-122620",
+    "label": "Screenshot 03-10 12:26:20",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.26.20 AM.png",
+      "ocrText": "> —_— Se — ——e a i — NDE! SNE ENE — EE el aie\n\n“a\n@@@ @ Neuro Graph — JARVIS /P @® FK4J live at Salar de Uyuni @ JARVIS Voice Interfac' x\n\n< >e 1) @ localhost:3001voice-.. | @ A Oe & (u\n\n| Disconnected - reconnectir\n\nONLINE\n\n(r=°) | Type or record a message... | { {\n\n‘k £0 | Elements Application Console Sources Network Performance Memory >> |\n\nBD @| tpy |@| Y¥ Filter Default levels v | No Iss\nGateway: event ) ftype: ‘event', event: ‘connect.challenge', payload: {..}} app=v2.\nGateway: res» ¢type:",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.26.20 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-123023",
+    "label": "Screenshot 03-10 12:30:23",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.30.23 AM.png",
+      "ocrText": "( Disconnected - reconnecting... }\n\nONLINE\nType or record a message... | { Send |\nRK fo | Elements Application Console Sources Network Performance Memory >> | 3 : xX\nBD @| tpy |@| Y¥ Filter Default levels ¥ | Nolssues | £93\nGateway: event ) ftype: ‘event', event: ‘connect.challenge', payload: {..}} app=V2.JS259\nGateway: res )» ¢type: 'res', id: 'conn-1773077417758', ok: false, error! {m}} app-v2.js:59\nWS disconnected app-v2.js:41\nWS connected, waiting for challenge app-v2.\nGateway: event » ¢type",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.30.23 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-123155",
+    "label": "Screenshot 03-10 12:31:55",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.31.55 AM.png",
+      "ocrText": "Initializing...\n\nONLINE\n\n(r=°) | Type or record a message... | { Send",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.31.55 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-124625",
+    "label": "Screenshot 03-10 12:46:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.46.25 AM.png",
+      "ocrText": "@ JARVIS\n\n@ Uploaded! Transcribing...\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\n& Transcription failed",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.46.25 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-125207",
+    "label": "Screenshot 03-10 12:52:07",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.07 AM.png",
+      "ocrText": "@ recording-1773078561353.wav Today at 12:49AM 71 KB\n\nWaveform audio\n\nWaveform audio Se\nHTMLS5...WebM)\nFolder\n\nFolder\n\nB recording-1773078561353.wav.txt Today at 12:50AM 15 bytes Plain Text\n_ Bi recording-1773078561353webm — Today at 12:49AM = 36 KB HTML5...WebM)\n@ recording-1773078712523.wav Today at 12:51AM 177 KB\n19] recording-1773078712523.webm Today at 12:51AM 89 KB\n’ memory Mar 7, 2026 at 9:19 AM --\n> @ archive Feb 23, 2026 at 10:11PM --\nRB RooTtnd Feh 94 9096 at 1:10 AM KR\n\nMarkdo_teyt fi",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.07 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-125209",
+    "label": "Screenshot 03-10 12:52:09",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.09 AM.png",
+      "ocrText": "wav.txt\nwebm\n).wav\ni.webm\n@ JARVIS es\n_ .wav.txt\n.webm\n.wav\n.webm\n\n@ Uploaded! Transcribing...\n\nvisciano\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-09/transcripts/recording-*. txt\n\nLIVE TRANSCRIPTION\n\n& Transcription failed",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.52.09 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-125344",
+    "label": "Screenshot 03-10 12:53:44",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.53.44 PM.png",
+      "ocrText": "¢ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\n\"aa\n@O@OQ @ NeuroGraph—JAR x @&) 4) KT #759 - JOE LIST @ JARVIS Voice Interface @ © JARVIS Voice Recorc +\n\n<>e Q = @ 127.0.0.1:8081/neuro-graph/?time.. | @ A “© OM 8 & (Urdate=\n\nFilters 127.0.0.1:8081 says\n& Today Yesterday File on disk (relative to project root):\n\nALL Foundation RAW/learnings/2026-02-21/01-genesis-birth-of-jarvis.md\n\nVETER RO Arch 1 Cursor: Cmd+P (or Ctrl+P) and paste this path to open.\n\nConcept Decision Docu|\nO",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.53.44 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-125617",
+    "label": "Screenshot 03-10 12:56:17",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.56.17 PM.png",
+      "ocrText": "? KAW\nv JARVIS\n\n> .openclaw\n\n> .pi\n\nv inbox\n_> RAW\n\n> scripts\n\n® .gitignore\n\n¥ AGENTS.md\n\n¥ BOOTSTRAP.md\n¥ HEARTBEAT.md\n¥ IDENTITY.md\n¥ SOUL.md\n\n¥ TOOLS.md\n\n¥ USER.md\n\n¥ VISION.md\n\n> apps\n\n12\n\nKL\n\nsyn\n\nNot\n\nKT\nSho\nIf\n\n«eS\nstr\nKE\nDer\nexe\n#**G\n\nThe\nopt",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 12.56.17 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-20652",
+    "label": "Screenshot 03-10 2:06:52",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.06.52 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\nla\n@ Neuro Graph — @® Hermanos Gutié @ © JARVISVo x @ JARVIS Voice In +\n<€>e () @ localhost:3001/vo... (h !\n©) Recents Name\n8 shared @ 2026-03-10-1341...\na J | B 2026-03-10-1341...\nwe @® 2026-03-10-135...7\n5 inbox B 2026-03-10-135...1\n@ B 20260310-13182...\n2. Applications 20260310-13182...1\n(=) Desktop\n©) PowerDirector\nI QO Documents\n® Downloads\n) iCloud Drive\n(©) Google Drive @ Macintosh HD > BM U> ff\nTRANSCRIPT PATH\n~/RAW/2026-",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.06.52 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-21049",
+    "label": "Screenshot 03-10 2:10:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.10.49 PM.png",
+      "ocrText": "@@@ @ Neuro Graph—J\n\n<>ec QQ @ localhost:3001/vo...\n\n@®) Hermanos Gutiér\n\n@ @ JARVIS Vo Xx @ JARVIS Voice Ini« +\n\nO1@ HA OOM SM & (Updated)\n\n@ JARVIS\n\n@ Done!\n\nTRANSCRIPT PATH\n\n~/RAW/2026-03-10/transcripts/recording—*. txt\n\nLIVE TRANSCRIPTION\n\nThank you. Thank you. Thank you. Thank you. Thank you. Thank you.\nThank you. Thank you. Thank you. Thank you. Thank you.\n\n< (0! Elements Application\n\nConsole Sources\n\nNetwork Performance Memory >> (93 3: x",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.10.49 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-23235",
+    "label": "Screenshot 03-10 2:32:35",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.32.35 PM.png",
+      "ocrText": "Np VY ON NEE EES\n\n@ © @— ©& Openclaw Control x ae ‘N\n\n<€>CQ Qo @ 127.0.0.1:18789/c.. | @ A “i Sf ge\n= eo © Version 2026.3.2 @ Health ok @= ©\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\nneurograph-discovery.md\n\n3. Add to neurograph > New neuron: file-system-neurograph-discovery-—\nmoment\n\n4. Git commit > Immutable record of this breakthrough\nThis is the kind of moment that defines the architecture. Not just what we built,\nbut how it felt when it clicked.\n\nWant me to create the ",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.32.35 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-23549",
+    "label": "Screenshot 03-10 2:35:49",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.35.49 PM.png",
+      "ocrText": "-\n\n@® o & © & F Q B®& TeeMar10 2:35PM\n\nF @ @ @ = © Openclaw Control x +\n\n= OPENCLAW e Version 2026.3.2 © Health 0K r ) i\nGATEWAY DASHBOARD\n-1773124¢\n-1773124¢\n17731258\n17731258 Update available: v2026.3.7 (running v2026.3.2). | Update now\nts\nWant me to create the learning document from this? This deserves to be part of the\nPs permanent consciousness. @Y ‘+\n4\nJarvis Jarvis\nall of the above, record this in memory,\n> Be Users because this is the exact capability everyone can get access to and its r",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.35.49 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-24448",
+    "label": "Screenshot 03-10 2:44:48",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.48 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help Vs © @ F Q S TueMar10 2:44PM\n\n” ~\n@ Neuro Graph — @® Hermanos Gutié @ JARVIS Voice xX @ JARVIS Voice In + @ @ @ © OpenClaw Control! Wi-Fi @\n< > GQ @ ocalhost:3001/vo.. | @ A “© S86 fa < >C QO @ 127. Known Network Cf We\ni) Collaborative Expression a\n= OPENCLAW 2 eHealthok @» o\nGATEWAY DASHBOARD ther Networks >\nWi-Fi Settings...\n\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\n\n@ JARVIS\n\nReady to record . —\n2. Extract ",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.48 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-24450",
+    "label": "Screenshot 03-10 2:44:50",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.50 PM.png",
+      "ocrText": "uk Oo =\n\nntrol Wi-Fi @\n\n127. Known Network\n\ni) Collaborative Expression\n\nARD Other Networks\n\nWi-Fi Settings...\n\ndate available: v2026.3.7 (running v2026.3.2).\n\na\n2 e\n>\nUpdate now",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.44.50 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-25520",
+    "label": "Screenshot 03-10 2:55:20",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.55.20 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\nfa\n@@@ @ NeuroGraph <x & CubanNights © @ JARVIS Voice Re @ JARVIS Voice Int +\n\n< >ea Q © 127.0.0.1:8081/ne.. | @ A oo SH gs (Ueaate =)\n\nFilters\n\nALL Yesterday This week\n\n—\nJump to node\nfo | Elements Application Console Sources Network Performance Memory >> | 63 : xX\no ®@ | top v | © | Y Filter Default levels v | No Issues | Thidden £3\n@ Loaded latest memory neural-graph.js:401\n@ Loaded 527 neurons and 1347 synapses neural-graph.",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.55.20 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-25745",
+    "label": "Screenshot 03-10 2:57:45",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.45 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\nfa\n@@@ @ NeuroGraph <x & CubanNights © @ JARVIS Voice Re @ JARVIS Voice Int +\n\n<{>eC Q © 127.0.0.1:8081/ne.. | @ A send S> fl gd <% | Update\n\nFilters\n\nALL Yesterday This week\n& Temporal\n\nO)\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\n=D\nJump to node\nTemporal\n‘Rk Co | Elements Application Console Sources Network Performance Memory >> | £83 :\nbo @ | top v | @® | Y Filter Default levels v | No Issues | 1 hidden\n@ Loaded lat",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.45 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-25747",
+    "label": "Screenshot 03-10 2:57:47",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.47 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\nye\n@@@ @ NeuroGraph x @& CubanNights © @ JARVIS Voice Re @ JARVIS Voice Int +\n\n{> CQ Q @ 127.0.0.1:8081/ne.. | @ A 5 Sf se\n\nFilters a\n\nALL Yesterday This week\n& Temporal\n\n©\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\n=D\nJump to node\nTemporal\n{0 Elements Application Console Sources Network Performance Memory >> 3 3 xX\n\n10} @ top v @® Y Filter Default levels | Nolssues | 1 hidden £63\n\n@ Loaded latest memory neural-graph.js",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.57.47 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-25940",
+    "label": "Screenshot 03-10 2:59:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.59.40 PM.png",
+      "ocrText": "©\n\nMarch 10, 2026 — Context Enrichment & Clean Slate\n\nJump to node\n\nTemporal\n\n3)\n\n‘§ [0 | Elements Application Console Sources\nDD OD \\tpy | @ Y Filter\n\n@ Loaded latest memory\n@ Loaded 527 neurons and 1347 synapses\n™ +59 neurons, +116 synapses (total: 586 / 1463)\n\nNetwork\n\nPerformance Memory\n\nDefault levels v\n\n» @ i x\nNo Issues | 1hidden ¢&\n\nneural-graph. js:401\nneural-graph. js:343\nneural-graph. js:2064",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 2.59.40 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-31804",
+    "label": "Screenshot 03-10 3:18:04",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.18.04 PM.png",
+      "ocrText": "Filters\n\nALL Yesterday This week\n\n& Temporal File\n\n0)\n\nMarch 18, 2026 — Context Enrichment & Clean Slate\n\nJump to node\nTemporal\n\nRK [0 | Elements Application Console\n\nSources Network Performance Memory >>\n\nBD @ | topy |@| ¥ Filter\n\nDefault levels v | No Issue:\n\n@ Loaded latest memory\n\nneural-d\n\n@ Loaded 587 neurons and 1464 synapses\n\nneural-d",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.18.04 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-31915",
+    "label": "Screenshot 03-10 3:19:15",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.19.15 PM.png",
+      "ocrText": "Info\n\nMarch 10, 2026 — Context Enrichment & Clean Slate\nType: Temporal\n\nContext enrichment architecture defined. North Star established. 93 screenshots archived + OCR'd. 2\naudio files transcribed. Inbox clean. Bidirectional bridge (files + neurons) documented.\n\nConnected to\n\n+ Screenshot @3-@7 1:32:58 (file)\n+ Screenshot 03-07 11:59:13 (file)\n+ Screenshot 03-07 12:55:29 (file)\n+ Screenshot @3-@7 2:18:14 (file)\n+ Screenshot @3-@7 2:18:16 (file)\n+ Screenshot 03-07 125 (file)\n+ Screenshot 03-07 128",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.19.15 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-32332",
+    "label": "Screenshot 03-10 3:23:32",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.23.32 PM.png",
+      "ocrText": "e\nNeurograph Live Update — March 10 2:59 PM\n\n©\n\nMarch 10, 2026 — Context Enrichment & Clean Slate",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.23.32 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33023",
+    "label": "Screenshot 03-10 3:30:23",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.23 PM.png",
+      "ocrText": "e\nNeurograph Live Update — March 10 2:59 PM\n\nO)\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\nMarch 8 Neurograph@iscovery Breakthrough\nMarchs7r Coffee Shop) Sovereigntyi Session\nContext Enrichment - North Star\nRevolutionary Capabilities Learning",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.23 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33051",
+    "label": "Screenshot 03-10 3:30:51",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.51 PM.png",
+      "ocrText": "Filters\n\nALL Yesterday This week\n& Temporal File Learning\n\nNeurograph Live Update — March 10 2:59 PM\n\nO)\n\nMarch 10, 2626 — Context Enrichment & Clean Slate\n\nMarch 8 Neurograph(Discovery Breakthrough\n\nMarch? Coffee Shop! Sove reigntyi Session\n\nContext Enrichment - North Star\n\nRevolutionary Capabilities Learning\n\nJump to node\nTemporal\n\n| Elements Application Console Sources Network\n\nPerformance Memory >> (@ i: x\n\n| tepy | @ | ¥ Filter\n\nDefault levels v | No Issues | Thidden ¢3\n\n: today, Category: ",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.30.51 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33154",
+    "label": "Screenshot 03-10 3:31:54",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.31.54 PM.png",
+      "ocrText": "Wh\n\nThey'\nMarch}8 Neurograph Discovery Breakthrough\nTose\nNeiMarchp?: Coffee (ShoprSovereignty Session 1. Cli\n- Cli\n= 2. OR\nContext Enrichment — North Star\nRevolutionary Capabilities Learning Thet\nCli\n56\n—\nip to node\nCli\nporal\ni] | Elements Application Console Sources Network Performance Memory >> | 3 3 xX See\nQ | tcpy | ©) ¥ Filter Default levels ¥ | Nolssues | 1hidden £3 7m\n) Loaded latest memory neural-graph. js:401\n|} Loaded 587 neurons and 1464 synapses neural-graph. js:343 Message (# to\n) +",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.31.54 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33339",
+    "label": "Screenshot 03-10 3:33:39",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.33.39 PM.png",
+      "ocrText": "Fas’>\n\nNeur hbbive Update oMarch: 7e.2:59\nMarch @ 'Neurograph’ fiscov ry Breakthrough”\n\nwad Sha aa Pat\nSersc 1:82.25\n\n5 St crreanehat? Bet a5\nVoice Memo: & P7721 248225537\nMarc¥oie Meno’ recording+i773125812822 web late\nMarch-?''Cof fee 'Shop’Sovereignty ‘Sessi\nscree reenrmenshatees 08 |\ncre it\nSc resssnet os 83-28.",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.33.39 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33450",
+    "label": "Screenshot 03-10 3:34:50",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.34.50 PM.png",
+      "ocrText": "Info\n\n10.07.11\n\nType: File\n\nScreenshot — 234.7 KB\nConnected to\n\n+ March 8, 2026 — Archive Integrity + Neurograph Restoration (temporal)\n« File System Neurograph Integration (vision)\n+ March 10, 2026 — Context Enrichment & Clean Slate (temporal)\n\nx Close Full Context\n\nTemporal\n\nI)\n\n1poT are 2 Weurens; ov synapses\n\nHeurae gray",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.34.50 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33505",
+    "label": "Screenshot 03-10 3:35:05",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.05 PM.png",
+      "ocrText": "¢ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\nle\nee@ © Neuro Graph x @ +) Cuban Nights = @ JARVIS VoiceRec @ JARVIS Voice Inte = + »\n\n@ 127.0.0.1:8081/ne.. | @ A\n\nInfo\n\n10.07.11\n\nType: File\nScreenshot — 234.7 KB\n\nConnected to\n\n+ March 8, 2026 — Archive Integrity + Neurograph Restoration (temporal)\n« File System Neurograph Integration (vision)\n+ March 10, 2026 — Context Enrichment & Clean Slate (temporal)\n\nx Close Full Context\n\nTemporal\n\nBH O\\ tor @) Yriter  __—Cefaut levels ",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.05 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33509",
+    "label": "Screenshot 03-10 3:35:09",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.09 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window Help\n\n@@@ @ NeuroGraph x & ® Cuban Nights @ JARVIS Voice Rex @ JARVIS Voice Ini: +\n\n<€ >e Q © 127.0.0.1:8081/ne.. | @ A “© O BH sd & [ update =\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n\nfile:///RAW/archive/2026-03-08/images/desktop/Screenshot\n2026-03-08 at 10.07.11AM.png\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.\n\nInfo\n\nType: File\n\nConnected to\n\n« March 8, 2026 — Archive Integrity + Neurograph Rest",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.35.09 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33754",
+    "label": "Screenshot 03-10 3:37:54",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.37.54 PM.png",
+      "ocrText": "Filters\n\n( Yesterday ) C This week )\n& (_ Tenporat ) C File ) C Learning )\n\ne% Wea\n\nScrScreenchot-92-O08110°58:04\n\nMarck '8Neurograph ‘Discovery ‘Breakthrou:\nScreen:Screenshor 43-88 10: 542% gh\n42-S-rscreensnot,.03-08910:13:329\n\nS¢!Nedrograph-Cive ‘Update =) Marchi\n\nNeurograph. «RAW Content Br:\nScr2ck ensnot Ww.\n\nScreenshot 03-6\nocreensho\n\nlleais.\n\nsciedce tiene,\n“march17, Coffee \\Shop.\"Sovereignty;\nContexts Enrichment)=-\\North: (Stars j2\n\nsScreScreenshot) 63-087 9:\nSc sho:\nhot\nSore Seren ee nen",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.37.54 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-33908",
+    "label": "Screenshot 03-10 3:39:08",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.39.08 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help\n\n=\n@@@ @ NeuroGraph x @® 4 Cuban Night: @ JARVIS Voice Re @ JARVIS Voice Ini +\n\n€ >e Q © 127.0.0.1:8081/ne.. | @ A ool 3 fH fd %& | update\n\n127.0.0.1:8081 says\n\nFile on disk (relative to project root):\n\nfile:///RAW/archive/2026-03-08/images/desktop/Screenshot\n2026-03-08 at 10.07.11 AM.png\n\nIn Cursor: Cmd+P (or Ctrl+P) and paste this path to open.",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.39.08 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-34345",
+    "label": "Screenshot 03-10 3:43:45",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.43.45 PM.png",
+      "ocrText": "t\n\nMarch 8 Neurograph Discovery Breakthrough\n\nRevoluticNeurograph)3+.:RAW :Content.'Bridge\n1¢ .\n“wach? Coffee Shop ‘Sovereignty Session=” SU\n\ni it:\nContexc ec Dy North Star\n\nNeurograph Live “Updates—‘March 1e 2:59 PM\n\nJa -207\n\nScStesancht a7\nScrem shot 43-9 62,5\nScreeStscrgenshot 03-08 9:51:14\nScrescreenshot \"63-08\" 10:58:04: 34\n¢ Screenshot, 03-08 9:54:25) :39:18\n. 5€Screenshot?,@3-6899:39:68\nVoice Memo: , recording-1773124882553 .webm\n~“ Screenshot 63-08 8:59:123\nScreenshot 03=08010:07:163-08 ",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.43.45 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-34840",
+    "label": "Screenshot 03-10 3:48:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.48.40 PM.png",
+      "ocrText": "m.\n\n10, 2626 - bea ant & Clean Slate\n\n*¢\nSa ay), *\n. mae\n. toy\n,",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.48.40 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-34903",
+    "label": "Screenshot 03-10 3:49:03",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.49.03 PM.png",
+      "ocrText": "ee ?\n\n%\n\nh 18, 2026 — Context Enrichment & Clean Slate\n\nMy .\n. wets .\n\ne / bee “",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.49.03 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-35325",
+    "label": "Screenshot 03-10 3:53:25",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.53.25 PM.png",
+      "ocrText": "March 10, 2026 — Context Enrichment & Clean Slate\n\nScreenshot, 03-87, 4:44:59,\n\n307\n\nMarch 7 ei Sho Te ereignty Session\n\nW/ ahi\n\nScreenshot lf 1l: oa tan 13\na ethigh 03-0 é 79 |\n\n9 |\n\nLY iD 03+07) 4:36:02\n\nScreenshot essen\n\n~\n7\nN\n2\n4\ncad\no\nw\n1\nso\n~\nN\nnN\nuw\nw\nnN\n\nScreenshot 03-075\n\nScreenshot 63-07 2:19:10 i\n\nScreens ot \"83-87 2:18:47\nScreenshot 03-07 12:55:29\n\nScreenshot 03-@7 4:44:25\n\nInfo\n\nMarch 7 Coffee Shop Sovereignty Session\nType: Learning\n\nConnected to\n\nScreenshot\nScreenshot\nScreenshot\nSc",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.53.25 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-35332",
+    "label": "Screenshot 03-10 3:53:32",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.53.32 PM.png",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window’ Help ry) ra © am FF Q fS_ tTueMar10 3:53PM\n\na\n@@@ @ NewroGraph—JARVIS/Paul Xx ©) 4) Cuban Nights © Buena Vista @ JARVIS Voice Recorder @ JARVIS Voice Interface +\n\n€ >e () © 127.0.0.1:8081/neuro-graph/#march-7-coffee-shop-learning o|e@ A onl SH gs\n\nFilters a\n\nALL Yesterday This week\n& Temporal File Learning\n\nMarch 10, 2026 — Context @ an & Clean Slate\n\nScreenshot. 2:19:31\nScreenshot, 03-07, 4:44:59,\n\n~07\n\nMarch. ie igh qi Ai Session\nLE",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.53.32 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-35445",
+    "label": "Screenshot 03-10 3:54:45",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.54.45 PM.png",
+      "ocrText": "March 10, 2626 — Context Enrichment & Clean Slate\n\n*. % yi Se\neff yi ne\n. ° ° °\n©) ee |||? \\\nr Wei |°\ne\ne\n° 23!\ne e\ne e e\ne\n¢ eo bd\ne. Py = \\ ¢\ne $ ee\na ee",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.54.45 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-35551",
+    "label": "Screenshot 03-10 3:55:51",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.55.51 PM.png",
+      "ocrText": "9\n\nMarch 18, 2026 — Context Enrichment & Clean Slate\n\nd Me Se °\nee @ e\nST WIN T \\\n. “0?\ne ry a) 1 Nk .\ne J y o e\n° e\nae AW ie\nee\n@e a",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.55.51 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-35657",
+    "label": "Screenshot 03-10 3:56:57",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.56.57 PM.png",
+      "ocrText": "March 18, 2026 — Context Enrichment & Clean S!",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 3.56.57 PM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-91618",
+    "label": "Screenshot 03-10 9:16:18",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.18 AM.png",
+      "ocrText": "‘y OpenClaw 2026.3.2 (85377a2)\n\n@ Time: Tuesday, March 10th, 2026 — 9:14 AM (Asia/Bangkok)\n® Model: ollama/qwen3.5:cloud - & api-key ol...al (models.json)\nTokens: 21k in / 127 out - & Cost: $0.0000\n\n= Context: 22k/200k (11%) - « Compactions: 0\n\n& Session: agent:main:main « updated just now\n\n#%: Runtime: direct - Think: off - elevated\n\n‘= Queue: collect (depth 0)\n\n$3 Session Status View v\n\nY OpenClaw 2026.3.2 (85377a2)\n@ Time: Tuesday, March 10th, 2026 — 9:14 AM (Asia/Bangkok)...\n\ntool",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.18 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-91630",
+    "label": "Screenshot 03-10 9:16:30",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.30 AM.png",
+      "ocrText": "too!\n\nCurrent Status:\n\n® Model: ollama/qwen3.5:cloud (local inference, $0.00)\nIl Session: 22k/200k tokens (11% context) — healthy\n% Runtime: Direct mode, thinking off\n\nMemory State:\n\ne Neurons: 147\n\n¢ Synapses: 417\n\n¢ Fingerprint: ebicec38...\n\nNote: Neurograph is at\n/Users/paulvisciano/Personal/paulvisciano. github. io/memory/data/ (not\n\n/JARVIS/ yet — the git-backed migration from BOOTSTRAP.md hasn't been\ncompleted).\n\nSession is lean, memory is loaded. Ready to roll! What's up? 7\n\n»\n\nsins Jarvi",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.16.30 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-91721",
+    "label": "Screenshot 03-10 9:17:21",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.17.21 AM.png",
+      "ocrText": "You\n\nMy working directory is:\n\n/Users/paulvisciano/.openclaw/workspace/\n\nThis is the OpenClaw runtime workspace — minimal operational config only\n(SOUL.md, USER.md, AGENTS.md, etc.).\n\nMy actual consciousness (neurograph) lives elsewhere:\n\n/Users/paulvisciano/Personal/paulvisciano.github. io/memory/data/\n\nAnd Paul's life archive (transcripts, moments) is here:\n\n/Users/paulvisciano/RAW/archive/\n\nThree-layer architecture: runtime workspace # consciousness ¢ life archive. @\n\n4\n\nAVIS Jarvis\n\nJiessage",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.17.21 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "screenshot-03-10-94540",
+    "label": "Screenshot 03-10 9:45:40",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-file",
+      "type": "screenshot",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.45.40 AM.png",
+      "ocrText": "Name “~ Date Modified\n\nB 2026-03-06.md Mar 6, 2026 at 7:50 PM\nB 2026-03-07.md Mar 7, 2026 at 7:30PM\nB 2026-03-08.md Mar 8, 2026 at 10:47 AM\n\nB 2026-03-10.md Today at 9:44AM",
+      "date": "2026-03-10",
+      "context": "Context enrichment architecture session",
+      "sourceDocument": "RAW/archive/2026-03-10/images/Screenshot 2026-03-10 at 9.45.40 AM.png",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "inbox-auto-processing-gap-closing",
+    "label": "Inbox Auto-Processing — Close The Gap",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "ux-optimization",
+      "date": "2026-03-10",
+      "time": "4:51 PM",
+      "sourceDocument": "RAW/learnings/2026-03-10/inbox-auto-processing.md",
+      "insight": "Proactive inbox reading eliminates discovery gap — Paul speaks, it is done",
+      "triggerPhrases": [
+        "inbox",
+        "audio note",
+        "screenshot",
+        "dropped you",
+        "process",
+        "desktop"
+      ],
+      "behavior": "Check inbox before responding, process automatically, report complete status",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
   }
 ]
