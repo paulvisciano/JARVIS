@@ -12600,5 +12600,59 @@
     "target": "march-10-2026",
     "weight": 1,
     "type": "learned-today"
+  },
+  {
+    "source": "audio-outsystems-reply-march-10-2219",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "sovereign-timeline-over-corporate-procedure",
+    "target": "audio-outsystems-reply-march-10-2219",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "sovereign-timeline-over-corporate-procedure",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "clean-break-philosophy",
+    "target": "audio-outsystems-reply-march-10-2219",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "clean-break-philosophy",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "termination-reply-strategy",
+    "target": "audio-outsystems-reply-march-10-2219",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "termination-reply-strategy",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "equipment-return-ritual",
+    "target": "audio-outsystems-reply-march-10-2219",
+    "weight": 1,
+    "type": "derived-from"
+  },
+  {
+    "source": "equipment-return-ritual",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
   }
 ]

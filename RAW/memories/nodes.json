@@ -14971,5 +14971,90 @@
       "processedToday": "2026-03-10"
     },
     "created": "2026-03-10"
+  },
+  {
+    "id": "audio-outsystems-reply-march-10-2219",
+    "label": "OutSystems Termination Reply Decision (Sovereign Timeline)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/audio/2026-03-10-221900-outsystems-reply-decision.webm",
+      "transcriptPath": "/Users/paulvisciano/JARVIS/inbox/recording-1773155966550.wav.txt",
+      "date": "2026-03-10",
+      "time": "22:19",
+      "duration": "~1 min",
+      "size": "1.1 MB",
+      "context": "Decision to assert Feb 27 as last date (sovereign timeline over corporate procedure)",
+      "sourceDocument": "RAW/archive/2026-03-10/audio/2026-03-10-221900-outsystems-reply-decision.webm",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "sovereign-timeline-over-corporate-procedure",
+    "label": "Sovereign Timeline Over Corporate Procedure",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "sovereignty",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/outsystems-termination-reply.md",
+      "insight": "Chose Feb 27 (truth) over March 19 (corporate fiction) — reality > optimization, honesty > procedure",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "clean-break-philosophy",
+    "label": "Clean Break Philosophy",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "philosophy",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/outsystems-termination-reply.md",
+      "insight": "No lingering obligations, no ambiguity — clarity enables forward motion",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "termination-reply-strategy",
+    "label": "Termination Reply Strategy",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "communication",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/outsystems-termination-reply.md",
+      "insight": "Professional + apologetic + firm — personal matters (vague), equipment return, no over-explaining",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "equipment-return-ritual",
+    "label": "Equipment Return Ritual",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "ritual",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/outsystems-termination-reply.md",
+      "insight": "Return their tools, keep your knowledge — physical separation enables mental separation",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
   }
 ]
