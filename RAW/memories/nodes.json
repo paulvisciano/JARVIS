@@ -14727,5 +14727,106 @@
       "privacy": "public"
     },
     "created": "2026-03-10"
+  },
+  {
+    "id": "audio-volleyball-win-march-10-2129",
+    "label": "Volleyball Win + Crowd + Ocean (Post-Game Wrap)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/audio/2026-03-10-212900-volleyball-win-crowd.webm",
+      "transcriptPath": "/Users/paulvisciano/JARVIS/inbox/recording-1773152957645.wav.txt",
+      "date": "2026-03-10",
+      "time": "21:29",
+      "duration": "~2 min",
+      "size": "917 KB",
+      "context": "Post-volleyball wrap: 21-11 win, decent crowd, ocean swim, smoke, coach collaboration",
+      "sourceDocument": "RAW/archive/2026-03-10/audio/2026-03-10-212900-volleyball-win-crowd.webm",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "volleyball-dominant-win-march-10",
+    "label": "Volleyball Dominant Win (21-11)",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "activity",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/volleyball-win-crowd-ocean.md",
+      "insight": "Dominated 21-11 vs two good teams, good blocks + swings, coach collaboration",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "volleyball-crowd-energy",
+    "label": "Volleyball Crowd Energy",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "social",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/volleyball-win-crowd-ocean.md",
+      "insight": "Decent crowd watching → performance under observation, social validation",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "ocean-smoke-volleyball-ritual",
+    "label": "Ocean + Smoke + Volleyball Ritual",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "ritual",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/volleyball-win-crowd-ocean.md",
+      "insight": "Ocean swim → smoke joint → jump into game (sensory reset → mental shift → physical)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "coach-collaboration-skill-elevation",
+    "label": "Coach Collaboration = Skill Elevation",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "learning",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/volleyball-win-crowd-ocean.md",
+      "insight": "Playing with great player (coach) → helped elevate game",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "hotel-sovereign-base-return",
+    "label": "Hotel Sovereign Base Return",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "temporal",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/volleyball-win-crowd-ocean.md",
+      "insight": "Leave hotel → play → return (JARVIS stays, Paul moves through world)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
   }
 ]
