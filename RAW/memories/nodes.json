@@ -15056,5 +15056,104 @@
       "privacy": "public"
     },
     "created": "2026-03-10"
+  },
+  {
+    "id": "doc-outsystems-offboarding-guide",
+    "label": "OutSystems Offboarding Guide (PDF, 6 pages)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-document",
+      "type": "pdf",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/documents/offboarding-guide-outsystems.pdf",
+      "date": "2026-03-10",
+      "size": "692 KB",
+      "pages": 6,
+      "context": "HR offboarding requirements: health insurance, equity, expenses, equipment return",
+      "sourceDocument": "RAW/archive/2026-03-10/documents/offboarding-guide-outsystems.pdf",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "health-insurance-month-end-rule",
+    "label": "Health Insurance Ends Month-End",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "benefits",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md",
+      "insight": "Coverage until end of month of termination — Feb 27 → Feb 28, not March 31",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "rsu-vesting-cliff-3-years",
+    "label": "RSU Vesting Cliff (3 Years)",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "equity",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md",
+      "insight": "<3 years service = ALL RSUs canceled. 3+ years = keep vested portion (time-based only)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "stock-option-exercise-windows",
+    "label": "Stock Option Exercise Windows",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "equity",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md",
+      "insight": "Vested options eligible for next window only — miss it → forfeit forever",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "personal-info-critical-for-equity",
+    "label": "Personal Info Critical For Equity",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "administrative",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md",
+      "insight": "Update personal email in Workday + Shareworks or miss equity notices → forfeit",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "google-drive-ownership-transfer",
+    "label": "Google Drive Ownership Transfer",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "administrative",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md",
+      "insight": "All Drive files transfer to manager — retrieve personal docs ASAP",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
   }
 ]

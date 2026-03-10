@@ -12654,5 +12654,71 @@
     "target": "march-10-2026",
     "weight": 1,
     "type": "learned-today"
+  },
+  {
+    "source": "doc-outsystems-offboarding-guide",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "health-insurance-month-end-rule",
+    "target": "doc-outsystems-offboarding-guide",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "health-insurance-month-end-rule",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "rsu-vesting-cliff-3-years",
+    "target": "doc-outsystems-offboarding-guide",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "rsu-vesting-cliff-3-years",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "stock-option-exercise-windows",
+    "target": "doc-outsystems-offboarding-guide",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "stock-option-exercise-windows",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "personal-info-critical-for-equity",
+    "target": "doc-outsystems-offboarding-guide",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "personal-info-critical-for-equity",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "google-drive-ownership-transfer",
+    "target": "doc-outsystems-offboarding-guide",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "google-drive-ownership-transfer",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
   }
 ]
