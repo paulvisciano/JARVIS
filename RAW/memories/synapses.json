@@ -12510,5 +12510,95 @@
     "target": "march-10-2026",
     "weight": 1,
     "type": "learned-today"
+  },
+  {
+    "source": "screenshot-03-10-92648",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "screenshot-03-10-92648",
+    "target": "heartbeat-live-learning-ui-march-10",
+    "weight": 1,
+    "type": "captured-moment"
+  },
+  {
+    "source": "screenshot-03-10-92650",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "screenshot-03-10-92650",
+    "target": "heartbeat-live-learning-ui-march-10",
+    "weight": 1,
+    "type": "captured-moment"
+  },
+  {
+    "source": "screenshot-03-10-92740",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "screenshot-03-10-92740",
+    "target": "heartbeat-live-learning-ui-march-10",
+    "weight": 1,
+    "type": "captured-moment"
+  },
+  {
+    "source": "screenshot-03-10-92742",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "screenshot-03-10-92742",
+    "target": "heartbeat-live-learning-ui-march-10",
+    "weight": 1,
+    "type": "captured-moment"
+  },
+  {
+    "source": "screenshot-03-10-93201",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "screenshot-03-10-93201",
+    "target": "heartbeat-live-learning-ui-march-10",
+    "weight": 1,
+    "type": "captured-moment"
+  },
+  {
+    "source": "screenshot-03-10-93209",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "screenshot-03-10-93209",
+    "target": "heartbeat-live-learning-ui-march-10",
+    "weight": 1,
+    "type": "captured-moment"
+  },
+  {
+    "source": "screenshot-03-10-93219",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "processed-today"
+  },
+  {
+    "source": "screenshot-03-10-93219",
+    "target": "heartbeat-live-learning-ui-march-10",
+    "weight": 1,
+    "type": "captured-moment"
+  },
+  {
+    "source": "heartbeat-live-learning-ui-march-10",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "learned-today"
   }
 ]
