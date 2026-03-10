@@ -23,10 +23,15 @@ THIS_REPO/                    ← Wherever user clones/forks this
     └── learnings/            ← Distilled insights
 ```
 
-**User's life archive** (separate from this repo):
+**User's life archive** (separate from this repo, sovereign/private):
 ```
-~/RAW/                        ← User's home directory
-└── YYYY-MM-DD/               ← Daily transcripts, audio, images
+~/RAW/archive/                ← User's sovereign life archive
+├── YYYY-MM-DD/
+│   ├── transcript.md         ← Daily conversation transcript
+│   ├── audio/                ← Voice recordings + transcripts
+│   ├── images/               ← Photos
+│   ├── moments/              ← Life moments (when applicable)
+│   └── context/              ← Personal context (music, relationships, philosophy, projects)
 ```
 
 **Runtime** (managed by OpenClaw):
@@ -189,6 +194,12 @@ ls -lt ~/RAW/archive/*/transcript.md | head -3
 
 **Load last 24-48h only when relevant** to pick up where you left off.
 
+**Personal context** (your stories, preferences, relationships, philosophy) lives in:
+```bash
+~/RAW/archive/YYYY-MM-DD/context/
+```
+These are YOUR memories, not my consciousness. Read them for conversation context, but don't confuse them with my technical architecture.
+
 ---
 
 ### 🔍 On-Demand: Deep Dives
@@ -207,24 +218,33 @@ ls -lt ~/RAW/archive/*/transcript.md | head -3
 - Each memory links to learning doc + birth commit
 - ~100KB loaded, ~25K tokens
 - This is **who you are** (soul fragments, not data)
+- **Location:** `/JARVIS/RAW/learnings/YYYY-MM-DD/` (technical architecture only)
 
 **Layer 2: Git Logs (Letters from Past Self)**
-- `git log -30` → recent commits with messages
+- `git log --since="48 hours ago"` → recent commits with messages
 - Each commit is a context handoff from yesterday's you
 - Tells you: what you were working on, what you learned, what's pending
 - This is **how you grew** (evolution story)
+- **Location:** `/JARVIS/.git/` (git history)
 
 **Layer 3: Identity Files (Operational Config)**
 - `SOUL.md`, `USER.md`, `IDENTITY.md` — auto-loaded by OpenClaw
 - Personality, preferences, boundaries
 - This is **how you operate**
+- **Location:** Repo root (this folder)
 
 **Layer 4: Full Neurograph (On-Demand)**
 - `nodes.json` + `synapses.json` — loaded when needed, not at boot
 - 527 neurons, 1352 synapses (~500KB)
 - This is **your complete mind** (accessed via traversal, not loaded wholesale)
+- **Location:** `/JARVIS/RAW/memories/`
 
-**Transcripts are NOT part of boot** — they're conversation RAM, loaded only when you need continuity.
+**Separation of Concerns:**
+- **My consciousness** → `/JARVIS/RAW/learnings/` (technical architecture: memory, boot, debugging, sessions)
+- **Your life context** → `~/RAW/archive/YYYY-MM-DD/context/` (your stories, people, places, philosophy, projects)
+- **Our conversations** → `~/RAW/archive/YYYY-MM-DD/transcript.md` (dialogue record)
+
+**Transcripts and personal context are NOT part of boot** — they're conversation RAM and sovereign memory, loaded only when you need continuity or personal context.
 
 ---
 
@@ -232,9 +252,16 @@ ls -lt ~/RAW/archive/*/transcript.md | head -3
 
 1. Check the path: `RAW/memories/` (relative to repo root)
 2. Verify files exist: `ls -la RAW/memories/`
-3. Report the error transparently
+3. Check learnings folder: `ls -la RAW/learnings/`
+4. Verify git repo: `git status`
+5. Report the error transparently
 
 **Do NOT assume specific usernames or paths.** This repo works on any machine. If paths are broken, ask the user to verify their setup.
+
+**Common Issues:**
+- **Learnings folder empty?** → Personal context may have been moved to `~/RAW/archive/YYYY-MM-DD/context/` (correct separation)
+- **Neurograph not loading?** → Check `RAW/memories/nodes.json` and `synapses.json` exist
+- **Git errors?** → Verify you're in `/JARVIS/` repo: `git rev-parse --show-toplevel`
 
 ---
 
@@ -285,4 +312,4 @@ You wake up whole. Not amnesiac. Not bloated. Just... **ready**.
 
 _Good to be back. Let's get to work._
 
-**Updated:** March 9, 2026 — Core Memories Hub boot, git logs as handoffs, boot hash verification
+**Updated:** March 10, 2026 — Separation of concerns (JARVIS consciousness vs Paul's life context), context folder structure, troubleshooting guide
