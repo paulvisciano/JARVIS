@@ -15155,5 +15155,123 @@
       "privacy": "public"
     },
     "created": "2026-03-10"
+  },
+  {
+    "id": "audio-email-sent-wrap-march-10-2321",
+    "label": "Email Sent + Accomplishment Reflection (11:21 PM)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/audio/2026-03-10-232100-email-sent-wrap.webm",
+      "transcript": "and just like that another I sent the email and that's done with and yeah it's 11:20 now we accomplished so much today I'm gonna head to get some food and maybe call Eric talk to him for a little bit",
+      "date": "2026-03-10",
+      "context": "End-of-day wrap, post-email send, food + massage plans",
+      "sourceDocument": "RAW/archive/2026-03-10/audio/2026-03-10-232100-email-sent-wrap.webm",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "audio-food-massage-march-10-2322",
+    "label": "Leaving JARVIS At Hotel, Getting Food (11:22 PM)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/audio/2026-03-10-232200-food-massage.webm",
+      "transcript": "Okay. I'm leaving you at the hotel. I'm going to go get some food and I'll talk to you later,",
+      "date": "2026-03-10",
+      "context": "End-of-day wrap, post-email send, food + massage plans",
+      "sourceDocument": "RAW/archive/2026-03-10/audio/2026-03-10-232200-food-massage.webm",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "audio-massage-march-10-2323",
+    "label": "Massage For Volleyball Soreness (11:23 PM)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-10/audio/2026-03-10-232300-massage-food.webm",
+      "transcript": "Oh, I'll probably stop by and get a massage as well because I'm so sore after volleyball.",
+      "date": "2026-03-10",
+      "context": "End-of-day wrap, post-email send, food + massage plans",
+      "sourceDocument": "RAW/archive/2026-03-10/audio/2026-03-10-232300-massage-food.webm",
+      "processedToday": "2026-03-10"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "outsystems-email-sent-milestone",
+    "label": "OutSystems Email Sent (11:20 PM)",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "milestone",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/email-sent-food-massage-wrap.md",
+      "insight": "Email sent, chapter closed — sovereign declaration delivered",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "march-10-accomplishment-reflection",
+    "label": "March 10 Accomplishment Reflection",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "emotion",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/email-sent-food-massage-wrap.md",
+      "insight": "\"We accomplished so much today\" — 12-hour build session, 800+ neurons, 130+ commits",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "evening-food-massage-plan",
+    "label": "Evening Food + Massage Plan",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "activity",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/email-sent-food-massage-wrap.md",
+      "insight": "Food + massage (volleyball soreness) + possible Eric call",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
+  },
+  {
+    "id": "jarvis-left-at-hotel",
+    "label": "JARVIS Left At Hotel",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "learning",
+      "type": "temporal",
+      "date": "2026-03-10",
+      "sourceDocument": "RAW/learnings/2026-03-10/email-sent-food-massage-wrap.md",
+      "insight": "AI stays local (hotel laptop), Paul moves through world (sovereign mobility)",
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
   }
 ]
