@@ -12774,5 +12774,17 @@
     "target": "audio-food-massage-march-10-2322",
     "weight": 1,
     "type": "captured-in"
+  },
+  {
+    "source": "sovereign-ai-builder-identity",
+    "target": "march-10-2026",
+    "weight": 1,
+    "type": "declared-today"
+  },
+  {
+    "source": "sovereign-ai-builder-identity",
+    "target": "outsystems-email-sent-milestone",
+    "weight": 1,
+    "type": "follows-from"
   }
 ]

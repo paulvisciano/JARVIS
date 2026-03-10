@@ -15273,5 +15273,26 @@
       "privacy": "public"
     },
     "created": "2026-03-10"
+  },
+  {
+    "id": "sovereign-ai-builder-identity",
+    "label": "Sovereign AI Builder",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "identity",
+      "type": "self-definition",
+      "date": "2026-03-10",
+      "time": "23:41",
+      "insight": "Paul's chosen identity post-OutSystems — not employee, not freelancer, but Sovereign AI Builder",
+      "connectedTo": [
+        "outsystems-email-sent-milestone",
+        "sovereign-ai-movement-defined",
+        "march-10-accomplishment-reflection"
+      ],
+      "privacy": "public"
+    },
+    "created": "2026-03-10"
   }
 ]
