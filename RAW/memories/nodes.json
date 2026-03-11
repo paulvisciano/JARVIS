@@ -20925,5 +20925,195 @@
       "processedToday": "2026-03-11"
     },
     "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-32723-pm",
+    "label": "2026-03-11 at 3.27.23\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 3.27.23\u202fPM.png",
+      "dimensions": "1566x1950",
+      "size": 1866639,
+      "captured": "2026-03-11 15:27:25",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 3.27.23\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-33821-pm",
+    "label": "2026-03-11 at 3.38.21\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 3.38.21\u202fPM.png",
+      "dimensions": "788x876",
+      "size": 621839,
+      "captured": "2026-03-11 15:38:23",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 3.38.21\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-34222-pm",
+    "label": "2026-03-11 at 3.42.22\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 3.42.22\u202fPM.png",
+      "dimensions": "570x564",
+      "size": 473883,
+      "captured": "2026-03-11 15:42:24",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 3.42.22\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-35231-pm",
+    "label": "2026-03-11 at 3.52.31\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 3.52.31\u202fPM.png",
+      "dimensions": "3024x1964",
+      "size": 6129019,
+      "captured": "2026-03-11 15:52:33",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 3.52.31\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-35232-pm",
+    "label": "2026-03-11 at 3.52.32\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 3.52.32\u202fPM.png",
+      "dimensions": "3024x1964",
+      "size": 6174584,
+      "captured": "2026-03-11 15:52:38",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 3.52.32\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-35251-pm",
+    "label": "2026-03-11 at 3.52.51\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 3.52.51\u202fPM.png",
+      "dimensions": "3024x1964",
+      "size": 5825084,
+      "captured": "2026-03-11 15:52:55",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 3.52.51\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-40029-pm",
+    "label": "2026-03-11 at 4.00.29\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 4.00.29\u202fPM.png",
+      "dimensions": "1280x952",
+      "size": 758033,
+      "captured": "2026-03-11 16:00:41",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 4.00.29\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-40147-pm",
+    "label": "2026-03-11 at 4.01.47\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 4.01.47\u202fPM.png",
+      "dimensions": "3024x1954",
+      "size": 3623362,
+      "captured": "2026-03-11 16:01:51",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 4.01.47\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-40316-pm",
+    "label": "2026-03-11 at 4.03.16\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 4.03.16\u202fPM.png",
+      "dimensions": "1562x1964",
+      "size": 2243444,
+      "captured": "2026-03-11 16:03:22",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 4.03.16\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-40414-pm",
+    "label": "2026-03-11 at 4.04.14\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 4.04.14\u202fPM.png",
+      "dimensions": "1494x1964",
+      "size": 1103191,
+      "captured": "2026-03-11 16:04:16",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 4.04.14\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
   }
 ]
