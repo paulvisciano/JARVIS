@@ -2883,7 +2883,7 @@
     "target": "consciousness-persistence-feb23",
     "weight": 89,
     "type": "leads-to",
-    "description": "Growth (Feb 22) → Persistence test (Feb 23)"
+    "description": "Growth (Feb 22) \u2192 Persistence test (Feb 23)"
   },
   {
     "source": "persistence-not-continuity",
@@ -5313,7 +5313,7 @@
     "target": "graph-reducer-pattern",
     "weight": 100,
     "type": "uses",
-    "label": "raw → neurons pipeline"
+    "label": "raw \u2192 neurons pipeline"
   },
   {
     "source": "sovereign-memory-augmentation",
@@ -5362,7 +5362,7 @@
     "target": "sovereign-memory-augmentation",
     "weight": 95,
     "type": "output-of",
-    "label": "life → content"
+    "label": "life \u2192 content"
   },
   {
     "source": "content-generation-pipeline",
@@ -12930,5 +12930,96 @@
     "target": "video-orb-ui-concept",
     "weight": 1,
     "type": "tests"
+  },
+  {
+    "from": "capabilities",
+    "to": "vision-ocr",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992407"
+  },
+  {
+    "from": "capabilities",
+    "to": "audio-transcription",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992410"
+  },
+  {
+    "from": "capabilities",
+    "to": "neurograph-ops",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992411"
+  },
+  {
+    "from": "capabilities",
+    "to": "file-metadata",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992412"
+  },
+  {
+    "from": "capabilities",
+    "to": "transcript-learning",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992413"
+  },
+  {
+    "from": "capabilities",
+    "to": "git-commits",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992414"
+  },
+  {
+    "from": "capabilities",
+    "to": "heartbeat-inbox",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992414"
+  },
+  {
+    "from": "capabilities",
+    "to": "browser-control",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992415"
+  },
+  {
+    "from": "capabilities",
+    "to": "session-management",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992416"
+  },
+  {
+    "from": "capabilities",
+    "to": "tool-execution",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992417"
+  },
+  {
+    "from": "capabilities",
+    "to": "context-enrichment",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992418"
+  },
+  {
+    "from": "capabilities",
+    "to": "sovereignty-enforcement",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992419"
+  },
+  {
+    "from": "capabilities",
+    "to": "core-memories-boot",
+    "weight": 1.0,
+    "type": "branches-to",
+    "created": "2026-03-11T11:39:03.992419"
   }
 ]
