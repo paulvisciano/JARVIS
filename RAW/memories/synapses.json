@@ -13378,5 +13378,96 @@
     "weight": 1.0,
     "type": "created-on",
     "label": "created on"
+  },
+  {
+    "source": "capabilities",
+    "target": "vision-ocr",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "audio-transcription",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "neurograph-ops",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "file-metadata",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "transcript-learning",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "git-commits",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "heartbeat-inbox",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "browser-control",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "session-management",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "tool-execution",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "context-enrichment",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "sovereignty-enforcement",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
+  },
+  {
+    "source": "capabilities",
+    "target": "core-memories-boot",
+    "weight": 1.0,
+    "type": "branches-to",
+    "label": "branches to"
   }
 ]
