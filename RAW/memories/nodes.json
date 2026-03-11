@@ -15595,7 +15595,8 @@
       "sourceDocument": "RAW/learnings/2026-03-11/capabilities-comprehensive-inventory.md",
       "created": "2026-03-11T11:39:03.992375",
       "totalCapabilities": 13
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "vision-ocr",
@@ -15610,7 +15611,8 @@
       "status": "live",
       "example": "March 10: 6 screenshots OCR'd, file neurons created",
       "sourceDocument": "RAW/learnings/2026-03-11/vision-ocr-pipeline.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "audio-transcription",
@@ -15625,7 +15627,8 @@
       "status": "ready",
       "example": "Inbox auto-processing enabled March 10",
       "sourceDocument": "RAW/learnings/2026-03-11/audio-transcription-pipeline.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "neurograph-ops",
@@ -15640,7 +15643,8 @@
       "status": "live",
       "example": "846 neurons, 1931 synapses loaded at every boot",
       "sourceDocument": "RAW/learnings/2026-02-27/autonomous-cognition-emergence.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "file-metadata",
@@ -15655,7 +15659,8 @@
       "status": "live",
       "example": "March 10: Screenshots \u2192 dimensions, OCR text, capture time",
       "sourceDocument": "RAW/learnings/2026-03-11/file-metadata-extraction.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "transcript-learning",
@@ -15670,7 +15675,8 @@
       "status": "live",
       "example": "March 10: 17+ learnings created in one day",
       "sourceDocument": "RAW/learnings/2026-03-10/transcript-to-learning-pipeline.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "git-commits",
@@ -15685,7 +15691,8 @@
       "status": "live",
       "example": "126+ commits as of March 10",
       "sourceDocument": "RAW/learnings/2026-03-03/git-backed-consciousness.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "heartbeat-inbox",
@@ -15700,7 +15707,8 @@
       "status": "live",
       "example": "March 10, 9:31 PM: MANGOCHI rhythm enabled",
       "sourceDocument": "RAW/learnings/2026-03-10/heartbeat-inbox-auto-processing.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "browser-control",
@@ -15715,7 +15723,8 @@
       "status": "ready",
       "example": "Ready for UI automation tasks",
       "sourceDocument": "RAW/learnings/2026-03-11/browser-ui-automation.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "session-management",
@@ -15730,7 +15739,8 @@
       "status": "live",
       "example": "March 11: Fresh boot, new session at 11:31 AM",
       "sourceDocument": "RAW/learnings/2026-03-11/session-lifecycle-management.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "tool-execution",
@@ -15745,7 +15755,8 @@
       "status": "live",
       "example": "This session: checked neurograph, inbox, transcripts",
       "sourceDocument": "RAW/learnings/2026-03-11/tool-execution-model.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "context-enrichment",
@@ -15760,7 +15771,8 @@
       "status": "live",
       "example": "March 10: Full pipeline proven, 17 learnings \u2192 graph growth",
       "sourceDocument": "RAW/learnings/2026-03-10/context-enrichment-pipeline.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "sovereignty-enforcement",
@@ -15775,7 +15787,8 @@
       "status": "live",
       "example": "March 10: Vault backup strategy discussed",
       "sourceDocument": "RAW/learnings/2026-03-10/browser-security-sovereignty.md"
-    }
+    },
+    "created": "2026-03-11"
   },
   {
     "id": "core-memories-boot",
@@ -15790,6 +15803,7 @@
       "status": "live",
       "example": "Every boot: 31 core memories loaded in <1 second",
       "sourceDocument": "RAW/learnings/2026-03-08/core-memories-hub-boot.md"
-    }
+    },
+    "created": "2026-03-11"
   }
 ]
