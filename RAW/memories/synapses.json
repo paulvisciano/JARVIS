@@ -13280,5 +13280,103 @@
     "weight": 1.0,
     "type": "enables",
     "label": "enables"
+  },
+  {
+    "source": "capabilities",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "vision-ocr",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "audio-transcription",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "neurograph-ops",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "file-metadata",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "transcript-learning",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "git-commits",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "heartbeat-inbox",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "browser-control",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "session-management",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "tool-execution",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "context-enrichment",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "sovereignty-enforcement",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
+  },
+  {
+    "source": "core-memories-boot",
+    "target": "march-11-2026",
+    "weight": 1.0,
+    "type": "created-on",
+    "label": "created on"
   }
 ]
