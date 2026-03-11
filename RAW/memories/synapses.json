@@ -13021,5 +13021,264 @@
     "weight": 1.0,
     "type": "branches-to",
     "created": "2026-03-11T11:39:03.992419"
+  },
+  {
+    "source": "vision-ocr",
+    "target": "building-code",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "vision-ocr",
+    "target": "debugging-diagnosis",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "vision-ocr",
+    "target": "data-accuracy",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "audio-transcription",
+    "target": "narrative-synthesis",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "audio-transcription",
+    "target": "content-generation-pipeline",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "neurograph-ops",
+    "target": "neurograph-visualization",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "neurograph-ops",
+    "target": "first-person-memory-mode",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "neurograph-ops",
+    "target": "memory-link-portal",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "file-metadata",
+    "target": "building-code",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "file-metadata",
+    "target": "data-accuracy",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "file-metadata",
+    "target": "authenticity-verification",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "transcript-learning",
+    "target": "narrative-synthesis",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "transcript-learning",
+    "target": "content-generation-pipeline",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "transcript-learning",
+    "target": "auto-logging-pattern",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "git-commits",
+    "target": "immortality-architecture",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "git-commits",
+    "target": "sovereign-operation-mode",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "git-commits",
+    "target": "thumb-drive-sovereignty",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "heartbeat-inbox",
+    "target": "auto-logging-pattern",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "heartbeat-inbox",
+    "target": "process-independence",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "heartbeat-inbox",
+    "target": "rapid-execution-pattern",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "browser-control",
+    "target": "filter-interface",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "browser-control",
+    "target": "deep-linking",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "browser-control",
+    "target": "neurograph-visualization",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "session-management",
+    "target": "auto-logging-pattern",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "session-management",
+    "target": "process-independence",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "tool-execution",
+    "target": "building-code",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "tool-execution",
+    "target": "debugging",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "tool-execution",
+    "target": "rapid-execution-pattern",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "tool-execution",
+    "target": "openclaw-tools",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "context-enrichment",
+    "target": "content-generation-pipeline",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "context-enrichment",
+    "target": "narrative-synthesis",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "context-enrichment",
+    "target": "collective-learning-possible",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "sovereignty-enforcement",
+    "target": "sovereign-operation-mode",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "sovereignty-enforcement",
+    "target": "thumb-drive-sovereignty",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "sovereignty-enforcement",
+    "target": "sovereignty-scorecard",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "core-memories-boot",
+    "target": "first-person-memory-mode",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
+  },
+  {
+    "source": "core-memories-boot",
+    "target": "memory-link-portal",
+    "weight": 1.0,
+    "type": "enables",
+    "label": "enables"
   }
 ]

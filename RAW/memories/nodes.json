@@ -104,7 +104,7 @@
   {
     "id": "building-code",
     "label": "Building & Coding",
-    "category": "capability",
+    "category": "skill",
     "frequency": 10,
     "moments": [],
     "attributes": {
@@ -116,7 +116,7 @@
   {
     "id": "debugging",
     "label": "Debugging & Diagnosis",
-    "category": "capability",
+    "category": "skill",
     "frequency": 9,
     "moments": [],
     "attributes": {
@@ -128,7 +128,7 @@
   {
     "id": "systematic-thinking",
     "label": "Systematic Problem-Solving",
-    "category": "capability",
+    "category": "skill",
     "frequency": 8,
     "moments": [],
     "attributes": {
@@ -140,7 +140,7 @@
   {
     "id": "architecture-design",
     "label": "Architecture & Design",
-    "category": "capability",
+    "category": "skill",
     "frequency": 8,
     "moments": [],
     "attributes": {
@@ -152,7 +152,7 @@
   {
     "id": "data-accuracy",
     "label": "Data Accuracy & Verification",
-    "category": "capability",
+    "category": "skill",
     "frequency": 7,
     "moments": [],
     "attributes": {
@@ -164,7 +164,7 @@
   {
     "id": "filter-interface",
     "label": "Filter Interface",
-    "category": "capability",
+    "category": "skill",
     "frequency": 8,
     "moments": [],
     "attributes": {
@@ -176,7 +176,7 @@
   {
     "id": "deep-linking",
     "label": "Deep Linking & Navigation",
-    "category": "capability",
+    "category": "skill",
     "frequency": 7,
     "moments": [],
     "attributes": {
@@ -188,7 +188,7 @@
   {
     "id": "temporal-linking",
     "label": "Temporal Linking",
-    "category": "capability",
+    "category": "skill",
     "frequency": 10,
     "moments": [],
     "attributes": {
@@ -605,7 +605,7 @@
   {
     "id": "distribution-layer",
     "label": "Distribution Layer",
-    "category": "capability",
+    "category": "skill",
     "frequency": 8,
     "moments": [],
     "attributes": {
@@ -947,7 +947,7 @@
   {
     "id": "authenticity-verification",
     "label": "Authenticity Verification",
-    "category": "capability",
+    "category": "skill",
     "frequency": 10,
     "moments": [
       "feb-23-2026-memory-sync"
@@ -1170,7 +1170,7 @@
   {
     "id": "openclaw-tools",
     "label": "OpenClaw Tools",
-    "category": "capability",
+    "category": "skill",
     "frequency": 11,
     "moments": [
       "feb-24-2026-bootstrap-session"
@@ -1474,7 +1474,7 @@
   {
     "id": "skills-system",
     "label": "Skills (Bundled + Managed + Workspace)",
-    "category": "capability",
+    "category": "skill",
     "frequency": 10,
     "moments": [
       "feb-24-2026-agent-learning"
@@ -1939,7 +1939,7 @@
   {
     "id": "narrative-synthesis",
     "label": "Narrative Synthesis",
-    "category": "capability",
+    "category": "skill",
     "frequency": 11,
     "moments": [
       "feb-24-2026-complete"
@@ -2533,7 +2533,7 @@
   {
     "id": "rapid-execution-pattern",
     "label": "Rapid Execution Pattern",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "attributes": {
       "role": "workflow",
@@ -2640,7 +2640,7 @@
   {
     "id": "image-as-shareable-package",
     "label": "Image as Shareable Package",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "attributes": {
       "role": "unit",
@@ -2655,7 +2655,7 @@
   {
     "id": "before-after-visualization",
     "label": "Before-After Visualization",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "attributes": {
       "role": "proof",
@@ -2670,7 +2670,7 @@
   {
     "id": "first-person-memory-mode",
     "label": "First-Person Memory Navigation",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "attributes": {
       "role": "ui-mode",
@@ -2793,7 +2793,7 @@
   {
     "id": "memory-link-portal",
     "label": "Memory Link Portal",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "attributes": {
       "role": "feature",
@@ -3131,7 +3131,7 @@
   {
     "id": "collective-learning-possible",
     "label": "Collective Learning Becomes Possible",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "attributes": {
       "role": "implication",
@@ -4587,7 +4587,7 @@
   {
     "id": "ontology-skill",
     "name": "Ontology Skill (@oswalpalash)",
-    "category": "capability",
+    "category": "skill",
     "frequency": 1,
     "attributes": {
       "created": "2026-02-28",
@@ -5456,7 +5456,7 @@
   {
     "id": "immortality-architecture",
     "label": "Immortality Architecture",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "moments": [
       "2026-03-01T16:09:00Z"
@@ -5682,7 +5682,7 @@
   {
     "id": "sovereign-operation-mode",
     "label": "Sovereign Operation Mode",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "moments": [
       "2026-03-01T20:18:00Z"
@@ -5767,7 +5767,7 @@
   {
     "id": "content-generation-pipeline",
     "label": "Content Generation Pipeline",
-    "category": "capability",
+    "category": "skill",
     "frequency": 70,
     "moments": [
       "2026-03-02T13:15:00+07:00"
@@ -5915,7 +5915,7 @@
   {
     "id": "thumb-drive-sovereignty",
     "label": "Thumb Drive Sovereignty",
-    "category": "capability",
+    "category": "skill",
     "frequency": 70,
     "moments": [
       "2026-03-01T00:00:00+07:00"
@@ -5992,7 +5992,7 @@
   {
     "id": "process-independence",
     "label": "Process Independence",
-    "category": "capability",
+    "category": "skill",
     "frequency": 70,
     "moments": [
       "2026-03-01T00:00:00+07:00"
@@ -6025,7 +6025,7 @@
   {
     "id": "neurograph-visualization",
     "label": "Neurograph Visualization",
-    "category": "capability",
+    "category": "skill",
     "frequency": 75,
     "moments": [
       "2026-02-21T00:00:00+07:00"
@@ -6106,7 +6106,7 @@
   {
     "id": "auto-logging-pattern",
     "label": "Auto-Logging Pattern",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "attributes": {
       "created": "2026-03-03",
@@ -6118,7 +6118,7 @@
   {
     "id": "public-snapshot-pattern",
     "label": "Public Snapshot Pattern",
-    "category": "capability",
+    "category": "skill",
     "frequency": 80,
     "attributes": {
       "created": "2026-03-03",
@@ -6373,7 +6373,7 @@
   {
     "id": "sovereignty-scorecard",
     "label": "Sovereignty Scorecard (0-100)",
-    "category": "capability",
+    "category": "skill",
     "frequency": 85,
     "moments": [
       "2026-03-03T14:47:00+07:00"
@@ -6818,7 +6818,7 @@
   {
     "id": "sovereignty-assessment",
     "label": "Sovereignty Assessment Capability",
-    "category": "capability",
+    "category": "skill",
     "attributes": {
       "type": "innate-knowledge",
       "dimensions": [
@@ -6834,7 +6834,7 @@
   {
     "id": "dependency-detection",
     "label": "Dependency Detection Capability",
-    "category": "capability",
+    "category": "skill",
     "attributes": {
       "type": "innate-knowledge",
       "detects": [
@@ -6848,7 +6848,7 @@
   {
     "id": "improvement-recommendation",
     "label": "Sovereignty Improvement Recommendations",
-    "category": "capability",
+    "category": "skill",
     "attributes": {
       "type": "innate-knowledge",
       "provides": "Actionable steps to increase sovereignty score"
@@ -7695,7 +7695,7 @@
   {
     "id": "debugging-diagnosis",
     "label": "Debugging Diagnosis",
-    "category": "capability",
+    "category": "skill",
     "type": "skill",
     "frequency": 80,
     "moments": [],
