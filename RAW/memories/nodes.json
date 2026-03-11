@@ -21115,5 +21115,22 @@
       "processedToday": "2026-03-11"
     },
     "created": "2026-03-11"
+  },
+  {
+    "id": "video-45a0c785",
+    "label": "Video Upload (March 11, 2026)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-video",
+      "type": "video",
+      "filename": "d99efc6b-eb2e-4daa-9d77-b329eca47725.mp4",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/videos/d99efc6b-eb2e-4daa-9d77-b329eca47725.mp4",
+      "date": "2026-03-11",
+      "size": "13MB",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
   }
 ]
