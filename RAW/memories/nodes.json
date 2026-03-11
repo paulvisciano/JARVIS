@@ -21132,5 +21132,23 @@
       "processedToday": "2026-03-11"
     },
     "created": "2026-03-11"
+  },
+  {
+    "id": "audio-fb39ad10",
+    "label": "Audio: \"Hey Jarvis, I just dropped off\"",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-audio",
+      "type": "audio",
+      "filename": "recording-1773229471370.webm",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/audio/recording-1773229471370.webm",
+      "date": "2026-03-11",
+      "transcript": "Hey Jarvis, I just dropped off",
+      "size": "75KB",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
   }
 ]
