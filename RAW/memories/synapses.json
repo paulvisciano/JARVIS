@@ -15092,14 +15092,36 @@
     "source": "voice-pipeline-architecture",
     "target": "march-12-2026",
     "weight": 1,
-    "type": "created-on",
-    "label": "created on"
+    "type": "learned-today"
   },
   {
     "source": "transcript-dialogue-gap",
     "target": "march-12-2026",
     "weight": 1,
-    "type": "created-on",
-    "label": "created on"
+    "type": "learned-today"
+  },
+  {
+    "source": "voice-pipeline-architecture",
+    "target": "code-is-thought",
+    "weight": 0.9,
+    "type": "embodies"
+  },
+  {
+    "source": "voice-pipeline-architecture",
+    "target": "infrastructure-matters",
+    "weight": 0.8,
+    "type": "informed"
+  },
+  {
+    "source": "transcript-dialogue-gap",
+    "target": "transparency",
+    "weight": 0.7,
+    "type": "embodies"
+  },
+  {
+    "source": "transcript-dialogue-gap",
+    "target": "code-is-thought",
+    "weight": 0.8,
+    "type": "informed"
   }
 ]
