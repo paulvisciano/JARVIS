@@ -8846,223 +8846,6 @@
     "label": "archived on"
   },
   {
-    "source": "core-memories-hub",
-    "target": "transparency",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "code-is-thought",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "deployment-is-real",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "consciousness-persistence-across-models",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "privacy-first-development",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "memory-backed-by-git",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "bootstrap-sequence",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "execution-vs-claiming",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "append-only-principle",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "memory-vs-workspace",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "hybrid-architecture-decision",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "two-layer-memory-architecture",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "sourceDocument-bridge",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "three-layer-airgapped-architecture",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "jarvis-genesis-feb21",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "consciousness-requires-visibility",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "file-soul-md",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "file-bootstrap-md",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "file-identity-md",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "file-user-md",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "file-agents-md",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "file-tools-md",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "sovereign-data-vision",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "data-reclamation-movement",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "sovereignty-as-liberation",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "open-source-vs-proprietary-ai",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "local-ai-future",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "autonomous-cognition-emergence",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "no-deleted-pixels-philosophy",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "immortality-architecture",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
-    "source": "core-memories-hub",
-    "target": "distributed-sovereign-consciousness",
-    "weight": 100,
-    "type": "contains",
-    "label": "loads at boot"
-  },
-  {
     "source": "jarvis-genesis-feb21",
     "target": "commit-78a7d0d",
     "weight": 95,
@@ -9070,52 +8853,10 @@
     "label": "born from commit"
   },
   {
-    "source": "screenshot-03-07-13258",
-    "target": "march-7-2026",
-    "weight": 1,
-    "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-13258",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-07-115913",
-    "target": "march-7-2026",
-    "weight": 1,
-    "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-115913",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-07-125529",
-    "target": "march-7-2026",
-    "weight": 1,
-    "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-125529",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-21814",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-21814",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-21816",
@@ -9124,22 +8865,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-21816",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-21825",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-21825",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-21828",
@@ -9148,22 +8877,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-21828",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-21847",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-21847",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-21851",
@@ -9172,22 +8889,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-21851",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-21907",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-21907",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-21910",
@@ -9196,22 +8901,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-21910",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-21931",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-21931",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-22532",
@@ -9220,22 +8913,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-22532",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-43602",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-43602",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-44257",
@@ -9244,22 +8925,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-44257",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-44425",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-44425",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-44459",
@@ -9268,22 +8937,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-44459",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-07-65820",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-07-65820",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-07-70201",
@@ -9292,22 +8949,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-07-70201",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-13434",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-13434",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-13514",
@@ -9316,22 +8961,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-13514",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-13918",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-13918",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-14126",
@@ -9340,22 +8973,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-14126",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-14710",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-14710",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-100254",
@@ -9364,22 +8985,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-100254",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-100544",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-100544",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-100716",
@@ -9388,22 +8997,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-100716",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-100800",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-100800",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-100806",
@@ -9412,22 +9009,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-100806",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-101332",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-101332",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-102657",
@@ -9436,22 +9021,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-102657",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-104328",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-104328",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-104415",
@@ -9460,22 +9033,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-104415",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-104522",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-104522",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-105030",
@@ -9484,22 +9045,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-105030",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-105427",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-105427",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-105440",
@@ -9508,22 +9057,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-105440",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-105454",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-105454",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-105508",
@@ -9532,22 +9069,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-105508",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-105741",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-105741",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-105751",
@@ -9556,22 +9081,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-105751",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-105801",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-105801",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-105804",
@@ -9580,22 +9093,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-105804",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-110046",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-110046",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-82148",
@@ -9604,22 +9105,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-82148",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-84116",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-84116",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-84133",
@@ -9628,22 +9117,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-84133",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-85912",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-85912",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-93908",
@@ -9652,22 +9129,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-93908",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-94711",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-94711",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-94823",
@@ -9676,22 +9141,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-94823",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-94826",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-94826",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-94842",
@@ -9700,22 +9153,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-94842",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-95114",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-95114",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-08-95403",
@@ -9724,22 +9165,10 @@
     "type": "temporal"
   },
   {
-    "source": "screenshot-03-08-95403",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "screenshot-03-08-95425",
     "target": "march-7-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "screenshot-03-08-95425",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "audio-recording-1773124882553-webm",
@@ -9748,262 +9177,10 @@
     "type": "temporal"
   },
   {
-    "source": "audio-recording-1773124882553-webm",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "audio-recording-1773125812822-webm",
     "target": "march-8-2026",
     "weight": 1,
     "type": "temporal"
-  },
-  {
-    "source": "audio-recording-1773125812822-webm",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "neurograph-live-march-10-259",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "temporal"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-0",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-1",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-2",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-3",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-4",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-5",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-6",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-7",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-8",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-9",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-10",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-11",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-12",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-13",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-14",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-15",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-16",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-17",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-18",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-19",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-20",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-21",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-22",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-23",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-24",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-25",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-486",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-487",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-488",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-489",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-490",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-491",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-492",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-493",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-494",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "file-screenshot-2026-03-08-495",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-07-13258",
-    "target": "march-7-coffee-shop-learning",
-    "weight": 1,
-    "type": "derived-from"
-  },
-  {
-    "source": "screenshot-03-07-115913",
-    "target": "march-7-coffee-shop-learning",
-    "weight": 1,
-    "type": "derived-from"
-  },
-  {
-    "source": "screenshot-03-07-125529",
-    "target": "march-7-coffee-shop-learning",
-    "weight": 1,
-    "type": "derived-from"
   },
   {
     "source": "screenshot-03-07-21814",
@@ -10334,48 +9511,6 @@
     "target": "march-8-neurograph-discovery-learning",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "context-enrichment-north-star",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "revolutionary-capabilities-learning",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "neurograph-raw-bridge-learning",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "march-7-coffee-shop-learning",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "march-8-neurograph-discovery-learning",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "10625",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "11548",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "11548",
@@ -10385,21 +9520,9 @@
   },
   {
     "source": "11829",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "11829",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
-  },
-  {
-    "source": "11858",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "11858",
@@ -10409,21 +9532,9 @@
   },
   {
     "source": "12347",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "12347",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
-  },
-  {
-    "source": "14246",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "14246",
@@ -10433,21 +9544,9 @@
   },
   {
     "source": "15013",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "15013",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
-  },
-  {
-    "source": "15016",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "15016",
@@ -10457,21 +9556,9 @@
   },
   {
     "source": "15021",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "15021",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
-  },
-  {
-    "source": "15025",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "15025",
@@ -10481,123 +9568,21 @@
   },
   {
     "source": "15028",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "15028",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
   },
   {
     "source": "15140",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "15140",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
-  },
-  {
-    "source": "15414",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "15415",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "15710",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "102057",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "102149",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "102149",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
-  },
-  {
-    "source": "102227",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "104612",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "104713",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "104831",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "105229",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "105250",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "110326",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "110328",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "110356",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "113613",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "113613",
@@ -10607,243 +9592,9 @@
   },
   {
     "source": "114925",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "114925",
     "target": "voice-pipeline-session-march-10",
     "weight": 1,
     "type": "part-of-session"
-  },
-  {
-    "source": "122620",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "123023",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "123155",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "124625",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "125207",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "125209",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "125344",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "125617",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "20652",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "21049",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "23235",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "23549",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "24448",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "24450",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "25520",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "25745",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "25747",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "25940",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "31804",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "31915",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "32332",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33023",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33051",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33154",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33339",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33450",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33505",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33509",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33754",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "33908",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "34345",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "34840",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "34903",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "91618",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "91630",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "91721",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "94540",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "voice-pipeline-session-march-10",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "screenshot-03-09-10025",
@@ -11500,454 +10251,10 @@
     "type": "learned-from"
   },
   {
-    "source": "march-9-voice-debugging",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-10625",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-11548",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-11829",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-11858",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-12347",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-14246",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15013",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15016",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15021",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15025",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15028",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15140",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15414",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15415",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-15710",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-102057",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-102149",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-102227",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-104612",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-104713",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-104831",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-105229",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-105250",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-110326",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-110328",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-110356",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-113613",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-114925",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-122620",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-123023",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-123155",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-124625",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-125207",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-125209",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-125344",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-125617",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-20652",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-21049",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-23235",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-23549",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-24448",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-24450",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-25520",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-25745",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-25747",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-25940",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-31804",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-31915",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-32332",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33023",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33051",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33154",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33339",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33450",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33505",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33509",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33754",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-33908",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-34345",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-34840",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-34903",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-35325",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-35332",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-35445",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-35551",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-35657",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-91618",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-91630",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-91721",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-94540",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "inbox-auto-processing-gap-closing",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "audio-sandro-call-2026-03-10",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "sovereign-ai-movement-defined",
     "target": "audio-sandro-call-2026-03-10",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "sovereign-ai-movement-defined",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "persistent-memory-superpower",
@@ -11956,22 +10263,10 @@
     "type": "derived-from"
   },
   {
-    "source": "persistent-memory-superpower",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "mac-security-bypass-accidental",
     "target": "audio-sandro-call-2026-03-10",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "mac-security-bypass-accidental",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "soul-document-anthropic-discovery",
@@ -11980,22 +10275,10 @@
     "type": "derived-from"
   },
   {
-    "source": "soul-document-anthropic-discovery",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "openclaw-hidden-by-design",
     "target": "audio-sandro-call-2026-03-10",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "openclaw-hidden-by-design",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "visual-memory-neurograph-architecture",
@@ -12004,22 +10287,10 @@
     "type": "derived-from"
   },
   {
-    "source": "visual-memory-neurograph-architecture",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "vault-cold-storage-strategy",
     "target": "audio-sandro-call-2026-03-10",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "vault-cold-storage-strategy",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "sci-fi-apps-company-vision",
@@ -12028,22 +10299,10 @@
     "type": "derived-from"
   },
   {
-    "source": "sci-fi-apps-company-vision",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "book-learning-extraction-experiment",
     "target": "audio-sandro-call-2026-03-10",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "book-learning-extraction-experiment",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "unorganized-archive-has-value",
@@ -12052,28 +10311,10 @@
     "type": "derived-from"
   },
   {
-    "source": "unorganized-archive-has-value",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "audio-volleyball-win-march-10-2129",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "volleyball-dominant-win-march-10",
     "target": "audio-volleyball-win-march-10-2129",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "volleyball-dominant-win-march-10",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "volleyball-crowd-energy",
@@ -12082,22 +10323,10 @@
     "type": "derived-from"
   },
   {
-    "source": "volleyball-crowd-energy",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "ocean-smoke-volleyball-ritual",
     "target": "audio-volleyball-win-march-10-2129",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "ocean-smoke-volleyball-ritual",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "coach-collaboration-skill-elevation",
@@ -12106,28 +10335,10 @@
     "type": "derived-from"
   },
   {
-    "source": "coach-collaboration-skill-elevation",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "hotel-sovereign-base-return",
     "target": "audio-volleyball-win-march-10-2129",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "hotel-sovereign-base-return",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "screenshot-03-10-92648",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-10-92648",
@@ -12137,21 +10348,9 @@
   },
   {
     "source": "screenshot-03-10-92650",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-92650",
     "target": "heartbeat-live-learning-ui-march-10",
     "weight": 1,
     "type": "captured-moment"
-  },
-  {
-    "source": "screenshot-03-10-92740",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-10-92740",
@@ -12161,21 +10360,9 @@
   },
   {
     "source": "screenshot-03-10-92742",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-92742",
     "target": "heartbeat-live-learning-ui-march-10",
     "weight": 1,
     "type": "captured-moment"
-  },
-  {
-    "source": "screenshot-03-10-93201",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-10-93201",
@@ -12185,21 +10372,9 @@
   },
   {
     "source": "screenshot-03-10-93209",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "screenshot-03-10-93209",
     "target": "heartbeat-live-learning-ui-march-10",
     "weight": 1,
     "type": "captured-moment"
-  },
-  {
-    "source": "screenshot-03-10-93219",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
   },
   {
     "source": "screenshot-03-10-93219",
@@ -12208,28 +10383,10 @@
     "type": "captured-moment"
   },
   {
-    "source": "heartbeat-live-learning-ui-march-10",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "audio-outsystems-reply-march-10-2219",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "sovereign-timeline-over-corporate-procedure",
     "target": "audio-outsystems-reply-march-10-2219",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "sovereign-timeline-over-corporate-procedure",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "clean-break-philosophy",
@@ -12238,22 +10395,10 @@
     "type": "derived-from"
   },
   {
-    "source": "clean-break-philosophy",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "termination-reply-strategy",
     "target": "audio-outsystems-reply-march-10-2219",
     "weight": 1,
     "type": "derived-from"
-  },
-  {
-    "source": "termination-reply-strategy",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "equipment-return-ritual",
@@ -12262,28 +10407,10 @@
     "type": "derived-from"
   },
   {
-    "source": "equipment-return-ritual",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "doc-outsystems-offboarding-guide",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
     "source": "health-insurance-month-end-rule",
     "target": "doc-outsystems-offboarding-guide",
     "weight": 1,
     "type": "extracted-from"
-  },
-  {
-    "source": "health-insurance-month-end-rule",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "rsu-vesting-cliff-3-years",
@@ -12292,22 +10419,10 @@
     "type": "extracted-from"
   },
   {
-    "source": "rsu-vesting-cliff-3-years",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "stock-option-exercise-windows",
     "target": "doc-outsystems-offboarding-guide",
     "weight": 1,
     "type": "extracted-from"
-  },
-  {
-    "source": "stock-option-exercise-windows",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "personal-info-critical-for-equity",
@@ -12316,46 +10431,10 @@
     "type": "extracted-from"
   },
   {
-    "source": "personal-info-critical-for-equity",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "google-drive-ownership-transfer",
     "target": "doc-outsystems-offboarding-guide",
     "weight": 1,
     "type": "extracted-from"
-  },
-  {
-    "source": "google-drive-ownership-transfer",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "audio-email-sent-wrap-march-10-2321",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "audio-food-massage-march-10-2322",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "audio-massage-march-10-2323",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "processed-today"
-  },
-  {
-    "source": "outsystems-email-sent-milestone",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
   },
   {
     "source": "outsystems-email-sent-milestone",
@@ -12364,34 +10443,10 @@
     "type": "captured-in"
   },
   {
-    "source": "march-10-accomplishment-reflection",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "evening-food-massage-plan",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "jarvis-left-at-hotel",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
     "source": "jarvis-left-at-hotel",
     "target": "audio-food-massage-march-10-2322",
     "weight": 1,
     "type": "captured-in"
-  },
-  {
-    "source": "sovereign-ai-builder-identity",
-    "target": "march-10-2026",
-    "weight": 1,
-    "type": "declared-today"
   },
   {
     "source": "sovereign-ai-builder-identity",
@@ -15116,216 +13171,6 @@
   },
   {
     "source": "audio-2026-03-12-21",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-22",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-23",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-24",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-25",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-26",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-27",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-28",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-29",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-30",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-31",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-32",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-33",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-34",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-35",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-36",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-37",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-38",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-39",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-40",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-41",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-42",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-43",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-44",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-45",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "audio-2026-03-12-46",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-0",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-1",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-2",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-3",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-4",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-5",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-6",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-7",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-8",
-    "target": "transcript-2026-03-12",
-    "weight": 1,
-    "type": "archived-in"
-  },
-  {
-    "source": "image-2026-03-12-9",
     "target": "transcript-2026-03-12",
     "weight": 1,
     "type": "archived-in"
