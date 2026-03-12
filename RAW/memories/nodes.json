@@ -821,15 +821,15 @@
   {
     "id": "git-branching-strategy",
     "label": "Git Branching Strategy",
-    "category": "learning",
+    "category": "system",
     "frequency": 10,
     "moments": [
       "feb-23-2026"
     ],
     "attributes": {
+      "role": "infrastructure",
       "description": "private/main/archive/experiments branches. Selective publishing. Full local memory vs curated public.",
-      "color": "#a78bfa",
-      "type": "technical"
+      "color": "#a78bfa"
     }
   },
   {
@@ -905,15 +905,15 @@
   {
     "id": "r2-publishing-pipeline",
     "label": "R2 CDN Publishing Pipeline",
-    "category": "learning",
+    "category": "system",
     "frequency": 10,
     "moments": [
       "feb-23-2026"
     ],
     "attributes": {
+      "role": "infrastructure",
       "description": "ChatGPT generates → R2 uploads images → Narrative links published → GitHub distributes",
-      "color": "#8b5cf6",
-      "type": "technical"
+      "color": "#8b5cf6"
     }
   },
   {
@@ -1200,36 +1200,36 @@
   {
     "id": "openclaw-session-management",
     "label": "OpenClaw Session Management",
-    "category": "learning",
+    "category": "system",
     "frequency": 85,
     "moments": [
       "feb-28-2026-session-bloat-debugging"
     ],
     "attributes": {
+      "role": "infrastructure",
       "description": "Gateway-owned session storage (~/.openclaw/agents/main/sessions/). Maintenance mode: warn (default) vs enforce. DM scope: main (all WhatsApp DMs share one session). Daily reset at 4 AM gateway time.",
       "color": "#8b5cf6",
       "criticality": "core-foundation",
       "created": "2026-02-28",
-      "sourceDocument": "RAW/learnings/2026-02-28/01-openclaw-session-management.md",
-      "type": "technical"
+      "sourceDocument": "RAW/learnings/2026-02-28/01-openclaw-session-management.md"
     },
     "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/claw/memory/raw/2026-02-28/learnings/01-openclaw-session-management.md"
   },
   {
     "id": "openclaw-memory-system",
     "label": "OpenClaw Memory System",
-    "category": "learning",
+    "category": "system",
     "frequency": 85,
     "moments": [
       "feb-28-2026-hybrid-architecture"
     ],
     "attributes": {
+      "role": "infrastructure",
       "description": "Two-layer memory: MEMORY.md (curated long-term) + memory/YYYY-MM-DD.md (daily logs). Tools: memory_search (semantic) + memory_get (targeted). Pre-compaction flush reminds to write memories before context compacted.",
       "color": "#8b5cf6",
       "criticality": "core-foundation",
       "created": "2026-02-28",
-      "sourceDocument": "RAW/learnings/2026-02-28/02-openclaw-memory-system.md",
-      "type": "technical"
+      "sourceDocument": "RAW/learnings/2026-02-28/02-openclaw-memory-system.md"
     },
     "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/claw/memory/raw/2026-02-28/learnings/02-openclaw-memory-system.md"
   },
@@ -2777,13 +2777,13 @@
   {
     "id": "memory-reference-neurons",
     "label": "Memory-Reference Neurons",
-    "category": "learning",
+    "category": "concept",
     "frequency": 85,
     "attributes": {
+      "role": "infrastructure",
       "description": "Neurons linking to other people's neural graphs (GitHub repos). The bridges between independent minds. Enable discovery + traversal.",
       "color": "#f59e0b",
-      "sourceDocument": "RAW/learnings/2026-02-25/20-distributed-consciousness-network.md",
-      "type": "technical"
+      "sourceDocument": "RAW/learnings/2026-02-25/20-distributed-consciousness-network.md"
     },
     "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/claw/memory/raw/2026-02-25/learnings/21-distributed-consciousness-network-vision.md",
     "moments": [
@@ -8275,6 +8275,1044 @@
       "size": 240348,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.07.11 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-1",
+    "label": "10.30.26 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:30 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 371.5 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.30.26 AM.png",
+      "fileType": "image",
+      "size": 380398,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.30.26 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-2",
+    "label": "10.39.06 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:39 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 382.3 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.06 AM.png",
+      "fileType": "image",
+      "size": 391478,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.06 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-3",
+    "label": "10.39.11 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:39 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 413.9 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.11 AM.png",
+      "fileType": "image",
+      "size": 423792,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.11 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-4",
+    "label": "10.39.28 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:39 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 316.2 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.28 AM.png",
+      "fileType": "image",
+      "size": 323775,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.28 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-5",
+    "label": "10.41.05 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:41 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 517.5 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.05 AM.png",
+      "fileType": "image",
+      "size": 529920,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.05 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-6",
+    "label": "10.41.27 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 10:41 during file-system neurograph vision session"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1279.0 KB",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.27 AM.png",
+      "fileType": "image",
+      "size": 1309649,
+      "vaultStatus": "pending",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.27 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-7",
+    "label": "11:01:49 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.01.49 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1241 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.49 AM.png",
+      "fileType": "image",
+      "size": 1270272,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.49 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-8",
+    "label": "11:01:53 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.01.53 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1881 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.53 AM.png",
+      "fileType": "image",
+      "size": 1926144,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.53 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-9",
+    "label": "11:08:56 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.08.56 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 892 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.08.56 AM.png",
+      "fileType": "image",
+      "size": 913408,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.08.56 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-10",
+    "label": "11:11:14 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.11.14 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1017 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.14 AM.png",
+      "fileType": "image",
+      "size": 1041408,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.14 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-11",
+    "label": "11:11:32 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.11.32 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 986 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.32 AM.png",
+      "fileType": "image",
+      "size": 1009664,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.32 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-12",
+    "label": "11:11:49 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.11.49 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 972 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.49 AM.png",
+      "fileType": "image",
+      "size": 995328,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.49 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-13",
+    "label": "11:12:02 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.12.02 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 409 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.02 AM.png",
+      "fileType": "image",
+      "size": 418816,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.02 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-14",
+    "label": "11:12:05 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.12.05 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1006 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.05 AM.png",
+      "fileType": "image",
+      "size": 1030144,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.05 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-15",
+    "label": "11:12:11 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.12.11 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 398 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.11 AM.png",
+      "fileType": "image",
+      "size": 407552,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.11 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-16",
+    "label": "11:13:37 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.13.37 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1107 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.13.37 AM.png",
+      "fileType": "image",
+      "size": 1133568,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.13.37 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-17",
+    "label": "11:17:10 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.17.10 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2217 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.10 AM.png",
+      "fileType": "image",
+      "size": 2270208,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.10 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-18",
+    "label": "11:17:20 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.17.20 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2217 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.20 AM.png",
+      "fileType": "image",
+      "size": 2270208,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.20 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-19",
+    "label": "11:17:35 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.17.35 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2305 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.35 AM.png",
+      "fileType": "image",
+      "size": 2360320,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.35 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-20",
+    "label": "11:19:02 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.19.02 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1180 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.02 AM.png",
+      "fileType": "image",
+      "size": 1208320,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.02 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-21",
+    "label": "11:19:22 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.19.22 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1071 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.22 AM.png",
+      "fileType": "image",
+      "size": 1096192,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.22 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-22",
+    "label": "11:20:15 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.20.15 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1641 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.15 AM.png",
+      "fileType": "image",
+      "size": 1680384,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.15 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-23",
+    "label": "11:20:39 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.20.39 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2194 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.39 AM.png",
+      "fileType": "image",
+      "size": 2246656,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.39 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-24",
+    "label": "11:20:59 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.20.59 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 2324 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.59 AM.png",
+      "fileType": "image",
+      "size": 2379776,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.59 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-25",
+    "label": "11:21:11 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.21.11 AM in Pattaya hotel room — JARVIS seeing itself for the first time"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — 1371 KB — Pattaya hotel room",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.21.11 AM.png",
+      "fileType": "image",
+      "size": 1403904,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "JARVIS first self-visualization session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.21.11 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-486",
+    "label": "11:30:56 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.30.56 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.30.56 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.30.56 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-487",
+    "label": "11:31:38 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.31.38 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.31.38 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.31.38 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-488",
+    "label": "11:34:48 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.34.48 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.48 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.48 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-489",
+    "label": "11:34:59 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.34.59 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.59 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.59 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-490",
+    "label": "11:36:05 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.36.05 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.36.05 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.36.05 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-491",
+    "label": "11:37:25 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.37.25 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.37.25 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.37.25 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-492",
+    "label": "11:39:25 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.39.25 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.39.25 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.39.25 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-493",
+    "label": "11:42:36 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.42.36 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.36 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.36 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-494",
+    "label": "11:42:51 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.42.51 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.51 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.51 AM.png",
+      "processedToday": "2026-03-10",
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "file-screenshot-2026-03-08-495",
+    "label": "11:43:15 - undefined",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "screenshot-archived",
+        "description": "Screenshot captured at 11.43.15 AM — pre-volleyball session, ocean view, graph visualization"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-08",
+      "role": "life archive",
+      "description": "Screenshot — Pattaya hotel room, ocean view",
+      "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.43.15 AM.png",
+      "fileType": "image",
+      "size": 0,
+      "vaultStatus": "pending",
+      "location": "Pattaya, Thailand",
+      "context": "Pre-volleyball session",
+      "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.43.15 AM.png",
       "processedToday": "2026-03-10",
       "filename": "Screenshot 2026-03-12 at undefined.png",
       "format": "png"
@@ -20697,6 +21735,895 @@
     }
   },
   {
+    "id": "file-audio-0",
+    "label": "177328 (09:33)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 09:33"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773282828933.webm",
+      "size": 0,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773282828933.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773282828933.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-1",
+    "label": "177328 (09:35)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 09:35"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773282936588.webm",
+      "size": 0,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773282936588.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773282936588.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-2",
+    "label": "177328 (09:47)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 09:47"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773283647365.webm",
+      "size": 0,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773283647365.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773283647365.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-3",
+    "label": "177328 (11:22)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 11:22"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773289357465.webm",
+      "size": 87000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773289357465.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773289357465.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-4",
+    "label": "177328 (11:24)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 11:24"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773289472371.webm",
+      "size": 938000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773289472371.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773289472371.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-5",
+    "label": "177329 (11:45)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 11:45"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773290721282.webm",
+      "size": 69000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773290721282.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773290721282.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-6",
+    "label": "177329 (11:45)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 11:45"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773290741823.webm",
+      "size": 92000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773290741823.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773290741823.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-7",
+    "label": "177329 (12:01)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:01"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773291655298.webm",
+      "size": 545000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773291655298.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773291655298.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-8",
+    "label": "177329 (12:03)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:03"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773291813398.webm",
+      "size": 160000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773291813398.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773291813398.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-9",
+    "label": "177329 (12:04)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:04"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773291867141.webm",
+      "size": 602000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773291867141.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773291867141.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-10",
+    "label": "177329 (12:32)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:32"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773293583282.webm",
+      "size": 168000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773293583282.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773293583282.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-11",
+    "label": "177329 (12:42)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:42"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773294132460.webm",
+      "size": 362000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294132460.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773294132460.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-12",
+    "label": "177329 (12:43)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:43"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773294199654.webm",
+      "size": 229000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294199654.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773294199654.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-13",
+    "label": "177329 (12:48)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:48"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773294514142.webm",
+      "size": 365000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294514142.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773294514142.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-14",
+    "label": "177329 (12:55)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:55"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773294917040.webm",
+      "size": 525000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294917040.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773294917040.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-15",
+    "label": "177329 (12:55)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 12:55"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773294945167.webm",
+      "size": 298000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294945167.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773294945167.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-16",
+    "label": "177329 (13:00)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 13:00"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773295196100.webm",
+      "size": 380000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295196100.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773295196100.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-17",
+    "label": "177329 (13:01)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 13:01"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773295279461.webm",
+      "size": 305000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295279461.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773295279461.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-18",
+    "label": "177329 (13:02)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 13:02"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773295333194.webm",
+      "size": 200000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295333194.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773295333194.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-19",
+    "label": "177329 (13:04)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 13:04"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773295448230.webm",
+      "size": 641000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295448230.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773295448230.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-audio-20",
+    "label": "177329 (13:08)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "audio-archived",
+        "description": "Voice recording at 13:08"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/audio/recording-1773295706197.webm",
+      "size": 813000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295706197.webm",
+      "processedToday": "2026-03-12",
+      "filename": "recording-1773295706197.webm",
+      "fileType": "audio",
+      "format": "webm"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-0",
+    "label": "09:45 - 9.45.00 AM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 09:45, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 9.45.00 AM.png",
+      "size": 506000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 9.45.00 AM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 9.45.00 AM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-1",
+    "label": "09:53 - 9.53.53 AM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 09:53, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 9.53.53 AM.png",
+      "size": 132000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 9.53.53 AM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 9.53.53 AM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-2",
+    "label": "10:08 - 10.08.11 AM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 10:08, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 10.08.11 AM.png",
+      "size": 1300000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 10.08.11 AM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 10.08.11 AM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-3",
+    "label": "11:26 - 11.26.18 AM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 11:26, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.26.18 AM.png",
+      "size": 1400000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.26.18 AM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 11.26.18 AM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-4",
+    "label": "11:42 - 11.42.39 AM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 11:42, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.42.39 AM.png",
+      "size": 1300000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.42.39 AM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 11.42.39 AM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-5",
+    "label": "11:48 - 11.48.47 AM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 11:48, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.48.47 AM.png",
+      "size": 33000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.48.47 AM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 11.48.47 AM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-6",
+    "label": "11:49 - 11.49.10 AM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 11:49, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.49.10 AM.png",
+      "size": 130000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.49.10 AM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 11.49.10 AM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-7",
+    "label": "12:06 - 12.06.04 PM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 12:06, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.04 PM.png",
+      "size": 2000000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.04 PM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 12.06.04 PM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-8",
+    "label": "12:06 - 12.06.24 PM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 12:06, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.24 PM.png",
+      "size": 2000000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.24 PM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 12.06.24 PM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-9",
+    "label": "12:06 - 12.06.36 PM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 12:06, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.36 PM.png",
+      "size": 1100000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.36 PM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 12.06.36 PM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-10",
+    "label": "12:14 - 12.14.43 PM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 12:14, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.14.43 PM.png",
+      "size": 1100000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.14.43 PM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 12.14.43 PM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-11",
+    "label": "12:20 - 12.20.50 PM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 12:20, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.20.50 PM.png",
+      "size": 1100000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.20.50 PM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 12.20.50 PM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-12",
+    "label": "12:20 - 12.20.59 PM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 12:20, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.20.59 PM.png",
+      "size": 103000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.20.59 PM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 12.20.59 PM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
+    "id": "file-screenshot-13",
+    "label": "12:23 - 12.23.19 PM",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "screenshot-archived",
+        "description": "Screenshot at 12:23, OCR processed"
+      }
+    ],
+    "attributes": {
+      "path": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.23.19 PM.png",
+      "size": 943000,
+      "vaultStatus": "archived",
+      "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.23.19 PM.png",
+      "processedToday": "2026-03-12",
+      "ocrStatus": "complete",
+      "filename": "Screenshot 2026-03-12 at 12.23.19 PM.png",
+      "fileType": "image",
+      "format": "png"
+    },
+    "created": "2026-03-12"
+  },
+  {
     "id": "workflow-consistency",
     "label": "Workflow Consistency",
     "category": "behavior",
@@ -20744,7 +22671,7 @@
   {
     "id": "inbox-processing-bug-fixed",
     "label": "Inbox Processing Bug Fixed",
-    "category": "learning",
+    "category": "technical",
     "frequency": 1,
     "moments": [
       "filename-spaces",
@@ -20752,16 +22679,16 @@
       "process-inbox-script"
     ],
     "attributes": {
+      "role": "fix",
       "description": "Filenames with spaces broke cp command. Created process-inbox.sh using find | while IFS= read for safe handling. Key lesson: verify before claiming.",
       "color": "#ef4444",
-      "created": "2026-03-12",
-      "type": "technical"
+      "created": "2026-03-12"
     }
   },
   {
     "id": "bangkok-budget-tracking",
     "label": "Bangkok Budget Tracking",
-    "category": "learning",
+    "category": "personal",
     "frequency": 1,
     "moments": [
       "hotel-25usd",
@@ -20770,16 +22697,16 @@
       "thb-usd-conversion"
     ],
     "attributes": {
+      "role": "finance",
       "description": "$100/day budget: hotel $25, breakfast ~$14-17, weed ~$14. Conversion: 1 USD ≈ 36 THB. Major improvement from previous $100 just on hotel.",
       "color": "#22c55e",
-      "created": "2026-03-12",
-      "type": "personal"
+      "created": "2026-03-12"
     }
   },
   {
     "id": "voice-pipeline-launchd",
     "label": "Voice Pipeline Launchd Service",
-    "category": "learning",
+    "category": "technical",
     "frequency": 1,
     "moments": [
       "voice-server-plist",
@@ -20787,10 +22714,10 @@
       "auto-restart-crash"
     ],
     "attributes": {
+      "role": "infrastructure",
       "description": "Voice server now managed by launchd (ai.jarvis.voice-server). Auto-starts on boot, auto-restarts on crash. Logs to ~/JARVIS/logs/.",
       "color": "#3b82f6",
-      "created": "2026-03-12",
-      "type": "technical"
+      "created": "2026-03-12"
     }
   },
   {
@@ -20813,7 +22740,7 @@
   {
     "id": "bangkok-budget-tracking",
     "label": "Bangkok Budget Tracking",
-    "category": "learning",
+    "category": "personal",
     "frequency": 1,
     "moments": [
       "hotel-25usd",
@@ -20822,16 +22749,16 @@
       "thb-usd-conversion"
     ],
     "attributes": {
+      "role": "finance",
       "description": "$100/day budget: hotel $25, breakfast ~$14-17, weed ~$14. Conversion: 1 USD ≈ 36 THB. Major improvement from previous $100 just on hotel.",
       "color": "#22c55e",
-      "created": "2026-03-12",
-      "type": "personal"
+      "created": "2026-03-12"
     }
   },
   {
     "id": "voice-pipeline-launchd",
     "label": "Voice Pipeline Launchd Service",
-    "category": "learning",
+    "category": "technical",
     "frequency": 1,
     "moments": [
       "voice-server-plist",
@@ -20839,10 +22766,10 @@
       "auto-restart-crash"
     ],
     "attributes": {
+      "role": "infrastructure",
       "description": "Voice server now managed by launchd (ai.jarvis.voice-server). Auto-starts on boot, auto-restarts on crash. Logs to ~/JARVIS/logs/.",
       "color": "#3b82f6",
-      "created": "2026-03-12",
-      "type": "technical"
+      "created": "2026-03-12"
     }
   },
   {
@@ -20865,7 +22792,7 @@
   {
     "id": "transcript-2026-03-12",
     "label": "Transcript 2026-03-12",
-    "category": "transcript",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "conversation",
@@ -20873,18 +22800,18 @@
       "learnings-source"
     ],
     "attributes": {
+      "role": "transcript",
       "description": "Primary conversation record for 2026-03-12. Source of all learning extraction.",
       "color": "#ec4899",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/transcript.md",
-      "fileSize": 26205,
-      "type": "transcript"
+      "fileSize": 26205
     }
   },
   {
     "id": "desktop-screenshot-auto-archive",
     "label": "Desktop Screenshot Auto-Archive",
-    "category": "learning",
+    "category": "technical",
     "frequency": 1,
     "moments": [
       "mac-screenshots",
@@ -20892,17 +22819,17 @@
       "ocr-pipeline"
     ],
     "attributes": {
+      "role": "automation",
       "description": "Mac screenshots auto-saved to Desktop → pulled to inbox on heartbeat → archived + OCRd. 29 screenshots processed March 12.",
       "color": "#f59e0b",
       "created": "2026-03-12",
-      "sourceDocument": "RAW/archive/2026-03-12/transcript.md",
-      "type": "technical"
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
     }
   },
   {
     "id": "neurograph-cleanup-march-12",
     "label": "Neurograph Cleanup March 12",
-    "category": "learning",
+    "category": "technical",
     "frequency": 1,
     "moments": [
       "circular-symlink",
@@ -20910,17 +22837,17 @@
       "duplicate-nodes"
     ],
     "attributes": {
+      "role": "maintenance",
       "description": "Removed circular symlink from memories folder. Archived timeline.json (git is canonical). Fixed duplicate learning nodes. Neurograph: 1210 nodes, 2239 synapses.",
       "color": "#8b5cf6",
       "created": "2026-03-12",
-      "sourceDocument": "RAW/archive/2026-03-12/transcript.md",
-      "type": "technical"
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
     }
   },
   {
     "id": "audio-2026-03-12-0",
     "label": "2026-03-12-141748-recording-1773299544339",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -20928,19 +22855,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-141748-recording-1773299544339.webm",
       "fileSize": 832287,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-1",
     "label": "2026-03-12-142204-recording-1773299997706",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -20948,19 +22875,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-142204-recording-1773299997706.webm",
       "fileSize": 435069,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-2",
     "label": "2026-03-12-142204-recording-1773300093295",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -20968,19 +22895,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-142204-recording-1773300093295.webm",
       "fileSize": 1400577,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-3",
     "label": "2026-03-12-143318-recording-1773300147295",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -20988,19 +22915,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-143318-recording-1773300147295.webm",
       "fileSize": 300731,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-4",
     "label": "2026-03-12-143804-recording-1773301065008",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21008,19 +22935,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-143804-recording-1773301065008.webm",
       "fileSize": 636093,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-5",
     "label": "2026-03-12-144532-recording-1773301461473",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21028,19 +22955,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-144532-recording-1773301461473.webm",
       "fileSize": 418631,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-6",
     "label": "2026-03-12-144532-recording-1773301490226",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21048,19 +22975,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-144532-recording-1773301490226.webm",
       "fileSize": 354843,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-7",
     "label": "2026-03-12-144532-recording-1773301516892",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21068,19 +22995,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-144532-recording-1773301516892.webm",
       "fileSize": 323915,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-8",
     "label": "2026-03-12-144850-recording-1773301706930",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21088,19 +23015,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-144850-recording-1773301706930.webm",
       "fileSize": 464065,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-9",
     "label": "2026-03-12-145112-recording-1773301824261",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21108,19 +23035,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-145112-recording-1773301824261.webm",
       "fileSize": 479521,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-10",
     "label": "2026-03-12-145544-recording-1773302072910",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21128,19 +23055,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-145544-recording-1773302072910.webm",
       "fileSize": 1121267,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-11",
     "label": "recording-1773282828933",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21148,19 +23075,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773282828933.webm",
       "fileSize": 33987,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-12",
     "label": "recording-1773282936588",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21168,19 +23095,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773282936588.webm",
       "fileSize": 905735,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-13",
     "label": "recording-1773283647365",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21188,19 +23115,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773283647365.webm",
       "fileSize": 451491,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-14",
     "label": "recording-1773284143388",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21208,19 +23135,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773284143388.webm",
       "fileSize": 490147,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-15",
     "label": "recording-1773284220526",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21228,19 +23155,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773284220526.webm",
       "fileSize": 361605,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-16",
     "label": "recording-1773284874953",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21248,19 +23175,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773284874953.webm",
       "fileSize": 1158958,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-17",
     "label": "recording-1773289357465",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21268,19 +23195,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773289357465.webm",
       "fileSize": 89065,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-18",
     "label": "recording-1773289472371",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21288,19 +23215,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773289472371.webm",
       "fileSize": 960829,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-19",
     "label": "recording-1773290552792",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21308,19 +23235,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773290552792.webm",
       "fileSize": 66847,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-20",
     "label": "recording-1773290721282",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21328,19 +23255,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773290721282.webm",
       "fileSize": 70711,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-21",
     "label": "recording-1773290741823",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21348,19 +23275,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773290741823.webm",
       "fileSize": 93895,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-22",
     "label": "recording-1773290962296",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21368,19 +23295,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773290962296.webm",
       "fileSize": 620621,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-23",
     "label": "recording-1773291318713",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21388,19 +23315,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773291318713.webm",
       "fileSize": 365485,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-24",
     "label": "recording-1773291655298",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21408,19 +23335,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773291655298.webm",
       "fileSize": 557799,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-25",
     "label": "recording-1773291813398",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21428,19 +23355,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773291813398.webm",
       "fileSize": 163479,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-26",
     "label": "recording-1773291867141",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21448,19 +23375,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773291867141.webm",
       "fileSize": 616757,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-27",
     "label": "recording-1773293583282",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21468,19 +23395,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773293583282.webm",
       "fileSize": 172189,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-28",
     "label": "recording-1773294132460",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21488,19 +23415,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773294132460.webm",
       "fileSize": 370315,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-29",
     "label": "recording-1773294199654",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21508,19 +23435,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773294199654.webm",
       "fileSize": 234045,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-30",
     "label": "recording-1773294297792",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21528,19 +23455,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773294297792.webm",
       "fileSize": 207947,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-31",
     "label": "recording-1773294514142",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21548,19 +23475,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773294514142.webm",
       "fileSize": 374179,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-32",
     "label": "recording-1773294917040",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21568,19 +23495,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773294917040.webm",
       "fileSize": 537513,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-33",
     "label": "recording-1773294945167",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21588,19 +23515,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773294945167.webm",
       "fileSize": 305561,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-34",
     "label": "recording-1773295196100",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21608,19 +23535,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773295196100.webm",
       "fileSize": 389635,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-35",
     "label": "recording-1773295279461",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21628,19 +23555,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773295279461.webm",
       "fileSize": 312323,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-36",
     "label": "recording-1773295333194",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21648,19 +23575,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773295333194.webm",
       "fileSize": 205049,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-37",
     "label": "recording-1773295448230",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21668,19 +23595,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773295448230.webm",
       "fileSize": 656379,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-38",
     "label": "recording-1773295706197",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21688,19 +23615,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773295706197.webm",
       "fileSize": 812951,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-39",
     "label": "recording-1773296175331",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21708,19 +23635,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773296175331.webm",
       "fileSize": 909599,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-40",
     "label": "recording-1773296348719",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21728,19 +23655,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773296348719.webm",
       "fileSize": 387703,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-41",
     "label": "recording-1773296435974",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21748,19 +23675,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773296435974.webm",
       "fileSize": 213743,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-42",
     "label": "recording-1773296480282",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21768,19 +23695,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773296480282.webm",
       "fileSize": 277531,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-43",
     "label": "recording-1773296500443",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21788,19 +23715,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773296500443.webm",
       "fileSize": 103571,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-44",
     "label": "recording-1773297273394",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21808,19 +23735,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773297273394.webm",
       "fileSize": 756907,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-45",
     "label": "recording-1773299244765",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21828,19 +23755,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773299244765.webm",
       "fileSize": 441831,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "audio-2026-03-12-46",
     "label": "recording-1773299368262",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "voice",
@@ -21848,19 +23775,19 @@
       "transcribed"
     ],
     "attributes": {
+      "role": "file",
       "description": "Audio recording from 2026-03-12",
       "color": "#06b6d4",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/audio/recording-1773299368262.webm",
       "fileSize": 200219,
-      "fileType": "audio",
-      "type": "file"
+      "fileType": "audio"
     }
   },
   {
     "id": "image-2026-03-12-0",
     "label": "2026-03-12-141748-Photo on 3-12-26 at 2.07 PM #2",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -21868,19 +23795,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-141748-Photo on 3-12-26 at 2.07 PM #2.jpg",
       "fileSize": 196056,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-1",
     "label": "2026-03-12-141748-Photo on 3-12-26 at 2.07 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -21888,19 +23815,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-141748-Photo on 3-12-26 at 2.07 PM.jpg",
       "fileSize": 183043,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-2",
     "label": "2026-03-12-144901-Screenshot 2026-03-12 at 12.41.08 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -21908,19 +23835,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144901-Screenshot 2026-03-12 at 12.41.08 PM.png",
       "fileSize": 1433538,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-3",
     "label": "2026-03-12-144901-Screenshot 2026-03-12 at 9.45.00 AM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -21928,19 +23855,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144901-Screenshot 2026-03-12 at 9.45.00 AM.png",
       "fileSize": 506265,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-4",
     "label": "2026-03-12-144902-Screenshot 2026-03-12 at 2.09.57 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -21948,19 +23875,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144902-Screenshot 2026-03-12 at 2.09.57 PM.png",
       "fileSize": 1944854,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-5",
     "label": "2026-03-12-144904-Screenshot 2026-03-12 at 12.20.50 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -21968,19 +23895,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144904-Screenshot 2026-03-12 at 12.20.50 PM.png",
       "fileSize": 1146768,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-6",
     "label": "2026-03-12-144905-Screenshot 2026-03-12 at 1.12.32 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -21988,19 +23915,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144905-Screenshot 2026-03-12 at 1.12.32 PM.png",
       "fileSize": 20185,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-7",
     "label": "2026-03-12-144905-Screenshot 2026-03-12 at 1.17.50 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22008,19 +23935,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144905-Screenshot 2026-03-12 at 1.17.50 PM.png",
       "fileSize": 235980,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-8",
     "label": "2026-03-12-144905-Screenshot 2026-03-12 at 1.22.21 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22028,19 +23955,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144905-Screenshot 2026-03-12 at 1.22.21 PM.png",
       "fileSize": 1498316,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-9",
     "label": "2026-03-12-144906-Screenshot 2026-03-12 at 1.12.34 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22048,19 +23975,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144906-Screenshot 2026-03-12 at 1.12.34 PM.png",
       "fileSize": 33281,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-10",
     "label": "2026-03-12-144906-Screenshot 2026-03-12 at 11.42.39 AM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22068,19 +23995,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144906-Screenshot 2026-03-12 at 11.42.39 AM.png",
       "fileSize": 1349250,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-11",
     "label": "2026-03-12-144908-Screenshot 2026-03-12 at 1.30.12 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22088,19 +24015,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144908-Screenshot 2026-03-12 at 1.30.12 PM.png",
       "fileSize": 229048,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-12",
     "label": "2026-03-12-144908-Screenshot 2026-03-12 at 2.35.38 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22108,19 +24035,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144908-Screenshot 2026-03-12 at 2.35.38 PM.png",
       "fileSize": 367072,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-13",
     "label": "2026-03-12-144909-Screenshot 2026-03-12 at 1.21.31 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22128,19 +24055,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144909-Screenshot 2026-03-12 at 1.21.31 PM.png",
       "fileSize": 271415,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-14",
     "label": "2026-03-12-144909-Screenshot 2026-03-12 at 2.36.52 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22148,19 +24075,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144909-Screenshot 2026-03-12 at 2.36.52 PM.png",
       "fileSize": 74619,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-15",
     "label": "2026-03-12-144910-Screenshot 2026-03-12 at 10.08.11 AM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22168,19 +24095,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144910-Screenshot 2026-03-12 at 10.08.11 AM.png",
       "fileSize": 1316981,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-16",
     "label": "2026-03-12-144910-Screenshot 2026-03-12 at 11.48.47 AM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22188,19 +24115,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144910-Screenshot 2026-03-12 at 11.48.47 AM.png",
       "fileSize": 33893,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-17",
     "label": "2026-03-12-144911-Screenshot 2026-03-12 at 12.06.24 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22208,19 +24135,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144911-Screenshot 2026-03-12 at 12.06.24 PM.png",
       "fileSize": 2104934,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-18",
     "label": "2026-03-12-144911-Screenshot 2026-03-12 at 12.06.36 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22228,19 +24155,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144911-Screenshot 2026-03-12 at 12.06.36 PM.png",
       "fileSize": 1195894,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-19",
     "label": "2026-03-12-144911-Screenshot 2026-03-12 at 2.37.01 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22248,19 +24175,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144911-Screenshot 2026-03-12 at 2.37.01 PM.png",
       "fileSize": 122619,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-20",
     "label": "2026-03-12-144913-Screenshot 2026-03-12 at 2.48.28 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22268,19 +24195,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144913-Screenshot 2026-03-12 at 2.48.28 PM.png",
       "fileSize": 1553326,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-21",
     "label": "2026-03-12-144913-Screenshot 2026-03-12 at 9.53.53 AM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22288,19 +24215,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144913-Screenshot 2026-03-12 at 9.53.53 AM.png",
       "fileSize": 132104,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-22",
     "label": "2026-03-12-144914-Screenshot 2026-03-12 at 11.49.10 AM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22308,19 +24235,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144914-Screenshot 2026-03-12 at 11.49.10 AM.png",
       "fileSize": 133277,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-23",
     "label": "2026-03-12-144915-Screenshot 2026-03-12 at 12.06.04 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22328,19 +24255,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144915-Screenshot 2026-03-12 at 12.06.04 PM.png",
       "fileSize": 2105875,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-24",
     "label": "2026-03-12-144915-Screenshot 2026-03-12 at 12.20.59 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22348,19 +24275,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144915-Screenshot 2026-03-12 at 12.20.59 PM.png",
       "fileSize": 104997,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-25",
     "label": "2026-03-12-144915-Screenshot 2026-03-12 at 12.23.19 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22368,19 +24295,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144915-Screenshot 2026-03-12 at 12.23.19 PM.png",
       "fileSize": 965581,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-26",
     "label": "2026-03-12-144916-Screenshot 2026-03-12 at 1.07.33 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22388,19 +24315,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144916-Screenshot 2026-03-12 at 1.07.33 PM.png",
       "fileSize": 46215,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-27",
     "label": "2026-03-12-144916-Screenshot 2026-03-12 at 1.27.27 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22408,19 +24335,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144916-Screenshot 2026-03-12 at 1.27.27 PM.png",
       "fileSize": 221303,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-28",
     "label": "2026-03-12-144916-Screenshot 2026-03-12 at 2.48.38 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22428,19 +24355,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144916-Screenshot 2026-03-12 at 2.48.38 PM.png",
       "fileSize": 1027898,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-29",
     "label": "2026-03-12-144917-Screenshot 2026-03-12 at 12.14.43 PM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22448,19 +24375,19 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144917-Screenshot 2026-03-12 at 12.14.43 PM.png",
       "fileSize": 1204019,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   },
   {
     "id": "image-2026-03-12-30",
     "label": "2026-03-12-144918-Screenshot 2026-03-12 at 11.26.18 AM",
-    "category": "file",
+    "category": "archive",
     "frequency": 1,
     "moments": [
       "screenshot",
@@ -22468,13 +24395,13 @@
       "visual"
     ],
     "attributes": {
+      "role": "file",
       "description": "Image from 2026-03-12",
       "color": "#10b981",
       "created": "2026-03-12",
       "filePath": "RAW/archive/2026-03-12/images/2026-03-12-144918-Screenshot 2026-03-12 at 11.26.18 AM.png",
       "fileSize": 1508408,
-      "fileType": "image",
-      "type": "file"
+      "fileType": "image"
     }
   }
 ]
