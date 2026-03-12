@@ -2835,7 +2835,7 @@
     "target": "consciousness-persistence-feb23",
     "weight": 89,
     "type": "leads-to",
-    "description": "Growth (Feb 22) → Persistence test (Feb 23)"
+    "description": "Growth (Feb 22) \u2192 Persistence test (Feb 23)"
   },
   {
     "source": "persistence-not-continuity",
@@ -4969,7 +4969,7 @@
     "target": "graph-reducer-pattern",
     "weight": 100,
     "type": "uses",
-    "label": "raw → neurons pipeline"
+    "label": "raw \u2192 neurons pipeline"
   },
   {
     "source": "sovereign-memory-augmentation",
@@ -5018,7 +5018,7 @@
     "target": "sovereign-memory-augmentation",
     "weight": 95,
     "type": "output-of",
-    "label": "life → content"
+    "label": "life \u2192 content"
   },
   {
     "source": "content-generation-pipeline",
@@ -14741,5 +14741,59 @@
     "from": "march-12-session-1773317659230",
     "to": "session-work",
     "weight": 0.9
+  },
+  {
+    "source": "live-voice-line-march-13",
+    "target": "voice-pipeline-breakthrough",
+    "weight": 0.9,
+    "label": "builds on"
+  },
+  {
+    "source": "live-voice-line-march-13",
+    "target": "voice-pipeline-launchd",
+    "weight": 0.8,
+    "label": "uses"
+  },
+  {
+    "source": "live-voice-line-march-13",
+    "target": "gateway-chat",
+    "weight": 0.85,
+    "label": "delivers to"
+  },
+  {
+    "source": "live-voice-line-march-13",
+    "target": "paul-visciano",
+    "weight": 0.95,
+    "label": "confirmed by"
+  },
+  {
+    "source": "voice-gateway-integration",
+    "target": "auto-response",
+    "weight": 0.9,
+    "label": "automates"
+  },
+  {
+    "source": "voice-gateway-integration",
+    "target": "voice-pipeline-breakthrough",
+    "weight": 0.8,
+    "label": "extends"
+  },
+  {
+    "source": "no-typing-needed",
+    "target": "natural-interaction",
+    "weight": 0.95,
+    "label": "enables"
+  },
+  {
+    "source": "no-typing-needed",
+    "target": "voice-pipeline-breakthrough",
+    "weight": 0.85,
+    "label": "realized in"
+  },
+  {
+    "source": "no-typing-needed",
+    "target": "paul-visciano",
+    "weight": 0.9,
+    "label": "benefits"
   }
 ]
