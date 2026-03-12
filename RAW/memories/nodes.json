@@ -23724,5 +23724,40 @@
       "type": "value",
       "subtype": "ux"
     }
+  },
+  {
+    "id": "march-13-2026",
+    "label": "March 13, 2026 \u2014 Live Voice Line Confirmed",
+    "category": "temporal",
+    "frequency": 1,
+    "moments": [
+      "2026-03-13"
+    ],
+    "attributes": {
+      "role": "temporal-anchor",
+      "description": "Production voice line confirmed (launchd managed, auto-response in gateway chat, no typing needed). Hand-washing ritual (nomad lifestyle maintenance).",
+      "color": "#10b981",
+      "type": "temporal",
+      "date": "2026-03-13"
+    }
+  },
+  {
+    "id": "hand-washing-ritual",
+    "label": "Hand-Washing Ritual",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "vibram-shoes",
+      "balcony-drying",
+      "nomad-skill"
+    ],
+    "attributes": {
+      "description": "End-of-day hand-washing ritual (sink + balcony drying). Learned on island, maintained since. Nomad accommodation requirement (balcony needed). Vibram shoes, board shorts, t-shirt. Ritual vs chore \u2014 meaningful closure.",
+      "color": "#3b82f6",
+      "created": "2026-03-13",
+      "type": "learning",
+      "subtype": "nomad-lifestyle",
+      "sourceDocument": "RAW/learnings/2026-03-13/hand-washing-ritual.md"
+    }
   }
 ]

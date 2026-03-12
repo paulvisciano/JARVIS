@@ -14795,5 +14795,35 @@
     "target": "paul-visciano",
     "weight": 0.9,
     "label": "benefits"
+  },
+  {
+    "source": "march-13-2026",
+    "target": "live-voice-line-march-13",
+    "type": "contains",
+    "weight": 1
+  },
+  {
+    "source": "march-13-2026",
+    "target": "hand-washing-ritual",
+    "type": "contains",
+    "weight": 1
+  },
+  {
+    "source": "hand-washing-ritual",
+    "target": "march-13-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "hand-washing-ritual",
+    "target": "paul-visciano",
+    "type": "practiced-by",
+    "weight": 0.9
+  },
+  {
+    "source": "live-voice-line-march-13",
+    "target": "march-13-2026",
+    "type": "learned-today",
+    "weight": 1
   }
 ]
