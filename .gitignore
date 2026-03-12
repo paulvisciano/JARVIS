@@ -14,3 +14,8 @@ media/
 # learnings/ = Your growth (committed insights) ✅
 # memories/ = Your neurograph (committed structure) ✅
 # *.md files = Identity and documentation ✅
+
+# Inbox (temporary staging, auto-archived to ~/RAW/archive/)
+inbox/
+inbox/*
+!inbox/.gitkeep

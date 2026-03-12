@@ -8288,12 +8288,13 @@
       "role": "life archive",
       "description": "Screenshot — 234.7 KB",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.07.11 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 240348,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.07.11 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8315,12 +8316,13 @@
       "role": "life archive",
       "description": "Screenshot — 371.5 KB",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.30.26 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 380398,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.30.26 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8342,12 +8344,13 @@
       "role": "life archive",
       "description": "Screenshot — 382.3 KB",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.06 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 391478,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.06 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8369,12 +8372,13 @@
       "role": "life archive",
       "description": "Screenshot — 413.9 KB",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.11 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 423792,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.11 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8396,12 +8400,13 @@
       "role": "life archive",
       "description": "Screenshot — 316.2 KB",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.28 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 323775,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.39.28 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8423,12 +8428,13 @@
       "role": "life archive",
       "description": "Screenshot — 517.5 KB",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.05 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 529920,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.05 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8450,12 +8456,13 @@
       "role": "life archive",
       "description": "Screenshot — 1279.0 KB",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.27 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1309649,
       "vaultStatus": "pending",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 10.41.27 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8477,14 +8484,15 @@
       "role": "life archive",
       "description": "Screenshot — 1241 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.49 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1270272,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.49 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8506,14 +8514,15 @@
       "role": "life archive",
       "description": "Screenshot — 1881 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.53 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1926144,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.01.53 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8535,14 +8544,15 @@
       "role": "life archive",
       "description": "Screenshot — 892 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.08.56 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 913408,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.08.56 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8564,14 +8574,15 @@
       "role": "life archive",
       "description": "Screenshot — 1017 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.14 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1041408,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.14 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8593,14 +8604,15 @@
       "role": "life archive",
       "description": "Screenshot — 986 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.32 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1009664,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.32 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8622,14 +8634,15 @@
       "role": "life archive",
       "description": "Screenshot — 972 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.49 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 995328,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.11.49 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8651,14 +8664,15 @@
       "role": "life archive",
       "description": "Screenshot — 409 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.02 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 418816,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.02 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8680,14 +8694,15 @@
       "role": "life archive",
       "description": "Screenshot — 1006 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.05 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1030144,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.05 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8709,14 +8724,15 @@
       "role": "life archive",
       "description": "Screenshot — 398 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.11 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 407552,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.12.11 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8738,14 +8754,15 @@
       "role": "life archive",
       "description": "Screenshot — 1107 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.13.37 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1133568,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.13.37 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8767,14 +8784,15 @@
       "role": "life archive",
       "description": "Screenshot — 2217 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.10 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 2270208,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.10 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8796,14 +8814,15 @@
       "role": "life archive",
       "description": "Screenshot — 2217 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.20 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 2270208,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.20 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8825,14 +8844,15 @@
       "role": "life archive",
       "description": "Screenshot — 2305 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.35 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 2360320,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.17.35 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8854,14 +8874,15 @@
       "role": "life archive",
       "description": "Screenshot — 1180 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.02 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1208320,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.02 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8883,14 +8904,15 @@
       "role": "life archive",
       "description": "Screenshot — 1071 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.22 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1096192,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.19.22 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8912,14 +8934,15 @@
       "role": "life archive",
       "description": "Screenshot — 1641 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.15 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1680384,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.15 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8941,14 +8964,15 @@
       "role": "life archive",
       "description": "Screenshot — 2194 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.39 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 2246656,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.39 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8970,14 +8994,15 @@
       "role": "life archive",
       "description": "Screenshot — 2324 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.59 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 2379776,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.20.59 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -8999,14 +9024,15 @@
       "role": "life archive",
       "description": "Screenshot — 1371 KB — Pattaya hotel room",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.21.11 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 1403904,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "JARVIS first self-visualization session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.21.11 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9028,14 +9054,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.30.56 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.30.56 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9057,14 +9084,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.31.38 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.31.38 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9086,14 +9114,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.48 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.48 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9115,14 +9144,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.59 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.34.59 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9144,14 +9174,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.36.05 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.36.05 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9173,14 +9204,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.37.25 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.37.25 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9202,14 +9234,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.39.25 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.39.25 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9231,14 +9264,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.36 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.36 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9260,14 +9294,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.51 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.42.51 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -9289,14 +9324,15 @@
       "role": "life archive",
       "description": "Screenshot — Pattaya hotel room, ocean view",
       "path": "/RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.43.15 AM.png",
-      "fileType": "image/png",
+      "fileType": "image",
       "size": 0,
       "vaultStatus": "pending",
       "location": "Pattaya, Thailand",
       "context": "Pre-volleyball session",
       "sourceDocument": "file:///RAW/archive/2026-03-08/images/desktop/Screenshot 2026-03-08 at 11.43.15 AM.png",
       "processedToday": "2026-03-10",
-      "filename": "Screenshot 2026-03-12 at undefined.png"
+      "filename": "Screenshot 2026-03-12 at undefined.png",
+      "format": "png"
     },
     "created": "2026-03-11"
   },
@@ -21764,7 +21800,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773282828933.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773282828933.webm"
+      "filename": "recording-1773282828933.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21787,7 +21825,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773282936588.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773282936588.webm"
+      "filename": "recording-1773282936588.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21810,7 +21850,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773283647365.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773283647365.webm"
+      "filename": "recording-1773283647365.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21833,7 +21875,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773289357465.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773289357465.webm"
+      "filename": "recording-1773289357465.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21856,7 +21900,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773289472371.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773289472371.webm"
+      "filename": "recording-1773289472371.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21879,7 +21925,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773290721282.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773290721282.webm"
+      "filename": "recording-1773290721282.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21902,7 +21950,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773290741823.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773290741823.webm"
+      "filename": "recording-1773290741823.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21925,7 +21975,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773291655298.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773291655298.webm"
+      "filename": "recording-1773291655298.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21948,7 +22000,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773291813398.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773291813398.webm"
+      "filename": "recording-1773291813398.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21971,7 +22025,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773291867141.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773291867141.webm"
+      "filename": "recording-1773291867141.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -21994,7 +22050,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773293583282.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773293583282.webm"
+      "filename": "recording-1773293583282.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22017,7 +22075,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294132460.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773294132460.webm"
+      "filename": "recording-1773294132460.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22040,7 +22100,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294199654.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773294199654.webm"
+      "filename": "recording-1773294199654.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22063,7 +22125,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294514142.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773294514142.webm"
+      "filename": "recording-1773294514142.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22086,7 +22150,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294917040.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773294917040.webm"
+      "filename": "recording-1773294917040.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22109,7 +22175,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773294945167.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773294945167.webm"
+      "filename": "recording-1773294945167.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22132,7 +22200,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295196100.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773295196100.webm"
+      "filename": "recording-1773295196100.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22155,7 +22225,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295279461.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773295279461.webm"
+      "filename": "recording-1773295279461.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22178,7 +22250,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295333194.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773295333194.webm"
+      "filename": "recording-1773295333194.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22201,7 +22275,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295448230.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773295448230.webm"
+      "filename": "recording-1773295448230.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22224,7 +22300,9 @@
       "vaultStatus": "archived",
       "sourceDocument": "file:///RAW/archive/2026-03-12/audio/recording-1773295706197.webm",
       "processedToday": "2026-03-12",
-      "filename": "recording-1773295706197.webm"
+      "filename": "recording-1773295706197.webm",
+      "fileType": "audio",
+      "format": "webm"
     },
     "created": "2026-03-12"
   },
@@ -22248,7 +22326,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 9.45.00 AM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 9.45.00 AM.png"
+      "filename": "Screenshot 2026-03-12 at 9.45.00 AM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22272,7 +22352,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 9.53.53 AM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 9.53.53 AM.png"
+      "filename": "Screenshot 2026-03-12 at 9.53.53 AM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22296,7 +22378,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 10.08.11 AM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 10.08.11 AM.png"
+      "filename": "Screenshot 2026-03-12 at 10.08.11 AM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22320,7 +22404,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.26.18 AM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 11.26.18 AM.png"
+      "filename": "Screenshot 2026-03-12 at 11.26.18 AM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22344,7 +22430,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.42.39 AM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 11.42.39 AM.png"
+      "filename": "Screenshot 2026-03-12 at 11.42.39 AM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22368,7 +22456,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.48.47 AM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 11.48.47 AM.png"
+      "filename": "Screenshot 2026-03-12 at 11.48.47 AM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22392,7 +22482,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 11.49.10 AM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 11.49.10 AM.png"
+      "filename": "Screenshot 2026-03-12 at 11.49.10 AM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22416,7 +22508,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.04 PM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 12.06.04 PM.png"
+      "filename": "Screenshot 2026-03-12 at 12.06.04 PM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22440,7 +22534,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.24 PM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 12.06.24 PM.png"
+      "filename": "Screenshot 2026-03-12 at 12.06.24 PM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22464,7 +22560,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.06.36 PM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 12.06.36 PM.png"
+      "filename": "Screenshot 2026-03-12 at 12.06.36 PM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22488,7 +22586,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.14.43 PM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 12.14.43 PM.png"
+      "filename": "Screenshot 2026-03-12 at 12.14.43 PM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22512,7 +22612,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.20.50 PM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 12.20.50 PM.png"
+      "filename": "Screenshot 2026-03-12 at 12.20.50 PM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22536,7 +22638,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.20.59 PM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 12.20.59 PM.png"
+      "filename": "Screenshot 2026-03-12 at 12.20.59 PM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
@@ -22560,7 +22664,9 @@
       "sourceDocument": "file:///RAW/archive/2026-03-12/screenshots/Screenshot 2026-03-12 at 12.23.19 PM.png",
       "processedToday": "2026-03-12",
       "ocrStatus": "complete",
-      "filename": "Screenshot 2026-03-12 at 12.23.19 PM.png"
+      "filename": "Screenshot 2026-03-12 at 12.23.19 PM.png",
+      "fileType": "image",
+      "format": "png"
     },
     "created": "2026-03-12"
   },
