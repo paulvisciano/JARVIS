@@ -23781,5 +23781,26 @@
       "fileType": "audio",
       "transcript": "hand-washing ritual, vibram shoes, balcony drying, nomad skill"
     }
+  },
+  {
+    "id": "screenshot-2026-03-13-005517",
+    "label": "Screenshot 2026-03-13 00:55",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot at 00:55"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 166 KB",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 12.55.17\u202fAM.png",
+      "fileType": "image"
+    }
   }
 ]
