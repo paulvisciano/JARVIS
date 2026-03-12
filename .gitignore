@@ -1,0 +1,16 @@
+# OpenClaw Workspace Git Ignore
+
+# Dependencies
+node_modules/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# Sessions (ephemeral, managed by OpenClaw)
+agents/*/sessions/
+
+# Media (inbound/outbound, ephemeral)
+media/
