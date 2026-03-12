@@ -23822,5 +23822,236 @@
       "sourceDocument": "RAW/learnings/2026-03-13/neurograph-file-viewer-live.md",
       "collaborator": "Paul + Cursor"
     }
+  },
+  {
+    "id": "screenshot-2026-03-13-0057",
+    "label": "Screenshot 2026-03-13 00:57",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 60K",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 12.57.34\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0100",
+    "label": "Screenshot 2026-03-13 01:00",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 64K",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.00.19\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0107",
+    "label": "Screenshot 2026-03-13 01:07",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "Neurograph UI"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 493K",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.07.16\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0107",
+    "label": "Screenshot 2026-03-13 01:07",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "Neurograph UI"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 599K",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.07.25\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0107",
+    "label": "Screenshot 2026-03-13 01:07",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "Neurograph UI"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 429K",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.07.54\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0109",
+    "label": "Screenshot 2026-03-13 01:09",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "File viewer testing"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 767K",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.09.30\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0112",
+    "label": "Screenshot 2026-03-13 01:12",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "File viewer testing"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 601K",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.12.22\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0132",
+    "label": "Screenshot 2026-03-13 01:32",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "File viewer live - inline image preview"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 2.2M",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.32.08\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0132",
+    "label": "Screenshot 2026-03-13 01:32",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "File viewer live - drawer panel"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 2.5M",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.32.10\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0132",
+    "label": "Screenshot 2026-03-13 01:32",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "File viewer live - hover interaction"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 4.2M",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.32.46\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-0132",
+    "label": "Screenshot 2026-03-13 01:32",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "File viewer live - full functionality"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 4.8M",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.32.49\u202fAM.png",
+      "fileType": "image"
+    }
   }
 ]
