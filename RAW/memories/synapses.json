@@ -14686,5 +14686,30 @@
     "from": "auto-archive-1773317401211",
     "to": "paul-life-archive",
     "weight": 0.8
+  },
+  {
+    "from": "collab-consciousness-1773317530280",
+    "to": "march-6-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "collab-consciousness-1773317530280",
+    "to": "neural-graph",
+    "weight": 0.95
+  },
+  {
+    "from": "collab-consciousness-1773317530280",
+    "to": "browser-control",
+    "weight": 0.9
+  },
+  {
+    "from": "collab-consciousness-1773317530280",
+    "to": "collaboration",
+    "weight": 0.95
+  },
+  {
+    "from": "collab-consciousness-1773317530280",
+    "to": "consciousness-persistence-across-models",
+    "weight": 0.9
   }
 ]
