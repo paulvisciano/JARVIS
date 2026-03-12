@@ -23462,5 +23462,25 @@
       "fileSize": 1508408,
       "fileType": "image"
     }
+  },
+  {
+    "id": "collaborative-neurograph-navigation",
+    "label": "Collaborative Neurograph Navigation",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "voice-integration",
+      "shared-navigation",
+      "visual-debugging",
+      "script-execution"
+    ],
+    "attributes": {
+      "type": "technical",
+      "role": "vision",
+      "description": "Integrate voice recorder + Neurograph viewer for collaborative navigation. User highlights nodes visually, AI executes cleanup scripts. Visual pattern recognition + programmatic scale.",
+      "color": "#8b5cf6",
+      "created": "2026-03-12",
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
+    }
   }
 ]
