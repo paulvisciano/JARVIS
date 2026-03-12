@@ -17,17 +17,14 @@ console.log('🗑️  Removing March 12 file nodes...');
 const nodes = JSON.parse(fs.readFileSync(NODES_FILE, 'utf-8'));
 const synapses = JSON.parse(fs.readFileSync(SYNAPSES_FILE, 'utf-8'));
 
-// Find March 12 file nodes (audio-* and image-* with created: TODAY)
+// Find March 12 archive nodes (audio-* and image-* created today)
 const march12FileNodeIds = [];
 const nodesToRemove = [];
 
 nodes.forEach((n, idx) => {
-  if (n.category === 'file' && n.attributes?.type === 'file') {
-    if ((n.id.startsWith('audio-2026-03-12') || n.id.startsWith('image-2026-03-12')) &&
-        n.attributes?.created === TODAY) {
-      march12FileNodeIds.push(n.id);
-      nodesToRemove.push(idx);
-    }
+  if (n.id.startsWith('audio-2026-03-12') || n.id.startsWith('image-2026-03-12')) {
+    march12FileNodeIds.push(n.id);
+    nodesToRemove.push(idx);
   }
 });
 
