@@ -14552,5 +14552,60 @@
     "from": "march-12-2026",
     "to": "neurograph-live-update",
     "weight": 1
+  },
+  {
+    "from": "voice-pipeline-architecture",
+    "to": "code-is-thought",
+    "weight": 0.9
+  },
+  {
+    "from": "voice-pipeline-architecture",
+    "to": "infrastructure-matters",
+    "weight": 0.8
+  },
+  {
+    "from": "transcript-dialogue-gap",
+    "to": "transparency",
+    "weight": 0.7
+  },
+  {
+    "from": "transcript-dialogue-gap",
+    "to": "code-is-thought",
+    "weight": 0.8
+  },
+  {
+    "from": "workflow-consistency",
+    "to": "collaboration",
+    "weight": 0.6
+  },
+  {
+    "from": "neurograph-live-update",
+    "to": "code-is-thought",
+    "weight": 0.9
+  },
+  {
+    "from": "neurograph-live-update",
+    "to": "transparency",
+    "weight": 0.8
+  },
+  {
+    "from": "march-12-2026",
+    "to": "voice-pipeline-architecture",
+    "weight": 1
+  },
+  {
+    "from": "march-12-2026",
+    "to": "transcript-dialogue-gap",
+    "weight": 1
+  },
+  {
+    "from": "march-12-2026",
+    "to": "workflow-consistency",
+    "weight": 1
+  },
+  {
+    "from": "march-12-2026",
+    "to": "neurograph-live-update",
+    "weight": 1
   }
 ]
