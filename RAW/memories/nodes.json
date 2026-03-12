@@ -23554,5 +23554,25 @@
       "fileSize": 1067137,
       "relatedLearning": "tim-live-demo-march-12"
     }
+  },
+  {
+    "id": "tim-demo-photo",
+    "label": "Tim Demo Photo (16:26)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [
+      "tim-demo",
+      "spectator",
+      "validation"
+    ],
+    "attributes": {
+      "type": "file",
+      "fileType": "image",
+      "description": "Photo from Tim demo session",
+      "created": "2026-03-12",
+      "filePath": "RAW/archive/2026-03-12/images/2026-03-12-162954-Photo on 3-12-26 at 4.26 PM.jpg",
+      "fileSize": 175261,
+      "relatedLearning": "tim-live-demo-march-12"
+    }
   }
 ]
