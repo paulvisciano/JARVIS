@@ -14909,5 +14909,29 @@
     "target": "march-12-2026",
     "weight": 1,
     "type": "processed-today"
+  },
+  {
+    "source": "inbox-processing-bug-fixed",
+    "target": "march-12-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "bangkok-budget-tracking",
+    "target": "march-12-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "voice-pipeline-launchd",
+    "target": "march-12-2026",
+    "weight": 1,
+    "type": "learned-today"
+  },
+  {
+    "source": "image-understanding-gap",
+    "target": "march-12-2026",
+    "weight": 1,
+    "type": "learned-today"
   }
 ]
