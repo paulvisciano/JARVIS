@@ -7457,7 +7457,7 @@
     "frequency": 1,
     "moments": [],
     "attributes": {
-      "role": "system design",
+      "role": "audio infrastructure",
       "description": "Record → Upload (localhost:3001) → Whisper CLI → Gateway WebSocket → Jarvis → TTS (macOS say/ElevenLabs)",
       "color": "#8b5cf6",
       "flow": "async pipeline",
@@ -21687,7 +21687,7 @@
       "2026-03-12"
     ],
     "attributes": {
-      "role": "learning mechanism",
+      "role": "learning capability",
       "description": "Extract learnings → create neurons → update temporal → commit to git. MANGOCHI breathes, grows visibly.",
       "color": "#06b6d4",
       "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-architecture.md"
@@ -21695,17 +21695,18 @@
   },
   {
     "id": "march-12-2026",
-    "label": "March 12, 2026",
+    "label": "March 12, 2026 — Voice Pipeline + Transcript Gap",
     "category": "temporal",
     "frequency": 1,
     "moments": [
       "2026-03-12"
     ],
     "attributes": {
-      "role": "temporal anchor",
-      "description": "Voice pipeline cleanup, transcript gap identified, workflow consistency, neurograph reactivation.",
-      "color": "#6366f1",
-      "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-architecture.md"
+      "role": "temporal-anchor",
+      "description": "Voice pipeline cleanup (removed WebSocket), transcript dialogue gap identified, workflow consistency problem, neurograph reactivation after skipping learnings.",
+      "color": "#f59e0b",
+      "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-architecture.md",
+      "date": "2026-03-12"
     }
   }
 ]
