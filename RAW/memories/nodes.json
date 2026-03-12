@@ -21782,7 +21782,7 @@
   {
     "id": "inbox-processing-bug-fixed",
     "label": "Inbox Processing Bug Fixed",
-    "category": "technical",
+    "category": "learning",
     "frequency": 1,
     "moments": [
       "filename-spaces",
@@ -21790,16 +21790,17 @@
       "process-inbox-script"
     ],
     "attributes": {
-      "role": "fix",
       "description": "Filenames with spaces broke cp command. Created process-inbox.sh using find | while IFS= read for safe handling. Key lesson: verify before claiming.",
       "color": "#ef4444",
-      "created": "2026-03-12"
+      "created": "2026-03-12",
+      "type": "learning",
+      "subtype": "fix"
     }
   },
   {
     "id": "bangkok-budget-tracking",
     "label": "Bangkok Budget Tracking",
-    "category": "personal",
+    "category": "learning",
     "frequency": 1,
     "moments": [
       "hotel-25usd",
@@ -21808,16 +21809,17 @@
       "thb-usd-conversion"
     ],
     "attributes": {
-      "role": "finance",
       "description": "$100/day budget: hotel $25, breakfast ~$14-17, weed ~$14. Conversion: 1 USD ≈ 36 THB. Major improvement from previous $100 just on hotel.",
       "color": "#22c55e",
-      "created": "2026-03-12"
+      "created": "2026-03-12",
+      "type": "learning",
+      "subtype": "finance"
     }
   },
   {
     "id": "voice-pipeline-launchd",
     "label": "Voice Pipeline Launchd Service",
-    "category": "technical",
+    "category": "learning",
     "frequency": 1,
     "moments": [
       "voice-server-plist",
@@ -21825,10 +21827,11 @@
       "auto-restart-crash"
     ],
     "attributes": {
-      "role": "infrastructure",
       "description": "Voice server now managed by launchd (ai.jarvis.voice-server). Auto-starts on boot, auto-restarts on crash. Logs to ~/JARVIS/logs/.",
       "color": "#3b82f6",
-      "created": "2026-03-12"
+      "created": "2026-03-12",
+      "type": "learning",
+      "subtype": "infrastructure"
     }
   },
   {
@@ -21870,7 +21873,7 @@
   {
     "id": "desktop-screenshot-auto-archive",
     "label": "Desktop Screenshot Auto-Archive",
-    "category": "technical",
+    "category": "learning",
     "frequency": 1,
     "moments": [
       "mac-screenshots",
@@ -21878,17 +21881,18 @@
       "ocr-pipeline"
     ],
     "attributes": {
-      "role": "automation",
       "description": "Mac screenshots auto-saved to Desktop → pulled to inbox on heartbeat → archived + OCRd. 29 screenshots processed March 12.",
       "color": "#f59e0b",
       "created": "2026-03-12",
-      "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md",
+      "type": "learning",
+      "subtype": "automation"
     }
   },
   {
     "id": "neurograph-cleanup-march-12",
     "label": "Neurograph Cleanup March 12",
-    "category": "technical",
+    "category": "learning",
     "frequency": 1,
     "moments": [
       "circular-symlink",
@@ -21896,11 +21900,12 @@
       "duplicate-nodes"
     ],
     "attributes": {
-      "role": "maintenance",
       "description": "Removed circular symlink from memories folder. Archived timeline.json (git is canonical). Fixed duplicate learning nodes. Neurograph: 1210 nodes, 2239 synapses.",
       "color": "#8b5cf6",
       "created": "2026-03-12",
-      "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md",
+      "type": "learning",
+      "subtype": "maintenance"
     }
   },
   {
@@ -23475,12 +23480,12 @@
       "script-execution"
     ],
     "attributes": {
-      "type": "technical",
-      "role": "vision",
+      "type": "learning",
       "description": "Integrate voice recorder + Neurograph viewer for collaborative navigation. User highlights nodes visually, AI executes cleanup scripts. Visual pattern recognition + programmatic scale.",
       "color": "#8b5cf6",
       "created": "2026-03-12",
-      "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md",
+      "subtype": "vision"
     }
   }
 ]
