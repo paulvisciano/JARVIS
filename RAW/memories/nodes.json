@@ -23489,5 +23489,30 @@
       "sourceDocument": "RAW/archive/2026-03-12/transcript.md",
       "subtype": "vision"
     }
+  },
+  {
+    "id": "tim-live-demo-march-12",
+    "label": "Tim Live Demo - Spectator Validation",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "live-demo",
+      "spectator",
+      "validation",
+      "sovereign-ai"
+    ],
+    "attributes": {
+      "type": "learning",
+      "subtype": "milestone",
+      "description": "Paul demoed Jarvis + Neurograph to Tim (random spectator). First external validation of sovereign AI infrastructure. Voice recording + neural graph stack impressed visitor. Real-world proof of concept.",
+      "color": "#f59e0b",
+      "created": "2026-03-12",
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md",
+      "participants": [
+        "Paul",
+        "Tim"
+      ],
+      "time": "15:49 GMT+7"
+    }
   }
 ]
