@@ -23802,5 +23802,25 @@
       "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 12.55.17\u202fAM.png",
       "fileType": "image"
     }
+  },
+  {
+    "id": "neurograph-file-viewer-live",
+    "label": "Neurograph File Viewer Live",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "inline-preview",
+      "drawer-panel",
+      "hover-interaction"
+    ],
+    "attributes": {
+      "description": "March 13, 2026 \u2014 File preview functional inline. Hover on node \u2192 see actual file content. Images render in drawer panel. No file:// blocking, HTTP serving via symlink.",
+      "color": "#10b981",
+      "created": "2026-03-13",
+      "type": "learning",
+      "subtype": "ui-breakthrough",
+      "sourceDocument": "RAW/learnings/2026-03-13/neurograph-file-viewer-live.md",
+      "collaborator": "Paul + Cursor"
+    }
   }
 ]
