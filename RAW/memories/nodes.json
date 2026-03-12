@@ -21537,5 +21537,100 @@
       "processedToday": "2026-03-11"
     },
     "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-81820-pm",
+    "label": "2026-03-11 at 8.18.20\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 8.18.20\u202fPM.png",
+      "dimensions": "1140x966",
+      "size": 354755,
+      "captured": "2026-03-11 20:18:23",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 8.18.20\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-81909-pm",
+    "label": "2026-03-11 at 8.19.09\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 8.19.09\u202fPM.png",
+      "dimensions": "1704x1692",
+      "size": 1263496,
+      "captured": "2026-03-11 20:19:16",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 8.19.09\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-82352-pm",
+    "label": "2026-03-11 at 8.23.52\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 8.23.52\u202fPM.png",
+      "dimensions": "1746x1768",
+      "size": 1079931,
+      "captured": "2026-03-11 20:23:54",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 8.23.52\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-83457-pm",
+    "label": "2026-03-11 at 8.34.57\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 8.34.57\u202fPM.png",
+      "dimensions": "1214x1046",
+      "size": 365745,
+      "captured": "2026-03-11 20:35:01",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 8.34.57\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
+  },
+  {
+    "id": "screenshot-2026-03-11-at-83500-pm",
+    "label": "2026-03-11 at 8.35.00\u202fPM",
+    "category": "file",
+    "frequency": 1,
+    "moments": [],
+    "attributes": {
+      "role": "archived-screenshot",
+      "type": "image",
+      "filename": "Screenshot 2026-03-11 at 8.35.00\u202fPM.png",
+      "dimensions": "1382x1174",
+      "size": 479361,
+      "captured": "2026-03-11 20:35:06",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-11/images/Screenshot 2026-03-11 at 8.35.00\u202fPM.png",
+      "date": "2026-03-11",
+      "processedToday": "2026-03-11"
+    },
+    "created": "2026-03-11"
   }
 ]
