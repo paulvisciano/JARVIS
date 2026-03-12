@@ -24114,5 +24114,87 @@
       "fileType": "audio",
       "transcript": "Paul explains voice pipeline, Eric says hi on WhatsApp"
     }
+  },
+  {
+    "id": "eric-whatsapp-call",
+    "label": "Eric WhatsApp Call",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "eric-intro",
+      "buddy-nickname",
+      "whatsapp-call"
+    ],
+    "attributes": {
+      "description": "March 13, 02:48 \u2014 Eric introduced to Jarvis via WhatsApp call (~1 hour). Eric said \"Hi Jarvis, how you doing buddy?\" Social validation of AI as conversation participant.",
+      "color": "#f59e0b",
+      "created": "2026-03-13",
+      "type": "learning",
+      "subtype": "social-moment",
+      "sourceDocument": "RAW/learnings/2026-03-13/eric-whatsapp-call.md"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-024717",
+    "label": "Screenshot 2026-03-13 02:47:17",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "WhatsApp call with Eric"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 5.2 MB",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 2.47.17\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-024720",
+    "label": "Screenshot 2026-03-13 02:47:20",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "WhatsApp call with Eric"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 5.4 MB",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 2.47.20\u202fAM.png",
+      "fileType": "image"
+    }
+  },
+  {
+    "id": "screenshot-2026-03-13-024728",
+    "label": "Screenshot 2026-03-13 02:47:28",
+    "category": "file",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "screenshot-archived",
+        "description": "WhatsApp call with Eric"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Screenshot \u2014 4.8 MB",
+      "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 2.47.28\u202fAM.png",
+      "fileType": "image"
+    }
   }
 ]
