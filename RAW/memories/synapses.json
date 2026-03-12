@@ -14656,5 +14656,35 @@
     "target": "march-12-2026",
     "weight": 1,
     "type": "learned-today"
+  },
+  {
+    "from": "voice-pipeline-1773317401211",
+    "to": "conversation-as-valuable-data",
+    "weight": 0.9
+  },
+  {
+    "from": "voice-pipeline-1773317401211",
+    "to": "march-8-neurograph-discovery-learning",
+    "weight": 0.95
+  },
+  {
+    "from": "two-folder-arch-1773317401211",
+    "to": "architecture-design",
+    "weight": 0.9
+  },
+  {
+    "from": "two-folder-arch-1773317401211",
+    "to": "voice-pipeline-1773317401211",
+    "weight": 0.8
+  },
+  {
+    "from": "auto-archive-1773317401211",
+    "to": "voice-pipeline-1773317401211",
+    "weight": 0.85
+  },
+  {
+    "from": "auto-archive-1773317401211",
+    "to": "paul-life-archive",
+    "weight": 0.8
   }
 ]

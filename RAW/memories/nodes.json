@@ -23594,5 +23594,48 @@
       "created": "2026-03-12",
       "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
     }
+  },
+  {
+    "id": "voice-pipeline-1773317401211",
+    "label": "Voice Pipeline Breakthrough",
+    "type": "breakthrough",
+    "date": "2026-03-12",
+    "details": "First real-time voice conversation with Jarvis - natural interaction, no typing needed",
+    "significance": "high",
+    "tags": [
+      "voice",
+      "breakthrough",
+      "conversation",
+      "interface"
+    ]
+  },
+  {
+    "id": "two-folder-arch-1773317401211",
+    "label": "Two-Folder Architecture",
+    "type": "architecture",
+    "date": "2026-03-12",
+    "details": "live/ (conversation) vs inbox/ (batch) - prevents loops, clean separation",
+    "significance": "high",
+    "tags": [
+      "architecture",
+      "folders",
+      "live",
+      "inbox",
+      "separation"
+    ]
+  },
+  {
+    "id": "auto-archive-1773317401211",
+    "label": "Auto-Archive After Response",
+    "type": "feature",
+    "date": "2026-03-12",
+    "details": "Files move from live/ to archive/ after conversation turn complete",
+    "significance": "medium",
+    "tags": [
+      "archive",
+      "automation",
+      "conversation",
+      "cleanup"
+    ]
   }
 ]
