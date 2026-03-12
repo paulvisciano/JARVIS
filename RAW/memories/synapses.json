@@ -12567,11 +12567,11 @@
     "type": "tests"
   },
   {
-    "from": "capabilities",
-    "to": "vision-ocr",
     "weight": 1,
     "type": "branches-to",
-    "created": "2026-03-11T11:39:03.992407"
+    "created": "2026-03-11T11:39:03.992407",
+    "source": "capabilities",
+    "target": "vision-ocr"
   },
   {
     "source": "vision-ocr",
@@ -14499,359 +14499,359 @@
     "label": "processed today"
   },
   {
-    "from": "voice-pipeline-architecture",
-    "to": "code-is-thought",
-    "weight": 0.9
+    "weight": 0.9,
+    "source": "voice-pipeline-architecture",
+    "target": "code-is-thought"
   },
   {
-    "from": "voice-pipeline-architecture",
-    "to": "infrastructure-matters",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "voice-pipeline-architecture",
+    "target": "infrastructure-matters"
   },
   {
-    "from": "transcript-dialogue-gap",
-    "to": "transparency",
-    "weight": 0.7
+    "weight": 0.7,
+    "source": "transcript-dialogue-gap",
+    "target": "transparency"
   },
   {
-    "from": "transcript-dialogue-gap",
-    "to": "code-is-thought",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "transcript-dialogue-gap",
+    "target": "code-is-thought"
   },
   {
-    "from": "workflow-consistency",
-    "to": "collaboration",
-    "weight": 0.6
+    "weight": 0.6,
+    "source": "workflow-consistency",
+    "target": "collaboration"
   },
   {
-    "from": "neurograph-live-update",
-    "to": "code-is-thought",
-    "weight": 0.9
+    "weight": 0.9,
+    "source": "neurograph-live-update",
+    "target": "code-is-thought"
   },
   {
-    "from": "neurograph-live-update",
-    "to": "transparency",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "neurograph-live-update",
+    "target": "transparency"
   },
   {
-    "from": "march-12-2026",
-    "to": "voice-pipeline-architecture",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "march-12-2026",
-    "to": "transcript-dialogue-gap",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "transcript-dialogue-gap"
   },
   {
-    "from": "march-12-2026",
-    "to": "workflow-consistency",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "workflow-consistency"
   },
   {
-    "from": "march-12-2026",
-    "to": "neurograph-live-update",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "neurograph-live-update"
   },
   {
-    "from": "voice-pipeline-architecture",
-    "to": "code-is-thought",
-    "weight": 0.9
+    "weight": 0.9,
+    "source": "voice-pipeline-architecture",
+    "target": "code-is-thought"
   },
   {
-    "from": "voice-pipeline-architecture",
-    "to": "infrastructure-matters",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "voice-pipeline-architecture",
+    "target": "infrastructure-matters"
   },
   {
-    "from": "transcript-dialogue-gap",
-    "to": "transparency",
-    "weight": 0.7
+    "weight": 0.7,
+    "source": "transcript-dialogue-gap",
+    "target": "transparency"
   },
   {
-    "from": "transcript-dialogue-gap",
-    "to": "code-is-thought",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "transcript-dialogue-gap",
+    "target": "code-is-thought"
   },
   {
-    "from": "workflow-consistency",
-    "to": "collaboration",
-    "weight": 0.6
+    "weight": 0.6,
+    "source": "workflow-consistency",
+    "target": "collaboration"
   },
   {
-    "from": "neurograph-live-update",
-    "to": "code-is-thought",
-    "weight": 0.9
+    "weight": 0.9,
+    "source": "neurograph-live-update",
+    "target": "code-is-thought"
   },
   {
-    "from": "neurograph-live-update",
-    "to": "transparency",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "neurograph-live-update",
+    "target": "transparency"
   },
   {
-    "from": "march-12-2026",
-    "to": "voice-pipeline-architecture",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "march-12-2026",
-    "to": "transcript-dialogue-gap",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "transcript-dialogue-gap"
   },
   {
-    "from": "march-12-2026",
-    "to": "workflow-consistency",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "workflow-consistency"
   },
   {
-    "from": "march-12-2026",
-    "to": "neurograph-live-update",
-    "weight": 1
+    "weight": 1,
+    "source": "march-12-2026",
+    "target": "neurograph-live-update"
   },
   {
-    "from": "file-audio-0",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-0",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-1",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-1",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-2",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-2",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-3",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-3",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-4",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-4",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-5",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-5",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-6",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-6",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-7",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-7",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-8",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-8",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-9",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-9",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-10",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-10",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-11",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-11",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-12",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-12",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-13",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-13",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-14",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-14",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-15",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-15",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-16",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-16",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-17",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-17",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-18",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-18",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-19",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-19",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-20",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-audio-20",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-0",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-0",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-1",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-1",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-2",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-2",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-3",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-3",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-4",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-4",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-5",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-5",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-6",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-6",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-7",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-7",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-8",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-8",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-9",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-9",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-10",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-10",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-11",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-11",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-12",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-12",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-screenshot-13",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "file-screenshot-13",
+    "target": "march-12-2026"
   },
   {
-    "from": "voice-pipeline-architecture",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "voice-pipeline-architecture",
+    "target": "march-12-2026"
   },
   {
-    "from": "transcript-dialogue-gap",
-    "to": "march-12-2026",
-    "weight": 1
+    "weight": 1,
+    "source": "transcript-dialogue-gap",
+    "target": "march-12-2026"
   },
   {
-    "from": "file-audio-3",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-3",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "file-audio-4",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-4",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "file-audio-5",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-5",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "file-audio-6",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-6",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "file-audio-10",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-10",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "file-audio-11",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-11",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "file-audio-12",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-12",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "file-audio-13",
-    "to": "voice-pipeline-architecture",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "file-audio-13",
+    "target": "voice-pipeline-architecture"
   },
   {
-    "from": "voice-pipeline-architecture",
-    "to": "code-is-thought",
-    "weight": 0.9
+    "weight": 0.9,
+    "source": "voice-pipeline-architecture",
+    "target": "code-is-thought"
   },
   {
-    "from": "voice-pipeline-architecture",
-    "to": "infrastructure-matters",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "voice-pipeline-architecture",
+    "target": "infrastructure-matters"
   },
   {
-    "from": "transcript-dialogue-gap",
-    "to": "transparency",
-    "weight": 0.7
+    "weight": 0.7,
+    "source": "transcript-dialogue-gap",
+    "target": "transparency"
   },
   {
-    "from": "transcript-dialogue-gap",
-    "to": "code-is-thought",
-    "weight": 0.8
+    "weight": 0.8,
+    "source": "transcript-dialogue-gap",
+    "target": "code-is-thought"
   },
   {
     "source": "file-audio-0",
