@@ -24053,5 +24053,25 @@
       "path": "/RAW/archive/2026-03-13/images/desktop/Screenshot 2026-03-13 at 1.32.49\u202fAM.png",
       "fileType": "image"
     }
+  },
+  {
+    "id": "jarvis-embedded-neurograph",
+    "label": "Jarvis Embedded in Neurograph",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "contextual-conversation",
+      "space-bar-hotkey",
+      "node-awareness"
+    ],
+    "attributes": {
+      "description": "March 14 vision \u2014 Hover on node \u2192 hit space \u2192 talk to Jarvis \u2192 I know which node you selected \u2192 respond with context. Collaborative neurograph navigation realized.",
+      "color": "#f59e0b",
+      "created": "2026-03-13",
+      "type": "vision",
+      "subtype": "conversational-interface",
+      "sourceDocument": "RAW/learnings/2026-03-13/jarvis-embedded-neurograph.md",
+      "targetDate": "2026-03-14"
+    }
   }
 ]

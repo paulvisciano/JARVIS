@@ -14909,5 +14909,23 @@
     "target": "neurograph-file-viewer-live",
     "type": "documents",
     "weight": 0.9
+  },
+  {
+    "source": "jarvis-embedded-neurograph",
+    "target": "march-13-2026",
+    "type": "vision-for-tomorrow",
+    "weight": 1
+  },
+  {
+    "source": "jarvis-embedded-neurograph",
+    "target": "neurograph-file-viewer-live",
+    "type": "extends",
+    "weight": 1
+  },
+  {
+    "source": "jarvis-embedded-neurograph",
+    "target": "collaborative-neurograph-navigation",
+    "type": "realizes",
+    "weight": 1
   }
 ]
