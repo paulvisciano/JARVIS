@@ -23574,5 +23574,25 @@
       "fileSize": 175261,
       "relatedLearning": "tim-live-demo-march-12"
     }
+  },
+  {
+    "id": "neurograph-file-viewer-vision",
+    "label": "Neurograph File Viewer Vision",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "inline-preview",
+      "file-player",
+      "memory-recall",
+      "complete-vision"
+    ],
+    "attributes": {
+      "type": "learning",
+      "subtype": "vision",
+      "description": "Integrate file viewer into Neurograph UI. Click file node → preview plays inline (audio/photo/video). No external apps. Recollect moments by experiencing content directly. Graph shows structure, viewer shows substance. Closes the loop.",
+      "color": "#f59e0b",
+      "created": "2026-03-12",
+      "sourceDocument": "RAW/archive/2026-03-12/transcript.md"
+    }
   }
 ]

@@ -14644,5 +14644,17 @@
     "target": "tim-live-demo-march-12",
     "weight": 1,
     "type": "captured-in"
+  },
+  {
+    "source": "neurograph-file-viewer-vision",
+    "target": "transcript-2026-03-12",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "neurograph-file-viewer-vision",
+    "target": "march-12-2026",
+    "weight": 1,
+    "type": "learned-today"
   }
 ]
