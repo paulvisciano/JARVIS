@@ -1,9 +1,11 @@
 #!/bin/bash
 # JARVIS Inbox Processor - Handles filenames with spaces safely
+# Also pulls Desktop screenshots into inbox before processing
 
 set -e
 
 INBOX_DIR="$HOME/JARVIS/inbox"
+DESKTOP_DIR="$HOME/Desktop"
 ARCHIVE_DIR="$HOME/RAW/archive/$(date +%Y-%m-%d)"
 AUDIO_DIR="$ARCHIVE_DIR/audio"
 IMAGE_DIR="$ARCHIVE_DIR/images"
@@ -13,6 +15,20 @@ mkdir -p "$AUDIO_DIR" "$IMAGE_DIR"
 
 echo "📥 Processing inbox: $INBOX_DIR"
 echo "📂 Archiving to: $ARCHIVE_DIR"
+echo ""
+
+# Step 0: Pull Desktop screenshots into inbox (Mac auto-saves there)
+echo "🖥️  Checking Desktop for screenshots..."
+if [ -d "$DESKTOP_DIR" ]; then
+    # Move screenshots from Desktop to inbox (they're conversation-relevant)
+    find "$DESKTOP_DIR" -maxdepth 1 \( -name "Screenshot*.png" -o -name "Screen Shot*.png" \) -type f 2>/dev/null | while IFS= read -r screenshot; do
+        echo "   📸 Moving: $(basename "$screenshot")"
+        mv "$screenshot" "$INBOX_DIR/"
+    done
+    echo "   ✅ Desktop screenshots moved to inbox"
+else
+    echo "   ⚠️  Desktop dir not found"
+fi
 echo ""
 
 # Process audio files (webm + wav.txt pairs)

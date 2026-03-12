@@ -22736,5 +22736,74 @@
       "color": "#f59e0b",
       "created": "2026-03-12"
     }
+  },
+  {
+    "id": "inbox-processing-bug-fixed",
+    "label": "Inbox Processing Bug Fixed",
+    "category": "technical",
+    "frequency": 1,
+    "moments": [
+      "filename-spaces",
+      "verify-before-claim",
+      "process-inbox-script"
+    ],
+    "attributes": {
+      "role": "fix",
+      "description": "Filenames with spaces broke cp command. Created process-inbox.sh using find | while IFS= read for safe handling. Key lesson: verify before claiming.",
+      "color": "#ef4444",
+      "created": "2026-03-12"
+    }
+  },
+  {
+    "id": "bangkok-budget-tracking",
+    "label": "Bangkok Budget Tracking",
+    "category": "personal",
+    "frequency": 1,
+    "moments": [
+      "hotel-25usd",
+      "breakfast-500thb",
+      "weed-500thb",
+      "thb-usd-conversion"
+    ],
+    "attributes": {
+      "role": "finance",
+      "description": "$100/day budget: hotel $25, breakfast ~$14-17, weed ~$14. Conversion: 1 USD ≈ 36 THB. Major improvement from previous $100 just on hotel.",
+      "color": "#22c55e",
+      "created": "2026-03-12"
+    }
+  },
+  {
+    "id": "voice-pipeline-launchd",
+    "label": "Voice Pipeline Launchd Service",
+    "category": "technical",
+    "frequency": 1,
+    "moments": [
+      "voice-server-plist",
+      "auto-start-boot",
+      "auto-restart-crash"
+    ],
+    "attributes": {
+      "role": "infrastructure",
+      "description": "Voice server now managed by launchd (ai.jarvis.voice-server). Auto-starts on boot, auto-restarts on crash. Logs to ~/JARVIS/logs/.",
+      "color": "#3b82f6",
+      "created": "2026-03-12"
+    }
+  },
+  {
+    "id": "image-understanding-gap",
+    "label": "Image Understanding Gap",
+    "category": "technical",
+    "frequency": 1,
+    "moments": [
+      "tesseract-limitation",
+      "llava-13b",
+      "object-detection"
+    ],
+    "attributes": {
+      "role": "limitation",
+      "description": "Tesseract OCR only extracts text, not objects/scenes. Solution: LLaVA 13b via Ollama for image captioning and object detection.",
+      "color": "#f59e0b",
+      "created": "2026-03-12"
+    }
   }
 ]
