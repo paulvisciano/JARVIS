@@ -14626,5 +14626,17 @@
     "target": "march-12-2026",
     "weight": 1,
     "type": "learned-today"
+  },
+  {
+    "source": "tim-demo-audio-1",
+    "target": "tim-live-demo-march-12",
+    "weight": 1,
+    "type": "captured-in"
+  },
+  {
+    "source": "tim-demo-audio-2",
+    "target": "tim-live-demo-march-12",
+    "weight": 1,
+    "type": "captured-in"
   }
 ]

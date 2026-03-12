@@ -23514,5 +23514,45 @@
       ],
       "time": "15:49 GMT+7"
     }
+  },
+  {
+    "id": "tim-demo-audio-1",
+    "label": "Tim Demo Intro (15:49)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [
+      "tim-demo",
+      "spectator",
+      "validation"
+    ],
+    "attributes": {
+      "type": "file",
+      "fileType": "audio",
+      "description": "Paul introducing Tim, live demo start",
+      "created": "2026-03-12",
+      "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-154930-recording-1773305247279.webm",
+      "fileSize": 423461,
+      "relatedLearning": "tim-live-demo-march-12"
+    }
+  },
+  {
+    "id": "tim-demo-audio-2",
+    "label": "Tim Reaction (16:16)",
+    "category": "file",
+    "frequency": 1,
+    "moments": [
+      "tim-demo",
+      "spectator",
+      "validation"
+    ],
+    "attributes": {
+      "type": "file",
+      "fileType": "audio",
+      "description": "Paul recounting Tim's blown mind reaction",
+      "created": "2026-03-12",
+      "filePath": "RAW/archive/2026-03-12/audio/2026-03-12-161649-recording-1773306875063.webm",
+      "fileSize": 1067137,
+      "relatedLearning": "tim-live-demo-march-12"
+    }
   }
 ]
