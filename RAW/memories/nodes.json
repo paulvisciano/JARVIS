@@ -23759,5 +23759,27 @@
       "subtype": "nomad-lifestyle",
       "sourceDocument": "RAW/learnings/2026-03-13/hand-washing-ritual.md"
     }
+  },
+  {
+    "id": "recording-1773336749451",
+    "label": "1773336749451 (00:32)",
+    "category": "file",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "audio-archived",
+        "description": "Hand-washing ritual voice note"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "life archive",
+      "description": "Audio recording \u2014 1.5 MB, ~3 min",
+      "path": "/RAW/archive/2026-03-13/audio/recording-1773336749451.webm",
+      "fileType": "audio",
+      "transcript": "hand-washing ritual, vibram shoes, balcony drying, nomad skill"
+    }
   }
 ]
