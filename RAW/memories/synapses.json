@@ -7668,12 +7668,6 @@
     "type": "related-to"
   },
   {
-    "source": "voice-pipeline-architecture",
-    "target": "gateway-client-constants",
-    "weight": 0.8,
-    "type": "uses"
-  },
-  {
     "source": "desktop-app-limitations",
     "target": "fresh-install-recovery-pattern",
     "weight": 0.7,
@@ -14482,26 +14476,6 @@
     "label": "processed today"
   },
   {
-    "weight": 0.9,
-    "source": "voice-pipeline-architecture",
-    "target": "code-is-thought"
-  },
-  {
-    "weight": 0.8,
-    "source": "voice-pipeline-architecture",
-    "target": "infrastructure-matters"
-  },
-  {
-    "weight": 0.7,
-    "source": "transcript-dialogue-gap",
-    "target": "transparency"
-  },
-  {
-    "weight": 0.8,
-    "source": "transcript-dialogue-gap",
-    "target": "code-is-thought"
-  },
-  {
     "weight": 0.6,
     "source": "workflow-consistency",
     "target": "collaboration"
@@ -14525,26 +14499,6 @@
     "weight": 1,
     "source": "march-12-2026",
     "target": "neurograph-live-update"
-  },
-  {
-    "weight": 0.9,
-    "source": "voice-pipeline-architecture",
-    "target": "code-is-thought"
-  },
-  {
-    "weight": 0.8,
-    "source": "voice-pipeline-architecture",
-    "target": "infrastructure-matters"
-  },
-  {
-    "weight": 0.7,
-    "source": "transcript-dialogue-gap",
-    "target": "transparency"
-  },
-  {
-    "weight": 0.8,
-    "source": "transcript-dialogue-gap",
-    "target": "code-is-thought"
   },
   {
     "weight": 0.6,
@@ -14745,66 +14699,6 @@
     "weight": 1,
     "source": "file-screenshot-13",
     "target": "march-12-2026"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-3",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-4",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-5",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-6",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-10",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-11",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-12",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.8,
-    "source": "file-audio-13",
-    "target": "voice-pipeline-architecture"
-  },
-  {
-    "weight": 0.9,
-    "source": "voice-pipeline-architecture",
-    "target": "code-is-thought"
-  },
-  {
-    "weight": 0.8,
-    "source": "voice-pipeline-architecture",
-    "target": "infrastructure-matters"
-  },
-  {
-    "weight": 0.7,
-    "source": "transcript-dialogue-gap",
-    "target": "transparency"
-  },
-  {
-    "weight": 0.8,
-    "source": "transcript-dialogue-gap",
-    "target": "code-is-thought"
   },
   {
     "source": "file-audio-0",
@@ -15015,113 +14909,5 @@
     "target": "march-12-2026",
     "weight": 1,
     "type": "processed-today"
-  },
-  {
-    "source": "file-audio-3",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "file-audio-4",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "file-audio-5",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "file-audio-6",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "file-audio-10",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "file-audio-11",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "file-audio-12",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "file-audio-13",
-    "target": "voice-pipeline-architecture",
-    "weight": 0.8,
-    "type": "relates-to"
-  },
-  {
-    "source": "voice-pipeline-architecture",
-    "target": "code-is-thought",
-    "weight": 0.9,
-    "type": "embodies"
-  },
-  {
-    "source": "voice-pipeline-architecture",
-    "target": "infrastructure-matters",
-    "weight": 0.8,
-    "type": "informed"
-  },
-  {
-    "source": "transcript-dialogue-gap",
-    "target": "transparency",
-    "weight": 0.7,
-    "type": "embodies"
-  },
-  {
-    "source": "transcript-dialogue-gap",
-    "target": "code-is-thought",
-    "weight": 0.8,
-    "type": "informed"
-  },
-  {
-    "source": "voice-pipeline-architecture",
-    "target": "march-12-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "transcript-dialogue-gap",
-    "target": "march-12-2026",
-    "weight": 1,
-    "type": "learned-today"
-  },
-  {
-    "source": "voice-pipeline-architecture",
-    "target": "code-is-thought",
-    "weight": 0.9,
-    "type": "embodies"
-  },
-  {
-    "source": "voice-pipeline-architecture",
-    "target": "infrastructure-matters",
-    "weight": 0.8,
-    "type": "informed"
-  },
-  {
-    "source": "transcript-dialogue-gap",
-    "target": "transparency",
-    "weight": 0.7,
-    "type": "embodies"
-  },
-  {
-    "source": "transcript-dialogue-gap",
-    "target": "code-is-thought",
-    "weight": 0.8,
-    "type": "informed"
   }
 ]

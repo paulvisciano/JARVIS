@@ -7451,26 +7451,6 @@
     }
   },
   {
-    "id": "voice-pipeline-architecture",
-    "label": "Voice Pipeline Architecture",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [],
-    "attributes": {
-      "role": "learning",
-      "description": "Record → Upload (localhost:3001) → Whisper CLI → Gateway WebSocket → Jarvis → TTS (macOS say/ElevenLabs)",
-      "color": "#8b5cf6",
-      "flow": "async pipeline",
-      "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-architecture.md",
-      "created": "2026-03-06",
-      "type": "technical",
-      "quote": "We need to build a proper pipeline... give you a proper voice, also make a sick UI",
-      "date": "2026-03-12",
-      "insight": "Voice pipeline cleanup: removed WebSocket, portable paths, offline fallback, status indicator",
-      "privacy": "public"
-    }
-  },
-  {
     "id": "desktop-app-limitations",
     "label": "Desktop App Limitations",
     "category": "insight",
@@ -21709,44 +21689,6 @@
     "created": "2026-03-11"
   },
   {
-    "id": "voice-pipeline-architecture",
-    "label": "Voice Pipeline Architecture",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      "2026-03-12"
-    ],
-    "attributes": {
-      "role": "learning",
-      "description": "Dedicated voice server (inbox → whisper → archive) bypasses OpenClaw sessions. Portable, offline fallback, status indicator.",
-      "color": "#10b981",
-      "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-architecture.md",
-      "type": "technical",
-      "date": "2026-03-12",
-      "insight": "Voice pipeline cleanup: removed WebSocket, portable paths, offline fallback, status indicator",
-      "privacy": "public"
-    }
-  },
-  {
-    "id": "transcript-dialogue-gap",
-    "label": "Transcript Dialogue Gap",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      "2026-03-12"
-    ],
-    "attributes": {
-      "role": "learning",
-      "description": "Transcript should have verbatim dialogue, not summaries. Session→transcript sync needed for gateway chat.",
-      "color": "#f59e0b",
-      "sourceDocument": "RAW/learnings/2026-03-12/transcript-dialogue-gap.md",
-      "type": "architecture",
-      "date": "2026-03-12",
-      "insight": "Transcript should have verbatim dialogue, not summaries. Session→transcript sync needed.",
-      "privacy": "public"
-    }
-  },
-  {
     "id": "workflow-consistency",
     "label": "Workflow Consistency",
     "category": "behavior",
@@ -22680,82 +22622,6 @@
       "format": "png"
     },
     "created": "2026-03-12"
-  },
-  {
-    "id": "voice-pipeline-architecture-learning",
-    "label": "Voice Pipeline Architecture",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-12",
-        "type": "learning-created",
-        "description": "Technical decisions, gaps identified, workflow failures"
-      }
-    ],
-    "attributes": {
-      "role": "technical learning",
-      "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-architecture.md",
-      "color": "#10b981"
-    },
-    "created": "2026-03-12"
-  },
-  {
-    "id": "transcript-dialogue-gap-learning",
-    "label": "Transcript Dialogue Gap",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-12",
-        "type": "learning-created",
-        "description": "Verbatim dialogue problem, session→transcript sync solution"
-      }
-    ],
-    "attributes": {
-      "role": "architecture learning",
-      "sourceDocument": "RAW/learnings/2026-03-12/transcript-dialogue-gap.md",
-      "color": "#f59e0b"
-    },
-    "created": "2026-03-12"
-  },
-  {
-    "id": "voice-pipeline-architecture",
-    "label": "Voice Pipeline Architecture",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      "2026-03-12"
-    ],
-    "attributes": {
-      "role": "learning",
-      "description": "Dedicated voice server (inbox → whisper → archive) bypasses OpenClaw sessions. Portable, offline fallback, status indicator.",
-      "color": "#10b981",
-      "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-architecture.md",
-      "type": "technical",
-      "date": "2026-03-12",
-      "insight": "Voice pipeline cleanup: removed WebSocket, portable paths, offline fallback, status indicator",
-      "privacy": "public"
-    }
-  },
-  {
-    "id": "transcript-dialogue-gap",
-    "label": "Transcript Dialogue Gap",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      "2026-03-12"
-    ],
-    "attributes": {
-      "role": "learning",
-      "description": "Transcript should have verbatim dialogue, not summaries. Session→transcript sync needed for gateway chat.",
-      "color": "#f59e0b",
-      "sourceDocument": "RAW/learnings/2026-03-12/transcript-dialogue-gap.md",
-      "type": "architecture",
-      "date": "2026-03-12",
-      "insight": "Transcript should have verbatim dialogue, not summaries. Session→transcript sync needed.",
-      "privacy": "public"
-    }
   },
   {
     "id": "workflow-consistency",
