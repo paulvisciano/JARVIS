@@ -14527,27 +14527,45 @@
   },
   {
     "source": "inbox-processing-bug-fixed",
-    "target": "march-12-2026",
+    "target": "transcript-2026-03-12",
     "weight": 1,
-    "type": "learned-today"
+    "type": "extracted-from"
   },
   {
     "source": "bangkok-budget-tracking",
-    "target": "march-12-2026",
+    "target": "transcript-2026-03-12",
     "weight": 1,
-    "type": "learned-today"
+    "type": "extracted-from"
   },
   {
     "source": "voice-pipeline-launchd",
-    "target": "march-12-2026",
+    "target": "transcript-2026-03-12",
     "weight": 1,
-    "type": "learned-today"
+    "type": "extracted-from"
   },
   {
     "source": "image-understanding-gap",
-    "target": "march-12-2026",
+    "target": "transcript-2026-03-12",
     "weight": 1,
-    "type": "learned-today"
+    "type": "extracted-from"
+  },
+  {
+    "source": "desktop-screenshot-auto-archive",
+    "target": "transcript-2026-03-12",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "neurograph-cleanup-march-12",
+    "target": "transcript-2026-03-12",
+    "weight": 1,
+    "type": "extracted-from"
+  },
+  {
+    "source": "collaborative-neurograph-navigation",
+    "target": "transcript-2026-03-12",
+    "weight": 1,
+    "type": "extracted-from"
   },
   {
     "source": "inbox-processing-bug-fixed",
@@ -14574,15 +14592,27 @@
     "type": "learned-today"
   },
   {
-    "source": "collaborative-neurograph-navigation",
-    "target": "transcript-2026-03-12",
+    "source": "desktop-screenshot-auto-archive",
+    "target": "march-12-2026",
     "weight": 1,
-    "type": "extracted-from"
+    "type": "learned-today"
+  },
+  {
+    "source": "neurograph-cleanup-march-12",
+    "target": "march-12-2026",
+    "weight": 1,
+    "type": "learned-today"
   },
   {
     "source": "collaborative-neurograph-navigation",
     "target": "march-12-2026",
     "weight": 1,
     "type": "learned-today"
+  },
+  {
+    "source": "transcript-2026-03-12",
+    "target": "march-12-2026",
+    "weight": 2,
+    "type": "recorded-today"
   }
 ]
