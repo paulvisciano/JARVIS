@@ -120,20 +120,47 @@
 
 ---
 
-## MANGOCHI Workflow
+## MANGOCHI Workflow (Updated March 13, 14:17)
 
-**Every voice drop:**
-1. Lands in inbox
-2. Heartbeat picks up (~30 min)
-3. Transcribe (Whisper)
-4. Archive to `~/RAW/archive/YYYY-MM-DD/`
-5. Extract learnings
-6. Fire new neurons
-7. Link to temporal
-8. Commit to git
-9. Graph grows (visible in UI)
+**Two pipelines:**
 
-**This session:** Voice → diagnosed 500s → archived sessions → updated transcript → created learnings → fired neurons → committed.
+### 1. Live Voice Line (Primary — Real-Time)
+```
+🎤 You talk (web UI)
+   ↓
+📁 ~/JARVIS/live/ (auto-capture)
+   ↓
+🖥️ Auto-transcribe (Whisper)
+   ↓
+💬 Auto-respond (gateway chat)
+   ↓
+📂 Archive to ~/RAW/archive/YYYY-MM-DD/
+   ↓
+🧠 Extract learnings
+   ↓
+🕸️ Neurograph (new neurons + synapses)
+   ↓
+⛓️  Git (commit, immutable)
+   ↓
+🎨 UI (live graph update)
+```
+
+**This is what Paul uses now.** Direct, real-time, no waiting.
+
+### 2. Inbox Heartbeat (Legacy — Batch)
+```
+📥 Drop in inbox
+   ↓ (heartbeat poll, ~30 min)
+🖥️ Process (transcribe/OCR)
+   ↓
+... (same as above)
+```
+
+**This was the old workflow.** Still works, but Paul rarely uses it now.
+
+---
+
+**This session:** Voice (live) → diagnosed 500s → archived sessions → updated transcript → created learnings → fired neurons → committed.
 
 **MANGOCHI breathes.**
 

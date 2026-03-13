@@ -142,6 +142,45 @@
     }
   },
   {
+    "id": "live-voice-folder",
+    "label": "Live Voice Folder (~/JARVIS/live/)",
+    "category": "infrastructure",
+    "frequency": 1,
+    "moments": ["2026-03-13T14:17"],
+    "attributes": {
+      "role": "real-time pipeline",
+      "description": "Direct web UI voice → auto-transcribe → auto-respond → gateway chat (no inbox wait)",
+      "color": "#22c55e",
+      "sourceDocument": "RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md"
+    }
+  },
+  {
+    "id": "inbox-vs-live",
+    "label": "Inbox vs Live Folder",
+    "category": "architecture",
+    "frequency": 1,
+    "moments": ["2026-03-13T14:17"],
+    "attributes": {
+      "role": "pipeline distinction",
+      "description": "Inbox = batch (30-min heartbeat). Live = real-time (instant). Paul uses live now.",
+      "color": "#06b6d4",
+      "sourceDocument": "RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md"
+    }
+  },
+  {
+    "id": "hand-washing-ritual",
+    "label": "Hand-Washing Ritual",
+    "category": "person",
+    "frequency": 1,
+    "moments": ["2026-03-13T00:32"],
+    "attributes": {
+      "role": "daily practice",
+      "description": "Sink (bathroom) → balcony drying. End-of-day closure. Nomad skill from island days.",
+      "color": "#f87171",
+      "sourceDocument": "RAW/learnings/2026-03-13/hand-washing-ritual.md"
+    }
+  },
+  {
     "id": "thinking-partner",
     "label": "Thinking Partner (Not Service)",
     "category": "value",

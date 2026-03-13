@@ -1,5 +1,61 @@
 [
   {
+    "source": "live-voice-folder",
+    "target": "voice-pipeline-breakthrough",
+    "weight": 95,
+    "type": "productionizes",
+    "label": "March 13 voice line"
+  },
+  {
+    "source": "inbox-vs-live",
+    "target": "live-voice-folder",
+    "weight": 92,
+    "type": "clarifies",
+    "label": "pipeline distinction"
+  },
+  {
+    "source": "inbox-vs-live",
+    "target": "voice-pipeline-architecture",
+    "weight": 88,
+    "type": "updates",
+    "label": "March 12 → March 13 evolution"
+  },
+  {
+    "source": "hand-washing-ritual",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "hand-washing-ritual",
+    "target": "paul-visciano",
+    "weight": 95,
+    "type": "practice-of",
+    "label": "Paul's ritual"
+  },
+  {
+    "source": "hand-washing-ritual",
+    "target": "nomad-skill-continuity",
+    "weight": 90,
+    "type": "continues",
+    "label": "island days → now"
+  },
+  {
+    "source": "live-voice-folder",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "inbox-vs-live",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
     "source": "ollama-500-debugging",
     "target": "voice-pipeline-breakthrough",
     "weight": 88,
