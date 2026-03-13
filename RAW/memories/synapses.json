@@ -1,5 +1,47 @@
 [
   {
+    "source": "march-13-complete-archive",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "march-13-complete-archive",
+    "target": "paul-visciano",
+    "weight": 95,
+    "type": "celebration-of",
+    "label": "Paul's moment"
+  },
+  {
+    "source": "march-13-complete-archive",
+    "target": "mangochee-workflow",
+    "weight": 98,
+    "type": "demonstrates",
+    "label": "workflow complete"
+  },
+  {
+    "source": "march-13-complete-archive",
+    "target": "sovereignty-stack",
+    "weight": 90,
+    "type": "proves",
+    "label": "archive sovereignty"
+  },
+  {
+    "source": "march-13-complete-archive",
+    "target": "trust-earned-through-competence",
+    "weight": 95,
+    "type": "confirms",
+    "label": "trust milestone"
+  },
+  {
+    "source": "ocr-debugging-flow",
+    "target": "voice-first-ui-design",
+    "weight": 90,
+    "type": "same-day-as",
+    "label": "March 13 breakthroughs"
+  },
+  {
     "source": "inbox-vs-live",
     "target": "live-voice-folder",
     "weight": 92,
