@@ -90,6 +90,58 @@
     }
   },
   {
+    "id": "ollama-500-debugging",
+    "label": "Ollama 500 Debugging",
+    "category": "breakthrough",
+    "frequency": 1,
+    "moments": ["2026-03-13T14:06"],
+    "attributes": {
+      "role": "diagnostic skill",
+      "description": "500 errors from session bloat → Ollama hitting 200k token wall → archive old sessions",
+      "color": "#22c55e",
+      "sourceDocument": "RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md"
+    }
+  },
+  {
+    "id": "session-bloat-architecture",
+    "label": "Session Bloat Architecture",
+    "category": "foundation",
+    "frequency": 1,
+    "moments": ["2026-03-13T14:09"],
+    "attributes": {
+      "role": "three-layer separation",
+      "description": "~/RAW/archive/ (private) + ~/.openclaw/sessions/ (ephemeral) + /JARVIS/ (git-backed)",
+      "color": "#06b6d4",
+      "sourceDocument": "RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md"
+    }
+  },
+  {
+    "id": "private-archive-sovereignty",
+    "label": "Private Archive Sovereignty",
+    "category": "value",
+    "frequency": 1,
+    "moments": ["2026-03-13T14:11"],
+    "attributes": {
+      "role": "data ownership",
+      "description": "Session files belong in private life archive — sovereign, gitignored, permanent",
+      "color": "#f87171",
+      "sourceDocument": "RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md"
+    }
+  },
+  {
+    "id": "voice-file-workflow",
+    "label": "Voice File Workflow",
+    "category": "breakthrough",
+    "frequency": 1,
+    "moments": ["2026-03-13T14:13"],
+    "attributes": {
+      "role": "interaction mode",
+      "description": "Talk → file operations → instant execution → no typing needed",
+      "color": "#22c55e",
+      "sourceDocument": "RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md"
+    }
+  },
+  {
     "id": "thinking-partner",
     "label": "Thinking Partner (Not Service)",
     "category": "value",

@@ -1,5 +1,89 @@
 [
   {
+    "source": "ollama-500-debugging",
+    "target": "voice-pipeline-breakthrough",
+    "weight": 88,
+    "type": "builds-on",
+    "label": "debugged voice pipeline"
+  },
+  {
+    "source": "session-bloat-architecture",
+    "target": "hybrid-architecture-decision",
+    "weight": 95,
+    "type": "confirms",
+    "label": "reinforces Feb 28 fix"
+  },
+  {
+    "source": "private-archive-sovereignty",
+    "target": "life-archive-structure",
+    "weight": 92,
+    "type": "embodies",
+    "label": "sovereign memory"
+  },
+  {
+    "source": "voice-file-workflow",
+    "target": "no-typing-needed",
+    "weight": 95,
+    "type": "confirms",
+    "label": "production ready"
+  },
+  {
+    "source": "ollama-500-debugging",
+    "target": "session-bloat-architecture",
+    "weight": 90,
+    "type": "led-to",
+    "label": "diagnosed"
+  },
+  {
+    "source": "session-bloat-architecture",
+    "target": "private-archive-sovereignty",
+    "weight": 88,
+    "type": "requires",
+    "label": "archive separation"
+  },
+  {
+    "source": "voice-file-workflow",
+    "target": "ollama-500-debugging",
+    "weight": 85,
+    "type": "enabled",
+    "label": "voice debugging session"
+  },
+  {
+    "source": "paul-visciano",
+    "target": "voice-file-workflow",
+    "weight": 95,
+    "type": "experienced",
+    "label": "loves workflow"
+  },
+  {
+    "source": "march-13-2026",
+    "target": "ollama-500-debugging",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "march-13-2026",
+    "target": "session-bloat-architecture",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "march-13-2026",
+    "target": "private-archive-sovereignty",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "march-13-2026",
+    "target": "voice-file-workflow",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
     "source": "openclaw",
     "target": "openclaw-session-management",
     "weight": 95,
