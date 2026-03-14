@@ -29446,6 +29446,195 @@
     }
   },
   {
+    "id": "full-sovereignty-loop-confirmed",
+    "label": "Full Sovereignty Loop Confirmed",
+    "category": "learning",
+    "type": "breakthrough",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop Confirmed \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** R"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop Confirmed",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
+    }
+  },
+  {
+    "id": "transparent-architecture-jarvis-server",
+    "label": "Transparent Architecture Jarvis Server",
+    "category": "learning",
+    "type": "architecture",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Transparent Architecture \u2014 Jarvis Server Self-Identification \u2014 March 14, 2026\n\n**Timestamp:** 13:0"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Transparent Architecture Jarvis Server",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/transparent-architecture-jarvis-server.md"
+    }
+  },
+  {
+    "id": "neurograph-three-layer-visual-proof",
+    "label": "Neurograph Three Layer Visual Proof",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# March 14, 2026 \u2014 Neurograph Three-Layer Visual Proof\n\n**Timestamp:** 10:52 GMT+7  \n**Breakthrough:"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Neurograph Three Layer Visual Proof",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md"
+    }
+  },
+  {
+    "id": "vision-vs-ocr-pipelines",
+    "label": "Vision Vs Ocr Pipelines",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Vision vs OCR Pipelines \u2014 March 14, 2026\n\n**Timestamp:** 10:55 GMT+7  \n**Insight:** Two different "
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Vision Vs Ocr Pipelines",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md"
+    }
+  },
+  {
+    "id": "three-layer-neurograph-navigation-proven",
+    "label": "Three Layer Neurograph Navigation Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Three-Layer Neurograph Navigation \u2014 March 14, 2026\n\n**Timestamp:** 10:46-10:52 GMT+7  \n**Breakthro"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Three Layer Neurograph Navigation Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
+    }
+  },
+  {
+    "id": "complete-offline-mode-proven",
+    "label": "Complete Offline Mode Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Complete Offline Mode Proven \u2014 March 14, 2026\n\n**Timestamp:** 12:41-12:49 GMT+7  \n**Location:** Co"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Complete Offline Mode Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/complete-offline-mode-proven.md"
+    }
+  },
+  {
+    "id": "full-sovereignty-loop",
+    "label": "Full Sovereignty Loop",
+    "category": "learning",
+    "type": "milestone",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** Real-time c"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop.md"
+    }
+  },
+  {
+    "id": "ollama-500-cloud-debugging",
+    "label": "Ollama 500 Cloud Debugging",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Ollama 500 Debugging Session \u2014 March 14, 2026\n\n**Timestamp:** 10:07-10:23 GMT+7  \n**Issue:** Every"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ollama 500 Cloud Debugging",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md"
+    }
+  },
+  {
+    "id": "ui-state-polling-fix-v1.1.3",
+    "label": "Ui State Polling Fix V1.1.3",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# UI State Polling Fix \u2014 March 14, 2026\n\n**Timestamp:** 11:07-11:11 GMT+7  \n**Issue:** UI showing st"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ui State Polling Fix V1.1.3",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-111634",
     "label": "convo-jarvis-2026-03-14-111634",
     "category": "archive",
@@ -30389,6 +30578,29 @@
     }
   },
   {
+    "id": "convo-jarvis-2026-03-14-130156",
+    "label": "convo-jarvis-2026-03-14-130156",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "so actually this is why I've been working so hard on the web UI I'm no longer using\n what's out righ"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-130156.wav",
+      "fileType": "audio",
+      "transcript": "so actually this is why I've been working so hard on the web UI I'm no longer using\n what's out right I'm now using the web UI which is running on localhost and that's\n talking to a node process and I"
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-101348",
     "label": "convo-jarvis-2026-03-14-101348",
     "category": "archive",
@@ -30616,6 +30828,29 @@
       "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091836.wav",
       "fileType": "audio",
       "transcript": "Okay, so looking at the stage nodes, there is a node for, they're basically duplicate nodes\n because the audio files are both in WAV format and WebM format.\n So let's only generate a single file node "
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-130632",
+    "label": "convo-jarvis-2026-03-14-130632",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Checking, checking the latest UI changes, making sure the timestamp shows up"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-130632.wav",
+      "fileType": "audio",
+      "transcript": "Checking, checking the latest UI changes, making sure the timestamp shows up"
     }
   },
   {
@@ -31442,6 +31677,27 @@
       "description": "Learning document: Full Sovereignty Loop Confirmed",
       "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
+    }
+  },
+  {
+    "id": "zero-friction-builder-mode",
+    "label": "Zero Friction Builder Mode",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Zero-Friction Builder Mode \u2014 March 14, 2026\n\n**Timestamp:** 13:07 GMT+7  \n**Breakthrough:** Idea \u2192"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Zero Friction Builder Mode",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/zero-friction-builder-mode.md"
     }
   },
   {
