@@ -29073,1295 +29073,1590 @@
     }
   },
   {
-    "id": "march14-audio-1773425292202",
-    "label": "Audio 1773425292202",
+    "id": "convo-jarvis-2026-03-14-010459",
+    "label": "010459",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/recording-1773425292202.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/recording-1773425292202.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-010459.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-1773425769113",
-    "label": "Audio 1773425769113",
+    "id": "convo-jarvis-2026-03-14-085640",
+    "label": "085640",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/recording-1773425769113.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/recording-1773425769113.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-085640.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-1773426001546",
-    "label": "Audio 1773426001546",
+    "id": "convo-jarvis-2026-03-14-090101",
+    "label": "090101",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/recording-1773426001546.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/recording-1773426001546.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090101.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-1773426411162",
-    "label": "Audio 1773426411162",
+    "id": "convo-jarvis-2026-03-14-090613",
+    "label": "090613",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/recording-1773426411162.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/recording-1773426411162.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090613.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-1773461265886",
-    "label": "Audio 1773461265886",
+    "id": "convo-jarvis-2026-03-14-090846",
+    "label": "090846",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/recording-1773461265886.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/recording-1773461265886.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090846.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-1773461405046",
-    "label": "Audio 1773461405046",
+    "id": "convo-jarvis-2026-03-14-091147",
+    "label": "091147",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/recording-1773461405046.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/recording-1773461405046.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091147.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-1773461516328",
-    "label": "Audio 1773461516328",
+    "id": "convo-jarvis-2026-03-14-091705",
+    "label": "091705",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/recording-1773461516328.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/recording-1773461516328.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091705.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-091836",
+    "label": "091836",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092421.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092421.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091836.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-092119",
+    "label": "092119",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104716.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104716.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092119.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-092421",
+    "label": "092421",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094721.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094721.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092421.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-092653",
+    "label": "092653",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090613.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090613.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092653.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-093550",
+    "label": "093550",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110526.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110526.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-093550.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-094223",
+    "label": "094223",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090101.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090101.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094223.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-094721",
+    "label": "094721",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111634.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111634.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094721.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-094841",
+    "label": "094841",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-085640.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-085640.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094841.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-094942",
+    "label": "094942",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091836.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091836.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094942.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-095738",
+    "label": "095738",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111904.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111904.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-095738.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-100429",
+    "label": "100429",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101020.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101020.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-100429.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-101020",
+    "label": "101020",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-100429.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-100429.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101020.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-101218",
+    "label": "101218",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105943.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105943.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101218.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-101348",
+    "label": "101348",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104642.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104642.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101348.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-104433",
+    "label": "104433",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091705.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091705.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104433.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-104601",
+    "label": "104601",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101218.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101218.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104601.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-104642",
+    "label": "104642",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110104.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110104.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104642.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-104716",
+    "label": "104716",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111333.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111333.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104716.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-105113",
+    "label": "105113",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105113.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105113.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105113.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-105302",
+    "label": "105302",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092119.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092119.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105302.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-105515",
+    "label": "105515",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105515.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105515.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105515.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-105943",
+    "label": "105943",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104433.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104433.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105943.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-110104",
+    "label": "110104",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092653.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092653.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110104.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-110526",
+    "label": "110526",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094223.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094223.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110526.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-111149",
+    "label": "111149",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-095738.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-095738.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111149.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-111333",
+    "label": "111333",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-010459.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-010459.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111333.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-111546",
+    "label": "111546",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-093550.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-093550.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111546.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-111634",
+    "label": "111634",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091147.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091147.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111634.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-111904",
+    "label": "111904",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111149.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111149.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111904.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "convo-jarvis-2026-03-14-114307",
+    "label": "114307",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101348.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101348.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-114307.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "recording-1773425292202",
+    "label": "1773425292",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105302.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105302.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773425292202.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "recording-1773425769113",
+    "label": "1773425769",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111546.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111546.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773425769113.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "recording-1773426001546",
+    "label": "1773426001",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104601.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104601.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773426001546.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "recording-1773426411162",
+    "label": "1773426411",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090846.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090846.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773426411162.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "recording-1773461265886",
+    "label": "1773461265",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094841.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094841.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773461265886.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-audio-unknown",
-    "label": "Audio unknown",
+    "id": "recording-1773461405046",
+    "label": "1773461405",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "audio-transcript",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094942.wav.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094942.wav.txt",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773461405046.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "recording-1773461516328",
+    "label": "1773461516",
     "category": "archive",
-    "type": "file",
+    "type": "audio",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Voice conversation with Jarvis"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.00.41\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.00.41\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773461516328.wav",
+      "fileType": "audio",
+      "transcript": "Conversation transcript"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.07.57\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.50.43\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.50.43\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.07.57\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.10.06\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.06\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.06\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.06\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.10.23\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.04.39\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.04.39\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.23\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.12.12\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.38\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.38\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.12.12\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.23.13\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.01.19\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.01.19\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.23.13\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.45.38\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.07.57\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.07.57\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.45.38\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.52.31\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.12.14\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.12.14\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.31\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.52.42\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.42\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.42\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.42\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 10.56.30\u202fAM",
+    "label": "10",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.56.30\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.56.30\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.56.30\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 11.00.10\u202fAM",
+    "label": "11",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.31.20\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.31.20\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.00.10\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 11.01.19\u202fAM",
+    "label": "11",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.45.38\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.45.38\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.01.19\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 11.01.43\u202fAM",
+    "label": "11",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.31\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.31\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.01.43\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 11.12.14\u202fAM",
+    "label": "11",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.22.02\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.22.02\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.12.14\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 12.45.38\u202fAM",
+    "label": "12",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.43.56\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.43.56\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.38\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 12.45.42\u202fAM",
+    "label": "12",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.23\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.23\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.42\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 12.46.30\u202fAM",
+    "label": "12",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.42\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.42\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.46.30\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.00.41\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.00.10\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.00.10\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.00.41\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.04.39\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.23.13\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.23.13\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.04.39\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.08.14\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.08.16\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.08.16\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.08.14\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.08.16\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.01.43\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.01.43\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.08.16\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.22.02\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.46.30\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.46.30\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.22.02\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.31.20\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.41.04\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.41.04\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.31.20\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.41.04\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.12.12\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.12.12\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.41.04\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   },
   {
-    "id": "march14-image-unknown",
-    "label": "Screenshot unknown",
+    "id": "Screenshot 2026-03-14 at 9.43.56\u202fAM",
+    "label": "9",
     "category": "archive",
-    "type": "file",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
       "file"
     ],
     "attributes": {
-      "role": "archived-file",
-      "type": "screenshot-ocr",
-      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.08.14\u202fAM.txt",
-      "date": "2026-03-14",
-      "sourceDocument": "RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.08.14\u202fAM.png",
-      "processedToday": "2026-03-14",
-      "created": "2026-03-14"
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.43.56\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 9.50.43\u202fAM",
+    "label": "9",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Desktop screenshot"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.50.43\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Screenshot content"
     }
   }
 ]
