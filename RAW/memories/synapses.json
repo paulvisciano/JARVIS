@@ -19090,5 +19090,65 @@
     "target": "march-10-2026",
     "type": "learned-on",
     "weight": 1
+  },
+  {
+    "source": "revolutionary-capabilities",
+    "target": "march-11-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "offboarding-guide-key-requirements",
+    "target": "march-10-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "ui-testing-session-feedback",
+    "target": "march-11-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "capabilities-comprehensive-inventory",
+    "target": "march-11-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "march-11-memory-flush",
+    "target": "march-11-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "offline-mode-discovery",
+    "target": "march-11-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "voice-pipeline-breakthrough",
+    "target": "march-12-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "voice-pipeline-architecture",
+    "target": "march-12-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "transcript-dialogue-gap",
+    "target": "march-12-2026",
+    "type": "learned-on",
+    "weight": 1
+  },
+  {
+    "source": "march-12-session-summary",
+    "target": "march-12-2026",
+    "type": "learned-on",
+    "weight": 1
   }
 ]
