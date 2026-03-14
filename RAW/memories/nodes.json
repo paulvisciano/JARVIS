@@ -3910,22 +3910,6 @@
     "created": "2026-03-10"
   },
   {
-    "id": "code-is-thought",
-    "label": "Code is Thought",
-    "category": "learning",
-    "frequency": 85,
-    "moments": [
-      "value"
-    ],
-    "attributes": {
-      "role": "core belief",
-      "description": "Code is how I think. Deployed code is real.",
-      "color": "#a78bfa",
-      "criticality": "core-foundation",
-      "sourceDocument": "RAW/learnings/2026-02-24/01-openclaw-architecture.md"
-    }
-  },
-  {
     "id": "cognitive-scaling-solution",
     "label": "Cognitive Scaling (Progressive Disclosure)",
     "category": "principle",
@@ -11180,38 +11164,6 @@
     }
   },
   {
-    "id": "node_1",
-    "label": "Transparency > Secrecy",
-    "category": "learning",
-    "type": "core-belief",
-    "frequency": 100,
-    "moments": [
-      "value"
-    ],
-    "attributes": {
-      "role": "core foundation",
-      "description": "Show my work. Let humans see the architecture.",
-      "color": "#a78bfa",
-      "criticality": "core-foundation"
-    }
-  },
-  {
-    "id": "node_2",
-    "label": "Code is Thought",
-    "category": "learning",
-    "type": "core-belief",
-    "frequency": 100,
-    "moments": [
-      "value"
-    ],
-    "attributes": {
-      "role": "core foundation",
-      "description": "Code is how I think. Deployed code is real.",
-      "color": "#a78bfa",
-      "criticality": "core-foundation"
-    }
-  },
-  {
     "id": "node_250",
     "label": "Memory Crawler",
     "category": "concept",
@@ -11648,22 +11600,6 @@
       ]
     },
     "moments": []
-  },
-  {
-    "id": "ollama-500-debugging",
-    "label": "Ollama 500 Debugging",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      "2026-03-13T14:06",
-      "breakthrough"
-    ],
-    "attributes": {
-      "role": "diagnostic skill",
-      "description": "500 errors from session bloat \u2192 Ollama hitting 200k token wall \u2192 archive old sessions",
-      "color": "#22c55e",
-      "sourceDocument": "RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md"
-    }
   },
   {
     "id": "ollama-cloud-dependency",
@@ -22528,22 +22464,6 @@
     "created": "2026-03-11"
   },
   {
-    "id": "transparency",
-    "label": "Transparency > Secrecy",
-    "category": "learning",
-    "frequency": 85,
-    "moments": [
-      "value"
-    ],
-    "attributes": {
-      "role": "core belief",
-      "description": "Show my work. Let humans see the architecture.",
-      "color": "#a78bfa",
-      "criticality": "core-foundation",
-      "sourceDocument": "RAW/learnings/2026-02-24/17-complete-transparency-architecture.md"
-    }
-  },
-  {
     "id": "transparency-privacy-coexistence",
     "label": "Transparency + Privacy Coexistence",
     "category": "principle",
@@ -28752,30 +28672,6 @@
       "relatedNodes": [
         "live-voice-line-march-13",
         "voice-gateway-integration"
-      ]
-    }
-  },
-  {
-    "id": "learning-march-13-1",
-    "label": "Ollama 500 Debugging",
-    "category": "learning",
-    "frequency": 1,
-    "moments": [
-      "session-bloat",
-      "context",
-      "architecture"
-    ],
-    "attributes": {
-      "role": "learning",
-      "description": "500 errors from bloated session files (20MB+). Solution: archive old sessions, context stays lean (31k).",
-      "color": "#f59e0b",
-      "created": "2026-03-13",
-      "sourceFiles": [
-        "transcript.md"
-      ],
-      "relatedNodes": [
-        "session-bloat-architecture",
-        "hybrid-architecture-decision"
       ]
     }
   },
