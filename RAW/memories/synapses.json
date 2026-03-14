@@ -16466,5 +16466,83 @@
     "from": "ui-state-polling-fix-v1.1.3",
     "to": "20260314",
     "weight": 0.9
+  },
+  {
+    "source": "three-layer-neurograph-navigation-proven",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "ui-vs-server-division-of-labor",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "git-backed-memory-restoration",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "ollama-500-cloud-debugging",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "full-sovereignty-loop-confirmed",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "vision-vs-ocr-pipelines",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "neurograph-three-layer-visual-proof",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "complete-offline-mode-proven",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "full-sovereignty-loop",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "productivity-pattern-learnings-files-commits",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "transparent-architecture-jarvis-server",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "ui-state-polling-fix-v1.1.3",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "zero-friction-builder-mode",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
   }
 ]
