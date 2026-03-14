@@ -41322,5 +41322,23 @@
       "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-12/march-12-session-summary.md"
     }
+  },
+  {
+    "id": "gym-beach-volleyball-march-14",
+    "label": "Gym + Beach Volleyball \u2014 March 14 Afternoon",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "workout",
+      "beach-volleyball",
+      "saturday-energy",
+      "pattaya-lifestyle"
+    ],
+    "attributes": {
+      "role": "moment",
+      "description": "Gym workout \u2192 beach volleyball session. Weekend Saturday energy. Pattaya lifestyle (gym access, beach proximity). System stable after cleanup, battery 13%.",
+      "color": "#f97316",
+      "created": "2026-03-14"
+    }
   }
 ]
