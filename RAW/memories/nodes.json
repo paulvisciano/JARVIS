@@ -30746,5 +30746,74 @@
       "fileType": "image",
       "ocrText": "e\ne\ne\ne\ne e\ne >\ne e 4\ne\n\nMarch 13, 2026 - Live Voice Line Confirmed"
     }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115011",
+    "label": "115011 (11:50)",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "The archive is also showing up wrong. The names of the nodes are just like some weird numbers.\n Can "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115011.wav",
+      "fileType": "audio",
+      "transcript": "The archive is also showing up wrong. The names of the nodes are just like some weird numbers.\n Can you take a look at how we did yesterday? That looked way better."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115102",
+    "label": "115102 (11:51)",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "There's still a bunch of files that show up as unknown."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115102.wav",
+      "fileType": "audio",
+      "transcript": "There's still a bunch of files that show up as unknown."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115348",
+    "label": "115348 (11:53)",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "What we did with yesterday that worked really well is we ended up generating a script and\n having a "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115348.wav",
+      "fileType": "audio",
+      "transcript": "What we did with yesterday that worked really well is we ended up generating a script and\n having a script do the synapse and note creation, right?\n That worked really well."
+    }
   }
 ]
