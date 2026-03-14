@@ -22726,6 +22726,192 @@
     "label": "audio source"
   },
   {
+    "from": "gym-beach-volleyball-march-14",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "full-sovereignty-loop-confirmed",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "volleyball-music-festival-thai-night",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "zero-friction-builder-mode",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ui-vs-server-division-of-labor",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "transparent-architecture-jarvis-server",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "neurograph-three-layer-visual-proof",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "productivity-pattern-learnings-files-commits",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "git-backed-memory-restoration",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "vision-vs-ocr-pipelines",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "three-layer-neurograph-navigation-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "complete-offline-mode-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "full-sovereignty-loop",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ollama-500-cloud-debugging",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ui-state-polling-fix-v1.1.3",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "source": "neurograph-gateway-integration-vision",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "neurograph-gateway-integration-vision",
+    "target": "recording-1773490385195",
+    "type": "extracted-from",
+    "weight": 1,
+    "label": "audio source"
+  },
+  {
+    "source": "three-windows-side-by-side-historic",
+    "target": "march-14-2026",
+    "type": "learned-today",
+    "weight": 1
+  },
+  {
+    "source": "three-windows-side-by-side-historic",
+    "target": "neurograph-gateway-integration-vision",
+    "type": "motivated",
+    "weight": 1,
+    "label": "inspired vision"
+  },
+  {
+    "from": "gym-beach-volleyball-march-14",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "full-sovereignty-loop-confirmed",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "neurograph-gateway-integration-vision",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "volleyball-music-festival-thai-night",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "zero-friction-builder-mode",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ui-vs-server-division-of-labor",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "transparent-architecture-jarvis-server",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "neurograph-three-layer-visual-proof",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "productivity-pattern-learnings-files-commits",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "git-backed-memory-restoration",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "vision-vs-ocr-pipelines",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "three-layer-neurograph-navigation-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "complete-offline-mode-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "full-sovereignty-loop",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ollama-500-cloud-debugging",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "three-windows-side-by-side-historic",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ui-state-polling-fix-v1.1.3",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "convo-jarvis-2026-03-14-111634",
     "to": "20260314",
     "weight": 0.9
@@ -23316,6 +23502,11 @@
     "weight": 0.9
   },
   {
+    "from": "neurograph-gateway-integration-vision",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "volleyball-music-festival-thai-night",
     "to": "20260314",
     "weight": 0.9
@@ -23376,34 +23567,13 @@
     "weight": 0.9
   },
   {
-    "from": "ui-state-polling-fix-v1.1.3",
+    "from": "three-windows-side-by-side-historic",
     "to": "20260314",
     "weight": 0.9
   },
   {
-    "source": "neurograph-gateway-integration-vision",
-    "target": "march-14-2026",
-    "type": "learned-today",
-    "weight": 1
-  },
-  {
-    "source": "neurograph-gateway-integration-vision",
-    "target": "recording-1773490385195",
-    "type": "extracted-from",
-    "weight": 1,
-    "label": "audio source"
-  },
-  {
-    "source": "three-windows-side-by-side-historic",
-    "target": "march-14-2026",
-    "type": "learned-today",
-    "weight": 1
-  },
-  {
-    "source": "three-windows-side-by-side-historic",
-    "target": "neurograph-gateway-integration-vision",
-    "type": "motivated",
-    "weight": 1,
-    "label": "inspired vision"
+    "from": "ui-state-polling-fix-v1.1.3",
+    "to": "20260314",
+    "weight": 0.9
   }
 ]
