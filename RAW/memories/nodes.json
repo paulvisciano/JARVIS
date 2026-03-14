@@ -29037,5 +29037,58 @@
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md",
       "created": "2026-03-14"
     }
+  },
+  {
+    "id": "ollama-500-cloud-debugging",
+    "label": "Ollama 500 Cloud Debugging",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      "2026-03-14T10:23"
+    ],
+    "attributes": {
+      "role": "cloud endpoint debugging",
+      "description": "qwen3.5:cloud remote model hitting 500s \u2014 intermittent timeout vs fast fail",
+      "color": "#f97316",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md",
+      "created": "2026-03-14"
+    }
+  },
+  {
+    "id": "ui-state-polling-fix-v1.1.3",
+    "label": "UI State Polling Fix v1.1.3",
+    "category": "learning",
+    "type": "ui-fix",
+    "frequency": 1,
+    "moments": [
+      "2026-03-14T11:11"
+    ],
+    "attributes": {
+      "role": "UX improvement",
+      "description": "Extended polling to 120s, dynamic status text, timeout handling",
+      "color": "#3b82f6",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md",
+      "created": "2026-03-14"
+    }
+  },
+  {
+    "id": "march-14-2026-archive-files",
+    "label": "March 14 Archive Files",
+    "category": "archive",
+    "type": "file-collection",
+    "frequency": 1,
+    "moments": [
+      "2026-03-14"
+    ],
+    "attributes": {
+      "role": "archive summary",
+      "description": "42 audio transcripts + 25 screenshot OCR files",
+      "color": "#6b7280",
+      "audioCount": 42,
+      "imageCount": 25,
+      "location": "~/RAW/archive/2026-03-14/",
+      "created": "2026-03-14"
+    }
   }
 ]
