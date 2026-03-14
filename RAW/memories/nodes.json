@@ -28884,22 +28884,6 @@
     }
   },
   {
-    "id": "20260314",
-    "label": "2026 03 14",
-    "category": "temporal",
-    "type": "anchor",
-    "frequency": 1,
-    "moments": [
-      "2026-03-14"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "temporal anchor",
-      "description": "Archive date: 2026-03-14",
-      "color": "#f97316"
-    }
-  },
-  {
     "id": "full-sovereignty-loop-confirmed",
     "label": "Full Sovereignty Loop Confirmed",
     "category": "learning",
