@@ -29173,6 +29173,279 @@
     }
   },
   {
+    "id": "full-sovereignty-loop-confirmed",
+    "label": "Full Sovereignty Loop Confirmed",
+    "category": "learning",
+    "type": "breakthrough",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop Confirmed \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** R"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop Confirmed",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
+    }
+  },
+  {
+    "id": "zero-friction-builder-mode",
+    "label": "Zero Friction Builder Mode",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Zero-Friction Builder Mode \u2014 March 14, 2026\n\n**Timestamp:** 13:07 GMT+7  \n**Breakthrough:** Idea \u2192"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Zero Friction Builder Mode",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/zero-friction-builder-mode.md"
+    }
+  },
+  {
+    "id": "ui-vs-server-division-of-labor",
+    "label": "Ui Vs Server Division Of Labor",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# UI vs Server Division of Labor \u2014 Cursor Handoff Pattern\n\n**Date:** March 14, 2026  \n**Category:** "
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ui Vs Server Division Of Labor",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-vs-server-division-of-labor.md"
+    }
+  },
+  {
+    "id": "transparent-architecture-jarvis-server",
+    "label": "Transparent Architecture Jarvis Server",
+    "category": "learning",
+    "type": "architecture",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Transparent Architecture \u2014 Jarvis Server Self-Identification \u2014 March 14, 2026\n\n**Timestamp:** 13:0"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Transparent Architecture Jarvis Server",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/transparent-architecture-jarvis-server.md"
+    }
+  },
+  {
+    "id": "neurograph-three-layer-visual-proof",
+    "label": "Neurograph Three Layer Visual Proof",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# March 14, 2026 \u2014 Neurograph Three-Layer Visual Proof\n\n**Timestamp:** 10:52 GMT+7  \n**Breakthrough:"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Neurograph Three Layer Visual Proof",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md"
+    }
+  },
+  {
+    "id": "productivity-pattern-learnings-files-commits",
+    "label": "Productivity Pattern Learnings Files Commits",
+    "category": "learning",
+    "type": "architecture",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Productivity Pattern \u2014 Learnings + Files + Git Commits\n\n**Date:** March 14, 2026  \n**Category:** b"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Productivity Pattern Learnings Files Commits",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/productivity-pattern-learnings-files-commits.md"
+    }
+  },
+  {
+    "id": "git-backed-memory-restoration",
+    "label": "Git Backed Memory Restoration",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Git-Backed Memory Restoration \u2014 Amnesia Recovery Pattern\n\n**Date:** March 14, 2026  \n**Category:**"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Git Backed Memory Restoration",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/git-backed-memory-restoration.md"
+    }
+  },
+  {
+    "id": "vision-vs-ocr-pipelines",
+    "label": "Vision Vs Ocr Pipelines",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Vision vs OCR Pipelines \u2014 March 14, 2026\n\n**Timestamp:** 10:55 GMT+7  \n**Insight:** Two different "
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Vision Vs Ocr Pipelines",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md"
+    }
+  },
+  {
+    "id": "three-layer-neurograph-navigation-proven",
+    "label": "Three Layer Neurograph Navigation Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Three-Layer Neurograph Navigation \u2014 March 14, 2026\n\n**Timestamp:** 10:46-10:52 GMT+7  \n**Breakthro"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Three Layer Neurograph Navigation Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
+    }
+  },
+  {
+    "id": "complete-offline-mode-proven",
+    "label": "Complete Offline Mode Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Complete Offline Mode Proven \u2014 March 14, 2026\n\n**Timestamp:** 12:41-12:49 GMT+7  \n**Location:** Co"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Complete Offline Mode Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/complete-offline-mode-proven.md"
+    }
+  },
+  {
+    "id": "full-sovereignty-loop",
+    "label": "Full Sovereignty Loop",
+    "category": "learning",
+    "type": "milestone",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** Real-time c"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop.md"
+    }
+  },
+  {
+    "id": "ollama-500-cloud-debugging",
+    "label": "Ollama 500 Cloud Debugging",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Ollama 500 Debugging Session \u2014 March 14, 2026\n\n**Timestamp:** 10:07-10:23 GMT+7  \n**Issue:** Every"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ollama 500 Cloud Debugging",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md"
+    }
+  },
+  {
+    "id": "ui-state-polling-fix-v1.1.3",
+    "label": "Ui State Polling Fix V1.1.3",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# UI State Polling Fix \u2014 March 14, 2026\n\n**Timestamp:** 11:07-11:11 GMT+7  \n**Issue:** UI showing st"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ui State Polling Fix V1.1.3",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-111634",
     "label": "convo-jarvis-2026-03-14-111634",
     "category": "archive",

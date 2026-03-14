@@ -16001,6 +16001,77 @@
     "weight": 1
   },
   {
+    "from": "full-sovereignty-loop-confirmed",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "zero-friction-builder-mode",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ui-vs-server-division-of-labor",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "transparent-architecture-jarvis-server",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "neurograph-three-layer-visual-proof",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "productivity-pattern-learnings-files-commits",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "git-backed-memory-restoration",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "vision-vs-ocr-pipelines",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "three-layer-neurograph-navigation-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "complete-offline-mode-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "full-sovereignty-loop",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ollama-500-cloud-debugging",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ui-state-polling-fix-v1.1.3",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "source": "convo-jarvis-2026-03-14-143340",
+    "target": "march-14-2026",
+    "type": "archived-today",
+    "weight": 1
+  },
+  {
     "from": "convo-jarvis-2026-03-14-111634",
     "to": "20260314",
     "weight": 0.9
@@ -16609,11 +16680,5 @@
     "from": "ui-state-polling-fix-v1.1.3",
     "to": "20260314",
     "weight": 0.9
-  },
-  {
-    "source": "convo-jarvis-2026-03-14-143340",
-    "target": "march-14-2026",
-    "type": "archived-today",
-    "weight": 1
   }
 ]
