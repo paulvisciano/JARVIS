@@ -15920,351 +15920,6 @@
     "weight": 0.7
   },
   {
-    "from": "convo-jarvis-2026-03-14-010459",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-085640",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-090101",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-090613",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-090846",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-091147",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-091705",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-091836",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-092119",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-092421",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-092653",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-093550",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-094223",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-094721",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-094841",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-094942",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-095738",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-100429",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-101020",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-101218",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-101348",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-104433",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-104601",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-104642",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-104716",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-105113",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-105302",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-105515",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-105943",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-110104",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-110526",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-111149",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-111333",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-111546",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-111634",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-111904",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "convo-jarvis-2026-03-14-114307",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "recording-1773425292202",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "recording-1773425769113",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "recording-1773426001546",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "recording-1773426411162",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "recording-1773461265886",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "recording-1773461405046",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "recording-1773461516328",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.07.57\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.10.06\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.10.23\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.12.12\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.23.13\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.45.38\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.52.31\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.52.42\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 10.56.30\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 11.00.10\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 11.01.19\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 11.01.43\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 11.12.14\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 12.45.38\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 12.45.42\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 12.46.30\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.00.41\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.04.39\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.08.14\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.08.16\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.22.02\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.31.20\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.41.04\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.43.56\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
-    "from": "Screenshot 2026-03-14 at 9.50.43\u202fAM",
-    "to": "march-14-2026",
-    "weight": 0.9
-  },
-  {
     "from": "three-layer-neurograph-navigation-proven",
     "to": "march-14-2026",
     "weight": 1.0
@@ -16283,5 +15938,360 @@
     "from": "full-sovereignty-loop-confirmed",
     "to": "live-voice-line-confirmed",
     "weight": 0.8
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-092421",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-104716",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-094721",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-090613",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773426001546",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-110526",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-090101",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-111634",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-085640",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-091836",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773461265886",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-114307",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-111904",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-101020",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773425292202",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-100429",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-105943",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-104642",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-091705",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-101218",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-110104",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-111333",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-105113",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-092119",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-105515",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-104433",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-092653",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773461516328",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-094223",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-095738",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-010459",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-093550",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773426411162",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-091147",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773425769113",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-111149",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-101348",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773461405046",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-105302",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-111546",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-114813",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-104601",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-090846",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-094841",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-094942",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-114512",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.00.41\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.50.43\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.10.06\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.04.39\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 12.45.38\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 11.01.19\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.07.57\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 11.12.14\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.52.42\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.56.30\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.31.20\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.45.38\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.52.31\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.22.02\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.43.56\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.10.23\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 12.45.42\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 11.00.10\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.23.13\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.08.16\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 11.01.43\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 12.46.30\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.41.04\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 10.12.12\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "Screenshot 2026-03-14 at 9.08.14\u202fAM",
+    "to": "march-14-2026",
+    "weight": 0.9
   }
 ]
