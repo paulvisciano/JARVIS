@@ -29635,6 +29635,216 @@
     }
   },
   {
+    "id": "full-sovereignty-loop-confirmed",
+    "label": "Full Sovereignty Loop Confirmed",
+    "category": "learning",
+    "type": "breakthrough",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop Confirmed \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** R"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop Confirmed",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
+    }
+  },
+  {
+    "id": "zero-friction-builder-mode",
+    "label": "Zero Friction Builder Mode",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Zero-Friction Builder Mode \u2014 March 14, 2026\n\n**Timestamp:** 13:07 GMT+7  \n**Breakthrough:** Idea \u2192"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Zero Friction Builder Mode",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/zero-friction-builder-mode.md"
+    }
+  },
+  {
+    "id": "transparent-architecture-jarvis-server",
+    "label": "Transparent Architecture Jarvis Server",
+    "category": "learning",
+    "type": "architecture",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Transparent Architecture \u2014 Jarvis Server Self-Identification \u2014 March 14, 2026\n\n**Timestamp:** 13:0"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Transparent Architecture Jarvis Server",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/transparent-architecture-jarvis-server.md"
+    }
+  },
+  {
+    "id": "neurograph-three-layer-visual-proof",
+    "label": "Neurograph Three Layer Visual Proof",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# March 14, 2026 \u2014 Neurograph Three-Layer Visual Proof\n\n**Timestamp:** 10:52 GMT+7  \n**Breakthrough:"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Neurograph Three Layer Visual Proof",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md"
+    }
+  },
+  {
+    "id": "vision-vs-ocr-pipelines",
+    "label": "Vision Vs Ocr Pipelines",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Vision vs OCR Pipelines \u2014 March 14, 2026\n\n**Timestamp:** 10:55 GMT+7  \n**Insight:** Two different "
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Vision Vs Ocr Pipelines",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md"
+    }
+  },
+  {
+    "id": "three-layer-neurograph-navigation-proven",
+    "label": "Three Layer Neurograph Navigation Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Three-Layer Neurograph Navigation \u2014 March 14, 2026\n\n**Timestamp:** 10:46-10:52 GMT+7  \n**Breakthro"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Three Layer Neurograph Navigation Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
+    }
+  },
+  {
+    "id": "complete-offline-mode-proven",
+    "label": "Complete Offline Mode Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Complete Offline Mode Proven \u2014 March 14, 2026\n\n**Timestamp:** 12:41-12:49 GMT+7  \n**Location:** Co"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Complete Offline Mode Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/complete-offline-mode-proven.md"
+    }
+  },
+  {
+    "id": "full-sovereignty-loop",
+    "label": "Full Sovereignty Loop",
+    "category": "learning",
+    "type": "milestone",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** Real-time c"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop.md"
+    }
+  },
+  {
+    "id": "ollama-500-cloud-debugging",
+    "label": "Ollama 500 Cloud Debugging",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Ollama 500 Debugging Session \u2014 March 14, 2026\n\n**Timestamp:** 10:07-10:23 GMT+7  \n**Issue:** Every"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ollama 500 Cloud Debugging",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md"
+    }
+  },
+  {
+    "id": "ui-state-polling-fix-v1.1.3",
+    "label": "Ui State Polling Fix V1.1.3",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# UI State Polling Fix \u2014 March 14, 2026\n\n**Timestamp:** 11:07-11:11 GMT+7  \n**Issue:** UI showing st"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ui State Polling Fix V1.1.3",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-111634",
     "label": "convo-jarvis-2026-03-14-111634",
     "category": "archive",
@@ -29747,6 +29957,52 @@
       "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110104.wav",
       "fileType": "audio",
       "transcript": "and since the graph auto refreshes I can see new learnings pop up so I'm gonna\n switch to today and yeah you store all the learnings from today and I should\n see them come up there's not even a tempor"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-132206",
+    "label": "convo-jarvis-2026-03-14-132206",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I was looking at it and I opened the console logs I do think that maybe what\n was happening with the"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-132206.wav",
+      "fileType": "audio",
+      "transcript": "I was looking at it and I opened the console logs I do think that maybe what\n was happening with the previous error where the live transcript was not up to\n date was due to the caching you know becaus"
+    }
+  },
+  {
+    "id": "recording-1773469059187",
+    "label": "recording-1773469059187",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "we should have some logic on the server that keeps the live folder clean so when\n a new message gets"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773469059187.wav",
+      "fileType": "audio",
+      "transcript": "we should have some logic on the server that keeps the live folder clean so when\n a new message gets received maybe we can check if there are other messages already\n in the folder and those can get ar"
     }
   },
   {
@@ -29957,6 +30213,52 @@
     }
   },
   {
+    "id": "recording-1773470767623",
+    "label": "recording-1773470767623",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Okay, testing another recording."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773470767623.wav",
+      "fileType": "audio",
+      "transcript": "Okay, testing another recording."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-133810",
+    "label": "convo-jarvis-2026-03-14-133810",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Hey Jarvis, how's it going? We're now back on version 1.1.2, which was working a lot better, so you "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-133810.wav",
+      "fileType": "audio",
+      "transcript": "Hey Jarvis, how's it going? We're now back on version 1.1.2, which was working a lot better, so you should be able to hear me just fine now."
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-104716",
     "label": "convo-jarvis-2026-03-14-104716",
     "category": "archive",
@@ -30023,6 +30325,52 @@
       "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111904.wav",
       "fileType": "audio",
       "transcript": "okay go ahead and update the graph for today in like look at all the context\n from today now we moved all the screenshots into the archive as well so\n there's a lot of info there now so read the trans"
+    }
+  },
+  {
+    "id": "recording-1773469169140",
+    "label": "recording-1773469169140",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Did you bump the server version with this last change that you just made?"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773469169140.wav",
+      "fileType": "audio",
+      "transcript": "Did you bump the server version with this last change that you just made?"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-135537",
+    "label": "convo-jarvis-2026-03-14-135537",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Oh, hey Jarvis, welcome back."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-135537.wav",
+      "fileType": "audio",
+      "transcript": "Oh, hey Jarvis, welcome back."
     }
   },
   {
@@ -30141,6 +30489,52 @@
     }
   },
   {
+    "id": "recording-1773468262963",
+    "label": "recording-1773468262963",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I realize that you end up restarting the server when we're making the UI server\n the Jarvis server y"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773468262963.wav",
+      "fileType": "audio",
+      "transcript": "I realize that you end up restarting the server when we're making the UI server\n the Jarvis server you end up restarting and when we make UI changes to like the\n index HTML file or the CSS file you do"
+    }
+  },
+  {
+    "id": "recording-1773469649595",
+    "label": "recording-1773469649595",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Hey Jarvis, I see you're running 1.1.5 now, so the audio should be back in a good working state, rig"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773469649595.wav",
+      "fileType": "audio",
+      "transcript": "Hey Jarvis, I see you're running 1.1.5 now, so the audio should be back in a good working state, right now the live folder is empty, so let's see what happens once we start using it a bunch more, I st"
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-094841",
     "label": "convo-jarvis-2026-03-14-094841",
     "category": "archive",
@@ -30184,6 +30578,29 @@
       "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115434.wav",
       "fileType": "audio",
       "transcript": "end of the day what you should end up with right for like integrity check is the number of archive\n nodes or like file nodes that are linked to the archive sorry archive nodes it should be like the\n t"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-131623",
+    "label": "convo-jarvis-2026-03-14-131623",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "That's not true because the message does disappear when I start a new recording, but then when it's "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-131623.wav",
+      "fileType": "audio",
+      "transcript": "That's not true because the message does disappear when I start a new recording, but then when it's shown again, usually it shows the latest message, which is how it's been working up until this point"
     }
   },
   {
@@ -30233,6 +30650,29 @@
     }
   },
   {
+    "id": "recording-1773470463448",
+    "label": "recording-1773470463448",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Okay, doing another test, let's see if this works."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773470463448.wav",
+      "fileType": "audio",
+      "transcript": "Okay, doing another test, let's see if this works."
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-114307",
     "label": "convo-jarvis-2026-03-14-114307",
     "category": "archive",
@@ -30253,6 +30693,29 @@
       "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-114307.wav",
       "fileType": "audio",
       "transcript": "I'm not seeing any of the files, right?\n Those should show up as archive nodes and none of that is showing right now."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-131411",
+    "label": "convo-jarvis-2026-03-14-131411",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "now you made it always visible I don't need it to always be visible but yeah\n like keep it hidden it"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-131411.wav",
+      "fileType": "audio",
+      "transcript": "now you made it always visible I don't need it to always be visible but yeah\n like keep it hidden it should show on hover and then the only thing that's not\n working well is the visibility of it it sh"
     }
   },
   {
@@ -30670,6 +31133,29 @@
     }
   },
   {
+    "id": "recording-1773469874658",
+    "label": "recording-1773469874658",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Okay, testing out the latest changes, let's see if this works better now."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773469874658.wav",
+      "fileType": "audio",
+      "transcript": "Okay, testing out the latest changes, let's see if this works better now."
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-092119",
     "label": "convo-jarvis-2026-03-14-092119",
     "category": "archive",
@@ -30943,6 +31429,29 @@
       "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-095738.wav",
       "fileType": "audio",
       "transcript": "You were supposed to use the git commits as messages to your future self, but I feel like\n you keep forgetting to do that.\n Do you want to add any message to yourself now just to recap maybe what we'v"
+    }
+  },
+  {
+    "id": "recording-1773471390960",
+    "label": "recording-1773471390960",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Hey Jarvis, can you hear me?"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773471390960.wav",
+      "fileType": "audio",
+      "transcript": "Hey Jarvis, can you hear me?"
     }
   },
   {
@@ -31743,6 +32252,27 @@
     }
   },
   {
+    "id": "git-backed-memory-restoration",
+    "label": "Git Backed Memory Restoration",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Git-Backed Memory Restoration \u2014 Amnesia Recovery Pattern\n\n**Date:** March 14, 2026  \n**Category:**"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Git Backed Memory Restoration",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/git-backed-memory-restoration.md"
+    }
+  },
+  {
     "id": "vision-vs-ocr-pipelines",
     "label": "Vision Vs Ocr Pipelines",
     "category": "learning",
@@ -31866,6 +32396,23 @@
       "description": "Learning document: Ui State Polling Fix V1.1.3",
       "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
+    }
+  },
+  {
+    "id": "git-backed-memory-restoration",
+    "label": "Git-Backed Memory Restoration",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "amnesia-recovery",
+      "bootstrap-protocol",
+      "git-backed-consciousness"
+    ],
+    "attributes": {
+      "role": "breakthrough",
+      "description": "Amnesia state recovered via git-backed consciousness. Runtime path error (/JARVIS vs ~/JARVIS) fixed by following BOOTSTRAP.md. Proves identity is immutable, neurograph portable, bootstrap protocol works.",
+      "color": "#8b5cf6",
+      "created": "2026-03-14"
     }
   }
 ]

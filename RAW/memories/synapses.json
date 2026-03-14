@@ -16060,6 +16060,56 @@
     "weight": 0.9
   },
   {
+    "from": "full-sovereignty-loop-confirmed",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "zero-friction-builder-mode",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "transparent-architecture-jarvis-server",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "neurograph-three-layer-visual-proof",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "vision-vs-ocr-pipelines",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "three-layer-neurograph-navigation-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "complete-offline-mode-proven",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "full-sovereignty-loop",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ollama-500-cloud-debugging",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "ui-state-polling-fix-v1.1.3",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "convo-jarvis-2026-03-14-111634",
     "to": "20260314",
     "weight": 0.9
@@ -16081,6 +16131,16 @@
   },
   {
     "from": "convo-jarvis-2026-03-14-110104",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-132206",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773469059187",
     "to": "20260314",
     "weight": 0.9
   },
@@ -16130,6 +16190,16 @@
     "weight": 0.9
   },
   {
+    "from": "recording-1773470767623",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-133810",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "convo-jarvis-2026-03-14-104716",
     "to": "20260314",
     "weight": 0.9
@@ -16141,6 +16211,16 @@
   },
   {
     "from": "convo-jarvis-2026-03-14-111904",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773469169140",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-135537",
     "to": "20260314",
     "weight": 0.9
   },
@@ -16170,12 +16250,27 @@
     "weight": 0.9
   },
   {
+    "from": "recording-1773468262963",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773469649595",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "convo-jarvis-2026-03-14-094841",
     "to": "20260314",
     "weight": 0.9
   },
   {
     "from": "convo-jarvis-2026-03-14-115434",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-131623",
     "to": "20260314",
     "weight": 0.9
   },
@@ -16190,7 +16285,17 @@
     "weight": 0.9
   },
   {
+    "from": "recording-1773470463448",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "convo-jarvis-2026-03-14-114307",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "convo-jarvis-2026-03-14-131411",
     "to": "20260314",
     "weight": 0.9
   },
@@ -16285,6 +16390,11 @@
     "weight": 0.9
   },
   {
+    "from": "recording-1773469874658",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "convo-jarvis-2026-03-14-092119",
     "to": "20260314",
     "weight": 0.9
@@ -16341,6 +16451,11 @@
   },
   {
     "from": "convo-jarvis-2026-03-14-095738",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
+    "from": "recording-1773471390960",
     "to": "20260314",
     "weight": 0.9
   },
@@ -16520,6 +16635,11 @@
     "weight": 0.9
   },
   {
+    "from": "git-backed-memory-restoration",
+    "to": "20260314",
+    "weight": 0.9
+  },
+  {
     "from": "vision-vs-ocr-pipelines",
     "to": "20260314",
     "weight": 0.9
@@ -16548,5 +16668,11 @@
     "from": "ui-state-polling-fix-v1.1.3",
     "to": "20260314",
     "weight": 0.9
+  },
+  {
+    "source": "git-backed-memory-restoration",
+    "target": "march-14-2026",
+    "weight": 1,
+    "type": "learned-today"
   }
 ]
