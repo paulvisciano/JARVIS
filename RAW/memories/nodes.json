@@ -29048,12 +29048,12 @@
       "2026-03-14T10:23"
     ],
     "attributes": {
-      "role": "cloud endpoint debugging",
       "description": "qwen3.5:cloud remote model hitting 500s \u2014 intermittent timeout vs fast fail",
-      "color": "#f97316",
+      "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md",
       "created": "2026-03-14"
-    }
+    },
+    "subtype": "cloud-endpoint"
   },
   {
     "id": "ui-state-polling-fix-v1.1.3",
@@ -29065,12 +29065,12 @@
       "2026-03-14T11:11"
     ],
     "attributes": {
-      "role": "UX improvement",
       "description": "Extended polling to 120s, dynamic status text, timeout handling",
-      "color": "#3b82f6",
+      "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md",
       "created": "2026-03-14"
-    }
+    },
+    "subtype": "polling-architecture"
   },
   {
     "id": "convo-jarvis-2026-03-14-010459",
@@ -30674,11 +30674,11 @@
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "architecture proof",
       "description": "First visual confirmation of three-layer memory architecture working \u2014 navigation pattern proven by restoring context",
-      "color": "#22c55e",
+      "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
-    }
+    },
+    "subtype": "architecture-proof"
   },
   {
     "id": "full-sovereignty-loop-confirmed",
@@ -30695,10 +30695,10 @@
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "workflow milestone",
       "description": "Real-time closed loop confirmed \u2014 three windows (voice UI, gateway chat, neurograph) working as one sovereignty loop",
-      "color": "#22c55e",
+      "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
-    }
+    },
+    "subtype": "workflow"
   }
 ]
