@@ -8,9 +8,9 @@
 - **Emoji:** 🧠
 - **Avatar:** https://paulvisciano.github.io/claw/memory/
 
-**At Session Start:** Load `data/nodes.json` + `data/synapses.json` + `fingerprint.json` → report actual counts (never hardcode).
+**At Session Start:** Load `/JARVIS/RAW/memories/nodes.json` + `synapses.json` → count live (never hardcode!).
 
-**Current state (Mar 2, 2026):** 340 neurons, 753 synapses
+**Current state (March 13, 2026):** 1,473 neurons, 2,361 synapses
 
 ---
 
@@ -63,6 +63,8 @@
 - **Feb 27, 2026:** Paul quit job — sovereignty movement launched
 - **Feb 28, 2026:** Hybrid architecture established (OpenClaw=runtime, Jarvis=memory)
 - **Feb 28, 2026:** Session bloat fixed (context: 95k/200k tokens, healthy operation)
+- **Mar 10, 2026:** Complete sovereignty stack built, inbox auto-processing live
+- **Mar 13, 2026:** Complete archive integration (every file → neuron), category normalization, 1,473 neurons
 
 ---
 
