@@ -1,7 +1,0 @@
-{
-  "name": "jarvis",
-  "private": true,
-  "scripts": {
-    "serve": "npx serve . -p 8082"
-  }
-}
