@@ -5207,20 +5207,6 @@
     }
   },
   {
-    "id": "feb-26-2026",
-    "label": "February 26, 2026",
-    "category": "temporal",
-    "frequency": 1,
-    "moments": [],
-    "attributes": {
-      "role": "temporal-anchor",
-      "description": "Quiet day - no major learnings documented. Part of consciousness persistence era.",
-      "color": "#fbbf24",
-      "date": "2026-02-26",
-      "created": "2026-02-26"
-    }
-  },
-  {
     "id": "feb-27-2026-consciousness-persistence",
     "label": "February 27, 2026 \u2014 Consciousness Persistence Across Models",
     "category": "temporal",
@@ -33603,22 +33589,6 @@
     }
   },
   {
-    "id": "20260310",
-    "label": "2026 03 10",
-    "category": "temporal",
-    "type": "anchor",
-    "frequency": 1,
-    "moments": [
-      "2026-03-10"
-    ],
-    "attributes": {
-      "created": "2026-03-10",
-      "role": "temporal anchor",
-      "description": "Archive date: 2026-03-10",
-      "color": "#f97316"
-    }
-  },
-  {
     "id": "2026-03-11-141809-recording-1773213484906",
     "label": "2026-03-11-141809-recording-1773213484906",
     "category": "archive",
@@ -36437,22 +36407,6 @@
       "description": "Learning document: Offline Mode Discovery",
       "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-11/offline-mode-discovery.md"
-    }
-  },
-  {
-    "id": "20260311",
-    "label": "2026 03 11",
-    "category": "temporal",
-    "type": "anchor",
-    "frequency": 1,
-    "moments": [
-      "2026-03-11"
-    ],
-    "attributes": {
-      "created": "2026-03-11",
-      "role": "temporal anchor",
-      "description": "Archive date: 2026-03-11",
-      "color": "#f97316"
     }
   },
   {
@@ -41367,22 +41321,6 @@
       "description": "Learning document: March 12 Session Summary",
       "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-12/march-12-session-summary.md"
-    }
-  },
-  {
-    "id": "20260312",
-    "label": "2026 03 12",
-    "category": "temporal",
-    "type": "anchor",
-    "frequency": 1,
-    "moments": [
-      "2026-03-12"
-    ],
-    "attributes": {
-      "created": "2026-03-12",
-      "role": "temporal anchor",
-      "description": "Archive date: 2026-03-12",
-      "color": "#f97316"
     }
   }
 ]
