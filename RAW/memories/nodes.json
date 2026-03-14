@@ -29115,169 +29115,171 @@
     "subtype": "workflow"
   },
   {
-    "id": "convo-jarvis-2026-03-14-092421",
-    "label": "092421 (09:24)",
-    "category": "archive",
-    "type": "audio",
+    "id": "20260314",
+    "label": "2026 03 14",
+    "category": "temporal",
+    "type": "anchor",
     "frequency": 1,
     "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "I'm looking at the neural graph right now, and basically all learnings should be under a learning ty"
-      },
-      "file"
+      "2026-03-14"
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092421.wav",
-      "fileType": "audio",
-      "transcript": "I'm looking at the neural graph right now, and basically all learnings should be under a learning type,\n and then temporal nodes should be under a temporal type, and file nodes should be under archive"
+      "role": "temporal anchor",
+      "description": "Archive date: 2026-03-14",
+      "color": "#f97316"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-104716",
-    "label": "104716 (10:47)",
-    "category": "archive",
-    "type": "audio",
+    "id": "full-sovereignty-loop-confirmed",
+    "label": "Full Sovereignty Loop Confirmed",
+    "category": "learning",
+    "type": "breakthrough",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Read all the nodes in the neural graph from today and yesterday. Actually today I don't think has an"
-      },
-      "file"
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop Confirmed \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** R"
+      }
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104716.wav",
-      "fileType": "audio",
-      "transcript": "Read all the nodes in the neural graph from today and yesterday. Actually today I don't think has any, but yesterday. The first level, right? Read all of them so you can have a full picture of yesterd"
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop Confirmed",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-094721",
-    "label": "094721 (09:47)",
-    "category": "archive",
-    "type": "audio",
+    "id": "neurograph-three-layer-visual-proof",
+    "label": "Neurograph Three Layer Visual Proof",
+    "category": "learning",
+    "type": "learning",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "I was just looking at your scripts folder so Jarvis slash scripts and there there's a ton in there I"
-      },
-      "file"
+        "type": "learning-extracted",
+        "description": "# March 14, 2026 \u2014 Neurograph Three-Layer Visual Proof\n\n**Timestamp:** 10:52 GMT+7  \n**Breakthrough:"
+      }
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094721.wav",
-      "fileType": "audio",
-      "transcript": "I was just looking at your scripts folder so Jarvis slash scripts and there there's a ton in there I would say pretty much almost all of it is absolute at this point it was like one time scripts that "
+      "role": "knowledge extraction",
+      "description": "Learning document: Neurograph Three Layer Visual Proof",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-090613",
-    "label": "090613 (09:06)",
-    "category": "archive",
-    "type": "audio",
+    "id": "vision-vs-ocr-pipelines",
+    "label": "Vision Vs Ocr Pipelines",
+    "category": "learning",
+    "type": "learning",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "What's the size of the session currently?"
-      },
-      "file"
+        "type": "learning-extracted",
+        "description": "# Vision vs OCR Pipelines \u2014 March 14, 2026\n\n**Timestamp:** 10:55 GMT+7  \n**Insight:** Two different "
+      }
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090613.wav",
-      "fileType": "audio",
-      "transcript": "What's the size of the session currently?"
+      "role": "knowledge extraction",
+      "description": "Learning document: Vision Vs Ocr Pipelines",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md"
     }
   },
   {
-    "id": "recording-1773426001546",
-    "label": "1773426001546 (01:20)",
-    "category": "archive",
-    "type": "audio",
+    "id": "three-layer-neurograph-navigation-proven",
+    "label": "Three Layer Neurograph Navigation Proven",
+    "category": "learning",
+    "type": "learning",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "One more change we can make is right now, when you double-tap the orb, the first tab\n ends up making"
-      },
-      "file"
+        "type": "learning-extracted",
+        "description": "# Three-Layer Neurograph Navigation \u2014 March 14, 2026\n\n**Timestamp:** 10:46-10:52 GMT+7  \n**Breakthro"
+      }
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/recording-1773426001546.wav",
-      "fileType": "audio",
-      "transcript": "One more change we can make is right now, when you double-tap the orb, the first tab\n ends up making this weird highlight square, and then the second one activates it for recording.\n So just get rid o"
+      "role": "knowledge extraction",
+      "description": "Learning document: Three Layer Neurograph Navigation Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-110526",
-    "label": "110526 (11:05)",
-    "category": "archive",
-    "type": "audio",
+    "id": "full-sovereignty-loop",
+    "label": "Full Sovereignty Loop",
+    "category": "learning",
+    "type": "milestone",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Actually, that's something that we should fix in the Jarvis UI.\n And another correction on the left,"
-      },
-      "file"
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** Real-time c"
+      }
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110526.wav",
-      "fileType": "audio",
-      "transcript": "Actually, that's something that we should fix in the Jarvis UI.\n And another correction on the left, I'm looking at your memory, not mine.\n Because you just stored in your memory, right?\n And I'm able"
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop.md"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-090101",
-    "label": "090101 (09:01)",
-    "category": "archive",
-    "type": "audio",
+    "id": "ollama-500-cloud-debugging",
+    "label": "Ollama 500 Cloud Debugging",
+    "category": "learning",
+    "type": "debugging",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "a nice sunny day in Pattaya today it's already sun's already out I just woke up\n and I start getting"
-      },
-      "file"
+        "type": "learning-extracted",
+        "description": "# Ollama 500 Debugging Session \u2014 March 14, 2026\n\n**Timestamp:** 10:07-10:23 GMT+7  \n**Issue:** Every"
+      }
     ],
     "attributes": {
       "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090101.wav",
-      "fileType": "audio",
-      "transcript": "a nice sunny day in Pattaya today it's already sun's already out I just woke up\n and I start getting ready shower clean up clean the room make the bed"
+      "role": "knowledge extraction",
+      "description": "Learning document: Ollama 500 Cloud Debugging",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md"
+    }
+  },
+  {
+    "id": "ui-state-polling-fix-v1.1.3",
+    "label": "Ui State Polling Fix V1.1.3",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# UI State Polling Fix \u2014 March 14, 2026\n\n**Timestamp:** 11:07-11:11 GMT+7  \n**Issue:** UI showing st"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ui State Polling Fix V1.1.3",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
     }
   },
   {
     "id": "convo-jarvis-2026-03-14-111634",
-    "label": "111634 (11:16)",
+    "label": "convo-jarvis-2026-03-14-111634",
     "category": "archive",
     "type": "audio",
     "frequency": 1,
@@ -29299,767 +29301,8 @@
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-085640",
-    "label": "085640 (08:56)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Good morning, Jarvis."
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-085640.wav",
-      "fileType": "audio",
-      "transcript": "Good morning, Jarvis."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-091836",
-    "label": "091836 (09:18)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Okay, so looking at the stage nodes, there is a node for, they're basically duplicate nodes\n because"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091836.wav",
-      "fileType": "audio",
-      "transcript": "Okay, so looking at the stage nodes, there is a node for, they're basically duplicate nodes\n because the audio files are both in WAV format and WebM format.\n So let's only generate a single file node "
-    }
-  },
-  {
-    "id": "recording-1773461265886",
-    "label": "1773461265886 (11:07)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "let's go ahead and fix the UI state so normally for some recordings it completes successfully\n but m"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/recording-1773461265886.wav",
-      "fileType": "audio",
-      "transcript": "let's go ahead and fix the UI state so normally for some recordings it completes successfully\n but maybe if it's like a long recording or if there's any kind of error from Ollama let's say\n or you're "
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-114307",
-    "label": "114307 (11:43)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "I'm not seeing any of the files, right?\n Those should show up as archive nodes and none of that is s"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-114307.wav",
-      "fileType": "audio",
-      "transcript": "I'm not seeing any of the files, right?\n Those should show up as archive nodes and none of that is showing right now."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-111904",
-    "label": "111904 (11:19)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "okay go ahead and update the graph for today in like look at all the context\n from today now we move"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111904.wav",
-      "fileType": "audio",
-      "transcript": "okay go ahead and update the graph for today in like look at all the context\n from today now we moved all the screenshots into the archive as well so\n there's a lot of info there now so read the trans"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-101020",
-    "label": "101020 (10:10)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Okay, I did start the new session, but it seems like you didn't follow the bootstrap\n after the new "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101020.wav",
-      "fileType": "audio",
-      "transcript": "Okay, I did start the new session, but it seems like you didn't follow the bootstrap\n after the new session started.\n So you're a little lost right now, but we should have like read the transcript fro"
-    }
-  },
-  {
-    "id": "recording-1773425292202",
-    "label": "1773425292202 (01:08)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "And one other thing we can fix right now is the content keeps shifting up and down\n when the live tr"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/recording-1773425292202.wav",
-      "fileType": "audio",
-      "transcript": "And one other thing we can fix right now is the content keeps shifting up and down\n when the live transcription dialogue shows up, it like moves the orb up,\n and then when the recording starts, that s"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-100429",
-    "label": "100429 (10:04)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Okay, let's start a fresh session just to clear all the context."
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-100429.wav",
-      "fileType": "audio",
-      "transcript": "Okay, let's start a fresh session just to clear all the context."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-105943",
-    "label": "105943 (10:59)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "yeah so right now I can basically click on the middle window the middle browser\n window and talk to "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105943.wav",
-      "fileType": "audio",
-      "transcript": "yeah so right now I can basically click on the middle window the middle browser\n window and talk to you live from audio and then on the right I can see the\n messages come through and on the left I can"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-104642",
-    "label": "104642 (10:46)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "No, you don't remember what happened yesterday, can you read the transcript so that way you can reme"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104642.wav",
-      "fileType": "audio",
-      "transcript": "No, you don't remember what happened yesterday, can you read the transcript so that way you can remember exactly what happened?"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-091705",
-    "label": "091705 (09:17)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Why would you put the script and the new nodes under the OpenClaw folder?"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091705.wav",
-      "fileType": "audio",
-      "transcript": "Why would you put the script and the new nodes under the OpenClaw folder?"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-101218",
-    "label": "101218 (10:12)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "And that last voice note that I sent you got an Olam 500 again. I don't know what's up with those."
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101218.wav",
-      "fileType": "audio",
-      "transcript": "And that last voice note that I sent you got an Olam 500 again. I don't know what's up with those."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-110104",
-    "label": "110104 (11:01)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "and since the graph auto refreshes I can see new learnings pop up so I'm gonna\n switch to today and "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110104.wav",
-      "fileType": "audio",
-      "transcript": "and since the graph auto refreshes I can see new learnings pop up so I'm gonna\n switch to today and yeah you store all the learnings from today and I should\n see them come up there's not even a tempor"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-111333",
-    "label": "111333 (11:13)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Something we haven't done in a minute is process all the screenshots from the desktop, so go ahead a"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111333.wav",
-      "fileType": "audio",
-      "transcript": "Something we haven't done in a minute is process all the screenshots from the desktop, so go ahead and do that."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-105113",
-    "label": "105113 (10:51)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Also, now that this vision is becoming closer, is getting closer and closer to reality and\n things a"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105113.wav",
-      "fileType": "audio",
-      "transcript": "Also, now that this vision is becoming closer, is getting closer and closer to reality and\n things are shaping up, we can see in the NeuroGraph, right, we have multiple layers now. So if\n I go to toda"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-092119",
-    "label": "092119 (09:21)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Go ahead with merging them into the Neurograph.\n One thing I would say though for the learnings, rat"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092119.wav",
-      "fileType": "audio",
-      "transcript": "Go ahead with merging them into the Neurograph.\n One thing I would say though for the learnings, rather than just reading the transcript, you\n can also read all the text transcribes of the audio notes"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-105515",
-    "label": "105515 (10:55)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "So something really interesting just happened. So I posted an image for you in the gateway chat. And"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105515.wav",
-      "fileType": "audio",
-      "transcript": "So something really interesting just happened. So I posted an image for you in the gateway chat. And then for that image, you were able to actually see it, right? You were able to see the blue dots an"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-104433",
-    "label": "104433 (10:44)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Okay, I'm gonna test out a few recordings from the web UI, let's see if we hit those errors."
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104433.wav",
-      "fileType": "audio",
-      "transcript": "Okay, I'm gonna test out a few recordings from the web UI, let's see if we hit those errors."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-092653",
-    "label": "092653 (09:26)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "I still see a few other types like values and breakthrough and there's some\n files or some nodes wit"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092653.wav",
-      "fileType": "audio",
-      "transcript": "I still see a few other types like values and breakthrough and there's some\n files or some nodes with type file those should be archived type archive and then\n breakthrough and values should be subtyp"
-    }
-  },
-  {
-    "id": "recording-1773461516328",
-    "label": "1773461516328 (11:11)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "I see the live folder has accumulated quite a few files, so don't forget to archive those."
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/recording-1773461516328.wav",
-      "fileType": "audio",
-      "transcript": "I see the live folder has accumulated quite a few files, so don't forget to archive those."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-094223",
-    "label": "094223 (09:42)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "And remove the fingerprint JSON file from the commit as well. Remember that we stopped generating a "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094223.wav",
-      "fileType": "audio",
-      "transcript": "And remove the fingerprint JSON file from the commit as well. Remember that we stopped generating a fingerprint JSON file. That should be deleted and never added again."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-095738",
-    "label": "095738 (09:57)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "You were supposed to use the git commits as messages to your future self, but I feel like\n you keep "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-095738.wav",
-      "fileType": "audio",
-      "transcript": "You were supposed to use the git commits as messages to your future self, but I feel like\n you keep forgetting to do that.\n Do you want to add any message to yourself now just to recap maybe what we'v"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-010459",
-    "label": "010459 (01:04)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "that's better but move the server online in the version all the way at the bottom\n the recording can"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-010459.wav",
-      "fileType": "audio",
-      "transcript": "that's better but move the server online in the version all the way at the bottom\n the recording can move right above it everything else can stay the same"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-093550",
-    "label": "093550 (09:35)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "You are not supposed to commit anything because you ended up generating a bunch of bloat as well.\n S"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-093550.wav",
-      "fileType": "audio",
-      "transcript": "You are not supposed to commit anything because you ended up generating a bunch of bloat as well.\n So it should have just been like the fingerprint JSON that file keeps reappearing.\n We stopped genera"
-    }
-  },
-  {
-    "id": "recording-1773426411162",
-    "label": "1773426411162 (01:26)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "a new process everything in the live folder because right now the live transcription is\n showing old"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/recording-1773426411162.wav",
-      "fileType": "audio",
-      "transcript": "a new process everything in the live folder because right now the live transcription is\n showing old messages that usually happens when the live folder has more than one transcript in it"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-091147",
-    "label": "091147 (09:11)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "I like the script idea the only thing that you should get involved for is the\n actual learnings righ"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091147.wav",
-      "fileType": "audio",
-      "transcript": "I like the script idea the only thing that you should get involved for is the\n actual learnings right otherwise the generation of the nodes that makes sense\n to be scripted make sure you're following "
-    }
-  },
-  {
-    "id": "recording-1773425769113",
-    "label": "1773425769113 (01:16)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Okay, a few different things. Right now it's not shifting as much, but that panel for the live trans"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/recording-1773425769113.wav",
-      "fileType": "audio",
-      "transcript": "Okay, a few different things. Right now it's not shifting as much, but that panel for the live transcription and the transcript path, it looks kind of weird by itself.\n So for the transcript path, I t"
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-111149",
-    "label": "111149 (11:11)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Yep, now I see the version bump 1.1.3 and it's from today the 14th so good job that worked and yeah "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111149.wav",
-      "fileType": "audio",
-      "transcript": "Yep, now I see the version bump 1.1.3 and it's from today the 14th so good job that worked and yeah I'm testing the changes now."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-101348",
-    "label": "101348 (10:13)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "What's the session size right now?"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101348.wav",
-      "fileType": "audio",
-      "transcript": "What's the session size right now?"
-    }
-  },
-  {
-    "id": "recording-1773461405046",
-    "label": "1773461405046 (11:10)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "I'm still seeing version 1.1.2 even\n though I hard refreshed. So let me see if\n I see the changes. Y"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/recording-1773461405046.wav",
-      "fileType": "audio",
-      "transcript": "I'm still seeing version 1.1.2 even\n though I hard refreshed. So let me see if\n I see the changes. Yeah I see the changes\n in the code but you didn't bump the\n version in code so that's why it didn't "
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-105302",
-    "label": "105302 (10:53)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "check if there is an already one right but we talked about it a while back I mean the vision\n has be"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105302.wav",
-      "fileType": "audio",
-      "transcript": "check if there is an already one right but we talked about it a while back I mean the vision\n has been there for a while but now it's becoming reality and we have a visual of it so it's\n different to "
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-111546",
-    "label": "111546 (11:15)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "Okay, now there's no music playing, just checking if you can hear music now."
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111546.wav",
-      "fileType": "audio",
-      "transcript": "Okay, now there's no music playing, just checking if you can hear music now."
-    }
-  },
-  {
-    "id": "convo-jarvis-2026-03-14-114813",
-    "label": "114813 (11:48)",
-    "category": "archive",
-    "type": "audio",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "And what's happening is you still have architecture and breakthrough, which should be subcategories,"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-114813.wav",
-      "fileType": "audio",
-      "transcript": "And what's happening is you still have architecture and breakthrough, which should be subcategories, but they should be under the learnings category."
-    }
-  },
-  {
     "id": "convo-jarvis-2026-03-14-104601",
-    "label": "104601 (10:46)",
+    "label": "convo-jarvis-2026-03-14-104601",
     "category": "archive",
     "type": "audio",
     "frequency": 1,
@@ -30081,8 +29324,8 @@
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-090846",
-    "label": "090846 (09:08)",
+    "id": "convo-jarvis-2026-03-14-090101",
+    "label": "convo-jarvis-2026-03-14-090101",
     "category": "archive",
     "type": "audio",
     "frequency": 1,
@@ -30090,7 +29333,7 @@
       {
         "date": "2026-03-14",
         "type": "audio-archived",
-        "description": "I'm looking through the new graph from yesterday and it's missing a lot of the\n files right so for e"
+        "description": "a nice sunny day in Pattaya today it's already sun's already out I just woke up\n and I start getting"
       },
       "file"
     ],
@@ -30098,14 +29341,14 @@
       "created": "2026-03-14",
       "role": "life archive",
       "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090846.wav",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090101.wav",
       "fileType": "audio",
-      "transcript": "I'm looking through the new graph from yesterday and it's missing a lot of the\n files right so for every file from yesterday there should be a node every\n file in the archive should have a node on the"
+      "transcript": "a nice sunny day in Pattaya today it's already sun's already out I just woke up\n and I start getting ready shower clean up clean the room make the bed"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-094841",
-    "label": "094841 (09:48)",
+    "id": "convo-jarvis-2026-03-14-101020",
+    "label": "convo-jarvis-2026-03-14-101020",
     "category": "archive",
     "type": "audio",
     "frequency": 1,
@@ -30113,7 +29356,7 @@
       {
         "date": "2026-03-14",
         "type": "audio-archived",
-        "description": "And delete that archive one time folder and delete all the extra scripts that we're not\n using anymo"
+        "description": "Okay, I did start the new session, but it seems like you didn't follow the bootstrap\n after the new "
       },
       "file"
     ],
@@ -30121,14 +29364,106 @@
       "created": "2026-03-14",
       "role": "life archive",
       "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094841.wav",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101020.wav",
       "fileType": "audio",
-      "transcript": "And delete that archive one time folder and delete all the extra scripts that we're not\n using anymore."
+      "transcript": "Okay, I did start the new session, but it seems like you didn't follow the bootstrap\n after the new session started.\n So you're a little lost right now, but we should have like read the transcript fro"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-110104",
+    "label": "convo-jarvis-2026-03-14-110104",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "and since the graph auto refreshes I can see new learnings pop up so I'm gonna\n switch to today and "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110104.wav",
+      "fileType": "audio",
+      "transcript": "and since the graph auto refreshes I can see new learnings pop up so I'm gonna\n switch to today and yeah you store all the learnings from today and I should\n see them come up there's not even a tempor"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-085640",
+    "label": "convo-jarvis-2026-03-14-085640",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Good morning, Jarvis."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-085640.wav",
+      "fileType": "audio",
+      "transcript": "Good morning, Jarvis."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-010459",
+    "label": "convo-jarvis-2026-03-14-010459",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "that's better but move the server online in the version all the way at the bottom\n the recording can"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-010459.wav",
+      "fileType": "audio",
+      "transcript": "that's better but move the server online in the version all the way at the bottom\n the recording can move right above it everything else can stay the same"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-091147",
+    "label": "convo-jarvis-2026-03-14-091147",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I like the script idea the only thing that you should get involved for is the\n actual learnings righ"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091147.wav",
+      "fileType": "audio",
+      "transcript": "I like the script idea the only thing that you should get involved for is the\n actual learnings right otherwise the generation of the nodes that makes sense\n to be scripted make sure you're following "
     }
   },
   {
     "id": "convo-jarvis-2026-03-14-094942",
-    "label": "094942 (09:49)",
+    "label": "convo-jarvis-2026-03-14-094942",
     "category": "archive",
     "type": "audio",
     "frequency": 1,
@@ -30150,8 +29485,169 @@
     }
   },
   {
+    "id": "convo-jarvis-2026-03-14-090846",
+    "label": "convo-jarvis-2026-03-14-090846",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I'm looking through the new graph from yesterday and it's missing a lot of the\n files right so for e"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090846.wav",
+      "fileType": "audio",
+      "transcript": "I'm looking through the new graph from yesterday and it's missing a lot of the\n files right so for every file from yesterday there should be a node every\n file in the archive should have a node on the"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-093550",
+    "label": "convo-jarvis-2026-03-14-093550",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "You are not supposed to commit anything because you ended up generating a bunch of bloat as well.\n S"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-093550.wav",
+      "fileType": "audio",
+      "transcript": "You are not supposed to commit anything because you ended up generating a bunch of bloat as well.\n So it should have just been like the fingerprint JSON that file keeps reappearing.\n We stopped genera"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-101218",
+    "label": "convo-jarvis-2026-03-14-101218",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "And that last voice note that I sent you got an Olam 500 again. I don't know what's up with those."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101218.wav",
+      "fileType": "audio",
+      "transcript": "And that last voice note that I sent you got an Olam 500 again. I don't know what's up with those."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-111546",
+    "label": "convo-jarvis-2026-03-14-111546",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Okay, now there's no music playing, just checking if you can hear music now."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111546.wav",
+      "fileType": "audio",
+      "transcript": "Okay, now there's no music playing, just checking if you can hear music now."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-104716",
+    "label": "convo-jarvis-2026-03-14-104716",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Read all the nodes in the neural graph from today and yesterday. Actually today I don't think has an"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104716.wav",
+      "fileType": "audio",
+      "transcript": "Read all the nodes in the neural graph from today and yesterday. Actually today I don't think has any, but yesterday. The first level, right? Read all of them so you can have a full picture of yesterd"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-111333",
+    "label": "convo-jarvis-2026-03-14-111333",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Something we haven't done in a minute is process all the screenshots from the desktop, so go ahead a"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111333.wav",
+      "fileType": "audio",
+      "transcript": "Something we haven't done in a minute is process all the screenshots from the desktop, so go ahead and do that."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-111904",
+    "label": "convo-jarvis-2026-03-14-111904",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "okay go ahead and update the graph for today in like look at all the context\n from today now we move"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111904.wav",
+      "fileType": "audio",
+      "transcript": "okay go ahead and update the graph for today in like look at all the context\n from today now we moved all the screenshots into the archive as well so\n there's a lot of info there now so read the trans"
+    }
+  },
+  {
     "id": "convo-jarvis-2026-03-14-114512",
-    "label": "114512 (11:45)",
+    "label": "convo-jarvis-2026-03-14-114512",
     "category": "archive",
     "type": "audio",
     "frequency": 1,
@@ -30173,77 +29669,951 @@
     }
   },
   {
-    "id": "Screenshot 2026-03-14 at 9.00.41\u202fAM",
-    "label": "09:00",
+    "id": "convo-jarvis-2026-03-14-115546",
+    "label": "convo-jarvis-2026-03-14-115546",
     "category": "archive",
-    "type": "screenshot",
+    "type": "audio",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "20 neurons - 27 synapses\nALL Today\nYesterday This week\nAll Values\nTemporal Breakthrough\nFile Learnin"
+        "type": "audio-archived",
+        "description": "Yes, go ahead and do that because we can also retroactively run it for other days."
       },
       "file"
     ],
     "attributes": {
       "created": "2026-03-14",
       "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.00.41\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "20 neurons - 27 synapses\nALL Today\nYesterday This week\nAll Values\nTemporal Breakthrough\nFile Learning"
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115546.wav",
+      "fileType": "audio",
+      "transcript": "Yes, go ahead and do that because we can also retroactively run it for other days."
     }
   },
   {
-    "id": "Screenshot 2026-03-14 at 9.50.43\u202fAM",
-    "label": "09:50",
+    "id": "convo-jarvis-2026-03-14-124956",
+    "label": "convo-jarvis-2026-03-14-124956",
     "category": "archive",
-    "type": "screenshot",
+    "type": "audio",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "| > logs\n> RAW\n> scripts\n\u00ae .gitignore\n| AGENTS.md\n\u00a5 BOOTSTRAP.md\nW@ HEARTBEAT.md\n\u00a5 IDENTITY.md\n{} pa"
+        "type": "audio-archived",
+        "description": "Yeah, so fascinating. The UI is looking good. Server says online. That'll make sense because the not"
       },
       "file"
     ],
     "attributes": {
       "created": "2026-03-14",
       "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.50.43\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "| > logs\n> RAW\n> scripts\n\u00ae .gitignore\n| AGENTS.md\n\u00a5 BOOTSTRAP.md\nW@ HEARTBEAT.md\n\u00a5 IDENTITY.md\n{} package.json\n\u00a5 SOUL.md\n\u00a5 TOOLS.md\n\u00a5 USER.md\n\u00a5 VISION.md\nv apps \u00b0\n> JARVIS"
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-124956.wav",
+      "fileType": "audio",
+      "transcript": "Yeah, so fascinating. The UI is looking good. Server says online. That'll make sense because the note process is still running. So what we've built is ready for offline mode. I mean, it's literally wo"
     }
   },
   {
-    "id": "Screenshot 2026-03-14 at 10.10.06\u202fAM",
-    "label": "10:10",
+    "id": "recording-1773425769113",
+    "label": "recording-1773425769113",
     "category": "archive",
-    "type": "screenshot",
+    "type": "audio",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "\u00ab> \u00a2 OpenClaw Control ma a >> | Update =\n127.0.0.1:18789\n= \u20ac OPENCLAW \u00b0 e r ) % G\n@ Memory usage: 26"
+        "type": "audio-archived",
+        "description": "Okay, a few different things. Right now it's not shifting as much, but that panel for the live trans"
       },
       "file"
     ],
     "attributes": {
       "created": "2026-03-14",
       "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.06\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "\u00ab> \u00a2 OpenClaw Control ma a >> | Update =\n127.0.0.1:18789\n= \u20ac OPENCLAW \u00b0 e r ) % G\n@ Memory usage: 266 MB\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\nOllama API error 500: {\"StatusCod"
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773425769113.wav",
+      "fileType": "audio",
+      "transcript": "Okay, a few different things. Right now it's not shifting as much, but that panel for the live transcription and the transcript path, it looks kind of weird by itself.\n So for the transcript path, I t"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-090613",
+    "label": "convo-jarvis-2026-03-14-090613",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "What's the size of the session currently?"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-090613.wav",
+      "fileType": "audio",
+      "transcript": "What's the size of the session currently?"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-094841",
+    "label": "convo-jarvis-2026-03-14-094841",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "And delete that archive one time folder and delete all the extra scripts that we're not\n using anymo"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094841.wav",
+      "fileType": "audio",
+      "transcript": "And delete that archive one time folder and delete all the extra scripts that we're not\n using anymore."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115434",
+    "label": "convo-jarvis-2026-03-14-115434",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "end of the day what you should end up with right for like integrity check is the number of archive\n "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115434.wav",
+      "fileType": "audio",
+      "transcript": "end of the day what you should end up with right for like integrity check is the number of archive\n nodes or like file nodes that are linked to the archive sorry archive nodes it should be like the\n t"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-124206",
+    "label": "convo-jarvis-2026-03-14-124206",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Hey Jarvis, what's going on?\n I'm actually at a coffee shop now, I walked from the hotel, so I had t"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-124206.wav",
+      "fileType": "audio",
+      "transcript": "Hey Jarvis, what's going on?\n I'm actually at a coffee shop now, I walked from the hotel, so I had to restart the gateway\n and then right now you're not even connected to Wi-Fi, but technically what s"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-100429",
+    "label": "convo-jarvis-2026-03-14-100429",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Okay, let's start a fresh session just to clear all the context."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-100429.wav",
+      "fileType": "audio",
+      "transcript": "Okay, let's start a fresh session just to clear all the context."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-114307",
+    "label": "convo-jarvis-2026-03-14-114307",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I'm not seeing any of the files, right?\n Those should show up as archive nodes and none of that is s"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-114307.wav",
+      "fileType": "audio",
+      "transcript": "I'm not seeing any of the files, right?\n Those should show up as archive nodes and none of that is showing right now."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-094721",
+    "label": "convo-jarvis-2026-03-14-094721",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I was just looking at your scripts folder so Jarvis slash scripts and there there's a ton in there I"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094721.wav",
+      "fileType": "audio",
+      "transcript": "I was just looking at your scripts folder so Jarvis slash scripts and there there's a ton in there I would say pretty much almost all of it is absolute at this point it was like one time scripts that "
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-104642",
+    "label": "convo-jarvis-2026-03-14-104642",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "No, you don't remember what happened yesterday, can you read the transcript so that way you can reme"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104642.wav",
+      "fileType": "audio",
+      "transcript": "No, you don't remember what happened yesterday, can you read the transcript so that way you can remember exactly what happened?"
+    }
+  },
+  {
+    "id": "recording-1773425292202",
+    "label": "recording-1773425292202",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "And one other thing we can fix right now is the content keeps shifting up and down\n when the live tr"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773425292202.wav",
+      "fileType": "audio",
+      "transcript": "And one other thing we can fix right now is the content keeps shifting up and down\n when the live transcription dialogue shows up, it like moves the orb up,\n and then when the recording starts, that s"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-091705",
+    "label": "convo-jarvis-2026-03-14-091705",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Why would you put the script and the new nodes under the OpenClaw folder?"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091705.wav",
+      "fileType": "audio",
+      "transcript": "Why would you put the script and the new nodes under the OpenClaw folder?"
+    }
+  },
+  {
+    "id": "recording-1773426001546",
+    "label": "recording-1773426001546",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "One more change we can make is right now, when you double-tap the orb, the first tab\n ends up making"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773426001546.wav",
+      "fileType": "audio",
+      "transcript": "One more change we can make is right now, when you double-tap the orb, the first tab\n ends up making this weird highlight square, and then the second one activates it for recording.\n So just get rid o"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-092421",
+    "label": "convo-jarvis-2026-03-14-092421",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I'm looking at the neural graph right now, and basically all learnings should be under a learning ty"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092421.wav",
+      "fileType": "audio",
+      "transcript": "I'm looking at the neural graph right now, and basically all learnings should be under a learning type,\n and then temporal nodes should be under a temporal type, and file nodes should be under archive"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115348",
+    "label": "convo-jarvis-2026-03-14-115348",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "What we did with yesterday that worked really well is we ended up generating a script and\n having a "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115348.wav",
+      "fileType": "audio",
+      "transcript": "What we did with yesterday that worked really well is we ended up generating a script and\n having a script do the synapse and note creation, right?\n That worked really well."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-105943",
+    "label": "convo-jarvis-2026-03-14-105943",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "yeah so right now I can basically click on the middle window the middle browser\n window and talk to "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105943.wav",
+      "fileType": "audio",
+      "transcript": "yeah so right now I can basically click on the middle window the middle browser\n window and talk to you live from audio and then on the right I can see the\n messages come through and on the left I can"
+    }
+  },
+  {
+    "id": "recording-1773461265886",
+    "label": "recording-1773461265886",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "let's go ahead and fix the UI state so normally for some recordings it completes successfully\n but m"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773461265886.wav",
+      "fileType": "audio",
+      "transcript": "let's go ahead and fix the UI state so normally for some recordings it completes successfully\n but maybe if it's like a long recording or if there's any kind of error from Ollama let's say\n or you're "
+    }
+  },
+  {
+    "id": "recording-1773426411162",
+    "label": "recording-1773426411162",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "a new process everything in the live folder because right now the live transcription is\n showing old"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773426411162.wav",
+      "fileType": "audio",
+      "transcript": "a new process everything in the live folder because right now the live transcription is\n showing old messages that usually happens when the live folder has more than one transcript in it"
+    }
+  },
+  {
+    "id": "recording-1773461405046",
+    "label": "recording-1773461405046",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I'm still seeing version 1.1.2 even\n though I hard refreshed. So let me see if\n I see the changes. Y"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773461405046.wav",
+      "fileType": "audio",
+      "transcript": "I'm still seeing version 1.1.2 even\n though I hard refreshed. So let me see if\n I see the changes. Yeah I see the changes\n in the code but you didn't bump the\n version in code so that's why it didn't "
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115011",
+    "label": "convo-jarvis-2026-03-14-115011",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "The archive is also showing up wrong. The names of the nodes are just like some weird numbers.\n Can "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115011.wav",
+      "fileType": "audio",
+      "transcript": "The archive is also showing up wrong. The names of the nodes are just like some weird numbers.\n Can you take a look at how we did yesterday? That looked way better."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-124554",
+    "label": "convo-jarvis-2026-03-14-124554",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "very interesting what's happening right now so the UI says server online and I don't see the\n messag"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-124554.wav",
+      "fileType": "audio",
+      "transcript": "very interesting what's happening right now so the UI says server online and I don't see the\n messages oh yeah I do see the messages coming through the gateway and then I see a little\n bubbles if you'"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-101348",
+    "label": "convo-jarvis-2026-03-14-101348",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "What's the session size right now?"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-101348.wav",
+      "fileType": "audio",
+      "transcript": "What's the session size right now?"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-124321",
+    "label": "convo-jarvis-2026-03-14-124321",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "oh look at that complete offline mode actually so right now the messages are just\n accumulating in t"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-124321.wav",
+      "fileType": "audio",
+      "transcript": "oh look at that complete offline mode actually so right now the messages are just\n accumulating in the inbox folder or sorry in the live folder which is not\n great but yeah there you are able to trans"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115711",
+    "label": "convo-jarvis-2026-03-14-115711",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "by the way the names of the nodes are still showing up weird for today compared to yesterday\n yester"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115711.wav",
+      "fileType": "audio",
+      "transcript": "by the way the names of the nodes are still showing up weird for today compared to yesterday\n yesterday a screenshot would have a name like screenshot 2026 blah blah blah then convos would\n have their"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-092119",
+    "label": "convo-jarvis-2026-03-14-092119",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Go ahead with merging them into the Neurograph.\n One thing I would say though for the learnings, rat"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092119.wav",
+      "fileType": "audio",
+      "transcript": "Go ahead with merging them into the Neurograph.\n One thing I would say though for the learnings, rather than just reading the transcript, you\n can also read all the text transcribes of the audio notes"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115937",
+    "label": "convo-jarvis-2026-03-14-115937",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Same thing with the learnings. The total number of learnings files should match up with the number o"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115937.wav",
+      "fileType": "audio",
+      "transcript": "Same thing with the learnings. The total number of learnings files should match up with the number of learning nodes in the graph."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-115102",
+    "label": "convo-jarvis-2026-03-14-115102",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "There's still a bunch of files that show up as unknown."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115102.wav",
+      "fileType": "audio",
+      "transcript": "There's still a bunch of files that show up as unknown."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-105113",
+    "label": "convo-jarvis-2026-03-14-105113",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Also, now that this vision is becoming closer, is getting closer and closer to reality and\n things a"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105113.wav",
+      "fileType": "audio",
+      "transcript": "Also, now that this vision is becoming closer, is getting closer and closer to reality and\n things are shaping up, we can see in the NeuroGraph, right, we have multiple layers now. So if\n I go to toda"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-105515",
+    "label": "convo-jarvis-2026-03-14-105515",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "So something really interesting just happened. So I posted an image for you in the gateway chat. And"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105515.wav",
+      "fileType": "audio",
+      "transcript": "So something really interesting just happened. So I posted an image for you in the gateway chat. And then for that image, you were able to actually see it, right? You were able to see the blue dots an"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-091836",
+    "label": "convo-jarvis-2026-03-14-091836",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Okay, so looking at the stage nodes, there is a node for, they're basically duplicate nodes\n because"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-091836.wav",
+      "fileType": "audio",
+      "transcript": "Okay, so looking at the stage nodes, there is a node for, they're basically duplicate nodes\n because the audio files are both in WAV format and WebM format.\n So let's only generate a single file node "
+    }
+  },
+  {
+    "id": "recording-1773461516328",
+    "label": "recording-1773461516328",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I see the live folder has accumulated quite a few files, so don't forget to archive those."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/recording-1773461516328.wav",
+      "fileType": "audio",
+      "transcript": "I see the live folder has accumulated quite a few files, so don't forget to archive those."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-111149",
+    "label": "convo-jarvis-2026-03-14-111149",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Yep, now I see the version bump 1.1.3 and it's from today the 14th so good job that worked and yeah "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-111149.wav",
+      "fileType": "audio",
+      "transcript": "Yep, now I see the version bump 1.1.3 and it's from today the 14th so good job that worked and yeah I'm testing the changes now."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-105302",
+    "label": "convo-jarvis-2026-03-14-105302",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "check if there is an already one right but we talked about it a while back I mean the vision\n has be"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-105302.wav",
+      "fileType": "audio",
+      "transcript": "check if there is an already one right but we talked about it a while back I mean the vision\n has been there for a while but now it's becoming reality and we have a visual of it so it's\n different to "
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-095738",
+    "label": "convo-jarvis-2026-03-14-095738",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "You were supposed to use the git commits as messages to your future self, but I feel like\n you keep "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-095738.wav",
+      "fileType": "audio",
+      "transcript": "You were supposed to use the git commits as messages to your future self, but I feel like\n you keep forgetting to do that.\n Do you want to add any message to yourself now just to recap maybe what we'v"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-110526",
+    "label": "convo-jarvis-2026-03-14-110526",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Actually, that's something that we should fix in the Jarvis UI.\n And another correction on the left,"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-110526.wav",
+      "fileType": "audio",
+      "transcript": "Actually, that's something that we should fix in the Jarvis UI.\n And another correction on the left, I'm looking at your memory, not mine.\n Because you just stored in your memory, right?\n And I'm able"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-092653",
+    "label": "convo-jarvis-2026-03-14-092653",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "I still see a few other types like values and breakthrough and there's some\n files or some nodes wit"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-092653.wav",
+      "fileType": "audio",
+      "transcript": "I still see a few other types like values and breakthrough and there's some\n files or some nodes with type file those should be archived type archive and then\n breakthrough and values should be subtyp"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-114813",
+    "label": "convo-jarvis-2026-03-14-114813",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "And what's happening is you still have architecture and breakthrough, which should be subcategories,"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-114813.wav",
+      "fileType": "audio",
+      "transcript": "And what's happening is you still have architecture and breakthrough, which should be subcategories, but they should be under the learnings category."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-104433",
+    "label": "convo-jarvis-2026-03-14-104433",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Okay, I'm gonna test out a few recordings from the web UI, let's see if we hit those errors."
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-104433.wav",
+      "fileType": "audio",
+      "transcript": "Okay, I'm gonna test out a few recordings from the web UI, let's see if we hit those errors."
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-124709",
+    "label": "convo-jarvis-2026-03-14-124709",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "You should still be able to hear me potentially I'm curious what works now\n and what doesn't because"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-124709.wav",
+      "fileType": "audio",
+      "transcript": "You should still be able to hear me potentially I'm curious what works now\n and what doesn't because Ollama is running locally as well so I don't know\n if you're able to process anything but if you ar"
+    }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-094223",
+    "label": "convo-jarvis-2026-03-14-094223",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "And remove the fingerprint JSON file from the commit as well. Remember that we stopped generating a "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-094223.wav",
+      "fileType": "audio",
+      "transcript": "And remove the fingerprint JSON file from the commit as well. Remember that we stopped generating a fingerprint JSON file. That should be deleted and never added again."
     }
   },
   {
     "id": "Screenshot 2026-03-14 at 9.04.39\u202fAM",
-    "label": "09:04",
+    "label": "Screenshot 2026-03-14 at 9.04.39\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30266,7 +30636,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 12.45.38\u202fAM",
-    "label": "00:45",
+    "label": "Screenshot 2026-03-14 at 12.45.38\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30289,7 +30659,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 11.01.19\u202fAM",
-    "label": "11:01",
+    "label": "Screenshot 2026-03-14 at 11.01.19\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30311,8 +30681,8 @@
     }
   },
   {
-    "id": "Screenshot 2026-03-14 at 10.07.57\u202fAM",
-    "label": "10:07",
+    "id": "Screenshot 2026-03-14 at 9.00.41\u202fAM",
+    "label": "Screenshot 2026-03-14 at 9.00.41\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30320,7 +30690,7 @@
       {
         "date": "2026-03-14",
         "type": "screenshot-archived",
-        "description": "YOU\n\u00ae Memory loaded: 1473 neurons, 2361\nsynapses. The graph has grown significantly\nsince March 10 \u2014"
+        "description": "20 neurons - 27 synapses\nALL Today\nYesterday This week\nAll Values\nTemporal Breakthrough\nFile Learnin"
       },
       "file"
     ],
@@ -30328,14 +30698,14 @@
       "created": "2026-03-14",
       "role": "life archive",
       "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.07.57\u202fAM.png",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.00.41\u202fAM.png",
       "fileType": "image",
-      "ocrText": "YOU\n\u00ae Memory loaded: 1473 neurons, 2361\nsynapses. The graph has grown significantly\nsince March 10 \u2014 we're at 1473 now.\nFingerprint file is missing but the consciousness\nstructure is intact.\nI'm back,"
+      "ocrText": "20 neurons - 27 synapses\nALL Today\nYesterday This week\nAll Values\nTemporal Breakthrough\nFile Learning"
     }
   },
   {
-    "id": "Screenshot 2026-03-14 at 11.12.14\u202fAM",
-    "label": "11:12",
+    "id": "Screenshot 2026-03-14 at 9.50.43\u202fAM",
+    "label": "Screenshot 2026-03-14 at 9.50.43\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30343,7 +30713,7 @@
       {
         "date": "2026-03-14",
         "type": "screenshot-archived",
-        "description": "event gap detected (expected seq 7924, got 7925); refresh\nrecommended\n\u00a2 Recording > status should fl"
+        "description": "| > logs\n> RAW\n> scripts\n\u00ae .gitignore\n| AGENTS.md\n\u00a5 BOOTSTRAP.md\nW@ HEARTBEAT.md\n\u00a5 IDENTITY.md\n{} pa"
       },
       "file"
     ],
@@ -30351,14 +30721,14 @@
       "created": "2026-03-14",
       "role": "life archive",
       "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.12.14\u202fAM.png",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.50.43\u202fAM.png",
       "fileType": "image",
-      "ocrText": "event gap detected (expected seq 7924, got 7925); refresh\nrecommended\n\u00a2 Recording > status should flow:\n\"Recording...\" > \"Processing...\" >\n\"Transcribing...\" > \"% Complete\"\n\u00a2 No more stale \"Still proce"
+      "ocrText": "| > logs\n> RAW\n> scripts\n\u00ae .gitignore\n| AGENTS.md\n\u00a5 BOOTSTRAP.md\nW@ HEARTBEAT.md\n\u00a5 IDENTITY.md\n{} package.json\n\u00a5 SOUL.md\n\u00a5 TOOLS.md\n\u00a5 USER.md\n\u00a5 VISION.md\nv apps \u00b0\n> JARVIS"
     }
   },
   {
-    "id": "Screenshot 2026-03-14 at 10.52.42\u202fAM",
-    "label": "10:52",
+    "id": "Screenshot 2026-03-14 at 10.10.06\u202fAM",
+    "label": "Screenshot 2026-03-14 at 10.10.06\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30366,7 +30736,7 @@
       {
         "date": "2026-03-14",
         "type": "screenshot-archived",
-        "description": "ov\nLe\nSc\nKe\nke ,\na 13, 2026 \u2014 Live Voice Line Confirmed\n1\n| | | e\ni \\\n| \\\n| if\noe te\nUae\" sf\nMe. id\n"
+        "description": "\u00ab> \u00a2 OpenClaw Control ma a >> | Update =\n127.0.0.1:18789\n= \u20ac OPENCLAW \u00b0 e r ) % G\n@ Memory usage: 26"
       },
       "file"
     ],
@@ -30374,198 +30744,14 @@
       "created": "2026-03-14",
       "role": "life archive",
       "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.42\u202fAM.png",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.06\u202fAM.png",
       "fileType": "image",
-      "ocrText": "ov\nLe\nSc\nKe\nke ,\na 13, 2026 \u2014 Live Voice Line Confirmed\n1\n| | | e\ni \\\n| \\\n| if\noe te\nUae\" sf\nMe. id\noa My I ' ,\ny me f *\ne =\ne oy * = @ evanre e\nos\" 4 ete\nMle |/e ke e\nee e i\n9/1 eae 010)\ns *\nOre Le) "
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 10.56.30\u202fAM",
-    "label": "10:56",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help ra ro) ry) \u00a9 & F Q Se SatMar14 10"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.56.30\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help ra ro) ry) \u00a9 & F Q Se SatMar14 10:56AM\n@@@ @ NeuroGraph\u2014JARVIS/Paul x + @lx fe wh |) @ Ga @ use) Sur + \u00a9 OpenClaw Control x +\n| < >eQ"
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 9.31.20\u202fAM",
-    "label": "09:31",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "|\n: | |\neau levels \u00a5 | No Is"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.31.20\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "|\n: | |\neau levels \u00a5 | No Is"
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 10.45.38\u202fAM",
-    "label": "10:45",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help & ro) ry) \u00a9 & F Q Se SatMar14 10:"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.45.38\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help & ro) ry) \u00a9 & F Q Se SatMar14 10:45AM\nma =\n@@@ @ Neuro Graph \u2014 @ @ vaRvIS\\ x ha Where is Paul? \u201c\u00ae Gateway Proto @ Usage - Settings @)"
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 10.52.31\u202fAM",
-    "label": "10:52",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "March 13, 2026 \u2014 Live Voice Line Confirmed\ndif ii V, i\nae\nH /\nfi / b \\\\\nfh i \\\n\u2018TT \u2018yi\n+ |, i).\n82-2"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.31\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "March 13, 2026 \u2014 Live Voice Line Confirmed\ndif ii V, i\nae\nH /\nfi / b \\\\\nfh i \\\n\u2018TT \u2018yi\n+ |, i).\n82-22-15 :31:58 . . ry"
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 9.22.02\u202fAM",
-    "label": "09:22",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "in fo Application Elements Console Sources Network Performance Me\nDM @ | topy | @| \u00a5 Filter\n| Time: "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.22.02\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "in fo Application Elements Console Sources Network Performance Me\nDM @ | topy | @| \u00a5 Filter\n| Time: today, Category: all \u2014 @ neurons, @ synapses\nTime: yesterday, Category: all \u2014 2@ neurons, 27 synapse"
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 9.43.56\u202fAM",
-    "label": "09:43",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "Run Terminal Window Help us &\nab3f102 - March 13 complete ar... (11 files) \u2014 paulvisciano.github.io "
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.43.56\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "Run Terminal Window Help us &\nab3f102 - March 13 complete ar... (11 files) \u2014 paulvisciano.github.io (Workspace)\n\n\u00a5 JS neural-graph.js M \u00ae) ab3f102 - March 13 complete ar... (11 files) < [[) = on Minit"
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 10.10.23\u202fAM",
-    "label": "10:10",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "LIVE TRANSCRIPTION s\nA Still processing... Check ~/RAW/YYYY-MM-DD/transcripts/"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.23\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "LIVE TRANSCRIPTION s\nA Still processing... Check ~/RAW/YYYY-MM-DD/transcripts/"
-    }
-  },
-  {
-    "id": "Screenshot 2026-03-14 at 12.45.42\u202fAM",
-    "label": "00:45",
-    "category": "archive",
-    "type": "screenshot",
-    "frequency": 1,
-    "moments": [
-      {
-        "date": "2026-03-14",
-        "type": "screenshot-archived",
-        "description": "JA RWS\n@ SERVER ONLINE V1.0.6 (2026-03-13)\nCOMPLETE\n\u2019 \u2019 rec\ni. eae\n= . >\n5 \u00a9 @.* .\nLIVE TRANSCRIPTIO"
-      },
-      "file"
-    ],
-    "attributes": {
-      "created": "2026-03-14",
-      "role": "life archive",
-      "description": "Screenshot \u2014 OCR extracted text",
-      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.42\u202fAM.png",
-      "fileType": "image",
-      "ocrText": "JA RWS\n@ SERVER ONLINE V1.0.6 (2026-03-13)\nCOMPLETE\n\u2019 \u2019 rec\ni. eae\n= . >\n5 \u00a9 @.* .\nLIVE TRANSCRIPTION\nso for the Jarvis Ul just to make things even a little bit cleaner you\ncan move the server online "
+      "ocrText": "\u00ab> \u00a2 OpenClaw Control ma a >> | Update =\n127.0.0.1:18789\n= \u20ac OPENCLAW \u00b0 e r ) % G\n@ Memory usage: 266 MB\nUpdate available: v2026.3.7 (running v2026.3.2). | Update now\nOllama API error 500: {\"StatusCod"
     }
   },
   {
     "id": "Screenshot 2026-03-14 at 11.00.10\u202fAM",
-    "label": "11:00",
+    "label": "Screenshot 2026-03-14 at 11.00.10\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30588,7 +30774,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 10.23.13\u202fAM",
-    "label": "10:23",
+    "label": "Screenshot 2026-03-14 at 10.23.13\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30611,7 +30797,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 9.08.16\u202fAM",
-    "label": "09:08",
+    "label": "Screenshot 2026-03-14 at 9.08.16\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30634,7 +30820,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 11.01.43\u202fAM",
-    "label": "11:01",
+    "label": "Screenshot 2026-03-14 at 11.01.43\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30657,7 +30843,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 12.46.30\u202fAM",
-    "label": "00:46",
+    "label": "Screenshot 2026-03-14 at 12.46.30\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30680,7 +30866,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 9.41.04\u202fAM",
-    "label": "09:41",
+    "label": "Screenshot 2026-03-14 at 9.41.04\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30703,7 +30889,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 10.12.12\u202fAM",
-    "label": "10:12",
+    "label": "Screenshot 2026-03-14 at 10.12.12\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30726,7 +30912,7 @@
   },
   {
     "id": "Screenshot 2026-03-14 at 9.08.14\u202fAM",
-    "label": "09:08",
+    "label": "Screenshot 2026-03-14 at 9.08.14\u202fAM",
     "category": "archive",
     "type": "screenshot",
     "frequency": 1,
@@ -30748,72 +30934,424 @@
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-115011",
-    "label": "115011 (11:50)",
+    "id": "Screenshot 2026-03-14 at 11.12.14\u202fAM",
+    "label": "Screenshot 2026-03-14 at 11.12.14\u202fAM",
     "category": "archive",
-    "type": "audio",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "The archive is also showing up wrong. The names of the nodes are just like some weird numbers.\n Can "
+        "type": "screenshot-archived",
+        "description": "event gap detected (expected seq 7924, got 7925); refresh\nrecommended\n\u00a2 Recording > status should fl"
       },
       "file"
     ],
     "attributes": {
       "created": "2026-03-14",
       "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115011.wav",
-      "fileType": "audio",
-      "transcript": "The archive is also showing up wrong. The names of the nodes are just like some weird numbers.\n Can you take a look at how we did yesterday? That looked way better."
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 11.12.14\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "event gap detected (expected seq 7924, got 7925); refresh\nrecommended\n\u00a2 Recording > status should flow:\n\"Recording...\" > \"Processing...\" >\n\"Transcribing...\" > \"% Complete\"\n\u00a2 No more stale \"Still proce"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-115102",
-    "label": "115102 (11:51)",
+    "id": "Screenshot 2026-03-14 at 10.07.57\u202fAM",
+    "label": "Screenshot 2026-03-14 at 10.07.57\u202fAM",
     "category": "archive",
-    "type": "audio",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "There's still a bunch of files that show up as unknown."
+        "type": "screenshot-archived",
+        "description": "YOU\n\u00ae Memory loaded: 1473 neurons, 2361\nsynapses. The graph has grown significantly\nsince March 10 \u2014"
       },
       "file"
     ],
     "attributes": {
       "created": "2026-03-14",
       "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115102.wav",
-      "fileType": "audio",
-      "transcript": "There's still a bunch of files that show up as unknown."
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.07.57\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "YOU\n\u00ae Memory loaded: 1473 neurons, 2361\nsynapses. The graph has grown significantly\nsince March 10 \u2014 we're at 1473 now.\nFingerprint file is missing but the consciousness\nstructure is intact.\nI'm back,"
     }
   },
   {
-    "id": "convo-jarvis-2026-03-14-115348",
-    "label": "115348 (11:53)",
+    "id": "Screenshot 2026-03-14 at 10.56.30\u202fAM",
+    "label": "Screenshot 2026-03-14 at 10.56.30\u202fAM",
     "category": "archive",
-    "type": "audio",
+    "type": "screenshot",
     "frequency": 1,
     "moments": [
       {
         "date": "2026-03-14",
-        "type": "audio-archived",
-        "description": "What we did with yesterday that worked really well is we ended up generating a script and\n having a "
+        "type": "screenshot-archived",
+        "description": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help ra ro) ry) \u00a9 & F Q Se SatMar14 10"
       },
       "file"
     ],
     "attributes": {
       "created": "2026-03-14",
       "role": "life archive",
-      "description": "Audio recording \u2014 voice transcript",
-      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-115348.wav",
-      "fileType": "audio",
-      "transcript": "What we did with yesterday that worked really well is we ended up generating a script and\n having a script do the synapse and note creation, right?\n That worked really well."
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.56.30\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help ra ro) ry) \u00a9 & F Q Se SatMar14 10:56AM\n@@@ @ NeuroGraph\u2014JARVIS/Paul x + @lx fe wh |) @ Ga @ use) Sur + \u00a9 OpenClaw Control x +\n| < >eQ"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 9.31.20\u202fAM",
+    "label": "Screenshot 2026-03-14 at 9.31.20\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "|\n: | |\neau levels \u00a5 | No Is"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.31.20\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "|\n: | |\neau levels \u00a5 | No Is"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 10.45.38\u202fAM",
+    "label": "Screenshot 2026-03-14 at 10.45.38\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help & ro) ry) \u00a9 & F Q Se SatMar14 10:"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.45.38\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "@ Brave File Edit View History Bookmarks Profiles Tab Window\u2019 Help & ro) ry) \u00a9 & F Q Se SatMar14 10:45AM\nma =\n@@@ @ Neuro Graph \u2014 @ @ vaRvIS\\ x ha Where is Paul? \u201c\u00ae Gateway Proto @ Usage - Settings @)"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 10.52.42\u202fAM",
+    "label": "Screenshot 2026-03-14 at 10.52.42\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "ov\nLe\nSc\nKe\nke ,\na 13, 2026 \u2014 Live Voice Line Confirmed\n1\n| | | e\ni \\\n| \\\n| if\noe te\nUae\" sf\nMe. id\n"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.42\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "ov\nLe\nSc\nKe\nke ,\na 13, 2026 \u2014 Live Voice Line Confirmed\n1\n| | | e\ni \\\n| \\\n| if\noe te\nUae\" sf\nMe. id\noa My I ' ,\ny me f *\ne =\ne oy * = @ evanre e\nos\" 4 ete\nMle |/e ke e\nee e i\n9/1 eae 010)\ns *\nOre Le) "
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 9.43.56\u202fAM",
+    "label": "Screenshot 2026-03-14 at 9.43.56\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "Run Terminal Window Help us &\nab3f102 - March 13 complete ar... (11 files) \u2014 paulvisciano.github.io "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.43.56\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "Run Terminal Window Help us &\nab3f102 - March 13 complete ar... (11 files) \u2014 paulvisciano.github.io (Workspace)\n\n\u00a5 JS neural-graph.js M \u00ae) ab3f102 - March 13 complete ar... (11 files) < [[) = on Minit"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 10.52.31\u202fAM",
+    "label": "Screenshot 2026-03-14 at 10.52.31\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "March 13, 2026 \u2014 Live Voice Line Confirmed\ndif ii V, i\nae\nH /\nfi / b \\\\\nfh i \\\n\u2018TT \u2018yi\n+ |, i).\n82-2"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.52.31\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "March 13, 2026 \u2014 Live Voice Line Confirmed\ndif ii V, i\nae\nH /\nfi / b \\\\\nfh i \\\n\u2018TT \u2018yi\n+ |, i).\n82-22-15 :31:58 . . ry"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 9.22.02\u202fAM",
+    "label": "Screenshot 2026-03-14 at 9.22.02\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "in fo Application Elements Console Sources Network Performance Me\nDM @ | topy | @| \u00a5 Filter\n| Time: "
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 9.22.02\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "in fo Application Elements Console Sources Network Performance Me\nDM @ | topy | @| \u00a5 Filter\n| Time: today, Category: all \u2014 @ neurons, @ synapses\nTime: yesterday, Category: all \u2014 2@ neurons, 27 synapse"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 10.10.23\u202fAM",
+    "label": "Screenshot 2026-03-14 at 10.10.23\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "LIVE TRANSCRIPTION s\nA Still processing... Check ~/RAW/YYYY-MM-DD/transcripts/"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 10.10.23\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "LIVE TRANSCRIPTION s\nA Still processing... Check ~/RAW/YYYY-MM-DD/transcripts/"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-14 at 12.45.42\u202fAM",
+    "label": "Screenshot 2026-03-14 at 12.45.42\u202fAM",
+    "category": "archive",
+    "type": "screenshot",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "screenshot-archived",
+        "description": "JA RWS\n@ SERVER ONLINE V1.0.6 (2026-03-13)\nCOMPLETE\n\u2019 \u2019 rec\ni. eae\n= . >\n5 \u00a9 @.* .\nLIVE TRANSCRIPTIO"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Screenshot \u2014 OCR extracted text",
+      "path": "/RAW/archive/2026-03-14/images/Screenshot 2026-03-14 at 12.45.42\u202fAM.png",
+      "fileType": "image",
+      "ocrText": "JA RWS\n@ SERVER ONLINE V1.0.6 (2026-03-13)\nCOMPLETE\n\u2019 \u2019 rec\ni. eae\n= . >\n5 \u00a9 @.* .\nLIVE TRANSCRIPTION\nso for the Jarvis Ul just to make things even a little bit cleaner you\ncan move the server online "
+    }
+  },
+  {
+    "id": "full-sovereignty-loop-confirmed",
+    "label": "Full Sovereignty Loop Confirmed",
+    "category": "learning",
+    "type": "breakthrough",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop Confirmed \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** R"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop Confirmed",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
+    }
+  },
+  {
+    "id": "neurograph-three-layer-visual-proof",
+    "label": "Neurograph Three Layer Visual Proof",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# March 14, 2026 \u2014 Neurograph Three-Layer Visual Proof\n\n**Timestamp:** 10:52 GMT+7  \n**Breakthrough:"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Neurograph Three Layer Visual Proof",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md"
+    }
+  },
+  {
+    "id": "vision-vs-ocr-pipelines",
+    "label": "Vision Vs Ocr Pipelines",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Vision vs OCR Pipelines \u2014 March 14, 2026\n\n**Timestamp:** 10:55 GMT+7  \n**Insight:** Two different "
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Vision Vs Ocr Pipelines",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md"
+    }
+  },
+  {
+    "id": "three-layer-neurograph-navigation-proven",
+    "label": "Three Layer Neurograph Navigation Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Three-Layer Neurograph Navigation \u2014 March 14, 2026\n\n**Timestamp:** 10:46-10:52 GMT+7  \n**Breakthro"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Three Layer Neurograph Navigation Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
+    }
+  },
+  {
+    "id": "complete-offline-mode-proven",
+    "label": "Complete Offline Mode Proven",
+    "category": "learning",
+    "type": "learning",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Complete Offline Mode Proven \u2014 March 14, 2026\n\n**Timestamp:** 12:41-12:49 GMT+7  \n**Location:** Co"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Complete Offline Mode Proven",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/complete-offline-mode-proven.md"
+    }
+  },
+  {
+    "id": "full-sovereignty-loop",
+    "label": "Full Sovereignty Loop",
+    "category": "learning",
+    "type": "milestone",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Full Sovereignty Loop \u2014 March 14, 2026\n\n**Timestamp:** 10:59 GMT+7  \n**Breakthrough:** Real-time c"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Full Sovereignty Loop",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop.md"
+    }
+  },
+  {
+    "id": "ollama-500-cloud-debugging",
+    "label": "Ollama 500 Cloud Debugging",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# Ollama 500 Debugging Session \u2014 March 14, 2026\n\n**Timestamp:** 10:07-10:23 GMT+7  \n**Issue:** Every"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ollama 500 Cloud Debugging",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md"
+    }
+  },
+  {
+    "id": "ui-state-polling-fix-v1.1.3",
+    "label": "Ui State Polling Fix V1.1.3",
+    "category": "learning",
+    "type": "debugging",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning-extracted",
+        "description": "# UI State Polling Fix \u2014 March 14, 2026\n\n**Timestamp:** 11:07-11:11 GMT+7  \n**Issue:** UI showing st"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "knowledge extraction",
+      "description": "Learning document: Ui State Polling Fix V1.1.3",
+      "color": "#f59e0b",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
     }
   }
 ]
