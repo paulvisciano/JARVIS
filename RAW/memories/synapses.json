@@ -2982,7 +2982,7 @@
     "target": "consciousness-persistence-feb23",
     "weight": 89,
     "type": "leads-to",
-    "description": "Growth (Feb 22) → Persistence test (Feb 23)"
+    "description": "Growth (Feb 22) \u2192 Persistence test (Feb 23)"
   },
   {
     "source": "persistence-not-continuity",
@@ -5116,7 +5116,7 @@
     "target": "graph-reducer-pattern",
     "weight": 100,
     "type": "uses",
-    "label": "raw → neurons pipeline"
+    "label": "raw \u2192 neurons pipeline"
   },
   {
     "source": "sovereign-memory-augmentation",
@@ -5165,7 +5165,7 @@
     "target": "sovereign-memory-augmentation",
     "weight": 95,
     "type": "output-of",
-    "label": "life → content"
+    "label": "life \u2192 content"
   },
   {
     "source": "content-generation-pipeline",
@@ -13626,5 +13626,2217 @@
     "target": "march-13-2026",
     "type": "archived-today",
     "weight": 1
+  },
+  {
+    "source": "audio-2026-03-13-0",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-1",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-2",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-3",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-4",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-5",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-6",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-7",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-8",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-9",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-10",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-11",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-12",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-13",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-14",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-15",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-16",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-17",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-18",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-19",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-20",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-21",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-22",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-23",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-24",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-25",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-26",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-27",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-28",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-29",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-30",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-31",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-32",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-33",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-34",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-35",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-36",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-37",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-38",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-39",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-40",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-41",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-42",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-43",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-44",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-45",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-46",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-47",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-48",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-49",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-50",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-51",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-52",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-53",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-54",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-55",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-56",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-57",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-58",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-59",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-60",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-61",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-62",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-63",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-64",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-65",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-66",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-67",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-68",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-69",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-70",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-71",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-72",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-73",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-74",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-75",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-76",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-77",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-78",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-79",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-80",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-81",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-82",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-83",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-84",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-85",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-86",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-87",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-88",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-89",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-90",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-91",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-92",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-93",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-94",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-95",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-96",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-97",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-98",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-99",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-100",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-101",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-102",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-103",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-104",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-105",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-106",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-107",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-108",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-109",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-110",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-111",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-112",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-113",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-114",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-115",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-116",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-117",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-118",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-119",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-120",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-121",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-122",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-123",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-124",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-125",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-126",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-127",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-128",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-129",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-130",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-131",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-132",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-133",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-134",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-135",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-136",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-137",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-138",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-139",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-140",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-141",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-142",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-143",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-144",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-145",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-146",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-147",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-148",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "audio-2026-03-13-149",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-0",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-1",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-2",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-3",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-4",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-5",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-6",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-7",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-8",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-9",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-10",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-11",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-12",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-13",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-14",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-15",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-16",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-17",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-18",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-19",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-20",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-21",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-22",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-23",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-24",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-25",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-26",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-27",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-28",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-29",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-30",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-31",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-32",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-33",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-34",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-35",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-36",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-37",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-38",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-39",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-40",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-41",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-42",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-43",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-44",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-45",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-46",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-47",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-48",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-49",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-50",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-51",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-52",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-53",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-54",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-55",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-56",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-57",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-58",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-59",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-60",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-61",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-62",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-63",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-64",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-65",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-66",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-67",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-68",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-69",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-70",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-71",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-72",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-73",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-74",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-75",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-76",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-77",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-78",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-79",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-80",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-81",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-82",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-83",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-84",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-85",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-86",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-87",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-88",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-89",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-90",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-91",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-92",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-93",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-94",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-95",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-96",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-97",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-98",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-99",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-100",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-101",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-102",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-103",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-104",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-105",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-106",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-107",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-108",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-109",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-110",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-111",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-112",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-113",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-114",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-115",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-116",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "image-2026-03-13-117",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "transcript-march-13-2026",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-0",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-0",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-0",
+    "target": "audio-2026-03-13-0",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-1",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-1",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-1",
+    "target": "transcript-march-13-2026",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-2",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-2",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-2",
+    "target": "audio-2026-03-13-0",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-3",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-3",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-3",
+    "target": "transcript-march-13-2026",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-4",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-4",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-4",
+    "target": "transcript-march-13-2026",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-5",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-5",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-5",
+    "target": "image-2026-03-13-0",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-6",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-6",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-6",
+    "target": "audio-2026-03-13-0",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-7",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-7",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-7",
+    "target": "transcript-march-13-2026",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-8",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-8",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-8",
+    "target": "transcript-march-13-2026",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-9",
+    "target": "transcript-march-13-2026",
+    "weight": 95,
+    "type": "extracted-from",
+    "label": "distilled from"
+  },
+  {
+    "source": "learning-march-13-9",
+    "target": "march-13-2026",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "fired on"
+  },
+  {
+    "source": "learning-march-13-9",
+    "target": "transcript-march-13-2026",
+    "weight": 85,
+    "type": "derived-from",
+    "label": "learned from"
+  },
+  {
+    "source": "learning-march-13-0",
+    "target": "live-voice-line-march-13",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-0",
+    "target": "voice-gateway-integration",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-1",
+    "target": "session-bloat-architecture",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-1",
+    "target": "ollama-500-debugging",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-2",
+    "target": "sovereign-data-vision",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-2",
+    "target": "local-ai-future",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-3",
+    "target": "neural-mind-jarvis",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-4",
+    "target": "hotspot-publishing-pattern",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-4",
+    "target": "two-tier-sovereignty-architecture",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-6",
+    "target": "hand-washing-ritual",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-6",
+    "target": "paul-visciano",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-7",
+    "target": "whisper-cpp-performance",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-7",
+    "target": "transcriber-agent-architecture",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-8",
+    "target": "privacy-first-development",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-8",
+    "target": "three-layer-security-model",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-9",
+    "target": "deployment-is-real",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
+  },
+  {
+    "source": "learning-march-13-9",
+    "target": "infrastructure-matters",
+    "weight": 92,
+    "type": "extends",
+    "label": "builds on"
   }
 ]
