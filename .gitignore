@@ -20,3 +20,5 @@ inbox/
 inbox/*
 !inbox/.gitkeep
 live/
+live/*
+!live/.gitkeep
