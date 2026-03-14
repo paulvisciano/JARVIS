@@ -30658,5 +30658,47 @@
       "fileType": "image",
       "ocrText": "Screenshot content"
     }
+  },
+  {
+    "id": "three-layer-neurograph-navigation-proven",
+    "label": "Three-Layer Neurograph Navigation Proven",
+    "category": "learning",
+    "type": "breakthrough",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "architecture-proof",
+        "description": "Visual confirmation of three-layer memory architecture \u2014 299 neurons for March 13 visible"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "architecture proof",
+      "description": "First visual confirmation of three-layer memory architecture working \u2014 navigation pattern proven by restoring context",
+      "color": "#22c55e",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
+    }
+  },
+  {
+    "id": "full-sovereignty-loop-confirmed",
+    "label": "Full Sovereignty Loop Confirmed",
+    "category": "learning",
+    "type": "milestone",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "workflow-milestone",
+        "description": "Real-time closed loop: speak \u2192 respond \u2192 graph grows"
+      }
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "workflow milestone",
+      "description": "Real-time closed loop confirmed \u2014 three windows (voice UI, gateway chat, neurograph) working as one sovereignty loop",
+      "color": "#22c55e",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
+    }
   }
 ]

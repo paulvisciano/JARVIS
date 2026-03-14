@@ -16263,5 +16263,25 @@
     "from": "Screenshot 2026-03-14 at 9.50.43\u202fAM",
     "to": "march-14-2026",
     "weight": 0.9
+  },
+  {
+    "from": "three-layer-neurograph-navigation-proven",
+    "to": "march-14-2026",
+    "weight": 1.0
+  },
+  {
+    "from": "full-sovereignty-loop-confirmed",
+    "to": "march-14-2026",
+    "weight": 1.0
+  },
+  {
+    "from": "three-layer-neurograph-navigation-proven",
+    "to": "three-layer-airgapped-architecture",
+    "weight": 0.8
+  },
+  {
+    "from": "full-sovereignty-loop-confirmed",
+    "to": "live-voice-line-confirmed",
+    "weight": 0.8
   }
 ]
