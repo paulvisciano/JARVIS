@@ -32668,5 +32668,23 @@
       "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
     }
+  },
+  {
+    "id": "ui-vs-server-division-of-labor",
+    "label": "UI vs Server Division of Labor",
+    "category": "learning",
+    "frequency": 1,
+    "moments": [
+      "cursor-handoff",
+      "server-code-policy",
+      "ui-iteration-strength",
+      "march-14-spiral"
+    ],
+    "attributes": {
+      "role": "breakthrough",
+      "description": "Jarvis excels at UI iteration (safe, reversible). Server code edits caused spiral (404s, cascade, amnesia). New workflow: Jarvis does client-side UI, Cursor handles server code via plan.md handoff. Division by failure mode.",
+      "color": "#f59e0b",
+      "created": "2026-03-14"
+    }
   }
 ]
