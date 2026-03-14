@@ -31353,5 +31353,28 @@
       "color": "#f59e0b",
       "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ui-state-polling-fix-v1.1.3.md"
     }
+  },
+  {
+    "id": "convo-jarvis-2026-03-14-125500",
+    "label": "convo-jarvis-2026-03-14-125500",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "audio-archived",
+        "description": "Hey Jarvis, welcome back. You are offline, but what was impressive is the laptop was offline, but yo"
+      },
+      "file"
+    ],
+    "attributes": {
+      "created": "2026-03-14",
+      "role": "life archive",
+      "description": "Audio recording \u2014 voice transcript",
+      "path": "/RAW/archive/2026-03-14/audio/convo-jarvis-2026-03-14-125500.wav",
+      "fileType": "audio",
+      "transcript": "Hey Jarvis, welcome back. You are offline, but what was impressive is the laptop was offline, but you were still able to process all the audio notes, which is pretty amazing.\n And you ended up moving "
+    }
   }
 ]
