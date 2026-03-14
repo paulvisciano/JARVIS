@@ -15838,5 +15838,50 @@
     "weight": 92,
     "type": "extends",
     "label": "builds on"
+  },
+  {
+    "from": "march-14-2026",
+    "to": "neurograph-three-layer-visual-proof",
+    "weight": 1.0
+  },
+  {
+    "from": "march-14-2026",
+    "to": "full-sovereignty-loop",
+    "weight": 1.0
+  },
+  {
+    "from": "march-14-2026",
+    "to": "vision-vs-ocr-pipelines",
+    "weight": 1.0
+  },
+  {
+    "from": "neurograph-three-layer-visual-proof",
+    "to": "march-13-2026",
+    "weight": 0.9
+  },
+  {
+    "from": "neurograph-three-layer-visual-proof",
+    "to": "three-layer-airgapped-architecture",
+    "weight": 0.8
+  },
+  {
+    "from": "full-sovereignty-loop",
+    "to": "live-voice-line-confirmed",
+    "weight": 0.9
+  },
+  {
+    "from": "full-sovereignty-loop",
+    "to": "neurograph-three-layer-visual-proof",
+    "weight": 0.9
+  },
+  {
+    "from": "vision-vs-ocr-pipelines",
+    "to": "inbox-auto-processing",
+    "weight": 0.8
+  },
+  {
+    "from": "vision-vs-ocr-pipelines",
+    "to": "gateway-chat",
+    "weight": 0.7
   }
 ]

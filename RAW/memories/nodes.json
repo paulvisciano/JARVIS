@@ -28970,5 +28970,72 @@
         "infrastructure-matters"
       ]
     }
+  },
+  {
+    "id": "march-14-2026",
+    "label": "March 14, 2026",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      "2026-03-14"
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "Neurograph three-layer visual proof, full sovereignty loop confirmed",
+      "color": "#f97316",
+      "created": "2026-03-14"
+    }
+  },
+  {
+    "id": "neurograph-three-layer-visual-proof",
+    "label": "Neurograph Three-Layer Visual Proof",
+    "category": "breakthrough",
+    "type": "proof",
+    "frequency": 1,
+    "moments": [
+      "2026-03-14T10:52"
+    ],
+    "attributes": {
+      "role": "architecture proof",
+      "description": "First visual confirmation of three-layer memory architecture working \u2014 299 neurons for March 13 visible, layers separate like spaceships",
+      "color": "#22c55e",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md",
+      "created": "2026-03-14"
+    }
+  },
+  {
+    "id": "full-sovereignty-loop",
+    "label": "Full Sovereignty Loop",
+    "category": "breakthrough",
+    "type": "workflow",
+    "frequency": 1,
+    "moments": [
+      "2026-03-14T10:59"
+    ],
+    "attributes": {
+      "role": "workflow milestone",
+      "description": "Real-time closed loop: speak (middle) \u2192 respond (right) \u2192 graph grows (left) \u2014 all local, no typing, visible memory formation",
+      "color": "#22c55e",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop.md",
+      "created": "2026-03-14"
+    }
+  },
+  {
+    "id": "vision-vs-ocr-pipelines",
+    "label": "Vision vs OCR Pipelines",
+    "category": "architecture",
+    "type": "understanding",
+    "frequency": 1,
+    "moments": [
+      "2026-03-14T10:55"
+    ],
+    "attributes": {
+      "role": "pipeline clarity",
+      "description": "Two image processing paths: gateway vision (ephemeral sight, immediate) vs inbox OCR (permanent memory, batch) \u2014 both sovereign",
+      "color": "#3b82f6",
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md",
+      "created": "2026-03-14"
+    }
   }
 ]
