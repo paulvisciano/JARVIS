@@ -63802,7 +63802,7 @@
   },
   {
     "id": "20260316",
-    "label": "2026 03 16",
+    "label": "March 16, 2026",
     "category": "temporal",
     "frequency": 1,
     "moments": [
@@ -63810,11 +63810,10 @@
     ],
     "attributes": {
       "role": "temporal anchor",
-      "description": "Archive date: 2026-03-16",
+      "description": "Daily anchor for March 16, 2026 archives and learnings",
       "color": "#f97316",
-      "created": "2026-03-16"
-    },
-    "type": "anchor"
+      "created": "2026-03-16T00:00:00+07:00"
+    }
   },
   {
     "id": "convo-jarvis-2026-03-16-103227",
