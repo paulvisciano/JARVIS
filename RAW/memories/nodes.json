@@ -64349,5 +64349,21 @@
       "sourceDocument": "RAW/archive/2026-03-16/audio/convo-jarvis-2026-03-16-103351.wav.txt",
       "created": "2026-03-16"
     }
+  },
+  {
+    "id": "20260313",
+    "label": "2026 03 13",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      "2026-03-13"
+    ],
+    "attributes": {
+      "created": "2026-03-13",
+      "role": "temporal anchor",
+      "description": "Archive date: 2026-03-13",
+      "color": "#f97316"
+    }
   }
 ]
