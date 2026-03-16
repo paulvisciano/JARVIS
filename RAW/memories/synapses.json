@@ -34361,5 +34361,12 @@
     "weight": 100,
     "type": "temporal-anchor",
     "label": "occurred on"
+  },
+  {
+    "source": "node_4342",
+    "target": "temporal-march-16",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "learned on"
   }
 ]

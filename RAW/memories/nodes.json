@@ -89084,5 +89084,18 @@
       "user": 26,
       "assistant": 140
     }
+  },
+  {
+    "id": "node_4342",
+    "label": "neurograph-url-rule",
+    "category": "learning",
+    "type": "operational-rule",
+    "created": "2026-03-16",
+    "moments": [
+      "rule",
+      "tool-usage",
+      "url"
+    ],
+    "description": "Use http://localhost:3001/neuro-graph (same JARVIS server), not localhost:8080 or github.io"
   }
 ]
