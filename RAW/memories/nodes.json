@@ -68154,5 +68154,1408 @@
       "created": "2026-03-16T02:58:05"
     },
     "created": "2026-03-16T02:58:05"
+  },
+  {
+    "id": "20260316-114856-recording-1773636536986.wav",
+    "label": "20260316-11485…86.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-114856-recording-1773636536986.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-114856-recording-1773636536986.wav.txt",
+      "created": "2026-03-16T04:48:56"
+    },
+    "created": "2026-03-16T04:48:56"
+  },
+  {
+    "id": "20260316-114856-recording-1773636536986",
+    "label": "20260316-11485…36986.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-114856-recording-1773636536986.webm",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-114856-recording-1773636536986.webm",
+      "created": "2026-03-16T04:48:56"
+    },
+    "created": "2026-03-16T04:48:56"
+  },
+  {
+    "id": "20260316-114857-recording-1773636536986",
+    "label": "20260316-11485…536986.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-114857-recording-1773636536986.wav",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-114857-recording-1773636536986.wav",
+      "created": "2026-03-16T04:48:56"
+    },
+    "created": "2026-03-16T04:48:56"
+  },
+  {
+    "id": "20260316-114857-recording-1773636536986.wav",
+    "label": "20260316-11485…86.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-114857-recording-1773636536986.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-114857-recording-1773636536986.wav.txt",
+      "created": "2026-03-16T04:48:56"
+    },
+    "created": "2026-03-16T04:48:56"
+  },
+  {
+    "id": "20260316-114927-recording-1773636567370.wav",
+    "label": "20260316-11492…70.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-114927-recording-1773636567370.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-114927-recording-1773636567370.wav.txt",
+      "created": "2026-03-16T04:49:27"
+    },
+    "created": "2026-03-16T04:49:27"
+  },
+  {
+    "id": "20260316-114927-recording-1773636567370",
+    "label": "20260316-11492…67370.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-114927-recording-1773636567370.webm",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-114927-recording-1773636567370.webm",
+      "created": "2026-03-16T04:49:27"
+    },
+    "created": "2026-03-16T04:49:27"
+  },
+  {
+    "id": "20260316-115421-recording-1773636861060.wav",
+    "label": "20260316-11542…60.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-115421-recording-1773636861060.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-115421-recording-1773636861060.wav.txt",
+      "created": "2026-03-16T04:54:21"
+    },
+    "created": "2026-03-16T04:54:21"
+  },
+  {
+    "id": "20260316-115421-recording-1773636861060",
+    "label": "20260316-11542…61060.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-115421-recording-1773636861060.webm",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-115421-recording-1773636861060.webm",
+      "created": "2026-03-16T04:54:21"
+    },
+    "created": "2026-03-16T04:54:21"
+  },
+  {
+    "id": "20260316-123822-recording-1773639502065.wav",
+    "label": "20260316-12382…65.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-123822-recording-1773639502065.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-123822-recording-1773639502065.wav.txt",
+      "created": "2026-03-16T05:38:22"
+    },
+    "created": "2026-03-16T05:38:22"
+  },
+  {
+    "id": "20260316-123822-recording-1773639502065",
+    "label": "20260316-12382…02065.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-123822-recording-1773639502065.webm",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-123822-recording-1773639502065.webm",
+      "created": "2026-03-16T05:38:22"
+    },
+    "created": "2026-03-16T05:38:22"
+  },
+  {
+    "id": "20260316-123915-recording-1773639555007.wav",
+    "label": "20260316-12391…07.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-123915-recording-1773639555007.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-123915-recording-1773639555007.wav.txt",
+      "created": "2026-03-16T05:39:15"
+    },
+    "created": "2026-03-16T05:39:15"
+  },
+  {
+    "id": "20260316-123915-recording-1773639555007",
+    "label": "20260316-12391…55007.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-123915-recording-1773639555007.webm",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-123915-recording-1773639555007.webm",
+      "created": "2026-03-16T05:39:15"
+    },
+    "created": "2026-03-16T05:39:15"
+  },
+  {
+    "id": "20260316-124304-recording-1773639784555.wav",
+    "label": "20260316-12430…55.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-124304-recording-1773639784555.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-124304-recording-1773639784555.wav.txt",
+      "created": "2026-03-16T05:43:04"
+    },
+    "created": "2026-03-16T05:43:04"
+  },
+  {
+    "id": "20260316-124304-recording-1773639784555",
+    "label": "20260316-12430…84555.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-124304-recording-1773639784555.webm",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-124304-recording-1773639784555.webm",
+      "created": "2026-03-16T05:43:04"
+    },
+    "created": "2026-03-16T05:43:04"
+  },
+  {
+    "id": "20260316-124705-recording-1773640025989.wav",
+    "label": "20260316-12470…89.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-124705-recording-1773640025989.wav.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-124705-recording-1773640025989.wav.txt",
+      "created": "2026-03-16T05:47:05"
+    },
+    "created": "2026-03-16T05:47:05"
+  },
+  {
+    "id": "20260316-124705-recording-1773640025989",
+    "label": "20260316-12470…25989.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/audio/20260316-124705-recording-1773640025989.webm",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/audio/20260316-124705-recording-1773640025989.webm",
+      "created": "2026-03-16T05:47:05"
+    },
+    "created": "2026-03-16T05:47:05"
+  },
+  {
+    "id": "20260316-101708-Screenshot 2026-03-16 at 10.17.06 AM-ocr",
+    "label": "20260316-10170…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-101708-Screenshot 2026-03-16 at 10.17.06 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-101708-Screenshot 2026-03-16 at 10.17.06 AM-ocr.txt",
+      "created": "2026-03-16T10:17:06"
+    },
+    "created": "2026-03-16T10:17:06"
+  },
+  {
+    "id": "20260316-101708-Screenshot 2026-03-16 at 10.17.06 AM",
+    "label": "20260316-10170….06 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-101708-Screenshot 2026-03-16 at 10.17.06 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-101708-Screenshot 2026-03-16 at 10.17.06 AM.png",
+      "created": "2026-03-16T10:17:06"
+    },
+    "created": "2026-03-16T10:17:06"
+  },
+  {
+    "id": "20260316-101715-Screenshot 2026-03-16 at 10.17.14 AM-ocr",
+    "label": "20260316-10171…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-101715-Screenshot 2026-03-16 at 10.17.14 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-101715-Screenshot 2026-03-16 at 10.17.14 AM-ocr.txt",
+      "created": "2026-03-16T10:17:14"
+    },
+    "created": "2026-03-16T10:17:14"
+  },
+  {
+    "id": "20260316-101715-Screenshot 2026-03-16 at 10.17.14 AM",
+    "label": "20260316-10171….14 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-101715-Screenshot 2026-03-16 at 10.17.14 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-101715-Screenshot 2026-03-16 at 10.17.14 AM.png",
+      "created": "2026-03-16T10:17:14"
+    },
+    "created": "2026-03-16T10:17:14"
+  },
+  {
+    "id": "20260316-102529-Screenshot 2026-03-16 at 10.25.26 AM-ocr",
+    "label": "20260316-10252…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-102529-Screenshot 2026-03-16 at 10.25.26 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-102529-Screenshot 2026-03-16 at 10.25.26 AM-ocr.txt",
+      "created": "2026-03-16T10:25:26"
+    },
+    "created": "2026-03-16T10:25:26"
+  },
+  {
+    "id": "20260316-102529-Screenshot 2026-03-16 at 10.25.26 AM",
+    "label": "20260316-10252….26 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-102529-Screenshot 2026-03-16 at 10.25.26 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-102529-Screenshot 2026-03-16 at 10.25.26 AM.png",
+      "created": "2026-03-16T10:25:26"
+    },
+    "created": "2026-03-16T10:25:26"
+  },
+  {
+    "id": "20260316-103843-Screenshot 2026-03-16 at 10.38.41 AM-ocr",
+    "label": "20260316-10384…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-103843-Screenshot 2026-03-16 at 10.38.41 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-103843-Screenshot 2026-03-16 at 10.38.41 AM-ocr.txt",
+      "created": "2026-03-16T10:38:41"
+    },
+    "created": "2026-03-16T10:38:41"
+  },
+  {
+    "id": "20260316-103843-Screenshot 2026-03-16 at 10.38.41 AM",
+    "label": "20260316-10384….41 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-103843-Screenshot 2026-03-16 at 10.38.41 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-103843-Screenshot 2026-03-16 at 10.38.41 AM.png",
+      "created": "2026-03-16T10:38:41"
+    },
+    "created": "2026-03-16T10:38:41"
+  },
+  {
+    "id": "20260316-104130-Screenshot 2026-03-16 at 10.41.29 AM-ocr",
+    "label": "20260316-10413…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-104130-Screenshot 2026-03-16 at 10.41.29 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-104130-Screenshot 2026-03-16 at 10.41.29 AM-ocr.txt",
+      "created": "2026-03-16T10:41:29"
+    },
+    "created": "2026-03-16T10:41:29"
+  },
+  {
+    "id": "20260316-104130-Screenshot 2026-03-16 at 10.41.29 AM",
+    "label": "20260316-10413….29 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-104130-Screenshot 2026-03-16 at 10.41.29 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-104130-Screenshot 2026-03-16 at 10.41.29 AM.png",
+      "created": "2026-03-16T10:41:29"
+    },
+    "created": "2026-03-16T10:41:29"
+  },
+  {
+    "id": "20260316-104502-Screenshot 2026-03-16 at 10.45.00 AM-ocr",
+    "label": "20260316-10450…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-104502-Screenshot 2026-03-16 at 10.45.00 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-104502-Screenshot 2026-03-16 at 10.45.00 AM-ocr.txt",
+      "created": "2026-03-16T10:45:00"
+    },
+    "created": "2026-03-16T10:45:00"
+  },
+  {
+    "id": "20260316-104502-Screenshot 2026-03-16 at 10.45.00 AM",
+    "label": "20260316-10450….00 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-104502-Screenshot 2026-03-16 at 10.45.00 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-104502-Screenshot 2026-03-16 at 10.45.00 AM.png",
+      "created": "2026-03-16T10:45:00"
+    },
+    "created": "2026-03-16T10:45:00"
+  },
+  {
+    "id": "20260316-105443-Screenshot 2026-03-16 at 10.54.41 AM-ocr",
+    "label": "20260316-10544…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-105443-Screenshot 2026-03-16 at 10.54.41 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-105443-Screenshot 2026-03-16 at 10.54.41 AM-ocr.txt",
+      "created": "2026-03-16T10:54:41"
+    },
+    "created": "2026-03-16T10:54:41"
+  },
+  {
+    "id": "20260316-105443-Screenshot 2026-03-16 at 10.54.41 AM",
+    "label": "20260316-10544….41 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-105443-Screenshot 2026-03-16 at 10.54.41 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-105443-Screenshot 2026-03-16 at 10.54.41 AM.png",
+      "created": "2026-03-16T10:54:41"
+    },
+    "created": "2026-03-16T10:54:41"
+  },
+  {
+    "id": "20260316-105706-Screenshot 2026-03-16 at 10.57.02 AM-ocr",
+    "label": "20260316-10570…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-105706-Screenshot 2026-03-16 at 10.57.02 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-105706-Screenshot 2026-03-16 at 10.57.02 AM-ocr.txt",
+      "created": "2026-03-16T10:57:02"
+    },
+    "created": "2026-03-16T10:57:02"
+  },
+  {
+    "id": "20260316-105706-Screenshot 2026-03-16 at 10.57.02 AM",
+    "label": "20260316-10570….02 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-105706-Screenshot 2026-03-16 at 10.57.02 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-105706-Screenshot 2026-03-16 at 10.57.02 AM.png",
+      "created": "2026-03-16T10:57:02"
+    },
+    "created": "2026-03-16T10:57:02"
+  },
+  {
+    "id": "20260316-111138-Screenshot 2026-03-16 at 11.11.37 AM-ocr",
+    "label": "20260316-11113…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-111138-Screenshot 2026-03-16 at 11.11.37 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-111138-Screenshot 2026-03-16 at 11.11.37 AM-ocr.txt",
+      "created": "2026-03-16T11:11:37"
+    },
+    "created": "2026-03-16T11:11:37"
+  },
+  {
+    "id": "20260316-111138-Screenshot 2026-03-16 at 11.11.37 AM",
+    "label": "20260316-11113….37 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-111138-Screenshot 2026-03-16 at 11.11.37 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-111138-Screenshot 2026-03-16 at 11.11.37 AM.png",
+      "created": "2026-03-16T11:11:37"
+    },
+    "created": "2026-03-16T11:11:37"
+  },
+  {
+    "id": "20260316-112000-Screenshot 2026-03-16 at 11.19.58 AM-ocr",
+    "label": "20260316-11200…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-112000-Screenshot 2026-03-16 at 11.19.58 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-112000-Screenshot 2026-03-16 at 11.19.58 AM-ocr.txt",
+      "created": "2026-03-16T11:19:58"
+    },
+    "created": "2026-03-16T11:19:58"
+  },
+  {
+    "id": "20260316-112000-Screenshot 2026-03-16 at 11.19.58 AM",
+    "label": "20260316-11200….58 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-112000-Screenshot 2026-03-16 at 11.19.58 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-112000-Screenshot 2026-03-16 at 11.19.58 AM.png",
+      "created": "2026-03-16T11:19:58"
+    },
+    "created": "2026-03-16T11:19:58"
+  },
+  {
+    "id": "20260316-113802-Screenshot 2026-03-16 at 11.38.00 AM-ocr",
+    "label": "20260316-11380…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-113802-Screenshot 2026-03-16 at 11.38.00 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-113802-Screenshot 2026-03-16 at 11.38.00 AM-ocr.txt",
+      "created": "2026-03-16T11:38:00"
+    },
+    "created": "2026-03-16T11:38:00"
+  },
+  {
+    "id": "20260316-113802-Screenshot 2026-03-16 at 11.38.00 AM",
+    "label": "20260316-11380….00 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-113802-Screenshot 2026-03-16 at 11.38.00 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-113802-Screenshot 2026-03-16 at 11.38.00 AM.png",
+      "created": "2026-03-16T11:38:00"
+    },
+    "created": "2026-03-16T11:38:00"
+  },
+  {
+    "id": "20260316-114258-Screenshot 2026-03-16 at 11.42.56 AM-ocr",
+    "label": "20260316-11425…AM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-114258-Screenshot 2026-03-16 at 11.42.56 AM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-114258-Screenshot 2026-03-16 at 11.42.56 AM-ocr.txt",
+      "created": "2026-03-16T11:42:56"
+    },
+    "created": "2026-03-16T11:42:56"
+  },
+  {
+    "id": "20260316-114258-Screenshot 2026-03-16 at 11.42.56 AM",
+    "label": "20260316-11425….56 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-114258-Screenshot 2026-03-16 at 11.42.56 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-114258-Screenshot 2026-03-16 at 11.42.56 AM.png",
+      "created": "2026-03-16T11:42:56"
+    },
+    "created": "2026-03-16T11:42:56"
+  },
+  {
+    "id": "20260316-120243-Screenshot 2026-03-16 at 12.02.39 PM-ocr",
+    "label": "20260316-12024…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-120243-Screenshot 2026-03-16 at 12.02.39 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-120243-Screenshot 2026-03-16 at 12.02.39 PM-ocr.txt",
+      "created": "2026-03-16T12:02:39"
+    },
+    "created": "2026-03-16T12:02:39"
+  },
+  {
+    "id": "20260316-120243-Screenshot 2026-03-16 at 12.02.39 PM",
+    "label": "20260316-12024….39 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-120243-Screenshot 2026-03-16 at 12.02.39 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-120243-Screenshot 2026-03-16 at 12.02.39 PM.png",
+      "created": "2026-03-16T12:02:39"
+    },
+    "created": "2026-03-16T12:02:39"
+  },
+  {
+    "id": "20260316-120244-Screenshot 2026-03-16 at 12.02.42 PM-ocr",
+    "label": "20260316-12024…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-120244-Screenshot 2026-03-16 at 12.02.42 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-120244-Screenshot 2026-03-16 at 12.02.42 PM-ocr.txt",
+      "created": "2026-03-16T12:02:42"
+    },
+    "created": "2026-03-16T12:02:42"
+  },
+  {
+    "id": "20260316-120244-Screenshot 2026-03-16 at 12.02.42 PM",
+    "label": "20260316-12024….42 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-120244-Screenshot 2026-03-16 at 12.02.42 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-120244-Screenshot 2026-03-16 at 12.02.42 PM.png",
+      "created": "2026-03-16T12:02:42"
+    },
+    "created": "2026-03-16T12:02:42"
+  },
+  {
+    "id": "20260316-121115-Screenshot 2026-03-16 at 12.11.13 PM-ocr",
+    "label": "20260316-12111…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-121115-Screenshot 2026-03-16 at 12.11.13 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-121115-Screenshot 2026-03-16 at 12.11.13 PM-ocr.txt",
+      "created": "2026-03-16T12:11:13"
+    },
+    "created": "2026-03-16T12:11:13"
+  },
+  {
+    "id": "20260316-121115-Screenshot 2026-03-16 at 12.11.13 PM",
+    "label": "20260316-12111….13 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-121115-Screenshot 2026-03-16 at 12.11.13 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-121115-Screenshot 2026-03-16 at 12.11.13 PM.png",
+      "created": "2026-03-16T12:11:13"
+    },
+    "created": "2026-03-16T12:11:13"
+  },
+  {
+    "id": "20260316-122051-Screenshot 2026-03-16 at 12.20.45 PM-ocr",
+    "label": "20260316-12205…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-122051-Screenshot 2026-03-16 at 12.20.45 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-122051-Screenshot 2026-03-16 at 12.20.45 PM-ocr.txt",
+      "created": "2026-03-16T12:20:45"
+    },
+    "created": "2026-03-16T12:20:45"
+  },
+  {
+    "id": "20260316-122051-Screenshot 2026-03-16 at 12.20.45 PM",
+    "label": "20260316-12205….45 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-122051-Screenshot 2026-03-16 at 12.20.45 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-122051-Screenshot 2026-03-16 at 12.20.45 PM.png",
+      "created": "2026-03-16T12:20:45"
+    },
+    "created": "2026-03-16T12:20:45"
+  },
+  {
+    "id": "20260316-123816-Screenshot 2026-03-16 at 12.38.10 PM-ocr",
+    "label": "20260316-12381…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-123816-Screenshot 2026-03-16 at 12.38.10 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-123816-Screenshot 2026-03-16 at 12.38.10 PM-ocr.txt",
+      "created": "2026-03-16T12:38:10"
+    },
+    "created": "2026-03-16T12:38:10"
+  },
+  {
+    "id": "20260316-123816-Screenshot 2026-03-16 at 12.38.10 PM",
+    "label": "20260316-12381….10 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-123816-Screenshot 2026-03-16 at 12.38.10 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-123816-Screenshot 2026-03-16 at 12.38.10 PM.png",
+      "created": "2026-03-16T12:38:10"
+    },
+    "created": "2026-03-16T12:38:10"
+  },
+  {
+    "id": "20260316-123827-Screenshot 2026-03-16 at 12.38.24 PM-ocr",
+    "label": "20260316-12382…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-123827-Screenshot 2026-03-16 at 12.38.24 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-123827-Screenshot 2026-03-16 at 12.38.24 PM-ocr.txt",
+      "created": "2026-03-16T12:38:24"
+    },
+    "created": "2026-03-16T12:38:24"
+  },
+  {
+    "id": "20260316-123827-Screenshot 2026-03-16 at 12.38.24 PM",
+    "label": "20260316-12382….24 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-123827-Screenshot 2026-03-16 at 12.38.24 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-123827-Screenshot 2026-03-16 at 12.38.24 PM.png",
+      "created": "2026-03-16T12:38:24"
+    },
+    "created": "2026-03-16T12:38:24"
+  },
+  {
+    "id": "20260316-123937-Screenshot 2026-03-16 at 12.39.36 PM-ocr",
+    "label": "20260316-12393…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-123937-Screenshot 2026-03-16 at 12.39.36 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-123937-Screenshot 2026-03-16 at 12.39.36 PM-ocr.txt",
+      "created": "2026-03-16T12:39:36"
+    },
+    "created": "2026-03-16T12:39:36"
+  },
+  {
+    "id": "20260316-123937-Screenshot 2026-03-16 at 12.39.36 PM",
+    "label": "20260316-12393….36 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-123937-Screenshot 2026-03-16 at 12.39.36 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-123937-Screenshot 2026-03-16 at 12.39.36 PM.png",
+      "created": "2026-03-16T12:39:36"
+    },
+    "created": "2026-03-16T12:39:36"
+  },
+  {
+    "id": "20260316-124126-Screenshot 2026-03-16 at 12.41.20 PM-ocr",
+    "label": "20260316-12412…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-124126-Screenshot 2026-03-16 at 12.41.20 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-124126-Screenshot 2026-03-16 at 12.41.20 PM-ocr.txt",
+      "created": "2026-03-16T12:41:20"
+    },
+    "created": "2026-03-16T12:41:20"
+  },
+  {
+    "id": "20260316-124126-Screenshot 2026-03-16 at 12.41.20 PM",
+    "label": "20260316-12412….20 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-124126-Screenshot 2026-03-16 at 12.41.20 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-124126-Screenshot 2026-03-16 at 12.41.20 PM.png",
+      "created": "2026-03-16T12:41:20"
+    },
+    "created": "2026-03-16T12:41:20"
+  },
+  {
+    "id": "20260316-124142-Screenshot 2026-03-16 at 12.41.37 PM-ocr",
+    "label": "20260316-12414…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-124142-Screenshot 2026-03-16 at 12.41.37 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-124142-Screenshot 2026-03-16 at 12.41.37 PM-ocr.txt",
+      "created": "2026-03-16T12:41:37"
+    },
+    "created": "2026-03-16T12:41:37"
+  },
+  {
+    "id": "20260316-124142-Screenshot 2026-03-16 at 12.41.37 PM",
+    "label": "20260316-12414….37 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-124142-Screenshot 2026-03-16 at 12.41.37 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-124142-Screenshot 2026-03-16 at 12.41.37 PM.png",
+      "created": "2026-03-16T12:41:37"
+    },
+    "created": "2026-03-16T12:41:37"
+  },
+  {
+    "id": "20260316-124207-Screenshot 2026-03-16 at 12.42.05 PM-ocr",
+    "label": "20260316-12420…PM-ocr.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-124207-Screenshot 2026-03-16 at 12.42.05 PM-ocr.txt",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-124207-Screenshot 2026-03-16 at 12.42.05 PM-ocr.txt",
+      "created": "2026-03-16T12:42:05"
+    },
+    "created": "2026-03-16T12:42:05"
+  },
+  {
+    "id": "20260316-124207-Screenshot 2026-03-16 at 12.42.05 PM",
+    "label": "20260316-12420….05 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/20260316-124207-Screenshot 2026-03-16 at 12.42.05 PM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/20260316-124207-Screenshot 2026-03-16 at 12.42.05 PM.png",
+      "created": "2026-03-16T12:42:05"
+    },
+    "created": "2026-03-16T12:42:05"
+  },
+  {
+    "id": "Screenshot 2026-03-16 at 9.56.54 AM",
+    "label": "Screenshot 202….54 AM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-16/images/Screenshot 2026-03-16 at 9.56.54 AM.png",
+      "date": "2026-03-16",
+      "sourceDocument": "RAW/archive/2026-03-16/images/Screenshot 2026-03-16 at 9.56.54 AM.png",
+      "created": "2026-03-16T09:56:54"
+    },
+    "created": "2026-03-16T09:56:54"
   }
 ]
