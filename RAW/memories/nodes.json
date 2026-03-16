@@ -89123,5 +89123,19 @@
       "tls"
     ],
     "description": "Use https://localhost:3001 (TLS), not http:// (plain). JARVIS server requires HTTPS_ENABLED=true"
+  },
+  {
+    "id": "node_4345",
+    "label": "jarvis-server-lifecycle",
+    "category": "learning",
+    "type": "operational-rule",
+    "created": "2026-03-16",
+    "moments": [
+      "rule",
+      "server",
+      "lifecycle",
+      "restart"
+    ],
+    "description": "Clean restart: kill ALL port 3001 processes (node + Chrome), wait 2s, start fresh, verify health. Prevents EADDRINUSE errors."
   }
 ]
