@@ -89150,5 +89150,21 @@
       "infrastructure"
     ],
     "description": "JARVIS server port changed from 3001 to 18787 (OpenClaw 18789 - 2 = siblings). Fresh start, no baggage."
+  },
+  {
+    "id": "node_4347",
+    "label": "cherry-voice-test-march-16",
+    "category": "archive",
+    "type": "conversation",
+    "created": "2026-03-16",
+    "moments": [
+      "voice",
+      "test",
+      "cherry",
+      "memory-question"
+    ],
+    "description": "Paul (as Cherry?) voice test at 21:02: 'Can I take one day off? Hello Jarvis. Guess who? I'm Cherry. Talking last night. Remember me?'",
+    "timestamp": "21:02",
+    "transcript": "Can I take one day off? Two days is it? No, I can take one day off. Hello, hello. Jarvis. Guess who it is. Who are you? Hi, I'm Cherry. I was talking with you last night. Do you remember me? Hey!"
   }
 ]

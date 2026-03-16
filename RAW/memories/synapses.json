@@ -34403,5 +34403,12 @@
     "weight": 80,
     "type": "replaces",
     "label": "supersedes"
+  },
+  {
+    "source": "node_4347",
+    "target": "temporal-march-16",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "occurred on"
   }
 ]
