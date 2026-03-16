@@ -89097,5 +89097,18 @@
       "url"
     ],
     "description": "Use http://localhost:3001/neuro-graph (same JARVIS server), not localhost:8080 or github.io"
+  },
+  {
+    "id": "node_4343",
+    "label": "jarvis-server-routes",
+    "category": "learning",
+    "type": "architecture",
+    "created": "2026-03-16",
+    "moments": [
+      "server",
+      "routing",
+      "architecture"
+    ],
+    "description": "Single process (jarvis-server.js:3001), multiple routes: / \u2192 Voice UI, /neuro-graph \u2192 Neurograph"
   }
 ]
