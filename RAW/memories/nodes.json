@@ -63748,17 +63748,17 @@
   },
   {
     "id": "20260316",
-    "label": "March 16, 2026",
+    "label": "2026 03 16",
     "category": "temporal",
     "frequency": 1,
     "moments": [
       "2026-03-16"
     ],
     "attributes": {
+      "created": "2026-03-16",
       "role": "temporal anchor",
-      "description": "Daily anchor for March 16, 2026 archives and learnings",
-      "color": "#f97316",
-      "created": "2026-03-16"
+      "description": "Archive date: 2026-03-16",
+      "color": "#f97316"
     }
   },
   {
