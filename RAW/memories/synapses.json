@@ -30195,5 +30195,23 @@
       "type": "links_to",
       "relation": "temporal_anchor"
     }
+  },
+  {
+    "source": "jarvis-openclaw-architecture-march-16",
+    "target": "temporal-2026-03-16",
+    "weight": 1,
+    "attributes": {
+      "type": "links_to",
+      "relation": "temporal_anchor"
+    }
+  },
+  {
+    "source": "jarvis-openclaw-architecture-march-16",
+    "target": "monumental-voice-pipeline-march-16",
+    "weight": 1,
+    "attributes": {
+      "type": "relates_to",
+      "relation": "architecture-context"
+    }
   }
 ]
