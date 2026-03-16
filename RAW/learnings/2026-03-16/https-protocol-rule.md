@@ -34,20 +34,24 @@
 ## Correct Usage
 
 ```bash
-# ✅ RIGHT - HTTPS with TLS
-open -a "Google Chrome" https://localhost:3001
-open -a "Google Chrome" https://localhost:3001/neuro-graph
+# ✅ RIGHT - HTTPS with TLS, Port 18787
+open -a "Google Chrome" https://localhost:18787
+open -a "Google Chrome" https://localhost:18787/neuro-graph
 
 # ❌ WRONG - Plain HTTP (no TLS)
-open -a "Google Chrome" http://localhost:3001
-open -a "Google Chrome" http://localhost:3001/neuro-graph
+open -a "Google Chrome" http://localhost:18787
+
+# ❌ OLD PORT - Don't use 3001 anymore
+open -a "Google Chrome" https://localhost:3001
 ```
 
-**All JARVIS Routes:**
-- `https://localhost:3001/` → Voice Recorder UI
-- `https://localhost:3001/neuro-graph/` → Neurograph visualization
-- `https://localhost:3001/health` → Health check endpoint
-- `https://localhost:3001/network/qr` → Network QR code
+**All JARVIS Routes (Port 18787):**
+- `https://localhost:18787/` → Voice Recorder UI
+- `https://localhost:18787/neuro-graph/` → Neurograph visualization
+- `https://localhost:18787/health` → Health check endpoint
+- `https://localhost:18787/network/qr` → Network QR code
+
+**Mnemonic:** 18787 = OpenClaw Gateway (18789) - 2. Siblings.
 
 ---
 

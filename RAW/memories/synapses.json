@@ -34389,5 +34389,19 @@
     "weight": 100,
     "type": "temporal-anchor",
     "label": "learned on"
+  },
+  {
+    "source": "node_4346",
+    "target": "temporal-march-16",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "changed on"
+  },
+  {
+    "source": "node_4346",
+    "target": "convo-jarvis-2026-03-12-194349",
+    "weight": 80,
+    "type": "replaces",
+    "label": "supersedes"
   }
 ]

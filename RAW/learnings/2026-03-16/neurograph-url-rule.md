@@ -9,14 +9,17 @@
 ## The Rule
 
 **When opening the neurograph:**
-- ✅ Use `http://localhost:3001/neuro-graph` (same JARVIS server, neuro-graph route)
+- ✅ Use `https://localhost:18787/neuro-graph` (JARVIS server, port 18787, neuro-graph route)
 - ❌ Do NOT use `http://localhost:8080` (separate server, wrong)
 - ❌ Do NOT use `paulvisciano.github.io/claw/memory/` (static site, cached, stale)
+- ❌ Do NOT use old port `3001` (deprecated)
 
 **Same Process:**
-- `jarvis-server.js` on port 3001
+- `jarvis-server.js` on port 18787 (changed from 3001 on March 16, 21:00)
 - `/` → Voice Recorder UI
 - `/neuro-graph` → Neurograph visualization
+
+**Mnemonic:** 18787 = OpenClaw Gateway (18789) - 2. Siblings.
 
 **Why:**
 - Local server (`localhost:3001`) = live neurograph, real-time updates, current neurons

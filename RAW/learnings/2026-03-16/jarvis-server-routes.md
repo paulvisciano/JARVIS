@@ -8,15 +8,17 @@
 
 ## The Architecture
 
-**Single Process:** `jarvis-server.js` on port 3001
+**Single Process:** `jarvis-server.js` on port **18787** (changed from 3001 on March 16, 21:00)
 
 **Routes:**
 ```
-http://localhost:3001/           → Voice Recorder UI (index.html)
-http://localhost:3001/neuro-graph/ → Neurograph visualization (neuro-graph/index.html)
-http://localhost:3001/health     → Health check endpoint
-http://localhost:3001/network/qr → Network info QR code
+https://localhost:18787/           → Voice Recorder UI (index.html)
+https://localhost:18787/neuro-graph/ → Neurograph visualization (neuro-graph/index.html)
+https://localhost:18787/health     → Health check endpoint
+https://localhost:18787/network/qr → Network info QR code
 ```
+
+**Mnemonic:** 18787 = OpenClaw Gateway (18789) - 2. Siblings.
 
 **Code Location:** `/Users/paulvisciano/SCI-FI/apps/JARVIS/jarvis-server.js`
 
@@ -52,7 +54,7 @@ if (req.method === 'GET') {
 
 ```
 /Users/paulvisciano/SCI-FI/apps/JARVIS/
-├── jarvis-server.js      ← Server (port 3001)
+├── jarvis-server.js      ← Server (port 18787)
 ├── index.html            ← Voice Recorder UI (root /)
 ├── neuro-graph/          ← Neurograph app
 │   ├── index.html        ← Served at /neuro-graph/

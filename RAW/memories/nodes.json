@@ -89137,5 +89137,18 @@
       "restart"
     ],
     "description": "Clean restart: kill ALL port 3001 processes (node + Chrome), wait 2s, start fresh, verify health. Prevents EADDRINUSE errors."
+  },
+  {
+    "id": "node_4346",
+    "label": "jarvis-port-18787",
+    "category": "learning",
+    "type": "configuration",
+    "created": "2026-03-16",
+    "moments": [
+      "port",
+      "configuration",
+      "infrastructure"
+    ],
+    "description": "JARVIS server port changed from 3001 to 18787 (OpenClaw 18789 - 2 = siblings). Fresh start, no baggage."
   }
 ]
