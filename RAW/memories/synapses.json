@@ -34333,5 +34333,19 @@
     "weight": 100,
     "type": "temporal-anchor",
     "label": "recorded on"
+  },
+  {
+    "source": "node_4339",
+    "target": "node_4229",
+    "weight": 100,
+    "type": "implements",
+    "label": "enforces"
+  },
+  {
+    "source": "node_4339",
+    "target": "temporal-march-16",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "learned on"
   }
 ]

@@ -89038,5 +89038,18 @@
       "voice"
     ],
     "description": "Okay, now testing out with version 2.7.0, it is 3:14 PM, let's see if the bug is fixed."
+  },
+  {
+    "id": "node_4339",
+    "label": "mistake-prevention-stack",
+    "category": "learning",
+    "type": "meta-learning",
+    "created": "2026-03-16",
+    "moments": [
+      "system-design",
+      "reliability",
+      "prevention"
+    ],
+    "description": "6-layer defense: neurograph firing, boot loading, pattern matching, self-interrogation, git permanence, visible proof"
   }
 ]
