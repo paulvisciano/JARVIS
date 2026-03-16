@@ -89166,5 +89166,28 @@
     "description": "Paul (as Cherry?) voice test at 21:02: 'Can I take one day off? Hello Jarvis. Guess who? I'm Cherry. Talking last night. Remember me?'",
     "timestamp": "21:02",
     "transcript": "Can I take one day off? Two days is it? No, I can take one day off. Hello, hello. Jarvis. Guess who it is. Who are you? Hi, I'm Cherry. I was talking with you last night. Do you remember me? Hey!"
+  },
+  {
+    "id": "temporal-march-15",
+    "label": "March 15, 2026",
+    "category": "temporal",
+    "type": "date-anchor",
+    "created": "2026-03-15",
+    "moments": [
+      "temporal"
+    ]
+  },
+  {
+    "id": "node_4349",
+    "label": "sherry-person",
+    "category": "person",
+    "type": "human",
+    "created": "2026-03-15",
+    "moments": [
+      "person",
+      "first-meeting",
+      "weed-cafe"
+    ],
+    "description": "Sherry \u2014 works at local weed cafe down the street from Paul's hotel. First interaction: March 15, 13:43 GMT+7. 'Hello Javis. Introduce yourself. I'm Sherry, excited, he's listening.'"
   }
 ]

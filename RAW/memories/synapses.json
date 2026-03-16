@@ -34410,5 +34410,19 @@
     "weight": 100,
     "type": "temporal-anchor",
     "label": "occurred on"
+  },
+  {
+    "source": "node_4349",
+    "target": "temporal-march-15",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "met on"
+  },
+  {
+    "source": "node_4349",
+    "target": "paul-visciano",
+    "weight": 95,
+    "type": "knows",
+    "label": "met Paul"
   }
 ]
