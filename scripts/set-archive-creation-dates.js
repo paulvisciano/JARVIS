@@ -56,6 +56,48 @@ if (!fs.existsSync(nodesPath)) {
   process.exit(1);
 }
 
+/**
+ * Parse timestamp from filename.
+ * Supports:
+ * - "convo-jarvis-2026-03-16-094426.wav" → 2026-03-16T09:44:26
+ * - "Screenshot 2026-03-16 at 9.56.54 AM.png" → 2026-03-16T09:56:54
+ * - "recording-1773461516328.wav" (unix ms) → from timestamp
+ */
+function parseTimestampFromFilename(filename) {
+  // Format 1: convo-jarvis-YYYY-MM-DD-HHMMSS.wav
+  const match1 = filename.match(/(\d{4}-\d{2}-\d{2})-(\d{2})(\d{2})(\d{2})/);
+  if (match1) {
+    const date = match1[1];
+    const hour = match1[2];
+    const min = match1[3];
+    const sec = match1[4];
+    return `${date}T${hour}:${min}:${sec}`;
+  }
+  
+  // Format 2: Screenshot YYYY-MM-DD at H.MM.SS AM/PM.png
+  const match2 = filename.match(/(\d{4}-\d{2}-\d{2})\s+at\s+(\d{1,2})\.(\d{2})\.(\d{2})\s*(AM|PM)/i);
+  if (match2) {
+    const date = match2[1];
+    let hour = parseInt(match2[2]);
+    const min = match2[3];
+    const sec = match2[4];
+    const ampm = match2[5].toUpperCase();
+    if (ampm === 'PM' && hour !== 12) hour += 12;
+    if (ampm === 'AM' && hour === 12) hour = 0;
+    return `${date}T${String(hour).padStart(2, '0')}:${min}:${sec}`;
+  }
+  
+  // Format 3: recording-XXXXXXXXXXXX.wav (unix milliseconds)
+  const match3 = filename.match(/recording-(\d{10,})/);
+  if (match3) {
+    const ts = Math.floor(parseInt(match3[1]) / 1000);
+    const d = new Date(ts * 1000);
+    return d.toISOString().replace(/\.\d{3}Z$/, '');
+  }
+  
+  return null;
+}
+
 function walkDir(dir, fileList = []) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const e of entries) {
@@ -65,10 +107,16 @@ function walkDir(dir, fileList = []) {
     } else if (e.isFile()) {
       try {
         const stat = fs.statSync(full);
-        const created = stat.birthtime || stat.mtime;
+        const filename = e.name;
+        
+        // Try to parse timestamp from filename first (more accurate)
+        const parsedTime = parseTimestampFromFilename(filename);
+        const created = parsedTime || (stat.birthtime || stat.mtime).toISOString().replace(/\.\d{3}Z$/, '');
+        
         fileList.push({
           path: full,
-          created: created.toISOString().replace(/\.\d{3}Z$/, ''),
+          created: created,
+          source: parsedTime ? 'filename' : 'birthtime'
         });
       } catch (err) {
         console.warn('Skip (stat failed):', full, err.message);
@@ -146,7 +194,14 @@ files.forEach(({ path: filePath, created }) => {
     label,
     category: 'archive',
     frequency: 1,
-    moments: ['file'],
+    moments: [
+      {
+        date: created.slice(0, 10),
+        type: extToType(ext) + '-archived',
+        description: 'Archived file'
+      },
+      'file'
+    ],
     attributes: {
       role: 'archived-file',
       type: extToType(ext),
