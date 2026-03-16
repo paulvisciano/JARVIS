@@ -63759,7 +63759,8 @@
       "role": "temporal anchor",
       "description": "Archive date: 2026-03-16",
       "color": "#f97316"
-    }
+    },
+    "type": "anchor"
   },
   {
     "id": "convo-jarvis-2026-03-16-103227",
