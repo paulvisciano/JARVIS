@@ -34347,5 +34347,12 @@
     "weight": 100,
     "type": "temporal-anchor",
     "label": "learned on"
+  },
+  {
+    "source": "desktop-screenshots-march-16",
+    "target": "temporal-march-16",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "captured on"
   }
 ]
