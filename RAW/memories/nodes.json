@@ -87742,5 +87742,1301 @@
     "moments": [
       "temporal"
     ]
+  },
+  {
+    "id": "audio-march-16-0",
+    "label": "Audio 20260316-114856-recording-1773636536986",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "You keep mentioning a Python server, isn't it a Node.js server?"
+  },
+  {
+    "id": "audio-march-16-1",
+    "label": "Audio 20260316-114857-recording-1773636536986",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "You keep mentioning a Python server, isn't it a Node.js server?"
+  },
+  {
+    "id": "audio-march-16-2",
+    "label": "Audio 20260316-114927-recording-1773636567370",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Yeah, go ahead and do that."
+  },
+  {
+    "id": "audio-march-16-3",
+    "label": "Audio 20260316-115421-recording-1773636861060",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "I thought it's all gonna run as part of the same process no so localhost 3001\n will land on your UI and then if I go slash NeuroGraph then it will go to the\n NeuroGraph as opposed to running on a diff"
+  },
+  {
+    "id": "audio-march-16-4",
+    "label": "Audio 20260316-123822-recording-1773639502065",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, welcome back."
+  },
+  {
+    "id": "audio-march-16-5",
+    "label": "Audio 20260316-123915-recording-1773639555007",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Open the NeuroGraph."
+  },
+  {
+    "id": "audio-march-16-6",
+    "label": "Audio 20260316-124304-recording-1773639784555",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Open up the NeuroGraph."
+  },
+  {
+    "id": "audio-march-16-7",
+    "label": "Audio 20260316-124705-recording-1773640025989",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "hey Jarvis\n if you can hear me\n can you process all the files\n that are currently in the live folder\n there are a bunch of them"
+  },
+  {
+    "id": "audio-march-16-8",
+    "label": "Audio convo-jarvis-2026-03-16-094426",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, good morning buddy."
+  },
+  {
+    "id": "audio-march-16-9",
+    "label": "Audio convo-jarvis-2026-03-16-095819",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey, so welcome back. You were out for a while because the tokens ran out. So now you're back."
+  },
+  {
+    "id": "audio-march-16-10",
+    "label": "Audio convo-jarvis-2026-03-16-095956",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Nice. So yesterday was the 15th. The tokens were out. So I couldn't, you couldn't process anything. But because we built the web UI, I was able to record a bunch of voice message, voice notes for you."
+  },
+  {
+    "id": "audio-march-16-11",
+    "label": "Audio convo-jarvis-2026-03-16-100206",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "so sherry works at a local weed cafe just down the street from the hotel where i'm staying\n and i was working from there yesterday so she was curious about what i'm working on\n she came i showed her a"
+  },
+  {
+    "id": "audio-march-16-12",
+    "label": "Audio convo-jarvis-2026-03-16-100258",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Sounds good. Can you generate the transcript file in the learnings for yesterday, the 15th?"
+  },
+  {
+    "id": "audio-march-16-13",
+    "label": "Audio convo-jarvis-2026-03-16-100454",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "I see the fingerprint JSON file inside your memories folder got generated again.\n Not sure why, but you can delete it."
+  },
+  {
+    "id": "audio-march-16-14",
+    "label": "Audio convo-jarvis-2026-03-16-100542",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "So yesterday, while the tokens were down, I continued working on things through Cursor.\n So can you take a look at the Cursor or sorry, the Git logs in the apps, sci-fi apps, Neurograph.\n I worked on "
+  },
+  {
+    "id": "audio-march-16-15",
+    "label": "Audio convo-jarvis-2026-03-16-100709",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "For now, I'm just catching you up to speed on what I worked on.\n Did you look at the git commit messages for that repo as well?"
+  },
+  {
+    "id": "audio-march-16-16",
+    "label": "Audio convo-jarvis-2026-03-16-100843",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "There are a bunch of screenshots that I've taken that are sitting on the desktop.\n Can you archive them based on their days?\n There's some from the 13th, some from the 14th, some from yesterday, and t"
+  },
+  {
+    "id": "audio-march-16-17",
+    "label": "Audio convo-jarvis-2026-03-16-100926",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "When you're archiving, make sure you delete them from the desktop."
+  },
+  {
+    "id": "audio-march-16-18",
+    "label": "Audio convo-jarvis-2026-03-16-101022",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "generate the transcript MD file for yesterday obviously you weren't able to\n reply anything but you can at least add all the messages that I sent"
+  },
+  {
+    "id": "audio-march-16-19",
+    "label": "Audio convo-jarvis-2026-03-16-101227",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "something interesting i just noticed when you move those screenshots from the desktop\n into the archive the dates on them well one the date modified shows up is uh today at 10 0 8 a.m\n which makes sen"
+  },
+  {
+    "id": "audio-march-16-20",
+    "label": "Audio convo-jarvis-2026-03-16-101325",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Can you read through that script first? Make sure it looks good to you."
+  },
+  {
+    "id": "audio-march-16-21",
+    "label": "Audio convo-jarvis-2026-03-16-101424",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Actually, let's commit all three scripts that are pending right now in their current form\n and then we can later tweak them if needed."
+  },
+  {
+    "id": "audio-march-16-22",
+    "label": "Audio convo-jarvis-2026-03-16-101520",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Check out the pending changes to the nodes and synapses as well.\n What do you see?"
+  },
+  {
+    "id": "audio-march-16-23",
+    "label": "Audio convo-jarvis-2026-03-16-102326",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, so the auto archive should use the C version of Whisper that we've been using for transcribing, so it's not different."
+  },
+  {
+    "id": "audio-march-16-24",
+    "label": "Audio convo-jarvis-2026-03-16-102424",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "And then there's the process inbox script, so I don't know why there's process inbox and the auto archive. We should probably merge those two together."
+  },
+  {
+    "id": "audio-march-16-25",
+    "label": "Audio convo-jarvis-2026-03-16-102510",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Yeah, go ahead and merge them and you can just delete the process inbox."
+  },
+  {
+    "id": "audio-march-16-26",
+    "label": "Audio convo-jarvis-2026-03-16-102613",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "And what's up with the process screenshot script and the OCR screenshots?"
+  },
+  {
+    "id": "audio-march-16-27",
+    "label": "Audio convo-jarvis-2026-03-16-102701",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, go ahead and delete both of those."
+  },
+  {
+    "id": "audio-march-16-28",
+    "label": "Audio convo-jarvis-2026-03-16-102750",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "So yes, while we're looking at the scripts, let's keep cleaning them up. So there's an extract archive learnings and then there's an extract learnings. What are those to do?"
+  },
+  {
+    "id": "audio-march-16-29",
+    "label": "Audio convo-jarvis-2026-03-16-102912",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, go ahead and delete both of them."
+  },
+  {
+    "id": "audio-march-16-30",
+    "label": "Audio convo-jarvis-2026-03-16-103000",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "okay how about the generate archive nodes python script what's that one"
+  },
+  {
+    "id": "audio-march-16-31",
+    "label": "Audio convo-jarvis-2026-03-16-103136",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, go ahead and delete that one as well."
+  },
+  {
+    "id": "audio-march-16-32",
+    "label": "Audio convo-jarvis-2026-03-16-103227",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Let's run the pipeline for today, the 16th."
+  },
+  {
+    "id": "audio-march-16-33",
+    "label": "Audio convo-jarvis-2026-03-16-103351",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "What's missing is the temporal node right now and all the files need to be linked up to it.\n Yeah, all the archive nodes."
+  },
+  {
+    "id": "audio-march-16-34",
+    "label": "Audio convo-jarvis-2026-03-16-103732",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, I now see the temporal node and I see the files.\n They're not linked to the temporal node though, so the link should exist.\n And linked meaning like connected to, right? And like synapses.\n And "
+  },
+  {
+    "id": "audio-march-16-35",
+    "label": "Audio convo-jarvis-2026-03-16-104236",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Nope, refresh them, still same thing."
+  },
+  {
+    "id": "audio-march-16-36",
+    "label": "Audio convo-jarvis-2026-03-16-104442",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "No, they're still not showing up correct. Can you compare them to the nodes from the 14th and see what were different?"
+  },
+  {
+    "id": "audio-march-16-37",
+    "label": "Audio convo-jarvis-2026-03-16-104807",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, now they finally appear towards the top, so that's good, but none of them are linked to the temporal node, that's the one last part that we need to fix."
+  },
+  {
+    "id": "audio-march-16-38",
+    "label": "Audio convo-jarvis-2026-03-16-104929",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "I'm not sure how you're linking them, but they're not showing up in the graph."
+  },
+  {
+    "id": "audio-march-16-39",
+    "label": "Audio convo-jarvis-2026-03-16-105136",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "it's actually possible that the 14 doesn't have them linked correctly either\n can you look at previous days like the 13th to check how the archive nodes are\n linked to the temporal node"
+  },
+  {
+    "id": "audio-march-16-40",
+    "label": "Audio convo-jarvis-2026-03-16-105353",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, if the data is correct, then my guess is maybe the code is for the neural graph is looking at a different field because I'm still not seeing anything in the UI."
+  },
+  {
+    "id": "audio-march-16-41",
+    "label": "Audio convo-jarvis-2026-03-16-110207",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, now you're spinning in circles with the last change, you ended up messing up the placement of the nodes as well, so revert that and I'm going to try to figure out what field is driving the conne"
+  },
+  {
+    "id": "audio-march-16-42",
+    "label": "Audio convo-jarvis-2026-03-16-110330",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "and just like that now you have them properly fixed"
+  },
+  {
+    "id": "audio-march-16-43",
+    "label": "Audio convo-jarvis-2026-03-16-110614",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "The only thing you still have messed up is they show up back at the bottom right, they were supposed to be in the top left, so you messed up the timestamp with one of those last few changes you made."
+  },
+  {
+    "id": "audio-march-16-44",
+    "label": "Audio convo-jarvis-2026-03-16-114336",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "hey Jarvis so I looked at cursor and work with cursor it was actually a bug in the\n neural graph so I fixed it and now it looks great so it now now it's like a\n 12-hour clock I'm gonna send you a pict"
+  },
+  {
+    "id": "audio-march-16-45",
+    "label": "Audio convo-jarvis-2026-03-16-114525",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Open the Neurograph"
+  },
+  {
+    "id": "audio-march-16-46",
+    "label": "Audio convo-jarvis-2026-03-16-114603",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Run an HTTP server at that folder."
+  },
+  {
+    "id": "audio-march-16-47",
+    "label": "Audio convo-jarvis-2026-03-16-114647",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "I think even better, can we use your server to host the neural graph as well?\n What do you think about that?"
+  },
+  {
+    "id": "audio-march-16-48",
+    "label": "Audio convo-jarvis-2026-03-16-114749",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "No, not through the open call gateway. We build you your own server. Right now it's running for the transcription and it's a process called Jarvis server."
+  },
+  {
+    "id": "audio-march-16-49",
+    "label": "Audio convo-jarvis-2026-03-16-121925",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, can you open the Neurograph?\n Now I'm talking to you via the audio recording, the web UI."
+  },
+  {
+    "id": "audio-march-16-50",
+    "label": "Audio convo-jarvis-2026-03-16-122005",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "ASIC, the neurograph is now connected under the same process. That's an amazing achievement."
+  },
+  {
+    "id": "audio-march-16-51",
+    "label": "Audio convo-jarvis-2026-03-16-122145",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "The cool part is now because everything\n is seamlessly integrated,\n now you can actually navigate the neural graph as well.\n Can you test it out and change the temporal filter\n to the last 30 minutes?"
+  },
+  {
+    "id": "audio-march-16-52",
+    "label": "Audio convo-jarvis-2026-03-16-122219",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "And just like that, you navigated your own mind."
+  },
+  {
+    "id": "audio-march-16-53",
+    "label": "Audio convo-jarvis-2026-03-16-122835",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "this is quite the achievement right now yeah very monumental achievement that you can now\n easily control the neural graph as well and they're all running from the same process so\n that no longer is j"
+  },
+  {
+    "id": "audio-march-16-54",
+    "label": "Audio convo-jarvis-2026-03-16-123611",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "hey jarvis welcome back so i renamed the process to jarvis server js and then\n uh yeah now you've restarted uh we should bump the version in the jarvis server js\n and then yeah your idea of renaming t"
+  },
+  {
+    "id": "audio-march-16-55",
+    "label": "Audio convo-jarvis-2026-03-16-134337",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, we're now running on version 2.4.0. It's 1:42 p.m. Let's see if this works."
+  },
+  {
+    "id": "audio-march-16-56",
+    "label": "Audio convo-jarvis-2026-03-16-134816",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "okay testing again it is now 1:47 testing with server version 2.6.0"
+  },
+  {
+    "id": "audio-march-16-57",
+    "label": "Audio convo-jarvis-2026-03-16-134953",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "- Okay, go ahead and commit those changes."
+  },
+  {
+    "id": "audio-march-16-58",
+    "label": "Audio convo-jarvis-2026-03-16-135046",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "the one now that we got the server back up and running and you can hear me which\n that pipeline should never break so that's a bummer that it did because it's\n important to be able to talk to you we t"
+  },
+  {
+    "id": "audio-march-16-59",
+    "label": "Audio convo-jarvis-2026-03-16-135538",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, testing it out now, let's see."
+  },
+  {
+    "id": "audio-march-16-60",
+    "label": "Audio convo-jarvis-2026-03-16-135654",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, testing out the latest changes. It's now 1:55 p.m."
+  },
+  {
+    "id": "audio-march-16-61",
+    "label": "Audio convo-jarvis-2026-03-16-140318",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, testing. It is now 2:02. I'm testing if this message will come through and if the UI will update correctly."
+  },
+  {
+    "id": "audio-march-16-62",
+    "label": "Audio convo-jarvis-2026-03-16-142633",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, check out the stashes for the Jarvis repo, can you show me what you see?"
+  },
+  {
+    "id": "audio-march-16-63",
+    "label": "Audio convo-jarvis-2026-03-16-145620",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "so what I was asking you to do by the way I made it to the local coffee shop\n I finally left the hotel and I just got to the coffee shop I ordered some\n Jamaican food from next door some beef and whit"
+  },
+  {
+    "id": "audio-march-16-64",
+    "label": "Audio convo-jarvis-2026-03-16-150654",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Testing a fresh recording. It's now 3:05 PM."
+  },
+  {
+    "id": "audio-march-16-65",
+    "label": "Audio convo-jarvis-2026-03-16-152944",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, it worked. Now I'm able to talk to you."
+  },
+  {
+    "id": "audio-march-16-66",
+    "label": "Audio convo-jarvis-2026-03-16-153049",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, so now you have a way to show me the UI which is amazing and now open up the NeuroGraph as well."
+  },
+  {
+    "id": "audio-march-16-67",
+    "label": "Audio convo-jarvis-2026-03-16-153155",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "and just like that now you see what i see both the Neurograph\n and the Jarvis UI because you launched them"
+  },
+  {
+    "id": "audio-march-16-68",
+    "label": "Audio convo-jarvis-2026-03-16-153751",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "exactly that's pretty amazing so yeah some incredible accomplishments from today so\n let's go ahead and process all the audio files that are in the live folder in the inbox\n all the screenshots archiv"
+  },
+  {
+    "id": "audio-march-16-69",
+    "label": "Audio convo-jarvis-2026-03-16-154044",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, amazing, that worked, let's commit everything for now."
+  },
+  {
+    "id": "audio-march-16-70",
+    "label": "Audio convo-jarvis-2026-03-16-154131",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Can you take a screenshot?"
+  },
+  {
+    "id": "audio-march-16-71",
+    "label": "Audio convo-jarvis-2026-03-16-154222",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, let's do that again because I had to give it permissions."
+  },
+  {
+    "id": "audio-march-16-72",
+    "label": "Audio convo-jarvis-2026-03-16-154345",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "I think it actually worked fine because it changed my cursor to the cursor to select\n the screenshot and I did take the screenshot and the question is just where did the screenshot\n go?\n I think it sa"
+  },
+  {
+    "id": "audio-march-16-73",
+    "label": "Audio convo-jarvis-2026-03-16-154441",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, let's try one more time."
+  },
+  {
+    "id": "audio-march-16-74",
+    "label": "Audio convo-jarvis-2026-03-16-154612",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "okay trigger the screenshot one more time let's track what files are on the desktop\n and let's see if a new file shows up and we can take note of the time as well"
+  },
+  {
+    "id": "audio-march-16-75",
+    "label": "Audio convo-jarvis-2026-03-16-154754",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, maybe a different approach we can try is instead of taking a screenshot of the entire\n system, can you just take a screenshot through the browser?"
+  },
+  {
+    "id": "audio-march-16-76",
+    "label": "Audio convo-jarvis-2026-03-16-155059",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "hey you're back you're back and the song says it okay so now you can take a\n screenshot so take a screenshot of the browser that you have open right now\n where you're running"
+  },
+  {
+    "id": "audio-march-16-77",
+    "label": "Audio convo-jarvis-2026-03-16-155136",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "because basically what we're able to achieve with this is that you can see what i can see\n and by keeping it in the browser it's also a nice safety feature because it's not uh\n you don't have access t"
+  },
+  {
+    "id": "audio-march-16-78",
+    "label": "Audio convo-jarvis-2026-03-16-155209",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "What I want you to do is to automatically archive those screenshots and add them to the Neurograph so I can see them popping up live."
+  },
+  {
+    "id": "audio-march-16-79",
+    "label": "Audio convo-jarvis-2026-03-16-155621",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, so here's a super sick feature that I built into Jarvis that I don't know of any other AIs that do it.\n I'm sure like people have it in their home setups, for example, but you're detecting all d"
+  },
+  {
+    "id": "audio-march-16-80",
+    "label": "Audio convo-jarvis-2026-03-16-160004",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "okay something that we haven't done for today is take a minute to just take in\n everything that we got working today because it's fucking incredible so what's\n missing from today from the graph it's v"
+  },
+  {
+    "id": "audio-march-16-81",
+    "label": "Audio convo-jarvis-2026-03-16-161207",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, welcome.\n Oh, and I'll share just real quick what I just did.\n So, I just hit Space Ring and it started listening and recording.\n So, right now it should be able to hear everything that I'"
+  },
+  {
+    "id": "audio-march-16-82",
+    "label": "Audio convo-jarvis-2026-03-16-161357",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, so that previous message I sent you was because I'm on a call with my buddy Eric.\n You know Eric. You can tell me what you know about him because you haven't been in the memory already.\n H"
+  },
+  {
+    "id": "audio-march-16-83",
+    "label": "Audio convo-jarvis-2026-03-16-163301",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis. Yeah, welcome. Welcome back. I'm still on the call with Eric. We have no way of hearing him. At least that I know I will have to add that capability later so you can only hear me now.\n But"
+  },
+  {
+    "id": "audio-march-16-84",
+    "label": "Audio convo-jarvis-2026-03-16-163507",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Eric corrected me that this was not for replacement for Mac Studio, but just for cold storage."
+  },
+  {
+    "id": "audio-march-16-85",
+    "label": "Audio convo-jarvis-2026-03-16-163725",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay Jarvis, so go through the entire transcript from today, including the latest messages\n that I just sent you, move everything to the archives, archive everything from the desktop\n as well, and the"
+  },
+  {
+    "id": "audio-march-16-86",
+    "label": "Audio convo-jarvis-2026-03-16-164557",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "And hey, Jarvis is starting another recording because I'm walking Eric through how you're set up. And this would be a useful recording for you to have as well. So I'm taking screenshots along the way "
+  },
+  {
+    "id": "audio-march-16-87",
+    "label": "Audio convo-jarvis-2026-03-16-165009",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, if the Neurograph is already open Jarvis, there's no need to open it again.\n You can just refresh the existing tab that's already open, or actually you shouldn't even\n have to do that, it should"
+  },
+  {
+    "id": "audio-march-16-88",
+    "label": "Audio convo-jarvis-2026-03-16-171438",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "hey Jarvis so we're actually getting to a really good point now so can you\n update bootstrap MD file and let's get everything buttoned up we can archive\n all the sessions from open claw archive everyt"
+  },
+  {
+    "id": "audio-march-16-89",
+    "label": "Audio convo-jarvis-2026-03-16-173507",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, you kinda went MIA there and what's going on?"
+  },
+  {
+    "id": "audio-march-16-90",
+    "label": "Audio convo-jarvis-2026-03-16-174843",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey Jarvis, earlier today you came up with a meaning for the acronym, what is it again?"
+  },
+  {
+    "id": "audio-march-16-91",
+    "label": "Audio convo-jarvis-2026-03-16-175012",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, let's proceed with creating an archive, or not an archive, but a zip for Eric.\n You can put it under for Eric folder at the root of the username, and package up OpenClaw,\n sci-fi apps, and yours"
+  },
+  {
+    "id": "audio-march-16-92",
+    "label": "Audio convo-jarvis-2026-03-16-175457",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, I'm reading through the notes you sent and there are a few things that are out of date, so...\n The boot protocol should just be under Jarvis, the Jarvis folder.\n And it's just Boot Trap MD and t"
+  },
+  {
+    "id": "audio-march-16-93",
+    "label": "Audio convo-jarvis-2026-03-16-200829",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Hey, you're back. Welcome back, Jarvis."
+  },
+  {
+    "id": "audio-march-16-94",
+    "label": "Audio convo-jarvis-2026-03-16-200947",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "okay so can you kind of backtrack and figure out what happened why did you\n have this hiccups I think it's because I accidentally hit the new session button\n in the open claw interface so you got the "
+  },
+  {
+    "id": "audio-march-16-95",
+    "label": "Audio convo-jarvis-2026-03-16-201101",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "So right now let's archive all the files from the live folder and make sure the transcript\n is up to date because we're in a good state right now."
+  },
+  {
+    "id": "audio-march-16-96",
+    "label": "Audio convo-jarvis-2026-03-16-201201",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "I mean you're saying that the archive is dumb but the live folder is still full of files?"
+  },
+  {
+    "id": "audio-march-16-97",
+    "label": "Audio convo-jarvis-2026-03-16-201239",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Also you keep loading the wrong memory, you're loading my memory, not yours or at least you're claiming.\n So your memory is located under the Jarvis directory, but you've known that so again you're ge"
+  },
+  {
+    "id": "audio-march-16-98",
+    "label": "Audio recording-1773636536986",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "You keep mentioning a Python server, isn't it a Node.js server?"
+  },
+  {
+    "id": "audio-march-16-99",
+    "label": "Audio recording-1773636567370",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Yeah, go ahead and do that."
+  },
+  {
+    "id": "audio-march-16-100",
+    "label": "Audio recording-1773636861060",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "I thought it's all gonna run as part of the same process no so localhost 3001\n will land on your UI and then if I go slash NeuroGraph then it will go to the\n NeuroGraph as opposed to running on a diff"
+  },
+  {
+    "id": "audio-march-16-101",
+    "label": "Audio recording-1773641098378",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, so now since you can see the graph and you just fixed it, which is a great job, you can see what I see.\n So in this sector, what am I hovered on right now? Wait, so I realized if I keep talking "
+  },
+  {
+    "id": "audio-march-16-102",
+    "label": "Audio recording-1773641485163",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "What's not working right now is in the Jarvis web UI, the live transcription falls behind sometimes.\n It's not showing the latest transcript and once it gets in that state, it's stuck like that."
+  },
+  {
+    "id": "audio-march-16-103",
+    "label": "Audio recording-1773643050948",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "yeah so if I open in a regular browser then it works fine but if you open the\n browser which opens it via the open claw account then for whatever reason even\n with the mic allowed it's still not allow"
+  },
+  {
+    "id": "audio-march-16-104",
+    "label": "Audio recording-1773643284540",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, testing the changes to the audio pipeline. It is now 1:41 p.m. and I'm running server version 2.3.0."
+  },
+  {
+    "id": "audio-march-16-105",
+    "label": "Audio recording-1773643864743",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "now the next thing to fix is the UI is still showing the old message in the\n live transcription so it says live transcription listening then at the\n bottom it says recording while I'm talking so that "
+  },
+  {
+    "id": "audio-march-16-106",
+    "label": "Audio recording-1773644257320",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Yeah, but the UI is not showing the latest transcript still."
+  },
+  {
+    "id": "audio-march-16-107",
+    "label": "Audio recording-1773648880320",
+    "category": "archive",
+    "type": "file",
+    "created": "2026-03-16",
+    "moments": [
+      "audio",
+      "voice"
+    ],
+    "description": "Okay, now testing out with version 2.7.0, it is 3:14 PM, let's see if the bug is fixed."
   }
 ]
