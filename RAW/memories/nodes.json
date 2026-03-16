@@ -89065,5 +89065,24 @@
     ],
     "description": "95 screenshots archived from Desktop (6:28 PM - 8:28 PM)",
     "count": 95
+  },
+  {
+    "id": "node_4341",
+    "label": "session-dialogue-archive-march-16",
+    "category": "learning",
+    "type": "session-archive",
+    "created": "2026-03-16",
+    "moments": [
+      "session",
+      "dialogue",
+      "archive"
+    ],
+    "description": "28-min session (8:11-8:39 PM): 26 user/140 assistant messages, memory confusion, browser mistakes, self-correction, archive bug discovery",
+    "session_id": "adf86dc8-67ec-43e3-aea3-7b054de01136",
+    "size_mb": 3.8,
+    "messages": {
+      "user": 26,
+      "assistant": 140
+    }
   }
 ]

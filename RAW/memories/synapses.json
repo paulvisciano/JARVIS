@@ -34354,5 +34354,12 @@
     "weight": 100,
     "type": "temporal-anchor",
     "label": "captured on"
+  },
+  {
+    "source": "node_4341",
+    "target": "temporal-march-16",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "occurred on"
   }
 ]
