@@ -23797,16 +23797,6 @@
     "weight": 0.9
   },
   {
-    "from": "transcript",
-    "to": "20260316",
-    "weight": 0.9
-  },
-  {
-    "from": "",
-    "to": "20260316",
-    "weight": 0.9
-  },
-  {
     "from": "convo-jarvis-2026-03-16-094426",
     "to": "20260316",
     "weight": 0.9
