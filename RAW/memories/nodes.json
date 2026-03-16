@@ -89110,5 +89110,18 @@
       "architecture"
     ],
     "description": "Single process (jarvis-server.js:3001), multiple routes: / \u2192 Voice UI, /neuro-graph \u2192 Neurograph"
+  },
+  {
+    "id": "node_4344",
+    "label": "https-protocol-rule",
+    "category": "learning",
+    "type": "operational-rule",
+    "created": "2026-03-16",
+    "moments": [
+      "rule",
+      "protocol",
+      "tls"
+    ],
+    "description": "Use https://localhost:3001 (TLS), not http:// (plain). JARVIS server requires HTTPS_ENABLED=true"
   }
 ]
