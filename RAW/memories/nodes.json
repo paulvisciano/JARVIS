@@ -89186,8 +89186,23 @@
     "moments": [
       "person",
       "first-meeting",
-      "weed-cafe"
+      "weed-cafe",
+      "network-device-25"
     ],
-    "description": "Sherry \u2014 works at local weed cafe down the street from Paul's hotel. First interaction: March 15, 13:43 GMT+7. 'Hello Javis. Introduce yourself. I'm Sherry, excited, he's listening.'"
+    "description": "Sherry \u2014 works at local weed cafe down the street from Paul's hotel. First interaction: March 15, 13:43 GMT+7. 'Hello Javis. Introduce yourself. I'm Sherry, excited, he's listening.' Network device #25 (IP on local network). Present with Paul during demo, March 16, 21:05."
+  },
+  {
+    "id": "node_4350",
+    "label": "sherry-device-25-march-16",
+    "category": "infrastructure",
+    "type": "network-device",
+    "created": "2026-03-16",
+    "moments": [
+      "network",
+      "device",
+      "sherry",
+      "demo"
+    ],
+    "description": "Sherry's device on Paul's local network \u2014 device #25. She was present during neurograph demo, March 16, 21:05. Everyone on network shown on graph."
   }
 ]

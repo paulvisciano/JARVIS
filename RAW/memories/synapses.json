@@ -34424,5 +34424,19 @@
     "weight": 95,
     "type": "knows",
     "label": "met Paul"
+  },
+  {
+    "source": "node_4350",
+    "target": "node_4349",
+    "weight": 100,
+    "type": "belongs-to",
+    "label": "Sherry's device"
+  },
+  {
+    "source": "node_4350",
+    "target": "temporal-march-16",
+    "weight": 100,
+    "type": "temporal-anchor",
+    "label": "present on"
   }
 ]
