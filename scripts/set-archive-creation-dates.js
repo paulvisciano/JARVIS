@@ -19,6 +19,10 @@
  *
  * Default nodes path: JARVIS/RAW/memories/nodes.json
  * (canonical: /Users/paulvisciano/JARVIS/RAW/memories/)
+ *
+ * Week view = same graph as 24h view: one temporal node per day; learnings/archives
+ * orbit that day's temporal node. Run this script (and set-learning-creation-dates.js)
+ * per day to organize memory for that date. So far run for: 2026-03-13, 2026-03-14.
  */
 
 const fs = require('fs');
@@ -119,12 +123,14 @@ nodes.forEach((node) => {
 const dateStr = path.basename(archiveDir);
 const relFromArchive = (p) => path.relative(archiveDir, p).replace(/\\/g, '/');
 const sourceDoc = (p) => 'RAW/archive/' + dateStr + '/' + relFromArchive(p);
+// Subtype for viewers: audio, image, text, video (graph uses attributes.type/subtype)
 const extToType = (ext) => {
   const e = (ext || '').toLowerCase();
-  if (['.png', '.jpg', '.jpeg', '.gif', '.webp'].includes(e)) return 'screenshot';
-  if (['.mp3', '.m4a', '.wav', '.ogg'].includes(e)) return 'audio';
-  if (['.md', '.txt'].includes(e)) return 'document';
-  return 'file';
+  if (['.png', '.jpg', '.jpeg', '.gif', '.webp', '.heic'].includes(e)) return 'image';
+  if (['.mp3', '.m4a', '.wav', '.ogg', '.webm'].includes(e)) return 'audio';
+  if (['.mp4', '.mov'].includes(e)) return 'video';
+  if (['.md', '.txt'].includes(e)) return 'text';
+  return 'document';
 };
 let createdCount = 0;
 files.forEach(({ path: filePath, created }) => {

@@ -16,6 +16,9 @@
  *   node set-learning-creation-dates.js /Users/paulvisciano/JARVIS/RAW/learnings/2026-03-14
  *
  * Default nodes path: JARVIS/RAW/memories/nodes.json
+ *
+ * Week view uses the same graph as 24h: one temporal node per day. Run per day
+ * (with set-archive-creation-dates.js for that date) to organize memory.
  */
 
 const fs = require('fs');
@@ -99,8 +102,54 @@ console.log('Nodes file:', nodesPath);
 
 const nodesRaw = fs.readFileSync(nodesPath, 'utf8');
 const nodes = JSON.parse(nodesRaw);
-let updated = 0;
 
+// Set of normalized paths that already have a learning node
+const pathHasNode = new Set();
+nodes.forEach((node) => {
+  if ((node.category || '').toLowerCase() !== 'learning') return;
+  const rawPath = node.attributes?.sourceDocument || node.sourceDocument;
+  const n = normalizeLearningPath(rawPath);
+  if (n) pathHasNode.add(n);
+});
+
+const dateStr = path.basename(learningsDir);
+const relFromLearnings = (p) => path.relative(learningsDir, p).replace(/\\/g, '/');
+const sourceDoc = (p) => 'RAW/learnings/' + dateStr + '/' + relFromLearnings(p);
+const existingIds = new Set(nodes.map((n) => n.id));
+
+let createdCount = 0;
+files.forEach(({ path: filePath, created }) => {
+  const key = path.normalize(filePath);
+  if (pathHasNode.has(key)) return;
+  const base = path.basename(filePath, '.md');
+  const label = base.replace(/[-_]/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+  let id = 'learn-' + base.replace(/\s+/g, '-').replace(/[^a-z0-9-]/gi, '').toLowerCase().slice(0, 32);
+  if (existingIds.has(id)) id = id + '-' + dateStr.replace(/-/g, '');
+  existingIds.add(id);
+  const dateOnly = created.slice(0, 10);
+  const node = {
+    id,
+    label,
+    category: 'learning',
+    frequency: 1,
+    moments: ['learning'],
+    attributes: {
+      role: 'learning',
+      sourceDocument: sourceDoc(filePath),
+      created,
+      date: dateOnly,
+    },
+    created,
+  };
+  nodes.push(node);
+  pathHasNode.add(key);
+  pathToCreated[key] = created;
+  pathToCreated[filePath] = created;
+  createdCount++;
+});
+if (createdCount) console.log('Created', createdCount, 'new learning nodes.');
+
+let updated = 0;
 nodes.forEach((node) => {
   const cat = (node.category || '').toLowerCase();
   if (cat !== 'learning') return;
