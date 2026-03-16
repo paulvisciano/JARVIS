@@ -188,7 +188,8 @@ files.forEach(({ path: filePath, created }) => {
   const ext = path.extname(filePath);
   const timePart = created.slice(11, 19).replace(/:/g, ':');
   const label = base.length <= 30 ? base : base.slice(0, 14) + '…' + base.slice(-10);
-  const id = 'ar-' + crypto.createHash('sha256').update(key).digest('hex').slice(0, 12);
+  // Use filename as ID (not hash) so UI can extract time from ID
+  const id = base.replace(/\.[^/.]+$/, ''); // Remove extension
   const node = {
     id,
     label,
