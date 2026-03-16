@@ -87705,7 +87705,13 @@
       "tool-usage",
       "browser-profile"
     ],
-    "description": "Always use profile='chrome' for UI requests, not 'openclaw' isolated browser"
+    "description": "Always use profile='chrome' for UI requests, not 'openclaw' isolated browser",
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/chrome-browser-relay-rule.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "20:18",
+      "date": "2026-03-16"
+    }
   },
   {
     "id": "temporal-march-16",
@@ -89024,7 +89030,13 @@
       "reliability",
       "prevention"
     ],
-    "description": "6-layer defense: neurograph firing, boot loading, pattern matching, self-interrogation, git permanence, visible proof"
+    "description": "6-layer defense: neurograph firing, boot loading, pattern matching, self-interrogation, git permanence, visible proof",
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/auto-archive-timeout-bug.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "20:20",
+      "date": "2026-03-16"
+    }
   },
   {
     "id": "desktop-screenshots-march-16",
@@ -89057,6 +89069,12 @@
     "messages": {
       "user": 26,
       "assistant": 140
+    },
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/live-transcription-ui-lag.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "13:04",
+      "date": "2026-03-16"
     }
   },
   {
@@ -89070,7 +89088,13 @@
       "tool-usage",
       "url"
     ],
-    "description": "Use http://localhost:3001/neuro-graph (same JARVIS server), not localhost:8080 or github.io"
+    "description": "Use http://localhost:3001/neuro-graph (same JARVIS server), not localhost:8080 or github.io",
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/file-move-vs-copy.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "10:12",
+      "date": "2026-03-16"
+    }
   },
   {
     "id": "node_4343",
@@ -89083,7 +89107,13 @@
       "routing",
       "architecture"
     ],
-    "description": "Single process (jarvis-server.js:3001), multiple routes: / → Voice UI, /neuro-graph → Neurograph"
+    "description": "Single process (jarvis-server.js:3001), multiple routes: / → Voice UI, /neuro-graph → Neurograph",
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/script-consolidation-pattern.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "10:23",
+      "date": "2026-03-16"
+    }
   },
   {
     "id": "node_4344",
@@ -89096,7 +89126,13 @@
       "protocol",
       "tls"
     ],
-    "description": "Use https://localhost:3001 (TLS), not http:// (plain). JARVIS server requires HTTPS_ENABLED=true"
+    "description": "Use https://localhost:3001 (TLS), not http:// (plain). JARVIS server requires HTTPS_ENABLED=true",
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/service-naming-jarvis.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "12:36",
+      "date": "2026-03-16"
+    }
   },
   {
     "id": "node_4345",
@@ -89110,7 +89146,13 @@
       "lifecycle",
       "restart"
     ],
-    "description": "Clean restart: kill ALL port 3001 processes (node + Chrome), wait 2s, start fresh, verify health. Prevents EADDRINUSE errors."
+    "description": "Clean restart: kill ALL port 3001 processes (node + Chrome), wait 2s, start fresh, verify health. Prevents EADDRINUSE errors.",
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/neurograph-12hour-clock.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "11:43",
+      "date": "2026-03-16"
+    }
   },
   {
     "id": "node_4346",
@@ -89123,7 +89165,13 @@
       "configuration",
       "infrastructure"
     ],
-    "description": "JARVIS server port changed from 3001 to 18787 (OpenClaw 18789 - 2 = siblings). Fresh start, no baggage."
+    "description": "JARVIS server port changed from 3001 to 18787 (OpenClaw 18789 - 2 = siblings). Fresh start, no baggage.",
+    "attributes": {
+      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/session-new-hiccup.md",
+      "transcript": "RAW/archive/2026-03-16/transcript.md",
+      "time": "20:08",
+      "date": "2026-03-16"
+    }
   },
   {
     "id": "node_4347",
