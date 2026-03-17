@@ -34550,5 +34550,17 @@
     "weight": 0.7,
     "type": "references",
     "label": "documented in"
+  },
+  {
+    "source": "jarvis-analogies-1773732929121",
+    "target": "2026_03_17",
+    "weight": 1,
+    "type": "temporal"
+  },
+  {
+    "source": "jarvis-analogies-1773732929121",
+    "target": "paul_visciano",
+    "weight": 1,
+    "type": "context"
   }
 ]

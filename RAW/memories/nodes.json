@@ -89259,5 +89259,18 @@
       "ui-navigation"
     ],
     "description": "Learned how to navigate, filter, and interact with the Neurograph UI at localhost:18787"
+  },
+  {
+    "id": "jarvis-analogies-1773732929121",
+    "type": "learning",
+    "label": "Jarvis Analogies — Compression Algorithms for Meaning",
+    "timestamp": "2026-03-17T07:35:29.121Z",
+    "moments": [
+      "breakthrough",
+      "communication",
+      "teaching"
+    ],
+    "category": "learning",
+    "rawContentPath": "/Users/paulvisciano/JARVIS/RAW/learnings/2026-03-17/jarvis-analogies.md"
   }
 ]
