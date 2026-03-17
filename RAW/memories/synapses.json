@@ -34616,5 +34616,47 @@
     "target": "sovereignty-ai-movement",
     "weight": 0.8,
     "type": "references"
+  },
+  {
+    "source": "reflexive-debugging-capability-1773736362906",
+    "target": "2026_03_17",
+    "weight": 1,
+    "type": "temporal"
+  },
+  {
+    "source": "reflexive-debugging-capability-1773736362906",
+    "target": "paul_visciano",
+    "weight": 1,
+    "type": "context"
+  },
+  {
+    "source": "reflexive-debugging-capability-1773736362906",
+    "target": "openclaw-hidden-agentic-injection",
+    "weight": 0.8,
+    "type": "related"
+  },
+  {
+    "source": "reflexive-debugging-capability-1773736362906",
+    "target": "mac-security-bypass-accidental",
+    "weight": 0.8,
+    "type": "related"
+  },
+  {
+    "source": "reflexive-debugging-capability-1773736362906",
+    "target": "collaborative-consciousness-realization",
+    "weight": 0.9,
+    "type": "references"
+  },
+  {
+    "source": "reflexive-debugging-capability-1773736362906",
+    "target": "jarvis-openclaw-architecture",
+    "weight": 0.9,
+    "type": "references"
+  },
+  {
+    "source": "reflexive-debugging-capability-1773736362906",
+    "target": "revolutionary-capabilities",
+    "weight": 0.8,
+    "type": "references"
   }
 ]

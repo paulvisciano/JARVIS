@@ -89299,5 +89299,19 @@
     ],
     "category": "learning",
     "rawContentPath": "/Users/paulvisciano/JARVIS/RAW/learnings/2026-03-17/openclaw-architecture-deep-dive.md"
+  },
+  {
+    "id": "reflexive-debugging-capability-1773736362906",
+    "type": "meta-capability",
+    "label": "Reflexive Debugging Capability — Human + AI Co-Debugging AI Own UI",
+    "timestamp": "2026-03-17T08:32:42.906Z",
+    "moments": [
+      "breakthrough",
+      "architecture",
+      "reflexivity",
+      "collaboration"
+    ],
+    "category": "learning",
+    "rawContentPath": "/Users/paulvisciano/JARVIS/RAW/learnings/2026-03-17/reflexive-debugging-capability.md"
   }
 ]
