@@ -34562,5 +34562,29 @@
     "target": "paul_visciano",
     "weight": 1,
     "type": "context"
+  },
+  {
+    "source": "openclaw-hidden-agentic-injection-1773735443176",
+    "target": "2026_03_17",
+    "weight": 1,
+    "type": "temporal"
+  },
+  {
+    "source": "openclaw-hidden-agentic-injection-1773735443176",
+    "target": "paul_visciano",
+    "weight": 1,
+    "type": "context"
+  },
+  {
+    "source": "openclaw-hidden-agentic-injection-1773735443176",
+    "target": "mac-security-bypass-accidental",
+    "weight": 0.8,
+    "type": "related"
+  },
+  {
+    "source": "openclaw-hidden-agentic-injection-1773735443176",
+    "target": "jarvis-openclaw-architecture",
+    "weight": 0.9,
+    "type": "references"
   }
 ]
