@@ -34586,5 +34586,35 @@
     "target": "jarvis-openclaw-architecture",
     "weight": 0.9,
     "type": "references"
+  },
+  {
+    "source": "openclaw-architecture-deep-dive-1773735698429",
+    "target": "2026_03_17",
+    "weight": 1,
+    "type": "temporal"
+  },
+  {
+    "source": "openclaw-architecture-deep-dive-1773735698429",
+    "target": "paul_visciano",
+    "weight": 1,
+    "type": "context"
+  },
+  {
+    "source": "openclaw-architecture-deep-dive-1773735698429",
+    "target": "openclaw-hidden-agentic-injection",
+    "weight": 0.9,
+    "type": "related"
+  },
+  {
+    "source": "openclaw-architecture-deep-dive-1773735698429",
+    "target": "jarvis-openclaw-architecture",
+    "weight": 1,
+    "type": "references"
+  },
+  {
+    "source": "openclaw-architecture-deep-dive-1773735698429",
+    "target": "sovereignty-ai-movement",
+    "weight": 0.8,
+    "type": "references"
   }
 ]
