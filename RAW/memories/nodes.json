@@ -89345,5 +89345,19 @@
       "longitude": 100.86421940043738,
       "accuracy": 38
     }
+  },
+  {
+    "id": "whisper-multilingual-capability-1773752984625",
+    "type": "capability",
+    "label": "Whisper Multilingual — 99 Languages + Cross-Lingual Translation",
+    "timestamp": "2026-03-17T13:09:44.625Z",
+    "moments": [
+      "breakthrough",
+      "multilingual",
+      "sovereignty",
+      "global"
+    ],
+    "category": "learning",
+    "rawContentPath": "/Users/paulvisciano/JARVIS/RAW/learnings/2026-03-17/whisper-multilingual-capability.md"
   }
 ]

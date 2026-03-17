@@ -34724,5 +34724,35 @@
     "target": "data-reclamation-sovereignty",
     "weight": 0.7,
     "type": "references"
+  },
+  {
+    "source": "whisper-multilingual-capability-1773752984625",
+    "target": "2026_03_17",
+    "weight": 1,
+    "type": "temporal"
+  },
+  {
+    "source": "whisper-multilingual-capability-1773752984625",
+    "target": "paul_visciano",
+    "weight": 1,
+    "type": "context"
+  },
+  {
+    "source": "whisper-multilingual-capability-1773752984625",
+    "target": "fork-001-eric-live",
+    "weight": 0.9,
+    "type": "related"
+  },
+  {
+    "source": "whisper-multilingual-capability-1773752984625",
+    "target": "data-sovereignty-vision",
+    "weight": 0.85,
+    "type": "references"
+  },
+  {
+    "source": "whisper-multilingual-capability-1773752984625",
+    "target": "revolutionary-capabilities",
+    "weight": 0.9,
+    "type": "references"
   }
 ]
