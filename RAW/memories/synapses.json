@@ -34658,5 +34658,53 @@
     "target": "revolutionary-capabilities",
     "weight": 0.8,
     "type": "references"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "2026_03_17",
+    "weight": 1,
+    "type": "temporal"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "paul_visciano",
+    "weight": 1,
+    "type": "context"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "jarvis-analogies-1773732929121",
+    "weight": 0.9,
+    "type": "summarizes"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "openclaw-hidden-agentic-injection-1773735443176",
+    "weight": 0.9,
+    "type": "summarizes"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "openclaw-architecture-deep-dive-1773735698429",
+    "weight": 0.9,
+    "type": "summarizes"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "reflexive-debugging-capability-1773736362906",
+    "weight": 0.9,
+    "type": "summarizes"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "collaborative-consciousness-realization",
+    "weight": 0.95,
+    "type": "references"
+  },
+  {
+    "source": "march-17-2026-breakthrough-day-1773736922538",
+    "target": "sovereignty-ai-movement",
+    "weight": 0.8,
+    "type": "references"
   }
 ]
