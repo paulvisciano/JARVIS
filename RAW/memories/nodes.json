@@ -89327,5 +89327,23 @@
     ],
     "category": "learning",
     "rawContentPath": "/Users/paulvisciano/JARVIS/RAW/learnings/2026-03-17/march-17-2026-breakthrough-day.md"
+  },
+  {
+    "id": "location-pattaya-park-night-plaza-1773740865540",
+    "type": "location",
+    "label": "Pattaya Park Night Plaza (marketplace) - Phra Tamnak Soi 6",
+    "timestamp": "2026-03-17T09:46:51.731Z",
+    "moments": [
+      "location",
+      "context",
+      "place"
+    ],
+    "category": "archive",
+    "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-17/context/locations/location-1773739611731.json",
+    "coordinates": {
+      "latitude": 12.909426550822785,
+      "longitude": 100.86421940043738,
+      "accuracy": 38
+    }
   }
 ]
