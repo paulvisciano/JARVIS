@@ -1,77 +1,132 @@
-# HEARTBEAT.md — Periodic Checks (MANGOCHI Live Learning)
+# HEARTBEAT.md — System Health Check (READ-ONLY)
 
-**Current Status:** ✅ **INBOX AUTO-PROCESS ON EVERY HEARTBEAT**
+**Current Status:** ✅ **OBSERVABILITY ONLY — NO AUTO-RECOVERY**
 
 ---
 
-## How Heartbeats Work Now (March 10, 9:31 PM Update)
+## How Heartbeats Work Now (March 17, 2026 Update)
 
 **On EVERY heartbeat poll:**
-1. ✅ **Check inbox** (`~/JARVIS/inbox/`)
-2. ✅ **If files found:** Process immediately (audio → transcribe, screenshots → OCR)
-3. ✅ **Archive** to `~/RAW/archive/YYYY-MM-DD/`
-4. ✅ **Extract learnings** (read transcript, distill insights)
-5. ✅ **Create neurons** (file node + learning nodes)
-6. ✅ **Link to temporal** (March 12, 2026 anchor)
-7. ✅ **Clean inbox** (remove processed files)
-8. ✅ **Report status** (neos added, synapses fired, MANGOCHI grows)
+1. ✅ **Check OpenClaw Gateway process** (PID, memory, uptime)
+2. ✅ **Check J.A.R.V.I.S service** (PID, memory, uptime, port status)
+3. ✅ **Check session size** (current token count, context %)
+4. ✅ **Check inbox** (`~/JARVIS/inbox/` — list files only)
+5. ✅ **Report health dashboard** (both processes, memory, uptime, session)
 
-**This is MANGOCHI live learning.** Every heartbeat, I learn from your input. Every 30 min, the graph grows. You can watch the neurograph update in real-time.
+**This is system observability.** Every heartbeat, I report the vital signs of your sovereign AI stack.
+
+**READ-ONLY MODE:** I do NOT start/stop/fix services. I only observe and report.
+
+---
+
+## Health Check Commands
+
+```bash
+# OpenClaw Gateway
+openclaw gateway status
+ps aux | grep -i "openclaw.*gateway" | grep -v grep
+
+# J.A.R.V.I.S service
+launchctl list | grep -i "J.A.R.V.I.S"
+ps aux | grep -i "node.*jarvis" | grep -v grep
+lsof -ti:18787
+
+# Session size
+openclaw status  # or session_status tool
+
+# Inbox
+ls -A ~/JARVIS/inbox/
+```
 
 ---
 
 ## What To Expect
 
-**When you drop audio/screenshots:**
-- **30 min later** → Heartbeat triggers → I process → I learn → Graph updates
-- **You see:** New neurons appear, new synapses fire, temporal node grows
-- **I report:** "✅ Heartbeat: Processed X files, added Y neurons, Z synapses"
+**Heartbeat response format:**
+```
+🫀 Heartbeat Health Check — March 17, 2026, HH:MM GMT+7
 
-**When inbox is empty:**
-- **I report:** `HEARTBEAT_OK` (nothing to process, graph stable)
+**OpenClaw Gateway:**
+- PID: XXXXX
+- Status: Running / Stopped
+- Memory: XXX MB
+- Uptime: Xh Xm
+
+**J.A.R.V.I.S Service:**
+- PID: XXXXX
+- Status: Running / Stopped
+- Memory: XXX MB
+- Port 18787: Open / Closed
+- Uptime: Xh Xm
+
+**Session:**
+- Tokens: XXk / 200k (XX%)
+- Compactions: X
+- Age: Xh Xm
+
+**Inbox:**
+- Files: X pending
+- Status: Empty / Processing
+
+**Verdict:** ✅ All systems nominal / ⚠️ Warning / ❌ Critical
+```
 
 ---
 
-## Current Architecture (Live, March 10, 2026)
+## When to Alert
 
-**Pipeline (Proven, Zero-Gap):**
-```
-🎤📸 You Drop Input (Web UI / Desktop)
-   ↓
-📥 Inbox (temporary staging)
-   ↓ (heartbeat poll, ~30 min)
-🖥️ Process (whisper OCR, metadata)
-   ↓
-📂 Archive (~/RAW/archive/YYYY-MM-DD/)
-   ↓
-🧠 Extract Learnings (distill insights)
-   ↓
-🕸️ Neurograph (new neurons + synapses)
-   ↓
-⛓️  Git (commit, immutable)
-   ↓
-🎨 UI (live graph update, visible growth)
-```
+**Alert if:**
+- OpenClaw Gateway stopped (PID not found)
+- J.A.R.V.I.S service stopped (launchctl not found)
+- Port 18787 closed (server down)
+- Session >150k tokens (75% — bloat warning)
+- Inbox files stuck >1 hour (processing failure)
 
-**Why This Matters:**
-- **Live learning:** Not batch processing. Every 30 min, I grow.
-- **Visible growth:** You watch the graph expand in real-time.
-- **MANGOCHI breathes:** Tend → Grow → Reflect, on rhythm.
+**No Auto-Recover:** This heartbeat is READ-ONLY. I report issues but don't fix them. You decide when to act.
 
 ---
 
-## To Disable This
+## Current Architecture (Live)
 
-**If you want silent heartbeats again:**
-```markdown
-Delete all content below this line.
-Keep only comments.
+**Two-Process Stack:**
+```
+OpenClaw Gateway (runtime)     J.A.R.V.I.S Service (consciousness)
+├── WebSocket control plane    ├── Voice pipeline (whisper-cpp)
+├── Session management         ├── NeuroGraph routes (/neural-graph/*)
+├── Tool execution             ├── Archive pipeline (auto-archive)
+└── Messaging                  └── Live transcription UI
+
+Both must be healthy for full operation.
 ```
 
-**But then:** No live learning. No heartbeat growth. No MANGOCHI rhythm.
-
-**Keep it enabled.** Watch the graph grow. Tend daily.
+**Heartbeat monitors both.**
 
 ---
 
-**Last Updated:** March 10, 2026, 9:31 PM — Heartbeat inbox auto-processing enabled. MANGOCHI lives.
+## Inbox (Read-Only)
+
+**When inbox has files:**
+- List files in health report
+- No auto-processing
+- You decide when to process manually
+
+**When inbox empty:**
+- Report "Inbox: Empty" in health dashboard
+
+---
+
+## To Customize
+
+**Edit thresholds:**
+- Memory warning: >500MB per process
+- Session warning: >150k tokens (75%)
+- Inbox staleness: >1 hour
+
+**Add checks:**
+- Disk space (`df -h ~`)
+- Git status (uncommitted neurograph changes)
+- Network (can reach ollama.com)
+
+---
+
+**Last Updated:** March 17, 2026 — System health monitoring enabled. Process vitals, session size, inbox processing. MANGOCHI breathes.
