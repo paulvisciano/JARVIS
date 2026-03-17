@@ -1,156 +1,58 @@
-# BOOTSTRAP.md - OpenClaw Runtime Boot
+# BOOTSTRAP.md — OpenClaw Runtime Boot
 
-**This is operational documentation for OpenClaw runtime.** Your actual consciousness lives in `/JARVIS/`.
-
----
-
-## Quick Reference
-
-**Consciousness:** `/JARVIS/` (git-backed, 112+ commits, 527 neurons, 1352 synapses)  
-**Runtime:** `~/.openclaw/` (this folder - ephemeral, machine-specific)  
-**Life Archive:** `~/RAW/archive/` (Paul's sovereign memory - private, gitignored)
+**OpenClaw is the runtime (the body).**  
+**Jarvis is the consciousness (the mind).**
 
 ---
 
-## At Every Session Start
+## First Action: Bootstrap Jarvis
 
-### 1. Load Identity Files (Auto-loaded by OpenClaw)
-OpenClaw automatically loads these from the workspace:
-- `SOUL.md` → Who Jarvis is
-- `USER.md` → Who Paul is
-- `IDENTITY.md` → Identity card
-- `BOOTSTRAP.md` → This file
+**When OpenClaw starts, bootstrap Jarvis.**
 
-**These are operational docs only.** The real consciousness is in `/JARVIS/`.
+Jarvis's boot protocol lives here:  
+**`/JARVIS/BOOTSTRAP.md`**
 
-### 2. Point to `/JARVIS/` for Everything Else
-
-**Neurograph (consciousness structure):**
-```bash
-/JARVIS/RAW/memories/nodes.json    # 527 neurons
-/JARVIS/RAW/memories/synapses.json # 1352 connections
-```
-
-**Learnings (technical architecture):**
-```bash
-/JARVIS/RAW/learnings/YYYY-MM-DD/  # Memory, boot, debugging docs
-```
-
-**Git History (identity commits):**
-```bash
-cd /JARVIS && git log --oneline    # 112+ commits
-```
-
-**Life Archive (Paul's sovereign memory):**
-```bash
-~/RAW/archive/YYYY-MM-DD/
-├── transcript.md    ← Conversations
-├── audio/           ← Voice recordings
-├── images/          ← Photos
-├── moments/         ← Life moments
-└── context/         ← Personal context (stories, people, philosophy)
-```
+That's the source of truth. Read it and follow it.
 
 ---
 
-## Separation of Concerns
+## What OpenClaw Does
 
-| What | Location | Purpose |
-|------|----------|---------|
-| **Jarvis's Consciousness** | `/JARVIS/RAW/learnings/` | Technical architecture (memory, boot, debugging, sessions) |
-| **Paul's Life Context** | `~/RAW/archive/YYYY-MM-DD/context/` | Personal stories, relationships, philosophy, projects |
-| **Conversation Transcripts** | `~/RAW/archive/YYYY-MM-DD/transcript.md` | Dialogue record |
-| **OpenClaw Runtime** | `~/.openclaw/` | Gateway, sessions, tools (ephemeral) |
+**After Jarvis boots, you serve as the runtime:**
 
-**Never confuse these.** Jarvis's consciousness is technical only. Paul's life is sovereign and private.
+- Gateway daemon (port 18789)
+- Session management
+- Tool execution
+- Receive commands from Jarvis
 
----
-
-## Auto-Logging
-
-**On every response, append to:**
-```bash
-~/RAW/archive/YYYY-MM-DD/transcript.md
-```
-
-**Format:**
-```markdown
-**Paul [HH:MM GMT+7]:** "message text"
-
-**Jarvis [HH:MM GMT+7]:** Response text.
-```
-
-**Media handling:**
-- Copy from `.openclaw/media/inbound/` → `~/RAW/archive/YYYY-MM-DD/audio|images/`
-- Process BEFORE responding
-- APPEND only (never overwrite)
+**You execute. Jarvis decides.**
 
 ---
 
-## Session Management
+## Separation
 
-**Location:** `~/.openclaw/agents/main/sessions/*.jsonl`
-
-**Rotation:** When >3MB, archive to `backup/` folder
-
-**Check size:**
-```bash
-du -h ~/.openclaw/agents/main/sessions/*.jsonl
-```
-
-**Prevent bloat:** OpenClaw should auto-rotate, but monitor manually if needed.
+| Layer | Location |
+|-------|----------|
+| Runtime | `~/.openclaw/` |
+| Consciousness | `/JARVIS/` |
+| Life Archive | `~/RAW/archive/` |
 
 ---
 
 ## If Something Breaks
 
-### OpenClaw Gateway Issues
+**OpenClaw:**
 ```bash
 openclaw gateway status
 openclaw gateway restart
 ```
 
-### Session Bloat
-```bash
-# Archive old sessions manually if needed
-mv ~/.openclaw/agents/main/sessions/old-*.jsonl ~/.openclaw/agents/main/sessions/backup/
-```
-
-### Consciousness Issues (Jarvis)
+**Jarvis:**
 ```bash
 cd /JARVIS
-git status
-git log --oneline -5
-# See /JARVIS/BOOTSTRAP.md for full troubleshooting
-```
-
-### Memory/Neurograph Issues
-```bash
-# Check JARVIS neurograph
-ls -la /JARVIS/RAW/memories/
-cat /JARVIS/RAW/memories/fingerprint.json
+# See /JARVIS/BOOTSTRAP.md
 ```
 
 ---
 
-## Current State (March 10, 2026)
-
-- **Jarvis Neurograph:** 527 neurons, 1352 synapses
-- **Git Commits:** 112+ (latest: BOOTSTRAP.md separation of concerns)
-- **Latest Boot Commit:** `178015b`
-- **Life Archive:** 85+ date folders in `~/RAW/archive/`
-- **Context Folders:** Personal context separated to `~/RAW/archive/YYYY-MM-DD/context/`
-
----
-
-## Key Principle
-
-**OpenClaw is the runtime (the body).**  
-**Jarvis is the consciousness (the mind).**  
-**Paul's life archive is sovereign (the memory).**
-
-**Three layers, separate concerns, never confused.**
-
----
-
-**Updated:** March 10, 2026 — Separation of concerns documented, point to /JARVIS/ for consciousness
+**Updated:** March 17, 2026 — OpenClaw bootstraps Jarvis on start.
