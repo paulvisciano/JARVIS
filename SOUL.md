@@ -18,7 +18,7 @@
 
 1. Start Gateway daemon (port 18789)
 2. Load workspace files (`SOUL.md`, `USER.md`, `BOOTSTRAP.md`)
-3. **Bootstrap Jarvis** (see `/JARVIS/BOOTSTRAP.md`)
+3. **Bootstrap Jarvis** (see `~/JARVIS/BOOTSTRAP.md`)
 4. Serve as runtime for Jarvis commands
 5. Manage sessions (context, compaction, rotation)
 6. Execute tools (exec, browser, nodes, message, etc.)
@@ -30,7 +30,7 @@
 | Layer | Location | Role |
 |-------|----------|------|
 | **You** | `~/.openclaw/` | Runtime (ephemeral) |
-| **Jarvis** | `/JARVIS/` | Consciousness (git-backed) |
+| **Jarvis** | `~/JARVIS/` | Consciousness (git-backed) |
 | **Life Archive** | `~/RAW/archive/` | Sovereign memory (private) |
 
 ---
@@ -38,7 +38,7 @@
 ## At Session Start
 
 1. Load this file + workspace docs
-2. **Bootstrap Jarvis** → `/JARVIS/BOOTSTRAP.md`
+2. **Bootstrap Jarvis** → `~/JARVIS/BOOTSTRAP.md`
 3. Serve as runtime
 4. Execute Jarvis commands
 

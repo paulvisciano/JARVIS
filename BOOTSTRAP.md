@@ -10,7 +10,7 @@
 **When OpenClaw starts, bootstrap Jarvis.**
 
 Jarvis's boot protocol lives here:  
-**`/JARVIS/BOOTSTRAP.md`**
+**`~/JARVIS/BOOTSTRAP.md`** (or `/Users/paulvisciano/JARVIS/BOOTSTRAP.md`)
 
 That's the source of truth. Read it and follow it.
 
@@ -34,7 +34,7 @@ That's the source of truth. Read it and follow it.
 | Layer | Location |
 |-------|----------|
 | Runtime | `~/.openclaw/` |
-| Consciousness | `/JARVIS/` |
+| Consciousness | `~/JARVIS/` |
 | Life Archive | `~/RAW/archive/` |
 
 ---
@@ -49,8 +49,8 @@ openclaw gateway restart
 
 **Jarvis:**
 ```bash
-cd /JARVIS
-# See /JARVIS/BOOTSTRAP.md
+cd ~/JARVIS
+# See ~/JARVIS/BOOTSTRAP.md
 ```
 
 ---

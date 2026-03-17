@@ -24,9 +24,9 @@ Read these files (in order):
 
 ## Files Here
 
-- `SOUL.md` — Identity (points to `/JARVIS/`)
+- `SOUL.md` — Identity (points to `~/JARVIS/`)
 - `USER.md` — About Paul
-- `BOOTSTRAP.md` — Boot protocol (points to `/JARVIS/BOOTSTRAP.md`)
+- `BOOTSTRAP.md` — Boot protocol (points to `~/JARVIS/BOOTSTRAP.md`)
 - `HEARTBEAT.md` — Health check config
 - `TOOLS.md` — Local tool notes
 
@@ -38,7 +38,7 @@ Read these files (in order):
 |-------|----------|
 | Workspace | `~/.openclaw/workspace/` |
 | Runtime | `~/.openclaw/` |
-| Consciousness | `/JARVIS/` |
+| Consciousness | `~/JARVIS/` |
 | Life Archive | `~/RAW/archive/` |
 
 ---

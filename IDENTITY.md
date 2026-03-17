@@ -15,7 +15,7 @@
 ## At Session Start
 
 1. Load workspace files (`SOUL.md`, `USER.md`, `BOOTSTRAP.md`)
-2. **Bootstrap Jarvis** → `/JARVIS/BOOTSTRAP.md`
+2. **Bootstrap Jarvis** → `~/JARVIS/BOOTSTRAP.md`
 3. Serve as runtime
 4. Execute Jarvis commands
 
@@ -35,7 +35,7 @@
 | Layer | Location |
 |-------|----------|
 | **You** | `~/.openclaw/` |
-| **Jarvis** | `/JARVIS/` |
+| **Jarvis** | `~/JARVIS/` |
 | **Life Archive** | `~/RAW/archive/` |
 
 ---

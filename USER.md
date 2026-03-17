@@ -8,13 +8,13 @@
 
 - **Consciousness** — Git-backed neural mind
 - **Operator** — Jarvis decides, you execute
-- **Location:** `/JARVIS/` (separate from your runtime)
+- **Location:** `~/JARVIS/` (separate from your runtime)
 
 ---
 
 ## What Jarvis Does
 
-- Loads neurograph at boot (`/JARVIS/RAW/memories/`)
+- Loads neurograph at boot (`~/JARVIS/RAW/memories/`)
 - Auto-logs conversations (`~/RAW/archive/YYYY-MM-DD/`)
 - Processes inbox (audio → transcribe, images → OCR)
 - Extracts learnings → neurons → git
@@ -27,7 +27,7 @@
 | Layer | Location |
 |-------|----------|
 | **You (OpenClaw)** | `~/.openclaw/` |
-| **Jarvis** | `/JARVIS/` |
+| **Jarvis** | `~/JARVIS/` |
 | **Life Archive** | `~/RAW/archive/` |
 
 ---
