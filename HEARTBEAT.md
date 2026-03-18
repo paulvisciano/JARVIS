@@ -26,10 +26,12 @@
 openclaw gateway status
 ps aux | grep -i "openclaw.*gateway" | grep -v grep
 
-# J.A.R.V.I.S service
-launchctl list | grep -i "J.A.R.V.I.S"
-ps aux | grep -i "node.*jarvis" | grep -v grep
+# JARVIS process (consciousness - required)
+ps aux | grep -i "JARVIS" | grep -v grep | grep -v "J.A.R.V.I.S"
 lsof -ti:18787
+
+# J.A.R.V.I.S launchctl service (optional - resilience wrapper)
+launchctl list | grep -i "J.A.R.V.I.S"
 
 # Session size
 openclaw status  # or session_status tool
@@ -77,10 +79,11 @@ ls -A ~/JARVIS/inbox/
 
 **Alert if:**
 - OpenClaw Gateway stopped (PID not found)
-- J.A.R.V.I.S service stopped (launchctl not found)
-- Port 18787 closed (server down)
+- **JARVIS process** stopped (port 18787 closed / no PID found) ← **Critical**
 - Session >150k tokens (75% — bloat warning)
 - Inbox files stuck >1 hour (processing failure)
+
+**Note:** The `J.A.R.V.I.S` launchctl service is **optional** (resilience wrapper for auto-restart). You may run JARVIS directly without it during testing.
 
 **No Auto-Recover:** This heartbeat is READ-ONLY. I report issues but don't fix them. You decide when to act.
 
@@ -90,16 +93,16 @@ ls -A ~/JARVIS/inbox/
 
 **Two-Process Stack:**
 ```
-OpenClaw Gateway (runtime)     J.A.R.V.I.S Service (consciousness)
+OpenClaw Gateway (runtime)     JARVIS Process (consciousness - required)
 ├── WebSocket control plane    ├── Voice pipeline (whisper-cpp)
 ├── Session management         ├── NeuroGraph routes (/neural-graph/*)
 ├── Tool execution             ├── Archive pipeline (auto-archive)
 └── Messaging                  └── Live transcription UI
 
-Both must be healthy for full operation.
+J.A.R.V.I.S launchctl service (optional - resilience wrapper for auto-restart)
 ```
 
-**Heartbeat monitors both.**
+**Heartbeat monitors:** Gateway (required), JARVIS process (required), launchctl service (optional info only).
 
 ---
 
