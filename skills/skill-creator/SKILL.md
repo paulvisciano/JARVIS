@@ -43,6 +43,42 @@ Match the level of specificity to the task's fragility and variability:
 
 Think of Codex as exploring a path: a narrow bridge with cliffs needs specific guardrails (low freedom), while an open field allows many routes (high freedom).
 
+### Project-Agnostic Design (Critical for Reusability)
+
+**Skills should work for any project, not just one codebase.**
+
+**Pattern: Project-Agnostic**
+- Don't hardcode paths like `~/SCI-FI/apps/JARVIS/`
+- Use parameters or detect project root at runtime
+- Ask "What project is this for?" when needed
+- Store outputs in `<project-root>/plans/` or user-specified location
+- Examples should show multiple projects (JARVIS, forks, custom apps)
+
+**Example: cursor-plan skill**
+```markdown
+## Bad (coupled to one project)
+Plans stored in ~/SCI-FI/apps/JARVIS/plans/
+
+## Good (project-agnostic)
+Plans stored in <project-root>/plans/
+Ask: "What project is this for?" → detect path → use relative paths
+```
+
+**Benefits:**
+- Works for JARVIS UI, Fork #001, Fork #002, future forks, any app
+- No rewriting when project changes
+- Universal utility, not one-off tool
+
+**When to use:**
+- Skills that operate on codebases (plans, fixes, refactors, builds)
+- Skills that read/write project files
+- Skills that should be reusable across forks/users
+
+**When NOT to use:**
+- Skills tied to specific infrastructure (JARVIS voice pipeline, specific API keys)
+- Skills for one-time migrations
+- Skills that are inherently project-specific by design
+
 ### Anatomy of a Skill
 
 Every skill consists of a required SKILL.md file and optional bundled resources:
