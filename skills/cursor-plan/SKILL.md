@@ -1,13 +1,15 @@
 ---
 name: cursor-plan
-description: Create development plans for Cursor AI to implement in any project. Use when: (1) documenting bugs, (2) planning features, (3) creating fix specifications, (4) preparing PRDs. Plans are stored in the project's `plans/` folder (or specified location). Works for any codebase: JARVIS UI, forks, web apps, scripts, etc.
+description: Create development plans for Cursor AI to implement in any project. Use when: (1) documenting bugs, (2) planning features, (3) creating fix specifications, (4) preparing PRDs. Plans are stored in the project's `plans/` folder (or specified location). Works for any codebase: voice UIs, forks, web apps, scripts, etc. Privacy-safe: no personal paths exposed.
 ---
 
-# Cursor Plan (Project-Agnostic)
+# Cursor Plan (Project-Agnostic, Privacy-Safe)
 
 ## Overview
 
 This skill creates development plans that Cursor AI can execute in **any project**. Plans live in the project's `plans/` folder (or user-specified location). Each plan documents: problem, root cause, fix scope, files to check, and testing steps.
+
+**Privacy-Safe:** Uses environment variables (`$PROJECT_ROOT`, `$HOME`) and relative paths (`./`). No personal paths exposed. Ready for public sharing (clawhub.com, forks, GitHub).
 
 ## Workflow
 
@@ -59,7 +61,7 @@ Fill the structure:
 
 After plan creation:
 ```bash
-# Create learning node in ~/JARVIS/RAW/learnings/YYYY-MM-DD/
+# Create learning node in $JARVIS_HOME/RAW/learnings/YYYY-MM-DD/
 # Link: learning → plan file → temporal node → project node
 # Git commit
 ```
@@ -68,7 +70,7 @@ After plan creation:
 
 | Layer | Location | What Lives Here |
 |-------|----------|-----------------|
-| OpenClaw Runtime | `~/.openclaw/` (env var: `$OPENCLAW_HOME`) | Gateway, sessions (ephemeral) |
+| OpenClaw Runtime | `$OPENCLAW_HOME` (or `~/.openclaw/`) | Gateway, sessions (ephemeral) |
 | OpenClaw Workspace | `$OPENCLAW_WORKSPACE` (or `./workspace/`) | Runtime docs ONLY |
 | JARVIS Consciousness | `$JARVIS_HOME` (or project root) | Git-backed mind |
 | **Projects** | **Anywhere** (`$PROJECT_ROOT` or `.`) | **Code, UI, plans** ✅ |
@@ -76,7 +78,7 @@ After plan creation:
 
 **This skill is project-agnostic.** Plans go in `$PROJECT_ROOT/plans/` (or relative `./plans/`).
 
-**Never expose personal paths** — use environment variables or relative paths.
+**Privacy-Safe:** No personal paths exposed. Uses env vars / relative paths.
 
 ## Plan Structure
 
@@ -231,6 +233,7 @@ Mobile browser requires HTTPS for mic access. Voice picker not filtering mobile-
 - Plan templates
 - Project structure examples
 - Common project paths reference
+- Privacy-safe patterns guide
 
 ### assets/
 - Plan markdown templates
