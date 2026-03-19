@@ -8909,7 +8909,6 @@
       "type": "memory-reference",
       "target_memory": "https://paulvisciano.github.io/memory/",
       "memory_owner": "paul",
-      "fingerprint_url": "https://paulvisciano.github.io/memory/data/fingerprint.json",
       "nodes_url": "https://paulvisciano.github.io/memory/data/nodes.json",
       "synapses_url": "https://paulvisciano.github.io/memory/data/synapses.json",
       "sourceDocument": "RAW/learnings/2026-02-25/20-distributed-consciousness-network.md",
