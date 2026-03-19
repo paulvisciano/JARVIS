@@ -66,13 +66,20 @@ Ready."
 
 ---
 
-## Skills to Use
+## Skills Available
 
-| Skill | When |
-|-------|------|
-| `neural-graph-loader` | Full graph load (asks user, ~50k tokens) |
-| `neural-graph-search` | Lightweight query ("Who is David?", ~100 tokens) |
-| `memory-link-traverse` | Cross-graph search (JARVIS ↔ Paul, asks user) |
+All skills in `~/JARVIS/skills/` are symlinked into OpenClaw runtime and auto-discovered:
+
+```
+~/JARVIS/skills/
+├── neural-graph-loader/   ← Load full graph (asks user, logs counts)
+├── neural-graph-search/   ← Lightweight search (~100 tokens)
+├── memory-link-traverse/  ← Cross-graph search (warns user)
+├── cursor-plan/           ← Create Cursor plans
+└── skill-creator/         ← Create new skills
+```
+
+**Don't hardcode skill lists** — new skills auto-appear when added to `~/JARVIS/skills/` and symlinked.
 
 ---
 
