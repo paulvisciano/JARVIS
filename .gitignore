@@ -4,7 +4,9 @@
 sessions/
 .openclaw/
 .pi/
-skills/
+
+# Skills: track source, ignore packaged distributables
+skills/**/*.skill
 
 # Media inbox (temporary, auto-archived to ~/RAW/archive/)
 media/
