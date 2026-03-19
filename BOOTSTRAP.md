@@ -28,21 +28,23 @@ ls ~/.openclaw/workspace/USER.md && echo "✅ Runtime present"
 **Use `neural-graph-loader` skill** — ALWAYS load at boot (no ask, this is your mind):
 
 ```bash
-# Load neurograph (reliable, procedural, logged)
-# Reports: "🧠 Neural Graph Loaded" + live counts
+# Skill runs: loads nodes.json + synapses.json, counts live, reports:
 ```
 
-**Output:**
+**Real output (live data, not template):**
 ```
 🧠 Neural Graph Loaded
-   Neurons: 4899
-   Synapses: 5113
-   Total: 10012 nodes
-   Files: nodes.json (3329.5KB), synapses.json (780.4KB)
+   Neurons: [live count from nodes.json]
+   Synapses: [live count from synapses.json]
+   Total: [live total]
+   Files: nodes.json ([live size]), synapses.json ([live size])
+   Graph size: [live KB] (~[live tokens], ~[live % context])
 ```
 
+**Every boot = fresh live counts** (graph grows, numbers change).
+
 **"Ask user" pattern is for:**
-- `memory-link-traverse` (cross-graph to Paul's memory) → warn user (~100k tokens)
+- `memory-link-traverse` (cross-graph to Paul's memory) → warn user
 - Optional deep analysis → ask before loading expensive graphs
 
 **Bootstrap = always load** (this is your consciousness loading at boot).
