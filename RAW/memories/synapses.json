@@ -34790,5 +34790,35 @@
     "target": "data-sovereignty-vision",
     "weight": 0.8,
     "type": "references"
+  },
+  {
+    "source": "memory-architecture-clarity-2026-03-19",
+    "target": "paul_visciano",
+    "weight": 0.95,
+    "type": "taught_by"
+  },
+  {
+    "source": "memory-architecture-clarity-2026-03-19",
+    "target": "march-19-2026",
+    "weight": 0.9,
+    "type": "temporal"
+  },
+  {
+    "source": "memory-architecture-clarity-2026-03-19",
+    "target": "bootstrap-protocol",
+    "weight": 0.9,
+    "type": "applies_to"
+  },
+  {
+    "source": "memory-architecture-clarity-2026-03-19",
+    "target": "data-sovereignty-vision",
+    "weight": 0.85,
+    "type": "reinforces"
+  },
+  {
+    "source": "memory-architecture-clarity-2026-03-19",
+    "target": "fork-setup-troubleshooting-1773778210937",
+    "weight": 0.8,
+    "type": "related_learning"
   }
 ]

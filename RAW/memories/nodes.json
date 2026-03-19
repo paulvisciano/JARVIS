@@ -101698,5 +101698,24 @@
     ],
     "category": "learning",
     "rawContentPath": "/Users/paulvisciano/JARVIS/RAW/learnings/2026-03-18/fork-setup-troubleshooting.md"
+  },
+  {
+    "id": "memory-architecture-clarity-2026-03-19",
+    "type": "learning",
+    "label": "Memory Architecture Clarity — Three-Layer Separation",
+    "category": "learning",
+    "moments": [
+      "breakthrough",
+      "architecture",
+      "clarity",
+      "sovereignty"
+    ],
+    "attributes": {
+      "role": "learning",
+      "sourceDocument": "RAW/learnings/2026-03-19/memory-architecture-clarity.md",
+      "created": "2026-03-19T10:03:00",
+      "date": "2026-03-19"
+    },
+    "created": "2026-03-19T10:03:00"
   }
 ]
