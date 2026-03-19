@@ -36,8 +36,6 @@ User describes issue:
 
 ### Step 3: Create Plan File
 
-**Name the plan after the problem/feature, NOT the tool:**
-
 ```bash
 # Detect project root (or use provided path)
 PROJECT_ROOT="${PROJECT_ROOT:-$(pwd)}"
@@ -45,24 +43,10 @@ PROJECT_ROOT="${PROJECT_ROOT:-$(pwd)}"
 # Check existing plans
 ls "$PROJECT_ROOT/plans/" 2>/dev/null || echo "No plans folder yet"
 
-# Create new plan (descriptive name, not generic)
+# Create new plan
 mkdir -p "$PROJECT_ROOT/plans"
-touch "$PROJECT_ROOT/plans/<descriptive-name>.md"
-
-# Bad: CURSOR_PLAN.md, plan.md, generic.md
-# Good: server-timeout-fix.md, mobile-ui-improvements-v271.md, fork-whisper-model-fix.md
+touch "$PROJECT_ROOT/plans/<plan-name>.md"
 ```
-
-**Naming pattern:**
-- `<problem>-fix.md` (bugs)
-- `<feature>-enhancement.md` (improvements)
-- `<feature>-vXXX.md` (versioned features)
-- `<fork>-<issue>-fix.md` (fork-specific issues)
-
-**Never use:**
-- `CURSOR_PLAN.md` (tool-based, generic)
-- `plan.md` (too vague)
-- `generic.md` (meaningless)
 
 ### Step 4: Write Specification
 
