@@ -441,3 +441,42 @@ After testing the skill, users may request improvements. Often this happens righ
 2. Notice struggles or inefficiencies
 3. Identify how SKILL.md or bundled resources should be updated
 4. Implement changes and test again
+
+## OpenClaw Pattern (Critical for Production Skills)
+
+**Study real OpenClaw skills:** `weather`, `github`, `healthcheck` (in `/usr/local/lib/node_modules/openclaw/skills/`)
+
+**Pattern:**
+- ✅ **Short, simple, COMPLETE** — no truncated commands
+- ✅ **Inline commands** — no fake `scripts/`, `references/`, `assets/` dirs if not needed
+- ✅ **Complete frontmatter** with metadata (emoji, requires)
+- ✅ **When to Use / When NOT to Use** sections
+- ✅ **No fake resource sections** — only create dirs if actually used
+- ✅ **Simple, practical documentation** — like `weather` (concise, actionable)
+
+**Anti-pattern (avoid):**
+- ❌ Long commands that get truncated mid-line
+- ❌ Fake `scripts/`, `references/`, `assets/` dirs (clutter, confusion)
+- ❌ Verbose explanations Codex doesn't need
+- ❌ Hardcoded personal paths (`~/SCI-FI/apps/JARVIS/`)
+- ❌ Incomplete files (skills that reference non-existent resources)
+
+**Rule of thumb:** If a skill can be complete in one SKILL.md file (like `weather`), don't create resource dirs. Only add `scripts/`, `references/`, `assets/` if they're actually used and tested.
+
+**Example:**
+```markdown
+## Good (OpenClaw pattern, like weather)
+skill-name/
+└── SKILL.md (complete, short, no fake dirs)
+
+## Good (complex skill, needs resources)
+skill-name/
+├── SKILL.md (orchestrates resources)
+├── scripts/rotate_pdf.py (actually used, tested)
+└── references/schema.md (actually loaded when needed)
+
+## Bad (fake resources, incomplete)
+skill-name/
+├── SKILL.md (references scripts/ that don't exist)
+└── README.md (clutter, not needed by Codex)
+```
