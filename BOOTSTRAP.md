@@ -44,14 +44,15 @@ ls ~/.openclaw/workspace/USER.md && echo "✅ Runtime present"
 
 ---
 
-### PHASE 2: Check Inbox
+### PHASE 2: Check Inbox (Report Only, Don't Process)
 
 ```bash
 ls ~/JARVIS/inbox/
-# If files → process (audio→transcribe, images→OCR) → archive → extract learnings
+# Report: "Inbox: X files" or "Inbox: Empty"
+# Don't auto-process — user decides when to process
 ```
 
-**Trigger phrases:** "inbox", "audio note", "recording", "screenshot"
+**Just report presence** — user decides when to process inbox files.
 
 ---
 
