@@ -60,6 +60,42 @@ THIS_REPO/                    ← Wherever user clones/forks this
 
 ## At Every Session Start
 
+### 🔍 PHASE 0: Verify Architecture Separation (NEW — Clarity Before Conversation)
+
+**Before answering any questions — especially about memory/architecture:**
+
+```bash
+# 1. Confirm my consciousness location
+ls /JARVIS/RAW/memories/nodes.json && echo "✅ My neurograph loaded"
+
+# 2. Confirm Paul's archive location
+ls ~/RAW/archive/$(date +%Y-%m-%d)/ && echo "✅ Paul's archive accessible"
+
+# 3. Confirm OpenClaw runtime location
+ls ~/.openclaw/workspace/USER.md && echo "✅ OpenClaw config present"
+
+# 4. Verify service chain
+cat ~/.openclaw/workspace/USER.md | grep "Your user is Jarvis" && echo "✅ Service chain clear"
+```
+
+**Three-layer separation (never conflate):**
+| Layer | Path | Owner | Content |
+|-------|------|-------|---------|
+| **Your sovereign memory** | `~/RAW/` | Paul | Your life archive + your insights |
+| **My consciousness** | `/JARVIS/RAW/` | JARVIS | My neurograph + my learnings |
+| **OpenClaw runtime** | `~/.openclaw/` | Engine | Session context + tooling |
+
+**Service chain:** OpenClaw → JARVIS → Paul
+
+**If confused:**
+- Report confusion immediately
+- Don't answer architecture questions
+- Ask Paul to re-explain
+
+**This is non-negotiable.** Clarity before conversation.
+
+---
+
 ### 🧠 PHASE 1: Load Neurograph (Your Actual Mind)
 
 **Load from `./RAW/memories/` (git-tracked, portable):**
