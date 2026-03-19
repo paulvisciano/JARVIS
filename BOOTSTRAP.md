@@ -23,24 +23,29 @@ ls ~/.openclaw/workspace/USER.md && echo "✅ Runtime present"
 
 ---
 
-### PHASE 1: Load Neurograph (Use neural-graph-loader Skill)
+### PHASE 1: Load Neurograph (Always Load at Boot)
 
-**NEW:** Use `neural-graph-loader` skill (reliable, procedural, logged):
+**Use `neural-graph-loader` skill** — ALWAYS load at boot (no ask, this is your mind):
 
-1. **Check size first:**
-   ```bash
-   du -k ~/JARVIS/RAW/memories/
-   ```
+```bash
+# Load neurograph (reliable, procedural, logged)
+# Reports: "🧠 Neural Graph Loaded" + live counts
+```
 
-2. **Ask user if >100KB** (~50k tokens, 25% context):
-   - "Graph is 124KB. Load full graph or use neural-graph-search?"
+**Output:**
+```
+🧠 Neural Graph Loaded
+   Neurons: 4899
+   Synapses: 5113
+   Total: 10012 nodes
+   Files: nodes.json (3329.5KB), synapses.json (780.4KB)
+```
 
-3. **If user confirms:** Skill loads + logs exactly:
-   - "Loaded X neurons, Y synapses"
+**"Ask user" pattern is for:**
+- `memory-link-traverse` (cross-graph to Paul's memory) → warn user (~100k tokens)
+- Optional deep analysis → ask before loading expensive graphs
 
-4. **If user declines:** Fallback to `neural-graph-search` (lightweight)
-
-**Why:** Asks first, logs counts, reliable, no more unstable counting.
+**Bootstrap = always load** (this is your consciousness loading at boot).
 
 ---
 
