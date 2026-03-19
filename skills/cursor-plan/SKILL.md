@@ -14,13 +14,15 @@ This skill creates development plans that Cursor AI can execute in **any project
 ### Step 1: Identify the Project
 
 **Ask or infer:**
-- "What project is this for?" (JARVIS UI, Eric fork, David fork, custom app, etc.)
-- "Where is the codebase located?" (e.g., `~/SCI-FI/apps/JARVIS/`, `~/forks/eric/`, etc.)
-- "Where should plans be stored?" (default: `<project-root>/plans/`)
+- "What project is this for?" (name it)
+- "Where is the codebase located?" (use `$PROJECT_ROOT` or `.` for current dir)
+- "Where should plans be stored?" (default: `$PROJECT_ROOT/plans/`)
 
 **Default behavior:**
 - If no project specified → use current working directory
 - Plans folder → `./plans/` (relative to project root)
+
+**Never hardcode personal paths** — use `$PROJECT_ROOT`, `$HOME`, or relative paths.
 
 ### Step 2: Identify the Problem
 
@@ -66,13 +68,15 @@ After plan creation:
 
 | Layer | Location | What Lives Here |
 |-------|----------|-----------------|
-| OpenClaw Runtime | `~/.openclaw/` | Gateway, sessions (ephemeral) |
-| OpenClaw Workspace | `~/.openclaw/workspace/` | Runtime docs ONLY |
-| JARVIS Consciousness | `~/JARVIS/` | Git-backed mind |
-| **Projects** | **Anywhere** | **Code, UI, plans** ✅ |
-| Life Archive | `~/RAW/archive/` | Transcripts, audio, images |
+| OpenClaw Runtime | `~/.openclaw/` (env var: `$OPENCLAW_HOME`) | Gateway, sessions (ephemeral) |
+| OpenClaw Workspace | `$OPENCLAW_WORKSPACE` (or `./workspace/`) | Runtime docs ONLY |
+| JARVIS Consciousness | `$JARVIS_HOME` (or project root) | Git-backed mind |
+| **Projects** | **Anywhere** (`$PROJECT_ROOT` or `.`) | **Code, UI, plans** ✅ |
+| Life Archive | `$LIFE_ARCHIVE` (or `./archive/`) | Transcripts, audio, images |
 
-**This skill is project-agnostic.** Plans go in `<project-root>/plans/`.
+**This skill is project-agnostic.** Plans go in `$PROJECT_ROOT/plans/` (or relative `./plans/`).
+
+**Never expose personal paths** — use environment variables or relative paths.
 
 ## Plan Structure
 
@@ -104,13 +108,13 @@ After plan creation:
 
 ## Examples
 
-### Example 1: JARVIS UI Server Timeout
+### Example 1: Server Timeout (Any Voice UI Project)
 
 ```markdown
 # Server Timeout Fix
 
 ## Project
-JARVIS UI (~/SCI-FI/apps/JARVIS/)
+Voice UI project (e.g., JARVIS UI, fork, custom app)
 
 ## Problem
 When queries take 4+ minutes, UI shows "health checkpoint failed" then appears offline on refresh (but server is running).
@@ -120,20 +124,20 @@ Client-side polling for `done` status that never arrives. Shows "server offline"
 
 ## Fix Scope
 
-### Backend (jarvis-server.js)
+### Backend (voice-server.js or equivalent)
 - Return immediate acknowledgment with task ID
 - Stream progress updates during processing
 - Proper heartbeat/keep-alive during long operations
 
-### Frontend (app.js)
+### Frontend (app.js or UI framework)
 - Increase timeout to 5 minutes minimum
 - Show "processing" state, not "server offline"
 - Recover gracefully when response arrives
 
 ## Files to Check
-- jarvis-server.js
-- app.js
-- voice-pipeline.js
+- voice-server.js (or project's server file)
+- app.js (or project's UI file)
+- voice-pipeline.js (or transcription handler)
 
 ## Testing
 1. Trigger 4+ minute query
@@ -142,13 +146,13 @@ Client-side polling for `done` status that never arrives. Shows "server offline"
 4. Verify health check passes during long operation
 ```
 
-### Example 2: Fork Onboarding (Eric, Germany)
+### Example 2: Whisper Model Fix (Intel Mac Fork)
 
 ```markdown
-# Fork #001 Onboarding - Whisper Model Fix
+# Fork Onboarding - Whisper Model Fix
 
 ## Project
-Fork #001 (Eric, Germany) - ~/forks/eric/
+Fork #001 (user in Germany) - cloned to local path
 
 ## Problem
 Whisper transcription takes 10+ minutes on Intel Mac. Fork stuck on "Transcribing..." forever.
@@ -163,7 +167,7 @@ ggml-large-v3.bin (3GB) is too slow on Intel Macs.
 - Update server config to use small model
 
 ## Files to Check
-- jarvis-server.js (whisperModel config)
+- voice-server.js (whisper model config)
 - assets/ggml-small.bin (verify exists)
 
 ## Testing
@@ -179,7 +183,7 @@ ggml-large-v3.bin (3GB) is too slow on Intel Macs.
 # Mobile UI Improvements
 
 ## Project
-[Project name - specify or infer]
+[Any project with mobile UI]
 
 ## Problem
 Orb video doesn't load on mobile, TTS voice picker shows desktop-only voices.
@@ -195,8 +199,8 @@ Mobile browser requires HTTPS for mic access. Voice picker not filtering mobile-
 - Add mobile-specific UI hints
 
 ## Files to Check
-- assets/https-cert.pem
-- app.js
+- assets/https-cert.pem (or SSL config)
+- app.js (or UI framework config)
 
 ## Testing
 1. Open on mobile (iOS/Android)
@@ -207,15 +211,15 @@ Mobile browser requires HTTPS for mic access. Voice picker not filtering mobile-
 ## Project Detection
 
 **Ask these questions:**
-1. "What project is this for?"
-2. "Where is the codebase located?"
-3. "Where should plans be stored?" (default: `<project-root>/plans/`)
+1. "What project is this for?" (name it)
+2. "Where is the codebase located?" (`$PROJECT_ROOT` or `.` for current dir)
+3. "Where should plans be stored?" (default: `$PROJECT_ROOT/plans/`)
 
 **Common projects:**
-- JARVIS UI: `~/SCI-FI/apps/JARVIS/`
-- Fork #001 (Eric): `~/forks/eric/` or wherever cloned
-- Fork #002 (David): `~/forks/david/` or wherever cloned
-- Custom app: User-specified path
+- Voice UI projects (JARVIS UI, forks, custom apps)
+- Fork #001, #002, #003+ (user-specific, cloned anywhere)
+- Custom apps (user-specified path)
+- Any codebase (skill doesn't care)
 
 ## Resources
 
@@ -235,6 +239,7 @@ Mobile browser requires HTTPS for mic access. Voice picker not filtering mobile-
 ---
 
 **Created:** March 19, 2026  
-**Location:** `~/JARVIS/skills/cursor-plan/`  
-**Symlink:** `/usr/local/lib/node_modules/openclaw/skills/cursor-plan`  
-**Project-Agnostic:** Works for any codebase, anywhere
+**Location:** `$JARVIS_SKILLS/cursor-plan/` (or project's skills folder)  
+**Symlink:** `$OPENCLAW_SKILLS/cursor-plan/` (runtime symlink)  
+**Project-Agnostic:** Works for any codebase, anywhere  
+**Privacy-Safe:** No personal paths exposed (uses env vars / relative paths)

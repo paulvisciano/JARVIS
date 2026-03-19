@@ -52,7 +52,7 @@ Think of Codex as exploring a path: a narrow bridge with cliffs needs specific g
 - Use parameters or detect project root at runtime
 - Ask "What project is this for?" when needed
 - Store outputs in `<project-root>/plans/` or user-specified location
-- Examples should show multiple projects (JARVIS, forks, custom apps)
+- Examples should show multiple projects (generic names, not personal paths)
 
 **Example: cursor-plan skill**
 ```markdown
@@ -65,7 +65,7 @@ Ask: "What project is this for?" → detect path → use relative paths
 ```
 
 **Benefits:**
-- Works for JARVIS UI, Fork #001, Fork #002, future forks, any app
+- Works for any voice UI, forks, custom apps
 - No rewriting when project changes
 - Universal utility, not one-off tool
 
@@ -75,9 +75,44 @@ Ask: "What project is this for?" → detect path → use relative paths
 - Skills that should be reusable across forks/users
 
 **When NOT to use:**
-- Skills tied to specific infrastructure (JARVIS voice pipeline, specific API keys)
+- Skills tied to specific infrastructure (specific API keys, personal setups)
 - Skills for one-time migrations
 - Skills that are inherently project-specific by design
+
+### Privacy-Safe Design (Critical for Sharing)
+
+**Skills will be shared publicly (clawhub.com, forks, GitHub). Never expose personal info.**
+
+**Pattern: Privacy-Safe**
+- Use environment variables: `$PROJECT_ROOT`, `$HOME`, `$JARVIS_HOME`
+- Use relative paths: `./plans/`, `./src/`, `./assets/`
+- Generic examples: "Fork #001 (user in Germany)" not "Eric's fork at ~/forks/eric/"
+- No personal usernames, real paths, or private infrastructure
+
+**Example:**
+```markdown
+## Bad (exposes personal info)
+Location: ~/SCI-FI/apps/JARVIS/
+User: paulvisciano
+Archive: ~/RAW/archive/
+
+## Good (privacy-safe)
+Location: $PROJECT_ROOT or ./
+User: [user] or [fork creator]
+Archive: $LIFE_ARCHIVE or ./archive/
+```
+
+**Why it matters:**
+- Skills are shared on clawhub.com (public)
+- Skills are forked by others (Eric, David, Fork #003+)
+- Skills may be open-sourced (GitHub)
+- Personal paths = privacy leak + broken for others
+
+**Always use:**
+- Environment variables (`$PROJECT_ROOT`, `$HOME`)
+- Relative paths (`./`, `../`)
+- Generic names ("Fork #001", "user in Germany")
+- Placeholder syntax (`<project-root>`, `[user]`)
 
 ### Anatomy of a Skill
 
