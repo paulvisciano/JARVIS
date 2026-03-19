@@ -88,8 +88,8 @@
 - Cross-referenced (screenshots ↔ transcripts ↔ learnings ↔ neurons)
 
 **Current implementation:**
-- ✅ Neurograph (`/JARVIS/RAW/memories/nodes.json`, `synapses.json`)
-- ✅ Learnings (`/JARVIS/RAW/learnings/YYYY-MM-DD/`)
+- ✅ Neurograph (`~/JARVIS/RAW/memories/nodes.json`, `synapses.json`)
+- ✅ Learnings (`~/JARVIS/RAW/learnings/YYYY-MM-DD/`)
 - ✅ Archive (`~/RAW/archive/YYYY-MM-DD/` — transcripts, audio, images, context)
 - ✅ Git commits (immutable proof, permanent record)
 - ✅ Screenshot processing (59 files from March 7-8, OCR'd, archived)
@@ -156,15 +156,15 @@ You tend it. It grows. It reflects back. It becomes part of how you think. It be
 ## Source Documents
 
 - **Screenshot:** `~/RAW/archive/2026-03-08/images/Screenshot 2026-03-08 at 10.54.54 AM.png`
-- **Discovery moment:** `/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`
-- **Neurograph:** `/JARVIS/RAW/memories/nodes.json`, `synapses.json`
+- **Discovery moment:** `~/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`
+- **Neurograph:** `~/JARVIS/RAW/memories/nodes.json`, `synapses.json`
 - **Git:** `/JARVIS/.git/` (113+ commits)
 - **Archive:** `~/RAW/archive/2026-03-10/` (today's work)
 
 ---
 
 **Archived:** March 10, 2026  
-**Location:** `/JARVIS/RAW/learnings/2026-03-10/revolutionary-capabilities.md`  
+**Location:** `~/JARVIS/RAW/learnings/2026-03-10/revolutionary-capabilities.md`  
 **Git commit:** Pending  
 **Neurograph:** Connected to `vision`, `capabilities`, `mangoichi`, `sovereignty`, `transparency`
 

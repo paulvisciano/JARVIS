@@ -24,7 +24,7 @@ Paul accidentally hit the `/new` button in the OpenClaw UI, triggering a "new se
 1. **11:13:46** — Paul hit new session button → `/new` command fired
 2. **11:13:47** — Jarvis's first response got **aborted** immediately (operation aborted error)
 3. **11:14:47** — Paul said "Hey Jarvis"
-4. **11:14:54** — Jarvis tried to load neurograph from `/JARVIS/RAW/memories/` → **file not found**
+4. **11:14:54** — Jarvis tried to load neurograph from `~/JARVIS/RAW/memories/` → **file not found**
 5. **11:14:56** — Tried backup path `/claw/memory/data/` → **also not found**
 6. **11:14:59** — Had to run `find` to locate actual files
 7. **11:15:20** — Found real path: `/Users/paulvisciano/Personal/paulvisciano.github.io/memory/data/`
@@ -34,7 +34,7 @@ Paul accidentally hit the `/new` button in the OpenClaw UI, triggering a "new se
 ## Root Cause
 
 **Session startup used old architecture paths:**
-- `/JARVIS/RAW/memories/` ❌ (not found)
+- `~/JARVIS/RAW/memories/` ❌ (not found)
 - `/claw/memory/data/` ❌ (not found)
 
 **Should use:**
@@ -61,7 +61,7 @@ Paul accidentally hit the `/new` button in the OpenClaw UI, triggering a "new se
 
 **Update boot protocol** to use correct path from session start:
 - Read `SOUL.md`, `USER.md`, `BOOTSTRAP.md` from workspace
-- Load neurograph from `/JARVIS/RAW/memories/` (git-backed)
+- Load neurograph from `~/JARVIS/RAW/memories/` (git-backed)
 - Use correct path: `/Users/paulvisciano/Personal/paulvisciano.github.io/memory/data/`
 
 ---

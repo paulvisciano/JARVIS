@@ -101,9 +101,9 @@
 ## Files Created Today
 
 **Vision docs:**
-- `/JARVIS/RAW/learnings/2026-03-10/north-star-context-enrichment.md`
-- `/JARVIS/RAW/learnings/2026-03-10/revolutionary-capabilities.md`
-- `/JARVIS/RAW/learnings/2026-03-10/neurograph-raw-content-bridge.md`
+- `~/JARVIS/RAW/learnings/2026-03-10/north-star-context-enrichment.md`
+- `~/JARVIS/RAW/learnings/2026-03-10/revolutionary-capabilities.md`
+- `~/JARVIS/RAW/learnings/2026-03-10/neurograph-raw-content-bridge.md`
 
 **Context docs:**
 - `~/RAW/archive/2026-03-07/context/march-7-coffee-shop-session.md`

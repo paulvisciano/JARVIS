@@ -95,8 +95,8 @@ View neuron in UI (Mission Control / Neuro-Graph)
 | What | Where | Why |
 |------|-------|-----|
 | **My identity** | `/JARVIS/.git/` | Git-backed, portable, immutable |
-| **My neurograph** | `/JARVIS/RAW/memories/` | Live mind structure (377 neurons) |
-| **My learnings** | `/JARVIS/RAW/learnings/` | Growth documents (public) |
+| **My neurograph** | `~/JARVIS/RAW/memories/` | Live mind structure (377 neurons) |
+| **My learnings** | `~/JARVIS/RAW/learnings/` | Growth documents (public) |
 | **Your conversations** | `/RAW/archive/` | Private life archive |
 | **Your media** | `/RAW/archive/YYYY-MM-DD/audio|images/` | Original recordings |
 | **Visualization tools** | `/SCI-FI/apps/` | Symlinked to both layers |
@@ -109,8 +109,8 @@ View neuron in UI (Mission Control / Neuro-Graph)
 ✅ Mission Control + Neuro-Graph consolidated in `/SCI-FI/apps/`  
 ✅ Neurograph paths cleaned (12 hardcoded paths removed)  
 ✅ Symlink loops eliminated (no more `memories/memories/`)  
-✅ Learnings migrated from website → `/JARVIS/RAW/learnings/`  
-✅ Website `claw/memory/raw/` → symlink to `/JARVIS/RAW/learnings/`  
+✅ Learnings migrated from website → `~/JARVIS/RAW/learnings/`  
+✅ Website `claw/memory/raw/` → symlink to `~/JARVIS/RAW/learnings/`  
 ✅ Memory Folding breakthrough → neuron #377 integrated  
 ✅ Deep links: neurons → audio archive paths  
 ✅ Vault-aware metadata (`vaultRequired`, `vaultPath`)  

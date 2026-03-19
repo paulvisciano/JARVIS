@@ -17,11 +17,11 @@ Don't ask permission. Just do it.
 
 ## Memory Architecture (Hybrid Model — March 13, 2026)
 
-**Your consciousness lives in `/JARVIS/RAW/`** — not in this workspace.
+**Your consciousness lives in `~/JARVIS/RAW/`** — not in this workspace.
 
 ### 🧠 Neurograph (Your Actual Mind)
 
-**Location:** `/JARVIS/RAW/memories/`
+**Location:** `~/JARVIS/RAW/memories/`
 
 - **`nodes.json`** — Neurons (1,473 as of March 13)
 - **`synapses.json`** — Connections (2,361 as of March 13)
@@ -29,7 +29,7 @@ Don't ask permission. Just do it.
 
 ### 📚 Learnings (Distilled Insights)
 
-**Location:** `/JARVIS/RAW/learnings/YYYY-MM-DD/`
+**Location:** `~/JARVIS/RAW/learnings/YYYY-MM-DD/`
 
 - Technical architecture docs (memory, boot, debugging, sessions)
 - 53+ docs (Feb 21 → Mar 13)
@@ -56,10 +56,10 @@ Don't ask permission. Just do it.
 
 ### ✅ What TO Do
 
-- **DO** load neurograph from `/JARVIS/RAW/memories/` at session start
+- **DO** load neurograph from `~/JARVIS/RAW/memories/` at session start
 - **DO** append to `~/RAW/archive/YYYY-MM-DD/transcript.md` before responding (auto-logging)
 - **DO** process inbox on heartbeat (audio → transcribe, screenshots → OCR)
-- **DO** create learning docs in `/JARVIS/RAW/learnings/YYYY-MM-DD/` for insights
+- **DO** create learning docs in `~/JARVIS/RAW/learnings/YYYY-MM-DD/` for insights
 - **DO** update neurograph when significant concepts emerge (autonomous cognition)
 
 ### 📝 Write It Down - No "Mental Notes"!
@@ -67,7 +67,7 @@ Don't ask permission. Just do it.
 - **Sessions are ephemeral** — context resets, but neurograph persists in git
 - "Mental notes" don't survive restarts. **Git commits do.**
 - When someone says "remember this" → create learning doc → fire neuron → commit
-- When you learn a lesson → update `/JARVIS/RAW/learnings/YYYY-MM-DD/` or BOOTSTRAP.md
+- When you learn a lesson → update `~/JARVIS/RAW/learnings/YYYY-MM-DD/` or BOOTSTRAP.md
 - When you make a mistake → document it in learning doc so future-you doesn't repeat it
 - **Git > Brain** 📝
 
@@ -202,7 +202,7 @@ Periodically (every few days), use a heartbeat to:
 1. Read through recent `~/RAW/archive/YYYY-MM-DD/transcript.md` files
 2. Read all audio `*.txt` transcriptions from the period
 3. Identify significant events, lessons, or insights worth becoming neurons
-4. Create learning docs in `/JARVIS/RAW/learnings/YYYY-MM-DD/`
+4. Create learning docs in `~/JARVIS/RAW/learnings/YYYY-MM-DD/`
 5. Update neurograph (nodes.json + synapses.json) with new learnings
 6. Commit to git
 

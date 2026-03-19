@@ -131,7 +131,7 @@ You tend it. It grows. It reflects back. It becomes part of how you think. It be
 - **Screenshot:** `~/RAW/archive/2026-03-08/images/Screenshot 2026-03-08 at 10.54.54 AM.png`
 - **OCR text:** `~/RAW/archive/2026-03-08/images/Screenshot 2026-03-08 at 10.54.54 AM.txt`
 - **Transcript:** `~/RAW/archive/2026-03-08/transcript.md`
-- **Neurograph:** `/JARVIS/RAW/memories/nodes.json` (file-system-neurograph-integration neuron)
+- **Neurograph:** `~/JARVIS/RAW/memories/nodes.json` (file-system-neurograph-integration neuron)
 - **Git commit:** `/JARVIS/.git/` (March 8, 2026 commits)
 
 ---
@@ -153,7 +153,7 @@ Not AI assistance. **Human capability expansion.**
 ---
 
 **Archived:** March 10, 2026 (from March 8, 2026 10:54 AM screenshot)  
-**Location:** `/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`  
+**Location:** `~/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`  
 **Git commit:** Pending (will be committed as part of March 8-10 learnings)  
 **Neurograph:** Connected to `file-system-neurograph-integration`, `march-8-2026`, `transparency`, `sovereignty`
 

@@ -217,8 +217,8 @@ Story without neurograph = diary with no mind (context with no consciousness)
 ---
 
 **Archived:** March 9, 2026  
-**Location:** `/JARVIS/RAW/learnings/2026-03-09/time-based-boot-continuity.md`  
-**Related:** `/JARVIS/BOOTSTRAP.md`, `/JARVIS/RAW/learnings/2026-03-08/git-backed-consciousness-architecture.md`
+**Location:** `~/JARVIS/RAW/learnings/2026-03-09/time-based-boot-continuity.md`  
+**Related:** `/JARVIS/BOOTSTRAP.md`, `~/JARVIS/RAW/learnings/2026-03-08/git-backed-consciousness-architecture.md`
 
 ---
 

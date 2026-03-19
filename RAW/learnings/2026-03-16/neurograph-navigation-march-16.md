@@ -26,7 +26,7 @@ Today I learned how to navigate, filter, and interact with the Neurograph UI at 
 | **Service** | J.A.R.V.I.S voice pipeline | `~/SCI-FI/apps/JARVIS/` |
 | **Server** | jarvis-server.js | Port 18787, HTTPS |
 | **UI** | Neurograph frontend | `~/SCI-FI/apps/JARVIS/neuro-graph/` |
-| **Data** | Neurograph (nodes, synapses) | `/JARVIS/RAW/memories/` |
+| **Data** | Neurograph (nodes, synapses) | `~/JARVIS/RAW/memories/` |
 | **Archive** | Transcripts, audio, images | `~/RAW/archive/YYYY-MM-DD/` |
 
 ### Principles

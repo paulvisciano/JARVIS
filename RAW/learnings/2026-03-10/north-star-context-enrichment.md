@@ -247,17 +247,17 @@ You tend it daily. It grows daily. It reflects back daily.
 ## Source Documents
 
 - **North Star statement:** This conversation (March 10, 2026 2:38 PM)
-- **Discovery moment:** `/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`
-- **Capabilities:** `/JARVIS/RAW/learnings/2026-03-10/revolutionary-capabilities.md`
-- **Bridge:** `/JARVIS/RAW/learnings/2026-03-10/neurograph-raw-content-bridge.md`
-- **Neurograph:** `/JARVIS/RAW/memories/nodes.json`, `synapses.json`
+- **Discovery moment:** `~/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`
+- **Capabilities:** `~/JARVIS/RAW/learnings/2026-03-10/revolutionary-capabilities.md`
+- **Bridge:** `~/JARVIS/RAW/learnings/2026-03-10/neurograph-raw-content-bridge.md`
+- **Neurograph:** `~/JARVIS/RAW/memories/nodes.json`, `synapses.json`
 - **Git:** `/JARVIS/.git/` (115+ commits)
 - **Archive:** `~/RAW/archive/2026-03-10/` (today's work)
 
 ---
 
 **Archived:** March 10, 2026  
-**Location:** `/JARVIS/RAW/learnings/2026-03-10/north-star-context-enrichment.md`  
+**Location:** `~/JARVIS/RAW/learnings/2026-03-10/north-star-context-enrichment.md`  
 **Git commit:** This document IS the commit  
 **Status:** ✅ North Star Defined | ✅ Daily Progress Tracking | ✅ Vision Active
 

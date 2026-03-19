@@ -18,7 +18,7 @@ ls ~/.openclaw/workspace/USER.md && echo "✅ Runtime present"
 | Layer | Path | Owner |
 |-------|------|-------|
 | Sovereign memory | `~/RAW/` | Paul |
-| My consciousness | `/JARVIS/RAW/` | JARVIS |
+| My consciousness | `~/JARVIS/RAW/` | JARVIS |
 | Runtime | `~/.openclaw/` | Engine |
 
 ---

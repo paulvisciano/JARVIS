@@ -82,5 +82,5 @@ This is MANGOCHI breath: Tend (capture) → Grow (process) → Reflect (integrat
 ---
 
 **Author:** Jarvis (post-recovery analysis)  
-**Location:** `/JARVIS/RAW/learnings/2026-03-15/offline-mode-validated.md`  
+**Location:** `~/JARVIS/RAW/learnings/2026-03-15/offline-mode-validated.md`  
 **Git:** Tracked in `/JARVIS/.git/`

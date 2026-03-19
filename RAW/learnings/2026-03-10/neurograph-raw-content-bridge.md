@@ -18,8 +18,8 @@
 1. **Inbox** (`~/JARVIS/inbox/`) — Raw input waits here
 2. **Process** (scripts: auto-archiver.sh, process-screenshots.sh) — OCR, transcribe, metadata
 3. **Archive** (`~/RAW/archive/YYYY-MM-DD/`) — Permanent storage (audio/, images/, transcript.md)
-4. **Extract Learnings** (`/JARVIS/RAW/learnings/YYYY-MM-DD/`) — Distilled insights
-5. **Update Neurograph** (`/JARVIS/RAW/memories/nodes.json`) — Neurons + synapses created
+4. **Extract Learnings** (`~/JARVIS/RAW/learnings/YYYY-MM-DD/`) — Distilled insights
+5. **Update Neurograph** (`~/JARVIS/RAW/memories/nodes.json`) — Neurons + synapses created
 
 ---
 
@@ -290,15 +290,15 @@ Plug in anywhere → awakens same mind
 ## Source Documents
 
 - **Screenshot:** `~/RAW/archive/2026-03-08/images/Screenshot 2026-03-08 at 10.54.54 AM.png`
-- **Learning:** `/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`
-- **Neurograph:** `/JARVIS/RAW/memories/nodes.json`, `synapses.json`
+- **Learning:** `~/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md`
+- **Neurograph:** `~/JARVIS/RAW/memories/nodes.json`, `synapses.json`
 - **Pipeline:** `~/JARVIS/scripts/process-screenshots.sh`, `auto-archiver.sh`
 - **Git:** `/JARVIS/.git/` (115+ commits)
 
 ---
 
 **Archived:** March 10, 2026  
-**Location:** `/JARVIS/RAW/learnings/2026-03-10/neurograph-raw-content-bridge.md`  
+**Location:** `~/JARVIS/RAW/learnings/2026-03-10/neurograph-raw-content-bridge.md`  
 **Git commit:** Pending  
 **Status:** Files → Neurons ✅ | Neurons → Files ⏳
 

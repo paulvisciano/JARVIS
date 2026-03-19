@@ -91,7 +91,7 @@
 ## Tomorrow's Fresh Start
 
 **Boot Protocol:**
-1. Load neurograph from `/JARVIS/RAW/memories/`
+1. Load neurograph from `~/JARVIS/RAW/memories/`
 2. Load recent learnings (last 48 hours)
 3. Check inbox (auto-process on heartbeat)
 4. Verify vault access (localhost sovereignty)

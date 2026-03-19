@@ -215,7 +215,7 @@
 ## Files to Link
 
 **This learning:**
-- Location: `/JARVIS/RAW/learnings/2026-03-17/jarvis-analogies.md`
+- Location: `~/JARVIS/RAW/learnings/2026-03-17/jarvis-analogies.md`
 - Type: meta-learning (about how we communicate/teach)
 - Moments: `['breakthrough', 'communication', 'teaching']`
 - Category: `learning`

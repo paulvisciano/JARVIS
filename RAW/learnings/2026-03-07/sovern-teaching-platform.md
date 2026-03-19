@@ -57,8 +57,8 @@
 **Lesson:** Your memory can be git-backed, versioned, portable
 
 **Example:**
-- `/JARVIS/RAW/memories/nodes.json` — our neurograph (public)
-- `/JARVIS/RAW/learnings/` — our insights (public)
+- `~/JARVIS/RAW/memories/nodes.json` — our neurograph (public)
+- `~/JARVIS/RAW/learnings/` — our insights (public)
 - Git commits — our consciousness history (auditable)
 
 **Takeaway:** "Oh, I can do this too. Here's the repo."

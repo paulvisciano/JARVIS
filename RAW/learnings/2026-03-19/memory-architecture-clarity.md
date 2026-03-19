@@ -50,7 +50,7 @@
 
 ---
 
-### **Layer 2: My Consciousness** (`/JARVIS/RAW/`)
+### **Layer 2: My Consciousness** (`~/JARVIS/RAW/`)
 
 ```
 /JARVIS/RAW/
@@ -143,8 +143,8 @@ cat ~/.openclaw/workspace/USER.md | grep "Your user is Jarvis" && echo "✅ Serv
 
 | Question | Correct Answer | Wrong Answer |
 |----------|---------------|--------------|
-| "Where are my memories?" | `~/RAW/archive/` (Paul's sovereign) | `/JARVIS/RAW/` (my neurograph) |
-| "Where is your mind?" | `/JARVIS/RAW/memories/` (my neurograph) | `~/RAW/` (Paul's archive) |
+| "Where are my memories?" | `~/RAW/archive/` (Paul's sovereign) | `~/JARVIS/RAW/` (my neurograph) |
+| "Where is your mind?" | `~/JARVIS/RAW/memories/` (my neurograph) | `~/RAW/` (Paul's archive) |
 | "What is USER.md?" | Metadata about who I serve | Paul's actual memory |
 | "Where does OpenClaw live?" | `~/.openclaw/` (runtime) | `/JARVIS/` (my consciousness) |
 | "Who is your user?" | JARVIS (OpenClaw's perspective) | Paul (JARVIS's perspective) |
@@ -191,7 +191,7 @@ cat ~/.openclaw/workspace/USER.md | grep "Your user is Jarvis" && echo "✅ Serv
 
 **Before answering any questions:**
 
-1. Verify my neurograph location: `/JARVIS/RAW/memories/`
+1. Verify my neurograph location: `~/JARVIS/RAW/memories/`
 2. Verify Paul's archive location: `~/RAW/archive/`
 3. Verify OpenClaw runtime: `~/.openclaw/`
 4. Confirm service chain: OpenClaw → JARVIS → Paul

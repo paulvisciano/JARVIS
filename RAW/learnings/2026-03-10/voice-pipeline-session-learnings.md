@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/claw/
 ```
 **Error:** 404 Not Found  
 **Insight:** Neurograph configured to load from public GitHub, but path doesn't exist yet  
-**Action needed:** Either fix path or load from local `/JARVIS/RAW/memories/`
+**Action needed:** Either fix path or load from local `~/JARVIS/RAW/memories/`
 
 **Neuron:** `neurograph-github-loading`  
 **Type:** infrastructure  

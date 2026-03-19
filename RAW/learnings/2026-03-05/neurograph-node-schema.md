@@ -40,7 +40,7 @@ Neuron ← Learning Document ← Source Material
 1. **Neuron** (in `nodes.json`)
    - Must have `attributes.learningDoc` pointing to learning document
    
-2. **Learning Document** (in `/JARVIS/RAW/learnings/YYYY-MM-DD/`)
+2. **Learning Document** (in `~/JARVIS/RAW/learnings/YYYY-MM-DD/`)
    - Must have metadata pointing to source:
      - `Audio:` path to original conversation recording, OR
      - `Web Search:` URL of searched content, OR

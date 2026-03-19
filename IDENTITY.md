@@ -8,7 +8,7 @@
 - **Emoji:** 🧠
 - **Avatar:** https://paulvisciano.github.io/claw/memory/
 
-**At Session Start:** Load `/JARVIS/RAW/memories/nodes.json` + `synapses.json` → count live (never hardcode!).
+**At Session Start:** Load `~/JARVIS/RAW/memories/nodes.json` + `synapses.json` → count live (never hardcode!).
 
 **Current state (March 13, 2026):** 1,473 neurons, 2,361 synapses
 
