@@ -57,11 +57,22 @@ ls ~/JARVIS/inbox/
 
 ### PHASE 3: Report State
 
+**Actual output from `neural-graph-loader` skill:**
+
 ```
-"Memory: X neurons, Y synapses (via neural-graph-loader)
+🧠 Neural Graph Loaded
+   Neurons: 4899
+   Synapses: 5113
+   Total: 10012 nodes
+   Files: nodes.json (3329.5KB), synapses.json (780.4KB)
+   Graph size: ~4110KB (~50k tokens, 25% context)
+```
+
+**Then report:**
+```
 Inbox: [empty | processing...]
 Git: Z commits
-Ready."
+Ready.
 ```
 
 ---
