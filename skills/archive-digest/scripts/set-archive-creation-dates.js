@@ -167,8 +167,32 @@ nodes.forEach((node) => {
   if (n) pathHasNode.add(n);
 });
 
-// Create missing nodes for files that don't have one
+// Create temporal anchor node for this date (if not exists)
 const dateStr = path.basename(archiveDir);
+const temporalId = 'temporal-' + dateStr.replace(/-/g, '');
+const temporalExists = nodes.some(n => n.id === temporalId);
+if (!temporalExists) {
+  const temporalNode = {
+    id: temporalId,
+    label: dateStr,
+    category: 'temporal',
+    frequency: 1,
+    moments: [{
+      date: dateStr,
+      type: 'temporal-anchor',
+      description: 'Daily temporal anchor node'
+    }],
+    attributes: {
+      role: 'temporal-anchor',
+      date: dateStr,
+      created: `${dateStr}T00:00:00`,
+    },
+    created: `${dateStr}T00:00:00`,
+  };
+  nodes.push(temporalNode);
+  console.log('Created temporal anchor node:', temporalId);
+}
+
 const relFromArchive = (p) => path.relative(archiveDir, p).replace(/\\/g, '/');
 const sourceDoc = (p) => 'RAW/archive/' + dateStr + '/' + relFromArchive(p);
 // Subtype for viewers: audio, image, text, video (graph uses attributes.type/subtype)
@@ -249,5 +273,41 @@ nodes.forEach((node) => {
   }
 });
 
+// Load synapses and create links to temporal anchor
+const synapsesPath = path.join(path.dirname(nodesPath), 'synapses.json');
+let synapses = [];
+if (fs.existsSync(synapsesPath)) {
+  synapses = JSON.parse(fs.readFileSync(synapsesPath, 'utf8'));
+}
+
+// Create synapses from archive nodes to temporal anchor
+const temporalTarget = 'temporal-' + dateStr.replace(/-/g, '');
+const existingSynapseIds = new Set(synapses.map(s => s.id));
+let synapseCount = 0;
+
+nodes.forEach((node) => {
+  const nodeDate = node.attributes?.date || node.created?.slice(0, 10);
+  if (nodeDate !== dateStr) return;
+  if (node.category !== 'archive' && node.category !== 'learning') return;
+  
+  const synapseId = 'syn-' + node.id + '-to-' + temporalTarget;
+  if (existingSynapseIds.has(synapseId)) return;
+  
+  const synapse = {
+    id: synapseId,
+    source: node.id,
+    target: temporalTarget,
+    type: 'linked-to',
+    attributes: {
+      relation: 'temporal-anchor',
+      date: dateStr,
+    },
+    created: new Date().toISOString().replace(/\.\d{3}Z$/, ''),
+  };
+  synapses.push(synapse);
+  synapseCount++;
+});
+
 fs.writeFileSync(nodesPath, JSON.stringify(nodes, null, 2), 'utf8');
-console.log('Done. Updated', updated, 'nodes. Wrote', nodesPath);
+fs.writeFileSync(synapsesPath, JSON.stringify(synapses, null, 2), 'utf8');
+console.log('Done. Updated', updated, 'nodes. Created', synapseCount, 'synapses to temporal anchor. Wrote', nodesPath);

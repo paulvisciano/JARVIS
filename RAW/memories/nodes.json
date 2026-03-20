@@ -125533,5 +125533,24 @@
       "date": "2026-03-19"
     },
     "created": "2026-03-19T07:21:23"
+  },
+  {
+    "id": "temporal-20260319",
+    "label": "2026-03-19",
+    "category": "temporal",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-19",
+        "type": "temporal-anchor",
+        "description": "Daily temporal anchor node"
+      }
+    ],
+    "attributes": {
+      "role": "temporal-anchor",
+      "date": "2026-03-19",
+      "created": "2026-03-19T00:00:00"
+    },
+    "created": "2026-03-19T00:00:00"
   }
 ]
