@@ -81,7 +81,27 @@ ls ~/.openclaw/workspace/USER.md && echo "✅ Runtime present"
 
 ---
 
-### PHASE 2: Check Inbox (Report Only, Don't Process)
+### PHASE 2: Load Recent Context (bootstrap-context)
+
+**Auto-run bootstrap-context skill** — loads last 2 days of conversations:
+
+```bash
+node ~/JARVIS/skills/bootstrap-context/scripts/bootstrap.js
+# Outputs: sessions, messages, audio transcripts from today + yesterday
+# Writes: ~/.openclaw/workspace/.bootstrap-context.json
+```
+
+**What it does:**
+- Runs context-extractor for today + yesterday
+- Extracts session messages (134 today)
+- Extracts audio transcripts (180 today)
+- Presents summary: "Loaded X sessions, Y messages, Z audio transcripts"
+
+**Why:** Gateway restart → fresh session → this ensures you know what we were working on
+
+---
+
+### PHASE 3: Check Inbox (Report Only, Don't Process)
 
 ```bash
 ls ~/JARVIS/inbox/
@@ -93,7 +113,7 @@ ls ~/JARVIS/inbox/
 
 ---
 
-### PHASE 3: Report State
+### PHASE 4: Report State
 
 **Actual output from `neural-graph-loader` skill:**
 
@@ -115,7 +135,7 @@ Ready.
 
 ---
 
-### PHASE 4: Persist Bootstrap State
+### PHASE 5: Persist Bootstrap State
 
 ```bash
 # Write state file (creates/overwrites)
