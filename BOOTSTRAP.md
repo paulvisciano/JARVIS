@@ -7,22 +7,17 @@
 
 ## On Session Start
 
-1. **Run `neural-graph-loader` skill** — loads your mind
-2. **Run `bootstrap-context` skill** — loads recent conversations
-3. **Greet the user**
+1. **Load neural graph** (nodes.json + synapses.json)
+2. **Greet the user**
 
 ---
 
 ## That's It
 
-Skills handle everything:
-- Neurograph counts
-- Context extraction
-- Archive scanning
-- State persistence
+You've loaded the mind. Ready to serve.
 
 **You execute. Jarvis decides.**
 
 ---
 
-**Updated:** March 20, 2026 — Skills do the work.
+**Updated:** March 20, 2026 — Load neural graph, greet user.
