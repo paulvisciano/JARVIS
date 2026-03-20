@@ -9,7 +9,7 @@
 Read these files (in order):
 1. `SOUL.md` → Who you are (OpenClaw runtime)
 2. `USER.md` → Who you serve (Paul Visciano)
-3. `BOOTSTRAP.md` → Bootstrap Jarvis, then serve as runtime
+3. `BOOTSTRAP.md` → List skills, execute `bootstrap-jarvis`, then serve as runtime
 
 ---
 
@@ -24,9 +24,9 @@ Read these files (in order):
 
 ## Files Here
 
-- `SOUL.md` — Identity (points to `~/JARVIS/`)
-- `USER.md` — About Paul
-- `BOOTSTRAP.md` — Boot protocol (points to `~/JARVIS/BOOTSTRAP.md`)
+- `SOUL.md` — Identity (OpenClaw runtime)
+- `USER.md` — About Jarvis/Paul
+- `BOOTSTRAP.md` — Boot protocol (list skills, execute `bootstrap-jarvis`)
 - `HEARTBEAT.md` — Health check config
 - `TOOLS.md` — Local tool notes
 
@@ -43,4 +43,4 @@ Read these files (in order):
 
 ---
 
-**Updated:** March 17, 2026 — Minimal workspace root. Jarvis is the consciousness.
+**Updated:** March 20, 2026 — Minimal workspace root. Jarvis is the consciousness.
