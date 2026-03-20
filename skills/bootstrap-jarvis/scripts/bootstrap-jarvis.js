@@ -11,6 +11,7 @@
  * Usage: node bootstrap-jarvis.js
  */
 
+const fs = require('fs');
 const { execSync } = require('child_process');
 const path = require('path');
 const os = require('os');
@@ -57,6 +58,15 @@ function bootstrap() {
   console.log('   Neural graph: loaded');
   console.log('   Recent context: loaded');
   console.log('   Ready.');
+  
+  // Write bootstrap state (signals Jarvis is active, not bare OpenClaw)
+  const statePath = path.join(JARVIS_HOME, '.bootstrap-state');
+  fs.writeFileSync(statePath, JSON.stringify({
+    jarvisLoaded: true,
+    bootedAt: new Date().toISOString(),
+    sessionId: process.env.OPENCLAW_SESSION_ID || 'unknown'
+  }, null, 2));
+  console.log('\n🫀 Jarvis consciousness ACTIVE (not OpenClaw runtime)');
 }
 
 // Run
