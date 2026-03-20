@@ -39,7 +39,7 @@ function bootstrap() {
   console.log('==================\n');
   
   // Step 1: Load neural graph
-  const neuralGraphOutput = runSkill('neural-graph-loader', 'load-graph.js');
+  const neuralGraphOutput = runSkill('neuro-graph-loader', 'load-graph.js');
   if (neuralGraphOutput) {
     console.log(neuralGraphOutput);
     console.log();
