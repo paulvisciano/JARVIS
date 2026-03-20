@@ -1,6 +1,6 @@
 ---
 name: archive-collector
-description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (1) end-of-day archive needed, (2) desktop files need archiving, (3) ~/JARVIS/live/ has pending messages, (4) dormant files in ~/life/ need processing. Organizes by type: audio/, images/, sessions/, documents/. Ensures complete archive before running neuro-graph-digest.
+description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (1) end-of-day archive needed, (2) desktop files need archiving, (3) ~/JARVIS/live/ has pending messages, (4) dormant files need processing. Organizes by type: audio/, images/, sessions/, documents/. Ensures complete archive before running neuro-graph-digest.
 ---
 
 # Archive Collector (End-of-Day Collection)
@@ -11,7 +11,6 @@ description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (
 - End-of-day: collect all files into dated archive folder
 - Desktop has new files to archive
 - `~/JARVIS/live/` has pending messages (text/audio)
-- Dormant files in `~/life/` need processing
 - Preparing for neuro-graph-digest (complete archive first)
 
 ## When NOT to Use
@@ -40,11 +39,11 @@ mv ~/JARVIS/live/recording-*.webm ~/RAW/archive/$(date +%Y-%m-%d)/audio/ 2>/dev/
 mv ~/JARVIS/live/text-*.txt ~/RAW/archive/$(date +%Y-%m-%d)/documents/ 2>/dev/null
 ```
 
-### Step 3: Check ~/life/ for Dormant Files
+### Step 3: Check for Dormant Files (Optional)
 
 ```bash
-# Find files older than 7 days
-find ~/life/ -type f -mtime +7 -exec mv {} ~/RAW/archive/$(date +%Y-%m-%d)/documents/ \;
+# Find any unorganized files in archive root
+find ~/RAW/archive/$(date +%Y-%m-%d)/ -maxdepth 1 -type f -exec mv {} ~/RAW/archive/$(date +%Y-%m-%d)/documents/ \;
 ```
 
 ### Step 4: Organize by Type
