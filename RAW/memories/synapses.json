@@ -47250,5 +47250,261 @@
       "date": "2026-03-20"
     },
     "created": "2026-03-20T04:31:52"
+  },
+  {
+    "source": "bootstrap-jarvis",
+    "target": "file-bootstrap-jarvis-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "bootstrap-context",
+    "target": "file-bootstrap-context-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "neuro-graph-loader",
+    "target": "file-neuro-graph-loader-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "neuro-graph-search",
+    "target": "file-neuro-graph-search-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "archive-collector",
+    "target": "file-archive-collector-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "bootstrap-jarvis",
+    "target": "file-bootstrap-jarvis-script",
+    "type": "executed-by",
+    "weight": 1,
+    "label": "executed-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "bootstrap-context",
+    "target": "file-bootstrap-context-script",
+    "type": "executed-by",
+    "weight": 1,
+    "label": "executed-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "neuro-graph-loader",
+    "target": "file-neuro-graph-loader-script",
+    "type": "executed-by",
+    "weight": 1,
+    "label": "executed-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "archive-collector",
+    "target": "file-archive-collector-script",
+    "type": "executed-by",
+    "weight": 1,
+    "label": "executed-by",
+    "created": "2026-03-20T15:57:24.837330"
+  },
+  {
+    "source": "bootstrap-jarvis",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T16:03:45.256596"
+  },
+  {
+    "source": "bootstrap-context",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T16:03:45.256596"
+  },
+  {
+    "source": "neuro-graph-loader",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T16:03:45.256596"
+  },
+  {
+    "source": "neuro-graph-search",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T16:03:45.256596"
+  },
+  {
+    "source": "archive-collector",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T16:03:45.256596"
+  },
+  {
+    "source": "context-extractor-SKILL",
+    "target": "file-context-extractor-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "context-extractor-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "cursor-plan-SKILL",
+    "target": "file-cursor-plan-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "cursor-plan-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "learning-creator-SKILL",
+    "target": "file-learning-creator-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "learning-creator-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "neuro-graph-digest-SKILL",
+    "target": "file-neuro-graph-digest-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "neuro-graph-digest-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "neuro-graph-integrity-SKILL",
+    "target": "file-neuro-graph-integrity-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "neuro-graph-integrity-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "neuro-graph-traverse-SKILL",
+    "target": "file-neuro-graph-traverse-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "neuro-graph-traverse-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "ocr-SKILL",
+    "target": "file-ocr-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "ocr-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "process-inbox-SKILL",
+    "target": "file-process-inbox-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "process-inbox-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "skill-creator-SKILL",
+    "target": "file-skill-creator-SKILL-skill-md",
+    "type": "documented-by",
+    "weight": 1,
+    "label": "documented-by",
+    "created": "2026-03-20T09:23:21.356Z"
+  },
+  {
+    "source": "skill-creator-SKILL",
+    "target": "temporal-20260320",
+    "type": "verified-today",
+    "weight": 1,
+    "label": "verified-today",
+    "created": "2026-03-20T09:23:21.356Z"
   }
 ]

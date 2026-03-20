@@ -15,6 +15,7 @@ const path = require('path');
 const HOME = process.env.HOME || '';
 const RAW_ARCHIVE = path.join(HOME, 'RAW', 'archive');
 const JARVIS_LEARNINGS = path.join(HOME, 'JARVIS', 'RAW', 'learnings');
+const JARVIS_SKILLS = path.join(HOME, 'JARVIS', 'skills');
 const NODES_PATH = process.argv.find(a => a.endsWith('nodes.json')) || path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json');
 const nodesPath = path.resolve(process.cwd(), NODES_PATH.replace(/^~/, HOME));
 
@@ -105,8 +106,46 @@ let totalArchiveFiles = 0;
 let totalArchiveNodes = 0;
 let totalLearningsFiles = 0;
 let totalLearningsNodes = 0;
+let totalSkillsFiles = 0;
+let totalSkillsNodes = 0;
 const missingArchive = [];
 const missingLearnings = [];
+const missingSkills = [];
+
+// Scan JARVIS skills directory for SKILL.md files
+function walkSkills(dir, list = []) {
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const e of entries) {
+    const full = path.join(dir, e.name);
+    if (e.isDirectory() && e.name !== 'node_modules' && !e.name.startsWith('.')) {
+      walkSkills(full, list);
+    } else if (e.isFile() && e.name === 'SKILL.md') {
+      list.push(full);
+    }
+  }
+  return list;
+}
+
+const skillFiles = walkSkills(JARVIS_SKILLS);
+const skillPathsInGraph = new Set();
+nodes.forEach((node) => {
+  if ((node.category || '').toLowerCase() === 'openclaw-skill') {
+    const raw = node.attributes?.path || node.attributes?.skillPath;
+    if (raw) skillPathsInGraph.add(path.normalize(raw));
+  }
+});
+
+console.log('\n--- Skills ---');
+const skillsWithNode = skillFiles.filter((f) => skillPathsInGraph.has(path.normalize(f)));
+totalSkillsFiles = skillFiles.length;
+totalSkillsNodes = skillsWithNode.length;
+const skillMissing = skillFiles.filter((f) => !skillPathsInGraph.has(path.normalize(f)));
+skillMissing.forEach((f) => missingSkills.push({ path: f }));
+
+console.log('Skills: SKILL.md on disk:', skillFiles.length, '| with node:', skillsWithNode.length, skillMissing.length ? '| MISSING: ' + skillMissing.length : '');
+if (skillMissing.length) {
+  skillMissing.forEach((f) => console.log('  -', path.relative(JARVIS_SKILLS, f)));
+}
 
 toCheck.forEach((date) => {
   const archiveDir = path.join(RAW_ARCHIVE, date);
@@ -147,6 +186,126 @@ toCheck.forEach((date) => {
 console.log('\n=== Summary ===');
 console.log('Archive:  total files (excl .DS_Store):', totalArchiveFiles, '| total with node:', totalArchiveNodes, totalArchiveFiles === totalArchiveNodes ? '✓' : 'MISMATCH');
 console.log('Learnings: total .md files:', totalLearningsFiles, '| total with node:', totalLearningsNodes, totalLearningsFiles === totalLearningsNodes ? '✓' : 'MISMATCH');
+console.log('Skills:    total SKILL.md files:', totalSkillsFiles, '| total with node:', totalSkillsNodes, totalSkillsFiles === totalSkillsNodes ? '✓' : 'MISMATCH');
 if (missingArchive.length) console.log('Archive files missing node:', missingArchive.length);
 if (missingLearnings.length) console.log('Learning files missing node:', missingLearnings.length);
-process.exit(missingArchive.length || missingLearnings.length ? 1 : 0);
+if (missingSkills.length) console.log('Skill files missing node:', missingSkills.length);
+
+// Auto-create missing skill nodes if any
+if (missingSkills.length) {
+  console.log('\n🔧 Creating missing skill nodes...');
+  const timestamp = new Date().toISOString();
+  
+  missingSkills.forEach((item) => {
+    const skillPath = item.path;
+    const relativePath = path.relative(JARVIS_SKILLS, skillPath);
+    // Extract skill ID from folder name (e.g., "context-extractor/SKILL.md" → "context-extractor")
+    const skillId = relativePath.split('/')[0];
+    const scriptPath = path.join(path.dirname(skillPath), 'scripts');
+    const hasScript = fs.existsSync(scriptPath);
+    
+    // Check if node already exists
+    const existing = nodes.find(n => n.id === skillId);
+    if (existing) {
+      console.log(`   ⊘ ${skillId} already exists`);
+      return;
+    }
+    
+    // Create skill node
+    const skillNode = {
+      id: skillId,
+      label: skillId.replace(/-/g, ' ').split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+      type: 'skill',
+      category: 'openclaw-skill',
+      frequency: 1,
+      moments: [
+        {
+          date: new Date().toISOString().split('T')[0],
+          type: 'skill-discovered',
+          description: 'Auto-discovered by neuro-graph-digest'
+        },
+        'skill'
+      ],
+      attributes: {
+        created: new Date().toISOString().split('T')[0],
+        role: 'openclaw-executable',
+        description: `Auto-discovered skill: ${skillId}`,
+        path: skillPath,
+        skillType: 'openclaw-executable',
+        verified: new Date().toISOString().split('T')[0],
+        scriptPath: hasScript ? path.join(scriptPath, 'index.js') : 'N/A',
+        fileType: 'skill'
+      },
+      created: timestamp
+    };
+    
+    nodes.push(skillNode);
+    console.log(`   ✅ Created: ${skillId}`);
+    
+    // Create file node for SKILL.md
+    const fileNodeId = `file-${skillId}-skill-md`;
+    const fileNode = {
+      id: fileNodeId,
+      label: 'SKILL.md',
+      type: 'markdown',
+      category: 'file',
+      frequency: 1,
+      moments: [
+        {
+          date: new Date().toISOString().split('T')[0],
+          type: 'skill-file-linked',
+          description: `Linked to ${skillId}`
+        },
+        'file'
+      ],
+      attributes: {
+        created: new Date().toISOString().split('T')[0],
+        role: 'skill-documentation',
+        description: `Skill documentation for ${skillId}`,
+        path: skillPath,
+        fileType: 'markdown',
+        linkedSkill: skillId,
+        skillType: 'skill-doc'
+      },
+      created: timestamp
+    };
+    
+    nodes.push(fileNode);
+    console.log(`   → Created file: ${fileNodeId}`);
+    
+    // Create synapse: skill → file
+    const synapses = JSON.parse(fs.readFileSync(nodesPath.replace('nodes.json', 'synapses.json'), 'utf8'));
+    synapses.push({
+      source: skillId,
+      target: fileNodeId,
+      type: 'documented-by',
+      weight: 1,
+      label: 'documented-by',
+      created: timestamp
+    });
+    
+    // Link skill to today's temporal node
+    const todayId = `temporal-${new Date().toISOString().split('T')[0].replace(/-/g, '')}`;
+    const todayNode = nodes.find(n => n.id === todayId);
+    if (todayNode) {
+      synapses.push({
+        source: skillId,
+        target: todayId,
+        type: 'verified-today',
+        weight: 1,
+        label: 'verified-today',
+        created: timestamp
+      });
+    }
+    
+    // Save synapses
+    JSON.stringify(synapses, null, 2);
+    fs.writeFileSync(nodesPath.replace('nodes.json', 'synapses.json'), JSON.stringify(synapses, null, 2));
+  });
+  
+  // Save updated nodes
+  fs.writeFileSync(nodesPath, JSON.stringify(nodes, null, 2));
+  console.log('\n✅ Skill nodes created and saved.');
+}
+
+process.exit((missingArchive.length || missingLearnings.length || missingSkills.length) > totalSkillsFiles ? 1 : 0);

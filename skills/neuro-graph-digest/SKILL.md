@@ -1,6 +1,6 @@
 ---
 name: neuro-graph-digest
-description: End-of-day archive + learning digestion into neurograph. Use when: (1) day is complete and all archives processed, (2) verifying graph integrity (all files have nodes), (3) creating missing nodes for archive files + learning .md files, (4) linking to temporal anchors (YYYY-MM-DD), (5) ensuring 1:1 mapping: files on disk = nodes in graph. Runs verification + creation in one flow.
+description: End-of-day archive + learning + skills digestion into neurograph. Use when: (1) day is complete and all archives processed, (2) verifying graph integrity (all files have nodes), (3) creating missing nodes for archive files + learning .md files + skill files, (4) linking to temporal anchors (YYYY-MM-DD), (5) ensuring 1:1 mapping: files on disk = nodes in graph. Runs verification + creation in one flow. Auto-discovers JARVIS skills and creates openclaw-skill nodes.
 ---
 
 # Archive Digest (End-of-Day Graph Integrity)
@@ -8,11 +8,12 @@ description: End-of-day archive + learning digestion into neurograph. Use when: 
 ## When to Use
 
 ✅ **USE this skill when:**
-- End-of-day: digest all archives + learnings from today
+- End-of-day: digest all archives + learnings + skills from today
 - Verify graph integrity: every file has a node
-- Create missing nodes: archive files + learning .md files
+- Create missing nodes: archive files + learning .md files + skill files
 - Link to temporal anchors: date-based nodes
 - Ensure 1:1 mapping: files on disk = nodes in graph
+- Auto-discover skills: scans ~/JARVIS/skills/ for SKILL.md files
 
 ## When NOT to Use
 
@@ -27,15 +28,18 @@ description: End-of-day archive + learning digestion into neurograph. Use when: 
 ### Step 1: Run Archive Digest Script
 
 ```bash
-cd ~/JARVIS/skills/archive-digest
-node scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
+cd ~/JARVIS
+node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
 ```
 
 **What this does:**
 - Scans `~/RAW/archive/YYYY-MM-DD/` for all files
 - Scans `~/JARVIS/RAW/learnings/YYYY-MM-DD/` for all .md files
+- Scans `~/JARVIS/skills/` for all SKILL.md files (recursive)
 - Checks if each file has a corresponding node in `nodes.json`
 - **Creates missing nodes** with proper timestamps
+- **Auto-discovers skills** → creates `openclaw-skill` nodes + file nodes + synapses
+- Links skills to today's temporal node
 - Reports: files on disk | with node | MISSING: X
 
 **Output:**
@@ -43,11 +47,14 @@ node scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
 --- 2026-03-20 ---
 Archive: files on disk: 50 | with node: 50 ✓
 Learnings: .md on disk: 10 | with node: 10 ✓
+Skills:    SKILL.md on disk: 15 | with node: 15 ✓
 
 === Summary ===
 Archive:  total files (excl .DS_Store): 50 | total with node: 50 ✓
 Learnings: total .md files: 10 | total with node: 10 ✓
+Skills:    total SKILL.md files: 15 | total with node: 15 ✓
 Created 5 new archive nodes.
+Created 3 new skill nodes (auto-discovered).
 ```
 
 **Exit codes:**
