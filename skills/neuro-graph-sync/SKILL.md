@@ -24,6 +24,8 @@ description: Synchronize neurograph with disk — ensures 1:1 mapping between fi
 - Graph search/queries (use neuro-graph-search)
 - Full graph load for analysis (use neuro-graph-loader)
 
+**Note:** `neuro-graph-integrity` skill is deprecated — this skill now includes all integrity checks + creates missing nodes.
+
 ## Workflow
 
 ### Step 1: Run Sync Script
@@ -62,7 +64,24 @@ Created 3 new skill nodes (auto-discovered).
 - 0: All files have nodes (integrity OK)
 - 1: Missing nodes were found (but created)
 
-### Step 2: Verify Timestamps (Optional)
+### Step 2: Verify File Dates (Optional)
+
+Check if files in archive folder actually belong there:
+
+```bash
+cd ~/JARVIS
+node skills/neuro-graph-sync/scripts/verify-file-dates.js $(date +%Y-%m-%d)
+# Checks birthtime vs folder name
+# Use --fix to move mismatches
+```
+
+**What it does:**
+- Scans `~/RAW/archive/YYYY-MM-DD/` recursively
+- Reads file birthtime (creation date)
+- If file date ≠ folder date → reports mismatch
+- With `--fix`: moves to correct date folder
+
+### Step 3: Verify Timestamps (Optional)
 
 If you want detailed timestamp parsing from filenames:
 
@@ -95,9 +114,10 @@ git push
 
 | Script | Purpose |
 |--------|---------|
-| `verify-archive-learnings-nodes.js` | Verify 1:1 mapping + create missing nodes |
+| `verify-archive-learnings-nodes.js` | Verify 1:1 mapping + create missing nodes (archive + learnings + skills) |
 | `set-archive-creation-dates.js` | Parse timestamps from filenames, set node.created |
 | `set-learning-creation-dates.js` | Set learning node timestamps from birthtime |
+| `verify-file-dates.js` | Verify files in archive folder actually belong there (birthtime check) |
 
 ## Expected Result
 

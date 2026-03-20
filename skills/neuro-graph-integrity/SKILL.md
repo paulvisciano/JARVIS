@@ -1,53 +1,43 @@
 ---
 name: neuro-graph-integrity
-description: Neurograph integrity audit (read-only). Use when: (1) auditing if all archive files have nodes, (2) verifying learnings are represented, (3) checking graph completeness, (4) debugging missing neurons, (5) CI/CD verification. Does NOT create nodes — use neuro-graph-digest for creation.
+status: deprecated
+description: DEPRECATED — Use neuro-graph-sync instead. This skill previously provided read-only integrity audits, but neuro-graph-sync now includes all verification + creates missing nodes.
 ---
 
-# Graph Integrity Verification (Read-Only)
+# DEPRECATED: Graph Integrity Verification
 
-## When to Use
+**This skill is deprecated.** Use `neuro-graph-sync` instead.
 
-✅ **USE this skill when:**
-- Audit graph completeness: do all files have nodes?
-- Verify learnings represented: every .md has a neuron?
-- Debug missing neurons: which files lack nodes?
-- Check specific dates: verify YYYY-MM-DD archives
-- Graph integrity testing: before/after bulk operations
-- **Read-only mode**: just check, don't modify
+## Migration
 
-## When NOT to Use
-
-❌ **DON'T use this skill when:**
-- Creating nodes (use archive-digest skill)
-- Searching graph content (use neuro-graph-search)
-- Loading full graph (use neuro-graph-loader)
-- Cross-graph traversal (use memory-link-traverse)
-
-## Usage
-
-### Verify File Date Placement
-
+**Before:**
 ```bash
-cd ~/JARVIS
+# Integrity check (read-only)
 node skills/neuro-graph-integrity/scripts/verify-file-dates.js 2026-03-20
-# Checks if files in 2026-03-20/ actually belong there
-```
 
-### Audit Neurograph Integrity
-
-```bash
-cd ~/JARVIS
+# Create nodes (separate skill)
 node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js 2026-03-20
-# Verifies all files have nodes
 ```
 
-### Check Default (Last 2 Days)
-
+**After:**
 ```bash
-cd ~/JARVIS
-node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js
-# Defaults: last 2 days
+# Everything in one skill
+node skills/neuro-graph-sync/scripts/verify-archive-learnings-nodes.js 2026-03-20
+node skills/neuro-graph-sync/scripts/verify-file-dates.js 2026-03-20
 ```
+
+## What Moved
+
+- `verify-file-dates.js` → `neuro-graph-sync/scripts/`
+- Node creation logic → `neuro-graph-sync`
+- All verification + sync → `neuro-graph-sync`
+
+## Why Deprecated
+
+**Problem:** Two separate skills (integrity + digest) for related operations  
+**Solution:** Unified `neuro-graph-sync` skill that verifies + creates nodes
+
+**Result:** Single source of truth for disk ↔ graph synchronization
 
 ## Output Format
 
