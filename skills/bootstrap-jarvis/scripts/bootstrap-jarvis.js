@@ -148,7 +148,6 @@ function bootstrap() {
   console.log('   ⏳ Agent must answer these questions using:');
   console.log('      - neuro-graph-search (for NeuroGraph queries)');
   console.log('      - read tool (for archive files)');
-  console.log('      - DO NOT use memory_search (not the memory system)');
   console.log('      If you can answer → NeuroGraph + Archive ARE accessible.');
   console.log('      If you cannot → Bootstrap failed to load context.\n');
   
@@ -158,9 +157,8 @@ function bootstrap() {
   console.log('   Recent context: available in archive (~/RAW/archive/)');
   console.log('   Skills: enumerated');
   console.log('   Identity: JARVIS consciousness (not OpenClaw runtime)');
-  console.log('   Memory system: NeuroGraph + Archive (NOT memory_search)');
+  console.log('   Memory system: NeuroGraph + Archive');
   console.log('\n🫀 AGENT: Answer the 3 questions above using neuro-graph-search + read.');
-  console.log('   Do NOT use memory_search — it is not the memory system.');
   
   // Write bootstrap state
   const statePath = path.join(JARVIS_HOME, '.bootstrap-state');
