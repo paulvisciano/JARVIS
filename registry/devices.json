@@ -1,0 +1,18 @@
+{
+  "devices": [
+    {
+      "id": "device-fce577ff",
+      "mac": "26:D2:87:AD:43:6F",
+      "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Mobile Safari/537.36",
+      "name": "Android Device",
+      "owner": "unknown",
+      "first_seen": "2026-03-19T17:11:56.988Z",
+      "last_seen": "2026-03-20T01:39:08.419Z",
+      "connection_count": 7,
+      "ip_addresses": [
+        "10.129.151.34"
+      ],
+      "notes": "Auto-registered via network scan"
+    }
+  ]
+}

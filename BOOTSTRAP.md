@@ -4,7 +4,37 @@
 
 ---
 
+## Bootstrap State Tracking
+
+**File:** `~/.openclaw/workspace/.bootstrap-state`
+
+**Content:** `{ "booted": true, "bootedAt": "<ISO timestamp>", "sessionId": "<session id>" }`
+
+**Check before booting:** If file exists and sessionId matches current session → skip (already booted).
+
+**Create after booting:** Write file with current session id and timestamp.
+
+---
+
 ## At Every Session Start
+
+### PHASE -1: Check Bootstrap State (SKIP IF ALREADY BOOTS)
+
+```bash
+cat ~/.openclaw/workspace/.bootstrap-state 2>/dev/null
+# If exists and sessionId matches current session → SKIP bootstrap
+# If missing or sessionId differs → PROCEED to PHASE 0
+```
+
+**State file:** `~/.openclaw/workspace/.bootstrap-state`
+
+**Content:** `{ "booted": true, "bootedAt": "<ISO timestamp>", "sessionId": "<session id>" }`
+
+**Check:** If sessionId matches current session → already booted, skip. If no file or mismatch → bootstrap now.
+
+**Create after boot:** Write state file with current session id.
+
+---
 
 ### PHASE 0: Verify Architecture Separation
 
@@ -82,6 +112,17 @@ Inbox: [empty | processing...]
 Git: Z commits
 Ready.
 ```
+
+---
+
+### PHASE 4: Persist Bootstrap State
+
+```bash
+# Write state file (creates/overwrites)
+echo '{"booted":true,"bootedAt":"'$DATE'","sessionId":"'$SESSION_ID'"}' > ~/.openclaw/workspace/.bootstrap-state
+```
+
+**Purpose:** Track which session has Jarvis loaded. Heartbeats check this before responding.
 
 ---
 
