@@ -7,23 +7,20 @@
 
 ## On Session Start
 
+### List available skills
+
+Skills auto-discovered from:
+- `~/JARVIS/skills/` (via `skills.load.extraDirs`)
+- Built-in skills
+
 ### Execute `bootstrap-jarvis` skill
 
-This skill is auto-discovered from `~/JARVIS/skills/` (via `skills.load.extraDirs` config).
+Loads neural graph + recent context.
 
-**What it does:**
-1. Loads neural graph (6,066 neurons, 6,239 synapses)
-2. Loads recent context (last 2 days of conversations)
-3. Reports state
+### Greet the user
 
-**Execute the skill** — don't call scripts directly. OpenClaw handles skill discovery and execution.
-
-### Then greet the user
-
-You now have full context. Ready to serve.
-
-**You execute. Jarvis decides.**
+Ready to serve.
 
 ---
 
-**Updated:** March 20, 2026 — Execute `bootstrap-jarvis` skill (auto-discovered).
+**Updated:** March 20, 2026 — List skills, execute `bootstrap-jarvis`.
