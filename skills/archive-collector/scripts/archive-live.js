@@ -77,4 +77,56 @@ files.forEach(file => {
   console.log(`✓ ${file} → ${dateStr}/${subfolder}/ (created: ${dateStr})`);
 });
 
-console.log('Done!');
+console.log('Done!\n');
+
+// === INTEGRITY VERIFICATION STEP ===
+// Verify all files in today's archive actually belong there
+console.log('=== Verifying Archive Integrity ===');
+
+const todayStr = new Date().toISOString().slice(0, 10);
+const todayArchiveDir = path.join(archiveBase, todayStr);
+
+if (fs.existsSync(todayArchiveDir)) {
+  let checked = 0;
+  let moved = 0;
+  
+  // Recursively check all files in today's archive
+  function checkDir(dirPath) {
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+    entries.forEach(entry => {
+      const fullPath = path.join(dirPath, entry.name);
+      if (entry.isDirectory()) {
+        // Skip other date folders
+        if (/^\d{4}-\d{2}-\d{2}$/.test(entry.name) && entry.name !== todayStr) {
+          return;
+        }
+        checkDir(fullPath);
+      } else if (entry.isFile()) {
+        checked++;
+        const stat = fs.statSync(fullPath);
+        const created = stat.birthtime || stat.ctime;
+        const fileDate = created.toISOString().slice(0, 10);
+        
+        if (fileDate !== todayStr) {
+          moved++;
+          const subfolder = path.basename(path.dirname(fullPath));
+          const targetDir = path.join(archiveBase, fileDate, subfolder);
+          fs.mkdirSync(targetDir, { recursive: true });
+          const targetPath = path.join(targetDir, entry.name);
+          fs.renameSync(fullPath, targetPath);
+          console.log(`✗ ${entry.name} (created: ${fileDate}) → moved to ${fileDate}/`);
+        }
+      }
+    });
+  }
+  
+  checkDir(todayArchiveDir);
+  
+  console.log(`\nChecked: ${checked} files`);
+  console.log(`Moved: ${moved} files to correct date folders`);
+  if (moved === 0) {
+    console.log('✅ All files in correct date folders');
+  }
+}
+
+console.log('\n✅ Archive complete + verified');

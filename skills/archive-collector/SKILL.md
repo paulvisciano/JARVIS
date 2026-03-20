@@ -49,12 +49,31 @@ node skills/archive-collector/scripts/organize-desktop.js
 - Reads file creation date
 - Moves to correct dated archive folder by type
 
-### Step 3: Report Status
+### Step 3: Verify Integrity (Auto)
+
+**Built-in verification** — runs automatically after archiving:
 
 ```bash
-# Show today's archive
-ls -lh ~/RAW/archive/$(date +%Y-%m-%d)
-echo "Total files: $(find ~/RAW/archive/$(date +%Y-%m-%d) -type f | wc -l)"
+# Automatic (built into archive-live.js and archive-desktop.js)
+# Scans today's archive folder
+# Checks each file's birthtime against folder name
+# Moves mismatches to correct date folders
+```
+
+**What it does:**
+- Recursively scans `~/RAW/archive/YYYY-MM-DD/`
+- Reads file creation date (birthtime)
+- If file date ≠ folder date → moves to correct folder
+- Reports: checked N files, moved M files
+
+**Output:**
+```
+=== Verifying Archive Integrity ===
+Checked: 638 files
+Moved: 0 files to correct date folders
+✅ All files in correct date folders
+
+✅ Archive complete + verified
 ```
 
 ## Scripts
