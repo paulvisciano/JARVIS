@@ -25,33 +25,35 @@ metadata: { "openclaw": { "emoji": "🔍", "requires": { "bins": ["node"], "file
 
 ## Usage
 
-### Verify Single Date
+### Verify + Create Missing Nodes (Single Date)
 
 ```bash
 cd ~/JARVIS
 node scripts/verify-archive-learnings-nodes.js 2026-03-20
 ```
 
-### Verify Multiple Dates
+### Verify + Create Missing Nodes (Multiple Dates)
 
 ```bash
 cd ~/JARVIS
 node scripts/verify-archive-learnings-nodes.js 2026-03-19 2026-03-20
 ```
 
-### Verify Default (Last 2 Days)
+### Set Archive Creation Dates (Detailed Timestamps)
 
 ```bash
 cd ~/JARVIS
-node scripts/verify-archive-learnings-nodes.js
-# Defaults: 2026-03-13 2026-03-14
+node scripts/set-archive-creation-dates.js 2026-03-20
+# Parses timestamps from filenames: convo-jarvis-2026-03-16-094426.wav → 2026-03-16T09:44:26
+# Falls back to file birthtime
 ```
 
-### Custom Nodes Path
+### Set Learning Creation Dates
 
 ```bash
 cd ~/JARVIS
-node scripts/verify-archive-learnings-nodes.js 2026-03-20 --nodes-path RAW/memories/nodes.json
+node scripts/set-learning-creation-dates.js 2026-03-20
+# Uses file birthtime for learning .md files
 ```
 
 ## Output Format
@@ -64,11 +66,12 @@ Learnings: .md on disk: 10 | with node: 10 ✓
 === Summary ===
 Archive:  total files (excl .DS_Store): 50 | total with node: 50 ✓
 Learnings: total .md files: 10 | total with node: 10 ✓
+Created 5 new archive nodes.
 ```
 
 **Exit codes:**
 - 0: All files have nodes (integrity OK)
-- 1: Missing nodes found (integrity broken)
+- 1: Missing nodes were found (but created)
 
 ## Path Normalization
 
@@ -89,10 +92,14 @@ The script normalizes paths using these patterns:
 - All files in `~/RAW/archive/YYYY-MM-DD/`
 - Excludes: `.DS_Store`
 - Matches against: `node.attributes.rawContentPath`, `filePath`, `sourceDocument`
+- **Creates missing nodes** with file birthtime/filename timestamps
 
 **Learning files:**
 - All `.md` files in `~/JARVIS/RAW/learnings/YYYY-MM-DD/`
 - Matches against: `node.attributes.sourceDocument`
+- **Creates missing nodes** with file birthtime
+
+**Note:** This script both verifies AND creates — it's not read-only. For creation dates, uses `set-archive-creation-dates.js` and `set-learning-creation-dates.js` which have more detailed timestamp parsing.
 
 ## Common Issues
 

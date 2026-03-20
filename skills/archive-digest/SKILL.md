@@ -84,9 +84,12 @@ git push
 
 | Script | Purpose |
 |--------|---------|
-| `verify-archive-learnings-nodes.js` | Verify 1:1 mapping (files = nodes) |
-| `set-archive-creation-dates.js` | Create archive file nodes |
-| `set-learning-creation-dates.js` | Create learning nodes |
+| `verify-archive-learnings-nodes.js` | Verify 1:1 mapping (files = nodes), creates missing |
+| `set-archive-creation-dates.js` | Create archive file nodes from file birthtime/filename timestamp |
+| `set-learning-creation-dates.js` | Create learning nodes from .md file metadata |
+| `auto-archiver.sh` | Auto-archive inbox files to dated folders |
+
+**Note:** `verify-archive-learnings-nodes.js` both verifies AND creates missing nodes (unlike typical verify scripts).
 
 ## Expected Output
 
