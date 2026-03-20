@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
- * Organize ~/Desktop files into dated archives based on file creation date.
+ * JARVIS Archive Desktop
+ * Moves ~/Desktop files into dated archives based on file creation date.
  * Uses birthtime (file creation date) — reliable metadata on all files.
  * 
- * Usage: node organize-desktop.js
+ * Usage: node archive-desktop.js
  * 
  * Portable: Uses environment variables, not hardcoded paths.
  * Idempotent: Safe to run multiple times.

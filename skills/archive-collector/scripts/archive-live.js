@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
- * Organize ~/JARVIS/live/ files into dated archives based on file creation date.
+ * JARVIS Archive Live
+ * Moves ~/JARVIS/live/ files into dated archives based on file creation date.
  * Uses birthtime (file creation date) — reliable metadata on all files.
  * 
- * Usage: node organize-live.js
+ * Usage: node archive-live.js
  * 
  * Portable: Uses environment variables, not hardcoded paths.
  * Idempotent: Safe to run multiple times.
@@ -19,7 +20,6 @@ const RAW_ARCHIVE = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW', 'archive')
 
 const liveDir = path.join(JARVIS_HOME, 'live');
 const archiveBase = RAW_ARCHIVE;
-const OPENCLAW_SESSIONS = process.env.OPENCLAW_SESSIONS || path.join(HOME, '.openclaw', 'agents', 'main', 'sessions');
 
 // Check if live dir exists
 if (!fs.existsSync(liveDir)) {
@@ -39,14 +39,6 @@ if (files.length === 0) {
 }
 
 console.log(`Processing ${files.length} files from ~/JARVIS/live/`);
-
-// Also process OpenClaw sessions
-const sessionFiles = fs.existsSync(OPENCLAW_SESSIONS) 
-  ? fs.readdirSync(OPENCLAW_SESSIONS).filter(f => f.endsWith('.jsonl'))
-  : [];
-if (sessionFiles.length > 0) {
-  console.log(`Processing ${sessionFiles.length} OpenClaw sessions`);
-}
 
 // Process live files
 files.forEach(file => {
@@ -83,28 +75,6 @@ files.forEach(file => {
   
   fs.renameSync(filePath, targetPath);
   console.log(`✓ ${file} → ${dateStr}/${subfolder}/ (created: ${dateStr})`);
-});
-
-// Process OpenClaw sessions
-sessionFiles.forEach(file => {
-  const filePath = path.join(OPENCLAW_SESSIONS, file);
-  const stat = fs.statSync(filePath);
-  
-  const created = stat.birthtime || stat.ctime;
-  const dateStr = created.toISOString().slice(0, 10);
-  
-  const targetDir = path.join(archiveBase, dateStr, 'sessions');
-  fs.mkdirSync(targetDir, { recursive: true });
-  
-  const targetPath = path.join(targetDir, file);
-  
-  if (path.dirname(filePath) === targetDir) {
-    console.log(`✓ ${file} already in ${dateStr}/sessions/`);
-    return;
-  }
-  
-  fs.renameSync(filePath, targetPath);
-  console.log(`✓ ${file} → ${dateStr}/sessions/ (created: ${dateStr})`);
 });
 
 console.log('Done!');
