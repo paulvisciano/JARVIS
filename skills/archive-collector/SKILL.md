@@ -12,6 +12,7 @@ description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (
 - Desktop has new files to archive
 - `~/JARVIS/live/` has pending messages (text/audio)
 - Preparing for neuro-graph-digest (complete archive first)
+- **Idempotent:** Safe to run multiple times/day (won't duplicate or error)
 
 ## When NOT to Use
 
@@ -22,54 +23,46 @@ description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (
 
 ## Workflow
 
-### Step 1: Create Archive Structure
+### Step 1: Ensure Archive Structure Exists
 
 ```bash
 DATE=$(date +%Y-%m-%d)
 mkdir -p ~/RAW/archive/$DATE/{audio,images,sessions,documents}
+# mkdir -p is idempotent (safe to run multiple times)
 ```
 
-### Step 2: Collect Desktop Files
-
-```bash
-# Move common file types from desktop
-mv ~/Desktop/*.{png,jpg,jpeg,heic,pdf,txt,md} \
-   ~/RAW/archive/$(date +%Y-%m-%d)/documents/ 2>/dev/null || true
-```
-
-### Step 3: Process ~/JARVIS/live/
-
-```bash
-# Move recordings to audio
-mv ~/JARVIS/live/recording-*.webm \
-   ~/RAW/archive/$(date +%Y-%m-%d)/audio/ 2>/dev/null || true
-
-# Move text messages to documents
-mv ~/JARVIS/live/text-*.txt \
-   ~/RAW/archive/$(date +%Y-%m-%d)/documents/ 2>/dev/null || true
-```
-
-### Step 4: Organize by Type
+### Step 2: Collect Desktop Files (Organized by Type)
 
 ```bash
 DATE=$(date +%Y-%m-%d)
 ARCHIVE=~/RAW/archive/$DATE
 
-# Sort audio files
-mv $ARCHIVE/*.{wav,webm,m4a} $ARCHIVE/audio/ 2>/dev/null || true
+# Images → images/
+mv ~/Desktop/*.{png,jpg,jpeg,heic,gif} $ARCHIVE/images/ 2>/dev/null || true
 
-# Sort images
-mv $ARCHIVE/*.{png,jpg,jpeg,heic,gif} $ARCHIVE/images/ 2>/dev/null || true
-
-# Sort sessions
-mv $ARCHIVE/*.jsonl $ARCHIVE/sessions/ 2>/dev/null || true
+# Documents → documents/
+mv ~/Desktop/*.{pdf,txt,md} $ARCHIVE/documents/ 2>/dev/null || true
 ```
 
-### Step 5: Report Status
+### Step 3: Process ~/JARVIS/live/ (Organized by Type)
 
 ```bash
-echo "Archive complete: $(find ~/RAW/archive/$(date +%Y-%m-%d) -type f | wc -l) files"
-ls -lh ~/RAW/archive/$(date +%Y-%m-%d)
+DATE=$(date +%Y-%m-%d)
+ARCHIVE=~/RAW/archive/$DATE
+
+# Recordings → audio/
+mv ~/JARVIS/live/recording-*.webm $ARCHIVE/audio/ 2>/dev/null || true
+
+# Text messages → documents/
+mv ~/JARVIS/live/text-*.txt $ARCHIVE/documents/ 2>/dev/null || true
+```
+
+### Step 4: Report Status (Idempotent)
+
+```bash
+DATE=$(date +%Y-%m-%d)
+echo "Archive complete: $(find ~/RAW/archive/$DATE -type f 2>/dev/null | wc -l) files"
+ls -lh ~/RAW/archive/$DATE 2>/dev/null
 ```
 
 ## Expected Result
