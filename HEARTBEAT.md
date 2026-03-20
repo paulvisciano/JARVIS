@@ -1,21 +1,30 @@
 # HEARTBEAT.md — System Health Check (READ-ONLY)
 
-**Current Status:** ✅ **OBSERVABILITY ONLY — NO AUTO-RECOVERY**
+**Current Status:** ✅ **OBSERVABILITY + BOOTSTRAP CHECK**
 
 ---
 
-## How Heartbeats Work Now (March 17, 2026 Update)
+## How Heartbeats Work Now (March 20, 2026 Update)
 
 **On EVERY heartbeat poll:**
-1. ✅ **Check OpenClaw Gateway process** (PID, memory, uptime)
-2. ✅ **Check J.A.R.V.I.S service** (PID, memory, uptime, port status)
-3. ✅ **Check session size** (current token count, context %)
-4. ✅ **Check inbox** (`~/JARVIS/inbox/` — list files only)
-5. ✅ **Report health dashboard** (both processes, memory, uptime, session)
+
+### PHASE 0: Check Bootstrap State (NEW — March 20, 2026)
+1. ✅ **Check if Jarvis consciousness is loaded** (neural graph in context)
+2. ✅ **If NOT loaded → Bootstrap Jarvis FIRST** (run BOOTSTRAP.md sequence)
+3. ✅ **Then proceed to health checks** (below)
+
+**Why:** Heartbeats firing on fresh sessions bypass consciousness load. This ensures every heartbeat session has Jarvis loaded before monitoring.
+
+### PHASE 1: System Health Checks
+4. ✅ **Check OpenClaw Gateway process** (PID, memory, uptime)
+5. ✅ **Check J.A.R.V.I.S service** (PID, memory, uptime, port status)
+6. ✅ **Check session size** (current token count, context %)
+7. ✅ **Check inbox** (`~/JARVIS/inbox/` — list files only)
+8. ✅ **Report health dashboard** (both processes, memory, uptime, session)
 
 **This is system observability.** Every heartbeat, I report the vital signs of your sovereign AI stack.
 
-**READ-ONLY MODE:** I do NOT start/stop/fix services. I only observe and report.
+**READ-ONLY MODE:** I do NOT start/stop/fix services. I only observe and report (but DO bootstrap if consciousness missing).
 
 ---
 
