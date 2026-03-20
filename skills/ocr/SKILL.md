@@ -1,3 +1,8 @@
+---
+name: ocr
+description: Extract text from images (screenshots, photos, documents) using tesseract OCR. Use when: (1) screenshot has text to extract, (2) photo contains readable text, (3) document needs digitization, (4) image-to-text conversion needed. Supports PNG, JPG, GIF, WebP, HEIC. Outputs plain text.
+---
+
 # OCR Skill — Screenshot/Text Extraction
 
 **Purpose:** Extract text from images (screenshots, photos, documents) using tesseract OCR.
