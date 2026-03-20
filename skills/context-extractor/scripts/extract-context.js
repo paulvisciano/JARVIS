@@ -64,11 +64,8 @@ function extractSessions(sessionsDir) {
             const msg = parsed.message;
             // Skip tool results (role: "toolResult")
             if (msg.role === 'toolResult') return null;
-            // Skip tool calls embedded in messages
+            // Extract text content from mixed arrays (keep text, skip tool calls/images)
             if (msg.content && Array.isArray(msg.content)) {
-              const hasTool = msg.content.some(c => c.type === 'toolCall' || c.type === 'toolResult');
-              if (hasTool) return null;
-              // Filter out images (keep only text)
               const textOnly = msg.content.filter(c => c.type === 'text');
               if (textOnly.length === 0) return null;
               return { role: msg.role, content: textOnly };

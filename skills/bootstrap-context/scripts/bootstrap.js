@@ -68,10 +68,49 @@ function summarize(context, date) {
   if (!context) return null;
   
   const stats = context.stats || {};
-  const recentTranscripts = context.transcripts.slice(-10).map(t => {
+  const sessions = context.sessions || [];
+  const transcripts = context.transcripts || [];
+  
+  // Get time span from audio transcripts (extract HH:MM from filename)
+  const sortedTranscripts = [...transcripts].sort((a, b) => a.file.localeCompare(b.file));
+  
+  function extractTime(filename) {
+    // Filename format: convo-jarvis-2026-03-20-083225.wav.txt
+    // Extract HHMMSS and format as HH:MM
+    const match = filename.match(/-(\d{2})(\d{2})(\d{2})\./);
+    if (match) {
+      return `${match[1]}:${match[2]}`;
+    }
+    return null;
+  }
+  
+  const firstTime = sortedTranscripts.length ? extractTime(sortedTranscripts[0].file) : null;
+  const lastTime = sortedTranscripts.length ? extractTime(sortedTranscripts[sortedTranscripts.length - 1].file) : null;
+  
+  // Get last activity (audio or session, whichever is more recent)
+  let lastActivity = null;
+  if (sortedTranscripts.length > 0) {
+    const last = sortedTranscripts[sortedTranscripts.length - 1];
+    lastActivity = {
+      type: 'audio',
+      time: extractTime(last.file),
+      text: last.text.split('\n')[0]
+    };
+  } else if (sessions.length > 0) {
+    const lastSession = sessions[sessions.length - 1];
+    const lastMsg = lastSession.messages?.[lastSession.messages.length - 1];
+    lastActivity = {
+      type: 'session',
+      text: lastMsg?.content?.[0]?.text || lastMsg?.content || ''
+    };
+  }
+  
+  // Recent transcripts (last 10)
+  const recentTranscripts = sortedTranscripts.slice(-10).map(t => {
     const firstLine = t.text.split('\n')[0];
     return {
       file: t.file,
+      time: extractTime(t.file),
       preview: firstLine.length > 100 ? firstLine.slice(0, 100) + '...' : firstLine
     };
   });
@@ -81,6 +120,9 @@ function summarize(context, date) {
     sessions: stats.sessionFiles || 0,
     messages: stats.totalMessages || 0,
     transcripts: stats.transcriptFiles || 0,
+    totalItems: (stats.sessionFiles || 0) + (stats.transcriptFiles || 0),
+    timeSpan: { first: firstTime, last: lastTime },
+    lastActivity,
     recentTranscripts
   };
 }
@@ -113,16 +155,41 @@ function bootstrap() {
   
   // Print summary (no write - archive is source of truth)
   console.log(`✅ Context loaded: ${today} + ${yesterday}`);
-  console.log(`   Sessions: ${output.combinedStats.totalSessions} files`);
-  console.log(`   Messages: ${output.combinedStats.totalMessages}`);
-  console.log(`   Audio: ${output.combinedStats.totalTranscripts} transcripts`);
   console.log(`   Source: ${RAW_ARCHIVE}`);
+  console.log();
   
+  // Full context summary (sessions + audio)
+  const totalItems = (todaySummary?.totalItems || 0) + (yesterdaySummary?.totalItems || 0);
+  console.log(`📊 FULL CONTEXT SUMMARY:`);
+  console.log(`   Session files:    ${output.combinedStats.totalSessions}`);
+  console.log(`   Session messages: ${output.combinedStats.totalMessages}`);
+  console.log(`   Audio transcripts: ${output.combinedStats.totalTranscripts}`);
+  console.log(`   Total items:      ${totalItems}`);
+  console.log();
+  
+  // Time span from audio
+  if (todaySummary?.timeSpan?.first) {
+    console.log(`⏰ Conversation timeline:`);
+    console.log(`   Today: ${todaySummary.timeSpan.first} → ${todaySummary.timeSpan.last}`);
+    if (yesterdaySummary?.timeSpan?.first) {
+      console.log(`   Yesterday: ${yesterdaySummary.timeSpan.first} → ${yesterdaySummary.timeSpan.last}`);
+    }
+    console.log();
+  }
+  
+  // Last activity
+  if (todaySummary?.lastActivity) {
+    console.log(`💬 Last activity (${todaySummary.lastActivity.type}):`);
+    console.log(`   Time: ${todaySummary.lastActivity.time || 'N/A'}`);
+    console.log(`   "${todaySummary.lastActivity.text}"`);
+    console.log();
+  }
+  
+  // Recent audio transcripts
   if (todaySummary && todaySummary.recentTranscripts.length > 0) {
-    console.log('\n📝 Recent audio (today):');
+    console.log('📝 Recent audio (last 10):');
     todaySummary.recentTranscripts.forEach((t, i) => {
-      console.log(`   ${i + 1}. ${t.file.split('-').slice(3).join(' ').replace('.txt', '')}`);
-      console.log(`      "${t.preview}"`);
+      console.log(`   ${i + 1}. ${t.time} — ${t.preview}`);
     });
   }
   
