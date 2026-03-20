@@ -25,26 +25,28 @@ description: Neurograph integrity audit (read-only). Use when: (1) auditing if a
 
 ## Usage
 
-### Audit Single Date (Read-Only)
+### Verify File Date Placement
 
 ```bash
 cd ~/JARVIS
-node skills/archive-digest/scripts/verify-archive-learnings-nodes.js 2026-03-20
+node skills/neuro-graph-integrity/scripts/verify-file-dates.js 2026-03-20
+# Checks if files in 2026-03-20/ actually belong there
 ```
 
-### Audit Multiple Dates
+### Audit Neurograph Integrity
 
 ```bash
 cd ~/JARVIS
-node skills/archive-digest/scripts/verify-archive-learnings-nodes.js 2026-03-19 2026-03-20
+node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js 2026-03-20
+# Verifies all files have nodes
 ```
 
 ### Check Default (Last 2 Days)
 
 ```bash
 cd ~/JARVIS
-node skills/archive-digest/scripts/verify-archive-learnings-nodes.js
-# Defaults: 2026-03-13 2026-03-14
+node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js
+# Defaults: last 2 days
 ```
 
 ## Output Format

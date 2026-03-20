@@ -1,87 +1,87 @@
 ---
 name: archive-collector
-description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (1) end-of-day archive needed, (2) desktop files need archiving, (3) ~/JARVIS/live/ has pending messages, (4) preparing for neuro-graph-digest. Organizes by type: audio/, images/, sessions/, documents/.
+description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/ based on file creation date. Use when: (1) end-of-day archive needed, (2) ~/JARVIS/live/ has pending messages, (3) desktop files need archiving. Organizes by type + creation date. Ensures complete archive before running neuro-graph-digest.
 ---
 
-# Archive Collector (End-of-Day Collection)
+# Archive Collector (File Creation Date-Based)
 
 ## When to Use
 
 ✅ **USE this skill when:**
-- End-of-day: collect all files into dated archive folder
-- Desktop has new files to archive
+- End-of-day: collect all files into dated archive folders
 - `~/JARVIS/live/` has pending messages (text/audio)
+- Desktop has new files to archive
 - Preparing for neuro-graph-digest (complete archive first)
-- **Idempotent:** Safe to run multiple times/day (won't duplicate or error)
 
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
 - Archive already complete (use neuro-graph-digest instead)
 - Single file archival (move manually)
-- Mid-day collection (wait for end-of-day)
 
 ## Workflow
 
-### Step 1: Process Files by Creation Date
+### Step 1: Process ~/JARVIS/live/ (Use File Creation Date)
 
 ```bash
-# For each file in ~/JARVIS/live/, check creation date
-for f in ~/JARVIS/live/*.{webm,txt,wav} 2>/dev/null; do
-  # Get file creation date (macOS: stat -f "%Sm", Linux: stat -c "%y")
-  DATE=$(stat -f "%Sm" -t "%Y-%m-%d" "$f" 2>/dev/null)
-  
-  # Ensure archive structure exists for that date
-  mkdir -p ~/RAW/archive/$DATE/{audio,images,sessions,documents}
-  
-  # Move to correct date folder by type
-  case "$f" in
-    *.webm|*.wav|*.m4a) mv "$f" ~/RAW/archive/$DATE/audio/ ;;
-    *.png|*.jpg|*.jpeg|*.heic|*.gif) mv "$f" ~/RAW/archive/$DATE/images/ ;;
-    *.jsonl) mv "$f" ~/RAW/archive/$DATE/sessions/ ;;
-    *.txt|*.pdf|*.md) mv "$f" ~/RAW/archive/$DATE/documents/ ;;
-  esac
-done
+cd ~/JARVIS
+
+# Use Node.js script to organize by file creation date
+node skills/archive-collector/scripts/organize-live.js
 ```
 
-### Step 2: Collect Desktop Files (Organized by Type + Date)
+**What the script does:**
+- Scans `~/JARVIS/live/` for all files
+- Reads file creation date (`birthtime` on macOS, `birthtime` or `ctime` on Linux)
+- Creates archive folder for that date: `~/RAW/archive/YYYY-MM-DD/`
+- Moves file to correct folder by type: `audio/`, `documents/`, `images/`
+- **Idempotent:** Safe to run multiple times
+
+### Step 2: Collect Desktop Files (Use File Creation Date)
 
 ```bash
-# For desktop files, use file creation date
-for f in ~/Desktop/*.{png,jpg,jpeg,heic,gif,pdf,txt,md} 2>/dev/null; do
-  DATE=$(stat -f "%Sm" -t "%Y-%m-%d" "$f" 2>/dev/null)
-  mkdir -p ~/RAW/archive/$DATE/{audio,images,sessions,documents}
-  
-  case "$f" in
-    *.png|*.jpg|*.jpeg|*.heic|*.gif) mv "$f" ~/RAW/archive/$DATE/images/ ;;
-    *) mv "$f" ~/RAW/archive/$DATE/documents/ ;;
-  esac
-done
+# Use Node.js script for desktop files
+node skills/archive-collector/scripts/organize-desktop.js
 ```
+
+**What the script does:**
+- Scans `~/Desktop/` for common file types
+- Reads file creation date
+- Moves to correct dated archive folder by type
 
 ### Step 3: Report Status
 
 ```bash
-echo "Archive complete: $(find ~/RAW/archive/$(date +%Y-%m-%d) -type f 2>/dev/null | wc -l) files"
-ls -lh ~/RAW/archive/$(date +%Y-%m-%d) 2>/dev/null
+# Show today's archive
+ls -lh ~/RAW/archive/$(date +%Y-%m-%d)
+echo "Total files: $(find ~/RAW/archive/$(date +%Y-%m-%d) -type f | wc -l)"
 ```
+
+## Scripts
+
+**Location:** `skills/archive-collector/scripts/`
+
+| Script | Purpose |
+|--------|---------|
+| `organize-live.js` | Process ~/JARVIS/live/ by creation date |
+| `organize-desktop.js` | Process desktop by creation date |
 
 ## Expected Result
 
-**Archive structure:**
+**Archive structure (organized by creation date + type):**
 ```
 ~/RAW/archive/YYYY-MM-DD/
-├── audio/      (recordings, voice notes)
-├── images/     (screenshots, photos)
-├── sessions/   (OpenClaw session JSONL files)
-└── documents/  (text files, PDFs, misc)
+├── audio/      (recordings created on YYYY-MM-DD)
+├── images/     (screenshots created on YYYY-MM-DD)
+├── sessions/   (sessions created on YYYY-MM-DD)
+└── documents/  (files created on YYYY-MM-DD)
 ```
 
 **Ready for:** neuro-graph-digest skill
 
 ## Notes
 
-- Run at end-of-day (before neuro-graph-digest)
-- Non-destructive: moves files, doesn't delete
-- Organizes by type for easy processing
-- Ensures complete archive before digestion
+- **Uses file creation date** (birthtime/ctime metadata)
+- **Not filename parsing** — metadata is reliable
+- **Idempotent** — safe to run multiple times/day
+- **Organizes during move** — no reorganization step needed
