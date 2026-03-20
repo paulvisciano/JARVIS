@@ -1,7 +1,6 @@
 ---
 name: graph-integrity
-description: Verify neurograph integrity (read-only). Use when: (1) auditing if all archive files have nodes, (2) verifying learnings are represented, (3) checking graph completeness, (4) debugging missing neurons. Does NOT create nodes — use archive-digest for creation.
-metadata: { "openclaw": { "emoji": "🔍", "requires": { "bins": ["node"], "files": ["~/JARVIS/RAW/memories/nodes.json"] } } }
+description: Neurograph integrity audit (read-only). Use when: (1) auditing if all archive files have nodes, (2) verifying learnings are represented, (3) checking graph completeness, (4) debugging missing neurons, (5) CI/CD verification. Does NOT create nodes — use archive-digest for creation.
 ---
 
 # Graph Integrity Verification (Read-Only)

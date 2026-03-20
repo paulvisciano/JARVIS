@@ -1,7 +1,6 @@
 ---
 name: archive-digest
-description: Digest daily archives into neurograph. Use at end-of-day to: (1) verify all archive files + learnings have nodes, (2) create missing nodes, (3) link to temporal anchors, (4) ensure graph integrity. Runs verification + creation in one flow.
-metadata: { "openclaw": { "emoji": "📅", "requires": { "bins": ["node", "python3"], "files": ["~/JARVIS/RAW/memories/nodes.json", "~/JARVIS/RAW/memories/synapses.json"] } } }
+description: End-of-day archive + learning digestion into neurograph. Use when: (1) day is complete and all archives processed, (2) verifying graph integrity (all files have nodes), (3) creating missing nodes for archive files + learning .md files, (4) linking to temporal anchors (YYYY-MM-DD), (5) ensuring 1:1 mapping: files on disk = nodes in graph. Runs verification + creation in one flow.
 ---
 
 # Archive Digest (End-of-Day Graph Integrity)
@@ -78,13 +77,13 @@ node scripts/set-learning-creation-dates.js $(date +%Y-%m-%d)
 ```bash
 cd ~/JARVIS
 git add RAW/memories/nodes.json RAW/memories/synapses.json
-git commit -m "📅 $(date +%Y-%m-%d): Archive digest complete ($(wc -l < RAW/memories/nodes.json | awk '{print $1}') nodes)"
+git commit -m "📅 $(date +%Y-%m-%d): Archive digest complete"
 git push
 ```
 
-## Scripts Location
+## Scripts
 
-**Inside skill:** `~/JARVIS/skills/archive-digest/scripts/`
+**Location:** `skills/archive-digest/scripts/`
 
 | Script | Purpose |
 |--------|---------|

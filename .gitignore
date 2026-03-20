@@ -25,3 +25,4 @@ inbox/*
 live/
 live/*
 !live/.gitkeep
+*.skill
