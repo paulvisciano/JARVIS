@@ -1,19 +1,20 @@
 ---
-name: neuro-graph-digest
-description: End-of-day archive + learning + skills digestion into neurograph. Use when: (1) day is complete and all archives processed, (2) verifying graph integrity (all files have nodes), (3) creating missing nodes for archive files + learning .md files + skill files, (4) linking to temporal anchors (YYYY-MM-DD), (5) ensuring 1:1 mapping: files on disk = nodes in graph. Runs verification + creation in one flow. Auto-discovers JARVIS skills and creates openclaw-skill nodes.
+name: neuro-graph-sync
+description: Synchronize neurograph with disk — ensures 1:1 mapping between files and nodes. Use when: (1) verifying graph integrity (all files have nodes), (2) creating missing nodes for archive files + learning .md files + skill files, (3) linking to temporal anchors (YYYY-MM-DD), (4) ensuring files on disk = nodes in graph. Runs verification + creation in one flow. Auto-discovers JARVIS skills and creates openclaw-skill nodes.
 ---
 
-# Archive Digest (End-of-Day Graph Integrity)
+# Neuro Graph Sync (Disk ↔ Graph Synchronization)
 
 ## When to Use
 
 ✅ **USE this skill when:**
-- End-of-day: digest all archives + learnings + skills from today
+- End-of-day: sync all archives + learnings + skills to graph
 - Verify graph integrity: every file has a node
 - Create missing nodes: archive files + learning .md files + skill files
 - Link to temporal anchors: date-based nodes
 - Ensure 1:1 mapping: files on disk = nodes in graph
 - Auto-discover skills: scans ~/JARVIS/skills/ for SKILL.md files
+- **Synchronize:** disk state → graph state (mirror what exists)
 
 ## When NOT to Use
 
@@ -25,11 +26,11 @@ description: End-of-day archive + learning + skills digestion into neurograph. U
 
 ## Workflow
 
-### Step 1: Run Archive Digest Script
+### Step 1: Run Sync Script
 
 ```bash
 cd ~/JARVIS
-node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
+node skills/neuro-graph-sync/scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
 ```
 
 **What this does:**
@@ -66,9 +67,9 @@ Created 3 new skill nodes (auto-discovered).
 If you want detailed timestamp parsing from filenames:
 
 ```bash
-cd ~/JARVIS/skills/archive-digest
-node scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
-node scripts/set-learning-creation-dates.js $(date +%Y-%m-%d)
+cd ~/JARVIS
+node skills/neuro-graph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
+node skills/neuro-graph-sync/scripts/set-learning-creation-dates.js $(date +%Y-%m-%d)
 ```
 
 **What these do:**
@@ -84,13 +85,13 @@ node scripts/set-learning-creation-dates.js $(date +%Y-%m-%d)
 ```bash
 cd ~/JARVIS
 git add RAW/memories/nodes.json RAW/memories/synapses.json
-git commit -m "📅 $(date +%Y-%m-%d): Archive digest complete"
+git commit -m "📅 $(date +%Y-%m-%d): Neurograph synced"
 git push
 ```
 
 ## Scripts
 
-**Location:** `skills/archive-digest/scripts/`
+**Location:** `skills/neuro-graph-sync/scripts/`
 
 | Script | Purpose |
 |--------|---------|
@@ -100,19 +101,22 @@ git push
 
 ## Expected Result
 
-**End-of-day digest complete:**
+**Graph synchronized:**
 ```
 Archive:  total files: X | total with node: X ✓
 Learnings: total .md files: Y | total with node: Y ✓
+Skills:    total SKILL.md: Z | total with node: Z ✓
 ```
 
-**Graph integrity:** All archive files + learnings represented as nodes, linked to temporal anchor for date.
+**Graph integrity:** All archive files + learnings + skills represented as nodes, linked to temporal anchor for date.
 
 ## Notes
 
 - Run at end-of-day (after all archives processed)
 - Creates nodes for: audio, images, transcripts, sessions, documents
 - Creates nodes for: learning .md files
+- Creates nodes for: skill files (auto-discovered)
 - Links all to temporal node: `YYYY-MM-DD`
 - Ensures no orphaned files (all represented in graph)
+- **Synchronization:** disk state → graph state (mirror what exists)
 - Scripts live inside skill (self-contained)

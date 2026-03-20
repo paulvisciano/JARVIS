@@ -222,7 +222,7 @@ if (missingSkills.length) {
         {
           date: new Date().toISOString().split('T')[0],
           type: 'skill-discovered',
-          description: 'Auto-discovered by neuro-graph-digest'
+          description: 'Auto-discovered by neuro-graph-sync'
         },
         'skill'
       ],
