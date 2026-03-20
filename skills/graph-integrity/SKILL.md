@@ -1,10 +1,10 @@
 ---
 name: graph-integrity
-description: Verify neurograph integrity. Use when: (1) checking if all archive files have nodes, (2) verifying learnings are represented, (3) auditing graph completeness, (4) debugging missing neurons. Runs verification across dates or specific paths.
+description: Verify neurograph integrity (read-only). Use when: (1) auditing if all archive files have nodes, (2) verifying learnings are represented, (3) checking graph completeness, (4) debugging missing neurons. Does NOT create nodes — use archive-digest for creation.
 metadata: { "openclaw": { "emoji": "🔍", "requires": { "bins": ["node"], "files": ["~/JARVIS/RAW/memories/nodes.json"] } } }
 ---
 
-# Graph Integrity Verification
+# Graph Integrity Verification (Read-Only)
 
 ## When to Use
 
@@ -14,6 +14,7 @@ metadata: { "openclaw": { "emoji": "🔍", "requires": { "bins": ["node"], "file
 - Debug missing neurons: which files lack nodes?
 - Check specific dates: verify YYYY-MM-DD archives
 - Graph integrity testing: before/after bulk operations
+- **Read-only mode**: just check, don't modify
 
 ## When NOT to Use
 
@@ -25,35 +26,26 @@ metadata: { "openclaw": { "emoji": "🔍", "requires": { "bins": ["node"], "file
 
 ## Usage
 
-### Verify + Create Missing Nodes (Single Date)
+### Audit Single Date (Read-Only)
 
 ```bash
 cd ~/JARVIS
-node scripts/verify-archive-learnings-nodes.js 2026-03-20
+node skills/archive-digest/scripts/verify-archive-learnings-nodes.js 2026-03-20
 ```
 
-### Verify + Create Missing Nodes (Multiple Dates)
+### Audit Multiple Dates
 
 ```bash
 cd ~/JARVIS
-node scripts/verify-archive-learnings-nodes.js 2026-03-19 2026-03-20
+node skills/archive-digest/scripts/verify-archive-learnings-nodes.js 2026-03-19 2026-03-20
 ```
 
-### Set Archive Creation Dates (Detailed Timestamps)
+### Check Default (Last 2 Days)
 
 ```bash
 cd ~/JARVIS
-node scripts/set-archive-creation-dates.js 2026-03-20
-# Parses timestamps from filenames: convo-jarvis-2026-03-16-094426.wav → 2026-03-16T09:44:26
-# Falls back to file birthtime
-```
-
-### Set Learning Creation Dates
-
-```bash
-cd ~/JARVIS
-node scripts/set-learning-creation-dates.js 2026-03-20
-# Uses file birthtime for learning .md files
+node skills/archive-digest/scripts/verify-archive-learnings-nodes.js
+# Defaults: 2026-03-13 2026-03-14
 ```
 
 ## Output Format
@@ -66,25 +58,11 @@ Learnings: .md on disk: 10 | with node: 10 ✓
 === Summary ===
 Archive:  total files (excl .DS_Store): 50 | total with node: 50 ✓
 Learnings: total .md files: 10 | total with node: 10 ✓
-Created 5 new archive nodes.
 ```
 
 **Exit codes:**
 - 0: All files have nodes (integrity OK)
-- 1: Missing nodes were found (but created)
-
-## Path Normalization
-
-The script normalizes paths using these patterns:
-
-**Archive paths:**
-- `~/RAW/archive/...` → `$HOME/RAW/archive/...`
-- `/RAW/archive/...` → `$HOME/RAW/archive/...`
-- `RAW/archive/...` → `$HOME/RAW/archive/...`
-
-**Learning paths:**
-- `~/JARVIS/RAW/learnings/...` → `$HOME/JARVIS/RAW/learnings/...`
-- `JARVIS/RAW/learnings/...` → `$HOME/JARVIS/RAW/learnings/...`
+- 1: Missing nodes found (integrity broken — run archive-digest to fix)
 
 ## What It Checks
 
@@ -92,14 +70,12 @@ The script normalizes paths using these patterns:
 - All files in `~/RAW/archive/YYYY-MM-DD/`
 - Excludes: `.DS_Store`
 - Matches against: `node.attributes.rawContentPath`, `filePath`, `sourceDocument`
-- **Creates missing nodes** with file birthtime/filename timestamps
 
 **Learning files:**
 - All `.md` files in `~/JARVIS/RAW/learnings/YYYY-MM-DD/`
 - Matches against: `node.attributes.sourceDocument`
-- **Creates missing nodes** with file birthtime
 
-**Note:** This script both verifies AND creates — it's not read-only. For creation dates, uses `set-archive-creation-dates.js` and `set-learning-creation-dates.js` which have more detailed timestamp parsing.
+**Note:** This skill is **read-only** — it reports missing nodes but doesn't create them. Use `archive-digest` skill to create missing nodes.
 
 ## Common Issues
 
@@ -121,8 +97,8 @@ Archive files missing node: 5
 ## Integration
 
 **Part of end-of-day flow:**
-1. `archive-digest` → creates nodes
-2. `graph-integrity` → verifies creation
+1. `graph-integrity` → audit (read-only)
+2. `archive-digest` → create missing nodes
 3. Git commit → graph versioned
 
 **Standalone use:**
@@ -136,3 +112,4 @@ Archive files missing node: 5
 - Fast: scans disk + graph in memory
 - Comprehensive: checks archive + learnings
 - Exit code: script returns 1 if missing (CI-friendly)
+- Scripts live in `archive-digest` skill (shared)

@@ -25,73 +25,74 @@ metadata: { "openclaw": { "emoji": "📅", "requires": { "bins": ["node", "pytho
 
 ## Workflow
 
-### Step 1: Load Neurograph
+### Step 1: Run Archive Digest Script
 
 ```bash
-cd ~/JARVIS
-python3 -c "import json; nodes=json.load(open('RAW/memories/nodes.json')); print(f'Current nodes: {len(nodes)}')"
-```
-
-### Step 2: Verify Archive + Learnings Integrity
-
-```bash
-cd ~/JARVIS
+cd ~/JARVIS/skills/archive-digest
 node scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
 ```
 
+**What this does:**
+- Scans `~/RAW/archive/YYYY-MM-DD/` for all files
+- Scans `~/JARVIS/RAW/learnings/YYYY-MM-DD/` for all .md files
+- Checks if each file has a corresponding node in `nodes.json`
+- **Creates missing nodes** with proper timestamps
+- Reports: files on disk | with node | MISSING: X
+
 **Output:**
-- Archive: files on disk | with node | MISSING: X
-- Learnings: .md on disk | with node | MISSING: X
-- Summary: ✓ or MISMATCH
+```
+--- 2026-03-20 ---
+Archive: files on disk: 50 | with node: 50 ✓
+Learnings: .md on disk: 10 | with node: 10 ✓
 
-**Exit code:** 0 = all matched, 1 = missing nodes
+=== Summary ===
+Archive:  total files (excl .DS_Store): 50 | total with node: 50 ✓
+Learnings: total .md files: 10 | total with node: 10 ✓
+Created 5 new archive nodes.
+```
 
-### Step 3: Create Missing Nodes
+**Exit codes:**
+- 0: All files have nodes (integrity OK)
+- 1: Missing nodes were found (but created)
 
-If verification shows missing nodes, run creation scripts:
+### Step 2: Verify Timestamps (Optional)
+
+If you want detailed timestamp parsing from filenames:
 
 ```bash
-# Create archive file nodes
-cd ~/JARVIS
+cd ~/JARVIS/skills/archive-digest
 node scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
-
-# Create learning nodes
-cd ~/JARVIS
 node scripts/set-learning-creation-dates.js $(date +%Y-%m-%d)
 ```
 
-### Step 4: Verify Again
+**What these do:**
+- `set-archive-creation-dates.js`: Parses timestamps from filenames
+  - `convo-jarvis-2026-03-16-094426.wav` → `2026-03-16T09:44:26`
+  - `Screenshot 2026-03-16 at 9.56.54 AM.png` → `2026-03-16T09:56:54`
+  - `recording-1773461516328.wav` → from Unix milliseconds
+  - Falls back to file birthtime
+- `set-learning-creation-dates.js`: Uses file birthtime for .md files
 
-```bash
-cd ~/JARVIS
-node scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
-```
-
-Should now show: ✓ for both Archive + Learnings
-
-### Step 5: Commit Graph
+### Step 3: Commit Graph
 
 ```bash
 cd ~/JARVIS
 git add RAW/memories/nodes.json RAW/memories/synapses.json
-git commit -m "📅 $(date +%Y-%m-%d): Archive digest complete ($(date +%s) nodes)"
+git commit -m "📅 $(date +%Y-%m-%d): Archive digest complete ($(wc -l < RAW/memories/nodes.json | awk '{print $1}') nodes)"
 git push
 ```
 
-## Scripts Reference
+## Scripts Location
 
-**Location:** `~/JARVIS/scripts/`
+**Inside skill:** `~/JARVIS/skills/archive-digest/scripts/`
 
 | Script | Purpose |
 |--------|---------|
-| `verify-archive-learnings-nodes.js` | Verify 1:1 mapping (files = nodes), creates missing |
-| `set-archive-creation-dates.js` | Create archive file nodes from file birthtime/filename timestamp |
-| `set-learning-creation-dates.js` | Create learning nodes from .md file metadata |
-| `auto-archiver.sh` | Auto-archive inbox files to dated folders |
+| `verify-archive-learnings-nodes.js` | Verify 1:1 mapping + create missing nodes |
+| `set-archive-creation-dates.js` | Parse timestamps from filenames, set node.created |
+| `set-learning-creation-dates.js` | Set learning node timestamps from birthtime |
 
-**Note:** `verify-archive-learnings-nodes.js` both verifies AND creates missing nodes (unlike typical verify scripts).
-
-## Expected Output
+## Expected Result
 
 **End-of-day digest complete:**
 ```
@@ -108,3 +109,4 @@ Learnings: total .md files: Y | total with node: Y ✓
 - Creates nodes for: learning .md files
 - Links all to temporal node: `YYYY-MM-DD`
 - Ensures no orphaned files (all represented in graph)
+- Scripts live inside skill (self-contained)
