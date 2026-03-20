@@ -1,6 +1,6 @@
 ---
 name: neuro-graph-loader
-description: Load entire neural graph (nodes.json + synapses.json) into context for deep analysis. Use when: (1) user needs full graph traversal, (2) analyzing synapse paths, (3) cross-graph queries, (4) debugging graph structure. ALWAYS asks user before loading (graphs are 100KB+ = ~50k tokens). Use neuro-graph-search for lightweight queries instead.
+description: Load entire neuro graph (nodes.json + synapses.json) into context for deep analysis. Use when: (1) user needs full graph traversal, (2) analyzing synapse paths, (3) cross-graph queries, (4) debugging graph structure. ALWAYS asks user before loading (graphs are 100KB+ = ~50k tokens). Use neuro-graph-search for lightweight queries instead.
 metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "stat"] } } }
 ---
 

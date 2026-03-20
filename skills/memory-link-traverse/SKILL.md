@@ -1,6 +1,6 @@
 ---
 name: memory-link-traverse
-description: Traverse between linked neural graphs via memory-link nodes. Use when: (1) user wants to search across multiple neurographs, (2) comparing graph structures, (3) following memory-link connections. ALWAYS asks user before loading remote graphs (graphs are 100KB+ = ~50k tokens). Uses local_path when available (fast disk access). Falls back to neural-graph-search for lightweight queries.
+description: Traverse between linked neuro graphs via memory-link nodes. Use when: (1) user wants to search across multiple neurographs, (2) comparing graph structures, (3) following memory-link connections. ALWAYS asks user before loading remote graphs (graphs are 100KB+ = ~50k tokens). Uses local_path when available (fast disk access). Falls back to neuro-graph-search for lightweight queries.
 metadata: { "openclaw": { "emoji": "🔗", "requires": { "bins": ["python3", "stat"] } } }
 ---
 
@@ -17,9 +17,9 @@ metadata: { "openclaw": { "emoji": "🔗", "requires": { "bins": ["python3", "st
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
-- "Who is David?" → use `neural-graph-search` (lightweight, single graph)
-- "Find all people" → use `neural-graph-search` (lightweight)
-- Any simple query → use `neural-graph-search` first
+- "Who is David?" → use `neuro-graph-search` (lightweight, single graph)
+- "Find all people" → use `neuro-graph-search` (lightweight)
+- Any simple query → use `neuro-graph-search` first
 
 ## Memory-Link Architecture
 
@@ -43,5 +43,5 @@ Memory-link nodes have: `nodes_url` (remote, slow), `local_path` (disk, fast), `
 
 - Always ask user before loading remote graphs (graphs are 100KB+ each)
 - Use local_path from memory-link nodes when available (fast disk access)
-- Fallback to neural-graph-search for lightweight single-graph queries
+- Fallback to neuro-graph-search for lightweight single-graph queries
 - Don't load 3+ graphs without explicit confirmation (~150k+ tokens)

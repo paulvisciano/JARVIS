@@ -19,8 +19,8 @@ description: Neurograph integrity audit (read-only). Use when: (1) auditing if a
 
 ❌ **DON'T use this skill when:**
 - Creating nodes (use archive-digest skill)
-- Searching graph content (use neural-graph-search)
-- Loading full graph (use neural-graph-loader)
+- Searching graph content (use neuro-graph-search)
+- Loading full graph (use neuro-graph-loader)
 - Cross-graph traversal (use memory-link-traverse)
 
 ## Usage

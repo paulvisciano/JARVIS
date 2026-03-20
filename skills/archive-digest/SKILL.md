@@ -19,8 +19,8 @@ description: End-of-day archive + learning digestion into neurograph. Use when: 
 ❌ **DON'T use this skill when:**
 - Mid-day processing (use process-inbox skill instead)
 - Single file archival (use memory-link-traverse)
-- Graph search/queries (use neural-graph-search)
-- Full graph load for analysis (use neural-graph-loader)
+- Graph search/queries (use neuro-graph-search)
+- Full graph load for analysis (use neuro-graph-loader)
 
 ## Workflow
 
