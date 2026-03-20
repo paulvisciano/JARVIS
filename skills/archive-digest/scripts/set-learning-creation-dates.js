@@ -28,7 +28,7 @@ const HOME = process.env.HOME || '';
 const JARVIS_LEARNINGS = path.join(HOME, 'JARVIS', 'RAW', 'learnings');
 
 const LEARNINGS_ARG = process.argv[2];
-const NODES_PATH = process.argv[3] || path.join(__dirname, '..', 'RAW', 'memories', 'nodes.json');
+const NODES_PATH = process.argv[3] || path.join(__dirname, '../../..', 'RAW', 'memories', 'nodes.json');
 
 if (!LEARNINGS_ARG) {
   console.error('Usage: node set-learning-creation-dates.js <learnings-folder-or-date> [nodes.json path]');

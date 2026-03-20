@@ -15,7 +15,7 @@ const path = require('path');
 const HOME = process.env.HOME || '';
 const RAW_ARCHIVE = path.join(HOME, 'RAW', 'archive');
 const JARVIS_LEARNINGS = path.join(HOME, 'JARVIS', 'RAW', 'learnings');
-const NODES_PATH = process.argv.find(a => a.endsWith('nodes.json')) || path.join(__dirname, '..', 'RAW', 'memories', 'nodes.json');
+const NODES_PATH = process.argv.find(a => a.endsWith('nodes.json')) || path.join(__dirname, '../../..', 'RAW', 'memories', 'nodes.json');
 const nodesPath = path.resolve(process.cwd(), NODES_PATH.replace(/^~/, HOME));
 
 const dates = process.argv.slice(2).filter(a => /^\d{4}-\d{2}-\d{2}$/.test(a));

@@ -33,7 +33,7 @@ const HOME = process.env.HOME || '';
 const RAW_ARCHIVE = path.join(HOME, 'RAW', 'archive');
 
 const ARCHIVE_ARG = process.argv[2];
-const NODES_PATH = process.argv[3] || path.join(__dirname, '..', 'RAW', 'memories', 'nodes.json');
+const NODES_PATH = process.argv[3] || path.join(__dirname, '../../..', 'RAW', 'memories', 'nodes.json');
 
 if (!ARCHIVE_ARG) {
   console.error('Usage: node set-archive-creation-dates.js <archive-folder-or-date> [nodes.json path]');
