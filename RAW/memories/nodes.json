@@ -125552,5 +125552,3037 @@
       "created": "2026-03-19T00:00:00"
     },
     "created": "2026-03-19T00:00:00"
+  },
+  {
+    "id": "fuds-tournament-2026",
+    "label": "FUDS Tournament 2026 (Fuck Puckers)",
+    "category": "event",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-22",
+        "type": "tournament",
+        "description": "Fuck Puckers volleyball tournament, Emerald Coast FL (Fort Walton Beach / Destin)"
+      }
+    ],
+    "attributes": {
+      "role": "anchor-event",
+      "date": "2026-04-22",
+      "endDate": "2026-04-26",
+      "location": "Emerald Coast, Florida Panhandle",
+      "airport": "VPS (Pensacola) or PNS (Panama City)",
+      "description": "Fuck Puckers volleyball tournament",
+      "created": "2026-03-20T11:31:45.822046"
+    },
+    "created": "2026-03-20T11:31:45.822057"
+  },
+  {
+    "id": "temporal-20260320",
+    "label": "2026-03-20",
+    "category": "temporal",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "temporal-anchor",
+        "description": "Daily temporal anchor node"
+      }
+    ],
+    "attributes": {
+      "role": "temporal-anchor",
+      "date": "2026-03-20",
+      "created": "2026-03-20T00:00:00"
+    },
+    "created": "2026-03-20T00:00:00"
+  },
+  {
+    "id": "",
+    "label": ".DS_Store",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "document-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "document",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/.DS_Store",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/.DS_Store",
+      "created": "2026-03-20T02:23:07"
+    },
+    "created": "2026-03-20T02:23:07"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083225.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.response.txt",
+      "created": "2026-03-20T08:32:25"
+    },
+    "created": "2026-03-20T08:32:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083225",
+    "label": "convo-jarvis-2…083225.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.wav",
+      "created": "2026-03-20T08:32:25"
+    },
+    "created": "2026-03-20T08:32:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083225.wav",
+    "label": "convo-jarvis-2…25.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.wav.txt",
+      "created": "2026-03-20T08:32:25"
+    },
+    "created": "2026-03-20T08:32:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083225",
+    "label": "convo-jarvis-2…83225.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083225.webm",
+      "created": "2026-03-20T08:32:25"
+    },
+    "created": "2026-03-20T08:32:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083521.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.response.txt",
+      "created": "2026-03-20T08:35:21"
+    },
+    "created": "2026-03-20T08:35:21"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083521",
+    "label": "convo-jarvis-2…083521.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.wav",
+      "created": "2026-03-20T08:35:21"
+    },
+    "created": "2026-03-20T08:35:21"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083521.wav",
+    "label": "convo-jarvis-2…21.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.wav.txt",
+      "created": "2026-03-20T08:35:21"
+    },
+    "created": "2026-03-20T08:35:21"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083521",
+    "label": "convo-jarvis-2…83521.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083521.webm",
+      "created": "2026-03-20T08:35:21"
+    },
+    "created": "2026-03-20T08:35:21"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083651.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.response.txt",
+      "created": "2026-03-20T08:36:51"
+    },
+    "created": "2026-03-20T08:36:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083651",
+    "label": "convo-jarvis-2…083651.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.wav",
+      "created": "2026-03-20T08:36:51"
+    },
+    "created": "2026-03-20T08:36:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083651.wav",
+    "label": "convo-jarvis-2…51.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.wav.txt",
+      "created": "2026-03-20T08:36:51"
+    },
+    "created": "2026-03-20T08:36:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083651",
+    "label": "convo-jarvis-2…83651.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083651.webm",
+      "created": "2026-03-20T08:36:51"
+    },
+    "created": "2026-03-20T08:36:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083820.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.response.txt",
+      "created": "2026-03-20T08:38:20"
+    },
+    "created": "2026-03-20T08:38:20"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083820",
+    "label": "convo-jarvis-2…083820.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.wav",
+      "created": "2026-03-20T08:38:20"
+    },
+    "created": "2026-03-20T08:38:20"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083820.wav",
+    "label": "convo-jarvis-2…20.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.wav.txt",
+      "created": "2026-03-20T08:38:20"
+    },
+    "created": "2026-03-20T08:38:20"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083820",
+    "label": "convo-jarvis-2…83820.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083820.webm",
+      "created": "2026-03-20T08:38:20"
+    },
+    "created": "2026-03-20T08:38:20"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083926",
+    "label": "convo-jarvis-2…083926.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083926.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083926.wav",
+      "created": "2026-03-20T08:39:26"
+    },
+    "created": "2026-03-20T08:39:26"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083926.wav",
+    "label": "convo-jarvis-2…26.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083926.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083926.wav.txt",
+      "created": "2026-03-20T08:39:26"
+    },
+    "created": "2026-03-20T08:39:26"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-083926",
+    "label": "convo-jarvis-2…83926.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083926.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-083926.webm",
+      "created": "2026-03-20T08:39:26"
+    },
+    "created": "2026-03-20T08:39:26"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085102.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.response.txt",
+      "created": "2026-03-20T08:51:02"
+    },
+    "created": "2026-03-20T08:51:02"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085102",
+    "label": "convo-jarvis-2…085102.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.wav",
+      "created": "2026-03-20T08:51:02"
+    },
+    "created": "2026-03-20T08:51:02"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085102.wav",
+    "label": "convo-jarvis-2…02.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.wav.txt",
+      "created": "2026-03-20T08:51:02"
+    },
+    "created": "2026-03-20T08:51:02"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085102",
+    "label": "convo-jarvis-2…85102.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085102.webm",
+      "created": "2026-03-20T08:51:02"
+    },
+    "created": "2026-03-20T08:51:02"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085710.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.response.txt",
+      "created": "2026-03-20T08:57:10"
+    },
+    "created": "2026-03-20T08:57:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085710",
+    "label": "convo-jarvis-2…085710.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.wav",
+      "created": "2026-03-20T08:57:10"
+    },
+    "created": "2026-03-20T08:57:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085710.wav",
+    "label": "convo-jarvis-2…10.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.wav.txt",
+      "created": "2026-03-20T08:57:10"
+    },
+    "created": "2026-03-20T08:57:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-085710",
+    "label": "convo-jarvis-2…85710.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-085710.webm",
+      "created": "2026-03-20T08:57:10"
+    },
+    "created": "2026-03-20T08:57:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090332.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.response.txt",
+      "created": "2026-03-20T09:03:32"
+    },
+    "created": "2026-03-20T09:03:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090332",
+    "label": "convo-jarvis-2…090332.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.wav",
+      "created": "2026-03-20T09:03:32"
+    },
+    "created": "2026-03-20T09:03:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090332.wav",
+    "label": "convo-jarvis-2…32.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.wav.txt",
+      "created": "2026-03-20T09:03:32"
+    },
+    "created": "2026-03-20T09:03:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090332",
+    "label": "convo-jarvis-2…90332.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090332.webm",
+      "created": "2026-03-20T09:03:32"
+    },
+    "created": "2026-03-20T09:03:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090423.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.response.txt",
+      "created": "2026-03-20T09:04:23"
+    },
+    "created": "2026-03-20T09:04:23"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090423",
+    "label": "convo-jarvis-2…090423.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.wav",
+      "created": "2026-03-20T09:04:23"
+    },
+    "created": "2026-03-20T09:04:23"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090423.wav",
+    "label": "convo-jarvis-2…23.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.wav.txt",
+      "created": "2026-03-20T09:04:23"
+    },
+    "created": "2026-03-20T09:04:23"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090423",
+    "label": "convo-jarvis-2…90423.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090423.webm",
+      "created": "2026-03-20T09:04:23"
+    },
+    "created": "2026-03-20T09:04:23"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090710.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.response.txt",
+      "created": "2026-03-20T09:07:10"
+    },
+    "created": "2026-03-20T09:07:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090710",
+    "label": "convo-jarvis-2…090710.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.wav",
+      "created": "2026-03-20T09:07:10"
+    },
+    "created": "2026-03-20T09:07:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090710.wav",
+    "label": "convo-jarvis-2…10.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.wav.txt",
+      "created": "2026-03-20T09:07:10"
+    },
+    "created": "2026-03-20T09:07:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090710",
+    "label": "convo-jarvis-2…90710.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090710.webm",
+      "created": "2026-03-20T09:07:10"
+    },
+    "created": "2026-03-20T09:07:10"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090851.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.response.txt",
+      "created": "2026-03-20T09:08:51"
+    },
+    "created": "2026-03-20T09:08:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090851",
+    "label": "convo-jarvis-2…090851.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.wav",
+      "created": "2026-03-20T09:08:51"
+    },
+    "created": "2026-03-20T09:08:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090851.wav",
+    "label": "convo-jarvis-2…51.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.wav.txt",
+      "created": "2026-03-20T09:08:51"
+    },
+    "created": "2026-03-20T09:08:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-090851",
+    "label": "convo-jarvis-2…90851.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-090851.webm",
+      "created": "2026-03-20T09:08:51"
+    },
+    "created": "2026-03-20T09:08:51"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-091743.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.response.txt",
+      "created": "2026-03-20T09:17:43"
+    },
+    "created": "2026-03-20T09:17:43"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-091743",
+    "label": "convo-jarvis-2…091743.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.wav",
+      "created": "2026-03-20T09:17:43"
+    },
+    "created": "2026-03-20T09:17:43"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-091743.wav",
+    "label": "convo-jarvis-2…43.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.wav.txt",
+      "created": "2026-03-20T09:17:43"
+    },
+    "created": "2026-03-20T09:17:43"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-091743",
+    "label": "convo-jarvis-2…91743.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-091743.webm",
+      "created": "2026-03-20T09:17:43"
+    },
+    "created": "2026-03-20T09:17:43"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092005.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.response.txt",
+      "created": "2026-03-20T09:20:05"
+    },
+    "created": "2026-03-20T09:20:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092005",
+    "label": "convo-jarvis-2…092005.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.wav",
+      "created": "2026-03-20T09:20:05"
+    },
+    "created": "2026-03-20T09:20:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092005.wav",
+    "label": "convo-jarvis-2…05.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.wav.txt",
+      "created": "2026-03-20T09:20:05"
+    },
+    "created": "2026-03-20T09:20:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092005",
+    "label": "convo-jarvis-2…92005.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092005.webm",
+      "created": "2026-03-20T09:20:05"
+    },
+    "created": "2026-03-20T09:20:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092229.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.response.txt",
+      "created": "2026-03-20T09:22:29"
+    },
+    "created": "2026-03-20T09:22:29"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092229",
+    "label": "convo-jarvis-2…092229.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.wav",
+      "created": "2026-03-20T09:22:29"
+    },
+    "created": "2026-03-20T09:22:29"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092229.wav",
+    "label": "convo-jarvis-2…29.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.wav.txt",
+      "created": "2026-03-20T09:22:29"
+    },
+    "created": "2026-03-20T09:22:29"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092229",
+    "label": "convo-jarvis-2…92229.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092229.webm",
+      "created": "2026-03-20T09:22:29"
+    },
+    "created": "2026-03-20T09:22:29"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092619",
+    "label": "convo-jarvis-2…092619.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092619.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092619.wav",
+      "created": "2026-03-20T09:26:19"
+    },
+    "created": "2026-03-20T09:26:19"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092619.wav",
+    "label": "convo-jarvis-2…19.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092619.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092619.wav.txt",
+      "created": "2026-03-20T09:26:19"
+    },
+    "created": "2026-03-20T09:26:19"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-092619",
+    "label": "convo-jarvis-2…92619.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092619.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-092619.webm",
+      "created": "2026-03-20T09:26:19"
+    },
+    "created": "2026-03-20T09:26:19"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094105.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.response.txt",
+      "created": "2026-03-20T09:41:05"
+    },
+    "created": "2026-03-20T09:41:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094105",
+    "label": "convo-jarvis-2…094105.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.wav",
+      "created": "2026-03-20T09:41:05"
+    },
+    "created": "2026-03-20T09:41:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094105.wav",
+    "label": "convo-jarvis-2…05.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.wav.txt",
+      "created": "2026-03-20T09:41:05"
+    },
+    "created": "2026-03-20T09:41:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094105",
+    "label": "convo-jarvis-2…94105.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094105.webm",
+      "created": "2026-03-20T09:41:05"
+    },
+    "created": "2026-03-20T09:41:05"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094228.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.response.txt",
+      "created": "2026-03-20T09:42:28"
+    },
+    "created": "2026-03-20T09:42:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094228",
+    "label": "convo-jarvis-2…094228.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.wav",
+      "created": "2026-03-20T09:42:28"
+    },
+    "created": "2026-03-20T09:42:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094228.wav",
+    "label": "convo-jarvis-2…28.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.wav.txt",
+      "created": "2026-03-20T09:42:28"
+    },
+    "created": "2026-03-20T09:42:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094228",
+    "label": "convo-jarvis-2…94228.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094228.webm",
+      "created": "2026-03-20T09:42:28"
+    },
+    "created": "2026-03-20T09:42:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094504.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.response.txt",
+      "created": "2026-03-20T09:45:04"
+    },
+    "created": "2026-03-20T09:45:04"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094504",
+    "label": "convo-jarvis-2…094504.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.wav",
+      "created": "2026-03-20T09:45:04"
+    },
+    "created": "2026-03-20T09:45:04"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094504.wav",
+    "label": "convo-jarvis-2…04.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.wav.txt",
+      "created": "2026-03-20T09:45:04"
+    },
+    "created": "2026-03-20T09:45:04"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094504",
+    "label": "convo-jarvis-2…94504.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094504.webm",
+      "created": "2026-03-20T09:45:04"
+    },
+    "created": "2026-03-20T09:45:04"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094650.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.response.txt",
+      "created": "2026-03-20T09:46:50"
+    },
+    "created": "2026-03-20T09:46:50"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094650",
+    "label": "convo-jarvis-2…094650.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.wav",
+      "created": "2026-03-20T09:46:50"
+    },
+    "created": "2026-03-20T09:46:50"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094650.wav",
+    "label": "convo-jarvis-2…50.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.wav.txt",
+      "created": "2026-03-20T09:46:50"
+    },
+    "created": "2026-03-20T09:46:50"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-094650",
+    "label": "convo-jarvis-2…94650.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-094650.webm",
+      "created": "2026-03-20T09:46:50"
+    },
+    "created": "2026-03-20T09:46:50"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095132.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.response.txt",
+      "created": "2026-03-20T09:51:32"
+    },
+    "created": "2026-03-20T09:51:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095132",
+    "label": "convo-jarvis-2…095132.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.wav",
+      "created": "2026-03-20T09:51:32"
+    },
+    "created": "2026-03-20T09:51:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095132.wav",
+    "label": "convo-jarvis-2…32.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.wav.txt",
+      "created": "2026-03-20T09:51:32"
+    },
+    "created": "2026-03-20T09:51:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095132",
+    "label": "convo-jarvis-2…95132.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095132.webm",
+      "created": "2026-03-20T09:51:32"
+    },
+    "created": "2026-03-20T09:51:32"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095338.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.response.txt",
+      "created": "2026-03-20T09:53:38"
+    },
+    "created": "2026-03-20T09:53:38"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095338",
+    "label": "convo-jarvis-2…095338.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.wav",
+      "created": "2026-03-20T09:53:38"
+    },
+    "created": "2026-03-20T09:53:38"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095338.wav",
+    "label": "convo-jarvis-2…38.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.wav.txt",
+      "created": "2026-03-20T09:53:38"
+    },
+    "created": "2026-03-20T09:53:38"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095338",
+    "label": "convo-jarvis-2…95338.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095338.webm",
+      "created": "2026-03-20T09:53:38"
+    },
+    "created": "2026-03-20T09:53:38"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095628.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.response.txt",
+      "created": "2026-03-20T09:56:28"
+    },
+    "created": "2026-03-20T09:56:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095628",
+    "label": "convo-jarvis-2…095628.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.wav",
+      "created": "2026-03-20T09:56:28"
+    },
+    "created": "2026-03-20T09:56:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095628.wav",
+    "label": "convo-jarvis-2…28.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.wav.txt",
+      "created": "2026-03-20T09:56:28"
+    },
+    "created": "2026-03-20T09:56:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095628",
+    "label": "convo-jarvis-2…95628.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095628.webm",
+      "created": "2026-03-20T09:56:28"
+    },
+    "created": "2026-03-20T09:56:28"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095845.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.response.txt",
+      "created": "2026-03-20T09:58:45"
+    },
+    "created": "2026-03-20T09:58:45"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095845",
+    "label": "convo-jarvis-2…095845.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.wav",
+      "created": "2026-03-20T09:58:45"
+    },
+    "created": "2026-03-20T09:58:45"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095845.wav",
+    "label": "convo-jarvis-2…45.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.wav.txt",
+      "created": "2026-03-20T09:58:45"
+    },
+    "created": "2026-03-20T09:58:45"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095845",
+    "label": "convo-jarvis-2…95845.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095845.webm",
+      "created": "2026-03-20T09:58:45"
+    },
+    "created": "2026-03-20T09:58:45"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095925.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.response.txt",
+      "created": "2026-03-20T09:59:25"
+    },
+    "created": "2026-03-20T09:59:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095925",
+    "label": "convo-jarvis-2…095925.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.wav",
+      "created": "2026-03-20T09:59:25"
+    },
+    "created": "2026-03-20T09:59:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095925.wav",
+    "label": "convo-jarvis-2…25.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.wav.txt",
+      "created": "2026-03-20T09:59:25"
+    },
+    "created": "2026-03-20T09:59:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-095925",
+    "label": "convo-jarvis-2…95925.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-095925.webm",
+      "created": "2026-03-20T09:59:25"
+    },
+    "created": "2026-03-20T09:59:25"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100452.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.response.txt",
+      "created": "2026-03-20T10:04:52"
+    },
+    "created": "2026-03-20T10:04:52"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100452",
+    "label": "convo-jarvis-2…100452.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.wav",
+      "created": "2026-03-20T10:04:52"
+    },
+    "created": "2026-03-20T10:04:52"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100452.wav",
+    "label": "convo-jarvis-2…52.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.wav.txt",
+      "created": "2026-03-20T10:04:52"
+    },
+    "created": "2026-03-20T10:04:52"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100452",
+    "label": "convo-jarvis-2…00452.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100452.webm",
+      "created": "2026-03-20T10:04:52"
+    },
+    "created": "2026-03-20T10:04:52"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100712.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.response.txt",
+      "created": "2026-03-20T10:07:12"
+    },
+    "created": "2026-03-20T10:07:12"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100712",
+    "label": "convo-jarvis-2…100712.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.wav",
+      "created": "2026-03-20T10:07:12"
+    },
+    "created": "2026-03-20T10:07:12"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100712.wav",
+    "label": "convo-jarvis-2…12.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.wav.txt",
+      "created": "2026-03-20T10:07:12"
+    },
+    "created": "2026-03-20T10:07:12"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-100712",
+    "label": "convo-jarvis-2…00712.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-100712.webm",
+      "created": "2026-03-20T10:07:12"
+    },
+    "created": "2026-03-20T10:07:12"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101117.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.response.txt",
+      "created": "2026-03-20T10:11:17"
+    },
+    "created": "2026-03-20T10:11:17"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101117",
+    "label": "convo-jarvis-2…101117.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.wav",
+      "created": "2026-03-20T10:11:17"
+    },
+    "created": "2026-03-20T10:11:17"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101117.wav",
+    "label": "convo-jarvis-2…17.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.wav.txt",
+      "created": "2026-03-20T10:11:17"
+    },
+    "created": "2026-03-20T10:11:17"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101117",
+    "label": "convo-jarvis-2…01117.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101117.webm",
+      "created": "2026-03-20T10:11:17"
+    },
+    "created": "2026-03-20T10:11:17"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101611.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.response.txt",
+      "created": "2026-03-20T10:16:11"
+    },
+    "created": "2026-03-20T10:16:11"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101611",
+    "label": "convo-jarvis-2…101611.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.wav",
+      "created": "2026-03-20T10:16:11"
+    },
+    "created": "2026-03-20T10:16:11"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101611.wav",
+    "label": "convo-jarvis-2…11.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.wav.txt",
+      "created": "2026-03-20T10:16:11"
+    },
+    "created": "2026-03-20T10:16:11"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-101611",
+    "label": "convo-jarvis-2…01611.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-101611.webm",
+      "created": "2026-03-20T10:16:11"
+    },
+    "created": "2026-03-20T10:16:11"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102401.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.response.txt",
+      "created": "2026-03-20T10:24:01"
+    },
+    "created": "2026-03-20T10:24:01"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102401",
+    "label": "convo-jarvis-2…102401.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.wav",
+      "created": "2026-03-20T10:24:01"
+    },
+    "created": "2026-03-20T10:24:01"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102401.wav",
+    "label": "convo-jarvis-2…01.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.wav.txt",
+      "created": "2026-03-20T10:24:01"
+    },
+    "created": "2026-03-20T10:24:01"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102401",
+    "label": "convo-jarvis-2…02401.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102401.webm",
+      "created": "2026-03-20T10:24:01"
+    },
+    "created": "2026-03-20T10:24:01"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102948.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.response.txt",
+      "created": "2026-03-20T10:29:48"
+    },
+    "created": "2026-03-20T10:29:48"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102948",
+    "label": "convo-jarvis-2…102948.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.wav",
+      "created": "2026-03-20T10:29:48"
+    },
+    "created": "2026-03-20T10:29:48"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102948.wav",
+    "label": "convo-jarvis-2…48.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.wav.txt",
+      "created": "2026-03-20T10:29:48"
+    },
+    "created": "2026-03-20T10:29:48"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-102948",
+    "label": "convo-jarvis-2…02948.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-102948.webm",
+      "created": "2026-03-20T10:29:48"
+    },
+    "created": "2026-03-20T10:29:48"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112222.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.response.txt",
+      "created": "2026-03-20T11:22:22"
+    },
+    "created": "2026-03-20T11:22:22"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112222",
+    "label": "convo-jarvis-2…112222.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.wav",
+      "created": "2026-03-20T11:22:22"
+    },
+    "created": "2026-03-20T11:22:22"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112222.wav",
+    "label": "convo-jarvis-2…22.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.wav.txt",
+      "created": "2026-03-20T11:22:22"
+    },
+    "created": "2026-03-20T11:22:22"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112222",
+    "label": "convo-jarvis-2…12222.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112222.webm",
+      "created": "2026-03-20T11:22:22"
+    },
+    "created": "2026-03-20T11:22:22"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112549.response",
+    "label": "convo-jarvis-2…sponse.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.response.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.response.txt",
+      "created": "2026-03-20T11:25:49"
+    },
+    "created": "2026-03-20T11:25:49"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112549",
+    "label": "convo-jarvis-2…112549.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.wav",
+      "created": "2026-03-20T11:25:49"
+    },
+    "created": "2026-03-20T11:25:49"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112549.wav",
+    "label": "convo-jarvis-2…49.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.wav.txt",
+      "created": "2026-03-20T11:25:49"
+    },
+    "created": "2026-03-20T11:25:49"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-112549",
+    "label": "convo-jarvis-2…12549.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-112549.webm",
+      "created": "2026-03-20T11:25:49"
+    },
+    "created": "2026-03-20T11:25:49"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-113013",
+    "label": "convo-jarvis-2…113013.wav",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-113013.wav",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-113013.wav",
+      "created": "2026-03-20T11:30:13"
+    },
+    "created": "2026-03-20T11:30:13"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-113013.wav",
+    "label": "convo-jarvis-2…13.wav.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-113013.wav.txt",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-113013.wav.txt",
+      "created": "2026-03-20T11:30:13"
+    },
+    "created": "2026-03-20T11:30:13"
+  },
+  {
+    "id": "convo-jarvis-2026-03-20-113013",
+    "label": "convo-jarvis-2…13013.webm",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "audio-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "audio",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-113013.webm",
+      "date": "2026-03-20",
+      "sourceDocument": "RAW/archive/2026-03-20/audio/convo-jarvis-2026-03-20-113013.webm",
+      "created": "2026-03-20T11:30:13"
+    },
+    "created": "2026-03-20T11:30:13"
   }
 ]
