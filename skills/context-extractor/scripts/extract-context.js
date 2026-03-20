@@ -37,7 +37,7 @@ if (!fs.existsSync(archiveDir)) {
   process.exit(1);
 }
 
-// Extract session messages from JSONL files
+// Extract session messages from JSONL files (skip tool calls/results)
 function extractSessions(sessionsDir) {
   if (!fs.existsSync(sessionsDir)) return [];
   
@@ -47,9 +47,42 @@ function extractSessions(sessionsDir) {
   files.forEach(file => {
     const filePath = path.join(sessionsDir, file);
     const lines = fs.readFileSync(filePath, 'utf8').trim().split('\n');
+    
+    // Filter: only user + assistant text messages (skip tool calls/results)
     const messages = lines
       .map(l => {
-        try { return JSON.parse(l); }
+        try {
+          const parsed = JSON.parse(l);
+          
+          // Skip tool-related messages
+          if (parsed.type === 'toolCall' || parsed.type === 'toolResult') {
+            return null;
+          }
+          
+          // Handle nested message structure (OpenClaw session format)
+          if (parsed.message && parsed.message.role) {
+            const msg = parsed.message;
+            // Skip tool calls embedded in messages
+            if (msg.content && Array.isArray(msg.content)) {
+              const hasTool = msg.content.some(c => c.type === 'toolCall' || c.type === 'toolResult');
+              if (hasTool) return null;
+              // Filter out images (keep only text)
+              const textOnly = msg.content.filter(c => c.type === 'text');
+              if (textOnly.length === 0) return null;
+              return { role: msg.role, content: textOnly };
+            }
+            return { role: msg.role, content: msg.content };
+          }
+          
+          // Handle flat structure
+          if (parsed && parsed.role && parsed.content) {
+            // Skip tool roles
+            if (parsed.role === 'tool') return null;
+            return parsed;
+          }
+          
+          return null;
+        }
         catch (e) { return null; }
       })
       .filter(m => m && m.role && m.content);
@@ -100,8 +133,8 @@ const context = {
   }
 };
 
-// Write output
-fs.writeFileSync(outputFile, JSON.stringify(context, null, 2), 'utf8');
+// Write output (minified JSON to save space)
+fs.writeFileSync(outputFile, JSON.stringify(context), 'utf8');
 
 console.log(`✅ Context extracted: ${DATE_ARG}`);
 console.log(`   Sessions: ${sessions.length} files, ${context.stats.totalMessages} messages`);
