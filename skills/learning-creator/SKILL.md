@@ -48,6 +48,8 @@ cat ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
 ```bash
 # Create learning files
 mkdir -p ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)
+
+# Example: tournament timeline
 cat > ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)/fuds-tournament-timeline.md << 'EOF'
 # FUDS Tournament 2026 — Timeline Anchor
 
@@ -62,7 +64,7 @@ EOF
 ### Step 4: Create Learning Nodes
 
 ```bash
-# Add learning nodes to graph
+# Add learning nodes to graph (uses existing neuro-graph-digest script)
 node skills/neuro-graph-digest/scripts/set-learning-creation-dates.js \
   $(date +%Y-%m-%d)
 ```
@@ -70,7 +72,7 @@ node skills/neuro-graph-digest/scripts/set-learning-creation-dates.js \
 ### Step 5: Link to Temporal Anchor
 
 ```bash
-# Link learning nodes to temporal anchor
+# Link learning nodes to temporal anchor (uses existing script)
 node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js \
   $(date +%Y-%m-%d)
 # Creates synapses to temporal-YYYYMMDD
@@ -96,16 +98,6 @@ git push
 
 **Not auto-extraction.** I'm thinking, deciding, creating. The script just feeds me clean text.
 
-## Scripts
-
-**Location:** `skills/learning-creator/scripts/`
-
-| Script | Purpose |
-|--------|---------|
-| `create-learning-node.js` | Create node from insight |
-| `link-to-temporal.js` | Link learning to anchor |
-| `git-commit-learnings.sh` | Commit + push learnings |
-
 ## Expected Result
 
 **Learnings created:**
@@ -120,3 +112,4 @@ git push
 - **Not auto:** Automation feeds context, I create insights
 - **Git-backed:** Learnings versioned, never lost
 - **Linked:** All learnings orbit temporal anchor
+- **Uses existing scripts:** neuro-graph-digest scripts for node creation

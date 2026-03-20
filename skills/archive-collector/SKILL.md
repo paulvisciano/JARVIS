@@ -1,6 +1,6 @@
 ---
 name: archive-collector
-description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (1) end-of-day archive needed, (2) desktop files need archiving, (3) ~/JARVIS/live/ has pending messages, (4) dormant files need processing. Organizes by type: audio/, images/, sessions/, documents/. Ensures complete archive before running neuro-graph-digest.
+description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (1) end-of-day archive needed, (2) desktop files need archiving, (3) ~/JARVIS/live/ has pending messages, (4) preparing for neuro-graph-digest. Organizes by type: audio/, images/, sessions/, documents/.
 ---
 
 # Archive Collector (End-of-Day Collection)
@@ -22,58 +22,55 @@ description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/. Use when: (
 
 ## Workflow
 
-### Step 1: Collect Desktop Files
+### Step 1: Create Archive Structure
 
 ```bash
-# Move desktop files to archive
-mkdir -p ~/RAW/archive/$(date +%Y-%m-%d)/documents/
-mv ~/Desktop/*.{png,jpg,heic,pdf,txt,md} ~/RAW/archive/$(date +%Y-%m-%d)/documents/ 2>/dev/null
+DATE=$(date +%Y-%m-%d)
+mkdir -p ~/RAW/archive/$DATE/{audio,images,sessions,documents}
 ```
 
-### Step 2: Process ~/JARVIS/live/
+### Step 2: Collect Desktop Files
 
 ```bash
-# Move live messages to archive
-mkdir -p ~/RAW/archive/$(date +%Y-%m-%d)/audio/
-mv ~/JARVIS/live/recording-*.webm ~/RAW/archive/$(date +%Y-%m-%d)/audio/ 2>/dev/null
-mv ~/JARVIS/live/text-*.txt ~/RAW/archive/$(date +%Y-%m-%d)/documents/ 2>/dev/null
+# Move common file types from desktop
+mv ~/Desktop/*.{png,jpg,jpeg,heic,pdf,txt,md} \
+   ~/RAW/archive/$(date +%Y-%m-%d)/documents/ 2>/dev/null || true
 ```
 
-### Step 3: Check for Dormant Files (Optional)
+### Step 3: Process ~/JARVIS/live/
 
 ```bash
-# Find any unorganized files in archive root
-find ~/RAW/archive/$(date +%Y-%m-%d)/ -maxdepth 1 -type f -exec mv {} ~/RAW/archive/$(date +%Y-%m-%d)/documents/ \;
+# Move recordings to audio
+mv ~/JARVIS/live/recording-*.webm \
+   ~/RAW/archive/$(date +%Y-%m-%d)/audio/ 2>/dev/null || true
+
+# Move text messages to documents
+mv ~/JARVIS/live/text-*.txt \
+   ~/RAW/archive/$(date +%Y-%m-%d)/documents/ 2>/dev/null || true
 ```
 
 ### Step 4: Organize by Type
 
 ```bash
-# Ensure folders exist
-mkdir -p ~/RAW/archive/$(date +%Y-%m-%d)/{audio,images,sessions,documents}
+DATE=$(date +%Y-%m-%d)
+ARCHIVE=~/RAW/archive/$DATE
 
-# Sort files by extension
-mv ~/RAW/archive/$(date +%Y-%m-%d)/*.{wav,webm,m4a} ~/RAW/archive/$(date +%Y-%m-%d)/audio/ 2>/dev/null
-mv ~/RAW/archive/$(date +%Y-%m-%d)/*.{png,jpg,jpeg,heic,gif} ~/RAW/archive/$(date +%Y-%m-%d)/images/ 2>/dev/null
-mv ~/RAW/archive/$(date +%Y-%m-%d)/*.jsonl ~/RAW/archive/$(date +%Y-%m-%d)/sessions/ 2>/dev/null
+# Sort audio files
+mv $ARCHIVE/*.{wav,webm,m4a} $ARCHIVE/audio/ 2>/dev/null || true
+
+# Sort images
+mv $ARCHIVE/*.{png,jpg,jpeg,heic,gif} $ARCHIVE/images/ 2>/dev/null || true
+
+# Sort sessions
+mv $ARCHIVE/*.jsonl $ARCHIVE/sessions/ 2>/dev/null || true
 ```
 
-### Step 5: Report Archive Status
+### Step 5: Report Status
 
 ```bash
-# Count files
-find ~/RAW/archive/$(date +%Y-%m-%d) -type f | wc -l | xargs echo "Archive complete: files"
+echo "Archive complete: $(find ~/RAW/archive/$(date +%Y-%m-%d) -type f | wc -l) files"
+ls -lh ~/RAW/archive/$(date +%Y-%m-%d)
 ```
-
-## Scripts
-
-**Location:** `skills/archive-collector/scripts/`
-
-| Script | Purpose |
-|--------|---------|
-| `collect-desktop.sh` | Move desktop files to archive |
-| `process-live.sh` | Process ~/JARVIS/live/ messages |
-| `organize-archive.sh` | Sort files by type |
 
 ## Expected Result
 

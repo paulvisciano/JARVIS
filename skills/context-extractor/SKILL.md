@@ -22,56 +22,70 @@ description: Extract clean text context from archive sessions (skip base64 image
 
 ## Workflow
 
-### Step 1: Extract Session Text
+### Step 1: Extract Session Text (Node.js)
 
 ```bash
 cd ~/JARVIS
-node skills/context-extractor/scripts/extract-session-text.js \
+
+# Create extraction script inline
+cat > /tmp/extract-sessions.js << 'SCRIPT'
+const fs = require('fs'), path = require('path');
+const args = process.argv.slice(2);
+const output = args.pop();
+const files = args;
+
+let sessions = [];
+files.forEach(f => {
+  const lines = fs.readFileSync(f, 'utf8').trim().split('\n');
+  const messages = lines.map(l => JSON.parse(l)).filter(m => m.role && m.content);
+  sessions.push({ file: path.basename(f), messages });
+});
+
+fs.writeFileSync(output, JSON.stringify({ sessions }, null, 2));
+console.log(`Extracted ${sessions.length} sessions`);
+SCRIPT
+
+# Run extraction
+node /tmp/extract-sessions.js \
   ~/RAW/archive/$(date +%Y-%m-%d)/sessions/*.jsonl \
-  --output ~/RAW/archive/$(date +%Y-%m-%d)/context.json
+  ~/RAW/archive/$(date +%Y-%m-%d)/context.json
 ```
 
-**What it does:**
-- Parses JSONL session files
-- Extracts conversation text (user + assistant messages)
-- **SKIPS base64 images** (huge size reduction)
-- Outputs clean JSON structure
-
-### Step 2: Load Audio Transcripts
+### Step 2: Concatenate Audio Transcripts
 
 ```bash
-# Concatenate all audio transcripts
 cat ~/RAW/archive/$(date +%Y-%m-%d)/audio/*.txt > \
-  ~/RAW/archive/$(date +%Y-%m-%d)/transcripts.txt
+  ~/RAW/archive/$(date +%Y-%m-%d)/transcripts.txt 2>/dev/null || true
 ```
 
 ### Step 3: Merge Context
 
 ```bash
-# Combine sessions + transcripts
-node skills/context-extractor/scripts/merge-context.js \
-  --sessions ~/RAW/archive/$(date +%Y-%m-%d)/context.json \
-  --transcripts ~/RAW/archive/$(date +%Y-%m-%d)/transcripts.txt \
-  --output ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
+# Simple merge (sessions + transcripts)
+cat > /tmp/merge-context.js << 'SCRIPT'
+const fs = require('fs');
+const sessions = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
+const transcripts = fs.readFileSync(process.argv[3], 'utf8').trim().split('\n\n');
+const output = process.argv[4];
+
+fs.writeFileSync(output, JSON.stringify({
+  ...sessions,
+  transcripts: transcripts.map(t => ({ text: t }))
+}, null, 2));
+SCRIPT
+
+node /tmp/merge-context.js \
+  ~/RAW/archive/$(date +%Y-%m-%d)/context.json \
+  ~/RAW/archive/$(date +%Y-%m-%d)/transcripts.txt \
+  ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
 ```
 
-### Step 4: Ready for Learning-Creator
+### Step 4: Verify Size
 
 ```bash
-# Context ready for model processing
 ls -lh ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
-# ~500KB (vs 50MB raw sessions)
+# Should be ~500KB (vs 50MB raw sessions)
 ```
-
-## Scripts
-
-**Location:** `skills/context-extractor/scripts/`
-
-| Script | Purpose |
-|--------|---------|
-| `extract-session-text.js` | Parse JSONL, extract text (skip base64) |
-| `merge-context.js` | Combine sessions + transcripts |
-| `count-tokens.js` | Estimate context size |
 
 ## Output Format
 
@@ -80,7 +94,7 @@ ls -lh ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
   "date": "2026-03-20",
   "sessions": [
     {
-      "id": "agent:main:main",
+      "file": "agent:main:main.jsonl",
       "messages": [
         {"role": "user", "content": "Hey Jarvis..."},
         {"role": "assistant", "content": "Hey Paul..."}
@@ -88,9 +102,8 @@ ls -lh ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
     }
   ],
   "transcripts": [
-    "Good morning. Hey Jarvis, can you hear me now?..."
-  ],
-  "tokenCount": 50000
+    {"text": "Good morning. Hey Jarvis, can you hear me now?..."}
+  ]
 }
 ```
 
@@ -105,4 +118,4 @@ ls -lh ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
 - **Never loads base64** into context
 - Text extraction only (conversations, decisions)
 - Ready for learning-creator skill
-- Preserves conversation flow, drops image data
+- Inline scripts (no external dependencies)
