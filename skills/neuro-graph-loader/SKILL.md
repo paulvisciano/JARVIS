@@ -1,6 +1,6 @@
 ---
-name: neural-graph-loader
-description: Load entire neural graph (nodes.json + synapses.json) into context for deep analysis. Use when: (1) user needs full graph traversal, (2) analyzing synapse paths, (3) cross-graph queries, (4) debugging graph structure. ALWAYS asks user before loading (graphs are 100KB+ = ~50k tokens). Use neural-graph-search for lightweight queries instead.
+name: neuro-graph-loader
+description: Load entire neural graph (nodes.json + synapses.json) into context for deep analysis. Use when: (1) user needs full graph traversal, (2) analyzing synapse paths, (3) cross-graph queries, (4) debugging graph structure. ALWAYS asks user before loading (graphs are 100KB+ = ~50k tokens). Use neuro-graph-search for lightweight queries instead.
 metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "stat"] } } }
 ---
 
@@ -18,9 +18,9 @@ metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "st
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
-- "Who is David?" → use `neural-graph-search` (lightweight)
-- "Find all people" → use `neural-graph-search`
-- Any simple query → use `neural-graph-search` first
+- "Who is David?" → use `neuro-graph-search` (lightweight)
+- "Find all people" → use `neuro-graph-search`
+- Any simple query → use `neuro-graph-search` first
 
 ## Context Awareness (CRITICAL)
 
@@ -36,6 +36,6 @@ metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "st
 ## Notes
 
 - Always ask user before loading (graphs are 100KB+ = ~50k tokens)
-- Fallback to `neural-graph-search` if user declines
+- Fallback to `neuro-graph-search` if user declines
 - Use local_path from memory-link nodes when available (fast disk access)
 - Don't load multiple graphs without explicit confirmation (2 graphs = ~100k tokens)

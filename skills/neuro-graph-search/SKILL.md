@@ -1,13 +1,13 @@
 ---
-name: neural-graph-search
-description: Search any neural graph FIRST for any query (people, places, events, concepts). Use when: (1) finding people (who is X?), (2) finding events (when did X happen?), (3) finding concepts (what is X?), (4) finding connections (how is X related to Y?). Always query nodes.json before searching raw transcripts. Works with any neurograph instance (JARVIS, Paul's memory, custom). Falls back to learnings, then archive only if needed.
+name: neuro-graph-search
+description: Search any neuro graph FIRST for any query (people, places, events, concepts). Use when: (1) finding people (who is X?), (2) finding events (when did X happen?), (3) finding concepts (what is X?), (4) finding connections (how is X related to Y?). Always query nodes.json before searching raw transcripts. Works with any neurograph instance (JARVIS, Paul's memory, custom). Falls back to learnings, then archive only if needed.
 ---
 
 # Neural Graph Search (Graph-First, Neurograph-Agnostic)
 
 ## Overview
 
-This skill searches **any neural graph** (structured knowledge) before **raw data** (transcripts). Works with:
+This skill searches **any neuro graph** (structured knowledge) before **raw data** (transcripts). Works with:
 - JARVIS neurograph (`~/JARVIS/RAW/memories/`)
 - Paul's memory neurograph (`~/Personal/paulvisciano.github.io/memory/data/`)
 - Any neurograph instance (user-specified path via `$NEUROGRAPH_PATH`)
@@ -232,8 +232,8 @@ for r in results:
 ---
 
 **Created:** March 19, 2026  
-**Location:** `$JARVIS_HOME/skills/neural-graph-search/`  
-**Runtime:** `/usr/local/lib/node_modules/openclaw/skills/jarvis-skills/neural-graph-search/` (symlinked)  
+**Location:** `$JARVIS_HOME/skills/neuro-graph-search/`  
+**Runtime:** `/usr/local/lib/node_modules/openclaw/skills/jarvis-skills/neuro-graph-search/` (symlinked)  
 **Pattern:** Graph first → learnings second → archive third (fallback)  
 **Evidence:** Sherry retrieval (graph: instant ✅, transcripts: 4 min fail ❌)  
 **Neurograph-Agnostic:** Works with JARVIS, Paul's memory, any custom neurograph
