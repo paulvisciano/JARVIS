@@ -1,6 +1,6 @@
 ---
-name: graph-integrity
-description: Neurograph integrity audit (read-only). Use when: (1) auditing if all archive files have nodes, (2) verifying learnings are represented, (3) checking graph completeness, (4) debugging missing neurons, (5) CI/CD verification. Does NOT create nodes — use archive-digest for creation.
+name: neuro-graph-integrity
+description: Neurograph integrity audit (read-only). Use when: (1) auditing if all archive files have nodes, (2) verifying learnings are represented, (3) checking graph completeness, (4) debugging missing neurons, (5) CI/CD verification. Does NOT create nodes — use neuro-graph-digest for creation.
 ---
 
 # Graph Integrity Verification (Read-Only)

@@ -1,10 +1,10 @@
 ---
-name: memory-link-traverse
-description: Traverse between linked neuro graphs via memory-link nodes. Use when: (1) user wants to search across multiple neurographs, (2) comparing graph structures, (3) following memory-link connections. ALWAYS asks user before loading remote graphs (graphs are 100KB+ = ~50k tokens). Uses local_path when available (fast disk access). Falls back to neuro-graph-search for lightweight queries.
+name: neuro-graph-traverse
+description: Traverse between linked neurographs via memory-link nodes. Use when: (1) user wants to search across multiple neurographs, (2) comparing graph structures, (3) following memory-link connections. ALWAYS asks user before loading remote graphs (graphs are 100KB+ = ~50k tokens). Uses local_path when available (fast disk access). Falls back to neuro-graph-search for lightweight queries.
 metadata: { "openclaw": { "emoji": "🔗", "requires": { "bins": ["python3", "stat"] } } }
 ---
 
-# Memory Link Traverse (Graph-Hopping, User-Confirmed)
+# Neuro Graph Traverse (Graph-Hopping, User-Confirmed)
 
 ## When to Use
 

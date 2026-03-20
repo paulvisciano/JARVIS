@@ -1,5 +1,5 @@
 ---
-name: archive-digest
+name: neuro-graph-digest
 description: End-of-day archive + learning digestion into neurograph. Use when: (1) day is complete and all archives processed, (2) verifying graph integrity (all files have nodes), (3) creating missing nodes for archive files + learning .md files, (4) linking to temporal anchors (YYYY-MM-DD), (5) ensuring 1:1 mapping: files on disk = nodes in graph. Runs verification + creation in one flow.
 ---
 
