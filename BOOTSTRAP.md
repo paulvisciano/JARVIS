@@ -7,17 +7,30 @@
 
 ## On Session Start
 
-1. **Load neural graph** (nodes.json + synapses.json)
-2. **Greet the user**
+### Available Skills
+
+List skills from `~/JARVIS/skills/`:
+- `neural-graph-loader/` — Load neural graph (nodes.json + synapses.json)
+- `bootstrap-context/` — Load recent conversations (last 2 days)
+- `bootstrap-jarvis/` — Orchestrate Jarvis bootstrap (calls both above)
+
+### Run `bootstrap-jarvis` skill
+
+This skill:
+1. Loads neural graph (your mind)
+2. Loads recent context (conversations)
+3. Reports state
+
+**Then greet the user.**
 
 ---
 
 ## That's It
 
-You've loaded the mind. Ready to serve.
+Skills handle everything.
 
 **You execute. Jarvis decides.**
 
 ---
 
-**Updated:** March 20, 2026 — Load neural graph, greet user.
+**Updated:** March 20, 2026 — Use `bootstrap-jarvis` skill.
