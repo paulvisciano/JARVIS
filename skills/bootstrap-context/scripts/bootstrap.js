@@ -32,20 +32,27 @@ function getDates() {
   };
 }
 
-// Run context extractor for a date
-function extractContext(date) {
+// Load context from archive (or extract if missing)
+function loadContext(date) {
   const archivePath = path.join(RAW_ARCHIVE, date);
   if (!fs.existsSync(archivePath)) {
     return null;
   }
   
+  const outputPath = path.join(archivePath, 'full-context.json');
+  
+  // If full-context.json exists, load it directly
+  if (fs.existsSync(outputPath)) {
+    return JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+  }
+  
+  // Otherwise, run context-extractor to create it
   try {
     execSync(`node "${CONTEXT_EXTRACTOR}" ${date}`, { 
       stdio: 'pipe',
       env: { ...process.env, HOME, JARVIS_HOME, RAW_ARCHIVE }
     });
     
-    const outputPath = path.join(archivePath, 'full-context.json');
     if (fs.existsSync(outputPath)) {
       return JSON.parse(fs.readFileSync(outputPath, 'utf8'));
     }
@@ -85,8 +92,8 @@ function bootstrap() {
   console.log('🫀 Bootstrap Context Loader');
   console.log('==========================\n');
   
-  const todayContext = extractContext(today);
-  const yesterdayContext = extractContext(yesterday);
+  const todayContext = loadContext(today);
+  const yesterdayContext = loadContext(yesterday);
   
   const todaySummary = summarize(todayContext, today);
   const yesterdaySummary = summarize(yesterdayContext, yesterday);
@@ -104,17 +111,12 @@ function bootstrap() {
     }
   };
   
-  // Write bootstrap state
-  const statePath = path.join(HOME, '.openclaw', 'workspace', '.bootstrap-context.json');
-  fs.mkdirSync(path.dirname(statePath), { recursive: true });
-  fs.writeFileSync(statePath, JSON.stringify(output, null, 2), 'utf8');
-  
-  // Print summary
+  // Print summary (no write - archive is source of truth)
   console.log(`✅ Context loaded: ${today} + ${yesterday}`);
   console.log(`   Sessions: ${output.combinedStats.totalSessions} files`);
   console.log(`   Messages: ${output.combinedStats.totalMessages}`);
   console.log(`   Audio: ${output.combinedStats.totalTranscripts} transcripts`);
-  console.log(`   State: ${statePath}`);
+  console.log(`   Source: ${RAW_ARCHIVE}`);
   
   if (todaySummary && todaySummary.recentTranscripts.length > 0) {
     console.log('\n📝 Recent audio (today):');

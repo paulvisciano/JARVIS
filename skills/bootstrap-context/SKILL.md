@@ -42,25 +42,20 @@ description: Auto-load recent context on session start. Runs context-extractor f
 
 ## Output Format
 
-**State file:** `~/.openclaw/workspace/.bootstrap-context.json`
+**Read-only:** No state file written. Archive is source of truth.
 
-```json
-{
-  "bootstrappedAt": "2026-03-20T06:11:00.000Z",
-  "dates": { "today": "2026-03-20", "yesterday": "2026-03-19" },
-  "today": {
-    "sessions": 1,
-    "messages": 134,
-    "transcripts": 180,
-    "recentTranscripts": [...]
-  },
-  "yesterday": { ... },
-  "combinedStats": {
-    "totalSessions": 2,
-    "totalMessages": 200,
-    "totalTranscripts": 250
-  }
-}
+**Data sources:**
+- `~/RAW/archive/YYYY-MM-DD/full-context.json` (sessions + audio)
+- `~/RAW/archive/YYYY-MM-DD/sessions/*.jsonl` (raw sessions)
+- `~/RAW/archive/YYYY-MM-DD/audio/*.txt` (transcripts)
+
+**Presents summary to agent:**
+```
+✅ Context loaded: 2026-03-20 + 2026-03-19
+   Sessions: 10 files
+   Messages: 5848
+   Audio: 647 transcripts
+   Source: ~/RAW/archive
 ```
 
 ## Manual Usage
@@ -94,9 +89,15 @@ node skills/bootstrap-context/scripts/bootstrap.js
 ```bash
 # PHASE 0: Check bootstrap state
 # PHASE 1: Load neural graph (neuro-graph-loader)
-# PHASE 2: Load context (bootstrap-context) ← Add this
-# PHASE 3: Report state + greet
+# PHASE 2: Load context (bootstrap-context) ← This skill (read-only)
+# PHASE 3: Check inbox
+# PHASE 4: Report state + greet
 ```
+
+**Notes:**
+- **Read-only** — no writes to `.openclaw/`
+- **Archive is source of truth** (`~/RAW/archive/`)
+- **Idempotent** — safe to run multiple times
 
 ## Why This Exists
 
@@ -108,8 +109,8 @@ node skills/bootstrap-context/scripts/bootstrap.js
 
 ## Files
 
-- `scripts/bootstrap.js` — Runner script
-- `~/.openclaw/workspace/.bootstrap-context.json` — State file
+- `scripts/bootstrap.js` — Runner script (read-only, no writes)
+- `~/RAW/archive/YYYY-MM-DD/full-context.json` — Source data
 
 ## Notes
 
