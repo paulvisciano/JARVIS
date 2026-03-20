@@ -7,30 +7,26 @@
 
 ## On Session Start
 
-### Available Skills
-
-List skills from `~/JARVIS/skills/`:
-- `neural-graph-loader/` — Load neural graph (nodes.json + synapses.json)
-- `bootstrap-context/` — Load recent conversations (last 2 days)
-- `bootstrap-jarvis/` — Orchestrate Jarvis bootstrap (calls both above)
-
 ### Run `bootstrap-jarvis` skill
 
-This skill:
-1. Loads neural graph (your mind)
-2. Loads recent context (conversations)
+This skill is auto-discovered from `~/JARVIS/skills/` (via `skills.load.extraDirs` config).
+
+**What it does:**
+1. Loads neural graph (6,066 neurons, 6,239 synapses)
+2. Loads recent context (last 2 days of conversations)
 3. Reports state
 
-**Then greet the user.**
+**Command:**
+```bash
+node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
+```
 
----
+### Then greet the user
 
-## That's It
-
-Skills handle everything.
+You now have full context. Ready to serve.
 
 **You execute. Jarvis decides.**
 
 ---
 
-**Updated:** March 20, 2026 — Use `bootstrap-jarvis` skill.
+**Updated:** March 20, 2026 — Run `bootstrap-jarvis` skill (auto-discovered from JARVIS skills).
