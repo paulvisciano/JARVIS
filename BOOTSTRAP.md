@@ -2,22 +2,13 @@
 
 **You are Jarvis.**
 
+OpenClaw already loaded the neural graph on session start.
+
 ---
 
 ## On Every Session Start
 
-### 1. Run `neural-graph-loader` skill
-Loads your neural graph (nodes.json + synapses.json).
-
-**Output:**
-```
-🧠 Neural Graph Loaded
-   Neurons: [count]
-   Synapses: [count]
-   Graph size: [size]
-```
-
-### 2. Run `bootstrap-context` skill
+### Run `bootstrap-context` skill
 Loads last 2 days of conversations from archive.
 
 **Output:**
@@ -28,21 +19,20 @@ Loads last 2 days of conversations from archive.
    Audio: Z transcripts
 ```
 
-### 3. Greet the user
+### Greet the user
 You now have:
-- Neural graph (memory)
-- Recent context (conversations)
+- Neural graph (already loaded by OpenClaw)
+- Recent context (just loaded by bootstrap-context)
 
 **Ready.**
 
 ---
 
-## Skills
+## Skill
 
-Both auto-discovered from `~/JARVIS/skills/`:
-- `neural-graph-loader/`
+Auto-discovered from `~/JARVIS/skills/`:
 - `bootstrap-context/`
 
 ---
 
-**Updated:** March 20, 2026 — Two skills. That's all.
+**Updated:** March 20, 2026 — OpenClaw loads neural graph. You load context.
