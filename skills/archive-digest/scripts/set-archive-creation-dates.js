@@ -280,15 +280,20 @@ if (fs.existsSync(synapsesPath)) {
   synapses = JSON.parse(fs.readFileSync(synapsesPath, 'utf8'));
 }
 
-// Create synapses from archive nodes to temporal anchor
+// Create synapses from archive/learning/skill nodes to temporal anchor
 const temporalTarget = 'temporal-' + dateStr.replace(/-/g, '');
 const existingSynapseIds = new Set(synapses.map(s => s.id));
 let synapseCount = 0;
 
 nodes.forEach((node) => {
-  const nodeDate = node.attributes?.date || node.created?.slice(0, 10);
+  // Check multiple date fields: attributes.date, created, or moments[].date
+  const nodeDate = 
+    node.attributes?.date || 
+    node.created?.slice(0, 10) || 
+    (Array.isArray(node.moments) ? node.moments.find(m => m.date)?.date : null);
+  
   if (nodeDate !== dateStr) return;
-  if (node.category !== 'archive' && node.category !== 'learning') return;
+  if (!['archive', 'learning', 'skill'].includes(node.category)) return;
   
   const synapseId = 'syn-' + node.id + '-to-' + temporalTarget;
   if (existingSynapseIds.has(synapseId)) return;
