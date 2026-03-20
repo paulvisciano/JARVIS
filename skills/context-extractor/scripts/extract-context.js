@@ -62,6 +62,8 @@ function extractSessions(sessionsDir) {
           // Handle nested message structure (OpenClaw session format)
           if (parsed.message && parsed.message.role) {
             const msg = parsed.message;
+            // Skip tool results (role: "toolResult")
+            if (msg.role === 'toolResult') return null;
             // Skip tool calls embedded in messages
             if (msg.content && Array.isArray(msg.content)) {
               const hasTool = msg.content.some(c => c.type === 'toolCall' || c.type === 'toolResult');
