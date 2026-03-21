@@ -1,76 +1,27 @@
-# NeuroGraph Memory Link Architecture — Person→Learning→Files→Temporal
+# NeuroGraph Memory Link Architecture
 
-**Date:** March 21, 2026  
-**Type:** Architecture design  
-**Status:** ✅ Core pipeline working, enhancement roadmap defined
+**Date:** 2026-03-21
+**Type:** insight
+**Status:** extracted
 
-## Post-Breath Graph Structure
+## Complete Memory Link Structure:
 
-**Node types and connections:**
+After breathing, the NeuroGraph should connect:
 
-| Node Type | Links To | Purpose |
-|-----------|----------|---------|
-| **Person** | Learnings, Files, Temporal | Who you met |
-| **Learning** | Person, Temporal, Files | What you learned |
-| **File** | Person, Learning, Temporal | Evidence (OCR, transcripts) |
-| **Temporal** | Persons, Learnings, Files | When it happened |
-
-## Example: Bruce Person Node
-
+### Person Node (Example: Bruce)
 ```
 bruce-amsterdam-cafe-owner
-├── → Learning: bruce-amsterdam-cafe-owner-profile.md (March 20)
-├── → Learning: bruce-meeting-march-21.md (if learn more March 21)
+├── → Learning: bruce-amsterdam-cafe-owner-profile.md
+├── → Learning: bruce-meeting-march-21.md
 ├── → File: Screenshot 2026-03-21 at 1.37.57 PM.png (OCR extracted)
-├── → File: Screenshot 2026-03-21 at 1.38.09 PM.png (OCR extracted)
-├── → File: convo-jarvis-2026-03-20-220111.wav.txt (transcript)
-└── → Temporal: temporal-20260320 (March 20, 2026)
-    └── → Temporal: temporal-20260321 (March 21, 2021 — if learn more)
+├── → File: Screenshot 2026-03-21 at 1.38.09 PM.png
+└── → Audio: recording-2026-03-21-*.wav.txt
 ```
 
-## Synapse Types
+## Key Principle:
 
-| Connection | Type | Weight |
-|------------|------|--------|
-| Person → Learning | "learned-on" | 100 |
-| Learning → Temporal | "fired-on" | 100 |
-| Learning → Files | "evidenced-by" | 95 |
-| Files → Temporal | "created-on" | 100 |
-| Person → Files | "depicts" | 90 |
+Learnings and files should all link up together. Person nodes should link to learnings, which link to source files (audio, transcripts, images, sessions, OCR). Everything connects through the NeuroGraph after breathing.
 
-## Multi-Day Learning Pattern
+## Result:
 
-**Day 1 (March 20):** Meet Bruce
-- Learning: bruce-amsterdam-cafe-owner-profile.md
-- Temporal: temporal-20260320
-- Files: Spanish conversation screenshot + transcript
-
-**Day 2 (March 21):** Learn more about Bruce
-- **New learning:** bruce-cafe-ownership-details.md
-- **New temporal:** temporal-20260321
-- **New files:** Today's screenshots
-- **Same person node:** bruce-amsterdam-cafe-owner (accumulates learnings across days)
-
-## What Breathe Creates
-
-**After running:**
-1. Archive files → Screenshots, audio, transcripts in `$RAW_ARCHIVE`
-2. Extract context → `full-context.json` with OCR text
-3. Create learnings → `.md` files in `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`
-4. Digest NeuroGraph → Create/update nodes + synapses linking all together
-
-## Current State
-
-**Implemented:**
-- ✅ Temporal nodes for each date
-- ✅ Learning nodes from .md files
-- ✅ Learning → Temporal synapses (fired-on)
-
-**Next iteration:**
-- ⏳ Link existing person nodes → new learnings
-- ⏳ Link files (screenshots, OCR, transcripts) → temporal nodes
-- ⏳ Link person nodes → files (depicts relationship)
-
----
-**Evidence:** nodes.json (6,695 nodes), synapses.json (13,417 synapses), Bruce profile  
-**Source:** March 21, 2026 architecture design session
+This creates a complete, queryable memory network where any node can trace back to original source material.
