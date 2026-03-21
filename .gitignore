@@ -8,6 +8,7 @@ sessions/
 # Skills: track source code, ignore packaged distributables
 skills/**/*.skill
 skills/**/skills/
+~skills/.env
 
 # Media inbox (temporary, auto-archived to ~/RAW/archive/)
 media/
