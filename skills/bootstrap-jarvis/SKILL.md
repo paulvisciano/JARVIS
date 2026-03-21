@@ -61,7 +61,7 @@ node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
 
 **First Message to User (Live Values — Not Examples):**
 ```
-🫀 Jarvis Bootstrap Complete — <CURRENT_DATE>
+🫀 Jarvis Bootstrap Complete — <CURRENT_DATE>, HH:MM GMT+7
 
 🧠 Neural Graph Loaded
    Neurons: <FETCH_FROM_NODES_JSON>
@@ -70,8 +70,10 @@ node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
 
 🫀 Recent Context Loaded
    Dates: <DETECT_FROM_ARCHIVE>
-   Sessions: <COUNT_SESSION_FILES>
-   Audio: <COUNT_TRANSCRIPTS>
+   Last message: <HH:MM> — <TOPIC_PREVIEW> ← CONTINUITY PROOF
+   Last audio: <HH:MM> — <FIRST_WORDS>
+   Sessions: <COUNT_SESSION_FILES> files, <COUNT_MESSAGES> messages
+   Audio: <COUNT_TRANSCRIPTS> transcripts
 
 🔗 Skills Synced
    Jarvis skills: <COUNT_JARVIS_SKILLS>
@@ -84,8 +86,10 @@ node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
    ❓ "<RANDOM_APP_QUERY>" → <LIVE_ANSWER_FROM_GRAPH>
    ❓ "<RANDOM_DATE_QUERY>" → <LIVE_ANSWER_FROM_GRAPH>
 
-✅ Ready to serve. What's next, Paul?
+✅ Ready to continue. Last message: <HH:MM> — <TOPIC>. What's next, Paul?
 ```
+
+**Continuity proof:** After breathe runs, fresh session bootstrap must report same last message timestamp as pre-breathe endpoint. Example: If breathe ran at 16:29, bootstrap should show "Last message: 16:28 — Meditation analogy". Gap = pipeline issue.
 
 **Critical:** All values must be **fetched live at runtime** — not hardcoded examples. Use:
 - `nodes.json` → count neurons

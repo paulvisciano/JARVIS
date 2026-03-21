@@ -123,57 +123,87 @@ function bootstrap() {
     console.error('   Error listing skills:', err.message);
   }
   
-  // Step 4: Show what we last talked about (from recent context)
-  console.log('\n📝 Last Conversation Context:');
-  const todayCtx = path.join(RAW_ARCHIVE, '2026-03-20', 'full-context.json');
-  const yesterdayCtx = path.join(RAW_ARCHIVE, '2026-03-19', 'full-context.json');
+  // Step 4: Show what we last talked about (from recent context) — CONTINUITY PROOF
+  console.log('\n📝 Last Conversation Context (Continuity Proof):');
+  
+  // Find most recent date folder
+  const today = new Date().toISOString().split('T')[0];
+  const todayCtx = path.join(RAW_ARCHIVE, today, 'full-context.json');
+  const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+  const yesterdayCtx = path.join(RAW_ARCHIVE, yesterday, 'full-context.json');
   
   let totalMessages = 0;
   let totalAudio = 0;
   let lastTopic = 'Unknown';
+  let lastMessageTime = 'Unknown';
+  let lastAudioTime = 'Unknown';
   
+  // Check today first (most recent)
   if (fs.existsSync(todayCtx)) {
     try {
       const ctx = JSON.parse(fs.readFileSync(todayCtx, 'utf8'));
-      // Handle both old (messages/audioTranscripts) and new (sessions/transcripts) formats
-      const msgCount = ctx.messages?.length || ctx.sessions?.length || 0;
-      const audioCount = ctx.audioTranscripts?.length || ctx.transcripts?.length || 0;
+      // Handle new format (sessions/transcripts)
+      const sessions = ctx.sessions || [];
+      const transcripts = ctx.transcripts || [];
+      const msgCount = sessions.reduce((sum, s) => sum + (s.messages?.length || 0), 0);
+      const audioCount = transcripts.length;
       totalMessages += msgCount;
       totalAudio += audioCount;
       
-      // Get last message topic
-      if (ctx.messages && ctx.messages.length > 0) {
-        const lastMsg = ctx.messages[ctx.messages.length - 1];
-        const text = lastMsg.content?.[0]?.text || lastMsg.content || '';
-        lastTopic = text.slice(0, 80) + (text.length > 80 ? '...' : '');
-      } else if (ctx.sessions && ctx.sessions.length > 0) {
-        const lastSession = ctx.sessions[ctx.sessions.length - 1];
+      // Get last message timestamp + topic
+      if (sessions.length > 0) {
+        const lastSession = sessions[sessions.length - 1];
         const lastMsg = lastSession.messages?.[lastSession.messages.length - 1];
         const text = lastMsg?.content?.[0]?.text || lastMsg?.content || '';
-        lastTopic = text?.slice(0, 80) + (text?.length > 80 ? '...' : '');
+        lastTopic = text?.slice(0, 50) + (text?.length > 50 ? '...' : '');
+        
+        // Extract timestamp (format: "2026-03-21T16:28:00+07:00" or from metadata)
+        const ts = lastMsg?.timestamp || ctx.extractedAt || '';
+        if (ts) {
+          const date = new Date(ts);
+          lastMessageTime = date.toLocaleTimeString('en-US', { 
+            hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
+          });
+        }
       }
       
-      console.log(`   Today: ${msgCount} messages, ${audioCount} audio`);
+      // Get last audio transcript time from filename
+      if (transcripts.length > 0) {
+        const lastTranscript = transcripts[transcripts.length - 1];
+        const fname = lastTranscript.file || '';
+        const timeMatch = fname.match(/(\d{2}-\d{2}-\d{2}-\d{6})/);
+        if (timeMatch) {
+          const timeStr = timeMatch[1].split('-')[3]; // HHMMSS
+          lastAudioTime = `${timeStr.substring(0,2)}:${timeStr.substring(2,4)}`;
+        }
+      }
+      
+      console.log(`   ${today}: ${msgCount} messages, ${audioCount} audio`);
     } catch (err) {
       console.error('   Error reading today context:', err.message);
     }
   }
   
+  // Check yesterday
   if (fs.existsSync(yesterdayCtx)) {
     try {
       const ctx = JSON.parse(fs.readFileSync(yesterdayCtx, 'utf8'));
-      const msgCount = ctx.messages?.length || ctx.sessions?.length || 0;
-      const audioCount = ctx.audioTranscripts?.length || ctx.transcripts?.length || 0;
+      const sessions = ctx.sessions || [];
+      const transcripts = ctx.transcripts || [];
+      const msgCount = sessions.reduce((sum, s) => sum + (s.messages?.length || 0), 0);
+      const audioCount = transcripts.length;
       totalMessages += msgCount;
       totalAudio += audioCount;
-      console.log(`   Yesterday: ${msgCount} messages, ${audioCount} audio`);
+      console.log(`   ${yesterday}: ${msgCount} messages, ${audioCount} audio`);
     } catch (err) {
       console.error('   Error reading yesterday context:', err.message);
     }
   }
   
   console.log(`   Total: ${totalMessages} messages, ${totalAudio} audio transcripts`);
-  console.log(`   Last topic: "${lastTopic}"`);
+  console.log(`   Last message: ${lastMessageTime} — "${lastTopic}"`);
+  console.log(`   Last audio: ${lastAudioTime}`);
+  console.log(`   → Continuity proof: Post-breathe bootstrap must match this timestamp`);
   
   // Step 5: Self-conversation test (CALL neuro-graph-search skill, answer inline)
   console.log('\n🫀 SELF-CONVERSATION TEST (Calling neuro-graph-search skill):');
