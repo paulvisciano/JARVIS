@@ -115,9 +115,69 @@ function extractTranscripts(audioDir) {
   return transcripts;
 }
 
+// Extract OCR from screenshots (images without .txt files)
+function extractOCR(archiveDir) {
+  const imagesDir = path.join(archiveDir, 'images');
+  const ocrResults = [];
+  
+  if (!fs.existsSync(imagesDir)) return ocrResults;
+  
+  const imageExts = ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.heic'];
+  const files = fs.readdirSync(imagesDir).filter(f => {
+    const ext = path.extname(f).toLowerCase();
+    return imageExts.includes(ext);
+  });
+  
+  console.log(`\n🔍 Scanning ${files.length} images for OCR...`);
+  
+  files.forEach(file => {
+    const filePath = path.join(imagesDir, file);
+    const txtPath = filePath + '.txt';
+    
+    // Skip if OCR already exists
+    if (fs.existsSync(txtPath)) {
+      const text = fs.readFileSync(txtPath, 'utf8').trim();
+      ocrResults.push({
+        file,
+        text,
+        source: 'existing'
+      });
+      console.log(`   ✓ ${file} (existing OCR)`);
+      return;
+    }
+    
+    // Run tesseract OCR
+    console.log(`   ⏳ OCR: ${file}...`);
+    const { execSync } = require('child_process');
+    try {
+      const stdout = execSync(`tesseract "${filePath}" stdout -l eng --psm 6 2>/dev/null`, {
+        encoding: 'utf8',
+        maxBuffer: 10 * 1024 * 1024
+      });
+      const text = stdout.trim();
+      
+      // Save OCR output
+      fs.writeFileSync(txtPath, text, 'utf8');
+      
+      ocrResults.push({
+        file,
+        text,
+        source: 'extracted'
+      });
+      console.log(`   ✓ ${file} (OCR extracted: ${text.length} chars)`);
+    }
+    catch (err) {
+      console.log(`   ✗ ${file} (OCR failed: ${err.message.split('\n')[0]})`);
+    }
+  });
+  
+  return ocrResults;
+}
+
 // Main extraction
 const sessions = extractSessions(sessionsDir);
 const transcripts = extractTranscripts(audioDir);
+const ocrTexts = extractOCR(archiveDir);
 
 const context = {
   date: DATE_ARG,
@@ -125,9 +185,12 @@ const context = {
   archivePath: archiveDir,
   sessions,
   transcripts,
+  ocrTexts,
   stats: {
     sessionFiles: sessions.length,
     transcriptFiles: transcripts.length,
+    ocrImages: ocrTexts.length,
+    ocrExtracted: ocrTexts.filter(o => o.source === 'extracted').length,
     totalMessages: sessions.reduce((sum, s) => sum + s.messageCount, 0)
   }
 };
@@ -138,5 +201,6 @@ fs.writeFileSync(outputFile, JSON.stringify(context), 'utf8');
 console.log(`✅ Context extracted: ${DATE_ARG}`);
 console.log(`   Sessions: ${sessions.length} files, ${context.stats.totalMessages} messages`);
 console.log(`   Transcripts: ${transcripts.length} files`);
+console.log(`   OCR: ${context.stats.ocrImages} images (${context.stats.ocrExtracted} newly extracted)`);
 console.log(`   Output: ${outputFile}`);
 console.log(`   Size: ${(fs.statSync(outputFile).size / 1024).toFixed(2)} KB`);

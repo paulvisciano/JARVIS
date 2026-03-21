@@ -1,6 +1,7 @@
 ---
 name: ocr
-description: Extract text from images (screenshots, photos, documents) using tesseract OCR. Use when: (1) screenshot has text to extract, (2) photo contains readable text, (3) document needs digitization, (4) image-to-text conversion needed. Supports PNG, JPG, GIF, WebP, HEIC. Outputs plain text.
+description: Extract text from images (screenshots, photos, documents) using tesseract OCR. Use when: (1) screenshot has text to extract, (2) photo contains readable text, (3) document needs digitization, (4) image-to-text conversion needed. Supports PNG, JPG, GIF, WebP, HEIC. Outputs plain text. Auto-integrated into context-extractor for archive images.
+metadata: { "openclaw": { "emoji": "📸", "requires": { "bins": ["tesseract"] } } }
 ---
 
 # OCR Skill — Screenshot/Text Extraction
@@ -8,6 +9,8 @@ description: Extract text from images (screenshots, photos, documents) using tes
 **Purpose:** Extract text from images (screenshots, photos, documents) using tesseract OCR.
 
 **Usage:** Point at any image file, get text back.
+
+**Auto-Integration:** Called by `context-extractor` skill for all images in `~/RAW/archive/YYYY-MM-DD/images/` without `.txt` files.
 
 ---
 
