@@ -121,9 +121,9 @@ function bootstrap() {
   if (skillSyncOutput) {
     console.log(skillSyncOutput);
     // Extract counts from output
-    const countMatch = skillSyncOutput.match(/Total:\s*(\d+)\s*skills/);
+    const countMatch = skillSyncOutput.match(/Jarvis skills:\s*(\d+)\s*folders/);
     if (countMatch) skillsCount = parseInt(countMatch[1]);
-    const createdMatch = skillSyncOutput.match(/(\d+)\s*symlinks?\s*created/);
+    const createdMatch = skillSyncOutput.match(/Workspace symlinks:\s*(\d+)\s*created/);
     if (createdMatch) symlinksCreated = parseInt(createdMatch[1]);
     console.log();
   } else {
@@ -264,8 +264,8 @@ function bootstrap() {
     graphSize += fs.statSync(nodesPath).size;
   }
   if (fs.existsSync(synapsesPath)) {
-    const synapses = JSON.parse(fs.readFileSync(synapsesPath, 'utf8'));
-    synapses = synapses.length;
+    const synapsesData = JSON.parse(fs.readFileSync(synapsesPath, 'utf8'));
+    synapses = synapsesData.length;
     graphSize += fs.statSync(synapsesPath).size;
   }
   const graphSizeMB = (graphSize / (1024 * 1024)).toFixed(2);
