@@ -102,19 +102,24 @@ node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
 
 ```bash
 cd ~/JARVIS
-node skills/neuro-graph-digest/scripts/digest-graph.js $(date +%Y-%m-%d)
+# Step 4a: Sync learnings (creates learning nodes)
+node skills/neuro-graph-sync/scripts/sync-graph.js $(date +%Y-%m-%d)
+
+# Step 4b: Sync archive files (creates archive nodes)
+node skills/neuro-graph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
 ```
 
 **What happens:**
-- Reads learnings from `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`
-- Creates/updates NeuroGraph nodes + synapses
+- **sync-graph.js:** Reads learnings from `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`, creates learning nodes, links to temporal anchor
+- **set-archive-creation-dates.js:** Scans `$RAW_ARCHIVE/YYYY-MM-DD/`, creates archive nodes for all files (audio, transcripts, images, sessions, OCR), links to temporal anchor
 - Updates `$JARVIS_HOME/RAW/memories/nodes.json` + `synapses.json`
-- Git commit with message
+- **Ensures 1:1 mapping:** Every file on disk has a node in graph
 
 **Output:**
 ```
 Resting...
-✅ NeuroGraph digested (nodes.json + synapses.json updated)
+✅ NeuroGraph synced (learnings + archive files)
+✅ 1:1 mapping verified (all files have nodes)
 ```
 
 ---
@@ -140,7 +145,9 @@ Exhaling insights...
 ✅ Learnings woven
 
 Resting into memory...
-✅ Memory synced
+✅ Learnings synced to graph
+✅ Archive files synced to graph
+✅ 1:1 mapping verified
 
 🫁 Breathe complete
 ```
@@ -163,7 +170,7 @@ Resting into memory...
 - Archive: Complete (all files dated + organized in `$RAW_ARCHIVE`)
 - Context: Distilled (lean text, no bloat in `$RAW_ARCHIVE/YYYY-MM-DD/full-context.json`)
 - Learnings: Woven (learning `.md` files in `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`)
-- NeuroGraph: Updated (nodes.json + synapses.json in `$JARVIS_HOME/RAW/memories/`)
+- NeuroGraph: **Fully synced** (1:1 mapping — all archive files + learnings have nodes in `nodes.json` + `synapses.json`)
 
 **Ready for:** Tomorrow's experiences
 

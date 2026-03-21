@@ -49,11 +49,20 @@ try {
 
   // Step 4: Rest (Sync)
   console.log('Resting into memory...');
+  
+  // Step 4a: Sync learnings to graph (creates learning nodes)
   execSync(`node ${path.join(jarvisHome, 'skills/neuro-graph-sync/scripts/sync-graph.js')} ${date}`, {
     cwd: jarvisHome,
     stdio: 'inherit'
   });
-  console.log('✅ Memory synced\n');
+  
+  // Step 4b: Sync archive files to graph (creates archive nodes)
+  execSync(`node ${path.join(jarvisHome, 'skills/neuro-graph-sync/scripts/set-archive-creation-dates.js')} ${date}`, {
+    cwd: jarvisHome,
+    stdio: 'inherit'
+  });
+  
+  console.log('✅ Memory synced (learnings + archive files)\n');
 
   console.log('🫁 Breathe complete');
   
