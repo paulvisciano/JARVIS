@@ -8,17 +8,20 @@ description: The full memory pipeline — one natural command. Inhale (archive),
 ## When to Use
 
 ✅ **USE this skill when:**
-- End-of-day: ready to reflect and integrate
+- **Anytime** — morning, midday, evening, night
 - Full pipeline needed (archive → distill → weave → sync)
 - Want one simple command for Eric/David/Bruce
 - Memory feels "unsynced" — time to breathe
+- After big conversations / sessions / experiences
+- Before stopping for the day (clean state)
+- After fixing issues (verify pipeline works)
 
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
-- Need individual steps (use archive-collector, context-extractor, etc.)
-- Debugging a specific step
-- Mid-day partial archive (run individual skills)
+- Need individual steps only (use archive-collector, context-extractor separately)
+- Debugging a specific step in isolation
+- Mid-pipeline interruption (let it finish, or restart from beginning)
 
 ## The Metaphor
 
@@ -82,34 +85,36 @@ node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
 ```
 
 **What happens:**
-- Reads `full-context.json`
-- Extracts neurons/learnings
-- Outputs: `~/JARVIS/memory/neurons/`
+- Reads `full-context.json` (from Step 2)
+- Synthesizes insights from conversations
+- Creates learning `.md` files
+- Outputs: `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/*.md`
 
 **Output:**
 ```
 🫁 Exhaling...
-✅ Insights woven
+✅ Learnings woven to ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)/
 ```
 
 ---
 
-### Step 4: Rest (Sync)
+### Step 4: Rest (Sync / Digest Graph)
 
 ```bash
 cd ~/JARVIS
-node skills/neuro-graph-digest/scripts/digest-graph.js
+node skills/neuro-graph-digest/scripts/digest-graph.js $(date +%Y-%m-%d)
 ```
 
 **What happens:**
-- Commits learnings to NeuroGraph
+- Reads learnings from `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`
+- Creates/updates NeuroGraph nodes + synapses
+- Updates `$JARVIS_HOME/RAW/memories/nodes.json` + `synapses.json`
 - Git commit with message
-- Graph visualization updates
 
 **Output:**
 ```
 Resting...
-✅ Memory synced
+✅ NeuroGraph digested (nodes.json + synapses.json updated)
 ```
 
 ---
@@ -155,10 +160,10 @@ Resting into memory...
 ## Expected Result
 
 **Memory is synced:**
-- Archive: Complete (all files dated + organized)
-- Context: Distilled (lean text, no bloat)
-- Learnings: Woven (neurons extracted)
-- NeuroGraph: Updated (git committed)
+- Archive: Complete (all files dated + organized in `$RAW_ARCHIVE`)
+- Context: Distilled (lean text, no bloat in `$RAW_ARCHIVE/YYYY-MM-DD/full-context.json`)
+- Learnings: Woven (learning `.md` files in `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`)
+- NeuroGraph: Updated (nodes.json + synapses.json in `$JARVIS_HOME/RAW/memories/`)
 
 **Ready for:** Tomorrow's experiences
 
@@ -169,8 +174,10 @@ Resting into memory...
 - **Runs all 4 steps** — atomic operation
 - **Default date:** Today (`YYYY-MM-DD`)
 - **Optional arg:** `node skills/breathe/scripts/run-pipeline.js 2026-03-20`
-- **Idempotent:** Safe to run multiple times
+- **Idempotent:** Safe to run multiple times (can breathe again anytime)
 - **Natural language:** "Breathe" not "pipeline"
+- **Uses .env:** `$JARVIS_HOME`, `$RAW_ARCHIVE`, `$NEUROGRAPH_DIR` (portable paths)
+- **Anytime operation:** Morning, midday, evening, night — breathe when ready
 
 ---
 

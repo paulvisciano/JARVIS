@@ -22,7 +22,7 @@ const rawPath = path.join(home, 'RAW');
 const memoriesDir = path.join(jarvisHome, 'RAW', 'memories');
 const nodesFile = path.join(memoriesDir, 'nodes.json');
 const synapsesFile = path.join(memoriesDir, 'synapses.json');
-const learningsDir = path.join(rawPath, 'learnings', date);
+const learningsDir = path.join(jarvisHome, 'RAW', 'learnings', date);
 
 console.log(`🧠 NeuroGraph Sync — ${date}`);
 
@@ -102,7 +102,7 @@ learnings.forEach(learningFile => {
       role: 'distilled insight',
       description: content.split('\n')[0]?.replace('#', '').trim() || 'Learning from ' + date,
       color: '#10b981',
-      sourceDocument: `~/RAW/learnings/${date}/${learningFile}`,
+      sourceDocument: `~/JARVIS/RAW/learnings/${date}/${learningFile}`,
       created: new Date().toISOString()
     }
   };

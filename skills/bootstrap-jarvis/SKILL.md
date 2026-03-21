@@ -29,7 +29,7 @@ description: Orchestrate full Jarvis bootstrap sequence. Loads neural graph + re
    - Removes broken links
    - **Fetches live counts** (folders, symlinks, broken)
 
-4. **Test NeuroGraph search** (neuro-graph-search skill)
+4. **Test NeuroGraph search** (`neuro-graph-search` skill)
    - **Generates 3 random questions** from actual graph content (people, apps, dates)
    - Answers via live NeuroGraph query
    - Proves NeuroGraph is loaded + queryable
@@ -122,7 +122,7 @@ node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
 
 ## Skills Used
 
-- `neural-graph-loader/` — Load neural graph
+- `neural-graph-loader/` — Load neural graph (read-only)
 - `bootstrap-context/` — Load recent context
 - `skill-discovery/` — Sync Jarvis skills to OpenClaw workspace
 - `neuro-graph-search/` — Test NeuroGraph with 3 questions (only Jarvis would know)

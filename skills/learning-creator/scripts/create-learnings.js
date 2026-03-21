@@ -14,17 +14,19 @@ const fs = require('fs');
 const path = require('path');
 
 const date = process.argv[2] || new Date().toISOString().split('T')[0];
-const jarvisHome = process.env.JARVIS_HOME || require('os').homedir() + '/JARVIS';
-// RAW is in home dir, not JARVIS subfolder
-const rawPath = process.env.RAW_ARCHIVE || require('os').homedir() + '/RAW';
+const home = require('os').homedir();
+const jarvisHome = process.env.JARVIS_HOME || path.join(home, 'JARVIS');
+// Learnings are in JARVIS/RAW/learnings/, not RAW/learnings/
+const learningsBase = path.join(jarvisHome, 'RAW', 'learnings');
 
 console.log(`🧠 Learning Creator — ${date}`);
 
 // Ensure learnings directory exists
-const learningsDir = path.join(rawPath, 'learnings', date);
+const learningsDir = path.join(learningsBase, date);
 fs.mkdirSync(learningsDir, { recursive: true });
 
 // Check if context exists (try both paths)
+const rawPath = path.join(home, 'RAW');
 const contextPath = path.join(rawPath, 'archive', date, 'full-context.json');
 const altContextPath = path.join(jarvisHome, 'RAW', 'archive', date, 'full-context.json');
 
@@ -66,5 +68,7 @@ if (!fs.existsSync(placeholderPath)) {
   fs.writeFileSync(placeholderPath, placeholder);
   console.log(`   📝 Placeholder created: session-summary.md`);
 }
+
+console.log(`   📂 Learnings location: ${learningsDir}`);
 
 console.log(`✅ Learning structure ready`);

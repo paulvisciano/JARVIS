@@ -28,12 +28,48 @@ description: Synchronize neurograph with disk — ensures 1:1 mapping between fi
 
 ## Workflow
 
-### Step 1: Run Sync Script
+### Step 1: Run Sync Script (Primary)
+
+```bash
+cd ~/JARVIS
+node skills/neuro-graph-sync/scripts/sync-graph.js $(date +%Y-%m-%d)
+```
+
+**What this does:**
+- Reads `~/JARVIS/RAW/learnings/YYYY-MM-DD/` for all .md files
+- Creates temporal anchor node for date
+- Creates learning nodes for each .md file
+- Links: Learning → Temporal (fired-on synapse)
+- Saves to `~/JARVIS/RAW/memories/nodes.json` + `synapses.json`
+
+**Output:**
+```
+🧠 NeuroGraph Sync — 2026-03-21
+📚 Found 3 learnings
+🧠 Current graph: 500 nodes, 1200 synapses
+✅ Created temporal node: temporal-20260321
+✅ Created learning node: archive-pipeline-integrity
+🔗 Linked archive-pipeline-integrity → temporal-20260321
+💾 Saved 503 nodes
+💾 Saved 1203 synapses
+✅ NeuroGraph synced for 2026-03-21
+```
+
+### Step 2: Verify Integrity (Optional — Deep Check)
 
 ```bash
 cd ~/JARVIS
 node skills/neuro-graph-sync/scripts/verify-archive-learnings-nodes.js $(date +%Y-%m-%d)
 ```
+
+**What this does:**
+- Scans `~/RAW/archive/YYYY-MM-DD/` for all files
+- Scans `~/JARVIS/RAW/learnings/YYYY-MM-DD/` for all .md files
+- Scans `~/JARVIS/skills/` for all SKILL.md files (recursive)
+- Checks if each file has a corresponding node in `nodes.json`
+- **Creates missing nodes** with proper timestamps
+- **Auto-discovers skills** → creates `openclaw-skill` nodes + file nodes + synapses
+- Reports: files on disk | with node | MISSING: X
 
 **What this does:**
 - Scans `~/RAW/archive/YYYY-MM-DD/` for all files
