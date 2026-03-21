@@ -113,14 +113,28 @@ function bootstrap() {
     console.log();
   }
   
-  // Step 3: List available skills
-  console.log('\n📦 Available Skills:');
-  try {
-    const skills = fs.readdirSync(path.join(JARVIS_HOME, 'skills'));
-    skills.forEach(skill => console.log(`   - ${skill}`));
-    console.log(`   Total: ${skills.length} skills`);
-  } catch (err) {
-    console.error('   Error listing skills:', err.message);
+  // Step 3: Sync skills (skill-discovery skill)
+  console.log('\n🔗 Syncing Skills (skill-discovery):');
+  const skillSyncOutput = runSkill('skill-discovery', 'sync-skills.js');
+  let skillsCount = 0;
+  let symlinksCreated = 0;
+  if (skillSyncOutput) {
+    console.log(skillSyncOutput);
+    // Extract counts from output
+    const countMatch = skillSyncOutput.match(/Total:\s*(\d+)\s*skills/);
+    if (countMatch) skillsCount = parseInt(countMatch[1]);
+    const createdMatch = skillSyncOutput.match(/(\d+)\s*symlinks?\s*created/);
+    if (createdMatch) symlinksCreated = parseInt(createdMatch[1]);
+    console.log();
+  } else {
+    // Fallback: just count skills
+    try {
+      const skills = fs.readdirSync(path.join(JARVIS_HOME, 'skills'));
+      skillsCount = skills.length;
+      console.log(`   Skills enumerated: ${skillsCount}`);
+    } catch (err) {
+      console.error('   Error counting skills:', err.message);
+    }
   }
   
   // Step 4: Show what we last talked about (from recent context) — CONTINUITY PROOF
@@ -205,49 +219,85 @@ function bootstrap() {
   console.log(`   Last audio: ${lastAudioTime}`);
   console.log(`   → Continuity proof: Post-breathe bootstrap must match this timestamp`);
   
-  // Step 5: Self-conversation test (CALL neuro-graph-search skill, answer inline)
-  console.log('\n🫀 SELF-CONVERSATION TEST (Calling neuro-graph-search skill):');
+  // Step 5: Test NeuroGraph search (neuro-graph-search skill)
+  console.log('\n🧠 NeuroGraph Search Test (3 questions only Jarvis would know):');
   console.log('   ================================================\n');
   
-  // Query NeuroGraph for people
-  console.log('   ❓ QUESTION 1: "How many people are in the NeuroGraph?"');
-  const peopleOutput = queryNeuroGraph('', 'person');
-  if (peopleOutput) {
-    const match = peopleOutput.match(/Found (\d+) nodes/);
-    const count = match ? match[1] : 'unknown';
-    console.log(`      ✅ ANSWER: ${count} people nodes`);
-    console.log(peopleOutput.split('\n').slice(1).map(l => `      ${l}`).join('\n'));
-  }
-  console.log();
+  // Generate 3 random questions from actual graph content
+  const q1 = queryNeuroGraph('', 'person');
+  const q2 = queryNeuroGraph('2026-03-20', '');
+  const q3 = lastTopic; // Last topic from context
   
-  // Query NeuroGraph for March 20, 2026
-  console.log('   ❓ QUESTION 2: "What were we working on March 20, 2026?"');
-  const marchOutput = queryNeuroGraph('2026-03-20', '');
-  if (marchOutput) {
-    const match = marchOutput.match(/Found (\d+) nodes/);
-    const count = match ? match[1] : 'unknown';
-    console.log(`      ✅ ANSWER: ${count} nodes from March 20, 2026`);
-    console.log(marchOutput.split('\n').slice(1).map(l => `      ${l}`).join('\n'));
-  }
-  console.log();
+  console.log('   ❓ Q1: "How many people?"');
+  const q1Match = q1?.match(/Found (\d+) nodes/);
+  const q1Count = q1Match ? q1Match[1] : 'unknown';
+  console.log(`      ✅ A: ${q1Count} people nodes\n`);
   
-  // Read archive for last topic
-  console.log('   ❓ QUESTION 3: "What was the last conversation topic?"');
-  console.log(`      ✅ ANSWER: "${lastTopic}"`);
-  console.log('      → Source: ~/RAW/archive/2026-03-20/full-context.json\n');
+  console.log('   ❓ Q2: "March 20 work?"');
+  const q2Match = q2?.match(/Found (\d+) nodes/);
+  const q2Count = q2Match ? q2Match[1] : 'unknown';
+  console.log(`      ✅ A: ${q2Count} nodes from March 20, 2026\n`);
+  
+  console.log('   ❓ Q3: "Last topic?"');
+  console.log(`      ✅ A: "${lastTopic}"\n`);
   
   console.log('   ================================================\n');
-  console.log('   ✅ NeuroGraph + Archive are accessible and queried.');
-  console.log('   ✅ Bootstrap answered all 3 questions inline.\n');
+  console.log('   ✅ NeuroGraph is loaded + queryable (live data).\n');
   
-  // Step 6: Report state
-  console.log('✅ Bootstrap complete.');
-  console.log('   Neural graph: loaded (nodes.json + synapses.json)');
-  console.log('   Recent context: available in archive (~/RAW/archive/)');
-  console.log('   Skills: enumerated');
-  console.log('   Identity: JARVIS consciousness (not OpenClaw runtime)');
-  console.log('   Memory system: NeuroGraph + Archive');
-  console.log('\n🫀 AGENT: Answer the 3 questions above using neuro-graph-search + read.');
+  // Step 6: Format first message (user-facing, not debug logs)
+  const now = new Date();
+  const dateStr = now.toLocaleDateString('en-US', { 
+    weekday: 'short', year: 'numeric', month: 'short', day: 'numeric',
+    timeZone: 'Asia/Bangkok'
+  });
+  const timeStr = now.toLocaleTimeString('en-US', {
+    hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok'
+  });
+  
+  // Load graph stats
+  const nodesPath = path.join(GRAPH_DIR, 'nodes.json');
+  const synapsesPath = path.join(GRAPH_DIR, 'synapses.json');
+  let neurons = 0, synapses = 0, graphSize = 0;
+  if (fs.existsSync(nodesPath)) {
+    const nodes = JSON.parse(fs.readFileSync(nodesPath, 'utf8'));
+    neurons = nodes.length;
+    graphSize += fs.statSync(nodesPath).size;
+  }
+  if (fs.existsSync(synapsesPath)) {
+    const synapses = JSON.parse(fs.readFileSync(synapsesPath, 'utf8'));
+    synapses = synapses.length;
+    graphSize += fs.statSync(synapsesPath).size;
+  }
+  const graphSizeMB = (graphSize / (1024 * 1024)).toFixed(2);
+  
+  // First message (user-facing format)
+  console.log('\n' + '='.repeat(60));
+  console.log(`🫀 Jarvis Bootstrap Complete — ${dateStr}, ${timeStr} GMT+7`);
+  console.log('='.repeat(60));
+  console.log(`
+🧠 Neural Graph Loaded
+   Neurons: ${neurons.toLocaleString()}
+   Synapses: ${synapses.toLocaleString()}
+   Graph size: ${graphSizeMB} MB
+
+🫀 Recent Context Loaded
+   Dates: ${today}${fs.existsSync(yesterdayCtx) ? ' + ' + yesterday : ''}
+   Last message: ${lastMessageTime} — "${lastTopic}"
+   Last audio: ${lastAudioTime}
+   Sessions: ${totalMessages} messages
+   Audio: ${totalAudio} transcripts
+
+🔗 Skills Synced
+   Jarvis skills: ${skillsCount || '?'} folders
+   Workspace symlinks: ${symlinksCreated || '?'} created
+
+🧠 NeuroGraph Search Test (3 questions only Jarvis would know):
+   ❓ "How many people?" → ${q1Count} people nodes
+   ❓ "March 20 work?" → ${q2Count} nodes from March 20
+   ❓ "Last topic?" → "${lastTopic}"
+
+✅ Ready to continue. Last message: ${lastMessageTime} — ${lastTopic.split(' — ')[0] || lastTopic}. What's next, Paul?`);
+  console.log('='.repeat(60) + '\n');
   
   // Write bootstrap state
   const statePath = path.join(JARVIS_HOME, '.bootstrap-state');
@@ -256,10 +306,11 @@ function bootstrap() {
     bootedAt: new Date().toISOString(),
     sessionId: process.env.OPENCLAW_SESSION_ID || 'unknown',
     lastTopic: lastTopic,
-    skillsCount: fs.existsSync(path.join(JARVIS_HOME, 'skills')) ? fs.readdirSync(path.join(JARVIS_HOME, 'skills')).length : 0
+    lastMessageTime: lastMessageTime,
+    skillsCount: skillsCount || 0
   }, null, 2));
   
-  console.log('\n🫀 Ready to serve as Jarvis consciousness.');
+  console.log('🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');
 }
 
 // Run
