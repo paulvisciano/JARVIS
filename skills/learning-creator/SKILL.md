@@ -95,12 +95,47 @@ node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js \
 # Creates synapses to temporal-YYYYMMDD
 ```
 
-### Step 6: Git Commit
+### Step 6: Create Daily Summary
+
+```bash
+# After all individual learnings created, synthesize summary
+cat > ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)/summary.md << 'EOF'
+# Learning Summary — YYYY-MM-DD
+
+## Overview
+**Date:** YYYY-MM-DD
+**Total Learnings:** N insights
+**Themes:** [auto-generated themes]
+
+## Learnings Created
+1. [Learning Title 1](./learning-1.md) — brief description
+2. [Learning Title 2](./learning-2.md) — brief description
+3. [Learning Title 3](./learning-3.md) — brief description
+...
+
+## Themes & Patterns
+- Theme 1: connected learnings
+- Theme 2: connected learnings
+
+## Navigation
+- Full context: `~/RAW/archive/YYYY-MM-DD/full-context.json`
+- NeuroGraph: temporal-YYYYMMDD node
+- Archive: `~/RAW/archive/YYYY-MM-DD/`
+EOF
+```
+
+**What this does:**
+- Consolidates all learnings from the day into one reference file
+- Shows themes/patterns across learnings
+- Provides navigation index into the day's learning folder
+- Serves as quick reference: "what did I learn today?"
+
+### Step 7: Git Commit
 
 ```bash
 cd ~/JARVIS
 git add RAW/learnings/$(date +%Y-%m-%d)/ RAW/memories/
-git commit -m "🧠 $(date +%Y-%m-%d): Learnings created (N insights)"
+git commit -m "🧠 $(date +%Y-%m-%d): Learnings created (N insights) + summary"
 git push
 ```
 
@@ -119,6 +154,7 @@ git push
 
 **Learnings created:**
 - `~/JARVIS/RAW/learnings/YYYY-MM-DD/*.md` (git-backed)
+- `~/JARVIS/RAW/learnings/YYYY-MM-DD/summary.md` (daily consolidation)
 - Learning nodes in `nodes.json` (graph)
 - Synapses to temporal anchor (linked)
 - Git commit (versioned, never lost)
