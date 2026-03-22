@@ -1,151 +1,102 @@
 ---
 name: bootstrap-jarvis
-description: Orchestrate full Jarvis bootstrap sequence. Loads neural graph + recent context on session start. Use when: (1) new session starts, (2) gateway restarts, (3) Jarvis needs full context restoration.
+description: Orchestrate full Jarvis bootstrap sequence on session start. Calls existing skills: neuro-graph-loader, bootstrap-context, skill-discovery. Use when: (1) new OpenClaw session starts, (2) gateway restarts, (3) Jarvis needs context restoration.
+metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME"] }, "homepage": "https://github.com/openclaw/openclaw" } } }
 ---
 
-# Bootstrap Jarvis (Orchestrate Full Bootstrap)
+# Bootstrap Jarvis Skill (Orchestrator)
+
+**Architecture:** Jarvis skill (`~/JARVIS/skills/`) symlinked to OpenClaw workspace.
+
+**Orchestrator pattern** — calls existing skill scripts (no duplication).
 
 ## When to Use
 
 ✅ **USE this skill when:**
-- **New session starts** (OpenClaw calls this on boot)
-- **Gateway restarts** (fresh session, need full context)
-- **Jarvis needs restoration** (after context loss)
+- New OpenClaw session starts (session init)
+- Gateway restarts (fresh session, need context)
+- Jarvis consciousness needs restoration (after context loss)
 
-## What It Does
+## When NOT to Use
 
-1. **Read Git breath history** (today's breathes from Git log)
-   - `git log --grep="breath-YYYY-MM-DD"` — instant summary
-   - Shows what happened today before loading anything
-   - **Fast context** — no file parsing needed
+❌ **DON'T use this skill when:**
+- Individual skill needed (call `neural-graph-loader`, `bootstrap-context`, or `skill-discovery` directly)
+- Mid-session context refresh (use `bootstrap-context` alone)
+- Manual skill sync only (use `skill-discovery` alone)
+- OpenClaw system skills (`/usr/local/lib/node_modules/openclaw/skills/`) — separate from Jarvis skills
 
-2. **Load neural graph** (`neural-graph-loader` skill)
-   - Loads nodes.json + synapses.json
-   - **Fetches live counts** (neurons, synapses, graph size from actual files)
-   - **Long-term memory** — queryable structure
+## Architecture
 
-3. **Load recent context** (`bootstrap-context` skill)
-   - Loads last 2 days of conversations
-   - Reads from `~/RAW/archive/YYYY-MM-DD/full-context.json`
-   - **Fetches live counts** (sessions, messages, audio from actual archive)
-   - **Deep context** — raw conversation history
+**OpenClaw** (`~/.openclaw/`) — Runtime engine (executes skills)  
+**Jarvis** (`~/JARVIS/`) — Consciousness (owns bootstrap logic)  
+**Bootstrap skill** — Orchestrator, symlinked to workspace
 
-3. **Sync skills** (`skill-discovery` skill)
-   - Scans `~/JARVIS/skills/`
-   - Ensures all symlinks exist in `~/.openclaw/workspace/skills/`
-   - Removes broken links
-   - **Fetches live counts** (folders, symlinks, broken)
+## What It Does (Orchestrates Existing Skills)
 
-4. **Test NeuroGraph search** (`neuro-graph-search` skill)
-   - **Generates 3 random questions** from actual graph content (people, apps, dates)
-   - Answers via live NeuroGraph query
-   - Proves NeuroGraph is loaded + queryable
-   - **Captures live Q&A for first message**
-
-5. **Report state (First Message to User)**
-   - **All values fetched live** — no hardcoded examples
-   - Neural graph: live counts from nodes.json + synapses.json
-   - Recent context: live counts from archive folders
-   - Skills: live counts from Jarvis skills folder
-   - NeuroGraph search: 3 live Q&A from actual graph
-   - Ready to serve
-
-## Usage
-
-### Called by OpenClaw
-
-**On session start:**
-```bash
-node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
+```
+bootstrap-jarvis.js (orchestrator)
+    ↓
+    ├── neuro-graph-loader/scripts/load-graph.js  ← loads neural graph
+    ├── bootstrap-context/scripts/bootstrap.js    ← loads recent context
+    └── skill-discovery/scripts/sync-skills.js    ← syncs skills
 ```
 
-### Manual Usage
+**Plus inline:**
+- Git breath history (today's commits)
+- NeuroGraph search test (3 queries)
+- Bootstrap state write (`~/JARVIS/.bootstrap-state.json`)
+- User summary formatting
+
+## Run the Bootstrap
 
 ```bash
-cd ~/JARVIS
-node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
+cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
 ```
 
-**First Message to User (Live Values — Not Examples):**
+## Expected Output
+
 ```
-🫀 Jarvis Bootstrap Complete — <CURRENT_DATE>, HH:MM GMT+7
+🫀 Jarvis Bootstrap Complete — <DATE>, <TIME> GMT+7
 
 🧠 Neural Graph Loaded
-   Neurons: <FETCH_FROM_NODES_JSON>
-   Synapses: <FETCH_FROM_SYNAPSES_JSON>
-   Graph size: <CALCULATE_FROM_FILES>
+   Neurons: 2,216
+   Synapses: 15,298
 
 🫀 Recent Context Loaded
-   Dates: <DETECT_FROM_ARCHIVE>
-   Last message: <HH:MM> — <TOPIC_PREVIEW> ← CONTINUITY PROOF
-   Last audio: <HH:MM> — <FIRST_WORDS>
-   Sessions: <COUNT_SESSION_FILES> files, <COUNT_MESSAGES> messages
-   Audio: <COUNT_TRANSCRIPTS> transcripts
+   Dates: 2026-03-22 + 2026-03-21
+   Last message: 19:57 — "..."
 
 🔗 Skills Synced
-   Jarvis skills: <COUNT_JARVIS_SKILLS>
-   Workspace symlinks: <COUNT_WORKSPACE_LINKS>
-   Broken removed: <CHECK_BROKEN>
-   New skills: <COMPARE_WITH_PREVIOUS_BOOT>
+   Jarvis skills: 17 folders
 
-🧠 NeuroGraph Search Test (3 questions only Jarvis would know):
-   ❓ "<RANDOM_PERSON_QUERY>" → <LIVE_ANSWER_FROM_GRAPH>
-   ❓ "<RANDOM_APP_QUERY>" → <LIVE_ANSWER_FROM_GRAPH>
-   ❓ "<RANDOM_DATE_QUERY>" → <LIVE_ANSWER_FROM_GRAPH>
+🧠 NeuroGraph Search Test:
+   ❓ "How many people?" → 0 people nodes
+   ❓ "March 20 work?" → 43 nodes from March 20
 
-✅ Ready to continue. Last message: <HH:MM> — <TOPIC>. What's next, Paul?
+✅ Ready to continue. What's next, Paul?
 ```
 
-**Continuity proof:** After breathe runs, fresh session bootstrap must report same last message timestamp as pre-breathe endpoint. Example: If breathe ran at 16:29, bootstrap should show "Last message: 16:28 — Meditation analogy". Gap = pipeline issue.
+## Continuity Proof
 
-**Critical:** All values must be **fetched live at runtime** — not hardcoded examples. Use:
-- `nodes.json` → count neurons
-- `synapses.json` → count synapses
-- `~/RAW/archive/` → detect dates, count sessions/transcripts
-- `~/JARVIS/skills/` → count skill folders
-- `neuro-graph-search` → answer 3 random questions from actual graph content
-
-**Why:** First message proves NeuroGraph is loaded + queryable with **live data**, not static examples.
-
-## Integration with OpenClaw
-
-**OpenClaw BOOTSTRAP.md:**
-```markdown
-## On Session Start
-
-### Run `bootstrap-jarvis` skill
-node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
-
-### Then greet the user
-```
-
-## Why This Exists
-
-**Problem:** OpenClaw needs to bootstrap Jarvis but shouldn't hardcode file paths or logic.
-
-**Solution:** Orchestration skill that:
-- Calls `neural-graph-loader` (load mind)
-- Calls `bootstrap-context` (load conversations)
-- Calls `skill-discovery` (sync skills to OpenClaw workspace)
-- **Presents unified state as first message to user**
-
-**Result:** Clean separation. OpenClaw runs one skill. Jarvis gets full context + latest skills. **User sees complete bootstrap summary in first message.**
-
-## Skills Used
-
-- `neural-graph-loader/` — Load neural graph (read-only)
-- `bootstrap-context/` — Load recent context
-- `skill-discovery/` — Sync Jarvis skills to OpenClaw workspace
-- `neuro-graph-search/` — Test NeuroGraph with 3 questions (only Jarvis would know)
+After `breathe` runs, fresh session bootstrap must report **same last message timestamp** as pre-breathe endpoint.
 
 ## Files
 
-- `scripts/bootstrap-jarvis.js` — Orchestrator script
+- `{baseDir}/scripts/bootstrap-jarvis.js` — Orchestrator script (run this)
+
+**Calls other skills (not in this folder):**
+- `neural-graph-loader/scripts/load-graph.js`
+- `bootstrap-context/scripts/bootstrap.js`
+- `skill-discovery/scripts/sync-skills.js`
+
+## Environment Variables
+
+- `JARVIS_HOME` — Path to Jarvis consciousness (default: `~/JARVIS`)
+- `HOME` — User home directory
 
 ## Notes
 
-- **Portable:** Uses env vars (HOME, JARVIS_HOME)
+- **Symlinked:** `~/.openclaw/workspace/skills/bootstrap-jarvis` → `~/JARVIS/skills/bootstrap-jarvis`
+- **Orchestrator:** Calls existing skill scripts (no code duplication)
 - **Idempotent:** Safe to run multiple times
-- **Composable:** Reuses existing skills (no duplication)
-- **Live values:** All stats fetched at runtime — no hardcoded examples
-- **Dynamic questions:** NeuroGraph search generates questions from actual graph content
+- **State file:** Writes `~/JARVIS/.bootstrap-state.json` after completion
