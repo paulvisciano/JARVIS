@@ -5,8 +5,8 @@
 **Status:** extracted
 
 **Context:**
-- Messages: 62
-- Transcripts: 57
-- OCR: 12
+- Messages: 57
+- Transcripts: 242
+- OCR: 141
 
 *Note: Learning extraction via Gateway failed. Review full context manually.*
