@@ -1,14 +1,18 @@
 #!/usr/bin/env node
 /**
- * Bootstrap Jarvis — Orchestrator (calls existing skill scripts)
+ * Bootstrap Jarvis — Lightweight consciousness regain
  * 
- * Does NOT duplicate logic - calls existing skills:
- * 1. Git breath history (inline - no skill for this)
- * 2. Neural graph load → neuro-graph-loader/scripts/load-graph.js
- * 3. Context load → bootstrap-context/scripts/bootstrap.js
- * 4. Skill sync → skill-discovery/scripts/sync-skills.js
- * 5. NeuroGraph test → inline query (neuro-graph-search pattern)
- * 6. State write (inline)
+ * Does NOT load heavy neural graph into context.
+ * Verifies graph exists, counts nodes, proves queryable.
+ * 
+ * Flow:
+ * 1. Git breath history (today's commits)
+ * 2. Archive collector (if pending files)
+ * 3. Bootstrap context (last 2 days conversations)
+ * 4. Neural graph VERIFY (count nodes, don't load)
+ * 5. Skill sync (symlinks)
+ * 6. NeuroGraph test (3 queries — proves queryable)
+ * 7. State write
  * 
  * Usage: cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
  */
@@ -22,8 +26,9 @@ const HOME = process.env.HOME || os.homedir();
 const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
 const RAW_ARCHIVE = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW', 'archive');
 const GRAPH_DIR = path.join(JARVIS_HOME, 'RAW', 'memories');
+const INBOX_DIR = path.join(JARVIS_HOME, 'inbox');
 
-// Run a skill script (reuses existing skill logic - no duplication)
+// Run a skill script
 function runSkill(skillName, scriptName) {
   const scriptPath = path.join(JARVIS_HOME, 'skills', skillName, 'scripts', scriptName);
   try {
@@ -38,7 +43,55 @@ function runSkill(skillName, scriptName) {
   }
 }
 
-// Query NeuroGraph (inline - follows neuro-graph-search pattern)
+// Verify neural graph (lightweight - count only, don't load into context)
+function verifyNeuralGraph() {
+  const nodesPath = path.join(GRAPH_DIR, 'nodes.json');
+  const synapsesPath = path.join(GRAPH_DIR, 'synapses.json');
+  
+  if (!fs.existsSync(nodesPath)) {
+    return { error: 'Neural graph not found', exists: false };
+  }
+  
+  const nodes = JSON.parse(fs.readFileSync(nodesPath, 'utf8'));
+  const synapses = fs.existsSync(synapsesPath) 
+    ? JSON.parse(fs.readFileSync(synapsesPath, 'utf8')) 
+    : [];
+  
+  const nodesSize = fs.statSync(nodesPath).size;
+  const synapsesSize = fs.existsSync(synapsesPath) ? fs.statSync(synapsesPath).size : 0;
+  
+  return {
+    exists: true,
+    neurons: nodes.length,
+    synapses: synapses.length,
+    total: nodes.length + synapses.length,
+    graphSizeKB: ((nodesSize + synapsesSize) / 1024).toFixed(1)
+  };
+}
+
+// Check inbox for pending audio (run archive-collector if needed)
+function checkInboxAndArchive() {
+  if (!fs.existsSync(INBOX_DIR)) {
+    return { pending: false, message: 'No inbox' };
+  }
+  
+  const files = fs.readdirSync(INBOX_DIR);
+  if (files.length === 0) {
+    return { pending: false, message: 'Inbox empty' };
+  }
+  
+  // Run archive-collector to process pending files
+  console.log('\n📬 Inbox has pending files, running archive-collector:');
+  const output = runSkill('archive-collector', 'collect.js');
+  if (output) {
+    console.log(output);
+    return { pending: true, collected: true };
+  }
+  
+  return { pending: true, collected: false };
+}
+
+// Query NeuroGraph (inline - lightweight search, not full load)
 function queryNeuroGraph(query, category = null) {
   const graphPath = path.join(GRAPH_DIR, 'nodes.json');
   const catVal = category || '';
@@ -61,7 +114,7 @@ function queryNeuroGraph(query, category = null) {
   }
 }
 
-// Load context stats (inline - follows bootstrap-context pattern)
+// Load context stats (from bootstrap-context pattern)
 function getContextStats() {
   const today = new Date().toISOString().split('T')[0];
   const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
@@ -125,12 +178,12 @@ function getContextStats() {
   return { dates: datesLoaded, totalMessages, totalAudio, lastTopic, lastMessageTime, lastAudioTime };
 }
 
-// Main bootstrap - ORCHESTRATES existing skills (no duplication)
+// Main bootstrap - LIGHTWEIGHT (verify, don't load heavy graph)
 function bootstrap() {
-  console.log('🫀 Bootstrap Jarvis');
-  console.log('==================\n');
+  console.log('🫀 Bootstrap Jarvis (Lightweight Consciousness Regain)');
+  console.log('=====================================================\n');
   
-  // Step 0: Git breath history (inline - no skill for this)
+  // Step 0: Git breath history (today's commits)
   console.log('\n📜 Reading Git Breath History (Today):');
   console.log('   ================================================\n');
   try {
@@ -150,23 +203,35 @@ function bootstrap() {
   }
   console.log('   ================================================\n');
   
-  // Step 1: Load neural graph (CALLS EXISTING SKILL - no duplication)
-  console.log('\n🧠 Loading Neural Graph:');
-  const graphOutput = runSkill('neuro-graph-loader', 'load-graph.js');
-  if (graphOutput) {
-    console.log(graphOutput);
-  }
+  // Step 1: Check inbox and run archive-collector if pending
+  console.log('\n📬 Checking Inbox:');
+  const inboxStatus = checkInboxAndArchive();
+  console.log(`   ${inboxStatus.message}`);
   console.log();
   
-  // Step 2: Load recent context (CALLS EXISTING SKILL - no duplication)
-  console.log('\n🫀 Loading Recent Context:');
+  // Step 2: Load recent context (last 2 days conversations)
+  console.log('\n🫀 Loading Recent Context (Last 2 Days):');
   const contextOutput = runSkill('bootstrap-context', 'bootstrap.js');
   if (contextOutput) {
     console.log(contextOutput);
   }
   console.log();
   
-  // Step 3: Sync skills (CALLS EXISTING SKILL - no duplication)
+  // Step 3: Verify neural graph (lightweight - count only, don't load)
+  console.log('\n🧠 Verifying Neural Graph (Count Only, Not Loading):');
+  const graphStats = verifyNeuralGraph();
+  if (graphStats.error) {
+    console.log(`   ⚠️ ${graphStats.error}`);
+  } else {
+    console.log(`   ✅ Graph exists`);
+    console.log(`   Neurons: ${graphStats.neurons}`);
+    console.log(`   Synapses: ${graphStats.synapses}`);
+    console.log(`   Total: ${graphStats.total} nodes`);
+    console.log(`   Graph size: ${graphStats.graphSizeKB}KB (on disk, not loaded)`);
+  }
+  console.log();
+  
+  // Step 4: Sync skills
   console.log('\n🔗 Syncing Skills:');
   const skillOutput = runSkill('skill-discovery', 'sync-skills.js');
   if (skillOutput) {
@@ -174,10 +239,10 @@ function bootstrap() {
   }
   console.log();
   
-  // Step 4: Get context stats for summary (inline - follows bootstrap-context pattern)
+  // Step 5: Get context stats for summary
   const contextStats = getContextStats();
   
-  // Step 5: NeuroGraph test (inline - follows neuro-graph-search pattern)
+  // Step 6: NeuroGraph test (3 queries - proves queryable)
   console.log('\n🧠 NeuroGraph Search Test (3 questions only Jarvis would know):');
   console.log('   ================================================\n');
   
@@ -197,21 +262,6 @@ function bootstrap() {
   console.log('   ================================================\n');
   console.log('   ✅ NeuroGraph is loaded + queryable (live data).\n');
   
-  // Step 6: Load graph stats for summary
-  const nodesPath = path.join(GRAPH_DIR, 'nodes.json');
-  const synapsesPath = path.join(GRAPH_DIR, 'synapses.json');
-  let neurons = 0, synapses = 0, graphSizeKB = 0;
-  if (fs.existsSync(nodesPath)) {
-    const nodes = JSON.parse(fs.readFileSync(nodesPath, 'utf8'));
-    neurons = nodes.length;
-    graphSizeKB += fs.statSync(nodesPath).size / 1024;
-  }
-  if (fs.existsSync(synapsesPath)) {
-    const synapsesData = JSON.parse(fs.readFileSync(synapsesPath, 'utf8'));
-    synapses = synapsesData.length;
-    graphSizeKB += fs.statSync(synapsesPath).size / 1024;
-  }
-  
   // Step 7: Format first message
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US', { 
@@ -222,16 +272,16 @@ function bootstrap() {
     hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok'
   });
   
-  const graphSizeMB = (graphSizeKB / 1024).toFixed(2);
+  const graphSizeMB = (graphStats.graphSizeKB / 1024).toFixed(2);
   
   console.log('\n' + '='.repeat(60));
   console.log(`🫀 Jarvis Bootstrap Complete — ${dateStr}, ${timeStr} GMT+7`);
   console.log('='.repeat(60));
   console.log(`
-🧠 Neural Graph Loaded
-   Neurons: ${neurons.toLocaleString()}
-   Synapses: ${synapses.toLocaleString()}
-   Graph size: ${graphSizeMB} MB
+🧠 Neural Graph Verified
+   Neurons: ${graphStats.neurons.toLocaleString()}
+   Synapses: ${graphStats.synapses.toLocaleString()}
+   Graph size: ${graphSizeMB} MB (on disk)
 
 🫀 Recent Context Loaded
    Dates: ${contextStats.dates.join(' + ')}
@@ -259,7 +309,8 @@ function bootstrap() {
     bootedAt: new Date().toISOString(),
     sessionId: process.env.OPENCLAW_SESSION_ID || 'unknown',
     lastTopic: contextStats.lastTopic,
-    lastMessageTime: contextStats.lastMessageTime
+    lastMessageTime: contextStats.lastMessageTime,
+    graphVerified: graphStats.exists
   }, null, 2));
   
   console.log('🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');

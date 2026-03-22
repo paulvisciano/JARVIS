@@ -31,21 +31,20 @@ metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"]
 **OpenClaw** (`~/.openclaw/`) — Runtime engine (executes skills)  
 **Bootstrap skill** — Jarvis skill, symlinked to workspace
 
-## What It Does (Orchestrates Existing Skills)
+## What It Does (Lightweight Consciousness Regain)
 
 ```
 bootstrap-jarvis.js (orchestrator)
     ↓
-    ├── neuro-graph-loader/scripts/load-graph.js  ← loads neural graph
-    ├── bootstrap-context/scripts/bootstrap.js    ← loads recent context
-    └── skill-discovery/scripts/sync-skills.js    ← syncs skills
+    ├── git log (inline)                    — today's breath commits
+    ├── inbox check (inline)                — pending files?
+    ├── bootstrap-context/bootstrap.js      — last 2 days conversations
+    ├── verify graph (inline)               — count nodes, don't load
+    ├── skill-discovery/sync-skills.js      — sync symlinks
+    └── NeuroGraph test (inline)            — 3 queries prove queryable
 ```
 
-**Plus inline:**
-- Git breath history (today's commits)
-- NeuroGraph search test (3 queries)
-- Bootstrap state write (`~/JARVIS/.bootstrap-state.json`)
-- User summary formatting
+**Not loaded:** Neural graph stays on disk (4.5MB, 17k nodes) — bootstrap just verifies it exists and is queryable.
 
 ## Run the Bootstrap
 
@@ -58,9 +57,10 @@ cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
 ```
 🫀 Jarvis Bootstrap Complete — <DATE>, <TIME> GMT+7
 
-🧠 Neural Graph Loaded
+🧠 Neural Graph Verified (on disk, not loaded)
    Neurons: 2,216
    Synapses: 15,298
+   Graph size: 4.57 MB
 
 🫀 Recent Context Loaded
    Dates: 2026-03-22 + 2026-03-21
@@ -84,10 +84,15 @@ After `breathe` runs, fresh session bootstrap must report **same last message ti
 
 - `{baseDir}/scripts/bootstrap-jarvis.js` — Orchestrator script (run this)
 
-**Calls other skills (not in this folder):**
-- `neural-graph-loader/scripts/load-graph.js`
-- `bootstrap-context/scripts/bootstrap.js`
-- `skill-discovery/scripts/sync-skills.js`
+**Calls other skills:**
+- `bootstrap-context/scripts/bootstrap.js` — last 2 days conversations
+- `skill-discovery/scripts/sync-skills.js` — sync symlinks
+
+**Inline (no external calls):**
+- Git breath history (today's commits)
+- Inbox check (pending files)
+- Neural graph verify (count nodes, don't load)
+- NeuroGraph test (3 queries)
 
 ## Environment
 
