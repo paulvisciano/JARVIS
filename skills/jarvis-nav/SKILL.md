@@ -181,34 +181,56 @@ browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=<aria-ref>, 
 
 ## Notes
 
-- **HTTPS required** → Always use `https://localhost:18787/` (not HTTP)
-- **Dev server** → `http://localhost:8081/` for iteration (no-cache, editable)
-- **Production** → `https://localhost:18787/` (voice pipeline + API routes)
+- **Production URL** → Always `https://localhost:18787/neuro-graph` (NOT localhost:8081)
+- **HTTPS required** → Use `https://` not `http://`
 - **Screenshots** → Saved to `~/.openclaw/media/browser/<uuid>.png`
 - **Tab reuse** → Check tabs first, navigate existing, open new only if needed
 - **URL encoding** → Use `%3A` for `:` in date params (e.g., `day%3A2026-03-22`)
 
 ## Search & Navigate to Specific Nodes
 
-**Find a specific learning/memory:**
+**Workflow: "Show me a learning from today"**
+
 ```
-# 1. Expand side menu drawer (if collapsed)
-browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=e3)
+# Step 1: Query neurograph data (source of truth)
+exec(command="cat ~/JARVIS/RAW/memories/nodes.json | python3 -c "import sys,json; nodes=json.load(sys.stdin); learnings=[n for n in nodes if n.get('category')=='learning' and '2026-03-22' in str(n.get('moments',[{}])[0].get('date',''))]; print('\\n'.join([n['id'] for n in learnings]))"")
 
-# 2. Type node name in search box (aria-ref may vary, inspect snapshot first)
-browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=e44, text="memory-separation-architecture")
+# Step 2: Pick a learning from the list
+# e.g., "self-observation-loop-closed"
 
-# 3. Click the matching node button from filtered list
-browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=e54)
+# Step 3: Open NeuroGraph (if not already open)
+browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/neuro-graph?time=day%3A2026-03-22)
+
+# Step 4: Check tabs, get targetId
+browser(action=tabs, profile=openclaw)
+
+# Step 5: Snapshot UI to get current aria-refs
+browser(action=snapshot, profile=openclaw, targetId=<id>, refs=aria)
+
+# Step 6: Expand side menu drawer (if collapsed)
+browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<expand-button-ref>)
+
+# Step 7: Type learning name in search box
+browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=<searchbox-ref>, text="self-observation-loop-closed")
+
+# Step 8: Click the matching node button
+browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<node-button-ref>)
 ```
 
 **Pattern:**
-- Snapshot first to get current aria-refs (refs change based on DOM state)
-- Search box filters the node list instantly
-- Click the button matching your search term
-- Graph canvas focuses on that node
+1. **Data first** → Query nodes.json to know what exists
+2. **Pick one** → Select a learning ID from the query result
+3. **Open UI** → Navigate to neurograph (production URL)
+4. **Snapshot** → Get fresh aria-refs (they change per DOM state)
+5. **Search** → Type the learning name in the search box
+6. **Navigate** → Click the filtered node button
 
-**Use case:** "Show me the learning about X from today" → Search → Navigate → Done
+**Why this order:**
+- Browser automation on large DOM (2504 nodes) is slow/unreliable
+- Querying data first is instant and reliable
+- Then use UI for visualization/navigation
+
+**Use case:** "Show me the learning about X from today" → Query → Pick → Open → Search → Navigate → Done
 
 ## When NOT to Use
 
