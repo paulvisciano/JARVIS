@@ -4,12 +4,10 @@
 **Type:** insight
 **Status:** extracted
 
-Knowledge should fold into three levels of compression:
+Knowledge should fold into progressively denser forms:
 
-1. **Learnings** (full detail) - Individual .md files for each insight
-2. **Summary** (quick scan) - Living digest that grows throughout the day
-3. **Analogies** (instant meaning) - Essence captured in metaphor (3-5 words)
+1. **Learnings** (detailed .md files) - Full context, dive deep
+2. **Summary** (living digest) - Quick scan of what happened
+3. **Analogies** (essence in metaphor) - Instant meaning, 3-5 metaphors
 
-Each level serves different recall needs. Raw context (500KB) → Learnings (N files) → Summary (1 paragraph) → Analogies (3-5 metaphors).
-
-This allows folding knowledge into neurons while maintaining traceability at every layer.
+Each layer serves different recall needs. Raw context (~500KB) compresses to N learning files, then 1 summary line, then 3 analogy words. This enables flexible retrieval based on how much detail is needed.

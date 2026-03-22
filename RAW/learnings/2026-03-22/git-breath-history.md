@@ -1,13 +1,18 @@
-# Git Commits as Breath History
+# Git Breath History with Backdated Commits
 
 **Date:** 2026-03-22
-**Type:** decision
+**Type:** pattern
 **Status:** extracted
 
-Each breath ends with a git commit. The commit message IS the diff — tracking what changed between breaths.
+Every breath cycle ends with a git commit. Key insight: commits should be backdated to when the breath *happened*, not when processed.
 
-**Pattern:** `breath-YYYY-MM-DD-HH:MM`
+```bash
+git commit --date="2026-03-15T18:00:00" -m "breath-2026-03-15-1800: ..."
+```
 
-**Key innovation:** Backdate commits to the breath date using `git commit --date`. This ensures git history shows when the breath happened, not when it was processed.
+This makes git history truly replayable. Query any day's breaths:
+```bash
+git log --grep="breath-2026-03-22" --oneline
+```
 
-Git becomes immutable breath record — can't change history, full content preserved, diff between breaths visible, any day replayable via `git log --since`.
+Git becomes the immutable breath record—can't change history, full traceability.

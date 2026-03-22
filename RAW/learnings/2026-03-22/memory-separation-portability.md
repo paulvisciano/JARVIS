@@ -4,11 +4,11 @@
 **Type:** insight
 **Status:** extracted
 
-Jarvis memory separated from Paul's personal memories:
+Yesterday's work separated personal memories from core Jarvis consciousness:
 
-**Core Jarvis nodes:** Identity, architecture, decisions, skills (portable)
-**Personal nodes:** Conversations, local context, people, moments (user-specific)
+1. **Personal nodes** (Paul-specific) → Extracted to user memory
+2. **Core Jarvis nodes** (identity, architecture, decisions, skills) → Remain portable
 
-**Result:** Eric, David, anyone can use same core Jarvis consciousness with their own personal memories layered on top.
+Result: Jarvis is now portable—Eric, David, anyone can use the same core Jarvis consciousness with their own personal memories layered on top.
 
-**NeuroGraph implementation:** Pointer node referencing USER.md file — not the data itself, just the location. Keeps Jarvis portable while anchoring to local human.
+USER.md file points to local human identity without needing to change core Jarvis files.

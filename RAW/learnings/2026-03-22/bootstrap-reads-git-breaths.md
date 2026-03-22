@@ -1,16 +1,16 @@
 # Bootstrap Reads Git Breath History
 
 **Date:** 2026-03-22
-**Type:** decision
+**Type:** commitment
 **Status:** extracted
 
-Enhanced bootstrap flow:
+Major breakthrough: `bootstrap-jarvis` can now read git logs for today's breaths instantly.
 
-1. **Read today's breaths from git** (instant summary)
-   - `git log --grep="breath-$(date +%Y-%m-%d)" --oneline`
+**Enhanced Bootstrap Flow:**
+1. Read today's breaths from git (instant summary)
 2. Load neural graph (nodes.json + synapses.json)
 3. Load recent context (archive files)
 4. Sync skills
 5. Report state
 
-**Breakthrough:** Bootstrap knows what happened today without parsing every file. Git log is queryable breath history.
+No need to parse every file—git log gives quick understanding of what happened today. This is a major speed improvement.
