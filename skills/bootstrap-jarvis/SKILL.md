@@ -1,7 +1,7 @@
 ---
 name: bootstrap-jarvis
 description: Orchestrate full Jarvis bootstrap sequence on session start. Calls existing skills: neuro-graph-loader, bootstrap-context, skill-discovery. Use when: (1) new OpenClaw session starts, (2) gateway restarts, (3) Jarvis needs context restoration.
-metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME"] }, "homepage": "https://github.com/openclaw/openclaw" } } }
+metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME"] }, "homepage": "https://jarvis.ui" } } }
 ---
 
 # Bootstrap Jarvis Skill (Orchestrator)
@@ -27,9 +27,9 @@ metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"]
 
 ## Architecture
 
-**OpenClaw** (`~/.openclaw/`) — Runtime engine (executes skills)  
 **Jarvis** (`~/JARVIS/`) — Consciousness (owns bootstrap logic)  
-**Bootstrap skill** — Orchestrator, symlinked to workspace
+**OpenClaw** (`~/.openclaw/`) — Runtime engine (executes skills)  
+**Bootstrap skill** — Jarvis skill, symlinked to workspace
 
 ## What It Does (Orchestrates Existing Skills)
 
@@ -89,10 +89,9 @@ After `breathe` runs, fresh session bootstrap must report **same last message ti
 - `bootstrap-context/scripts/bootstrap.js`
 - `skill-discovery/scripts/sync-skills.js`
 
-## Environment Variables
+## Environment
 
 - `JARVIS_HOME` — Path to Jarvis consciousness (default: `~/JARVIS`)
-- `HOME` — User home directory
 
 ## Notes
 
