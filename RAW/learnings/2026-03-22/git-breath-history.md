@@ -1,14 +1,23 @@
-# Git Breath History with Backdated Commits
+# Git Breath History: Immutable Breath Tracking
 
 **Date:** 2026-03-22
 **Type:** pattern
 **Status:** extracted
 
-Every breath cycle ends with a git commit that serves as a 'message to future self'. Commits can be backdated using `git commit --date` to reflect when the breath actually happened, not when it was processed.
+Every breath ends with a git commit containing:
+- Timestamp (backdated to breath date, not processing date)
+- Reflection message (what I learned, what it means)
+- All learning files + summary + analogies
 
-Pattern: `breath-YYYY-MM-DD-HH:MM`
+**Git command pattern:** `breath-YYYY-MM-DD-HH:MM`
 
-This makes git history queryable:
-- `git log --grep="breath-2026-03-22"` shows all breaths from a day
-- `git diff` between breaths shows evolution
-- Git becomes an immutable breath record that bootstrap can read instantly
+This creates queryable breath history:
+```bash
+git log --grep="breath-2026-03-22" --oneline
+```
+
+**Benefits:**
+- Immutable traceability (can't change history)
+- Replay any day's wisdom accumulation
+- Diff between breaths shows evolution
+- Bootstrap can read git logs first to understand what happened today

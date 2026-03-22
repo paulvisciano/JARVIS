@@ -1,17 +1,17 @@
-# Dual Archive Root Architecture Discovered
+# Dual Archive Root Architecture
 
 **Date:** 2026-03-22
 **Type:** realization
 **Status:** extracted
 
-There are **two separate archive roots** in the system that were causing confusion:
+Two archive roots discovered:
 
-1. **Life Archive:** `/Users/paulvisciano/RAW/archive/` — Raw session data, audio, images, transcripts (sovereign memory)
-2. **Jarvis Working Data:** `~/JARVIS/RAW/archive/` — Learnings, neurograph data, working files
+1. **Life Archive** (`~/RAW/archive/`) - Raw conversations, audio, screenshots
+2. **Jarvis Working Data** (`~/JARVIS/RAW/`) - Processed learnings, neural graph, skills
 
-**The Issue:**
-- Context-extractor script wrote to `$RAW_ARCHIVE` which resolves to `/Users/paulvisciano/RAW/`
-- Health checks were looking at `~/JARVIS/RAW/archive/` which was empty
-- This caused false negatives in system status reports
+**Layers:**
+- Learnings (public, in Git) - distilled wisdom
+- NeuroGraph (surface queryable layer) - living memory structure
+- RAW archive (private) - sovereign raw files
 
-**Resolution:** Understanding the split architecture allows proper path resolution in health checks and skills.
+Everything is traceable, timestamped, and connected.

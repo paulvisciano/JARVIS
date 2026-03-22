@@ -4,17 +4,19 @@
 **Type:** insight
 **Status:** extracted
 
-Git and NeuroGraph are complementary layers of the same memory:
+Two complementary layers of the same memory:
 
 **Git = Immutable History**
 - Can't change (commit hash is permanent)
 - Backdated breaths (history is accurate)
 - Full content (.md files, summary, analogies)
 - Diff between breaths (see evolution)
+- Replay any day
 
 **NeuroGraph = Living Structure**
 - Queryable (search by type, category, date)
 - Visualizable (orbits by radius, colors by type)
-- Dynamic (nodes fire, synapses connect)
+- Structured long-term memory with pointers
+- 2,216 neurons, 15,298 synapses (as of this breath)
 
-Together they provide full traceability: Git timestamps everything, NeuroGraph makes it navigable.
+**Together:** Git is the fossil record, NeuroGraph is the living mind. Both sync, both traceable.

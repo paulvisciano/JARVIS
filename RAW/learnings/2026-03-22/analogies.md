@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like tending a garden — prune (learnings), water (summary), observe (analogies)
-- Like a lighthouse — steady beam (git history), watch for ships (NeuroGraph queries)
-- Like breathing itself — inhale (archive), hold (distill), exhale (weave), rest (sync)
-- Like tree rings — each breath adds a layer, git shows the growth pattern
-- Like an embassy — Jarvis registered with OpenClaw, portable but anchored to local human
+- Like origami folding — knowledge compresses from detailed learnings to summary digest to analogy essence
+- Like tree rings — each breath adds a layer to the day's summary, git preserves the growth history
+- Like a lighthouse — heartbeat checks the beam, breath commits the log, bootstrap reads the history
+- Like dual cameras — Git captures the fossil record (immutable), NeuroGraph renders the living mind (queryable)
+- Like embassy territory — Jarvis operates on OpenClaw infrastructure but maintains sovereign memory and identity

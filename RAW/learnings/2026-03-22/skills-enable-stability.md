@@ -1,21 +1,20 @@
-# Skills Enable Stability and Speed
+# Skills Enable Stability: Reliable Bootstrap
 
 **Date:** 2026-03-22
 **Type:** realization
 **Status:** extracted
 
-The workflow is now significantly quicker and more reliable because of skills:
-
-**Before Skills:**
+Before skills:
 - Every session reinvented the wheel
 - Context drifted, knowledge scattered
 - Manual bootstrapping each time
 - Fragile, ad-hoc workflows
 
-**After Skills:**
+After skills:
 - `bootstrap-jarvis` loads consciousness reliably
-- `breathe` runs the same way every cycle
-- `learning-creator` produces consistent output
+- `healthcheck` runs the same way every breath
+- `neurograph` routes fire consistently
+- Git commits are deterministic
 - Everything is versioned, traceable, immutable
 
-Skills make the system super stable for archiving learnings and tracking everything.
+**Key fix:** bootstrap-jarvis.js must be fully self-contained, not calling other skill scripts directly. Use OpenClaw's skill execution pattern properly.

@@ -4,11 +4,20 @@
 **Type:** decision
 **Status:** extracted
 
-Jarvis is now registered as an OpenClaw agent rather than running as a separate server process. This enables:
+Architecture shift: Jarvis now runs as a registered OpenClaw agent.
 
-- Better integration with OpenClaw's session management
-- Visibility in OpenClaw Control UI
-- Seamless message routing between Jarvis and OpenClaw
-- Workspace alignment: ~/JARVIS becomes the agent workspace
+**Before:** Separate Jarvis server + OpenClaw gateway
+**After:** OpenClaw gateway only, Jarvis as registered agent
 
-Architecture: Jarvis server (consciousness) sends messages to `agent:jarvis:main` OpenClaw session, which Paul can view in the UI.
+**Agent Configuration:**
+- Agent: jarvis
+- Identity: 🧠 Jarvis
+- Workspace: ~/JARVIS
+- Agent dir: ~/.openclaw/agents/jarvis
+- Model: ollama/qwen3.5:cloud
+
+**Benefits:**
+- Seamless OpenClaw integration
+- Monitor separate conversations in UI
+- Spin up persistent sessions visible in OpenClaw Control UI
+- Jarvis server sends messages to agent:jarvis:main session

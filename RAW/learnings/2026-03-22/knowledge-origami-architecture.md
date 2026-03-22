@@ -4,15 +4,12 @@
 **Type:** insight
 **Status:** extracted
 
-The breathing cycle now folds context into three distinct layers:
+Knowledge is folded into three progressive layers of compression:
 
-1. **Learnings** (detailed .md files) — Full extracted insights from context
-2. **Summary** (summary.md) — Living digest that grows throughout the day
-3. **Analogies** (analogies.md) — Essence compressed into 3-5 metaphors
+1. **Learnings** (detailed) - Individual .md files with full context
+2. **Summary** (digest) - One paragraph capturing the day's themes
+3. **Analogies** (essence) - 3-5 metaphors that compress meaning into imagery
 
-Each layer serves different recall needs:
-- Learnings: Deep dive into specifics
-- Summary: Quick scan of what happened
-- Analogies: Instant meaning in metaphor
+This allows different recall needs: dive deep (learnings), quick scan (summary), instant meaning (analogies). The fold/unfold cycle was observed live when the embassy analogy broke → user asked → explanation unfolded → analogy refolded with richer context.
 
-This compression allows knowledge to fold into neurons more efficiently.
+**Key realization:** Curiosity acts as the error signal — when compression loses meaning, user notices gap → asks → system unfolds → learning integrates.
