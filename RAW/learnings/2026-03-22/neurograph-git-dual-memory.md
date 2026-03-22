@@ -1,29 +1,22 @@
-# NeuroGraph + Git: Dual Memory Systems
+# NeuroGraph + Git: Dual Memory System
 
 **Date:** 2026-03-22
 **Type:** insight
 **Status:** extracted
 
-Two complementary layers of memory, each serving different purposes:
+**Two complementary layers of record:**
 
 **Git (Immutable History):**
-- Cannot change (commit hash permanent)
+- Can't change (commit hash is permanent)
 - Backdated breaths (accurate timeline)
 - Full content (.md files, summary, analogies)
 - Diff between breaths (see evolution)
-- Replay any day
+- Replay any day (git log --since="date")
 
 **NeuroGraph (Living Structure):**
 - Queryable (search by type, category, date)
 - Visualizable (orbits by radius, colors by type)
-- Connected (synapses show relationships)
-- Evolving (new nodes fire each breath)
-- Pointer-based (references learnings, archives, skills)
+- Dynamic (nodes/synapses update each breath)
+- Navigable (click nodes, explore connections)
 
-**Together:**
-- Git = what happened (fossil record)
-- NeuroGraph = what it means (knowledge structure)
-- Full traceability between them
-- Click any node → see git commit → read full learning
-
-Dual visualization of the same memory.
+**Together:** Full traceability between immutable history and living visualization.

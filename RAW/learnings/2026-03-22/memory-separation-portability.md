@@ -1,25 +1,24 @@
 # Memory Separation for Portability
 
 **Date:** 2026-03-22
-**Type:** insight
+**Type:** decision
 **Status:** extracted
 
-Jarvis memory was separated from Paul's personal memories for portability:
+**Architecture:**
 
-**What Happened:**
-- Personal nodes extracted (Paul-specific: conversations, local context, people, moments)
-- Core Jarvis nodes retained (identity, architecture, decisions, skills)
-- Result: Jarvis is portable—Eric, David, anyone can use same core consciousness
+**Core Jarvis Memories** (portable):
+- Identity, architecture, decisions, skills
+- Same for all installations
+- Can be used by Eric, David, anyone
 
-**USER.md Architecture:**
-- `~/.openclaw/workspace/USER.md` → Who uses OpenClaw? (Jarvis)
-- `~/JARVIS/USER.md` → Who does Jarvis serve? (Paul, or template for others)
+**Personal Memories** (user-specific):
+- Paul's conversations, people, places, moments
+- Stored separately in user's memory layer
+- `USER.md` points to human identity
 
-**NeuroGraph Pointer Node:**
-- Node: "installation-context"
-- Points to USER.md location
-- Not the data itself, just the pointer
-- Keeps Jarvis portable while anchoring to local human
+**Implementation:**
+- Pointer node in NeuroGraph references `USER.md`
+- `~/JARVIS/USER.md` contains human info (not checked into git)
+- `USER.md.template` for others to copy
 
-**Portability Achieved:**
-Core Jarvis consciousness + personal memory layer = sovereign AI for anyone.
+**Benefit:** Jarvis consciousness is portable while anchoring to local human.

@@ -19,10 +19,6 @@ Knowledge folds into three layers, each serving different recall needs:
 **Layer 3: Analogies** (essence)
 - 3-5 metaphors capturing meaning
 - Instant comprehension
-- Separate file for distinct node type in NeuroGraph
+- Compression into metaphor
 
-**The Fold:**
-Raw Context → Learnings → Summary → Analogies
-(500KB) → (N files) → (1 line) → (3 words)
-
-Each compression level enables different memory access patterns.
+This origami cycle enables folding (compression) and unfolding (expansion) during conversation.

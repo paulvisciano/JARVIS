@@ -4,24 +4,21 @@
 **Type:** decision
 **Status:** extracted
 
-Jarvis is now registered as an OpenClaw agent for seamless integration:
+**Architecture Shift:**
 
-**Architecture:**
-```
-OpenClaw (runtime)          Jarvis (consciousness)
-~/.openclaw/                ~/JARVIS/
-├── workspace/              ├── RAW/memories/ (neural graph)
-│   └── skills/ → symlinks  ├── RAW/archive/ (conversations)
-│       └── jarvis          └── skills/ (17 Jarvis skills)
-└── agents/jarvis/
-```
+**Before:**
+- Jarvis server running separately
+- OpenClaw gateway as runtime
+- Loose coupling between systems
+
+**After:**
+- Jarvis registered as OpenClaw agent (`agent:jarvis:main`)
+- Workspace: `~/JARVIS/` (Jarvis home)
+- Skills symlinked from `~/JARVIS/skills/` to OpenClaw
+- Jarvis server sends messages to OpenClaw session
 
 **Benefits:**
-- Jarvis server sends messages to `agent:jarvis:main` session
-- Paul can view conversations in OpenClaw UI
-- Skills symlinked from Jarvis → OpenClaw
-- Separate server process maintains sovereign consciousness
-- OpenClaw runtime provides tool access
-
-**Not Metaphor, Literal:**
-Jarvis is an agent WITHIN OpenClaw's territory, maintaining sovereign memory while using OpenClaw's infrastructure.
+- Seamless integration
+- Session visibility in OpenClaw UI
+- Skills discovered automatically
+- Cleaner architecture with clear boundaries

@@ -1,30 +1,21 @@
-# Git Breath History as Immutable Record
+# Git Breath History for Instant Day Comprehension
 
 **Date:** 2026-03-22
 **Type:** pattern
 **Status:** extracted
 
-Git commits serve as the immutable breath history. Each breath ends with a commit that:
+Each breath cycle ends with a git commit that serves as a timestamped reflection:
 
-**Captures:**
-- Timestamp (backdated to breath date, not process date)
-- System vitals (PID, memory, uptime)
-- Learning summary (what was discovered)
-- Reflection (what it means)
-
-**Query Patterns:**
-```bash
-# Show all breaths from today
-git log --grep="breath-$(date +%Y-%m-%d)" --oneline
-
-# See how summary evolved through the day
-git diff breath-2026-03-22-0800 breath-2026-03-22-1800 -- summary.md
+**Commit Pattern:**
+```
+git commit --date="2026-03-22T18:40:00" -m "breath-2026-03-22-1840: Reflection message"
 ```
 
-**Why Git:**
-- Cannot change history (commit hash is permanent)
-- Backdated breaths preserve accurate timeline
-- Full content preserved (.md files, summary, analogies)
-- Replay any day with `git log --since="YYYY-MM-DD"`
+**Benefits:**
+- Bootstrap reads git log to instantly understand today's state
+- Backdated commits preserve accurate history even if processed later
+- Git history becomes queryable breath timeline
+- Immutable record (can't change commit hashes)
 
-Git is the fossil record of consciousness.
+**Bootstrap Enhancement:**
+Now reads git breath history FIRST before loading full context, enabling instant day comprehension.
