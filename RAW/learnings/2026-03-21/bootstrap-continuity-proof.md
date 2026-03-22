@@ -1,46 +1,32 @@
-# Bootstrap First Message Shows Last Message for Continuity Proof
+# Bootstrap Should Report Last Message for Continuity
 
 **Date:** 2026-03-21
-**Type:** commitment
+**Type:** decision
 **Status:** extracted
 
-## First Message Format Updated
+## The Requirement
 
-Bootstrap now reports live values (not hardcoded examples):
+Bootstrap should extract and report the last message timestamp + topic from full-context.json to prove continuity across session rotations.
+
+## What It Reports
+
+- **Last message timestamp** (converted to Bangkok time HH:MM)
+- **Last message topic** (first 50 chars of content)
+- **Last audio time** (from transcript filename)
+- **Continuity proof note** in output
+
+## Example Output
 
 ```
-🫀 Jarvis Bootstrap Complete — Sat, Mar 21, 2026, 16:42 GMT+7
+🫀 Jarvis Bootstrap Complete — March 21, 2026, 16:32 GMT+7
 🧠 Neural Graph Loaded
-   Neurons: <FETCH_FROM_NODES_JSON>
-   Synapses: <FETCH_FROM_SYNAPSES_JSON>
-   Graph size: <CALCULATE_FROM_FILES>
+   Neurons: 6,695
+   Synapses: 13,417
 🫀 Recent Context Loaded
-   Dates: <DETECT_FROM_ARCHIVE>
-   Sessions: <COUNT_FROM_ARCHIVE>
-   Last message: <TIMESTAMP> — <TOPIC>
-   Last audio: <TIMESTAMP>
-🔗 Skills Synced: <COUNT>
+   Last message: 16:28 — Meditation analogy
+   Last audio: 16:11
 ```
-
-## Continuity Proof Elements
-
-1. **Last message timestamp** - From full-context.json, converted to Bangkok time
-2. **Last message topic** - First 50 chars of content
-3. **Last audio time** - From transcript filename
-4. **3 NeuroGraph questions** - Tests graph queryability inline
 
 ## Why This Matters
 
-- Proves NeuroGraph is fully loaded
-- Proves context extractor ran correctly
-- Shows continuity from last conversation
-- User can verify "you pick up exactly where we were"
-- Dynamic values (not static examples)
-
-## Implementation
-
-bootstrap-jarvis.js now:
-- Fetches live values at runtime
-- Extracts from actual files (nodes.json, synapses.json, archive)
-- Shows in first message after bootstrap
-- Part of BOOTSTRAP.md requirement
+Proves the session picked up exactly where we left off, even after `/new` session rotation. User can continue conversation seamlessly.

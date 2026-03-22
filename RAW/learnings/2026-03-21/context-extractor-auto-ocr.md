@@ -1,20 +1,22 @@
-# Context Extractor Auto-Runs OCR on Screenshots in Archive
+# Context Extractor Should Auto-Run OCR on Screenshots
 
 **Date:** 2026-03-21
 **Type:** decision
 **Status:** extracted
 
-## What Changed
+## The Enhancement
 
-**context-extractor/extract-context.js** - Now Auto-Runs OCR
+`context-extractor/extract-context.js` now auto-runs OCR on screenshots in the archive folder.
 
-### New extractOCR() Function
+## New `extractOCR()` Function
 
-- Scans ~/RAW/archive/YYYY-MM-DD/images/ for all image files
-- Checks if .txt file exists (reuses existing OCR)
-- Runs tesseract on images without OCR
-- Saves output as .txt files alongside images
-- Includes OCR text in full-context.json under ocrTexts array
+```javascript
+// Scans ~/RAW/archive/YYYY-MM-DD/images/ for all image files
+// Checks if .txt file exists (reuses existing OCR)
+// Runs tesseract on images without OCR
+// Saves output as .txt files alongside images
+// Includes OCR text in full-context.json under ocrTexts array
+```
 
 ## Output Now Includes
 
@@ -32,16 +34,23 @@
 
 ## Why This Matters
 
-1. **Automatic** - No manual OCR skill invocation needed
-2. **Complete Context** - OCR text included in full-context.json
-3. **Reusable** - Existing OCR cached, only new images processed
-4. **NeuroGraph Ready** - OCR content available for learning extraction
+- No manual OCR skill calls needed
+- Screenshots become searchable context
+- Bruce conversation proof captured via OCR
+- UI status bugs documented via screenshots
+- Full context includes visual information
 
-## Integration Point
+## Integration with Breathe
 
-Context extractor is Step 2 (Hold) of breathe skill:
-```bash
-node skills/context-extractor/scripts/extract-context.js $(date +%Y-%m-%d)
-```
+Step 2 (Hold/Distill) of breathe pipeline:
+- Calls context-extractor
+- Auto-runs OCR on new images
+- Reuses existing OCR (idempotent)
+- Outputs clean `full-context.json`
 
-Part of breathe pipeline - not separate manual step.
+## Result
+
+11 OCR images processed in today's breathe run:
+- 3 existing OCR (Bruce screenshots from earlier)
+- 7 new OCR (today's screenshots: 1:54 PM → 3:34 PM)
+- 1 newly extracted (UI bug documentation)

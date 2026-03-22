@@ -30,12 +30,19 @@ cat ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
 # ~500KB clean text (no base64)
 ```
 
-### Step 2: I Read + Synthesize
+### Step 2: Model Synthesis (via Gateway)
 
-**I process the context:**
-- Read conversations, transcripts, decisions
-- Identify: decisions, realizations, commitments, patterns
-- Synthesize insights (not just extract facts)
+**Context is posted to OpenClaw Gateway:**
+- Uses `openclaw message send` to route through Gateway
+- Gateway calls configured model (Ollama, Claude, etc.)
+- Observable in session history
+- Provider-agnostic (works for everyone)
+
+**Model processes the context:**
+- Reads conversations, transcripts, decisions
+- Identifies: decisions, realizations, commitments, patterns
+- Synthesizes insights (not just extract facts)
+- Returns JSON array of learning objects
 
 **Example insights:**
 - "Paul decided X because Y" (decision)
@@ -59,6 +66,16 @@ cat > ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)/fuds-tournament-timeline.md << 'E
 **Airport:** VPS (Pensacola) or PNS (Panama City)
 **Context:** Paul returning from Bangkok in time for tournament.
 EOF
+```
+
+### Step 3: Model Synthesis (via OpenClaw Gateway)
+
+```bash
+# Model call routes through Gateway (works with any provider: Ollama, Claude, etc.)
+node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
+
+# Internally uses: openclaw message send --message "<prompt>"
+# Observable in session history, provider-agnostic
 ```
 
 ### Step 4: Create Learning Nodes

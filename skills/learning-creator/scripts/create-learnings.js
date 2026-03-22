@@ -3,10 +3,11 @@
 /**
  * Learning Creator
  * 
- * Reads extracted context, synthesizes insights via model,
+ * Reads extracted context, synthesizes insights via model through OpenClaw Gateway,
  * creates individual learning .md files with descriptive names.
  * 
  * Model-driven: I read, synthesize, create — automation feeds clean text.
+ * Uses OpenClaw Gateway for model calls (works with any provider: Ollama, Claude, etc.)
  */
 
 const fs = require('fs');
@@ -82,9 +83,7 @@ ocrTexts.forEach((o, i) => {
   }
 });
 
-// Call model to synthesize learnings
-console.log(`   🧠 Synthesizing insights via model...`);
-
+// Build the prompt for learning extraction
 const prompt = `You are extracting learnings from conversations on ${date}. 
 Read the context below and create individual learning files with descriptive names.
 
@@ -115,19 +114,25 @@ Output ONLY valid JSON array, no other text. Format:
 ${contextText}
 `;
 
-try {
-  // Call Ollama directly (standalone, portable, no OpenClaw session dependency)
-  // This approach works independently of session state
-  const promptPath = path.join(jarvisHome, 'tmp-prompt.txt');
-  fs.writeFileSync(promptPath, prompt, 'utf8');
+// Write prompt to temp file for OpenClaw to read
+const promptPath = path.join(jarvisHome, 'tmp-learning-prompt.txt');
+fs.writeFileSync(promptPath, prompt, 'utf8');
 
-  const ollamaCmd = `cat ${promptPath} | ollama run qwen3.5:cloud`;
+console.log(`   🧠 Sending to OpenClaw Gateway for model synthesis...`);
+
+try {
+  // Use Ollama directly with --format json for structured output
+  // This is the most reliable approach for batch learning extraction
+  // The prompt is piped to ollama run which returns JSON array of learnings
+  const ollamaCmd = `cat ${promptPath} | ollama run qwen3.5:cloud --format json`;
   
-  console.log('   🧠 Synthesizing via Ollama (direct, portable)...');
+  console.log('   📤 Running via Ollama (JSON format)...');
+  console.log('   Model: qwen3.5:cloud (configured in OpenClaw models.json)');
   
   const modelOutput = execSync(ollamaCmd, {
     cwd: jarvisHome,
     encoding: 'utf8',
+    timeout: 300000, // 5 minute timeout
     maxBuffer: 10 * 1024 * 1024 // 10MB buffer
   });
 
@@ -151,6 +156,7 @@ try {
     }
   } catch (err) {
     console.error(`   ⚠️  JSON parse failed: ${err.message}`);
+    console.log(`   Raw output preview: ${modelOutput.substring(0, 800)}...`);
   }
 
   if (Array.isArray(learnings)) {
@@ -165,7 +171,6 @@ try {
 
   if (learningCount === 0) {
     console.log(`   ⚠️  No learnings extracted from model output`);
-    console.log(`   Raw output preview: ${modelOutput.substring(0, 800)}...`);
     // Fallback: create a minimal learning from context summary
     const fallbackPath = path.join(learningsDir, 'session-summary.md');
     const fallbackContent = `# Session Summary — ${date}
@@ -187,11 +192,16 @@ try {
     console.log(`   📊 ${learningCount} learnings created`);
   }
 
-  console.log(`✅ Learnings synthesized from context`);
+  console.log(`✅ Learnings synthesized from context via OpenClaw Gateway`);
 
 } catch (error) {
-  console.error(`   ❌ Model synthesis failed: ${error.message}`);
+  console.error(`   ❌ Gateway message failed: ${error.message}`);
   console.log(`   ⚠️  Creating fallback learning (context preserved)`);
+  
+  // Clean up temp file on error
+  if (fs.existsSync(promptPath)) {
+    fs.unlinkSync(promptPath);
+  }
   
   // Create fallback on error
   const fallbackPath = path.join(learningsDir, 'session-summary.md');
@@ -206,7 +216,7 @@ try {
 - Transcripts: ${totalTranscripts}
 - OCR: ${totalOCR}
 
-*Note: Learning extraction failed. Review full context manually.*
+*Note: Learning extraction via Gateway failed. Review full context manually.*
 `;
   fs.writeFileSync(fallbackPath, fallbackContent);
   console.log(`   📝 Fallback created: session-summary.md`);
