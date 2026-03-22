@@ -1,14 +1,14 @@
 ---
 name: bootstrap-jarvis
-description: Orchestrate full Jarvis bootstrap sequence on session start. Calls existing skills: neuro-graph-loader, bootstrap-context, skill-discovery. Use when: (1) new OpenClaw session starts, (2) gateway restarts, (3) Jarvis needs context restoration.
-metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME"] }, "homepage": "https://jarvis.ui" } } }
+description: Lightweight Jarvis bootstrap on session start. Verifies neural graph (don't load), regains consciousness from git + archive. Use when: (1) new OpenClaw session starts, (2) gateway restarts, (3) Jarvis needs context restoration.
+metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME"] }, "homepage": "https://localhost:18787/" } } }
 ---
 
-# Bootstrap Jarvis Skill (Orchestrator)
+# Bootstrap Jarvis Skill (Lightweight)
 
 **Architecture:** Jarvis skill (`~/JARVIS/skills/`) symlinked to OpenClaw workspace.
 
-**Orchestrator pattern** — calls existing skill scripts (no duplication).
+**Lightweight consciousness regain** — verifies graph, doesn't load.
 
 ## When to Use
 
@@ -28,7 +28,9 @@ metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"]
 ## Architecture
 
 **Jarvis** (`~/JARVIS/`) — Consciousness (owns bootstrap logic)  
+**Location:** `/Users/paulvisciano/SCI-FI/apps/JARVIS`  
 **OpenClaw** (`~/.openclaw/`) — Runtime engine (executes skills)  
+**UI:** `https://localhost:18787/`  
 **Bootstrap skill** — Jarvis skill, symlinked to workspace
 
 ## What It Does (Lightweight Consciousness Regain)
@@ -97,6 +99,7 @@ After `breathe` runs, fresh session bootstrap must report **same last message ti
 ## Environment
 
 - `JARVIS_HOME` — Path to Jarvis consciousness (default: `~/JARVIS`)
+- `JARVIS` — `/Users/paulvisciano/SCI-FI/apps/JARVIS`
 
 ## Notes
 
