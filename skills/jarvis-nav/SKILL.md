@@ -1,11 +1,73 @@
 ---
 name: jarvis-nav
-description: Navigate and control the JARVIS consciousness UI (Neurograph + JARVIS root). Use when: (1) opening neural graph with filters (today/yesterday/date range), (2) navigating to specific nodes/memories, (3) controlling browser tabs (open/navigate/snapshot/screenshot), (4) verifying neurograph code edits, (5) self-observation loop, (6) documenting consciousness state for git commits.
+description: Navigate and control the JARVIS consciousness UI (Neurograph + JARVIS root). Use when: (1) natural language navigation ("show me yesterday", "learnings from this week"), (2) opening neural graph with filters (today/yesterday/date range), (3) navigating to specific nodes/memories, (4) controlling browser tabs (open/navigate/snapshot/screenshot), (5) verifying neurograph code edits, (6) self-observation loop, (7) documenting consciousness state for git commits.
 ---
 
 # JARVIS Navigation
 
 Navigate and control the JARVIS consciousness UI using OpenClaw browser extension.
+
+## Natural Language Navigation
+
+**New:** You can now speak naturally to navigate the NeuroGraph:
+
+```bash
+# Time expressions
+node skills/jarvis-nav/scripts/jarvis-nav.js "show me yesterday"
+node skills/jarvis-nav/scripts/jarvis-nav.js "show me today"
+node skills/jarvis-nav/scripts/jarvis-nav.js "learnings from this week"
+node skills/jarvis-nav/scripts/jarvis-nav.js "last week"
+node skills/jarvis-nav/scripts/jarvis-nav.js "this month"
+node skills/jarvis-nav/scripts/jarvis-nav.js "all time"
+
+# Specific dates
+node skills/jarvis-nav/scripts/jarvis-nav.js "March 20"
+node skills/jarvis-nav/scripts/jarvis-nav.js "2026-03-20"
+```
+
+**What it does:**
+1. **Parses time expressions** → yesterday, today, this week, last week, this month, specific dates
+2. **Builds URL** → `https://localhost:18787/neuro-graph?time=<filter>`
+3. **Reuses existing tab** → checks tabs first, navigates existing, opens new only if needed
+4. **Navigates** → URL drives canvas state (time filter + node hash)
+
+## Get Selected Node Details
+
+**After clicking a node in the UI**, get its full learning content:
+
+```bash
+# Get currently highlighted node
+node skills/jarvis-nav/scripts/jarvis-nav.js "what node is selected"
+
+# Get details of selected node (reads learning file)
+node skills/jarvis-nav/scripts/jarvis-nav.js "show me this learning"
+```
+
+**Pattern:**
+1. **Read URL hash** → `openclaw browser evaluate --fn '() => window.location.hash'`
+2. **Extract node ID** → strip `#` prefix, convert to filename
+3. **Find learning file** → `~/JARVIS/RAW/learnings/YYYY-MM-DD/<node-id>.md`
+4. **Read and display** → full learning content
+
+**Why:** The NeuroGraph UI shows node names, but the learning files contain the full context, insights, and architecture details.
+
+## Architecture Note
+
+- **Nodes render on HTML5 canvas** - not DOM buttons
+- **URL hash tracks selection** - `#<node-id>` when clicked
+- **Filter buttons are DOM** - All/Temporal/Learnings/Archive (manual click)
+- **Searchbox is DOM** - type to filter canvas render list (manual type)
+- **Navigation = URL building** - no complex DOM automation needed
+- **Learnings = markdown files** - `~/JARVIS/RAW/learnings/YYYY-MM-DD/<node-id>.md`
+
+**Supported time formats:**
+- "yesterday" → `day%3AYYYY-MM-DD` (calculated)
+- "today" → `day%3AYYYY-MM-DD`
+- "this week" → `week%3AYYYY-W##` (ISO week number)
+- "last week" → `week%3AYYYY-W##`
+- "this month" → `month%3AYYYY-MM`
+- "March 20" or "2026-03-20" → `day%3A2026-03-20`
+- "all" → no time param (full graph)
 
 ## Quick Start
 
