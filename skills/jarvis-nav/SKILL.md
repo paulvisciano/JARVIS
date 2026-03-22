@@ -188,6 +188,28 @@ browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=<aria-ref>, 
 - **Tab reuse** → Check tabs first, navigate existing, open new only if needed
 - **URL encoding** → Use `%3A` for `:` in date params (e.g., `day%3A2026-03-22`)
 
+## Search & Navigate to Specific Nodes
+
+**Find a specific learning/memory:**
+```
+# 1. Expand side menu drawer (if collapsed)
+browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=e3)
+
+# 2. Type node name in search box (aria-ref may vary, inspect snapshot first)
+browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=e44, text="memory-separation-architecture")
+
+# 3. Click the matching node button from filtered list
+browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=e54)
+```
+
+**Pattern:**
+- Snapshot first to get current aria-refs (refs change based on DOM state)
+- Search box filters the node list instantly
+- Click the button matching your search term
+- Graph canvas focuses on that node
+
+**Use case:** "Show me the learning about X from today" → Search → Navigate → Done
+
 ## When NOT to Use
 
 - Don't use for voice recording (manual via JARVIS UI spacebar)
