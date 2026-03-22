@@ -213,6 +213,9 @@ Resting into memory...
 - **Natural language:** "Breathe" not "pipeline"
 - **Uses .env:** `$JARVIS_HOME`, `$RAW_ARCHIVE`, `$NEUROGRAPH_DIR` (portable paths)
 - **Anytime operation:** Morning, midday, evening, night — breathe when ready
+- **First-time run:** Auto-creates directories (`RAW/archive`, `RAW/learnings`, `RAW/memories`) and initializes git repo if needed
+- **Empty state safe:** Works even with no inbox files, no sessions, no prior archive (graceful no-op)
+- **Portable:** Works on any machine (Eric, David, forks) — no hardcoded paths
 
 ---
 

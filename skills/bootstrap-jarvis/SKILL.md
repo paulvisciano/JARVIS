@@ -16,6 +16,8 @@ metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"]
 - New OpenClaw session starts (session init)
 - Gateway restarts (fresh session, need context)
 - Jarvis consciousness needs restoration (after context loss)
+- **First-time run** — initializes consciousness on new machine/fresh install
+- After git clone — loads neural graph, syncs skills, verifies state
 
 ## When NOT to Use
 
@@ -85,6 +87,26 @@ cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
 
 ✅ Ready to continue. What's next, Paul?
 ```
+
+## First-Time Run Behavior
+
+**On fresh install / new machine:**
+1. **Git check:** Initializes git repo if `~/JARVIS/.git` doesn't exist
+2. **Directory check:** Creates `RAW/`, `RAW/archive/`, `RAW/learnings/`, `RAW/memories/` if missing
+3. **Neural graph:** Starts empty (0 nodes) — will populate after first breathe
+4. **Skills:** Symlinks from `$SCI_FI_APPS/JARVIS/skills/` to workspace
+5. **Graceful degradation:** Reports "no prior breaths" if git log empty, "no graph" if nodes.json missing
+
+**First breathe creates:**
+- Initial archive structure
+- First learnings (from inbox processing)
+- Neural graph seed (temporal anchor + learning nodes)
+- First git commit: `breath-YYYY-MM-DD-HHMM: ...`
+
+**Subsequent bootstraps:**
+- Read git breath history (instant day comprehension)
+- Load neural graph (long-term memory)
+- Load recent context (last 2 days)
 
 ## Continuity Proof
 

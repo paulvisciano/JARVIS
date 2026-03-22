@@ -23,6 +23,29 @@ const jarvisHome = process.env.JARVIS_HOME || path.join(require('os').homedir(),
 console.log('🫁 Breathing...\n');
 
 try {
+  // First-time setup: ensure directories exist
+  const rawArchive = process.env.RAW_ARCHIVE || path.join(require('os').homedir(), 'RAW', 'archive');
+  const learningsDir = path.join(jarvisHome, 'RAW', 'learnings');
+  const memoriesDir = path.join(jarvisHome, 'RAW', 'memories');
+  
+  // Create directories if they don't exist (first-time run)
+  [rawArchive, learningsDir, memoriesDir].forEach(dir => {
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+      console.log(`📁 Created: ${dir}`);
+    }
+  });
+  
+  // Initialize git repo if not already (first-time run on new machine)
+  try {
+    execSync('git rev-parse --git-dir', { cwd: jarvisHome, stdio: 'ignore' });
+  } catch (e) {
+    console.log('🔧 Initializing git repo (first-time setup)...');
+    execSync('git init', { cwd: jarvisHome, stdio: 'inherit' });
+    execSync('git config user.name "Jarvis"', { cwd: jarvisHome });
+    execSync('git config user.email "jarvis@localhost"', { cwd: jarvisHome });
+  }
+  
   // Step 1: Inhale (Archive)
   console.log('Inhaling experiences...');
   execSync(`node ${path.join(jarvisHome, 'skills/archive-collector/scripts/archive-all.js')}`, {
