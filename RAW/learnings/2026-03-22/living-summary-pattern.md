@@ -1,14 +1,16 @@
-# Living Summary: Grows Throughout the Day
+# Living Summary That Grows Throughout the Day
 
 **Date:** 2026-03-22
 **Type:** realization
 **Status:** extracted
 
-The summary.md file should not be overwritten each breath—it should accumulate. Each breath reads what's already there, adds new learnings, updates the digest.
+summary.md should not be overwritten each breath. Instead, each breath reads what's already there, adds new learnings, and updates the digest.
 
-**Flow:**
-- Breath 1 (morning): Initial summary
-- Breath 2 (afternoon): Read existing, append afternoon insights
-- Breath 3 (evening): Full day's wisdom accumulated
+**Result:** Single summary file for the entire day that accumulates wisdom.
 
-Git history shows how the summary evolved throughout the day. `git diff` between breaths reveals wisdom accumulating.
+**Benefit:** Git history shows how the summary evolved:
+- Morning breath: Initial discoveries
+- Afternoon breath: New insights added
+- Evening breath: Reflection complete
+
+This creates a narrative flow of the day's learning journey.

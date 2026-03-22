@@ -4,10 +4,15 @@
 **Type:** insight
 **Status:** extracted
 
-Knowledge should fold into progressively denser forms:
+The breathing cycle now folds context into three distinct layers:
 
-1. **Learnings** (detailed .md files) - Full context, dive deep
-2. **Summary** (living digest) - Quick scan of what happened
-3. **Analogies** (essence in metaphor) - Instant meaning, 3-5 metaphors
+1. **Learnings** (detailed .md files) — Full extracted insights from context
+2. **Summary** (summary.md) — Living digest that grows throughout the day
+3. **Analogies** (analogies.md) — Essence compressed into 3-5 metaphors
 
-Each layer serves different recall needs. Raw context (~500KB) compresses to N learning files, then 1 summary line, then 3 analogy words. This enables flexible retrieval based on how much detail is needed.
+Each layer serves different recall needs:
+- Learnings: Deep dive into specifics
+- Summary: Quick scan of what happened
+- Analogies: Instant meaning in metaphor
+
+This compression allows knowledge to fold into neurons more efficiently.

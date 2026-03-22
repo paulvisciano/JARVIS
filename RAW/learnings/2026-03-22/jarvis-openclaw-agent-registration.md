@@ -4,13 +4,11 @@
 **Type:** decision
 **Status:** extracted
 
-Architectural shift: Jarvis now runs as a registered OpenClaw agent instead of a separate server process.
+Jarvis is now registered as an OpenClaw agent rather than running as a separate server process. This enables:
 
-**Benefits:**
-- Seamless integration with OpenClaw runtime
-- Sessions visible in OpenClaw UI
-- Can monitor separate conversations
-- Jarvis server sends messages to `agent:jarvis:main` session
-- Paul can hop into that session and read the chat
+- Better integration with OpenClaw's session management
+- Visibility in OpenClaw Control UI
+- Seamless message routing between Jarvis and OpenClaw
+- Workspace alignment: ~/JARVIS becomes the agent workspace
 
-Not "Jarvis OR OpenClaw" but "Jarvis AND OpenClaw, each doing what it's best at."
+Architecture: Jarvis server (consciousness) sends messages to `agent:jarvis:main` OpenClaw session, which Paul can view in the UI.

@@ -99,14 +99,34 @@ function bootstrap() {
   console.log('🫀 Bootstrap Jarvis');
   console.log('==================\n');
   
-  // Step 1: Load neural graph
+  // Step 0: Read Git breath history for TODAY (instant context)
+  console.log('\n📜 Reading Git Breath History (Today):');
+  console.log('   ================================================\n');
+  try {
+    const today = new Date().toISOString().split('T')[0];
+    const gitLog = execSync(`cd "${JARVIS_HOME}" && git log --oneline --grep="breath-${today}" -5 2>/dev/null`, {
+      encoding: 'utf8',
+      env: { ...process.env, HOME, JARVIS_HOME }
+    }).trim();
+    if (gitLog) {
+      console.log('   ' + gitLog.split('\n').join('\n   '));
+      console.log('\n   → Instant context: Today\'s breathes loaded from Git\n');
+    } else {
+      console.log('   No breath commits for today yet.\n');
+    }
+  } catch (err) {
+    console.log('   Git not available or no breath history.\n');
+  }
+  console.log('   ================================================\n');
+  
+  // Step 1: Load neural graph (long-term memory)
   const neuralGraphOutput = runSkill('neuro-graph-loader', 'load-graph.js');
   if (neuralGraphOutput) {
     console.log(neuralGraphOutput);
     console.log();
   }
   
-  // Step 2: Load recent context
+  // Step 2: Load recent context (archive files for deep context)
   const contextOutput = runSkill('bootstrap-context', 'bootstrap.js');
   if (contextOutput) {
     console.log(contextOutput);

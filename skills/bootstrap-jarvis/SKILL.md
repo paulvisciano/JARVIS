@@ -14,14 +14,21 @@ description: Orchestrate full Jarvis bootstrap sequence. Loads neural graph + re
 
 ## What It Does
 
-1. **Load neural graph** (`neural-graph-loader` skill)
+1. **Read Git breath history** (today's breathes from Git log)
+   - `git log --grep="breath-YYYY-MM-DD"` — instant summary
+   - Shows what happened today before loading anything
+   - **Fast context** — no file parsing needed
+
+2. **Load neural graph** (`neural-graph-loader` skill)
    - Loads nodes.json + synapses.json
    - **Fetches live counts** (neurons, synapses, graph size from actual files)
+   - **Long-term memory** — queryable structure
 
-2. **Load recent context** (`bootstrap-context` skill)
+3. **Load recent context** (`bootstrap-context` skill)
    - Loads last 2 days of conversations
    - Reads from `~/RAW/archive/YYYY-MM-DD/full-context.json`
    - **Fetches live counts** (sessions, messages, audio from actual archive)
+   - **Deep context** — raw conversation history
 
 3. **Sync skills** (`skill-discovery` skill)
    - Scans `~/JARVIS/skills/`

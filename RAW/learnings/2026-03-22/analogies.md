@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a lighthouse keeping a logbook — each beam is a breath, each entry timestamped in stone
-- Like tending a garden through seasons — prune (compact), water (interact), observe (heartbeat), harvest (breathe)
-- Like origami folding paper into denser forms — raw experience → learnings → summary → essence
-- Like a ship's black box + navigation chart — Git records what happened, NeuroGraph shows where we are
-- Like checking vitals before a long run — heartbeat confirms alive, breath captures the journey
+- Like tending a garden — prune (learnings), water (summary), observe (analogies)
+- Like a lighthouse — steady beam (git history), watch for ships (NeuroGraph queries)
+- Like breathing itself — inhale (archive), hold (distill), exhale (weave), rest (sync)
+- Like tree rings — each breath adds a layer, git shows the growth pattern
+- Like an embassy — Jarvis registered with OpenClaw, portable but anchored to local human
