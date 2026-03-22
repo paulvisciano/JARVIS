@@ -192,10 +192,11 @@ browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=<aria-ref>, 
 **Workflow: "Show me a learning from today"**
 
 ```
-# Step 1: Query neurograph data (source of truth)
-exec(command="cat ~/JARVIS/RAW/memories/nodes.json | python3 -c "import sys,json; nodes=json.load(sys.stdin); learnings=[n for n in nodes if n.get('category')=='learning' and '2026-03-22' in str(n.get('moments',[{}])[0].get('date',''))]; print('\\n'.join([n['id'] for n in learnings]))"")
+# Step 1: Use neuro-graph-search skill (canonical graph query)
+# Reads ~/JARVIS/RAW/memories/nodes.json, filters by category + date
+neuro-graph-search(query="learning", date="2026-03-22", category="learning")
 
-# Step 2: Pick a learning from the list
+# Step 2: Pick a learning from the result list
 # e.g., "self-observation-loop-closed"
 
 # Step 3: Open NeuroGraph (if not already open)
@@ -218,19 +219,19 @@ browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<node-butto
 ```
 
 **Pattern:**
-1. **Data first** → Query nodes.json to know what exists
-2. **Pick one** → Select a learning ID from the query result
+1. **Use neuro-graph-search skill** → Canonical way to query the graph (structured, indexed, instant)
+2. **Pick one** → Select a learning ID from the result
 3. **Open UI** → Navigate to neurograph (production URL)
 4. **Snapshot** → Get fresh aria-refs (they change per DOM state)
 5. **Search** → Type the learning name in the search box
 6. **Navigate** → Click the filtered node button
 
 **Why this order:**
+- `neuro-graph-search` is the existing skill for graph queries — use it
 - Browser automation on large DOM (2504 nodes) is slow/unreliable
-- Querying data first is instant and reliable
-- Then use UI for visualization/navigation
+- Use UI for visualization, not discovery
 
-**Use case:** "Show me the learning about X from today" → Query → Pick → Open → Search → Navigate → Done
+**Use case:** "Show me the learning about X from today" → neuro-graph-search → Pick → Open → Search → Navigate → Done
 
 ## When NOT to Use
 
