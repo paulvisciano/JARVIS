@@ -89,7 +89,6 @@ try {
 
   // Step 5: Reflect (Git Commit)
   console.log('Reflecting into git...');
-  const { execSync } = require('child_process');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
