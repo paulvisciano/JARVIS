@@ -1,6 +1,6 @@
 ---
 name: neuro-graph-loader
-description: Load entire neuro graph (nodes.json + synapses.json). Use when: (1) session bootstrap (auto-load on start), (2) user needs full graph traversal, (3) analyzing synapse paths, (4) cross-graph queries. Auto-loads on bootstrap (no ask). For deep analysis, asks user before loading (graphs are 100KB+ = ~50k tokens). Use neuro-graph-search for lightweight queries instead.
+description: Load entire neuro graph (nodes.json + synapses.json). Use when: (1) user needs full graph traversal, (2) analyzing synapse paths, (3) cross-graph queries, (4) deep cluster analysis. For deep analysis, asks user before loading (graphs are 100KB+ = ~50k tokens). Use neuro-graph-search for lightweight queries. Bootstrap-jarvis loads graph on session start (auto).
 metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "stat", "node"] } } }
 ---
 
@@ -14,6 +14,7 @@ metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "st
 - Cross-graph queries (compare structures)
 - Debugging graph structure
 - Deep cluster analysis
+- **Note:** `bootstrap-jarvis` loads graph on session start (auto) — use this skill for explicit user requests
 
 ## When NOT to Use
 
@@ -22,20 +23,10 @@ metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "st
 - "Find all people" → use `neuro-graph-search`
 - Any simple query → use `neuro-graph-search` first
 
-## Context Awareness (CRITICAL)
-
-| Graph Size | Tokens | Context % | Safe? |
-|------------|--------|-----------|-------|
-| < 50KB | ~20k | <10% | ✅ Yes |
-| 50-100KB | ~20-40k | 10-20% | ⚠️ Ask user |
-| 100-150KB | ~40-60k | 20-30% | ⚠️ Ask user (warn) |
-| > 150KB | >60k | >30% | ❌ Don't load |
-
-**Current graphs:** JARVIS 124KB (~50k tokens, 25% context) → **Ask user** ⚠️
-
 ## Notes
 
-- Always ask user before loading (graphs are 100KB+ = ~50k tokens)
+- Bootstrap-jarvis loads graph on session start (auto, no ask)
+- For explicit user requests, ask before loading (graphs are 100KB+ = ~50k tokens)
 - Fallback to `neuro-graph-search` if user declines
 - Use local_path from memory-link nodes when available (fast disk access)
 - Don't load multiple graphs without explicit confirmation (2 graphs = ~100k tokens)
