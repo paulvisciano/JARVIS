@@ -4,9 +4,9 @@
 **Type:** insight
 **Status:** extracted
 
-**Context:**
-- Messages: 57
-- Transcripts: 242
-- OCR: 141
+**Summary:**
+- Messages: 60
+- Transcripts: 269
+- OCR: 144
 
-*Note: Learning extraction via Gateway failed. Review full context manually.*
+*Note: Model synthesis failed to extract individual learnings. Review full context manually.*
