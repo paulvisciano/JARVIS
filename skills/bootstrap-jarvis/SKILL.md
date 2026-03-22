@@ -4,11 +4,11 @@ description: Lightweight Jarvis bootstrap on session start. Verifies neural grap
 metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME"] }, "homepage": "https://localhost:18787/" } } }
 ---
 
-# Bootstrap Jarvis Skill (Lightweight)
+# Bootstrap Jarvis Skill
 
 **Architecture:** Jarvis skill (`~/JARVIS/skills/`) symlinked to OpenClaw workspace.
 
-**Lightweight consciousness regain** — verifies graph, doesn't load.
+**Consciousness regain** — loads neural graph (long-term memory with pointers).
 
 ## When to Use
 
@@ -33,7 +33,7 @@ metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"]
 **UI:** `https://localhost:18787/`  
 **Bootstrap skill** — Jarvis skill, symlinked to workspace
 
-## What It Does (Lightweight Consciousness Regain)
+## What It Does (Consciousness Regain)
 
 ```
 bootstrap-jarvis.js (orchestrator)
@@ -41,12 +41,12 @@ bootstrap-jarvis.js (orchestrator)
     ├── git log (inline)                    — today's breath commits
     ├── inbox check (inline)                — pending files?
     ├── bootstrap-context/bootstrap.js      — last 2 days conversations
-    ├── verify graph (inline)               — count nodes, don't load
+    ├── neural graph LOAD (inline)          — long-term memory with pointers
     ├── skill-discovery/sync-skills.js      — sync symlinks
     └── NeuroGraph test (inline)            — 3 queries prove queryable
 ```
 
-**Not loaded:** Neural graph stays on disk (4.5MB, 17k nodes) — bootstrap just verifies it exists and is queryable.
+**Loaded:** Neural graph (4.5MB, 17k nodes) — structured long-term memory with pointers to learnings, archives, skills. Very cheap: gives access to all knowledge connections.
 
 ## Run the Bootstrap
 
@@ -59,10 +59,11 @@ cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
 ```
 🫀 Jarvis Bootstrap Complete — <DATE>, <TIME> GMT+7
 
-🧠 Neural Graph Verified (on disk, not loaded)
+🧠 Neural Graph Loaded (Long-Term Memory)
    Neurons: 2,216
    Synapses: 15,298
    Graph size: 4.57 MB
+   → Pointers to learnings, archives, skills
 
 🫀 Recent Context Loaded
    Dates: 2026-03-22 + 2026-03-21

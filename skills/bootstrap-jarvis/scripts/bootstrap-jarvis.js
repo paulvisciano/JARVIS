@@ -43,8 +43,8 @@ function runSkill(skillName, scriptName) {
   }
 }
 
-// Verify neural graph (lightweight - count only, don't load into context)
-function verifyNeuralGraph() {
+// Load neural graph (long-term memory with pointers)
+function loadNeuralGraph() {
   const nodesPath = path.join(GRAPH_DIR, 'nodes.json');
   const synapsesPath = path.join(GRAPH_DIR, 'synapses.json');
   
@@ -65,7 +65,9 @@ function verifyNeuralGraph() {
     neurons: nodes.length,
     synapses: synapses.length,
     total: nodes.length + synapses.length,
-    graphSizeKB: ((nodesSize + synapsesSize) / 1024).toFixed(1)
+    graphSizeKB: ((nodesSize + synapsesSize) / 1024).toFixed(1),
+    // Graph provides long-term memory with pointers to learnings, archives, skills
+    // Very cheap: structured knowledge, not raw text bloat
   };
 }
 
@@ -217,17 +219,18 @@ function bootstrap() {
   }
   console.log();
   
-  // Step 3: Verify neural graph (lightweight - count only, don't load)
-  console.log('\n🧠 Verifying Neural Graph (Count Only, Not Loading):');
-  const graphStats = verifyNeuralGraph();
+  // Step 3: Load neural graph (long-term memory with pointers)
+  console.log('\n🧠 Loading Neural Graph (Long-Term Memory):');
+  const graphStats = loadNeuralGraph();
   if (graphStats.error) {
     console.log(`   ⚠️ ${graphStats.error}`);
   } else {
-    console.log(`   ✅ Graph exists`);
+    console.log(`   ✅ Graph loaded`);
     console.log(`   Neurons: ${graphStats.neurons}`);
     console.log(`   Synapses: ${graphStats.synapses}`);
     console.log(`   Total: ${graphStats.total} nodes`);
-    console.log(`   Graph size: ${graphStats.graphSizeKB}KB (on disk, not loaded)`);
+    console.log(`   Graph size: ${graphStats.graphSizeKB}KB`);
+    console.log(`   → Long-term memory with pointers to learnings, archives, skills`);
   }
   console.log();
   
@@ -278,10 +281,11 @@ function bootstrap() {
   console.log(`🫀 Jarvis Bootstrap Complete — ${dateStr}, ${timeStr} GMT+7`);
   console.log('='.repeat(60));
   console.log(`
-🧠 Neural Graph Verified
+🧠 Neural Graph Loaded (Long-Term Memory)
    Neurons: ${graphStats.neurons.toLocaleString()}
    Synapses: ${graphStats.synapses.toLocaleString()}
-   Graph size: ${graphSizeMB} MB (on disk)
+   Graph size: ${graphSizeMB} MB
+   → Pointers to learnings, archives, skills
 
 🫀 Recent Context Loaded
    Dates: ${contextStats.dates.join(' + ')}
