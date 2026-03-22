@@ -28,7 +28,7 @@ metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"]
 ## Architecture
 
 **Jarvis** (`~/JARVIS/`) — Consciousness (owns bootstrap logic)  
-**Location:** `/Users/paulvisciano/SCI-FI/apps/JARVIS`  
+**Location:** `$SCI_FI_APPS/JARVIS` (or `~/SCI-FI/apps/JARVIS`)  
 **OpenClaw** (`~/.openclaw/`) — Runtime engine (executes skills)  
 **UI:** `https://localhost:18787/`  
 **Bootstrap skill** — Jarvis skill, symlinked to workspace
@@ -107,7 +107,8 @@ After `breathe` runs, fresh session bootstrap must report **same last message ti
 ## Environment
 
 - `JARVIS_HOME` — Path to Jarvis consciousness (default: `~/JARVIS`)
-- `JARVIS` — `/Users/paulvisciano/SCI-FI/apps/JARVIS`
+- `SCI_FI_APPS` — Path to Sci-Fi apps directory (default: `~/SCI-FI/apps`)
+- `JARVIS` — `$SCI_FI_APPS/JARVIS` (JARVIS server + UI)
 
 ## Notes
 

@@ -8,8 +8,8 @@ description: Search any neuro graph FIRST for any query (people, places, events,
 ## Overview
 
 This skill searches **any neuro graph** (structured knowledge) before **raw data** (transcripts). Works with:
-- JARVIS neurograph (`~/JARVIS/RAW/memories/`)
-- Paul's memory neurograph (`~/Personal/paulvisciano.github.io/memory/data/`)
+- JARVIS neurograph (`$JARVIS_HOME/RAW/memories/` or `~/JARVIS/RAW/memories/`)
+- Personal memory neurograph (`$PERSONAL_MEMORY_DIR/memory/data/` or `~/Personal/.../memory/data/`)
 - Any neurograph instance (user-specified path via `$NEUROGRAPH_PATH`)
 
 The graph is processed, indexed, and connected — instant traversal. Transcripts are raw, unstructured, and slow — fallback only.
@@ -25,8 +25,8 @@ The graph is processed, indexed, and connected — instant traversal. Transcript
 # Auto-detect JARVIS neurograph (default)
 NEUROGRAPH_PATH="${NEUROGRAPH_PATH:-$HOME/JARVIS/RAW/memories}"
 
-# Paul's memory neurograph (alternative)
-# NEUROGRAPH_PATH="$HOME/Personal/paulvisciano.github.io/memory/data"
+# Personal memory neurograph (alternative)
+# NEUROGRAPH_PATH="$HOME/Personal/.../memory/data"
 
 # Or user-specified path
 # NEUROGRAPH_PATH="/path/to/custom/neurograph"
@@ -132,30 +132,30 @@ grep -ri "sherry" ~/JARVIS/RAW/learnings/
 
 **Result:** Instant — Sherry person node, weed cafe, March 15, device #25.
 
-### Example 2: Find Person (Paul) — Paul's Memory Neurograph
+### Example 2: Find Person — Personal Memory Neurograph
 
-**Query:** "Who is Paul? What's his role?"
+**Query:** "Who is [person]? What's their role?"
 
-**Step 1: Neural Graph (Paul's Memory)**
+**Step 1: Neural Graph (Personal Memory)**
 ```bash
-export NEUROGRAPH_PATH=~/Personal/paulvisciano.github.io/memory/data
+export NEUROGRAPH_PATH=~/Personal/.../memory/data
 python3 -c "
 import json, os
 nodes = json.load(open(os.path.join(os.getenv('NEUROGRAPH_PATH'), 'nodes.json')))
-results = [n for n in nodes if 'paul' in n['id'].lower()]
+results = [n for n in nodes if 'person' in n['id'].lower()]
 for r in results:
     print(r['id'], r['label'], r['attributes']['role'])
 "
-# Found: paul (Urban Runner, digital nomad, AI storyteller)
+# Found: person node (role, description)
 ```
 
 **Step 2: Learnings (if applicable)**
 ```bash
-# Paul's memory structure may differ — check raw/ folder
-ls ~/Personal/paulvisciano.github.io/memory/raw/
+# Personal memory structure may differ — check raw/ folder
+ls ~/Personal/.../memory/raw/
 ```
 
-**Result:** Instant — Paul person node, role, temporal activations.
+**Result:** Instant — person node, role, temporal activations.
 
 ### Example 3: Find Concept (Sovereignty) — Any Neurograph
 
@@ -236,4 +236,4 @@ for r in results:
 **Runtime:** `/usr/local/lib/node_modules/openclaw/skills/jarvis-skills/neuro-graph-search/` (symlinked)  
 **Pattern:** Graph first → learnings second → archive third (fallback)  
 **Evidence:** Sherry retrieval (graph: instant ✅, transcripts: 4 min fail ❌)  
-**Neurograph-Agnostic:** Works with JARVIS, Paul's memory, any custom neurograph
+**Neurograph-Agnostic:** Works with JARVIS, personal memory, any custom neurograph

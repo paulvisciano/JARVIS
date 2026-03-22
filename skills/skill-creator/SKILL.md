@@ -93,7 +93,7 @@ Ask: "What project is this for?" → detect path → use relative paths
 ```markdown
 ## Bad (exposes personal info)
 Location: ~/SCI-FI/apps/JARVIS/
-User: paulvisciano
+User: [user]
 Archive: ~/RAW/archive/
 
 ## Good (privacy-safe)
