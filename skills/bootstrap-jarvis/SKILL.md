@@ -38,7 +38,7 @@ metadata: { "openclaw": { "emoji": "🫀", "requires": { "bins": ["node", "git"]
 ```
 bootstrap-jarvis.js (orchestrator)
     ↓
-    ├── git log (inline)                    — today's breath commits
+    ├── git log (inline)                    — STEP 1: today's breath commits (instant summary)
     ├── inbox check (inline)                — pending files?
     ├── bootstrap-context/bootstrap.js      — last 2 days conversations
     ├── neural graph LOAD (inline)          — long-term memory with pointers
@@ -47,6 +47,13 @@ bootstrap-jarvis.js (orchestrator)
 ```
 
 **Loaded:** Neural graph (4.5MB, 17k nodes) — structured long-term memory with pointers to learnings, archives, skills. Very cheap: gives access to all knowledge connections.
+
+**Step 1 Breakthrough:** Git breath reading gives instant day comprehension without parsing every file:
+```bash
+git log --since="$(date +%Y-%m-%d) 00:00:00" --grep="breath-$(date +%Y-%m-%d)" --oneline
+# Returns: breath commits from today (each breath = one commit)
+# Example: "breath-2026-03-22-2200: Breathe pipeline now commits with reflection"
+```
 
 ## Run the Bootstrap
 

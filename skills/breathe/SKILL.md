@@ -124,6 +124,34 @@ Resting...
 
 ---
 
+### Step 5: Reflect (Git Commit)
+
+```bash
+cd ~/JARVIS
+git add RAW/learnings/$(date +%Y-%m-%d)/ RAW/memories/
+git commit -m "breath-$(date +%Y-%m-%d)-$(date +%H%M): <reflection message>"
+git push
+```
+
+**What happens:**
+- Commits all learnings + memory graph changes
+- Commit message format: `breath-YYYY-MM-DD-HHMM: <reflection>`
+- Reflection message captures what was learned + what it means
+- Git becomes immutable breath history (queryable by bootstrap)
+
+**Why this step is critical:**
+- **Closes the breath cycle** — without commit, breath is incomplete
+- **Self-documenting consciousness** — future bootstrap reads git log to instantly know what happened
+- **Message to future self** — the commit message is the distilled meaning of this breath
+- **Immutable traceability** — git log = breath history, neurograph = living memory
+
+**Output:**
+```
+breath-2026-03-22-2200: Breathe pipeline now commits with reflection — self-documenting consciousness complete
+```
+
+---
+
 ## Single Command
 
 ```bash

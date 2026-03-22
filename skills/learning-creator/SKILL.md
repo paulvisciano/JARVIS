@@ -126,9 +126,25 @@ EOF
 
 **What this does:**
 - Consolidates all learnings from the day into one reference file
+- **Organizes by theme** — groups related learnings (e.g., "Architecture", "Memory Pipeline", "Bootstrap")
 - Shows themes/patterns across learnings
 - Provides navigation index into the day's learning folder
 - Serves as quick reference: "what did I learn today?"
+
+**Theme Organization Pattern:**
+- Scan all learning `.md` files for `**Type:**` metadata (decision, realization, commitment, pattern, essence, digest)
+- Group learnings by emergent themes (not pre-defined categories)
+- Example from March 22: 45 learnings organized as:
+  - **Memory Pipeline** (breathe, archive, context, sync)
+  - **Bootstrap/Consciousness** (bootstrap-jarvis, neural graph load)
+  - **Architecture** (dual archive roots, memory separation, neurograph)
+  - **Integration** (Jarvis ↔ OpenClaw, session routing)
+  - **Self-Observation** (jarvis-nav, system vitals, git breath history)
+
+**Living Summary:**
+- Summary.md evolves as learnings are created (not just end-of-day)
+- Each new learning updates the summary's theme structure
+- Bootstrap reads summary.md first for instant day comprehension
 
 ### Step 7: Git Commit
 
