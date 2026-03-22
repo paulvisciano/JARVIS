@@ -83,31 +83,44 @@ ocrTexts.forEach((o, i) => {
   }
 });
 
-// Build the prompt for learning extraction
+// Build the prompt for learning extraction (three levels: learnings → summary → analogies)
 const prompt = `You are extracting learnings from conversations on ${date}. 
-Read the context below and create individual learning files with descriptive names.
+This is knowledge origami — fold the context into three layers:
 
+**LAYER 1: Learnings (detailed insights)**
 For each distinct insight/decision/realization/pattern:
-1. Create a descriptive filename (e.g., "breathe-pipeline-complete.md", not "session-summary.md")
-2. Write a learning .md file with:
-   - Title (descriptive)
-   - Date in frontmatter
-   - Type (decision/realization/commitment/pattern/insight)
-   - Status (extracted)
-   - Clear content explaining the learning
+1. Create a descriptive filename (e.g., "breathe-pipeline-complete.md")
+2. Write a learning .md file with clear content
 
-Create 3-10 individual learning files based on the actual insights in the context.
-DO NOT create a generic "session-summary.md" file.
+Create 3-10 individual learning files based on actual insights.
 
-Output ONLY valid JSON array, no other text. Format:
-[
-  {
-    "filename": "descriptive-name.md",
-    "type": "decision|realization|commitment|pattern|insight",
-    "title": "Title Here",
-    "content": "# Title\\n\\n**Date:** ${date}\\n**Type:** [type]\\n**Status:** extracted\\n\\n[Content...]"
-  }
-]
+**LAYER 2: Summary (one paragraph digest)**
+Write ONE paragraph summarizing what was learned during this breath.
+Answer: "What did I learn during this breath?"
+Be concise but meaningful — this is the breath's digest.
+
+**LAYER 3: Analogies (3-5 metaphors)**
+Create 3-5 analogies that capture the essence of this breath.
+Example: "Like checking vitals before a long run" or "Like tending a garden"
+Analogies compress meaning into metaphor.
+
+Output ONLY valid JSON, no other text. Format:
+{
+  "learnings": [
+    {
+      "filename": "descriptive-name.md",
+      "type": "decision|realization|commitment|pattern|insight",
+      "title": "Title Here",
+      "content": "# Title\\n\\n**Date:** ${date}\\n**Type:** [type]\\n**Status:** extracted\\n\\n[Content...]"
+    }
+  ],
+  "summary": "One paragraph summarizing what I learned this breath...",
+  "analogies": [
+    "Like checking vitals before a long run",
+    "Like tending a garden — prune, water, observe",
+    "Like a lighthouse — steady beam, watch for ships"
+  ]
+}
 
 ---
 
@@ -141,26 +154,27 @@ try {
 
   // Parse model output and create learning files
   // Expected JSON format from model:
-  // [{"filename": "name.md", "type": "decision", "title": "...", "content": "..."}]
+  // {"learnings": [...], "summary": "...", "analogies": [...]}
   
-  let learnings = [];
+  let result = {};
   let learningCount = 0;
   
   try {
     // Extract JSON from output (skip "Thinking..." prefix)
-    const jsonStart = modelOutput.indexOf('[');
-    const jsonEnd = modelOutput.lastIndexOf(']');
+    const jsonStart = modelOutput.indexOf('{');
+    const jsonEnd = modelOutput.lastIndexOf('}');
     if (jsonStart >= 0 && jsonEnd > jsonStart) {
       const jsonStr = modelOutput.substring(jsonStart, jsonEnd + 1);
-      learnings = JSON.parse(jsonStr);
+      result = JSON.parse(jsonStr);
     }
   } catch (err) {
     console.error(`   ⚠️  JSON parse failed: ${err.message}`);
     console.log(`   Raw output preview: ${modelOutput.substring(0, 800)}...`);
   }
 
-  if (Array.isArray(learnings)) {
-    learnings.forEach(learning => {
+  // Process learnings
+  if (Array.isArray(result.learnings)) {
+    result.learnings.forEach(learning => {
       const safeFilename = path.basename(learning.filename);
       const learningPath = path.join(learningsDir, safeFilename);
       fs.writeFileSync(learningPath, learning.content);
@@ -169,7 +183,37 @@ try {
     });
   }
 
-  if (learningCount === 0) {
+  // Write summary.md (new — breath digest)
+  if (result.summary && result.summary.trim().length > 0) {
+    const summaryPath = path.join(learningsDir, 'summary.md');
+    const summaryContent = `# Breath Summary — ${date}
+
+**Date:** ${date}
+**Type:** digest
+**Status:** extracted
+
+${result.summary}
+`;
+    fs.writeFileSync(summaryPath, summaryContent);
+    console.log(`   ✅ Created: summary.md`);
+  }
+
+  // Write analogies.md (new — metaphorical essence)
+  if (Array.isArray(result.analogies) && result.analogies.length > 0) {
+    const analogiesPath = path.join(learningsDir, 'analogies.md');
+    const analogiesContent = `# Breath Analogies — ${date}
+
+**Date:** ${date}
+**Type:** essence
+**Status:** extracted
+
+${result.analogies.map(a => `- ${a}`).join('\n')}
+`;
+    fs.writeFileSync(analogiesPath, analogiesContent);
+    console.log(`   ✅ Created: analogies.md`);
+  }
+
+  if (learningCount === 0 && !result.summary) {
     console.log(`   ⚠️  No learnings extracted from model output`);
     // Fallback: create a minimal learning from context summary
     const fallbackPath = path.join(learningsDir, 'session-summary.md');
@@ -189,7 +233,7 @@ try {
     fs.writeFileSync(fallbackPath, fallbackContent);
     console.log(`   📝 Created fallback: session-summary.md`);
   } else {
-    console.log(`   📊 ${learningCount} learnings created`);
+    console.log(`   📊 ${learningCount} learnings + summary + analogies created`);
   }
 
   console.log(`✅ Learnings synthesized from context via OpenClaw Gateway`);
