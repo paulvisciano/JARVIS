@@ -1,32 +1,34 @@
 ---
 name: neurograph-load
-description: Load entire neurograph (nodes.json + synapses.json). Use when: (1) user needs full graph traversal, (2) analyzing synapse paths, (3) cross-graph queries, (4) deep cluster analysis. For deep analysis, asks user before loading (graphs are 100KB+ = ~50k tokens). Use neurograph-search for lightweight queries. Bootstrap-jarvis loads graph on session start (auto).
-metadata: { "openclaw": { "emoji": "🧠", "requires": { "bins": ["python3", "stat", "node"] } } }
+description: DEPRECATED — Loading entire neurograph is not feasible at scale (12M+ chars = 3M+ tokens). Use neurograph-search for queries (reads nodes.json directly, no context bloat). Bootstrap-jarvis loads graph metadata on session start (auto).
+metadata: { "openclaw": { "emoji": "⚠️", "deprecated": true, "requires": { "bins": ["node"] } } }
 ---
 
-# Neural Graph Loader (Heavy, User-Confirmed)
+# Neural Graph Loader — DEPRECATED
 
-## When to Use
+## ⚠️ Reality Check (March 23, 2026)
 
-✅ **USE this skill when:**
-- User needs full graph traversal (not just search)
-- Analyzing synapse paths between nodes
-- Cross-graph queries (compare structures)
-- Debugging graph structure
-- Deep cluster analysis
-- **Note:** `bootstrap-jarvis` loads graph on session start (auto) — use this skill for explicit user requests
+**Graph sizes:**
+- JARVIS: 4,937 nodes, 15,930 synapses (~6.9 MB)
+- Paul: 8,027 nodes, 423 synapses (~5.6 MB)
+- **Combined: ~12.6 MB = ~3.15M tokens** (at 4 chars/token)
 
-## When NOT to Use
+**Context windows:**
+- Qwen 3.5 Cloud: 200k-256k tokens max
+- **3.15M tokens = 12-15x over limit** ❌
 
-❌ **DON'T use this skill when:**
-- "Who is David?" → use `neuro-graph-search` (lightweight)
-- "Find all people" → use `neuro-graph-search`
-- Any simple query → use `neuro-graph-search` first
+## Conclusion
 
-## Notes
+**Loading full graphs into context is NOT feasible.**
 
-- Bootstrap-jarvis loads graph on session start (auto, no ask)
-- For explicit user requests, ask before loading (graphs are 100KB+ = ~50k tokens)
-- Fallback to `neuro-graph-search` if user declines
-- Use local_path from memory-link nodes when available (fast disk access)
-- Don't load multiple graphs without explicit confirmation (2 graphs = ~100k tokens)
+## What to Use Instead
+
+✅ **neurograph-search** — Queries nodes.json directly (disk-based, no context bloat)
+✅ **neurograph-link** — Traverse memory-links, load specific nodes only
+✅ **bootstrap-jarvis** — Loads graph metadata on session start (auto, lightweight)
+
+## When This Skill Might Work
+
+Only for tiny graphs (<500 nodes, <50KB). Current graphs are 100x larger.
+
+**Status:** Deprecated. Use search-based patterns instead.
