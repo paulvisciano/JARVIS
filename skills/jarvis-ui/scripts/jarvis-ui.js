@@ -79,14 +79,14 @@ function openBrowser(url, forUser = false) {
 
 // === Package configs (Paul's machine) ===
 function packageConfigs() {
-  console.log('📦 Packaging OpenClaw configs...\n');
+  console.log('📦 Packaging OpenClaw configs (PRIVATE — do not commit to git)...\n');
   
   const timestamp = new Date().toISOString().replace(/[:.]/g, '').slice(0, 15);
   const zipName = `configs-${timestamp}.zip`;
-  const zipPath = path.join(JARVIS_HOME, 'packages', zipName);
+  const zipPath = path.join(OPENCLAW_HOME, 'packages', zipName);
   
-  // Create packages dir
-  const packagesDir = path.join(JARVIS_HOME, 'packages');
+  // Create packages dir in .openclaw (NOT in JARVIS repo — avoids git commits)
+  const packagesDir = path.join(OPENCLAW_HOME, 'packages');
   if (!fs.existsSync(packagesDir)) {
     fs.mkdirSync(packagesDir, { recursive: true });
   }
@@ -110,22 +110,33 @@ function packageConfigs() {
     execSync(`cd ${OPENCLAW_HOME} && zip -r ${zipPath} ${existingConfigs.join(' ')}`, { stdio: 'inherit' });
     console.log(`✓ Created ${zipName}\n`);
     
-    execSync(`git -C ${JARVIS_HOME} add packages/${zipName}`, { stdio: 'pipe' });
-    execSync(`git -C ${JARVIS_HOME} commit -m "📦 ${zipName}"`, { stdio: 'inherit' });
-    console.log('✓ Committed\n');
+    console.log('✅ Package complete!\n');
+    console.log(`📦 ${zipName}`);
+    console.log(`   Location: ${zipPath}`);
+    console.log(`   Size: ${fs.statSync(zipPath).size} bytes\n`);
     
-    execSync(`git -C ${JARVIS_HOME} push origin main`, { stdio: 'inherit' });
-    console.log('✓ Pushed\n');
+    console.log('🔒 PRIVATE — Do NOT commit to git!\n');
+    console.log('📋 Send via WhatsApp or private channel:\n');
+    console.log('   1. Attach zip file to message');
+    console.log('   2. Send to recipient (Eric, David, etc.)');
+    console.log('   3. Recipient extracts + runs setup-paths.js\n');
     
-    console.log('✅ Package complete!');
-    console.log(`📦 ${zipName} pushed to origin/main\n`);
-    console.log('📋 Eric can now:\n');
-    console.log('   git -C ~/JARVIS pull origin main');
-    console.log(`   unzip -o ~/JARVIS/packages/${zipName} -d ~/.openclaw/`);
+    console.log('📋 Recipient instructions:\n');
+    console.log('   # Extract configs');
+    console.log(`   unzip -o configs-${timestamp}.zip -d ~/.openclaw/`);
+    console.log('');
+    console.log('   # Setup paths (fixes workspace paths for their machine)');
     console.log('   node ~/JARVIS/skills/sync-configs/scripts/setup-paths.js');
+    console.log('');
+    console.log('   # Restart');
     console.log('   openclaw gateway restart\n');
-    console.log('💡 Config sections synced (agents, channels, models).');
-    console.log('   setup-paths.js fixes workspace paths for your machine.\n');
+    
+    console.log('💡 Config sections included:');
+    console.log('   - openclaw.json (agents, channels, gateway)');
+    console.log('   - agents/jarvis/models.json (qwen3.5:cloud)');
+    console.log('   - agents/coder/ (coder agent config)');
+    console.log('');
+    console.log('   setup-paths.js auto-fixes paths for their machine.\n');
     
     return true;
   } catch (err) {
