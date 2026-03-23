@@ -64,6 +64,10 @@ function setupSymlinks() {
   }
   
   try {
+    // Remove broken symlink if exists
+    if (fs.lstatSync(linkPath).isSymbolicLink()) {
+      fs.unlinkSync(linkPath);
+    }
     fs.symlinkSync(CONFIG.neurographPath, linkPath, 'dir');
     console.log('✓ Symlink created');
     return true;

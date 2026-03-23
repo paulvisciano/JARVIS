@@ -65,6 +65,7 @@ Eric/David get the same workflow:
 - No manual setup needed
 
 ## Environment Variables
-- `JARVIS_UI_PATH` — Override UI location (default: ~/SCI-FI/apps/JARVIS)
+- `JARVIS_UI_PATH` — Override UI location (default: skills/jarvis-ui/sci-fi/apps/JARVIS)
 - `JARVIS_MEMORY_PATH` — Override memory location (default: auto-scan)
 - `VOICE_PORT` — Server port (default: 18787)
+- `NEUROGRAPH_PATH` — NeuroGraph location (default: skills/jarvis-ui/sci-fi/apps/neuro-graph)
