@@ -1,12 +1,12 @@
-# CLI Transport Over WebSocket
+# CLI Transport Layer
 
 **Date:** 2026-03-23
-**Type:** decision
+**Type:** realization
 **Status:** extracted
 
 ## Correction
 
-Jarvis Server speaks to OpenClaw via `exec` CLI command, not WebSocket. This is cleaner and more aligned with Unix philosophy.
+Jarvis Server → OpenClaw via **`exec` CLI command** (not WebSocket).
 
 ## Flow
 
@@ -14,9 +14,9 @@ Jarvis Server speaks to OpenClaw via `exec` CLI command, not WebSocket. This is 
 Jarvis UI → Jarvis Server → exec openclaw command → OpenClaw Gateway → Agent Session → Channel → UI
 ```
 
-## Why It Matters
+## Why This Matters
 
-- Less infrastructure overhead
-- More sovereign stack
-- Direct invocation, no WebSocket layer
-- Simpler debugging and tracing
+- More direct, less infrastructure
+- Unix philosophy: compose simple tools
+- Sovereign stack: fewer moving parts, easier debugging
+- No WebSocket layer needed for local invocation

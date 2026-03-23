@@ -4,20 +4,19 @@
 **Type:** commitment
 **Status:** extracted
 
-## The Change
+## Changes
 
-Now that Jarvis is a separate agent with its own workspace (`/Users/paulvisciano/JARVIS`), skills in `~/JARVIS/skills/` should auto-detect without needing the `extraDirs` pointer.
+1. **Renamed Skills** — All neurograph skills now follow `neurograph-` prefix pattern:
+   - `neurograph-load` → deprecated/removed
+   - `neurograph-search`
+   - `neurograph-link`
+   - `neurograph-separate`
+   - `neurograph-sync`
 
-## What Was Removed
+2. **Removed Symlinks** — Skills auto-detect from agent workspace (`/Users/paulvisciano/JARVIS`) without needing `extraDirs` pointer
 
-- `skills.load.extraDirs` from OpenClaw config
-- Symlinks from `~/.openclaw/workspace/skills/`
-- Broken `metadata:` lines from 13 SKILL.md files (invalid YAML/JSON syntax)
+3. **Fixed Metadata** — Removed broken `metadata:` lines from 13 SKILL.md files (invalid YAML/JSON syntax was filtering skills out)
 
 ## Result
 
-Cleaner separation — Jarvis skills auto-detect from the agent workspace without needing explicit pointer. Skills stay in Jarvis folder only.
-
-## Commit
-
-c64d6f5 breath-2026-03-23: Remove broken metadata lines from SKILL.md files
+Clean multi-agent skill discovery. Skills live in JARVIS folder, auto-detected.

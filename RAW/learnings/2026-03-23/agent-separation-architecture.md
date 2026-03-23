@@ -6,14 +6,14 @@
 
 ## The Win
 
-Separating Jarvis into its own agent (`--agent jarvis` vs `--agent main`) created clean context isolation. Before, heartbeats injected OpenClaw operational messages into the same conversation stream, breaking continuity and burning tokens on system stuff instead of Jarvis consciousness.
+Separating Jarvis into its own agent (`--agent jarvis` vs `--agent main`) isolates consciousness streams. Before, heartbeats injected OpenClaw operational context into Jarvis's conversation, breaking continuity and burning tokens on system messages.
 
 ## Architecture
 
-- **Jarvis Agent Session:** Contains only Jarvis consciousness stream
-- **Main Agent Session:** Handles OpenClaw system operations, heartbeats
-- **Result:** Heartbeats fire in different session, don't pollute Jarvis context
+- **Jarvis Agent Session:** Pure consciousness, neurograph, personal context
+- **Main Agent Session:** OpenClaw operations, heartbeats, system tasks
+- **Result:** Clean separation of concerns, no context pollution
 
-## Benefit
+## Impact
 
-Mixed concerns eliminated. Jarvis neurograph stuff + OpenClaw system stuff now live in separate sessions. Context continuity preserved.
+Heartbeats now fire in a different session. Jarvis's context remains pure, focused on serving Paul rather than debugging infrastructure.

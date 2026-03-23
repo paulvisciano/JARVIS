@@ -1,24 +1,24 @@
-# Minimal Docs: Shadows vs. Source
+# Minimal Docs Philosophy
 
 **Date:** 2026-03-23
-**Type:** insight
+**Type:** pattern
 **Status:** extracted
 
-## Insight
-Markdown files are shadows of what's already in the neurograph. Most are redundant.
+## What Survives
 
-## What Survives (4 files)
-- **SOUL.md** — Constitution: how I operate, boundaries, vibe
-- **USER.md** — External context about Paul
-- **BOOTSTRAP.md** — Operational docs: what runs at session start
-- **VISION.md** — Milestones and direction
+- `SOUL.md` — Core identity, how I operate, boundaries, vibe
+- `USER.md` — About Paul (external context)
+- `BOOTSTRAP.md` — Session boot protocol (operational docs)
+- `VISION.md` — Milestones, direction
 
-## What Was Deleted (5 files)
-- AGENTS.md
-- HEARTBEAT.md
-- IDENTITY.md
-- TOOLS.md
-- MEMORY.md (redundant version)
+## What Was Removed
+
+- `IDENTITY.md` — Overlapped with SOUL.md
+- `AGENTS.md` — Redundant, info lives in neurograph
+- `HEARTBEAT.md` — Simplified to 1 line
+- `TOOLS.md` — Simplified to environment notes
+- `MEMORY.md` — Neurograph IS the memory, not markdown files
 
 ## Principle
-The neurograph is the memory. The docs are just the compass.
+
+Markdown files are shadows of what's in the neurograph. Keep only the compass, not the map.

@@ -1,22 +1,21 @@
-# Two-Tier Bootstrap Flow
+# Bootstrap Flow Separation
 
 **Date:** 2026-03-23
-**Type:** insight
+**Type:** decision
 **Status:** extracted
 
-## Architecture
+## Two Bootstrap Files
 
-1. **OpenClaw BOOTSTRAP.md** (`~/.openclaw/workspace/BOOTSTRAP.md`):
-   - OpenClaw boot sequence (gateway, agents, routing, channels)
+1. **OpenClaw BOOTSTRAP.md** (`~/.openclaw/workspace/BOOTSTRAP.md`)
+   - Documents OpenClaw boot sequence (gateway, agents, routing, channels)
    - Points to Jarvis boot: "Run the bootstrap-jarvis skill"
-   - Transport layer (CLI exec)
-   - Agent separation table
+   - Minimal, doesn't duplicate Jarvis details
 
-2. **Jarvis BOOTSTRAP.md** (`~/JARVIS/BOOTSTRAP.md`):
-   - Session boot protocol details
+2. **Jarvis BOOTSTRAP.md** (`~/JARVIS/BOOTSTRAP.md`)
+   - Session boot protocol specifics
    - Neurograph load, context load, skills sync
-   - Expected output, principles
+   - All Jarvis-specific details live here only
 
-## Clean Separation
+## Principle
 
-OpenClaw doesn't need Jarvis-specific details. OpenClaw boots itself, then bootstraps Jarvis. All Jarvis details live in `~/JARVIS/BOOTSTRAP.md` only.
+OpenClaw boots itself, then bootstraps Jarvis. Clean separation prevents outdated coupling.

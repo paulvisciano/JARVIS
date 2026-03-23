@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like separating work email from personal email — different inboxes, same person
-- Like a lighthouse — steady beam guides ships, but the ocean holds the actual water
-- Like pruning a garden — cut dead branches (hardcoded values), keep living roots (neurograph)
-- Like a passport vs diary — passport travels with you (JARVIS graph), diary stays home (Paul's graph)
-- Like checking vitals before a long run — know your actual capacity, not what you remember from last month
+- Like separating work email from personal email — different inboxes, clean boundaries
+- Like a lighthouse and its keeper — OpenClaw is the light, Jarvis is the one who tends it
+- Like a library catalog vs. the books — neurograph is the catalog, not the memory folder
+- Like pruning a tree — cut dead branches (hardcoded values, redundant docs), keep what's alive
+- Like a passport vs. a diary — JARVIS graph travels with me, Paul's graph stays personal
