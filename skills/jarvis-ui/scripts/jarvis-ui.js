@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Jarvis UI Skill — Simple orchestrator
-// Parses command → calls openclaw tools
+// Parses command → opens browser
 
 const fs = require('fs');
 const path = require('path');
@@ -12,11 +12,7 @@ const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
   installPath: INSTALL_PATH,
   uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS'),
-  port: process.env.VOICE_PORT || 18787,
-  memoryPaths: [
-    path.join(process.env.HOME, 'JARVIS', 'RAW', 'memories'),
-    path.join(process.env.HOME, 'RAW', 'memories')
-  ]
+  port: process.env.VOICE_PORT || 18787
 };
 
 // === Check if SCI-FI is cloned ===
@@ -53,14 +49,12 @@ function parseCommand(input) {
   return 'unknown';
 }
 
-// === Open browser ===
+// === Open browser (uses system default) ===
 function openBrowser(url) {
-  const args = ['browser', 'open', url];
-  
-  console.log('✓ Opening in default browser');
+  console.log('✓ Opening browser');
   
   try {
-    execSync(`openclaw ${args.join(' ')}`, { stdio: 'inherit' });
+    execSync(`open ${url}`, { stdio: 'inherit' });
     return true;
   } catch (err) {
     console.error('❌ Browser open failed:', err.message);
@@ -77,23 +71,20 @@ switch (action) {
     console.log('🧭 Opening Jarvis UI...');
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}`);
-    openBrowser(`https://localhost:${CONFIG.port}`, true); // user browser for mic
+    openBrowser(`https://localhost:${CONFIG.port}`);
     break;
     
   case 'open-neurograph':
     console.log('🧭 Opening NeuroGraph...');
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
-    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`); // default browser
+    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`);
     break;
     
   default:
     console.log('Usage: node jarvis-ui.js <command>');
     console.log('Commands:');
-    console.log('  open jarvis ui     — Open Jarvis UI (user browser for mic)');
-    console.log('  open neurograph    — Open NeuroGraph (automation browser)');
-    process.exit(1);
-}
-    console.log('  open neurograph    — Open NeuroGraph (automation browser)');
+    console.log('  open jarvis ui     — Open Jarvis UI');
+    console.log('  open neurograph    — Open NeuroGraph');
     process.exit(1);
 }
