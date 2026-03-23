@@ -5,7 +5,7 @@
 **Status:** extracted
 
 **Summary:**
-- Messages: 0
+- Messages: 20
 - Transcripts: 101
 - OCR: 16
 
