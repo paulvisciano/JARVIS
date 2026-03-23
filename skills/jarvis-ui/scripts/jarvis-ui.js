@@ -81,8 +81,8 @@ switch (action) {
   case 'open-ui':
     console.log('🧭 Opening Jarvis UI...');
     ensureInstalled();
-    console.log(`🚀 Opening http://localhost:${CONFIG.port}`);
-    openBrowser('user', `http://localhost:${CONFIG.port}`);
+    console.log(`🚀 Opening https://localhost:${CONFIG.port}`);
+    openBrowser('user', `https://localhost:${CONFIG.port}`);
     break;
     
   case 'open-neurograph':
