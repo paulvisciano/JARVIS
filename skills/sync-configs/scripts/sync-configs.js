@@ -58,6 +58,7 @@ console.log('✅ Configs synced!');
 console.log(`   Applied: ${latestZip}`);
 console.log('   You\'re running Paul\'s latest config\n');
 
-console.log('💡 Cleanup (optional):');
-console.log(`   rm ${zipPath}`);
-console.log('   git -C ~/JARVIS commit -m "cleanup: extracted configs"\n');
+console.log('💡 Next step: Run setup script to configure your paths');
+console.log(`   node ~/JARVIS/skills/sync-configs/scripts/setup-paths.js\n`);
+console.log('This creates your own Jarvis agent config with your home path.');
+console.log('Then you can say "open jarvis ui" to start the UI.\n');
