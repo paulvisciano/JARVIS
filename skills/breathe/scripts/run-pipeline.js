@@ -87,14 +87,15 @@ try {
   
   console.log('✅ Memory synced (learnings + archive files)\n');
 
-  // Step 5: Reflect (Git Commit)
-  console.log('Reflecting into git...');
+  // Step 5: Reflect (Git Commit with final reflection)
+  console.log('\n🪞 Reflecting into git...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
   execSync(`git add RAW/learnings/${date}/ RAW/memories/`, { cwd: jarvisHome, stdio: 'inherit' });
   execSync(`git commit -m "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"`, { cwd: jarvisHome, stdio: 'inherit' });
-  console.log(`✅ Breath committed: ${breathId}\n`);
+  console.log(`✅ Breath committed: ${breathId}`);
+  console.log(`   Message: "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"\n`);
 
   console.log('🫁 Breathe complete');
   
