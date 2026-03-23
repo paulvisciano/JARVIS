@@ -46,7 +46,7 @@ Unzips to `~/.openclaw/` (overwrites configs).
 ### 4. Report
 Tells Eric what was applied.
 
-## For Eric
+## For Users (Eric, David, etc.)
 
 **Natural language:**
 > "Hey Jarvis, update my configs"

@@ -97,5 +97,5 @@ console.log('✅ Agent paths configured!');
 console.log(`   Jarvis workspace: ${HOME}/JARVIS`);
 console.log(`   Default workspace: ${HOME}/.openclaw/workspace`);
 console.log('\n💡 You now have your own isolated Jarvis agent channel.');
-console.log('   Paul\'s Jarvis runs in his OpenClaw.');
-console.log('   Your Jarvis runs in your OpenClaw.\n');
+console.log('   Each user runs their own Jarvis in their own OpenClaw.\n');
+ur Jarvis runs in your OpenClaw.\n');
