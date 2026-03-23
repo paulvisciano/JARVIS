@@ -104,7 +104,7 @@ node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
 ```bash
 cd ~/JARVIS
 # Step 4a: Sync learnings (creates learning nodes)
-node skills/neuro-graph-sync/scripts/sync-graph.js $(date +%Y-%m-%d)
+node skills/neurograph-sync/scripts/sync-graph.js $(date +%Y-%m-%d)
 
 # Step 4b: Sync archive files (creates archive nodes)
 node skills/neurograph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
