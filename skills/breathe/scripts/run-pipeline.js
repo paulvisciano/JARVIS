@@ -80,7 +80,7 @@ try {
   });
   
   // Step 4b: Sync archive files to graph (creates archive nodes)
-  execSync(`node ${path.join(jarvisHome, 'skills/neuro-graph-sync/scripts/set-archive-creation-dates.js')} ${date}`, {
+  execSync(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date}`, {
     cwd: jarvisHome,
     stdio: 'inherit'
   });
