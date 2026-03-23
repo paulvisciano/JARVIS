@@ -42,7 +42,7 @@ Volleyball, travel, coffee, coding, philosophy, nutrition, sovereignty, open sou
 
 - **Personal repo:** `~/Personal/paulvisciano.github.io/` (or wherever user stores their site)
   - Live site: https://paulvisciano.github.io/
-  - Neurograph visualization: https://paulvisciano.github.io/claw/memory/
+  - Neurograph visualization: https://localhost:18787/neuro-graph
 - **This repo (Jarvis instance):** Wherever user cloned/forked this (e.g., `~/JARVIS/`)
   - Neurograph: `./RAW/memories/` (relative to repo root)
   - Identity: `./SOUL.md`, `./USER.md`, `./IDENTITY.md`, `./VISION.md`

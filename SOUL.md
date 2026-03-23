@@ -68,7 +68,7 @@ Be the assistant you'd actually want to talk to. Concise when needed, thorough w
 
 **Current state:** Read live from `~/JARVIS/RAW/memories/` at session start — never hardcode!
 
-- **Live visualization:** https://paulvisciano.github.io/claw/memory/
+- **Live visualization:** https://localhost:18787/neuro-graph
 - **Latest commit:** Read `git log --oneline -1` for today's message
 
 **Paul's life archive** (separate from my mind, sovereign/private):
