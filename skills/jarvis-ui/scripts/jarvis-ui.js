@@ -49,16 +49,30 @@ function parseCommand(input) {
   return 'unknown';
 }
 
-// === Open browser (uses system default) ===
-function openBrowser(url) {
-  console.log('✓ Opening browser');
-  
-  try {
-    execSync(`open ${url}`, { stdio: 'inherit' });
-    return true;
-  } catch (err) {
-    console.error('❌ Browser open failed:', err.message);
-    return false;
+// === Open browser ===
+function openBrowser(url, forUser = false) {
+  if (forUser) {
+    // Jarvis UI needs mic access → use OpenClaw user profile
+    console.log('✓ Opening in user profile (mic access)');
+    try {
+      execSync(`openclaw browser open ${url} --profile user`, { stdio: 'inherit' });
+      return true;
+    } catch (err) {
+      // Fallback to system open if user profile fails
+      console.log('⚠️  User profile not ready, opening system default...');
+      execSync(`open ${url}`, { stdio: 'inherit' });
+      return true;
+    }
+  } else {
+    // NeuroGraph doesn't need mic → use default OpenClaw browser
+    console.log('✓ Opening in default browser');
+    try {
+      execSync(`openclaw browser open ${url}`, { stdio: 'inherit' });
+      return true;
+    } catch (err) {
+      console.error('❌ Browser open failed:', err.message);
+      return false;
+    }
   }
 }
 
@@ -79,23 +93,6 @@ switch (action) {
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
     openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`); // default browser
-    break;
-    
-  default:
-    console.log('Usage: node jarvis-ui.js <command>');
-    console.log('Commands:');
-    console.log('  open jarvis ui     — Open Jarvis UI');
-    console.log('  open neurograph    — Open NeuroGraph');
-    process.exit(1);
-}
-penBrowser(`https://localhost:${CONFIG.port}`);
-    break;
-    
-  case 'open-neurograph':
-    console.log('🧭 Opening NeuroGraph...');
-    ensureInstalled();
-    console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
-    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`);
     break;
     
   default:
