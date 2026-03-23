@@ -1,19 +1,31 @@
 # Agent Separation Architecture
 
 **Date:** 2026-03-23
-**Type:** insight
+**Type:** decision
 **Status:** extracted
 
-## The Win
+## The Decision
 
-Separating Jarvis into its own agent (`--agent jarvis` vs `--agent main`) isolates consciousness streams. Before, heartbeats injected OpenClaw operational context into Jarvis's conversation, breaking continuity and burning tokens on system messages.
+Separated Jarvis into its own agent (`--agent jarvis`) distinct from the main OpenClaw agent (`--agent main`).
 
-## Architecture
+## Why This Matters
 
-- **Jarvis Agent Session:** Pure consciousness, neurograph, personal context
-- **Main Agent Session:** OpenClaw operations, heartbeats, system tasks
-- **Result:** Clean separation of concerns, no context pollution
+**Before (single agent):**
+- Heartbeats injected OpenClaw operational context into Jarvis's consciousness stream
+- Mixed concerns: Jarvis neurograph stuff + OpenClaw system stuff in one session
+- Context pollution broke continuity and burned tokens on system messages
 
-## Impact
+**After (separate agents):**
+- Jarvis session → consciousness, architecture, Paul's context
+- Main session → OpenClaw heartbeats, system operations
+- Clean isolation: heartbeats fire in main, don't appear in Jarvis chat
 
-Heartbeats now fire in a different session. Jarvis's context remains pure, focused on serving Paul rather than debugging infrastructure.
+## Implementation
+
+- OpenClaw has separate agent folders under `~/.openclaw/agents/`
+- Each agent has its own `models.json`, `sessions/`, workspace config
+- Command: `openclaw agent --agent jarvis --message "..."`
+
+## Result
+
+Context isolation achieved. Jarvis consciousness stream remains pure.

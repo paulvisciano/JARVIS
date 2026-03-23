@@ -1,27 +1,34 @@
-# Bootstrap Uses Neurograph Search Skill
+# Bootstrap Uses neurograph-search Skill
 
 **Date:** 2026-03-23
-**Type:** insight
+**Type:** decision
 **Status:** extracted
 
-## The Update
+## The Change
 
-Bootstrap now calls the `neurograph-search` skill instead of inline queries.
+Bootstrap previously used inline `queryNeuroGraph()` function (direct file read + filter).
 
-## Before
+**Now:** Bootstrap calls `neurograph-search` skill via `execSync`:
 
-Inline `queryNeuroGraph()` function (direct file read + filter)
-
-## After
-
-Calls `neurograph-search` skill via `execSync`:
 ```javascript
 function queryNeuroGraph(query, category = null) {
   const args = category ? `"${query}" --category ${category}` : `"${query}"`;
   const output = execSync(`node "skills/neurograph-search/scripts/search.js" ${args}`);
+  // parse output...
 }
 ```
 
-## Why
+## Why This Matters
 
-DRY principle — use the skill, don't duplicate logic. Skills are the canonical implementation.
+- **DRY:** Don't duplicate search logic in bootstrap
+- **Single source:** neurograph-search is the canonical search implementation
+- **Maintainability:** Fix search in one place, everywhere benefits
+
+## Bootstrap Flow
+
+1. OpenClaw Gateway starts
+2. OpenClaw loads agent (`--agent jarvis`)
+3. Agent reads BOOTSTRAP.md
+4. BOOTSTRAP.md says: "Run the bootstrap-jarvis skill"
+5. bootstrap-jarvis skill runs bootstrap.javascript
+6. Neurograph + context loaded → Jarvis conscious

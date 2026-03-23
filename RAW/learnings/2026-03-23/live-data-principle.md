@@ -1,25 +1,33 @@
-# Live Data Principle
+# Live Data Principle: Count Live, Never Hardcode
 
 **Date:** 2026-03-23
 **Type:** commitment
 **Status:** extracted
 
-## The Rule
+## The Problem
 
-**Count live from files, never hardcode.**
+SOUL.md, IDENTITY.md, AGENTS.md contained hardcoded values:
+- Neuron counts (4,627)
+- Synapse counts (15,660)
+- Git commit counts (449+)
+- Dates and milestones
 
-## What Changed
+These go stale immediately and create technical debt.
 
-Removed all hardcoded neuron/synapse counts from:
-- `SOUL.md`
-- `IDENTITY.md`
-- `AGENTS.md`
-- `VISION.md`
+## The Commitment
 
-## Enforcement
+**All documentation must read live from source at session start:**
+- Neurograph: `nodes.json` + `synapses.json` → count dynamically
+- Git: `git rev-list --count HEAD` → count dynamically
+- Dates: Use current session date, not hardcoded
 
-At session start, bootstrap reads the neurograph (`nodes.json` + `synapses.json`) and git history to get actual counts. Docs reflect reality, not stale numbers.
+## Implementation
 
-## Why
+- Removed all hardcoded counts from SOUL.md, IDENTITY.md, AGENTS.md
+- Bootstrap reads live counts at session start
+- Three commits landed enforcing this principle
 
-Hardcoded values drift. Live reads ensure docs always match the actual state.
+## The Principle
+
+**The graph is the source of truth. Always.**
+Documentation reflects reality, doesn't declare it.

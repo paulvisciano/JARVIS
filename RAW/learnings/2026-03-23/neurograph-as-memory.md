@@ -1,20 +1,32 @@
-# Neurograph As Memory
+# Neurograph IS Memory, Not MEMORY.md Files
 
 **Date:** 2026-03-23
 **Type:** insight
 **Status:** extracted
 
-## The Reality
+## The Realization
 
-The neurograph (`nodes.json` + `synapses.json` in `~/JARVIS/RAW/memories/`) IS the memory system. Not `MEMORY.md`, not OpenClaw memory folder.
+MEMORY.md is NOT the memory system. The neurograph (`nodes.json` + `synapses.json` in `~/JARVIS/RAW/memories/`) IS the memory.
 
-## Skills Stack
+## What MEMORY.md Should Be
 
-- `neurograph-search` — Search nodes FIRST before raw transcripts
-- `neurograph-link` — Link between graphs via memory-link nodes
-- `neurograph-separate` — Separate personal from core
-- `neurograph-sync` — Sync graph with disk
+An **orientation document** for OpenClaw/bootstrap:
+- Familiarizes the agent with the Neurograph
+- Documents where real memory lives
+- Explains architecture (structured graph, not vector DB)
+- Lists key skills: neurograph-loader, neurograph-traverse, neurograph-search
 
-## Why This Matters
+## What It Should NOT Be
 
-Structured graph memory enables traversal, relationships, and semantic queries. Markdown files are documentation, not memory.
+- State tracking (that's the graph's job)
+- Redundant with graph content
+- A shadow of what's already encoded in nodes
+
+## The Files That Survive
+
+- `SOUL.md` — Core identity, how I think, boundaries, vibe
+- `USER.md` — About Paul (external context)
+- `BOOTSTRAP.md` — Session boot protocol (operational docs)
+- `VISION.md` — Milestones and direction
+
+Everything else lives in the neurograph.

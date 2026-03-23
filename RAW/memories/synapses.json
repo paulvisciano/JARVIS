@@ -36836,5 +36836,16 @@
       "date": "2026-03-23"
     },
     "created": "2026-03-23T09:19:14"
+  },
+  {
+    "id": "syn-67eb78d5-aa70-48a3-a240-ff238251bb1a.jsonl.reset.2026-03-23T09-19-49-to-temporal-20260323",
+    "source": "67eb78d5-aa70-48a3-a240-ff238251bb1a.jsonl.reset.2026-03-23T09-19-49",
+    "target": "temporal-20260323",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-23"
+    },
+    "created": "2026-03-23T09:27:38"
   }
 ]
