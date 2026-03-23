@@ -23,7 +23,7 @@ metadata:
 
 ❌ **DON'T use this skill when:**
 - Mid-conversation (context already loaded)
-- Manual context search (use memory_search or neuro-graph-search)
+- Manual context search (use memory_search or neurograph-search)
 - Single file extraction (use context-extractor directly)
 
 ## Bootstrap Sequence

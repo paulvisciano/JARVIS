@@ -22,7 +22,7 @@ metadata:
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
-- Archive already complete (use neuro-graph-digest instead)
+- Archive already complete (use neurograph-sync instead)
 - Single file archival (move manually)
 
 ## Workflow

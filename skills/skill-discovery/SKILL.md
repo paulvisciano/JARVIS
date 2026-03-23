@@ -129,10 +129,10 @@ Skills synced:
   - context-extractor
   - cursor-plan
   - learning-creator
-  - neuro-graph-loader
-  - neuro-graph-search
-  - neuro-graph-sync
-  - neuro-graph-traverse
+  - neurograph-load
+  - neurograph-search
+  - neurograph-sync
+  - neurograph-link
   - ocr
   - process-inbox
   - skill-creator

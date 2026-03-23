@@ -22,7 +22,7 @@ metadata:
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
-- Need full session with images (use neuro-graph-loader)
+- Need full session with images (use neurograph-load)
 - Single message extraction (manual is fine)
 - Raw archive access (files already in ~/RAW/archive/)
 

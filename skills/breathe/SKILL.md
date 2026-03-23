@@ -107,7 +107,7 @@ cd ~/JARVIS
 node skills/neuro-graph-sync/scripts/sync-graph.js $(date +%Y-%m-%d)
 
 # Step 4b: Sync archive files (creates archive nodes)
-node skills/neuro-graph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
+node skills/neurograph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
 ```
 
 **What happens:**
