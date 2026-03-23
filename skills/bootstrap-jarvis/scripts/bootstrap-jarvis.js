@@ -56,15 +56,10 @@ function verifyNeuralGraph() {
   const nodesSize = fs.statSync(nodesPath).size;
   const synapsesSize = fs.existsSync(synapsesPath) ? fs.statSync(synapsesPath).size : 0;
   
-  // Query counts via neurograph-search skill (doesn't load into context)
-  const allNodes = queryNeuroGraph('', '');
-  
   return {
     exists: true,
-    neurons: allNodes.count,  // From query, not parsed
-    synapses: 0,  // Synapse counts via separate query if needed
-    total: allNodes.count,
     graphSizeKB: ((nodesSize + synapsesSize) / 1024).toFixed(1),
+    graphSizeMB: ((nodesSize + synapsesSize) / (1024 * 1024)).toFixed(2),
   };
 }
 
@@ -215,9 +210,8 @@ function bootstrap() {
     console.log(`   ⚠️ ${graphStats.error}`);
   } else {
     console.log(`   ✅ Graph verified (not loaded into context)`);
-    console.log(`   Neurons: ${graphStats.neurons}`);
-    console.log(`   Graph size: ${graphStats.graphSizeKB}KB`);
-    console.log(`   → Queried on demand, stays on disk`);
+    console.log(`   Graph size: ${graphStats.graphSizeKB}KB (${graphStats.graphSizeMB}MB)`);
+    console.log(`   → Queried on demand via neurograph-search skill`);
   }
   console.log();
   
@@ -259,16 +253,13 @@ function bootstrap() {
     hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok'
   });
   
-  const graphSizeMB = (graphStats.graphSizeKB / 1024).toFixed(2);
-  
   console.log('\n' + '='.repeat(60));
   console.log(`🫀 Jarvis Bootstrap Complete — ${dateStr}, ${timeStr} GMT+7`);
   console.log('='.repeat(60));
   console.log(`
 🧠 Neural Graph Verified (Long-Term Memory on Disk)
-   Neurons: ${graphStats.neurons.toLocaleString()}
-   Graph size: ${graphSizeMB} MB
-   → Queried on demand, not loaded into context
+   Graph size: ${graphStats.graphSizeMB} MB
+   → Queried on demand via neurograph-search skill
 
 🫀 Recent Context Loaded
    Dates: ${contextStats.dates.join(' + ')}
