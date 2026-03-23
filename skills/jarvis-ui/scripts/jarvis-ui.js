@@ -71,7 +71,24 @@ switch (action) {
     console.log('🧭 Opening Jarvis UI...');
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}`);
-    openBrowser(`https://localhost:${CONFIG.port}`);
+    openBrowser(`https://localhost:${CONFIG.port}`, true); // user profile for mic
+    break;
+    
+  case 'open-neurograph':
+    console.log('🧭 Opening NeuroGraph...');
+    ensureInstalled();
+    console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
+    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`); // default browser
+    break;
+    
+  default:
+    console.log('Usage: node jarvis-ui.js <command>');
+    console.log('Commands:');
+    console.log('  open jarvis ui     — Open Jarvis UI');
+    console.log('  open neurograph    — Open NeuroGraph');
+    process.exit(1);
+}
+penBrowser(`https://localhost:${CONFIG.port}`);
     break;
     
   case 'open-neurograph':
