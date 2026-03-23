@@ -234,12 +234,9 @@ function bootstrap() {
   }
   console.log();
   
-  // Step 4: Sync skills
-  console.log('\n🔗 Syncing Skills:');
-  const skillOutput = runSkill('skill-discovery', 'sync-skills.js');
-  if (skillOutput) {
-    console.log(skillOutput);
-  }
+  // Step 4: Skills auto-discover (no sync needed — agent workspace)
+  console.log('\n🔗 Skills:');
+  console.log('   Auto-discovered from Jarvis workspace (no symlinks needed)');
   console.log();
   
   // Step 5: Get context stats for summary
@@ -294,9 +291,9 @@ function bootstrap() {
    Sessions: ${contextStats.totalMessages} messages
    Audio: ${contextStats.totalAudio} transcripts
 
-🔗 Skills Synced
-   Jarvis skills: 17 folders
-   Workspace symlinks: 17 created
+🔗 Skills Auto-Discovered
+   Jarvis skills: loaded from agent workspace
+   No symlinks needed (clean separation)
 
 🧠 NeuroGraph Search Test (3 questions only Jarvis would know):
    ❓ "How many people?" → ${q1.count} people nodes
