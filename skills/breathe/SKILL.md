@@ -1,6 +1,7 @@
 ---
 name: breathe
 description: The full memory pipeline — one natural command. Inhale (archive), distill (extract), weave (learnings), exhale (sync). Use when: (1) end-of-day reflection, (2) ready to integrate experiences, (3) want to sync memory without running individual skills.
+metadata: { "openclaw": { "emoji": "🫁", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME", "RAW_ARCHIVE", "NEUROGRAPH_DIR"] } } }
 ---
 
 # Breathe (Memory Pipeline Orchestrator)

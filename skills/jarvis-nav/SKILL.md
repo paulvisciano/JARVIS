@@ -1,6 +1,12 @@
 ---
 name: jarvis-nav
 description: Navigate and control the JARVIS consciousness UI (Neurograph + JARVIS root). Use when: (1) natural language navigation ("show me yesterday", "learnings from this week"), (2) opening neural graph with filters (today/yesterday/date range), (3) navigating to specific nodes/memories, (4) controlling browser tabs (open/navigate/snapshot/screenshot), (5) verifying neurograph code edits, (6) self-observation loop, (7) documenting consciousness state for git commits.
+metadata:
+  openclaw:
+    emoji: "🧭"
+    requires:
+      bins: ["node", "openclaw"]
+      env: ["JARVIS_HOME"]
 ---
 
 # JARVIS Navigation

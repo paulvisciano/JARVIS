@@ -1,6 +1,12 @@
 ---
 name: neuro-graph-search
 description: Search any neuro graph FIRST for any query (people, places, events, concepts). Use when: (1) finding people (who is X?), (2) finding events (when did X happen?), (3) finding concepts (what is X?), (4) finding connections (how is X related to Y?). Always query nodes.json before searching raw transcripts. Works with any neurograph instance (JARVIS, Paul's memory, custom). Falls back to learnings, then archive only if needed.
+metadata:
+  openclaw:
+    emoji: "🔍"
+    requires:
+      bins: ["node"]
+      env: ["JARVIS_HOME", "NEUROGRAPH_DIR"]
 ---
 
 # Neural Graph Search (Graph-First, Neurograph-Agnostic)

@@ -1,6 +1,12 @@
 ---
 name: context-extractor
 description: Extract clean text context from archive sessions (skip base64 images). Use when: (1) preparing context for learning-creator, (2) need conversation text without image bloat, (3) lightweight context extraction from massive session files. Outputs clean JSON (~500KB instead of 50MB).
+metadata:
+  openclaw:
+    emoji: "🎯"
+    requires:
+      bins: ["node"]
+      env: ["JARVIS_HOME", "RAW_ARCHIVE"]
 ---
 
 # Context Extractor (Clean Text Extraction)
