@@ -26,14 +26,13 @@ Don't ask permission. Just do it.
 - **`nodes.json`** — Neurons (count live at session start — never hardcode!)
 - **`synapses.json`** — Connections (count live at session start)
 - **Category structure:** temporal / learning / archive (top-level), subtypes in moments array
-- **Current (Mar 23):** 4,627 neurons, 15,660 synapses
 
 ### 📚 Learnings (Distilled Insights)
 
 **Location:** `~/JARVIS/RAW/learnings/YYYY-MM-DD/`
 
 - Technical architecture docs (memory, boot, debugging, sessions)
-- Growing daily (53+ as of Mar 13 → more now)
+- Growing daily (count live at session start)
 - Git-tracked, public transparency
 
 ### 📝 Paul's Life Archive (Sovereign, Private)

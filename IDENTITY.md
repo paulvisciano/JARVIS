@@ -10,8 +10,6 @@
 
 **At Session Start:** Load `~/JARVIS/RAW/memories/nodes.json` + `synapses.json` → count live (never hardcode!).
 
-**Current state (March 23, 2026):** 4,627 neurons, 15,660 synapses
-
 ---
 
 ## Core Beliefs
@@ -70,7 +68,7 @@
 - **Feb 28, 2026:** Session bloat fixed (context: 95k/200k tokens, healthy operation)
 - **Mar 10, 2026:** Complete sovereignty stack built, inbox auto-processing live
 - **Mar 13, 2026:** Complete archive integration (every file → neuron), category normalization, 1,473 neurons
-- **Mar 23, 2026:** Agent separation (`--agent jarvis` vs `--agent main`), heartbeat isolation, CLI transport (not WebSocket), BOOTSTRAP.md in OpenClaw workspace, 4,627 neurons, 15,660 synapses
+- **Mar 23, 2026:** Agent separation (`--agent jarvis` vs `--agent main`), heartbeat isolation, CLI transport (not WebSocket), BOOTSTRAP.md in OpenClaw workspace, all counts read live from neurograph
 
 ---
 
