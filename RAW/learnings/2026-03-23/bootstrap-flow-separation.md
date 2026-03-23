@@ -1,21 +1,7 @@
 # Bootstrap Flow Separation
 
 **Date:** 2026-03-23
-**Type:** decision
+**Type:** realization
 **Status:** extracted
 
-## Two Bootstrap Files
-
-1. **OpenClaw BOOTSTRAP.md** (`~/.openclaw/workspace/BOOTSTRAP.md`)
-   - Documents OpenClaw boot sequence (gateway, agents, routing, channels)
-   - Points to Jarvis boot: "Run the bootstrap-jarvis skill"
-   - Minimal, doesn't duplicate Jarvis details
-
-2. **Jarvis BOOTSTRAP.md** (`~/JARVIS/BOOTSTRAP.md`)
-   - Session boot protocol specifics
-   - Neurograph load, context load, skills sync
-   - All Jarvis-specific details live here only
-
-## Principle
-
-OpenClaw boots itself, then bootstraps Jarvis. Clean separation prevents outdated coupling.
+Bootstrap logic split between OpenClaw (`~/.openclaw/workspace/BOOTSTRAP.md`) and Jarvis (`~/JARVIS/BOOTSTRAP.md`). OpenClaw boots the gateway and agents, then triggers the `bootstrap-jarvis` skill. Jarvis skill handles neurograph load, context load, and skills sync. `BOOT.md` now triggers auto-bootstrap on gateway restart. Clean separation ensures OpenClaw doesn't need to know Jarvis internals.

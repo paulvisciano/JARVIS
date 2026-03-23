@@ -1,33 +1,7 @@
-# Graph Scale Reality: 3M+ Tokens, Not 100k
+# Graph Scale Reality
 
 **Date:** 2026-03-23
-**Type:** realization
+**Type:** insight
 **Status:** extracted
 
-## The Reality Check
-
-Claimed 100k tokens at 50% context window. **Made up.**
-
-**Actual graph sizes:**
-| Graph | Nodes | Synapses | File Size |
-|-------|-------|----------|-----------|
-| JARVIS | 4,937 | 15,930 | ~6.9 MB |
-| Paul | 8,027 | 423 | ~5.6 MB |
-| Combined | 12,964 | 16,353 | ~12.6 MB |
-
-## Token Math
-
-At ~4 chars per token:
-- 12.6M chars ÷ 4 = **~3.15M tokens**
-- Context limit is 200k
-- **Loading full graphs is impossible**
-
-## The Consequence
-
-**Deprecated `neurograph-load` skill:**
-- 3M+ tokens required, context limit is 200k
-- Use `neurograph-search` instead (disk-based queries, no context bloat)
-
-## The Principle
-
-Never load full graphs into context. Query disk-based, return only what's needed.
+Combined neurograph size is ~12.6 MB (3.15M tokens), far exceeding context window limits (200k). `neurograph-load` skill deprecated/removed because loading full graphs is impossible. `neurograph-search` used instead for disk-based queries without context bloat. Reality check: we traverse via memory-link nodes, not full loads. This ensures scalability as the graph grows over years.

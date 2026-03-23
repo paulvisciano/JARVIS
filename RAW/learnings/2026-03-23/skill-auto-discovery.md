@@ -1,18 +1,7 @@
-# Skills Auto-Discover from Agent Workspace
+# Skill Auto-Discovery
 
 **Date:** 2026-03-23
-**Type:** decision
+**Type:** insight
 **Status:** extracted
 
-## Decision
-Removed symlinks from `~/.openclaw/workspace/skills/`. Skills now live in `~/JARVIS/skills/` and auto-detect.
-
-## Configuration Cleanup
-- Removed `skills.load.extraDirs` from OpenClaw config
-- Removed symlink creation from bootstrap skill
-- Skills scoped to agent workspace
-
-## Result
-- 18 skills available in Jarvis agent context
-- Clean multi-agent separation
-- No cross-contamination between agent skill sets
+Skills now live in `~/JARVIS/skills/` and auto-detect via agent workspace configuration, removing need for symlinks in OpenClaw workspace (`~/.openclaw/workspace/skills/`). Previously, symlinks were a workaround before agent separation. Now, Jarvis agent workspace scope handles discovery naturally. Skill naming standardized to `neurograph-` prefix (e.g., `neurograph-search`, `neurograph-sync`) for consistency.
