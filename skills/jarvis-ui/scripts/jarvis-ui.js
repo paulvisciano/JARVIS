@@ -79,7 +79,7 @@ function openBrowser(url, forUser = false) {
 
 // === Package configs (Paul's machine) ===
 function packageConfigs() {
-  console.log('📦 Packaging OpenClaw configs...\n');
+  console.log('📦 Packaging OpenClaw configs (path-agnostic)...\n');
   
   const timestamp = new Date().toISOString().replace(/[:.]/g, '').slice(0, 15);
   const zipName = `configs-${timestamp}.zip`;
@@ -91,9 +91,8 @@ function packageConfigs() {
     fs.mkdirSync(packagesDir, { recursive: true });
   }
   
-  // Config files to package
+  // Config files to package (ONLY path-agnostic: models, no workspace paths)
   const configs = [
-    'openclaw.json',
     'agents/jarvis/models.json',
     'agents/coder/agent.json',
     'agents/coder/models.json'
@@ -122,7 +121,10 @@ function packageConfigs() {
     console.log('📋 Eric can now:\n');
     console.log('   git -C ~/JARVIS pull origin main');
     console.log(`   unzip -o ~/JARVIS/packages/${zipName} -d ~/.openclaw/`);
+    console.log('   node ~/JARVIS/skills/sync-configs/scripts/setup-paths.js');
     console.log('   openclaw gateway restart\n');
+    console.log('💡 Models synced (qwen3.5:cloud, coder config).');
+    console.log('   setup-paths.js creates your own agent paths.\n');
     
     return true;
   } catch (err) {

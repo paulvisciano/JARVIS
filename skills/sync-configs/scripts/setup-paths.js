@@ -39,21 +39,47 @@ fs.writeFileSync(
 console.log('✓ Created ~/.openclaw/agents/jarvis/agent.json');
 console.log(`   workspace: ${HOME}/JARVIS\n`);
 
-// === Update openclaw.json with correct paths ===
+// === Update or create openclaw.json with correct paths ===
 const openclawConfigPath = path.join(OPENCLAW_HOME, 'openclaw.json');
-const config = JSON.parse(fs.readFileSync(openclawConfigPath, 'utf8'));
 
-// Update jarvis agent workspace
+let config;
+if (fs.existsSync(openclawConfigPath)) {
+  config = JSON.parse(fs.readFileSync(openclawConfigPath, 'utf8'));
+  console.log('✓ Loaded existing openclaw.json');
+} else {
+  // Create minimal config
+  config = {
+    meta: { lastTouchedVersion: '2026.3.2' },
+    models: {
+      providers: {
+        ollama: {
+          baseUrl: 'http://127.0.0.1:11434/v1',
+          apiKey: 'ollama-local',
+          api: 'ollama',
+          models: [{ id: 'qwen3.5:cloud', name: 'qwen3.5:cloud', reasoning: true }]
+        }
+      }
+    },
+    agents: {
+      defaults: { model: { primary: 'ollama/qwen3.5:cloud' } },
+      list: [{ id: 'main' }, { id: 'jarvis' }, { id: 'coder' }]
+    },
+    gateway: { port: 18789, mode: 'local', bind: 'loopback', auth: { mode: 'token' } }
+  };
+  console.log('✓ Created new openclaw.json');
+}
+
+// Update jarvis agent paths
 const jarvisAgent = config.agents.list.find(a => a.id === 'jarvis');
 if (jarvisAgent) {
   jarvisAgent.workspace = `${HOME}/JARVIS`;
   jarvisAgent.agentDir = `${OPENCLAW_HOME}/agents/jarvis`;
-  console.log('✓ Updated openclaw.json → jarvis agent paths');
+  console.log('✓ Configured jarvis agent paths');
 }
 
 // Update default workspace
 config.agents.defaults.workspace = `${HOME}/.openclaw/workspace`;
-console.log('✓ Updated openclaw.json → default workspace\n');
+console.log('✓ Configured default workspace\n');
 
 fs.writeFileSync(openclawConfigPath, JSON.stringify(config, null, 2));
 
