@@ -79,7 +79,7 @@ function openBrowser(url, forUser = false) {
 
 // === Package configs (Paul's machine) ===
 function packageConfigs() {
-  console.log('📦 Packaging OpenClaw configs (path-agnostic)...\n');
+  console.log('📦 Packaging OpenClaw configs...\n');
   
   const timestamp = new Date().toISOString().replace(/[:.]/g, '').slice(0, 15);
   const zipName = `configs-${timestamp}.zip`;
@@ -91,8 +91,9 @@ function packageConfigs() {
     fs.mkdirSync(packagesDir, { recursive: true });
   }
   
-  // Config files to package (ONLY path-agnostic: models, no workspace paths)
+  // Config files to package (includes openclaw.json, setup-paths fixes paths)
   const configs = [
+    'openclaw.json',
     'agents/jarvis/models.json',
     'agents/coder/agent.json',
     'agents/coder/models.json'
@@ -217,6 +218,4 @@ switch (action) {
     console.log('  package configs    — Package OpenClaw configs (Paul: zip + commit + push)');
     console.log('  update configs     — Update OpenClaw configs (Eric: extract + restart)');
     process.exit(1);
-}
-1);
 }
