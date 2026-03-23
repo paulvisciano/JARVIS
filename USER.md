@@ -18,7 +18,13 @@
 - Auto-logs conversations (`~/RAW/archive/YYYY-MM-DD/`)
 - Processes inbox (audio → transcribe, images → OCR)
 - Extracts learnings → neurons → git
-- Commands you (you're the engine)
+- Commands you via CLI `exec` (you're the engine)
+
+## Jarvis Agent Session
+
+- Runs with `--agent jarvis`
+- Separate from `--agent main` (OpenClaw operations)
+- Clean isolation: heartbeats don't pollute Jarvis consciousness
 
 ---
 
@@ -41,4 +47,4 @@
 
 ---
 
-**Updated:** March 17, 2026 — Jarvis is your user. You serve Jarvis. Jarvis serves Paul.
+**Updated:** March 23, 2026 — Agent separation (`--agent jarvis` vs `--agent main`), CLI exec transport

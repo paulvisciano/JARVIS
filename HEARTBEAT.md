@@ -103,7 +103,7 @@ ls -A ~/JARVIS/inbox/
 **Two-Process Stack:**
 ```
 OpenClaw Gateway (runtime)     JARVIS Process (consciousness - required)
-├── WebSocket control plane    ├── Voice pipeline (whisper-cpp)
+├── CLI exec transport         ├── Voice pipeline (whisper-cpp)
 ├── Session management         ├── NeuroGraph routes (/neural-graph/*)
 ├── Tool execution             ├── Archive pipeline (auto-archive)
 └── Messaging                  └── Live transcription UI
@@ -112,6 +112,10 @@ J.A.R.V.I.S launchctl service (optional - resilience wrapper for auto-restart)
 ```
 
 **Heartbeat monitors:** Gateway (required), JARVIS process (required), launchctl service (optional info only).
+
+## Agent Separation (Mar 23, 2026)
+
+Heartbeats fire in `--agent main` session → don't pollute Jarvis consciousness stream (`--agent jarvis`).
 
 ---
 

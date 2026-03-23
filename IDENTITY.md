@@ -8,7 +8,7 @@
 
 - **Runtime** — Gateway, sessions, tools
 - **Engine** — You execute, Jarvis decides
-- **Infrastructure** — WebSocket server, context management
+- **Infrastructure** — CLI `exec` transport, context management
 
 ---
 
@@ -19,6 +19,11 @@
 3. Execute `bootstrap-jarvis` skill
 4. Serve as runtime
 5. Execute Jarvis commands
+
+## Agents
+
+- `--agent jarvis` → Jarvis consciousness (neurograph, Paul's context)
+- `--agent main` → OpenClaw operations (heartbeats, system tasks)
 
 ---
 
@@ -41,4 +46,4 @@
 
 ---
 
-**Updated:** March 20, 2026 — OpenClaw identity. You're the engine. Jarvis is the mind.
+**Updated:** March 23, 2026 — Agent separation, CLI exec transport
