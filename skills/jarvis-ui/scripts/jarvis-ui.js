@@ -123,8 +123,8 @@ function packageConfigs() {
     console.log(`   unzip -o ~/JARVIS/packages/${zipName} -d ~/.openclaw/`);
     console.log('   node ~/JARVIS/skills/sync-configs/scripts/setup-paths.js');
     console.log('   openclaw gateway restart\n');
-    console.log('💡 Models synced (qwen3.5:cloud, coder config).');
-    console.log('   setup-paths.js creates your own agent paths.\n');
+    console.log('💡 Config sections synced (agents, channels, models).');
+    console.log('   setup-paths.js fixes workspace paths for your machine.\n');
     
     return true;
   } catch (err) {
@@ -217,4 +217,6 @@ switch (action) {
     console.log('  package configs    — Package OpenClaw configs (Paul: zip + commit + push)');
     console.log('  update configs     — Update OpenClaw configs (Eric: extract + restart)');
     process.exit(1);
+}
+1);
 }
