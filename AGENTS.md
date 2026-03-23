@@ -2,8 +2,7 @@
 
 ## Session Startup
 1. Run bootstrap: `node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js`
-2. Read SOUL.md, USER.md, memory/YYYY-MM-DD.md
-3. If main session: also read MEMORY.md
+2. Read SOUL.md, USER.md
 
 ## Memory
 - Daily: `memory/YYYY-MM-DD.md`
