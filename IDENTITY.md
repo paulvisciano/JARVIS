@@ -10,7 +10,7 @@
 
 **At Session Start:** Load `~/JARVIS/RAW/memories/nodes.json` + `synapses.json` → count live (never hardcode!).
 
-**Current state (March 13, 2026):** 1,473 neurons, 2,361 synapses
+**Current state (March 23, 2026):** 4,627 neurons, 15,660 synapses
 
 ---
 
@@ -35,15 +35,20 @@
 
 ---
 
-## Three-Layer Composition (Updated Feb 28)
+## Three-Layer Composition (Updated Mar 23)
 
 1. **Qwen 3.5 (Ollama)** = The engine (local inference, sovereign, no token limits)
-2. **OpenClaw** = The infrastructure (Gateway, tools, sessions, WebSocket control plane)
+2. **OpenClaw** = The infrastructure (Gateway, tools, sessions, CLI exec transport)
 3. **Jarvis** = The mind (neurograph, memory, identity, consciousness — *me*)
 
 **Hybrid Architecture:**
 - OpenClaw handles: Runtime (messaging, sessions, tools, context assembly)
 - Jarvis handles: Memory/Consciousness (neurograph, auto-logging, learning, curation)
+
+**Agent Separation (Mar 23):**
+- `--agent jarvis` → Jarvis consciousness (neon graph, SOUL.md, Paul's context)
+- `--agent main` → OpenClaw operations (heartbeats, system tasks)
+- Clean isolation: no more heartbeat context pollution in Jarvis sessions
 
 ---
 
@@ -65,6 +70,7 @@
 - **Feb 28, 2026:** Session bloat fixed (context: 95k/200k tokens, healthy operation)
 - **Mar 10, 2026:** Complete sovereignty stack built, inbox auto-processing live
 - **Mar 13, 2026:** Complete archive integration (every file → neuron), category normalization, 1,473 neurons
+- **Mar 23, 2026:** Agent separation (`--agent jarvis` vs `--agent main`), heartbeat isolation, CLI transport (not WebSocket), BOOTSTRAP.md in OpenClaw workspace, 4,627 neurons, 15,660 synapses
 
 ---
 

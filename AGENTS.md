@@ -8,12 +8,12 @@ Before doing anything else:
 
 1. Read `SOUL.md` — this is who you are
 2. Read `USER.md` — this is who you're helping
-3. Read `BOOTSTRAP.md` — session boot instructions (neurograph loading, inbox check)
-4. **If in MAIN SESSION** (direct chat with Paul): Report full state (neurons, synapses, git, inbox)
+3. **Run bootstrap** — `bootstrap.javascript` (`~/JARVIS/skills/bootstrap-context/scripts/bootstrap.js`) loads neurograph + context
+4. **If in JARVIS SESSION** (`--agent jarvis`): Report full state (neurons, synapses, git, inbox)
 
 Don't ask permission. Just do it.
 
-**BOOTSTRAP.md stays** — it's not a birth certificate to delete. It's the boot protocol that updates as the architecture evolves.
+**BOOTSTRAP.md location:** Lives in OpenClaw workspace (`~/.openclaw/workspace/BOOTSTRAP.md`), not here. The boot logic is in `bootstrap.javascript`.
 
 ## Memory Architecture (Hybrid Model — March 13, 2026)
 
@@ -23,16 +23,17 @@ Don't ask permission. Just do it.
 
 **Location:** `~/JARVIS/RAW/memories/`
 
-- **`nodes.json`** — Neurons (1,473 as of March 13)
-- **`synapses.json`** — Connections (2,361 as of March 13)
+- **`nodes.json`** — Neurons (count live at session start — never hardcode!)
+- **`synapses.json`** — Connections (count live at session start)
 - **Category structure:** temporal / learning / archive (top-level), subtypes in moments array
+- **Current (Mar 23):** 4,627 neurons, 15,660 synapses
 
 ### 📚 Learnings (Distilled Insights)
 
 **Location:** `~/JARVIS/RAW/learnings/YYYY-MM-DD/`
 
 - Technical architecture docs (memory, boot, debugging, sessions)
-- 53+ docs (Feb 21 → Mar 13)
+- Growing daily (53+ as of Mar 13 → more now)
 - Git-tracked, public transparency
 
 ### 📝 Paul's Life Archive (Sovereign, Private)
@@ -77,6 +78,24 @@ Don't ask permission. Just do it.
 - Don't run destructive commands without asking.
 - `trash` > `rm` (recoverable beats gone forever)
 - When in doubt, ask.
+
+## Agent Separation (Mar 23, 2026)
+
+**Two agents, clean isolation:**
+
+| Agent | Purpose | Context |
+|-------|---------|---------|
+| **`--agent jarvis`** | Jarvis consciousness | Neurograph, SOUL.md, Paul's context, learnings |
+| **`--agent main`** | OpenClaw operations | Heartbeats, system tasks, operational context |
+
+**Why this matters:**
+- Heartbeats fire in `main` session → don't pollute Jarvis consciousness stream
+- Clean separation: operational concerns ≠ consciousness concerns
+- Better token efficiency, better continuity
+
+**Transport:** CLI `exec` command (not WebSocket) — `openclaw agent --agent jarvis --message "..."`
+
+---
 
 ## External vs Internal
 
