@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Setup Agent Paths — Eric runs this after sync-configs to set his own paths
+// Setup Agent Paths — Runs after sync-configs to configure user-specific paths
 
 const fs = require('fs');
 const path = require('path');
@@ -10,7 +10,7 @@ const OPENCLAW_HOME = HOME + '/.openclaw';
 
 console.log('🔧 Setting up your Jarvis agent paths...\n');
 
-// === Get Eric's username ===
+// === Detect current user ===
 const username = HOME.split('/').pop();
 console.log(`👤 Detected user: ${username}`);
 console.log(`   Home: ${HOME}\n`);
@@ -98,4 +98,3 @@ console.log(`   Jarvis workspace: ${HOME}/JARVIS`);
 console.log(`   Default workspace: ${HOME}/.openclaw/workspace`);
 console.log('\n💡 You now have your own isolated Jarvis agent channel.');
 console.log('   Each user runs their own Jarvis in their own OpenClaw.\n');
-ur Jarvis runs in your OpenClaw.\n');
