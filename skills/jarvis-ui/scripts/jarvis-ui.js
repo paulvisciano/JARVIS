@@ -105,8 +105,8 @@ function handleOpenNeurograph() {
     return false;
   }
   
-  neurograph.serve(memoryPath);
-  browser.open('openclaw', 'http://localhost:18788'); // Controlled browser for automation
+  // NeuroGraph is served at /neuro-graph route on main Jarvis server
+  neurograph.open('openclaw', memoryPath); // Controlled browser for automation
   
   return true;
 }

@@ -31,7 +31,7 @@ function open(profile, url) {
   const browserArgs = [
     'browser',
     'open',
-    '--targetUrl', url
+    '--url', url
   ];
   
   if (profile === 'user') {
