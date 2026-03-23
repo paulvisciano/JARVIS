@@ -187,4 +187,4 @@ git push
 - **Not auto:** Automation feeds context, I create insights
 - **Git-backed:** Learnings versioned, never lost
 - **Linked:** All learnings orbit temporal anchor
-- **Uses existing scripts:** neuro-graph-digest scripts for node creation
+- **Uses neurograph-sync:** Creates + verifies learning nodes
