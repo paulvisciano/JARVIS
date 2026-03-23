@@ -87,19 +87,15 @@ node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
 ### Step 4: Create Learning Nodes
 
 ```bash
-# Add learning nodes to graph (uses existing neuro-graph-digest script)
-node skills/neuro-graph-digest/scripts/set-learning-creation-dates.js \
+# Add learning nodes to graph (uses neurograph-sync)
+node skills/neurograph-sync/scripts/verify-archive-learnings-nodes.js \
   $(date +%Y-%m-%d)
 ```
 
-### Step 5: Link to Temporal Anchor
-
-```bash
-# Link learning nodes to temporal anchor (uses existing script)
-node skills/neuro-graph-digest/scripts/verify-archive-learnings-nodes.js \
-  $(date +%Y-%m-%d)
-# Creates synapses to temporal-YYYYMMDD
-```
+**What this does:**
+- Creates learning nodes in neurograph
+- Links to temporal anchor (date)
+- Verifies 1:1 mapping (files on disk = nodes in graph)
 
 ### Step 6: Create Daily Summary
 
