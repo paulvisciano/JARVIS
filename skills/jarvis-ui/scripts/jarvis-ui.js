@@ -88,8 +88,8 @@ switch (action) {
   case 'open-neurograph':
     console.log('🧭 Opening NeuroGraph...');
     ensureInstalled();
-    console.log(`🚀 Opening http://localhost:${CONFIG.port}/neuro-graph`);
-    openBrowser('openclaw', `http://localhost:${CONFIG.port}/neuro-graph`);
+    console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
+    openBrowser('openclaw', `https://localhost:${CONFIG.port}/neuro-graph`);
     break;
     
   default:
