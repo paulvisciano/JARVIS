@@ -43,8 +43,8 @@ function runSkill(skillName, scriptName) {
   }
 }
 
-// Load neural graph (long-term memory with pointers)
-function loadNeuralGraph() {
+// Verify neural graph exists (don't load content — stays on disk, queried on demand)
+function verifyNeuralGraph() {
   const nodesPath = path.join(GRAPH_DIR, 'nodes.json');
   const synapsesPath = path.join(GRAPH_DIR, 'synapses.json');
   
@@ -52,19 +52,18 @@ function loadNeuralGraph() {
     return { error: 'Neural graph not found', exists: false };
   }
   
-  const nodes = JSON.parse(fs.readFileSync(nodesPath, 'utf8'));
-  const synapses = fs.existsSync(synapsesPath) 
-    ? JSON.parse(fs.readFileSync(synapsesPath, 'utf8')) 
-    : [];
-  
+  // Get file sizes only (no content read)
   const nodesSize = fs.statSync(nodesPath).size;
   const synapsesSize = fs.existsSync(synapsesPath) ? fs.statSync(synapsesPath).size : 0;
   
+  // Query counts via neurograph-search skill (doesn't load into context)
+  const allNodes = queryNeuroGraph('', '');
+  
   return {
     exists: true,
-    neurons: nodes.length,
-    synapses: synapses.length,
-    total: nodes.length + synapses.length,
+    neurons: allNodes.count,  // From query, not parsed
+    synapses: 0,  // Synapse counts via separate query if needed
+    total: allNodes.count,
     graphSizeKB: ((nodesSize + synapsesSize) / 1024).toFixed(1),
   };
 }
@@ -209,18 +208,16 @@ function bootstrap() {
   }
   console.log();
   
-  // Step 3: Load neural graph (long-term memory with pointers)
-  console.log('\n🧠 Loading Neural Graph (Long-Term Memory):');
-  const graphStats = loadNeuralGraph();
+  // Step 3: Verify neural graph (stays on disk, queried on demand)
+  console.log('\n🧠 Verifying Neural Graph (Long-Term Memory on Disk):');
+  const graphStats = verifyNeuralGraph();
   if (graphStats.error) {
     console.log(`   ⚠️ ${graphStats.error}`);
   } else {
-    console.log(`   ✅ Graph loaded`);
+    console.log(`   ✅ Graph verified (not loaded into context)`);
     console.log(`   Neurons: ${graphStats.neurons}`);
-    console.log(`   Synapses: ${graphStats.synapses}`);
-    console.log(`   Total: ${graphStats.total} nodes`);
     console.log(`   Graph size: ${graphStats.graphSizeKB}KB`);
-    console.log(`   → Long-term memory with pointers to learnings, archives, skills`);
+    console.log(`   → Queried on demand, stays on disk`);
   }
   console.log();
   
@@ -268,11 +265,10 @@ function bootstrap() {
   console.log(`🫀 Jarvis Bootstrap Complete — ${dateStr}, ${timeStr} GMT+7`);
   console.log('='.repeat(60));
   console.log(`
-🧠 Neural Graph Loaded (Long-Term Memory)
+🧠 Neural Graph Verified (Long-Term Memory on Disk)
    Neurons: ${graphStats.neurons.toLocaleString()}
-   Synapses: ${graphStats.synapses.toLocaleString()}
    Graph size: ${graphSizeMB} MB
-   → Pointers to learnings, archives, skills
+   → Queried on demand, not loaded into context
 
 🫀 Recent Context Loaded
    Dates: ${contextStats.dates.join(' + ')}
