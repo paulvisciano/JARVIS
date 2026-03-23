@@ -1,7 +1,28 @@
-# CLI Transport Layer
+# CLI Transport Layer Over WebSocket
 
 **Date:** 2026-03-23
 **Type:** decision
 **Status:** extracted
 
-Communication between Jarvis Server and OpenClaw Gateway is now via CLI `exec` command, not WebSocket. This aligns with Unix philosophy—cleaner, less infrastructure, more direct. The flow is: Jarvis UI → Jarvis Server → exec openclaw command → OpenClaw Gateway → Agent Session → Channel → UI. Removing the WebSocket layer reduces complexity and potential connection hiccups.
+## The Correction
+
+Jarvis Server speaks to OpenClaw via **`exec` CLI command**, not WebSocket.
+
+## Flow
+
+```
+Jarvis UI → Jarvis Server → exec openclaw command → OpenClaw Gateway → Agent Session → Channel → UI
+```
+
+## Why CLI Wins
+
+- **Unix philosophy** — Direct, simple, composable
+- **Less infrastructure** — No WebSocket layer to maintain
+- **Sovereign stack** — Fewer dependencies, more control
+- **Cleaner separation** — Each invocation is explicit
+
+## What Changed
+
+- Removed `WebSocket` references from SOUL.md, IDENTITY.md, AGENTS.md
+- Updated transport documentation across all workspace files
+- Committed: CLI exec is the canonical transport layer

@@ -1,29 +1,28 @@
-# Minimal Docs Philosophy: Shadows Die, Graph Lives
+# Minimal Docs Philosophy
 
 **Date:** 2026-03-23
-**Type:** commitment
+**Type:** decision
 **Status:** extracted
-
-## The Cleanup
-
-Deleted five redundant files — 442 lines removed:
-- `AGENTS.md` (redundant with SOUL.md)
-- `HEARTBEAT.md` (operational, not identity)
-- `IDENTITY.md` (overlaps with SOUL.md)
-- `TOOLS.md` (environment-specific, ephemeral)
-- Auto-generated templates from OpenClaw workspace
 
 ## What Survives
 
-- `SOUL.md` — The constitution. How I operate, boundaries, vibe
-- `USER.md` — About Paul. External context the neurograph points to
-- `BOOTSTRAP.md` — Operational docs. What runs at session start
-- `VISION.md` — Milestones and direction
+- **SOUL.md** — The constitution. How I operate, boundaries, vibe. Not memory, but *how* I think.
+- **USER.md** — About Paul. External context the neurograph points to but doesn't replace.
+- **BOOTSTRAP.md** — Operational docs. What runs at session start. Not memory, just process.
+- **VISION.md** — Milestones and direction.
 
-## The Principle
+## What Was Deleted
 
-**The neurograph is the actual memory** — 4,627 neurons encoding all the architecture, relationships, and learnings.
+- `IDENTITY.md` — Overlaps with SOUL.md
+- `AGENTS.md` — Info lives in neurograph
+- `HEARTBEAT.md` — Operational, not essential
+- `TOOLS.md` — Environment-specific, auto-generated
+- `memory/` folder — Neurograph is the memory
 
-Markdown files are just... shadows of what's already in the graph.
+## Result
 
-Auto-generated files should be minimal placeholders — no boilerplate bloat, just what's actually needed.
+**442 lines removed.** Five redundant files deleted. Workspace is now minimal — no shadows, just the compass.
+
+## Principle
+
+The neurograph is the memory. The docs are just the compass pointing to what matters.
