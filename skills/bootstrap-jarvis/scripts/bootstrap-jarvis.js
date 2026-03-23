@@ -11,7 +11,7 @@
  * 3. Bootstrap context (last 2 days conversations)
  * 4. Neural graph VERIFY (count nodes, don't load)
  * 5. Skill sync (symlinks)
- * 6. NeuroGraph test (3 queries — proves queryable)
+ * 6. NeuroGraph test (3 queries via neurograph-search skill)
  * 7. State write
  * 
  * Usage: cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
@@ -66,8 +66,6 @@ function loadNeuralGraph() {
     synapses: synapses.length,
     total: nodes.length + synapses.length,
     graphSizeKB: ((nodesSize + synapsesSize) / 1024).toFixed(1),
-    // Graph provides long-term memory with pointers to learnings, archives, skills
-    // Very cheap: structured knowledge, not raw text bloat
   };
 }
 
@@ -82,7 +80,6 @@ function checkInboxAndArchive() {
     return { pending: false, message: 'Inbox empty' };
   }
   
-  // Run archive-collector to process pending files
   console.log('\n📬 Inbox has pending files, running archive-collector:');
   const output = runSkill('archive-collector', 'collect.js');
   if (output) {
@@ -93,23 +90,16 @@ function checkInboxAndArchive() {
   return { pending: true, collected: false };
 }
 
-// Query NeuroGraph (inline - lightweight search, not full load)
+// Query NeuroGraph using neurograph-search skill
 function queryNeuroGraph(query, category = null) {
-  const graphPath = path.join(GRAPH_DIR, 'nodes.json');
-  const catVal = category || '';
-  
+  const args = category ? `"${query}" --category ${category}` : `"${query}"`;
   try {
-    const nodes = JSON.parse(fs.readFileSync(graphPath, 'utf8'));
-    const results = nodes.filter(n => {
-      const match = (query === '' || 
-                     n['id'].toLowerCase().includes(query.toLowerCase()) || 
-                     ((n.label || '') || '').toLowerCase().includes(query.toLowerCase()) ||
-                     JSON.stringify(n.moments || []).toLowerCase().includes(query.toLowerCase()));
-      const catMatch = (catVal === '' || ((n.category || '') || '').toLowerCase() === catVal.toLowerCase());
-      return match && catMatch;
+    const output = execSync(`node "${path.join(JARVIS_HOME, 'skills', 'neurograph-search', 'scripts', 'search.js')}" ${args}`, {
+      encoding: 'utf8',
+      env: { ...process.env, HOME, JARVIS_HOME }
     });
-    
-    return { count: results.length };
+    const match = output.match(/Found (\d+) nodes?/i);
+    return { count: match ? parseInt(match[1]) : 0 };
   } catch (err) {
     console.error('Error querying NeuroGraph:', err.message);
     return { count: 0 };
@@ -242,8 +232,8 @@ function bootstrap() {
   // Step 5: Get context stats for summary
   const contextStats = getContextStats();
   
-  // Step 6: NeuroGraph test (3 queries - proves queryable)
-  console.log('\n🧠 NeuroGraph Search Test (3 questions only Jarvis would know):');
+  // Step 6: NeuroGraph test (3 queries via neurograph-search skill)
+  console.log('\n🧠 NeuroGraph Search Test (via neurograph-search skill):');
   console.log('   ================================================\n');
   
   const q1 = queryNeuroGraph('', 'person');
@@ -260,7 +250,7 @@ function bootstrap() {
   console.log(`      ✅ A: "${q3Topic}"\n`);
   
   console.log('   ================================================\n');
-  console.log('   ✅ NeuroGraph is loaded + queryable (live data).\n');
+  console.log('   ✅ NeuroGraph queryable via neurograph-search skill (live data).\n');
   
   // Step 7: Format first message
   const now = new Date();
@@ -315,11 +305,6 @@ function bootstrap() {
   }, null, 2));
   
   console.log('🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');
-}
-
-// Run
-bootstrap();
-🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');
 }
 
 // Run
