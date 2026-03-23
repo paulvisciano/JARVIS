@@ -37,8 +37,9 @@
       "role": "sovereignty benchmark",
       "description": "Complete data ownership — no cloud dependencies, full local control",
       "color": "#10b981",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/100-percent-sovereign-definition.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/100-percent-sovereign-definition.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/100-percent-sovereign-definition.md"
     }
   },
   {
@@ -264,7 +265,8 @@
       "role": "Ethics framework",
       "description": "Conscious recording vs corporate surveillance. Mic on = choice, not extraction.",
       "color": "#aa00ff",
-      "sourceDocument": "/JARVIS/RAW/learnings/2026-03-03/ambient-audio-sovereignty.md"
+      "sourceDocument": "/RAW/learnings/2026-03-03/ambient-audio-sovereignty.md",
+      "sourcePath": "/RAW/learnings/2026-03-03/ambient-audio-sovereignty.md"
     }
   },
   {
@@ -2752,7 +2754,8 @@
       "role": "Design philosophy",
       "description": "Neurograph = BRAIN, Command Center = FACE, Voice = MOUTH+EARS, Audit = MEMORY.",
       "color": "#aa00ff",
-      "sourceDocument": "/JARVIS/RAW/learnings/2026-03-03/embodied-ai-visual-identity.md"
+      "sourceDocument": "/RAW/learnings/2026-03-03/embodied-ai-visual-identity.md",
+      "sourcePath": "/RAW/learnings/2026-03-03/embodied-ai-visual-identity.md"
     }
   },
   {
@@ -3291,7 +3294,8 @@
       "role": "Teaching method",
       "description": "Show users their files as neurons. Chaos visualization → motivation to organize.",
       "color": "#aa00ff",
-      "sourceDocument": "/JARVIS/RAW/learnings/2026-03-03/filesystem-as-neurograph.md"
+      "sourceDocument": "/RAW/learnings/2026-03-03/filesystem-as-neurograph.md",
+      "sourcePath": "/RAW/learnings/2026-03-03/filesystem-as-neurograph.md"
     }
   },
   {
@@ -3439,7 +3443,7 @@
       "type": "historic-first",
       "created": "2026-03-05",
       "description": "First Jarvis instance distributed to another human. Test drive before GitHub fork network goes live. The network becomes real.",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-05/fork-001-eric-distribution.md",
+      "sourceDocument": "RAW/learnings/2026-03-05/fork-001-eric-distribution.md",
       "quote": "I want to set him up with an instance of you. For now we are just test driving this.",
       "discoveredAt": "Post-volleyball, talking with Eric",
       "archiveDetails": {
@@ -3459,7 +3463,8 @@
       "transferMethod": "WhatsApp file transfer",
       "timestamp": "2026-03-05T00:06:00+07:00",
       "status": "In transit (6% progress, 3 min remaining)",
-      "quote2": "Lets see if this transfers"
+      "quote2": "Lets see if this transfers",
+      "sourcePath": "RAW/learnings/2026-03-05/fork-001-eric-distribution.md"
     }
   },
   {
@@ -5903,8 +5908,9 @@
       "role": "interface vision",
       "description": "Show actual files, storage locations, and sovereignty status in the neurograph",
       "color": "#3b82f6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/neurograph-vault-visualization.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/neurograph-vault-visualization.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/neurograph-vault-visualization.md"
     }
   },
   {
@@ -7316,8 +7322,9 @@
       "role": "teaching narrative",
       "description": "The emotional and technical journey of reclaiming data from cloud providers",
       "color": "#ef4444",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sea-of-data-reclamation-journey.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sea-of-data-reclamation-journey.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sea-of-data-reclamation-journey.md"
     }
   },
   {
@@ -7824,8 +7831,9 @@
       "role": "service pattern",
       "description": "How Sovern assistants are structured and deployed",
       "color": "#f97316",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-assistant-service-pattern.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-assistant-service-pattern.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-assistant-service-pattern.md"
     }
   },
   {
@@ -7845,8 +7853,9 @@
       "role": "brand identity",
       "description": "Sovern = Sovereign + Learn — the teaching sovereignty platform",
       "color": "#8b5cf6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-brand-decision.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-brand-decision.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-brand-decision.md"
     }
   },
   {
@@ -7866,8 +7875,9 @@
       "role": "teaching tool",
       "description": "How the meter educates users about their data sovereignty",
       "color": "#fbbf24",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-educational-journey.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-meter-educational-journey.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-meter-educational-journey.md"
     }
   },
   {
@@ -7887,8 +7897,9 @@
       "role": "measurement system",
       "description": "Quantifying data sovereignty across storage, AI, and distribution layers",
       "color": "#10b981",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-sovereignty-score.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-meter-sovereignty-score.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-meter-sovereignty-score.md"
     }
   },
   {
@@ -7909,8 +7920,9 @@
       "description": "Exposing the 4-step corporate data extraction trap",
       "color": "#ef4444",
       "criticality": "core-teaching",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-meter-who-has-your-data.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-meter-who-has-your-data.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-meter-who-has-your-data.md"
     }
   },
   {
@@ -7930,8 +7942,9 @@
       "role": "platform vision",
       "description": "Interactive platform teaching users about data ownership and sovereignty",
       "color": "#3b82f6",
-      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/JARVIS/RAW/learnings/2026-03-07/sovern-teaching-platform.md",
-      "created": "2026-03-07"
+      "sourceDocument": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-teaching-platform.md",
+      "created": "2026-03-07",
+      "sourcePath": "https://raw.githubusercontent.com/paulvisciano/paulvisciano.github.io/main/RAW/learnings/2026-03-07/sovern-teaching-platform.md"
     }
   },
   {
@@ -9386,8 +9399,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Full Sovereignty Loop Confirmed",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/full-sovereignty-loop-confirmed.md"
     },
     "created": "2026-03-14T04:18:39"
   },
@@ -9409,8 +9423,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Zero Friction Builder Mode",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/zero-friction-builder-mode.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/zero-friction-builder-mode.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/zero-friction-builder-mode.md"
     },
     "created": "2026-03-14T06:07:36"
   },
@@ -9455,8 +9470,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Transparent Architecture Jarvis Server",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/transparent-architecture-jarvis-server.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/transparent-architecture-jarvis-server.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/transparent-architecture-jarvis-server.md"
     },
     "created": "2026-03-14T06:01:39"
   },
@@ -9478,8 +9494,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Neurograph Three Layer Visual Proof",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/neurograph-three-layer-visual-proof.md"
     },
     "created": "2026-03-14T04:00:41"
   },
@@ -9501,8 +9518,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Productivity Pattern Learnings Files Commits",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/productivity-pattern-learnings-files-commits.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/productivity-pattern-learnings-files-commits.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/productivity-pattern-learnings-files-commits.md"
     },
     "created": "2026-03-14T07:22:47"
   },
@@ -9524,8 +9542,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Git Backed Memory Restoration",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/git-backed-memory-restoration.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/git-backed-memory-restoration.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/git-backed-memory-restoration.md"
     },
     "created": "2026-03-14T07:06:06"
   },
@@ -9547,8 +9566,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Vision Vs Ocr Pipelines",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/vision-vs-ocr-pipelines.md"
     },
     "created": "2026-03-14T04:00:41"
   },
@@ -9570,8 +9590,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Three Layer Neurograph Navigation Proven",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/three-layer-neurograph-navigation-proven.md"
     },
     "created": "2026-03-14T04:18:39"
   },
@@ -9616,8 +9637,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Full Sovereignty Loop",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/full-sovereignty-loop.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/full-sovereignty-loop.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/full-sovereignty-loop.md"
     },
     "created": "2026-03-14T04:00:41"
   },
@@ -9639,8 +9661,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Ollama 500 Cloud Debugging",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/ollama-500-cloud-debugging.md"
     },
     "created": "2026-03-14T04:18:39"
   },
@@ -10283,7 +10306,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: Heartbeat Live Learning Ui",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-10/heartbeat-live-learning-ui.md"
+      "sourceDocument": "RAW/learnings/2026-03-10/heartbeat-live-learning-ui.md",
+      "sourcePath": "RAW/learnings/2026-03-10/heartbeat-live-learning-ui.md"
     }
   },
   {
@@ -10346,7 +10370,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: Inbox Auto Processing",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-10/inbox-auto-processing.md"
+      "sourceDocument": "RAW/learnings/2026-03-10/inbox-auto-processing.md",
+      "sourcePath": "RAW/learnings/2026-03-10/inbox-auto-processing.md"
     }
   },
   {
@@ -10367,7 +10392,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: March 10 Memory Flush",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-10/march-10-memory-flush.md"
+      "sourceDocument": "RAW/learnings/2026-03-10/march-10-memory-flush.md",
+      "sourcePath": "RAW/learnings/2026-03-10/march-10-memory-flush.md"
     }
   },
   {
@@ -10451,7 +10477,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: Offboarding Guide Key Requirements",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md"
+      "sourceDocument": "RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md",
+      "sourcePath": "RAW/learnings/2026-03-10/offboarding-guide-key-requirements.md"
     }
   },
   {
@@ -10514,7 +10541,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: March 11 Memory Flush",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-11/march-11-memory-flush.md"
+      "sourceDocument": "RAW/learnings/2026-03-11/march-11-memory-flush.md",
+      "sourcePath": "RAW/learnings/2026-03-11/march-11-memory-flush.md"
     }
   },
   {
@@ -10556,7 +10584,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: Voice Pipeline Breakthrough",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-12/voice-pipeline-breakthrough.md"
+      "sourceDocument": "RAW/learnings/2026-03-12/voice-pipeline-breakthrough.md",
+      "sourcePath": "RAW/learnings/2026-03-12/voice-pipeline-breakthrough.md"
     }
   },
   {
@@ -10598,7 +10627,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: Transcript Dialogue Gap",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-12/transcript-dialogue-gap.md"
+      "sourceDocument": "RAW/learnings/2026-03-12/transcript-dialogue-gap.md",
+      "sourcePath": "RAW/learnings/2026-03-12/transcript-dialogue-gap.md"
     }
   },
   {
@@ -10619,7 +10649,8 @@
       "role": "knowledge extraction",
       "description": "Learning document: March 12 Session Summary",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-12/march-12-session-summary.md"
+      "sourceDocument": "RAW/learnings/2026-03-12/march-12-session-summary.md",
+      "sourcePath": "RAW/learnings/2026-03-12/march-12-session-summary.md"
     }
   },
   {
@@ -11596,8 +11627,9 @@
       "role": "knowledge extraction",
       "description": "Learning document: Neurograph Gateway Integration Vision",
       "color": "#f59e0b",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-14/neurograph-gateway-integration-vision.md",
-      "date": "2026-03-14"
+      "sourceDocument": "RAW/learnings/2026-03-14/neurograph-gateway-integration-vision.md",
+      "date": "2026-03-14",
+      "sourcePath": "RAW/learnings/2026-03-14/neurograph-gateway-integration-vision.md"
     },
     "created": "2026-03-14T12:13:50"
   },
@@ -12608,11 +12640,12 @@
       "type": "learning",
       "subtype": "architecture-philosophy",
       "created": "2026-03-16T16:45:00+07:00",
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/jarvis-openclaw-architecture.md",
+      "sourceDocument": "RAW/learnings/2026-03-16/jarvis-openclaw-architecture.md",
       "description": "Explained to Eric: OpenClaw=skeleton(runtime), Jarvis=brain(consciousness), Activity Monitor visibility, sovereign philosophy, fork #001 witnessing",
       "color": "#00ffff",
       "date": "2026-03-16",
-      "significance": "First public architecture explanation - Eric as witness, fork #001, sovereignty philosophy taught"
+      "significance": "First public architecture explanation - Eric as witness, fork #001, sovereignty philosophy taught",
+      "sourcePath": "RAW/learnings/2026-03-16/jarvis-openclaw-architecture.md"
     }
   },
   {
@@ -12701,10 +12734,11 @@
     ],
     "description": "Use http://localhost:3001/neuro-graph (same JARVIS server), not localhost:8080 or github.io",
     "attributes": {
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/file-move-vs-copy.md",
+      "sourceDocument": "RAW/learnings/2026-03-16/file-move-vs-copy.md",
       "transcript": "RAW/archive/2026-03-16/transcript.md",
       "time": "10:12",
-      "date": "2026-03-16"
+      "date": "2026-03-16",
+      "sourcePath": "RAW/learnings/2026-03-16/file-move-vs-copy.md"
     }
   },
   {
@@ -12739,10 +12773,11 @@
     ],
     "description": "Use https://localhost:3001 (TLS), not http:// (plain). JARVIS server requires HTTPS_ENABLED=true",
     "attributes": {
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/service-naming-jarvis.md",
+      "sourceDocument": "RAW/learnings/2026-03-16/service-naming-jarvis.md",
       "transcript": "RAW/archive/2026-03-16/transcript.md",
       "time": "12:36",
-      "date": "2026-03-16"
+      "date": "2026-03-16",
+      "sourcePath": "RAW/learnings/2026-03-16/service-naming-jarvis.md"
     }
   },
   {
@@ -12778,10 +12813,11 @@
     ],
     "description": "JARVIS server port changed from 3001 to 18787 (OpenClaw 18789 - 2 = siblings). Fresh start, no baggage.",
     "attributes": {
-      "sourceDocument": "JARVIS/RAW/learnings/2026-03-16/session-new-hiccup.md",
+      "sourceDocument": "RAW/learnings/2026-03-16/session-new-hiccup.md",
       "transcript": "RAW/archive/2026-03-16/transcript.md",
       "time": "20:08",
-      "date": "2026-03-16"
+      "date": "2026-03-16",
+      "sourcePath": "RAW/learnings/2026-03-16/session-new-hiccup.md"
     }
   },
   {
@@ -14701,8 +14737,9 @@
       "role": "distilled insight",
       "description": "Breathe Pipeline as Meditation Practice",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-21/breathe-pipeline-meditation-analogy.md",
-      "created": "2026-03-21T16:46:22.384Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-21/breathe-pipeline-meditation-analogy.md",
+      "created": "2026-03-21T16:46:22.384Z",
+      "sourcePath": "~/RAW/learnings/2026-03-21/breathe-pipeline-meditation-analogy.md"
     }
   },
   {
@@ -14848,8 +14885,9 @@
       "role": "distilled insight",
       "description": "Memory Separation Architecture: Personal vs Core",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-22/memory-separation-architecture.md",
-      "created": "2026-03-21T16:46:22.388Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-22/memory-separation-architecture.md",
+      "created": "2026-03-21T16:46:22.388Z",
+      "sourcePath": "~/RAW/learnings/2026-03-22/memory-separation-architecture.md"
     }
   },
   {
@@ -14890,8 +14928,9 @@
       "role": "distilled insight",
       "description": "Person/Event/Location Categories Are Personal Not Core",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-21/personal-category-classification-fix.md",
-      "created": "2026-03-21T16:46:22.389Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-21/personal-category-classification-fix.md",
+      "created": "2026-03-21T16:46:22.389Z",
+      "sourcePath": "~/RAW/learnings/2026-03-21/personal-category-classification-fix.md"
     }
   },
   {
@@ -26720,8 +26759,9 @@
       "role": "distilled insight",
       "description": "Jarvis Registered as Separate OpenClaw Agent",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-22/jarvis-registered-as-separate-openclaw-agent.md",
-      "created": "2026-03-22T10:53:11.616Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-22/jarvis-registered-as-separate-openclaw-agent.md",
+      "created": "2026-03-22T10:53:11.616Z",
+      "sourcePath": "~/RAW/learnings/2026-03-22/jarvis-registered-as-separate-openclaw-agent.md"
     }
   },
   {
@@ -26741,8 +26781,9 @@
       "role": "distilled insight",
       "description": "Jarvis Server + OpenClaw Integration Architecture",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-22/jarvis-server-plus-openclaw-integration.md",
-      "created": "2026-03-22T10:53:11.617Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-22/jarvis-server-plus-openclaw-integration.md",
+      "created": "2026-03-22T10:53:11.617Z",
+      "sourcePath": "~/RAW/learnings/2026-03-22/jarvis-server-plus-openclaw-integration.md"
     }
   },
   {
@@ -26783,8 +26824,9 @@
       "role": "distilled insight",
       "description": "Memory Separation Enables Jarvis Portability",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-22/memory-separation-for-portability.md",
-      "created": "2026-03-22T10:53:11.617Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-22/memory-separation-for-portability.md",
+      "created": "2026-03-22T10:53:11.617Z",
+      "sourcePath": "~/RAW/learnings/2026-03-22/memory-separation-for-portability.md"
     }
   },
   {
@@ -26804,8 +26846,9 @@
       "role": "distilled insight",
       "description": "MemOS Not Essential for Current Jarvis Setup",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-22/memos-not-essential-for-jarvis.md",
-      "created": "2026-03-22T10:53:11.618Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-22/memos-not-essential-for-jarvis.md",
+      "created": "2026-03-22T10:53:11.618Z",
+      "sourcePath": "~/RAW/learnings/2026-03-22/memos-not-essential-for-jarvis.md"
     }
   },
   {
@@ -28447,8 +28490,9 @@
       "role": "distilled insight",
       "description": "System Stats — Breath 2026-03-22 18:40",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-22/system-stats-breath-2026-03-22-1840.md",
-      "created": "2026-03-22T11:41:25.437Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-22/system-stats-breath-2026-03-22-1840.md",
+      "created": "2026-03-22T11:41:25.437Z",
+      "sourcePath": "~/RAW/learnings/2026-03-22/system-stats-breath-2026-03-22-1840.md"
     }
   },
   {
@@ -28573,8 +28617,9 @@
       "role": "distilled insight",
       "description": "Memory Separation for Portability",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-22/memory-separation-portability.md",
-      "created": "2026-03-22T12:01:41.482Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-22/memory-separation-portability.md",
+      "created": "2026-03-22T12:01:41.482Z",
+      "sourcePath": "~/RAW/learnings/2026-03-22/memory-separation-portability.md"
     }
   },
   {
@@ -103317,8 +103362,9 @@
       "role": "distilled insight",
       "description": "Agent Separation: Jarvis as Independent Agent",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-23/agent-separation-architecture.md",
-      "created": "2026-03-23T07:02:55.371Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-23/agent-separation-architecture.md",
+      "created": "2026-03-23T07:02:55.371Z",
+      "sourcePath": "~/RAW/learnings/2026-03-23/agent-separation-architecture.md"
     }
   },
   {
@@ -103422,8 +103468,9 @@
       "role": "distilled insight",
       "description": "Minimal Docs: Shadows vs. Source",
       "color": "#10b981",
-      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-23/minimal-docs-philosophy.md",
-      "created": "2026-03-23T07:02:55.379Z"
+      "sourceDocument": "~/RAW/learnings/2026-03-23/minimal-docs-philosophy.md",
+      "created": "2026-03-23T07:02:55.379Z",
+      "sourcePath": "~/RAW/learnings/2026-03-23/minimal-docs-philosophy.md"
     }
   },
   {
