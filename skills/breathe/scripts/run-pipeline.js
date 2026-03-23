@@ -74,7 +74,7 @@ try {
   console.log('Resting into memory...');
   
   // Step 4a: Sync learnings to graph (creates learning nodes)
-  execSync(`node ${path.join(jarvisHome, 'skills/neuro-graph-sync/scripts/sync-graph.js')} ${date}`, {
+  execSync(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/sync-graph.js')} ${date}`, {
     cwd: jarvisHome,
     stdio: 'inherit'
   });
