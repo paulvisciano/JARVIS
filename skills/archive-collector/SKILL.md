@@ -1,6 +1,6 @@
 ---
 name: archive-collector
-description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/ based on file creation date. Use when: (1) end-of-day archive needed, (2) ~/JARVIS/live/ has pending messages, (3) desktop files need archiving. Organizes by type + creation date. Ensures complete archive before running neuro-graph-digest.
+description: Collect all daily files into ~/RAW/archive/YYYY-MM-DD/ based on file creation date. Use when: (1) end-of-day archive needed, (2) ~/JARVIS/live/ has pending messages, (3) desktop files need archiving. Organizes by type + creation date. Ensures complete archive before running neurograph-sync.
 metadata:
   openclaw:
     emoji: "📦"

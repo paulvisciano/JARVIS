@@ -28,7 +28,7 @@ metadata:
 - Mid-day processing (use process-inbox skill instead)
 - Single file archival (use memory-link-traverse)
 - Graph search/queries (use neuro-graph-search)
-- Full graph load for analysis (use neuro-graph-loader)
+- Full graph analysis (use neurograph-link for targeted node loads)
 
 **Note:** `neuro-graph-integrity` skill is deprecated — this skill now includes all integrity checks + creates missing nodes.
 

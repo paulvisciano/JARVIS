@@ -28,7 +28,7 @@ metadata:
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
-- Individual skill needed (call `neural-graph-loader`, `bootstrap-context`, or `skill-discovery` directly)
+- Individual skill needed (call `neurograph-search`, `bootstrap-context`, or `skill-discovery` directly)
 - Mid-session context refresh (use `bootstrap-context` alone)
 - Manual skill sync only (use `skill-discovery` alone)
 - OpenClaw system skills (`/usr/local/lib/node_modules/openclaw/skills/`) — separate from Jarvis skills

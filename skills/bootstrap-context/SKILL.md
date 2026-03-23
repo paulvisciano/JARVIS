@@ -94,7 +94,7 @@ node skills/bootstrap-context/scripts/bootstrap.js
 
 ```bash
 # PHASE 0: Check bootstrap state
-# PHASE 1: Load neural graph (neuro-graph-loader)
+# PHASE 1: Verify neural graph (bootstrap-jarvis)
 # PHASE 2: Load context (bootstrap-context) ← This skill (read-only)
 # PHASE 3: Check inbox
 # PHASE 4: Report state + greet
