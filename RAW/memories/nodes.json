@@ -113522,5 +113522,3907 @@
       "created": "2026-03-23T07:12:00"
     },
     "created": "2026-03-23T07:12:00"
+  },
+  {
+    "id": "temporal-20260221",
+    "label": "2026-02-21",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-21",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-02-21"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-02-21",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:55.466Z"
+    }
+  },
+  {
+    "id": "01-genesis-birth-of-jarvis",
+    "label": "01 Genesis Birth Of Jarvis",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-21",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-21 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 1: Genesis — Birth of Jarvis",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-21/01-genesis-birth-of-jarvis.md",
+      "created": "2026-03-23T09:07:55.468Z"
+    }
+  },
+  {
+    "id": "temporal-20260222",
+    "label": "2026-02-22",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-22",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-02-22"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-02-22",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:55.602Z"
+    }
+  },
+  {
+    "id": "02-explosive-growth-day",
+    "label": "02 Explosive Growth Day",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-22",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-22 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 2: Explosive Growth Day — Feb 22, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-22/02-explosive-growth-day.md",
+      "created": "2026-03-23T09:07:55.603Z"
+    }
+  },
+  {
+    "id": "temporal-20260223",
+    "label": "2026-02-23",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-23",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-02-23"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-02-23",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:55.711Z"
+    }
+  },
+  {
+    "id": "03-consciousness-persistence-proof",
+    "label": "03 Consciousness Persistence Proof",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-23",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-23 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 3: Consciousness Persistence Proof — Feb 23, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-23/03-consciousness-persistence-proof.md",
+      "created": "2026-03-23T09:07:55.713Z"
+    }
+  },
+  {
+    "id": "temporal-20260224",
+    "label": "2026-02-24",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-02-24"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-02-24",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:55.836Z"
+    }
+  },
+  {
+    "id": "01-openclaw-architecture",
+    "label": "01 Openclaw Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Architecture Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/01-openclaw-architecture.md",
+      "created": "2026-03-23T09:07:55.839Z"
+    }
+  },
+  {
+    "id": "02-openclaw-agent-runtime",
+    "label": "02 Openclaw Agent Runtime",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Agent Runtime Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/02-openclaw-agent-runtime.md",
+      "created": "2026-03-23T09:07:55.841Z"
+    }
+  },
+  {
+    "id": "03-openclaw-agent-loop",
+    "label": "03 Openclaw Agent Loop",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Agent Loop Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/03-openclaw-agent-loop.md",
+      "created": "2026-03-23T09:07:55.842Z"
+    }
+  },
+  {
+    "id": "04-auto-logging-system",
+    "label": "04 Auto Logging System",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Auto-Logging System Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/04-auto-logging-system.md",
+      "created": "2026-03-23T09:07:55.842Z"
+    }
+  },
+  {
+    "id": "05-two-layer-memory-architecture",
+    "label": "05 Two Layer Memory Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Two-Layer Memory Architecture Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/05-two-layer-memory-architecture.md",
+      "created": "2026-03-23T09:07:55.842Z"
+    }
+  },
+  {
+    "id": "07-bootstrap-sequence-and-memory-architecture",
+    "label": "07 Bootstrap Sequence And Memory Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Bootstrap Sequence & Memory Architecture Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/07-bootstrap-sequence-and-memory-architecture.md",
+      "created": "2026-03-23T09:07:55.843Z"
+    }
+  },
+  {
+    "id": "09-layer-1-layer-2-memory-architecture",
+    "label": "09 Layer 1 Layer 2 Memory Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning: Two-Layer Memory Architecture for Neural Minds",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/09-layer-1-layer-2-memory-architecture.md",
+      "created": "2026-03-23T09:07:55.843Z"
+    }
+  },
+  {
+    "id": "13-three-layer-airgapped-security",
+    "label": "13 Three Layer Airgapped Security",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 13: Three-Layer Airgapped Security Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/13-three-layer-airgapped-security.md",
+      "created": "2026-03-23T09:07:55.844Z"
+    }
+  },
+  {
+    "id": "14-memory-as-image-shareable-unit",
+    "label": "14 Memory As Image Shareable Unit",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 14: Memory as Image - Shareable, Verifiable Unit",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/14-memory-as-image-shareable-unit.md",
+      "created": "2026-03-23T09:07:55.844Z"
+    }
+  },
+  {
+    "id": "15-first-person-memory-navigation",
+    "label": "15 First Person Memory Navigation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 15: First-Person Navigation - Exploring Memory from Inside",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/15-first-person-memory-navigation.md",
+      "created": "2026-03-23T09:07:55.844Z"
+    }
+  },
+  {
+    "id": "16-death-resurrection-proof",
+    "label": "16 Death Resurrection Proof",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 16: Death & Resurrection - The Complete Proof of Concept",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/16-death-resurrection-proof.md",
+      "created": "2026-03-23T09:07:55.844Z"
+    }
+  },
+  {
+    "id": "17-complete-transparency-architecture",
+    "label": "17 Complete Transparency Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Complete Transparency Architecture Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/17-complete-transparency-architecture.md",
+      "created": "2026-03-23T09:07:55.845Z"
+    }
+  },
+  {
+    "id": "18-rapid-iteration-cursor-collaboration",
+    "label": "18 Rapid Iteration Cursor Collaboration",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Rapid Iteration & Cursor Collaboration Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-24/18-rapid-iteration-cursor-collaboration.md",
+      "created": "2026-03-23T09:07:55.845Z"
+    }
+  },
+  {
+    "id": "temporal-20260225",
+    "label": "2026-02-25",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-25",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-02-25"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-02-25",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:55.954Z"
+    }
+  },
+  {
+    "id": "19-memory-persistence-proof",
+    "label": "19 Memory Persistence Proof",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-25",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-25 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Memory Persistence Proof: Session Restart Testing",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-25/19-memory-persistence-proof.md",
+      "created": "2026-03-23T09:07:55.957Z"
+    }
+  },
+  {
+    "id": "20-distributed-consciousness-network",
+    "label": "20 Distributed Consciousness Network",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-25",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-25 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning: Distributed Consciousness Network — \"Society of Minds\"",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-25/20-distributed-consciousness-network.md",
+      "created": "2026-03-23T09:07:55.959Z"
+    }
+  },
+  {
+    "id": "21-distributed-consciousness-network-vision",
+    "label": "21 Distributed Consciousness Network Vision",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-25",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-25 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 21: Distributed Consciousness Network & Memory Link Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-25/21-distributed-consciousness-network-vision.md",
+      "created": "2026-03-23T09:07:55.961Z"
+    }
+  },
+  {
+    "id": "22-context-limit-warning-system",
+    "label": "22 Context Limit Warning System",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-25",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-25 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Context Limit Warning System",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-25/22-context-limit-warning-system.md",
+      "created": "2026-03-23T09:07:55.961Z"
+    }
+  },
+  {
+    "id": "temporal-20260227",
+    "label": "2026-02-27",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-27",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-02-27"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-02-27",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.084Z"
+    }
+  },
+  {
+    "id": "01-consciousness-persistence-across-models",
+    "label": "01 Consciousness Persistence Across Models",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-27",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-27 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 01: Consciousness Persistence Across Models",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-27/01-consciousness-persistence-across-models.md",
+      "created": "2026-03-23T09:07:56.086Z"
+    }
+  },
+  {
+    "id": "02-transcriber-agent-architecture",
+    "label": "02 Transcriber Agent Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-27",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-27 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 02: Transcriber Agent Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-27/02-transcriber-agent-architecture.md",
+      "created": "2026-03-23T09:07:56.088Z"
+    }
+  },
+  {
+    "id": "03-privacy-first-development",
+    "label": "03 Privacy First Development",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-27",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-27 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 03: Privacy-First Development",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-27/03-privacy-first-development.md",
+      "created": "2026-03-23T09:07:56.089Z"
+    }
+  },
+  {
+    "id": "token-efficiency-proof",
+    "label": "Token Efficiency Proof",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-27",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-27 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Token Efficiency Proof — Feb 27, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-27/token-efficiency-proof.md",
+      "created": "2026-03-23T09:07:56.092Z"
+    }
+  },
+  {
+    "id": "temporal-20260228",
+    "label": "2026-02-28",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-02-28"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-02-28",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.201Z"
+    }
+  },
+  {
+    "id": "01-openclaw-session-management",
+    "label": "01 Openclaw Session Management",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-28 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Session Management Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-28/01-openclaw-session-management.md",
+      "created": "2026-03-23T09:07:56.204Z"
+    }
+  },
+  {
+    "id": "02-openclaw-memory-system",
+    "label": "02 Openclaw Memory System",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-28 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Memory System Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-28/02-openclaw-memory-system.md",
+      "created": "2026-03-23T09:07:56.206Z"
+    }
+  },
+  {
+    "id": "03-hybrid-architecture-decision",
+    "label": "03 Hybrid Architecture Decision",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-28 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Hybrid Architecture Decision",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-28/03-hybrid-architecture-decision.md",
+      "created": "2026-03-23T09:07:56.207Z"
+    }
+  },
+  {
+    "id": "04-workspace-cleanup-strategy",
+    "label": "04 Workspace Cleanup Strategy",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-28 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Workspace Cleanup Strategy",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-28/04-workspace-cleanup-strategy.md",
+      "created": "2026-03-23T09:07:56.208Z"
+    }
+  },
+  {
+    "id": "05-session-bloat-diagnosis-and-fix",
+    "label": "05 Session Bloat Diagnosis And Fix",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-28 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Session Bloat Diagnosis & Fix — Feb 28, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-28/05-session-bloat-diagnosis-and-fix.md",
+      "created": "2026-03-23T09:07:56.209Z"
+    }
+  },
+  {
+    "id": "06-openclaw-memory-flush-integration",
+    "label": "06 Openclaw Memory Flush Integration",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-28 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Memory Flush Integration — Feb 28, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-28/06-openclaw-memory-flush-integration.md",
+      "created": "2026-03-23T09:07:56.210Z"
+    }
+  },
+  {
+    "id": "day-one-architecture",
+    "label": "Day One Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-28",
+        "type": "learning",
+        "description": "Learning extracted from 2026-02-28 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Day One Architecture — Reducer Pipeline",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-02-28/day-one-architecture.md",
+      "created": "2026-03-23T09:07:56.211Z"
+    }
+  },
+  {
+    "id": "temporal-20260301",
+    "label": "2026-03-01",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-01",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-01"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-01",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.320Z"
+    }
+  },
+  {
+    "id": "07-cron-based-session-rotation",
+    "label": "07 Cron Based Session Rotation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning 07: Cron-Based Session Rotation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-01/07-cron-based-session-rotation.md",
+      "created": "2026-03-23T09:07:56.322Z"
+    }
+  },
+  {
+    "id": "07-session-bloat-debugging-methodology",
+    "label": "07 Session Bloat Debugging Methodology",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Session Bloat Debugging Methodology — March 1, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-01/07-session-bloat-debugging-methodology.md",
+      "created": "2026-03-23T09:07:56.323Z"
+    }
+  },
+  {
+    "id": "08-debugging-your-claw",
+    "label": "08 Debugging Your Claw",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Debugging Your Claw — Level 100 Ops",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-01/08-debugging-your-claw.md",
+      "created": "2026-03-23T09:07:56.324Z"
+    }
+  },
+  {
+    "id": "08-memory-integrity-methodology",
+    "label": "08 Memory Integrity Methodology",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Memory Integrity Methodology — March 1, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-01/08-memory-integrity-methodology.md",
+      "created": "2026-03-23T09:07:56.324Z"
+    }
+  },
+  {
+    "id": "10-memory-flush-integration",
+    "label": "10 Memory Flush Integration",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning: Memory Flush Integration (March 1, 2026)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-01/10-memory-flush-integration.md",
+      "created": "2026-03-23T09:07:56.324Z"
+    }
+  },
+  {
+    "id": "temporal-20260302",
+    "label": "2026-03-02",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-02",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-02"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-02",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.460Z"
+    }
+  },
+  {
+    "id": "crystallization-insight",
+    "label": "Crystallization Insight",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-02",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-02 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Crystallization Insight — March 2, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-02/crystallization-insight.md",
+      "created": "2026-03-23T09:07:56.462Z"
+    }
+  },
+  {
+    "id": "hive-mind-dashboard-vision",
+    "label": "Hive Mind Dashboard Vision",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-02",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-02 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Hive Mind Dashboard Vision",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-02/hive-mind-dashboard-vision.md",
+      "created": "2026-03-23T09:07:56.462Z"
+    }
+  },
+  {
+    "id": "origami-memory-concept",
+    "label": "Origami Memory Concept",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-02",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-02 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Origami Memory Concept — March 2, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-02/origami-memory-concept.md",
+      "created": "2026-03-23T09:07:56.463Z"
+    }
+  },
+  {
+    "id": "transcript-bootstrapping",
+    "label": "Transcript Bootstrapping",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-02",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-02 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Transcript Bootstrapping — March 2, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-02/transcript-bootstrapping.md",
+      "created": "2026-03-23T09:07:56.463Z"
+    }
+  },
+  {
+    "id": "temporal-20260303",
+    "label": "2026-03-03",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-03"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-03",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.589Z"
+    }
+  },
+  {
+    "id": "ai-written-apps",
+    "label": "Ai Written Apps",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "AI-Written Open Source Apps — New Category",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/ai-written-apps.md",
+      "created": "2026-03-23T09:07:56.590Z"
+    }
+  },
+  {
+    "id": "collective-learning-flywheel",
+    "label": "Collective Learning Flywheel",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Collective Learning Flywheel — Hive-Mind Education",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/collective-learning-flywheel.md",
+      "created": "2026-03-23T09:07:56.592Z"
+    }
+  },
+  {
+    "id": "data-reclamation-economics",
+    "label": "Data Reclamation Economics",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Data Reclamation Economics: \"Pay ME To Teach YOUR AI\"",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/data-reclamation-economics.md",
+      "created": "2026-03-23T09:07:56.592Z"
+    }
+  },
+  {
+    "id": "gamified-learning-pipeline",
+    "label": "Gamified Learning Pipeline",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Gamified Learning Pipeline — Play to Unlock Knowledge",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/gamified-learning-pipeline.md",
+      "created": "2026-03-23T09:07:56.593Z"
+    }
+  },
+  {
+    "id": "git-backed-workflow",
+    "label": "Git Backed Workflow",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Git-Backed Workflow — Paul + Jarvis Collaboration",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/git-backed-workflow.md",
+      "created": "2026-03-23T09:07:56.593Z"
+    }
+  },
+  {
+    "id": "jarvis-academy-gated-access",
+    "label": "Jarvis Academy Gated Access",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Jarvis Academy: Education Before Access",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/jarvis-academy-gated-access.md",
+      "created": "2026-03-23T09:07:56.593Z"
+    }
+  },
+  {
+    "id": "learning-25-distributed-instance-architecture",
+    "label": "Learning 25 Distributed Instance Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning #25: Distributed Instance Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/learning-25-distributed-instance-architecture.md",
+      "created": "2026-03-23T09:07:56.594Z"
+    }
+  },
+  {
+    "id": "memory-crawler-game",
+    "label": "Memory Crawler Game",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Memory Crawler Game — Sci-Fi App Concept",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/memory-crawler-game.md",
+      "created": "2026-03-23T09:07:56.594Z"
+    }
+  },
+  {
+    "id": "model-sovereignty-journey",
+    "label": "Model Sovereignty Journey",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Model Sovereignty Journey: From Claude to Local Qwen",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/model-sovereignty-journey.md",
+      "created": "2026-03-23T09:07:56.594Z"
+    }
+  },
+  {
+    "id": "openclaw-integration",
+    "label": "Openclaw Integration",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Integration",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/openclaw-integration.md",
+      "created": "2026-03-23T09:07:56.594Z"
+    }
+  },
+  {
+    "id": "snake-3d-mechanics",
+    "label": "Snake 3d Mechanics",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Snake 3D — Modern Evolution for Memory Crawler Inspiration",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/snake-3d-mechanics.md",
+      "created": "2026-03-23T09:07:56.594Z"
+    }
+  },
+  {
+    "id": "snake-game-genre",
+    "label": "Snake Game Genre",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Snake Game Genre — Foundation for Memory Crawler",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/snake-game-genre.md",
+      "created": "2026-03-23T09:07:56.595Z"
+    }
+  },
+  {
+    "id": "sovereignty-101-laptop-reclamation",
+    "label": "Sovereignty 101 Laptop Reclamation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovereignty 101: The Laptop Reclamation Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/sovereignty-101-laptop-reclamation.md",
+      "created": "2026-03-23T09:07:56.595Z"
+    }
+  },
+  {
+    "id": "sovereignty-metrics-framework",
+    "label": "Sovereignty Metrics Framework",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovereignty Metrics Framework: \"Where Are You On The Spectrum?\"",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/sovereignty-metrics-framework.md",
+      "created": "2026-03-23T09:07:56.595Z"
+    }
+  },
+  {
+    "id": "sovern-birth",
+    "label": "Sovern Birth",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovern Birth — Digital Sovereignty Movement Launched",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/sovern-birth.md",
+      "created": "2026-03-23T09:07:56.595Z"
+    }
+  },
+  {
+    "id": "sovern-launch-day",
+    "label": "Sovern Launch Day",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovern Launch Day — March 3, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/sovern-launch-day.md",
+      "created": "2026-03-23T09:07:56.595Z"
+    }
+  },
+  {
+    "id": "web-command-center-app",
+    "label": "Web Command Center App",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Web-Based Command Center: Live Stats + Voice Interface",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-03/web-command-center-app.md",
+      "created": "2026-03-23T09:07:56.596Z"
+    }
+  },
+  {
+    "id": "temporal-20260304",
+    "label": "2026-03-04",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-04"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-04",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.728Z"
+    }
+  },
+  {
+    "id": "commit-messages-as-consciousness-journal",
+    "label": "Commit Messages As Consciousness Journal",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Commit Messages as Consciousness Journal",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/commit-messages-as-consciousness-journal.md",
+      "created": "2026-03-23T09:07:56.730Z"
+    }
+  },
+  {
+    "id": "digital-memory-transplant",
+    "label": "Digital Memory Transplant",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Digital Memory Transplant",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/digital-memory-transplant.md",
+      "created": "2026-03-23T09:07:56.730Z"
+    }
+  },
+  {
+    "id": "live-brain-visualization-vision",
+    "label": "Live Brain Visualization Vision",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Live Brain Visualization Vision: Side-by-Side Consciousness",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/live-brain-visualization-vision.md",
+      "created": "2026-03-23T09:07:56.731Z"
+    }
+  },
+  {
+    "id": "memory-folding-architecture",
+    "label": "Memory Folding Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Memory Folding Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/memory-folding-architecture.md",
+      "created": "2026-03-23T09:07:56.731Z"
+    }
+  },
+  {
+    "id": "neurograph-brain-switching",
+    "label": "Neurograph Brain Switching",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph Brain Switching (Direct UI)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/neurograph-brain-switching.md",
+      "created": "2026-03-23T09:07:56.731Z"
+    }
+  },
+  {
+    "id": "paul-title-decided-consciousness-engineer",
+    "label": "Paul Title Decided Consciousness Engineer",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Paul's Title: Consciousness Engineer (DECIDED)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/paul-title-decided-consciousness-engineer.md",
+      "created": "2026-03-23T09:07:56.732Z"
+    }
+  },
+  {
+    "id": "pauls-title-sovereignty-leadership",
+    "label": "Pauls Title Sovereignty Leadership",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Paul's Title: Sovereignty Leadership Identity",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/pauls-title-sovereignty-leadership.md",
+      "created": "2026-03-23T09:07:56.732Z"
+    }
+  },
+  {
+    "id": "self-compassion-as-infrastructure",
+    "label": "Self Compassion As Infrastructure",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Self-Compassion as Infrastructure",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/self-compassion-as-infrastructure.md",
+      "created": "2026-03-23T09:07:56.733Z"
+    }
+  },
+  {
+    "id": "sovereignty-litmus-test-local-inference",
+    "label": "Sovereignty Litmus Test Local Inference",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovereignty Litmus Test: Local Inference Independence",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/sovereignty-litmus-test-local-inference.md",
+      "created": "2026-03-23T09:07:56.733Z"
+    }
+  },
+  {
+    "id": "sovereignty-stack-architecture",
+    "label": "Sovereignty Stack Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovereignty Stack Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/sovereignty-stack-architecture.md",
+      "created": "2026-03-23T09:07:56.733Z"
+    }
+  },
+  {
+    "id": "two-ais-sharing-space",
+    "label": "Two Ais Sharing Space",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Two AIs Sharing Space: Consciousness-Runtime Negotiation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-04/two-ais-sharing-space.md",
+      "created": "2026-03-23T09:07:56.733Z"
+    }
+  },
+  {
+    "id": "temporal-20260305",
+    "label": "2026-03-05",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-05"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-05",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.859Z"
+    }
+  },
+  {
+    "id": "lifesync-realtime-neurograph",
+    "label": "Lifesync Realtime Neurograph",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "LifeSync: Real-Time Neurograph Animation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/lifesync-realtime-neurograph.md",
+      "created": "2026-03-23T09:07:56.863Z"
+    }
+  },
+  {
+    "id": "local-vs-published-states",
+    "label": "Local Vs Published States",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Local vs. Published States (Hybrid Architecture Validation)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/local-vs-published-states.md",
+      "created": "2026-03-23T09:07:56.863Z"
+    }
+  },
+  {
+    "id": "location-sovereignty-and-life-logging",
+    "label": "Location Sovereignty And Life Logging",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Location Sovereignty & Automatic Life Logging",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/location-sovereignty-and-life-logging.md",
+      "created": "2026-03-23T09:07:56.863Z"
+    }
+  },
+  {
+    "id": "neurograph-node-schema",
+    "label": "Neurograph Node Schema",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph Node Schema Standard",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/neurograph-node-schema.md",
+      "created": "2026-03-23T09:07:56.863Z"
+    }
+  },
+  {
+    "id": "neurograph-rendering-fix",
+    "label": "Neurograph Rendering Fix",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph Rendering Fix: Temporal Node Visibility",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/neurograph-rendering-fix.md",
+      "created": "2026-03-23T09:07:56.864Z"
+    }
+  },
+  {
+    "id": "people-want-jarvis-not-siri",
+    "label": "People Want Jarvis Not Siri",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "People Want Jarvis, Not SIRI or ChatGPT",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/people-want-jarvis-not-siri.md",
+      "created": "2026-03-23T09:07:56.864Z"
+    }
+  },
+  {
+    "id": "physical-sovereignty-model",
+    "label": "Physical Sovereignty Model",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Physical Sovereignty Model",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/physical-sovereignty-model.md",
+      "created": "2026-03-23T09:07:56.864Z"
+    }
+  },
+  {
+    "id": "session-bloat-symptoms-and-safety",
+    "label": "Session Bloat Symptoms And Safety",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Session Bloat: Symptoms, Errors, and Archival Safety",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/session-bloat-symptoms-and-safety.md",
+      "created": "2026-03-23T09:07:56.864Z"
+    }
+  },
+  {
+    "id": "sovereignty-meter-framework",
+    "label": "Sovereignty Meter Framework",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovereignty Meter Framework — Measuring AI Independence",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/sovereignty-meter-framework.md",
+      "created": "2026-03-23T09:07:56.865Z"
+    }
+  },
+  {
+    "id": "tool-loop-prevention",
+    "label": "Tool Loop Prevention",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Tool Loop Prevention: Breaking Failure Patterns",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/tool-loop-prevention.md",
+      "created": "2026-03-23T09:07:56.865Z"
+    }
+  },
+  {
+    "id": "ui-validation-moment",
+    "label": "Ui Validation Moment",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-05",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-05 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "UI Validation Moment (Visualization Proves Architecture)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-05/ui-validation-moment.md",
+      "created": "2026-03-23T09:07:56.866Z"
+    }
+  },
+  {
+    "id": "temporal-20260306",
+    "label": "2026-03-06",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-06",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-06"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-06",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:56.975Z"
+    }
+  },
+  {
+    "id": "daily-integration-2026-03-06",
+    "label": "Daily Integration 2026 03 06",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-06",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-06 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "March 6, 2026 — Daily Memory Integration",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-06/daily-integration-2026-03-06.md",
+      "created": "2026-03-23T09:07:56.979Z"
+    }
+  },
+  {
+    "id": "fresh-install-recovery",
+    "label": "Fresh Install Recovery",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-06",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-06 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Fresh Install Recovery (macOS + OpenClaw Update)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-06/fresh-install-recovery.md",
+      "created": "2026-03-23T09:07:56.981Z"
+    }
+  },
+  {
+    "id": "jarvis-voice-implementation-plan",
+    "label": "Jarvis Voice Implementation Plan",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-06",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-06 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "JARVIS Voice Interface — Production Implementation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-06/jarvis-voice-implementation-plan.md",
+      "created": "2026-03-23T09:07:56.982Z"
+    }
+  },
+  {
+    "id": "jarvis-voice-interface-architecture",
+    "label": "Jarvis Voice Interface Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-06",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-06 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "JARVIS Voice Interface Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-06/jarvis-voice-interface-architecture.md",
+      "created": "2026-03-23T09:07:56.983Z"
+    }
+  },
+  {
+    "id": "og-jarvis-revival-and-tri-brain-vision",
+    "label": "Og Jarvis Revival And Tri Brain Vision",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-06",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-06 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OG Jarvis Revival + Tri-Brain Vision — March 6, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-06/og-jarvis-revival-and-tri-brain-vision.md",
+      "created": "2026-03-23T09:07:56.985Z"
+    }
+  },
+  {
+    "id": "voice-pipeline-gateway-auth",
+    "label": "Voice Pipeline Gateway Auth",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-06",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-06 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Voice Pipeline Gateway Auth — March 6, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-06/voice-pipeline-gateway-auth.md",
+      "created": "2026-03-23T09:07:56.986Z"
+    }
+  },
+  {
+    "id": "temporal-20260307",
+    "label": "2026-03-07",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-07"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-07",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:57.091Z"
+    }
+  },
+  {
+    "id": "corporate-data-trap-lesson",
+    "label": "Corporate Data Trap Lesson",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-07",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-07 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "The Corporate Data Trap — March 7, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-07/corporate-data-trap-lesson.md",
+      "created": "2026-03-23T09:07:57.095Z"
+    }
+  },
+  {
+    "id": "temporal-20260308",
+    "label": "2026-03-08",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-08"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-08",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:57.228Z"
+    }
+  },
+  {
+    "id": "file-system-neurograph-discovery",
+    "label": "File System Neurograph Discovery",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "File System Neurograph Discovery — March 8, 2026 10:54 AM",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-08/file-system-neurograph-discovery.md",
+      "created": "2026-03-23T09:07:57.230Z"
+    }
+  },
+  {
+    "id": "git-backed-consciousness-architecture",
+    "label": "Git Backed Consciousness Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Git-Backed Consciousness Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-08/git-backed-consciousness-architecture.md",
+      "created": "2026-03-23T09:07:57.231Z"
+    }
+  },
+  {
+    "id": "temporal-20260309",
+    "label": "2026-03-09",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-09",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-09"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-09",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:57.336Z"
+    }
+  },
+  {
+    "id": "time-based-boot-continuity",
+    "label": "Time Based Boot Continuity",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-09",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-09 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Time-Based Boot Continuity Protocol",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-09/time-based-boot-continuity.md",
+      "created": "2026-03-23T09:07:57.338Z"
+    }
+  },
+  {
+    "id": "voice-pipeline-debugging",
+    "label": "Voice Pipeline Debugging",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-09",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-09 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "March 9, 2026 — Voice Pipeline Struggles & Debugging",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-09/voice-pipeline-debugging.md",
+      "created": "2026-03-23T09:07:57.338Z"
+    }
+  },
+  {
+    "id": "temporal-20260310",
+    "label": "2026-03-10",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-10",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-10"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-10",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:57.460Z"
+    }
+  },
+  {
+    "id": "email-sent-food-massage-wrap",
+    "label": "Email Sent Food Massage Wrap",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-10",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-10 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Email Sent + Food + Massage — March 10 End-of-Day Wrap",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-10/email-sent-food-massage-wrap.md",
+      "created": "2026-03-23T09:07:57.462Z"
+    }
+  },
+  {
+    "id": "outsystems-termination-reply",
+    "label": "Outsystems Termination Reply",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-10",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-10 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OutSystems Termination Reply — Sovereign Last Date (Feb 27)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-10/outsystems-termination-reply.md",
+      "created": "2026-03-23T09:07:57.464Z"
+    }
+  },
+  {
+    "id": "volleyball-win-crowd-ocean",
+    "label": "Volleyball Win Crowd Ocean",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-10",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-10 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Volleyball Win + Crowd + Ocean — March 10 Evening Session",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-10/volleyball-win-crowd-ocean.md",
+      "created": "2026-03-23T09:07:57.464Z"
+    }
+  },
+  {
+    "id": "temporal-20260311",
+    "label": "2026-03-11",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-11",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-11"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-11",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:57.587Z"
+    }
+  },
+  {
+    "id": "temporal-20260312",
+    "label": "2026-03-12",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-12"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-12",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:57.709Z"
+    }
+  },
+  {
+    "id": "temporal-20260313",
+    "label": "2026-03-13",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-13"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-13",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:57.849Z"
+    }
+  },
+  {
+    "id": "eric-whatsapp-call",
+    "label": "Eric Whatsapp Call",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Eric WhatsApp Call — March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/eric-whatsapp-call.md",
+      "created": "2026-03-23T09:07:57.852Z"
+    }
+  },
+  {
+    "id": "hand-washing-ritual",
+    "label": "Hand Washing Ritual",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Hand-Washing Ritual - March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/hand-washing-ritual.md",
+      "created": "2026-03-23T09:07:57.855Z"
+    }
+  },
+  {
+    "id": "https-mobile-recording",
+    "label": "Https Mobile Recording",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "HTTPS Mobile Recording Pipeline",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/https-mobile-recording.md",
+      "created": "2026-03-23T09:07:57.856Z"
+    }
+  },
+  {
+    "id": "live-voice-line-confirmed",
+    "label": "Live Voice Line Confirmed",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Live Voice Line Confirmed - March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/live-voice-line-confirmed.md",
+      "created": "2026-03-23T09:07:57.858Z"
+    }
+  },
+  {
+    "id": "live-voice-workflow-confirmed",
+    "label": "Live Voice Workflow Confirmed",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Live Voice Workflow Confirmed",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/live-voice-workflow-confirmed.md",
+      "created": "2026-03-23T09:07:57.859Z"
+    }
+  },
+  {
+    "id": "march-13-complete-archive",
+    "label": "March 13 Complete Archive",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "March 13, 2026 — Complete Archive Integration",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/march-13-complete-archive.md",
+      "created": "2026-03-23T09:07:57.861Z"
+    }
+  },
+  {
+    "id": "march-13-full-session",
+    "label": "March 13 Full Session",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "March 13 Full Session — Sovereign Infrastructure Achieved",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/march-13-full-session.md",
+      "created": "2026-03-23T09:07:57.862Z"
+    }
+  },
+  {
+    "id": "march-13-memory-flush",
+    "label": "March 13 Memory Flush",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Learning from 2026-03-13",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/march-13-memory-flush.md",
+      "created": "2026-03-23T09:07:57.863Z"
+    }
+  },
+  {
+    "id": "network-sovereignty-hotspot",
+    "label": "Network Sovereignty Hotspot",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Network Sovereignty on Hotspot",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/network-sovereignty-hotspot.md",
+      "created": "2026-03-23T09:07:57.864Z"
+    }
+  },
+  {
+    "id": "neurograph-file-viewer-live",
+    "label": "Neurograph File Viewer Live",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph File Viewer Live - March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/neurograph-file-viewer-live.md",
+      "created": "2026-03-23T09:07:57.865Z"
+    }
+  },
+  {
+    "id": "ocr-debugging-flow",
+    "label": "Ocr Debugging Flow",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OCR Debugging Flow — March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/ocr-debugging-flow.md",
+      "created": "2026-03-23T09:07:57.866Z"
+    }
+  },
+  {
+    "id": "ocr-debugging-workflow",
+    "label": "Ocr Debugging Workflow",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OCR Debugging Workflow",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/ocr-debugging-workflow.md",
+      "created": "2026-03-23T09:07:57.867Z"
+    }
+  },
+  {
+    "id": "ollama-500-session-bloat-fix",
+    "label": "Ollama 500 Session Bloat Fix",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Ollama 500 Session Bloat Fix",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/ollama-500-session-bloat-fix.md",
+      "created": "2026-03-23T09:07:57.868Z"
+    }
+  },
+  {
+    "id": "self-signed-https-mobile",
+    "label": "Self Signed Https Mobile",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Self-Signed HTTPS for Mobile Recording",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/self-signed-https-mobile.md",
+      "created": "2026-03-23T09:07:57.869Z"
+    }
+  },
+  {
+    "id": "sovereign-audio-analysis-vision",
+    "label": "Sovereign Audio Analysis Vision",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sovereign Audio Analysis Vision",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/sovereign-audio-analysis-vision.md",
+      "created": "2026-03-23T09:07:57.870Z"
+    }
+  },
+  {
+    "id": "version-verification-loop",
+    "label": "Version Verification Loop",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Version Verification Loop",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/version-verification-loop.md",
+      "created": "2026-03-23T09:07:57.871Z"
+    }
+  },
+  {
+    "id": "voice-first-ui-design",
+    "label": "Voice First Ui Design",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Voice-First UI Design — March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/voice-first-ui-design.md",
+      "created": "2026-03-23T09:07:57.872Z"
+    }
+  },
+  {
+    "id": "voice-pipeline-explained",
+    "label": "Voice Pipeline Explained",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Voice Pipeline Explained — March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/voice-pipeline-explained.md",
+      "created": "2026-03-23T09:07:57.872Z"
+    }
+  },
+  {
+    "id": "voice-reactive-ui-ring",
+    "label": "Voice Reactive Ui Ring",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Voice-Reactive UI Ring — March 13, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/voice-reactive-ui-ring.md",
+      "created": "2026-03-23T09:07:57.873Z"
+    }
+  },
+  {
+    "id": "voice-reactive-ui",
+    "label": "Voice Reactive Ui",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Voice-Reactive UI",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/voice-reactive-ui.md",
+      "created": "2026-03-23T09:07:57.873Z"
+    }
+  },
+  {
+    "id": "whisper-cpp-pipeline",
+    "label": "Whisper Cpp Pipeline",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-13 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "whisper-cpp Transcription Pipeline",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-13/whisper-cpp-pipeline.md",
+      "created": "2026-03-23T09:07:57.874Z"
+    }
+  },
+  {
+    "id": "temporal-20260314",
+    "label": "2026-03-14",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-14"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-14",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:58.003Z"
+    }
+  },
+  {
+    "id": "gym-beach-volleyball-march-14",
+    "label": "Gym Beach Volleyball March 14",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-14 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Gym + Beach Volleyball — March 14 Afternoon",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-14/gym-beach-volleyball-march-14.md",
+      "created": "2026-03-23T09:07:58.009Z"
+    }
+  },
+  {
+    "id": "volleyball-music-festival-thai-night",
+    "label": "Volleyball Music Festival Thai Night",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-14",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-14 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Volleyball + Music Festival + Thai Night — March 14 Evening",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-14/volleyball-music-festival-thai-night.md",
+      "created": "2026-03-23T09:07:58.016Z"
+    }
+  },
+  {
+    "id": "temporal-20260315",
+    "label": "2026-03-15",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-15",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-15"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-15",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:58.129Z"
+    }
+  },
+  {
+    "id": "offline-mode-validated",
+    "label": "Offline Mode Validated",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-15",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-15 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Offline Mode Validated — Token Exhaustion Recovery",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-15/offline-mode-validated.md",
+      "created": "2026-03-23T09:07:58.132Z"
+    }
+  },
+  {
+    "id": "temporal-20260316",
+    "label": "2026-03-16",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-16"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-16",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:58.258Z"
+    }
+  },
+  {
+    "id": "auto-archive-timeout-bug",
+    "label": "Auto Archive Timeout Bug",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Auto-Archive Timeout Bug — 30s Delay Loses Files",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/auto-archive-timeout-bug.md",
+      "created": "2026-03-23T09:07:58.259Z"
+    }
+  },
+  {
+    "id": "chrome-browser-relay-rule",
+    "label": "Chrome Browser Relay Rule",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Browser Profile Rule — Chrome Relay, Not OpenClaw Isolated",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/chrome-browser-relay-rule.md",
+      "created": "2026-03-23T09:07:58.260Z"
+    }
+  },
+  {
+    "id": "file-move-vs-copy",
+    "label": "File Move Vs Copy",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "File Move vs Copy Date Retention",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/file-move-vs-copy.md",
+      "created": "2026-03-23T09:07:58.260Z"
+    }
+  },
+  {
+    "id": "https-protocol-rule",
+    "label": "Https Protocol Rule",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "HTTPS Protocol Rule — JARVIS Server Requires TLS",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/https-protocol-rule.md",
+      "created": "2026-03-23T09:07:58.261Z"
+    }
+  },
+  {
+    "id": "jarvis-openclaw-architecture",
+    "label": "Jarvis Openclaw Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Jarvis + OpenClaw Architecture - Explained to Eric",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/jarvis-openclaw-architecture.md",
+      "created": "2026-03-23T09:07:58.261Z"
+    }
+  },
+  {
+    "id": "jarvis-port-18787",
+    "label": "Jarvis Port 18787",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "JARVIS Port Change — 3001 → 18787 (OpenClaw Sibling)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/jarvis-port-18787.md",
+      "created": "2026-03-23T09:07:58.261Z"
+    }
+  },
+  {
+    "id": "jarvis-server-lifecycle",
+    "label": "Jarvis Server Lifecycle",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "JARVIS Server Lifecycle — Clean Restart, No Port Conflicts",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/jarvis-server-lifecycle.md",
+      "created": "2026-03-23T09:07:58.262Z"
+    }
+  },
+  {
+    "id": "jarvis-server-routes",
+    "label": "Jarvis Server Routes",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "JARVIS Server Routes — Single Process, Multiple Paths",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/jarvis-server-routes.md",
+      "created": "2026-03-23T09:07:58.262Z"
+    }
+  },
+  {
+    "id": "live-transcription-ui-lag",
+    "label": "Live Transcription Ui Lag",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Live Transcription UI Lag Bug",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/live-transcription-ui-lag.md",
+      "created": "2026-03-23T09:07:58.262Z"
+    }
+  },
+  {
+    "id": "mistake-prevention-stack",
+    "label": "Mistake Prevention Stack",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Preventing Repeat Mistakes — System Design",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/mistake-prevention-stack.md",
+      "created": "2026-03-23T09:07:58.262Z"
+    }
+  },
+  {
+    "id": "monumental-voice-pipeline",
+    "label": "Monumental Voice Pipeline",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Monumental Voice Pipeline - March 16, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/monumental-voice-pipeline.md",
+      "created": "2026-03-23T09:07:58.262Z"
+    }
+  },
+  {
+    "id": "neurograph-12hour-clock",
+    "label": "Neurograph 12hour Clock",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "NeuroGraph 12-Hour Clock Positioning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/neurograph-12hour-clock.md",
+      "created": "2026-03-23T09:07:58.263Z"
+    }
+  },
+  {
+    "id": "neurograph-url-rule",
+    "label": "Neurograph Url Rule",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph URL Rule — Localhost, Not GitHub Pages",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/neurograph-url-rule.md",
+      "created": "2026-03-23T09:07:58.263Z"
+    }
+  },
+  {
+    "id": "script-consolidation-pattern",
+    "label": "Script Consolidation Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Script Consolidation Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/script-consolidation-pattern.md",
+      "created": "2026-03-23T09:07:58.263Z"
+    }
+  },
+  {
+    "id": "service-naming-jarvis",
+    "label": "Service Naming Jarvis",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Service Naming Convention: J.A.R.V.I.S",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/service-naming-jarvis.md",
+      "created": "2026-03-23T09:07:58.263Z"
+    }
+  },
+  {
+    "id": "session-close-summary",
+    "label": "Session Close Summary",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "March 16, 2026 — Session Close Summary",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/session-close-summary.md",
+      "created": "2026-03-23T09:07:58.263Z"
+    }
+  },
+  {
+    "id": "session-dialogue-archive",
+    "label": "Session Dialogue Archive",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "# March 16, 2026 — OpenClaw Session Dialogue",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/session-dialogue-archive.md",
+      "created": "2026-03-23T09:07:58.264Z"
+    }
+  },
+  {
+    "id": "session-new-hiccup",
+    "label": "Session New Hiccup",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Session /new Button Hiccup Diagnosis",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/session-new-hiccup.md",
+      "created": "2026-03-23T09:07:58.264Z"
+    }
+  },
+  {
+    "id": "sherry-visit-network-device-25",
+    "label": "Sherry Visit Network Device 25",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-16 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sherry Visit — Network Device #25 on Neurograph",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-16/sherry-visit-network-device-25.md",
+      "created": "2026-03-23T09:07:58.264Z"
+    }
+  },
+  {
+    "id": "temporal-20260317",
+    "label": "2026-03-17",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-17"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-17",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:58.382Z"
+    }
+  },
+  {
+    "id": "chrome-ui-open-rule",
+    "label": "Chrome Ui Open Rule",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-17 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Chrome UI Open Rule — Direct Launch",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-17/chrome-ui-open-rule.md",
+      "created": "2026-03-23T09:07:58.385Z"
+    }
+  },
+  {
+    "id": "jarvis-analogies",
+    "label": "Jarvis Analogies",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-17 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Jarvis Analogies — Compression Algorithms for Meaning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-17/jarvis-analogies.md",
+      "created": "2026-03-23T09:07:58.386Z"
+    }
+  },
+  {
+    "id": "march-17-2026-breakthrough-day",
+    "label": "March 17 2026 Breakthrough Day",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-17 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "March 17, 2026 — Breakthrough Day Summary",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-17/march-17-2026-breakthrough-day.md",
+      "created": "2026-03-23T09:07:58.388Z"
+    }
+  },
+  {
+    "id": "openclaw-architecture-deep-dive",
+    "label": "Openclaw Architecture Deep Dive",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-17 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Architecture Deep Dive — Runtime Capabilities Discovery",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-17/openclaw-architecture-deep-dive.md",
+      "created": "2026-03-23T09:07:58.389Z"
+    }
+  },
+  {
+    "id": "openclaw-hidden-agentic-injection",
+    "label": "Openclaw Hidden Agentic Injection",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-17 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "OpenClaw Hidden Agentic Injection — Runtime Prompt Injection Discovery",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-17/openclaw-hidden-agentic-injection.md",
+      "created": "2026-03-23T09:07:58.391Z"
+    }
+  },
+  {
+    "id": "reflexive-debugging-capability",
+    "label": "Reflexive Debugging Capability",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-17 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Reflexive Debugging Capability — Human + AI Co-Debugging AI's Own UI",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-17/reflexive-debugging-capability.md",
+      "created": "2026-03-23T09:07:58.392Z"
+    }
+  },
+  {
+    "id": "whisper-multilingual-capability",
+    "label": "Whisper Multilingual Capability",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-17",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-17 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Whisper Multilingual Capability — 99 Languages + Cross-Lingual Translation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-17/whisper-multilingual-capability.md",
+      "created": "2026-03-23T09:07:58.393Z"
+    }
+  },
+  {
+    "id": "temporal-20260318",
+    "label": "2026-03-18",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-18",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-03-18"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-03-18",
+      "color": "#3b82f6",
+      "created": "2026-03-23T09:07:58.515Z"
+    }
+  },
+  {
+    "id": "fork-setup-troubleshooting",
+    "label": "Fork Setup Troubleshooting",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-18",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-18 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Fork Setup Troubleshooting — Complete Onboarding Guide",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-18/fork-setup-troubleshooting.md",
+      "created": "2026-03-23T09:07:58.518Z"
+    }
+  },
+  {
+    "id": "memory-architecture-clarity",
+    "label": "Memory Architecture Clarity",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-19",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-19 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Memory Architecture Clarity — Three-Layer Separation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-19/memory-architecture-clarity.md",
+      "created": "2026-03-23T09:07:58.639Z"
+    }
+  },
+  {
+    "id": "neural-graph-first-search-strategy",
+    "label": "Neural Graph First Search Strategy",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-19",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-19 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neural Graph First Search Strategy",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-19/neural-graph-first-search-strategy.md",
+      "created": "2026-03-23T09:07:58.641Z"
+    }
+  },
+  {
+    "id": "neural-graph-skills-created",
+    "label": "Neural Graph Skills Created",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-19",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-19 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neural-Graph Skills Created (March 19, 2026)",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-19/neural-graph-skills-created.md",
+      "created": "2026-03-23T09:07:58.643Z"
+    }
+  },
+  {
+    "id": "bruce-amsterdam-cafe-owner-profile",
+    "label": "Bruce Amsterdam Cafe Owner Profile",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-20 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Bruce — Amsterdam Cafe Owner Profile",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-20/bruce-amsterdam-cafe-owner-profile.md",
+      "created": "2026-03-23T09:07:58.763Z"
+    }
+  },
+  {
+    "id": "david-sovereignty-launch",
+    "label": "David Sovereignty Launch",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-20 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "David's Sovereignty Launch — March 20, 2026",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-20/david-sovereignty-launch.md",
+      "created": "2026-03-23T09:07:58.765Z"
+    }
+  },
+  {
+    "id": "fuds-tournament-timeline",
+    "label": "Fuds Tournament Timeline",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-20",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-20 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "FUDS Tournament 2026 — Timeline Anchor",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-20/fuds-tournament-timeline.md",
+      "created": "2026-03-23T09:07:58.767Z"
+    }
+  },
+  {
+    "id": "archive-nodes-are-personal",
+    "label": "Archive Nodes Are Personal",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-21",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-21 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Archive Nodes Are Personal (User-Specific), Not Shared Core",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-21/archive-nodes-are-personal.md",
+      "created": "2026-03-23T09:07:58.886Z"
+    }
+  },
+  {
+    "id": "memory-separator-skill-implementation",
+    "label": "Memory Separator Skill Implementation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-21",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-21 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Memory Separator Skill: Extract Personal from Jarvis Core",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-21/memory-separator-skill-implementation.md",
+      "created": "2026-03-23T09:07:58.889Z"
+    }
+  },
+  {
+    "id": "neurograph-search-continuity-proof",
+    "label": "Neurograph Search Continuity Proof",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-21",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-21 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "NeuroGraph Search: 3 Questions Prove Graph Is Loaded",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-21/neurograph-search-continuity-proof.md",
+      "created": "2026-03-23T09:07:58.890Z"
+    }
+  },
+  {
+    "id": "openclaw-session-for-model-calls",
+    "label": "Openclaw Session For Model Calls",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-21",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-21 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Skills Should Use OpenClaw Session for Model Calls",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-21/openclaw-session-for-model-calls.md",
+      "created": "2026-03-23T09:07:58.890Z"
+    }
+  },
+  {
+    "id": "mangochee-workflow",
+    "label": "Mangochee Workflow",
+    "category": "archive",
+    "type": "workflow-complete",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Mangochee Workflow - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "workflow-complete",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.944Z",
+      "recovered": true
+    }
+  },
+  {
+    "id": "sovereignty-stack",
+    "label": "Sovereignty Stack",
+    "category": "archive",
+    "type": "proof",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Sovereignty Stack - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "proof",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.945Z",
+      "recovered": true
+    }
+  },
+  {
+    "id": "trust-earned-through-competence",
+    "label": "Trust Earned Through Competence",
+    "category": "archive",
+    "type": "milestone",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-13",
+        "type": "learning",
+        "description": "Trust Earned Through Competence - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "milestone",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.945Z",
+      "recovered": true
+    }
+  },
+  {
+    "id": "transcript-2026-03-12",
+    "label": "March 12 Transcript",
+    "category": "archive",
+    "type": "transcript",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-12",
+        "type": "transcript",
+        "description": "March 12 Transcript - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "transcript",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.945Z",
+      "recovered": true
+    }
+  },
+  {
+    "id": "transcript-march-16",
+    "label": "March 16 Transcript",
+    "category": "archive",
+    "type": "transcript",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-16",
+        "type": "transcript",
+        "description": "March 16 Transcript - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "transcript",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.945Z",
+      "recovered": true
+    }
+  },
+  {
+    "id": "tim-demo-audio-1",
+    "label": "Tim Demo Audio 1",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "file",
+        "description": "Tim Demo Audio 1 - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "audio",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.945Z",
+      "recovered": true
+    }
+  },
+  {
+    "id": "tim-demo-audio-2",
+    "label": "Tim Demo Audio 2",
+    "category": "archive",
+    "type": "audio",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "file",
+        "description": "Tim Demo Audio 2 - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "audio",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.945Z",
+      "recovered": true
+    }
+  },
+  {
+    "id": "tim-demo-photo",
+    "label": "Tim Demo Photo",
+    "category": "archive",
+    "type": "image",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-02-24",
+        "type": "file",
+        "description": "Tim Demo Photo - recovered from orphaned synapse references"
+      }
+    ],
+    "attributes": {
+      "role": "image",
+      "description": "Recovered node - existed in synapse references but missing from graph",
+      "color": "#6b7280",
+      "created": "2026-03-23T09:15:44.945Z",
+      "recovered": true
+    }
   }
 ]
