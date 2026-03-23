@@ -299,7 +299,7 @@ browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<node-butto
 - Browser automation on large DOM (2504 nodes) is slow/unreliable
 - Use UI for visualization, not discovery
 
-**Use case:** "Show me the learning about X from today" → neuro-graph-search → Pick → Open → Search → Navigate → Done
+**Use case:** "Show me the learning about X from today" → neurograph-search → Pick → Open → Search → Navigate → Done
 
 ## When NOT to Use
 

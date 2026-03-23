@@ -125,7 +125,7 @@ Moved: 0 files to correct date folders
 └── documents/  (files created on YYYY-MM-DD)
 ```
 
-**Ready for:** neuro-graph-digest skill
+**Ready for:** neurograph-sync skill
 
 ## Notes
 

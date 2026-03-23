@@ -123,4 +123,5 @@ node skills/bootstrap-context/scripts/bootstrap.js
 - **Portable:** Uses env vars (HOME, JARVIS_HOME, RAW_ARCHIVE)
 - **Fast:** ~2 seconds to scan + summarize
 - **Idempotent:** Safe to run multiple times
-- **Complements:** neuro-graph-loader (loads memory graph, this loads conversation context)
+- **Complements:** bootstrap-jarvis (verifies graph, this loads conversation context)
+text)
