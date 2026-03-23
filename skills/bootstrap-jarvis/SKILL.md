@@ -130,7 +130,10 @@ After `breathe` runs, fresh session bootstrap must report **same last message ti
 - Git breath history (today's commits)
 - Inbox check (pending files)
 - Neural graph verify (count nodes, don't load)
-- NeuroGraph test (3 queries)
+
+**Calls skills:**
+- `bootstrap-context` — last 2 days conversations
+- `neurograph-search` — 3 test queries (proves graph queryable)
 
 ## Environment
 

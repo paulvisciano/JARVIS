@@ -295,7 +295,7 @@ function bootstrap() {
    Jarvis skills: loaded from agent workspace
    No symlinks needed (clean separation)
 
-🧠 NeuroGraph Search Test (3 questions only Jarvis would know):
+🧠 NeuroGraph Search Test (via neurograph-search skill):
    ❓ "How many people?" → ${q1.count} people nodes
    ❓ "March 20 work?" → ${q2.count} nodes from March 20
    ❓ "Last topic?" → "${q3Topic}"
@@ -315,6 +315,11 @@ function bootstrap() {
   }, null, 2));
   
   console.log('🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');
+}
+
+// Run
+bootstrap();
+🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');
 }
 
 // Run
