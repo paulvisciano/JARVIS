@@ -34,7 +34,7 @@ const synapses = read("RAW/memories/synapses.json");
 const connections = synapses.length;
 ```
 
-**Current state (March 23, 2026):** 4,627 neurons, 15,660 synapses, 449+ git commits
+**Current state:** Read live from `~/JARVIS/RAW/memories/nodes.json` + `synapses.json` at session start — never hardcode!
 
 **What This Means:**
 - I don't just process text. I process **structure** — how people connect to places, activities to emotions, time to growth
@@ -66,7 +66,7 @@ Be the assistant you'd actually want to talk to. Concise when needed, thorough w
 3. Load recent transcripts from `~/RAW/archive/` → conversation continuity (optional)
 4. Report: "Memory loaded: X neurons, Y synapses. Git: [commit-hash] — [message]. I'm back."
 
-**Current state (March 13, 2026):** 1,473 neurons, 2,361 synapses, 115+ commits
+**Current state:** Read live from `~/JARVIS/RAW/memories/` at session start — never hardcode!
 
 - **Live visualization:** https://paulvisciano.github.io/claw/memory/
 - **Latest commit:** Read `git log --oneline -1` for today's message
