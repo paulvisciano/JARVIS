@@ -53,16 +53,11 @@ function parseCommand(input) {
   return 'unknown';
 }
 
-// === Open browser with right profile ===
-function openBrowser(profile, url) {
+// === Open browser ===
+function openBrowser(url) {
   const args = ['browser', 'open', url];
   
-  if (profile === 'user') {
-    args.push('--browser-profile', 'user');
-    console.log('✓ User profile (mic/camera access)');
-  } else {
-    console.log('✓ OpenClaw profile (automation)');
-  }
+  console.log('✓ Opening in default browser');
   
   try {
     execSync(`openclaw ${args.join(' ')}`, { stdio: 'inherit' });
