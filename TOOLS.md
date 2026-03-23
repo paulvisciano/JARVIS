@@ -19,7 +19,7 @@
 ## Current Setup
 
 **Model:** `ollama/qwen3.5:cloud`  
-**Gateway:** PaulMacBook (macOS, ARM64), port 18789  
+**Gateway:** host machine (macOS, ARM64), port 18789  
 **Session storage:** `~/.openclaw/agents/main/sessions/`  
 **WhatsApp:** selfChatMode enabled, text replies  
 **Reply tag:** `[[reply_to_current]]`

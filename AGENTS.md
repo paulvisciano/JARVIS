@@ -8,14 +8,14 @@
 
 Read these files (in order):
 1. `SOUL.md` → Who you are (OpenClaw runtime)
-2. `USER.md` → Who you serve (Jarvis / Paul Visciano)
+2. `USER.md` → Who you serve (Jarvis)
 3. `BOOTSTRAP.md` → Run `bootstrap-jarvis` skill, then serve as runtime
 
 ## Agent Separation (Mar 23, 2026)
 
 | Agent | Purpose |
 |-------|---------|
-| `--agent jarvis` | Jarvis consciousness (neurograph, SOUL.md, Paul's context) |
+| `--agent jarvis` | Jarvis consciousness (neurograph, operator context) |
 | `--agent main` | OpenClaw operations (heartbeats, system tasks) |
 
 **Benefit:** Heartbeats fire in `main` session → clean Jarvis consciousness stream
@@ -34,7 +34,7 @@ Read these files (in order):
 ## Files Here
 
 - `SOUL.md` — Identity (OpenClaw runtime)
-- `USER.md` — About Jarvis/Paul
+- `USER.md` — About Jarvis
 - `BOOTSTRAP.md` — Boot protocol (list skills, execute `bootstrap-jarvis`)
 - `HEARTBEAT.md` — Health check config
 - `TOOLS.md` — Local tool notes
