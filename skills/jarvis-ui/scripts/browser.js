@@ -31,11 +31,11 @@ function open(profile, url) {
   const browserArgs = [
     'browser',
     'open',
-    '--url', url
+    url
   ];
   
   if (profile === 'user') {
-    browserArgs.push('--profile', 'user');
+    browserArgs.push('--browser-profile', 'user');
     console.log('✓ User profile selected (mic/camera access enabled)');
   } else {
     console.log('✓ OpenClaw profile selected (automation mode)');
