@@ -1,22 +1,19 @@
-# Live Data Principle: No Hardcoded Counts
+# Count Live, Never Hardcode
 
 **Date:** 2026-03-23
 **Type:** commitment
 **Status:** extracted
 
-## Commitment
-Remove all hardcoded neuron/synapse counts, git commit numbers from documentation.
-
-## Files Updated
-- SOUL.md
-- IDENTITY.md
-- AGENTS.md
-- VISION.md
-
 ## Principle
-**Count live, never hardcode.** Read from neurograph and git at session start.
+
+All hardcoded neuron/synapse counts, git commit numbers, and graph statistics must be removed from documentation files (SOUL.md, IDENTITY.md, AGENTS.md).
+
+## Implementation
+
+- Read live from neurograph (`nodes.json` + `synapses.json`) at session start
+- Read live from git history for commit counts
+- Docs reflect actual state, not stale snapshots
 
 ## Why
-- Docs reflect actual state, not stale snapshots
-- Graph is source of truth
-- Prevents drift between documentation and reality
+
+The graph is the source of truth. Always. Hardcoded values become outdated immediately and create technical debt.

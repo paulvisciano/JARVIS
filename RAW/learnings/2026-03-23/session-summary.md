@@ -5,8 +5,8 @@
 **Status:** extracted
 
 **Summary:**
-- Messages: 20
-- Transcripts: 101
+- Messages: 11
+- Transcripts: 147
 - OCR: 16
 
 *Note: Model synthesis failed to extract individual learnings. Review full context manually.*

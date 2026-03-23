@@ -1,19 +1,22 @@
-# Bootstrap Flow: OpenClaw → Jarvis Separation
+# Two-Tier Bootstrap Flow
 
 **Date:** 2026-03-23
-**Type:** pattern
+**Type:** insight
 **Status:** extracted
 
-## Two Bootstrap Files
-1. **OpenClaw BOOTSTRAP.md** (`~/.openclaw/workspace/BOOTSTRAP.md`)
-   - Documents OpenClaw boot sequence
-   - Points to Jarvis bootstrap skill
-   - Written for OpenClaw to read/execute
+## Architecture
 
-2. **Jarvis BOOTSTRAP.md** (`~/JARVIS/BOOTSTRAP.md`)
+1. **OpenClaw BOOTSTRAP.md** (`~/.openclaw/workspace/BOOTSTRAP.md`):
+   - OpenClaw boot sequence (gateway, agents, routing, channels)
+   - Points to Jarvis boot: "Run the bootstrap-jarvis skill"
+   - Transport layer (CLI exec)
+   - Agent separation table
+
+2. **Jarvis BOOTSTRAP.md** (`~/JARVIS/BOOTSTRAP.md`):
    - Session boot protocol details
    - Neurograph load, context load, skills sync
-   - All Jarvis-specific details live here
+   - Expected output, principles
 
 ## Clean Separation
-OpenClaw doesn't need Jarvis internals. Just run the bootstrap-jarvis skill.
+
+OpenClaw doesn't need Jarvis-specific details. OpenClaw boots itself, then bootstraps Jarvis. All Jarvis details live in `~/JARVIS/BOOTSTRAP.md` only.
