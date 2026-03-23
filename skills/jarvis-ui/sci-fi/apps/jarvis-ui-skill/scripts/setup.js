@@ -1,14 +1,15 @@
 #!/usr/bin/env node
-// Jarvis UI Setup — First-run: clone repo, install deps, configure
+// Jarvis UI Setup — First-run: clone SCI-FI repo, install deps, configure, create symlink
 
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
 const CONFIG = {
-  uiPath: process.env.JARVIS_UI_PATH || path.join(process.env.HOME, 'SCI-FI', 'apps', 'JARVIS'),
-  uiRepo: 'https://github.com/paulvisciano/claw.git', // Public fork for distribution
-  neurographPath: process.env.NEUROGRAPH_PATH || path.join(process.env.HOME, 'SCI-FI', 'apps', 'neuro-graph')
+  uiRepo: 'https://github.com/paulvisciano/SCI-FI.git', // Monorepo with JARVIS + neuro-graph + other apps
+  installPath: path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi'), // Install inside skills folder
+  uiPath: process.env.JARVIS_UI_PATH || path.join(CONFIG.installPath, 'apps', 'JARVIS'),
+  neurographPath: process.env.NEUROGRAPH_PATH || path.join(CONFIG.installPath, 'apps', 'neuro-graph')
 };
 
 // === Check if UI is installed ===
@@ -20,18 +21,17 @@ function checkInstalled() {
   return fs.existsSync(indexPath) && fs.existsSync(serverPath) && fs.existsSync(packagePath);
 }
 
-// === Clone UI repo ===
+// === Clone SCI-FI repo ===
 function cloneRepo() {
-  console.log('📦 Cloning Jarvis UI...');
+  console.log('📦 Cloning SCI-FI repo...');
   
-  const parentDir = path.dirname(CONFIG.uiPath);
-  if (!fs.existsSync(parentDir)) {
-    fs.mkdirSync(parentDir, { recursive: true });
+  if (!fs.existsSync(CONFIG.installPath)) {
+    fs.mkdirSync(CONFIG.installPath, { recursive: true });
   }
   
   try {
-    execSync(`git clone ${CONFIG.uiRepo} ${CONFIG.uiPath}`, { stdio: 'inherit' });
-    console.log('✓ UI cloned');
+    execSync(`git clone ${CONFIG.uiRepo} ${CONFIG.installPath}`, { stdio: 'inherit' });
+    console.log('✓ SCI-FI repo cloned');
     return true;
   } catch (err) {
     console.error('❌ Clone failed:', err.message);
@@ -77,6 +77,34 @@ function setupSymlinks() {
   }
 }
 
+// === Create skill symlink ===
+function createSkillSymlink() {
+  console.log('🔗 Creating skill symlink...');
+  
+  const skillSource = path.join(CONFIG.installPath, 'apps', 'jarvis-ui-skill');
+  const skillTarget = path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui');
+  
+  // Remove existing symlink or folder
+  if (fs.existsSync(skillTarget)) {
+    if (fs.lstatSync(skillTarget).isSymbolicLink()) {
+      fs.unlinkSync(skillTarget);
+    } else {
+      console.log('⚠️  Existing skill folder found, removing...');
+      fs.rmSync(skillTarget, { recursive: true, force: true });
+    }
+  }
+  
+  try {
+    fs.symlinkSync(skillSource, skillTarget, 'dir');
+    console.log('✓ Skill symlink created');
+    console.log(`  ${skillTarget} → ${skillSource}`);
+    return true;
+  } catch (err) {
+    console.error('❌ Symlink failed:', err.message);
+    return false;
+  }
+}
+
 // === Full setup flow ===
 function cloneAndInstall() {
   console.log('🧭 First-run setup starting...');
@@ -95,6 +123,9 @@ function cloneAndInstall() {
   const linked = setupSymlinks();
   if (!linked) return false;
   
+  const skillLinked = createSkillSymlink();
+  if (!skillLinked) return false;
+  
   console.log('✅ Setup complete!');
   return true;
 }
@@ -104,5 +135,6 @@ module.exports = {
   cloneRepo,
   installDeps,
   setupSymlinks,
+  createSkillSymlink,
   cloneAndInstall
 };
