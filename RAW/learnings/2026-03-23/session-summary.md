@@ -6,7 +6,7 @@
 
 **Summary:**
 - Messages: 11
-- Transcripts: 167
-- OCR: 33
+- Transcripts: 183
+- OCR: 45
 
 *Note: Model synthesis failed to extract individual learnings. Review full context manually.*
