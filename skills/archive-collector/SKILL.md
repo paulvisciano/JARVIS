@@ -55,6 +55,25 @@ node skills/archive-collector/scripts/organize-desktop.js
 - Reads file creation date
 - Moves to correct dated archive folder by type
 
+### Step 2b: Rotate OpenClaw Sessions (Keep Active Only)
+
+```bash
+# Archive inactive sessions, keep active in runtime
+node skills/archive-collector/scripts/archive-sessions.js
+```
+
+**What the script does:**
+- Scans `~/.openclaw/agents/*/sessions/` for all agents
+- Reads `sessions.json` to identify active session IDs
+- Moves **inactive sessions** to `~/RAW/archive/YYYY-MM-DD/sessions/`
+- Moves **all .reset.* snapshots** to archive (even for active sessions)
+- Keeps only active session's main `.jsonl` file in runtime folder
+- Organizes by file creation date (birthtime)
+
+**Result:**
+- Runtime folder: only active session files + sessions.json + .lock
+- Archive folder: all completed sessions + reset snapshots
+
 ### Step 3: Verify Integrity (Auto)
 
 **Built-in verification** — runs automatically after archiving:
@@ -88,8 +107,12 @@ Moved: 0 files to correct date folders
 
 | Script | Purpose |
 |--------|---------|
-| `organize-live.js` | Process ~/JARVIS/live/ by creation date |
-| `organize-desktop.js` | Process desktop by creation date |
+| `archive-live.js` | Process ~/JARVIS/live/ by creation date |
+| `archive-desktop.js` | Process desktop by creation date |
+| `archive-inbox.js` | Process inbox pending files |
+| `archive-all.js` | Run all archive steps in sequence |
+| `archive-sessions.js` | Rotate inactive OpenClaw sessions to archive (keeps active) |
+| `rotate-sessions.js` | Alternative: explicit session rotation with detailed logging |
 
 ## Expected Result
 
