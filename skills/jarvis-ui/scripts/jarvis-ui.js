@@ -95,10 +95,22 @@ switch (action) {
     openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`); // default browser
     break;
     
+  case 'package-configs':
+    console.log('📦 Packaging configs (Paul\'s machine)...');
+    packageConfigs();
+    break;
+    
+  case 'update-configs':
+    console.log('🔄 Updating configs (Eric\'s machine)...');
+    updateConfigs();
+    break;
+    
   default:
     console.log('Usage: node jarvis-ui.js <command>');
     console.log('Commands:');
-    console.log('  open jarvis ui     — Open Jarvis UI');
-    console.log('  open neurograph    — Open NeuroGraph');
+    console.log('  open jarvis ui     — Open Jarvis UI (user profile for mic)');
+    console.log('  open neurograph    — Open NeuroGraph (default browser)');
+    console.log('  package configs    — Package OpenClaw configs (Paul: zip + commit + push)');
+    console.log('  update configs     — Update OpenClaw configs (Eric: extract + restart)');
     process.exit(1);
 }
