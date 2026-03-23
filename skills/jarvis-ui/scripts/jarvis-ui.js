@@ -1,12 +1,14 @@
 #!/usr/bin/env node
-// Jarvis UI Skill — Simple orchestrator
-// Parses command → opens browser
+// Jarvis UI Skill — Orchestrator
+// Commands: open-ui, open-neurograph, package-configs, update-configs
 
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
-const INSTALL_PATH = path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi');
+const JARVIS_HOME = process.env.HOME + '/JARVIS';
+const OPENCLAW_HOME = process.env.HOME + '/.openclaw';
+const INSTALL_PATH = path.join(JARVIS_HOME, 'skills', 'jarvis-ui', 'sci-fi');
 
 const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
@@ -30,7 +32,7 @@ function ensureInstalled() {
   console.log('📦 First run — cloning SCI-FI...');
   
   try {
-    execSync(`git clone ${CONFIG.uiRepo} ${CONFIG.installPath}`, { stdio: 'inherit' });
+    execSync(`git clone ${CONFIG.uiRepo} ${INSTALL_PATH}`, { stdio: 'inherit' });
     console.log('✓ SCI-FI cloned');
     return true;
   } catch (err) {
@@ -45,6 +47,8 @@ function parseCommand(input) {
   
   if (cmd.includes('open') && cmd.includes('jarvis')) return 'open-ui';
   if (cmd.includes('open') && (cmd.includes('neurograph') || cmd.includes('graph'))) return 'open-neurograph';
+  if (cmd.includes('package') && cmd.includes('config')) return 'package-configs';
+  if (cmd.includes('update') && (cmd.includes('config') || cmd.includes('settings'))) return 'update-configs';
   
   return 'unknown';
 }
@@ -52,19 +56,16 @@ function parseCommand(input) {
 // === Open browser ===
 function openBrowser(url, forUser = false) {
   if (forUser) {
-    // Jarvis UI needs mic access → use OpenClaw user profile
     console.log('✓ Opening in user profile (mic access)');
     try {
       execSync(`openclaw browser open ${url} --profile user`, { stdio: 'inherit' });
       return true;
     } catch (err) {
-      // Fallback to system open if user profile fails
       console.log('⚠️  User profile not ready, opening system default...');
       execSync(`open ${url}`, { stdio: 'inherit' });
       return true;
     }
   } else {
-    // NeuroGraph doesn't need mic → use default OpenClaw browser
     console.log('✓ Opening in default browser');
     try {
       execSync(`openclaw browser open ${url}`, { stdio: 'inherit' });
@@ -73,6 +74,109 @@ function openBrowser(url, forUser = false) {
       console.error('❌ Browser open failed:', err.message);
       return false;
     }
+  }
+}
+
+// === Package configs (Paul's machine) ===
+function packageConfigs() {
+  console.log('📦 Packaging OpenClaw configs...\n');
+  
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '').slice(0, 15);
+  const zipName = `configs-${timestamp}.zip`;
+  const zipPath = path.join(JARVIS_HOME, 'packages', zipName);
+  
+  // Create packages dir
+  const packagesDir = path.join(JARVIS_HOME, 'packages');
+  if (!fs.existsSync(packagesDir)) {
+    fs.mkdirSync(packagesDir, { recursive: true });
+  }
+  
+  // Config files to package
+  const configs = [
+    'openclaw.json',
+    'agents/jarvis/models.json',
+    'agents/coder/agent.json',
+    'agents/coder/models.json'
+  ];
+  
+  const existingConfigs = configs.filter(f => fs.existsSync(path.join(OPENCLAW_HOME, f)));
+  
+  if (existingConfigs.length === 0) {
+    console.error('❌ No config files found');
+    return false;
+  }
+  
+  try {
+    execSync(`cd ${OPENCLAW_HOME} && zip -r ${zipPath} ${existingConfigs.join(' ')}`, { stdio: 'inherit' });
+    console.log(`✓ Created ${zipName}\n`);
+    
+    execSync(`git -C ${JARVIS_HOME} add packages/${zipName}`, { stdio: 'pipe' });
+    execSync(`git -C ${JARVIS_HOME} commit -m "📦 ${zipName}"`, { stdio: 'inherit' });
+    console.log('✓ Committed\n');
+    
+    execSync(`git -C ${JARVIS_HOME} push origin main`, { stdio: 'inherit' });
+    console.log('✓ Pushed\n');
+    
+    console.log('✅ Package complete!');
+    console.log(`📦 ${zipName} pushed to origin/main\n`);
+    console.log('📋 Eric can now:\n');
+    console.log('   git -C ~/JARVIS pull origin main');
+    console.log(`   unzip -o ~/JARVIS/packages/${zipName} -d ~/.openclaw/`);
+    console.log('   openclaw gateway restart\n');
+    
+    return true;
+  } catch (err) {
+    console.error('❌ Package failed:', err.message);
+    return false;
+  }
+}
+
+// === Update configs (Eric's machine) ===
+function updateConfigs() {
+  console.log('🔄 Updating OpenClaw configs...\n');
+  
+  // Find latest package
+  const packagesDir = path.join(JARVIS_HOME, 'packages');
+  if (!fs.existsSync(packagesDir)) {
+    console.error('❌ No packages directory found');
+    console.log('Paul needs to run "package configs" first\n');
+    return false;
+  }
+  
+  const files = fs.readdirSync(packagesDir).filter(f => f.endsWith('.zip')).sort().reverse();
+  
+  if (files.length === 0) {
+    console.error('❌ No config packages found');
+    console.log('Paul needs to run "package configs" first\n');
+    return false;
+  }
+  
+  const latestZip = files[0];
+  const zipPath = path.join(packagesDir, latestZip);
+  
+  console.log(`📦 Found: ${latestZip}`);
+  console.log(`   Size: ${fs.statSync(zipPath).size} bytes\n`);
+  
+  try {
+    console.log('🗜️  Extracting...');
+    execSync(`unzip -o ${zipPath} -d ${OPENCLAW_HOME}`, { stdio: 'inherit' });
+    console.log('✓ Extracted\n');
+    
+    console.log('🔄 Restarting Gateway...');
+    execSync('openclaw gateway restart', { stdio: 'inherit' });
+    console.log('✓ Restarted\n');
+    
+    console.log('✅ Configs updated!');
+    console.log(`   Applied: ${latestZip}\n`);
+    
+    console.log('💡 Cleanup (optional):');
+    console.log(`   rm ${zipPath}`);
+    console.log('   git -C ~/JARVIS commit -m "cleanup: extracted configs"\n');
+    
+    return true;
+  } catch (err) {
+    console.error('❌ Update failed:', err.message);
+    return false;
   }
 }
 
@@ -85,23 +189,21 @@ switch (action) {
     console.log('🧭 Opening Jarvis UI...');
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}`);
-    openBrowser(`https://localhost:${CONFIG.port}`, true); // user profile for mic
+    openBrowser(`https://localhost:${CONFIG.port}`, true);
     break;
     
   case 'open-neurograph':
     console.log('🧭 Opening NeuroGraph...');
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
-    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`); // default browser
+    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`);
     break;
     
   case 'package-configs':
-    console.log('📦 Packaging configs (Paul\'s machine)...');
     packageConfigs();
     break;
     
   case 'update-configs':
-    console.log('🔄 Updating configs (Eric\'s machine)...');
     updateConfigs();
     break;
     
