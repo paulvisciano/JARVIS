@@ -82,14 +82,14 @@ switch (action) {
     console.log('🧭 Opening Jarvis UI...');
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}`);
-    openBrowser('user', `https://localhost:${CONFIG.port}`);
+    openBrowser(`https://localhost:${CONFIG.port}`);
     break;
     
   case 'open-neurograph':
     console.log('🧭 Opening NeuroGraph...');
     ensureInstalled();
     console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
-    openBrowser('openclaw', `https://localhost:${CONFIG.port}/neuro-graph`);
+    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`);
     break;
     
   default:
