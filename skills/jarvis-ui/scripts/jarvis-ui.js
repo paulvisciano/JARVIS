@@ -6,10 +6,12 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
+const INSTALL_PATH = path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi');
+
 const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
-  installPath: path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi'),
-  uiPath: path.join(CONFIG.installPath, 'apps', 'JARVIS'),
+  installPath: INSTALL_PATH,
+  uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS'),
   port: process.env.VOICE_PORT || 18787,
   memoryPaths: [
     path.join(process.env.HOME, 'JARVIS', 'RAW', 'memories'),
