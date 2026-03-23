@@ -21,20 +21,8 @@ try {
   process.exit(1);
 }
 
-// === Step 2: Pull SCI-FI repo (jarvis-ui skill) ===
-const scifiPath = path.join(JARVIS_HOME, 'skills', 'jarvis-ui', 'sci-fi');
-if (fs.existsSync(scifiPath)) {
-  console.log('📦 Pulling SCI-FI repo...');
-  try {
-    execSync(`git -C ${scifiPath} pull origin main`, { stdio: 'inherit' });
-    console.log('✓ SCI-FI repo updated\n');
-  } catch (err) {
-    console.error('⚠️  SCI-FI pull failed:', err.message);
-    console.log('Continuing...\n');
-  }
-} else {
-  console.log('⊘ SCI-FI not installed (first run will clone)\n');
-}
+// === Step 2: SCI-FI handled by jarvis-ui skill ===
+console.log('⊘ SCI-FI managed by jarvis-ui skill (auto-clones on first run)\n');
 
 // === Step 3: Sync OpenClaw configs ===
 console.log('📋 Syncing OpenClaw configs...');
@@ -69,6 +57,23 @@ console.log('🔄 Restarting Gateway...');
 try {
   execSync('openclaw gateway restart', { stdio: 'inherit' });
   console.log('✓ Gateway restarted\n');
+} catch (err) {
+  console.error('❌ Gateway restart failed:', err.message);
+  console.log('Manually run: openclaw gateway restart\n');
+}
+
+// === Step 5: Verify ===
+console.log('✅ Checking status...');
+try {
+  execSync('openclaw gateway status', { stdio: 'pipe' });
+  console.log('✓ Gateway running');
+} catch (err) {
+  console.error('⚠️  Gateway status check failed');
+}
+
+console.log('\n🎉 Update complete!');
+console.log('Test: node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js "open jarvis ui"');
+eway restarted\n');
 } catch (err) {
   console.error('❌ Gateway restart failed:', err.message);
   console.log('Manually run: openclaw gateway restart\n');

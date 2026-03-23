@@ -39,17 +39,17 @@ node ~/JARVIS/skills/update-latest/scripts/update-latest.js
 git -C ~/JARVIS pull origin main
 ```
 
-### 2. Pull SCI-FI Repo (jarvis-ui skill)
-```bash
-git -C ~/JARVIS/skills/jarvis-ui/sci-fi pull origin main
-```
+### 2. SCI-FI (handled by jarvis-ui skill)
+SCI-FI auto-clones on first run via `jarvis-ui` skill — no manual pull needed.
 
 ### 3. Sync OpenClaw Configs
-Copies from `~/.openclaw/`:
+Lists configs from `~/.openclaw/` (Good Machine):
 - `openclaw.json` → main config
 - `agents/jarvis/` → Jarvis agent
 - `agents/coder/` → Coder agent
 - `agents/main/` → Main agent (if exists)
+
+**Copy these to target machine** → `~/.openclaw/`
 
 ### 4. Restart Gateway
 ```bash
@@ -58,7 +58,6 @@ openclaw gateway restart
 
 ### 5. Verify
 - Check gateway status
-- Test `jarvis-ui` skill
 - Report success
 
 ## Script Structure
