@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 
 /**
- * Session Rotator — Aggressive rotation with size + time triggers
+ * Session Rotator + Server Health — Aggressive rotation with size + time triggers
  * 
  * Prevents: 10 MB bloat, stale locks, timeout cascade
  * Runs: Hourly via cron/LaunchAgent
+ * Also: Ensures neuro-graph server is running
  */
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
 // Config
 const MAX_SESSION_SIZE_MB = 5;
@@ -17,6 +19,9 @@ const INACTIVE_THRESHOLD_MS = 2 * 60 * 60 * 1000; // 2 hours
 const LOCK_AGE_THRESHOLD_MS = 10 * 60 * 1000; // 10 minutes
 const SESSIONS_DIR = path.join(process.env.HOME, '.openclaw', 'agents');
 const ARCHIVE_DIR = path.join(process.env.HOME, 'RAW', 'archive', new Date().toISOString().split('T')[0], 'sessions');
+const SERVER_PORT = 18787;
+const SERVER_DIR = path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi', 'apps', 'JARVIS');
+const SERVER_LOG = '/tmp/jarvis-server.log';
 
 // Ensure archive dir exists
 if (!fs.existsSync(ARCHIVE_DIR)) {
@@ -111,10 +116,37 @@ function cleanupLocks(agentsDir) {
   return cleaned;
 }
 
+function checkServerHealth() {
+  try {
+    // Check if port is listening
+    const result = execSync(`lsof -i :${SERVER_PORT} 2>&1 | grep LISTEN`, { encoding: 'utf8' });
+    if (result && result.includes('LISTEN')) {
+      log('   ✓ Neuro-graph server running');
+      return true;
+    }
+  } catch (err) {
+    // Port not listening
+  }
+  
+  warn('   ⚠️ Neuro-graph server not running — starting...');
+  try {
+    execSync(`cd ${SERVER_DIR} && nohup node jarvis-server.js > ${SERVER_LOG} 2>&1 &`);
+    log(`   ✅ Server started (PID: $!, port: ${SERVER_PORT})`);
+    return true;
+  } catch (err) {
+    warn(`   ❌ Failed to start server: ${err.message}`);
+    return false;
+  }
+}
+
 // Main
 function rotate() {
   log('🔄 Session Rotator —', new Date().toISOString().split('T')[0]);
   log(`   Checking sessions in ${SESSIONS_DIR}`);
+  log('');
+  
+  // Server health check first
+  checkServerHealth();
   log('');
   
   const sessions = getSessions(SESSIONS_DIR);
