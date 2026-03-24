@@ -7,6 +7,10 @@ metadata:
     requires:
       bins: ["node", "curl"]
       env: ["JARVIS_HOME", "RAW_ARCHIVE"]
+    usage:
+      - "Spawn in subagent to avoid blocking main session"
+      - "Report progress to parent session"
+      - "Use browser tool for screenshots (not screencapture)"
 ---
 
 # Web Learn — Screenshot-Based Knowledge Capture

@@ -72,6 +72,7 @@ console.log('🧠 Creating learnings...');
 const combinedText = ocrResults.map(r => r.text).join('\n\n');
 
 // Send to model for synthesis (via ollama)
+// Use qwen3.5:cloud (better JSON compliance, no thinking prefix)
 const prompt = `Extract 3-5 key learnings from this web content:
 
 ${combinedText}
@@ -91,24 +92,18 @@ fs.writeFileSync(promptPath, prompt);
 
 let learnings;
 try {
-  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen2.5-coder:7b`, { encoding: 'utf8', timeout: 90000 });
+  console.log('   Sending to model (qwen3.5:cloud)...');
+  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen3.5:cloud`, { encoding: 'utf8', timeout: 90000 });
   fs.unlinkSync(promptPath);
   
-  // Parse JSON (strip "Thinking..." prefix and find JSON array)
-  try {
-    // Find JSON array: look for first [ and last ]
-    const firstBracket = modelOutput.indexOf('[');
-    const lastBracket = modelOutput.lastIndexOf(']');
-    if (firstBracket === -1 || lastBracket === -1 || lastBracket <= firstBracket) {
-      throw new Error('No JSON array found in output');
-    }
-    const jsonStr = modelOutput.substring(firstBracket, lastBracket + 1);
-    learnings = JSON.parse(jsonStr);
-  } catch (e) {
-    console.error('❌ Failed to parse model output:', e.message);
-    console.log('Raw output:', modelOutput.substring(0, 2000));
-    process.exit(1);
+  // Parse JSON: find first [ and last ]
+  const firstBracket = modelOutput.indexOf('[');
+  const lastBracket = modelOutput.lastIndexOf(']');
+  if (firstBracket === -1 || lastBracket === -1 || lastBracket <= firstBracket) {
+    throw new Error('No JSON array found in output');
   }
+  const jsonStr = modelOutput.substring(firstBracket, lastBracket + 1);
+  learnings = JSON.parse(jsonStr);
   
   // Write learnings
   learnings.forEach((learning, i) => {
@@ -122,6 +117,7 @@ try {
   console.log();
 } catch (err) {
   console.error('❌ Model synthesis failed:', err.message);
+  if (err.stdout) console.log('Raw output:', err.stdout.substring(0, 500));
   process.exit(1);
 }
 
