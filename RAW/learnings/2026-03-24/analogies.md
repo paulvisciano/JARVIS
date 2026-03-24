@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like folding paper into three distinct shapes — each layer holds meaning differently
-- Like pruning a tree — removing dead branches (obsolete docs) to help new growth
-- Like checking flight instruments before takeoff — verifying NeuroGraph access before lifting off
-- Like packing a suitcase — zipping configs so they travel cleanly without path wrinkles
-- Like tuning an engine — adjusting bootstrap firing sequence for smoother startup
+- Like folding origami — each crease compresses meaning into tighter layers
+- Like a lighthouse — the neurograph queries prove the beam reaches ships
+- Like pruning a garden — remove dead branches (obsolete docs) so new growth shows
+- Like a relay race — background processes pass the baton without dropping it
+- Like checking vitals before a long run — verify systems before committing to workflow

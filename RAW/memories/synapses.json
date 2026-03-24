@@ -41099,5 +41099,185 @@
       "date": "2026-03-24"
     },
     "created": "2026-03-24T06:37:45"
+  },
+  {
+    "source": "agents-md-architecture-cleanup",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "archive-collector-separation",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "bootstrap-first-reply-behavior",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "breathe-pipeline-background-execution",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "config-packaging-workflow",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "env-path-update-sci-fi",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "git-as-completion-marker",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "knowledge-origami-three-layer",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "server-version-bumping",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "transcript-archiving-timing",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "id": "syn-agents-md-architecture-cleanup-to-temporal-20260324",
+    "source": "agents-md-architecture-cleanup",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-archive-collector-separation-to-temporal-20260324",
+    "source": "archive-collector-separation",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-bootstrap-first-reply-behavior-to-temporal-20260324",
+    "source": "bootstrap-first-reply-behavior",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-breathe-pipeline-background-execution-to-temporal-20260324",
+    "source": "breathe-pipeline-background-execution",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-config-packaging-workflow-to-temporal-20260324",
+    "source": "config-packaging-workflow",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-env-path-update-sci-fi-to-temporal-20260324",
+    "source": "env-path-update-sci-fi",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-git-as-completion-marker-to-temporal-20260324",
+    "source": "git-as-completion-marker",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-knowledge-origami-three-layer-to-temporal-20260324",
+    "source": "knowledge-origami-three-layer",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-server-version-bumping-to-temporal-20260324",
+    "source": "server-version-bumping",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
+  },
+  {
+    "id": "syn-transcript-archiving-timing-to-temporal-20260324",
+    "source": "transcript-archiving-timing",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T06:40:30"
   }
 ]

@@ -134141,5 +134141,353 @@
       "created": "2026-03-24T12:58:31"
     },
     "created": "2026-03-24T12:58:31"
+  },
+  {
+    "id": "agents-md-architecture-cleanup",
+    "label": "Agents Md Architecture Cleanup",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "AGENTS.md Should Reflect Actual Architecture Only",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/agents-md-architecture-cleanup.md",
+      "created": "2026-03-24T06:40:30.056Z"
+    }
+  },
+  {
+    "id": "archive-collector-separation",
+    "label": "Archive Collector Separation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Archive Collector Moved from Bootstrap to Breathe",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/archive-collector-separation.md",
+      "created": "2026-03-24T06:40:30.057Z"
+    }
+  },
+  {
+    "id": "bootstrap-first-reply-behavior",
+    "label": "Bootstrap First Reply Behavior",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Bootstrap First Reply Should Report Last Topic",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/bootstrap-first-reply-behavior.md",
+      "created": "2026-03-24T06:40:30.058Z"
+    }
+  },
+  {
+    "id": "breathe-pipeline-background-execution",
+    "label": "Breathe Pipeline Background Execution",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Breathe Pipeline Should Run Background + Auto-Report",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/breathe-pipeline-background-execution.md",
+      "created": "2026-03-24T06:40:30.059Z"
+    }
+  },
+  {
+    "id": "config-packaging-workflow",
+    "label": "Config Packaging Workflow",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Package-Configs Skill for Team Installation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/config-packaging-workflow.md",
+      "created": "2026-03-24T06:40:30.059Z"
+    }
+  },
+  {
+    "id": "env-path-update-sci-fi",
+    "label": "Env Path Update Sci Fi",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Update .env Paths from Old to New SCI-FI Location",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/env-path-update-sci-fi.md",
+      "created": "2026-03-24T06:40:30.060Z"
+    }
+  },
+  {
+    "id": "git-as-completion-marker",
+    "label": "Git As Completion Marker",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Use Git Commits Instead of .breathe-complete.json",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/git-as-completion-marker.md",
+      "created": "2026-03-24T06:40:30.060Z"
+    }
+  },
+  {
+    "id": "knowledge-origami-three-layer",
+    "label": "Knowledge Origami Three Layer",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Knowledge Origami: Three-Layer Compression Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/knowledge-origami-three-layer.md",
+      "created": "2026-03-24T06:40:30.060Z"
+    }
+  },
+  {
+    "id": "server-version-bumping",
+    "label": "Server Version Bumping",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Server Should Bump Version on Changes",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/server-version-bumping.md",
+      "created": "2026-03-24T06:40:30.061Z"
+    }
+  },
+  {
+    "id": "transcript-archiving-timing",
+    "label": "Transcript Archiving Timing",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-24 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Wait for Transcription Completion Before Archiving",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-24/transcript-archiving-timing.md",
+      "created": "2026-03-24T06:40:30.062Z"
+    }
+  },
+  {
+    "id": "Screenshot 2026-03-24 at 1.05.17 PM",
+    "label": "Screenshot 202….17 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 1.05.17 PM.png",
+      "date": "2026-03-24",
+      "sourceDocument": "RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 1.05.17 PM.png",
+      "created": "2026-03-24T13:05:17"
+    },
+    "created": "2026-03-24T13:05:17"
+  },
+  {
+    "id": "Screenshot 2026-03-24 at 1.05.17 PM.png",
+    "label": "Screenshot 202…PM.png.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 1.05.17 PM.png.txt",
+      "date": "2026-03-24",
+      "sourceDocument": "RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 1.05.17 PM.png.txt",
+      "created": "2026-03-24T13:05:17"
+    },
+    "created": "2026-03-24T13:05:17"
+  },
+  {
+    "id": "Screenshot 2026-03-24 at 12.22.56 PM",
+    "label": "Screenshot 202….56 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.22.56 PM.png",
+      "date": "2026-03-24",
+      "sourceDocument": "RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.22.56 PM.png",
+      "created": "2026-03-24T12:22:56"
+    },
+    "created": "2026-03-24T12:22:56"
+  },
+  {
+    "id": "Screenshot 2026-03-24 at 12.22.56 PM.png",
+    "label": "Screenshot 202…PM.png.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.22.56 PM.png.txt",
+      "date": "2026-03-24",
+      "sourceDocument": "RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.22.56 PM.png.txt",
+      "created": "2026-03-24T12:22:56"
+    },
+    "created": "2026-03-24T12:22:56"
+  },
+  {
+    "id": "Screenshot 2026-03-24 at 12.58.31 PM",
+    "label": "Screenshot 202….31 PM.png",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "image-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "image",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.58.31 PM.png",
+      "date": "2026-03-24",
+      "sourceDocument": "RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.58.31 PM.png",
+      "created": "2026-03-24T12:58:31"
+    },
+    "created": "2026-03-24T12:58:31"
+  },
+  {
+    "id": "Screenshot 2026-03-24 at 12.58.31 PM.png",
+    "label": "Screenshot 202…PM.png.txt",
+    "category": "archive",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-24",
+        "type": "text-archived",
+        "description": "Archived file"
+      },
+      "file"
+    ],
+    "attributes": {
+      "role": "archived-file",
+      "type": "text",
+      "rawContentPath": "/Users/paulvisciano/RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.58.31 PM.png.txt",
+      "date": "2026-03-24",
+      "sourceDocument": "RAW/archive/2026-03-24/images/Screenshot 2026-03-24 at 12.58.31 PM.png.txt",
+      "created": "2026-03-24T12:58:31"
+    },
+    "created": "2026-03-24T12:58:31"
   }
 ]
