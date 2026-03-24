@@ -1,8 +1,8 @@
 {
   "jarvisLoaded": true,
-  "bootedAt": "2026-03-24T09:57:45.741Z",
+  "bootedAt": "2026-03-24T10:37:26.431Z",
   "sessionId": "unknown",
-  "lastTopic": "Sender (untrusted metadata):\n```json\n{\n  \"label\": ",
-  "lastMessageTime": "16:02",
+  "lastTopic": "Gateway restarted successfully (pid 82562). The da",
+  "lastMessageTime": "17:36",
   "graphVerified": true
 }
