@@ -6,33 +6,21 @@
 
 ---
 
-## Distributed Version Control
+## Git is a free and open source distributed version control system
 
-Git is a distributed version control system that handles large projects efficiently.
-
----
-
-## Performance and Ecosystem
-
-Git is lightning fast with a huge ecosystem of GUIs, hosting services, and command-line tools.
+Git is lightning fast and has a huge ecosystem of tools and services
 
 ---
 
-## Community Involvement
+## Git offers a wide range of command-line tools, GUIs, and hosting services
 
-Git has an active community with bug reporting, mailing lists, chat, and development opportunities.
 
----
-
-## Availability of Resources
-
-Free online resources like Pro Git by Scott Chacon and Ben Straub are available for learning.
 
 ---
 
-## Security and Governance
+## Git has a large community and is maintained by the Software Freedom Conservancy
 
-Git is maintained by Software Freedom Conservancy and welcomes patches, gestures, and comments.
+
 
 
 ## Metadata
@@ -41,4 +29,4 @@ Git is maintained by Software Freedom Conservancy and welcomes patches, gestures
 - **Domain:** git-scm-com
 - **Date:** 2026-03-24
 - **Screenshot files:** web-git-scm-com-homepage.jpg
-- **Learning count:** 5
+- **Learning count:** 3

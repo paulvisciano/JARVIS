@@ -38,29 +38,36 @@ console.log(`   Archive: ${ARCHIVE_DIR}\n`);
 console.log('📸 Using OpenClaw browser tool to screenshot...');
 const domain = URL.split('/')[2].replace('www.', '').replace(/\./g, '-');
 
+let screenshotFiles = [];
+
 try {
   // Use OpenClaw browser tool (native tool, not skill)
   console.log('   Running: openclaw browser open "${URL}"');
   const browserOutput = execSync(`openclaw browser open "${URL}"`, { encoding: 'utf8', timeout: 30000 });
   
-  // Parse targetId from output
-  const targetIdMatch = browserOutput.match(/"targetId":\s*"([^"]+)"/);
+  // Parse targetId from output (format: "id: C09E067E519DC60D5353FA6183A2E661")
+  const targetIdMatch = browserOutput.match(/id:\s*([A-F0-9]+)/i);
   if (!targetIdMatch) {
+    console.error('Raw output:', browserOutput.substring(0, 500));
     throw new Error('Could not parse targetId from browser output');
   }
   const targetId = targetIdMatch[1];
   console.log(`   ✓ Opened (targetId: ${targetId})`);
   
-  // Take screenshot
-  console.log('   Running: openclaw browser screenshot --targetId ${targetId}');
-  const screenshotOutput = execSync(`openclaw browser screenshot --targetId "${targetId}"`, { encoding: 'utf8', timeout: 30000 });
+  // Take screenshot (targetId is an argument, not a flag)
+  console.log('   Running: openclaw browser screenshot ${targetId}');
+  const screenshotOutput = execSync(`openclaw browser screenshot "${targetId}"`, { encoding: 'utf8', timeout: 30000 });
   
   // Parse media path
   const mediaMatch = screenshotOutput.match(/MEDIA:([^ \n]+)/);
   if (!mediaMatch) {
     throw new Error('Could not parse media path from browser output');
   }
-  const mediaPath = mediaMatch[1].trim();
+  let mediaPath = mediaMatch[1].trim();
+  // Expand tilde to home directory
+  if (mediaPath.startsWith('~/')) {
+    mediaPath = path.join(HOME, mediaPath.substring(2));
+  }
   console.log(`   ✓ Screenshot: ${mediaPath}`);
   
   // Copy to archive
@@ -68,7 +75,7 @@ try {
   const filename = `web-${domain}-homepage${ext}`;
   const archivePath = path.join(IMAGES_DIR, filename);
   fs.copyFileSync(mediaPath, archivePath);
-  const screenshotFiles = [filename];
+  screenshotFiles = [filename];
   console.log(`   ✓ Saved to archive: ${filename}\n`);
   
 } catch (err) {

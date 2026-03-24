@@ -1,199 +1,141 @@
 ---
 name: web-learn
-description: Learn from websites by screenshotting + OCR'ing pages. Use when: (1) user provides a URL to learn from, (2) need visual proof of knowledge source, (3) want traceable learnings linked to screenshots. Works with browser tool + OCR + neurograph linking. Saves screenshots to archive, creates learnings, links neurograph nodes to source URLs.
+description: Learn from websites by screenshotting + OCR'ing pages. Use when: (1) user provides a URL to learn from, (2) need visual proof of knowledge source, (3) want traceable learnings linked to screenshots. Works with OpenClaw browser tool + tesseract OCR + llama3.2 model synthesis. Saves screenshots to archive, creates consolidated learning .md, links neurograph nodes to source URLs.
 metadata:
   openclaw:
     emoji: "🌐"
     requires:
-      bins: ["node", "curl"]
-      env: ["JARVIS_HOME", "RAW_ARCHIVE"]
-    usage:
-      - "Spawn in subagent to avoid blocking main session"
-      - "Report progress to parent session"
-      - "Use browser tool for screenshots (not screencapture)"
+      bins: ["node", "tesseract"]
+      env: ["HOME", "JARVIS_HOME"]
 ---
 
-# Web Learn — Screenshot-Based Knowledge Capture
+# Web Learn — Traceable Knowledge from Websites
 
-## Overview
+## What This Skill Does
 
-This skill captures knowledge from websites by:
-1. **Screenshotting** each page (visual proof)
-2. **OCR'ing** screenshots (extract text)
-3. **Archiving** screenshots (permanent record)
-4. **Creating learnings** (distilled insights)
-5. **Linking neurograph** (traceable to source)
+Captures knowledge from websites with **visual proof** and **traceable sources**:
 
-**Why:** Learnings are more trustworthy when you can see where they came from. Click a neurograph node → see the source URL → see the screenshots → verify the knowledge.
+1. 📸 Screenshot page (OpenClaw browser tool)
+2. 🔍 OCR text (tesseract)
+3. 🧠 Synthesize learnings (llama3.2 model)
+4. 📝 Write consolidated .md file
+5. 🔗 Link neurograph node (source URL + screenshots)
 
-## Workflow
-
-```
-User: "Learn from https://git-scm.com/"
-  ↓
-1. Launch browser (browser tool)
-2. Navigate to URL
-3. Screenshot each page
-4. OCR screenshots
-5. Save to ~/RAW/archive/YYYY-MM-DD/images/
-6. Create learnings from OCR text
-7. Link learning → source URL → screenshots (neurograph)
-  ↓
-Result: Learning with visual proof + traceable source
-```
+**Why:** Click any learning node → see source URL → see screenshots → verify knowledge.
 
 ## When to Use
 
-✅ **USE this skill when:**
-- User provides a URL to learn from
+✅ **Use when:**
+- User provides URL to learn from
 - Need visual proof of knowledge source
-- Want traceable learnings (click node → see screenshots)
-- Capturing documentation, tutorials, articles
-- Building knowledge graph with source attribution
+- Building traceable knowledge graph
+- Capturing docs, tutorials, articles
 
-❌ **DON'T use when:**
+❌ **Don't use when:**
 - Simple fact lookup (use `web_search` or `web_fetch`)
-- API data extraction (use `gh` CLI or direct API calls)
-- No screenshots needed (use `web_fetch` for text-only)
+- API data extraction (use `gh` CLI)
+- Text-only needed (use `web_fetch`)
 
-## Implementation
+## Usage
 
-### 1. Browser Navigation + Screenshots
+```bash
+node $JARVIS_HOME/skills/web-learn/scripts/web-learn.js <url>
+
+# Example:
+node $JARVIS_HOME/skills/web-learn/scripts/web-learn.js https://git-scm.com/
+```
+
+## Output
+
+```
+$HOME/RAW/archive/YYYY-MM-DD/
+├── images/
+│   └── web-{domain}-homepage.jpg  ← Screenshot
+│   └── web-{domain}-homepage.txt  ← OCR text
+└── web-sources/
+    └── {domain}-YYYY-MM-DD.json  ← Metadata
+
+$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/
+└── web-learn-{domain}.md  ← Consolidated learning
+
+Neurograph:
+└── Node: web-learn-{domain}
+    └── Links: source_url, screenshots, temporal anchor
+```
+
+## How It Works
+
+### Step 1: Screenshot (OpenClaw browser tool)
+
+```bash
+openclaw browser open "<url>"        # Returns targetId
+openclaw browser screenshot "<id>"    # Returns MEDIA:<path>
+```
+
+### Step 2: OCR (tesseract)
+
+```bash
+tesseract <screenshot.jpg> stdout > <screenshot.txt>
+```
+
+### Step 3: Synthesize (llama3.2)
+
+```bash
+cat <ocr.txt> | ollama run llama3.2 \
+  "Extract 3-5 key learnings. Output ONLY JSON array."
+```
+
+### Step 4: Write Learning
+
+Single consolidated .md with all learnings:
+
+```markdown
+# Learnings from <url>
+
+**Date:** YYYY-MM-DD
+**Source:** <url>
+**Screenshots:** <files>
+
+## Learning 1 Title
+First-person summary...
+
+## Learning 2 Title
+First-person summary...
+```
+
+### Step 5: Link Neurograph
 
 ```javascript
-const { execSync } = require('child_process');
-const fs = require('fs');
-const path = require('path');
+nodes.push({
+  id: `web-learn-${domain}`,
+  title: `Learnings from ${url}`,
+  type: 'learning',
+  source_url: url,
+  screenshots: [files],
+  date: date
+});
 
-const url = process.argv[2];
-const date = new Date().toISOString().split('T')[0];
-const archiveDir = `${process.env.HOME}/RAW/archive/${date}`;
-const imagesDir = `${archiveDir}/images`;
-
-// Ensure archive dir exists
-fs.mkdirSync(imagesDir, { recursive: true });
-
-// Launch browser + navigate
-execSync(`open "${url}"`);
-
-// Wait for page load
-sleep(2000);
-
-// Screenshot (using browser tool or screencapture CLI)
-const pages = ['about', 'learn', 'tools', 'docs'];
-pages.forEach(page => {
-  const filename = `web-${url.split('/')[2]}-${page}.png`;
-  execSync(`screencapture -x ${imagesDir}/${filename}`);
+synapses.push({
+  from: `web-learn-${domain}`,
+  to: `temporal-${date}`,
+  type: 'temporal'
 });
 ```
 
-### 2. OCR Screenshots
+## Model
 
-```javascript
-const ocrOutput = execSync(`tesseract ${imagesDir}/${filename} stdout`);
-fs.writeFileSync(`${imagesDir}/${filename}.txt`, ocrOutput);
-```
+**llama3.2** — Better at JSON-only output (no "Thinking..." prefix).
 
-### 3. Create Learnings
+## Design Principles
 
-```javascript
-// Send OCR text to model for synthesis
-const prompt = `Extract key learnings from this web content:
-${ocrOutput}
-
-Format as markdown learning with:
-- Title
-- Summary (first person)
-- Source URL
-- Screenshot references`;
-
-// Write learning
-fs.writeFileSync(`${JARVIS_HOME}/RAW/learnings/${date}/web-learn-${topic}.md`, learning);
-```
-
-### 4. Link Neurograph
-
-```javascript
-// Create learning node with source metadata
-const node = {
-  id: `web-learn-${topic}`,
-  title: `Learnings from ${url}`,
-  source_url: url,
-  screenshots: [filename1, filename2],
-  date: date
-};
-
-// Link to temporal anchor
-nodes.push(node);
-synapses.push({ from: node.id, to: `temporal-${date}` });
-```
-
-## Output Structure
-
-```
-~/RAW/archive/YYYY-MM-DD/
-├── images/
-│   ├── web-git-scm-com-about.png  ← Screenshot
-│   └── web-git-scm-com-about.txt  ← OCR text
-├── web-sources/
-│   └── git-scm-com-2026-03-24.json  ← Source metadata
-└── transcript.md  ← "Visited git-scm.com, learned about git"
-
-~/JARVIS/RAW/learnings/YYYY-MM-DD/
-└── web-learn-git.md  ← Learning
-    └── Metadata: source_url, screenshots
-
-Neurograph:
-└── Node: "web-learn-git"
-    └── Connections: source_url, screenshot_refs, temporal anchor
-```
-
-## Example Usage
-
-```bash
-# Run web-learn skill
-node ~/JARVIS/skills/web-learn/scripts/web-learn.js https://git-scm.com/
-
-# Output:
-🌐 Web Learn — Starting...
-   URL: https://git-scm.com/
-   Date: 2026-03-24
-   Archive: ~/RAW/archive/2026-03-24/
-
-📸 Screenshotting pages...
-   ✓ about (git-scm-com-about.png)
-   ✓ learn (git-scm-com-learn.png)
-   ✓ tools (git-scm-com-tools.png)
-
-🔍 OCR'ing screenshots...
-   ✓ about (1614 chars extracted)
-   ✓ learn (2361 chars extracted)
-   ✓ tools (852 chars extracted)
-
-🧠 Creating learnings...
-   ✓ web-learn-git.md (git principles)
-   ✓ web-learn-distributed.md (distributed version control)
-
-🔗 Linking neurograph...
-   ✓ Created node: web-learn-git
-   ✓ Linked to: temporal-2026-03-24
-   ✓ Source metadata: git-scm-com-2026-03-24.json
-
-✅ Web learn complete
-   Learnings: 2
-   Screenshots: 3
-   Neurograph nodes: 2
-```
-
-## Key Design Decisions
-
-1. **Screenshots first** — Visual proof before text extraction
-2. **Archive structure** — Screenshots in date folder (with other images)
-3. **Source metadata** — JSON file tracks URLs visited, timestamps
-4. **Neurograph links** — Learning nodes reference source_url + screenshots
-5. **OCR text** — Separate .txt file for each screenshot (searchable)
+1. **Visual proof** — Screenshot before text extraction
+2. **Traceable** — Learning → URL → screenshots
+3. **Consolidated** — One .md file (not multiple)
+4. **Privacy-safe** — Uses `$HOME`, `$JARVIS_HOME` (no hardcoded paths)
+5. **Project-agnostic** — Works for any instance (Eric, David, Fork #003+)
 
 ---
 
-**Date:** March 24, 2026
-**Learning:** Web learning with screenshots makes knowledge traceable + visual
+**Skill location:** `$JARVIS_HOME/skills/web-learn/`
+**Script:** `scripts/web-learn.js`
+**Requires:** node, tesseract, OpenClaw browser tool, ollama
