@@ -25,8 +25,8 @@ metadata: { "openclaw": { "emoji": "🧭", "requires": { "bins": ["node", "git"]
 ## Commands
 
 ### Natural Language
-- "open jarvis ui" → setup (if needed) → start server → open user browser (profile="user" for mic)
-- "open neurograph" → find memory → serve → open controlled browser (profile="openclaw")
+- "open jarvis ui" → setup (if needed) → **ensure server running** → open user browser (profile="user" for mic)
+- "open neurograph" → find memory → **ensure server running** → open controlled browser (profile="openclaw")
 - "start server" → launch jarvis-server.js on port 18787
 - "stop server" → kill running PID
 - "restart server" → stop + start
@@ -34,6 +34,8 @@ metadata: { "openclaw": { "emoji": "🧭", "requires": { "bins": ["node", "git"]
 - "sync configs" → extract latest configs + restart gateway
 - "fix the orb" → distribute UI to coder agent
 - "preview ui changes" → start HTTP server in coder workspace
+
+**Auto-start:** Server health check runs before opening UI/NeuroGraph — if server is down, auto-starts it.
 
 ### Memory Scan Order
 1. `~/JARVIS/RAW/memories/nodes.json`

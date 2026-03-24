@@ -14,7 +14,9 @@ const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
   installPath: INSTALL_PATH,
   uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS'),
-  port: process.env.VOICE_PORT || 18787
+  serverPath: path.join(INSTALL_PATH, 'apps', 'JARVIS', 'jarvis-server.js'),
+  port: process.env.VOICE_PORT || 18787,
+  serverLog: '/tmp/jarvis-server.log'
 };
 
 // === Load setup module ===
@@ -98,6 +100,48 @@ function parseCommand(input) {
   if (cmd === 'pull' || cmd === 'pull-latest') return 'update-latest';
   
   return 'unknown';
+}
+
+// === Check server health ===
+function checkServerHealth() {
+  try {
+    const result = execSync(`lsof -i :${CONFIG.port} 2>&1 | grep LISTEN`, { encoding: 'utf8' });
+    if (result && result.includes('LISTEN')) {
+      return true;
+    }
+  } catch (err) {
+    // Port not listening
+  }
+  return false;
+}
+
+// === Start server ===
+function startServer() {
+  if (checkServerHealth()) {
+    console.log(`✓ Server already running on port ${CONFIG.port}`);
+    return true;
+  }
+  
+  console.log(`🚀 Starting Jarvis server on port ${CONFIG.port}...`);
+  try {
+    execSync(`cd ${CONFIG.uiPath} && nohup node jarvis-server.js > ${CONFIG.serverLog} 2>&1 &`);
+    // Wait for server to start
+    let attempts = 0;
+    while (!checkServerHealth() && attempts < 10) {
+      execSync('sleep 1');
+      attempts++;
+    }
+    if (checkServerHealth()) {
+      console.log(`✅ Server started (port ${CONFIG.port})`);
+      return true;
+    } else {
+      console.error('❌ Server failed to start');
+      return false;
+    }
+  } catch (err) {
+    console.error('❌ Server start failed:', err.message);
+    return false;
+  }
 }
 
 // === Open browser ===
@@ -247,6 +291,7 @@ switch (action) {
   case 'open-ui':
     console.log('🧭 Opening Jarvis UI...');
     ensureInstalled();
+    startServer(); // Ensure server is running
     console.log(`🚀 Opening https://localhost:${CONFIG.port}`);
     openBrowser(`https://localhost:${CONFIG.port}`, true);
     break;
@@ -254,6 +299,7 @@ switch (action) {
   case 'open-neurograph':
     console.log('🧭 Opening NeuroGraph...');
     ensureInstalled();
+    startServer(); // Ensure server is running
     console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
     openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`);
     break;
@@ -273,8 +319,8 @@ switch (action) {
   default:
     console.log('Usage: node jarvis-ui.js <command>');
     console.log('Commands:');
-    console.log('  open jarvis ui     — Open Jarvis UI (user profile for mic)');
-    console.log('  open neurograph    — Open NeuroGraph (default browser)');
+    console.log('  open jarvis ui     — Open Jarvis UI (user profile for mic, auto-starts server)');
+    console.log('  open neurograph    — Open NeuroGraph (default browser, auto-starts server)');
     console.log('  update latest      — Pull latest JARVIS + SCI-FI (git pull both repos)');
     console.log('  sync configs       — Extract latest configs + restart gateway');
     console.log('  package configs    — Package OpenClaw configs (Paul: zip + commit + push)');
