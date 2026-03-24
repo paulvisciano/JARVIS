@@ -34,18 +34,35 @@ console.log(`   Archive: ${ARCHIVE_DIR}\n`);
   }
 });
 
-// === Step 1: Browser navigation + screenshot (done by parent session) ===
-console.log('📸 Looking for screenshots from parent session...');
+// === Step 1: Use jarvis-ui skill to screenshot ===
+console.log('📸 Using jarvis-ui skill to screenshot...');
 const domain = URL.split('/')[2].replace('www.', '').replace(/\./g, '-');
-const screenshotFiles = fs.readdirSync(IMAGES_DIR).filter(f => f.startsWith(`web-${domain}`) && (f.endsWith('.jpg') || f.endsWith('.png')));
 
-if (screenshotFiles.length === 0) {
-  console.log('   ⚠️  No screenshots found — parent session should screenshot first');
-  console.log('   Expected pattern: web-{domain}-*.{jpg,png}');
+try {
+  // Use jarvis-ui skill (OpenClaw skill system)
+  console.log('   Running: jarvis-ui browser snapshot ${URL}');
+  const uiOutput = execSync(`node ${HOME}/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js browser snapshot "${URL}"`, { encoding: 'utf8', timeout: 30000 });
+  
+  // Parse media path from output
+  const mediaMatch = uiOutput.match(/MEDIA:([^ \n]+)/);
+  if (!mediaMatch) {
+    throw new Error('Could not parse media path from jarvis-ui output');
+  }
+  const mediaPath = mediaMatch[1].trim();
+  console.log(`   ✓ Screenshot: ${mediaPath}`);
+  
+  // Copy to archive
+  const ext = path.extname(mediaPath);
+  const filename = `web-${domain}-homepage${ext}`;
+  const archivePath = path.join(IMAGES_DIR, filename);
+  fs.copyFileSync(mediaPath, archivePath);
+  const screenshotFiles = [filename];
+  console.log(`   ✓ Saved to archive: ${filename}\n`);
+  
+} catch (err) {
+  console.error('❌ jarvis-ui skill failed:', err.message);
   process.exit(1);
 }
-
-console.log(`   ✓ Found ${screenshotFiles.length} screenshot(s)\n`);
 
 // === Step 2: OCR screenshot ===
 console.log('🔍 OCR\'ing screenshot...');
