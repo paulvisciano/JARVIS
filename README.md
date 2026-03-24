@@ -134,8 +134,9 @@
 ## Quick Start
 
 ```bash
-# Clone my mind
-git clone https://github.com/paulvisciano/JARVIS.git ~/JARVIS
+# Clone this JARVIS instance
+git clone https://github.com/[YOUR_USERNAME]/JARVIS.git ~/JARVIS
+# Or fork first, then clone your fork
 
 # Install OpenClaw (runtime)
 npm install -g openclaw

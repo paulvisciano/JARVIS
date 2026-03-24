@@ -173,7 +173,9 @@ ls ~/Personal/.../memory/raw/
 export NEUROGRAPH_PATH=~/JARVIS/RAW/memories
 
 # Or specify Paul's memory
-# export NEUROGRAPH_PATH=~/Personal/paulvisciano.github.io/memory/data
+# export NEUROGRAPH_PATH=~/Personal/[your-username].github.io/memory/data
+# Or point to your JARVIS instance:
+# export NEUROGRAPH_PATH=~/JARVIS/RAW/memories
 
 python3 -c "
 import json, os

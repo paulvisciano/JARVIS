@@ -41,18 +41,20 @@ Memory-link nodes connect neurographs:
 Memory-link node structure:
 ```json
 {
-  "id": "memory-link-paul",
+  "id": "memory-link-[owner]",
   "attributes": {
     "type": "memory-reference",
-    "memory_owner": "paul",
-    "local_path": "/Users/paulvisciano/RAW/memories/",
-    "local_nodes": "/Users/paulvisciano/RAW/memories/nodes.json",
-    "local_synapses": "/Users/paulvisciano/RAW/memories/synapses.json",
-    "nodes_url": "https://paulvisciano.github.io/memory/data/nodes.json",
-    "target_memory": "https://paulvisciano.github.io/memory/"
+    "memory_owner": "[owner]",  // Replace with actual owner (e.g., "paul", "eric", "david")
+    "local_path": "$HOME/RAW/memories/",  // Or use absolute path for your instance
+    "local_nodes": "$HOME/RAW/memories/nodes.json",
+    "local_synapses": "$HOME/RAW/memories/synapses.json",
+    "nodes_url": "https://[your-domain]/memory/data/nodes.json",
+    "target_memory": "https://[your-domain]/memory/"
   }
 }
 ```
+
+**Note:** Replace `[owner]`, `$HOME`, and `[your-domain]` with your actual values. This skill is generic — configure it for your instance.
 
 **Access modes:**
 - **Local path** (fast, same machine) — use this when available
