@@ -51,6 +51,21 @@ const totalOCR = ocrTexts.length;
 console.log(`   Context loaded: ${totalMessages} messages, ${totalTranscripts} transcripts, ${totalOCR} OCR`);
 console.log(`   Learnings directory: ${learningsDir}`);
 
+// === Check existing learnings for today ===
+const existingLearnings = [];
+if (fs.existsSync(learningsDir)) {
+  const files = fs.readdirSync(learningsDir).filter(f => f.endsWith('.md'));
+  files.forEach(f => {
+    const content = fs.readFileSync(path.join(learningsDir, f), 'utf8');
+    existingLearnings.push({ filename: f, title: content.split('\n')[0]?.replace('#', '').trim(), size: content.length });
+  });
+}
+if (existingLearnings.length > 0) {
+  console.log(`   📚 Found ${existingLearnings.length} existing learnings for ${date}`);
+} else {
+  console.log(`   📚 No existing learnings for ${date} (first breath)`);
+}
+
 // Build context text for model synthesis
 let contextText = `# Context for ${date}\n\n`;
 contextText += `## Sessions (${totalMessages} messages)\n`;
@@ -84,6 +99,10 @@ ocrTexts.forEach((o, i) => {
 });
 
 // Build the prompt for learning extraction (three levels: learnings → summary → analogies)
+const existingLearningsText = existingLearnings.length > 0 
+  ? `\n**EXISTING LEARNINGS (already captured for ${date}):**\n${existingLearnings.map(l => `- ${l.filename}: ${l.title}`).join('\n')}\n\n**IMPORTANT:** Only create NEW learnings for insights NOT already captured above. Do not duplicate existing learnings.`
+  : `\n**No existing learnings for ${date}** — this is the first breath, create all learnings from context.`;
+
 const prompt = `You are extracting learnings from conversations on ${date}. 
 This is knowledge origami — fold the context into three layers:
 
@@ -121,6 +140,10 @@ Output ONLY valid JSON, no other text. Format:
     "Like a lighthouse — steady beam, watch for ships"
   ]
 }
+
+---
+
+${existingLearningsText}
 
 ---
 
