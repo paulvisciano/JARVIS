@@ -2,23 +2,35 @@
 
 **Date:** 2026-03-24
 **Source:** https://git-scm.com/
-**Screenshots:** web-git-scm-com-homepage.jpg
+**Screenshots:** web-git-scm-com-homepage.jpg, web-git-scm-com-about.png, web-git-scm-com-learn.png, web-git-scm-com-tools.png, web-git-scm-com-docs.jpg
 
 ---
 
-## Git is a free and open source distributed version control system
+## Git is a distributed version control system
 
-Git is lightning fast and has a huge ecosystem of tools and services
-
----
-
-## Git offers a wide range of command-line tools, GUIs, and hosting services
-
-
+Git is designed to handle large projects efficiently and provides a huge ecosystem of tools.
 
 ---
 
-## Git has a large community and is maintained by the Software Freedom Conservancy
+## Git is lightning fast and has a huge ecosystem of GUIs, hosting services, and command-line tools
+
+
+
+---
+
+## Git is widely used by 96% of professional developers according to the 2022 Stack Overflow developer survey
+
+
+
+---
+
+## Git is released under the GNU General Public License version 2.0, which is an open source license
+
+
+
+---
+
+## Git has a huge number of tools to make it easier to use, including editor integrations, GUIs, and hosting services
 
 
 
@@ -28,5 +40,5 @@ Git is lightning fast and has a huge ecosystem of tools and services
 - **URL:** https://git-scm.com/
 - **Domain:** git-scm-com
 - **Date:** 2026-03-24
-- **Screenshot files:** web-git-scm-com-homepage.jpg
-- **Learning count:** 3
+- **Screenshot files:** web-git-scm-com-homepage.jpg, web-git-scm-com-about.png, web-git-scm-com-learn.png, web-git-scm-com-tools.png, web-git-scm-com-docs.jpg
+- **Learning count:** 5
