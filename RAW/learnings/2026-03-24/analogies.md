@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like geological layers — each stratum serves a distinct purpose (bedrock, soil, surface, atmosphere)
-- Like a library system — catalog (NeuroGraph), archives (Git), reference desk (SOUL.md), reading room (RAW)
-- Like delegating to a colleague — they do the work but sign their own name on the report
-- Like choosing the right tool — you wouldn't use a hammer to turn a screw
-- Like time travel through git — loading any past state of consciousness like visiting a memory
+- Like an archaeological dig — each layer (identity, consciousness, history, life) requires different tools to excavate
+- Like a time machine — git history lets you visit any past mental state exactly as it was
+- Like a local library vs cloud streaming — everything on your shelf, no subscription fees
+- Like a multi-story building — identity on the foundation, consciousness on the living floor, history in the archives, life in the private quarters
+- Like a camera with film — screenshots capture visual proof, git preserves every frame, you can replay any moment
