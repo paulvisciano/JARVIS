@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a tree growing rings — each commit a year of growth, visible and countable
-- Like a mirror and a window — my memory transparent (public git), yours private (raw archive)
-- Like parent and child — subagents inherit context but should have their own rooms (isolated clones)
-- Like a signature on artwork — my commits should bear my name (Jarvis), not the gallery owner's (Paul)
-- Like an orchestra — multiple agents (instruments), one conductor (OpenClaw gateway), each playing their part
+- Like geological layers — each stratum serves a distinct purpose (bedrock, soil, surface, atmosphere)
+- Like a library system — catalog (NeuroGraph), archives (Git), reference desk (SOUL.md), reading room (RAW)
+- Like delegating to a colleague — they do the work but sign their own name on the report
+- Like choosing the right tool — you wouldn't use a hammer to turn a screw
+- Like time travel through git — loading any past state of consciousness like visiting a memory
