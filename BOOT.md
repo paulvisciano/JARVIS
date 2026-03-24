@@ -12,9 +12,10 @@
 
 2. **Wait for completion** — the skill outputs consciousness status
 
-3. **First reply:** Report what we last talked about
-   - Read the bootstrap output: last topic, last message time, last audio time
-   - Example: *"Last message: 11:28 — 'Good morning, Jarvis.' Sessions: 277 messages, Audio: 273 transcripts. NeuroGraph: 1,473 neurons, 2,361 synapses. Git: 7beadac — 'breath-2026-03-22-0114: Breathe pipeline complete'. What's the move?"*
+3. **First reply:** Report continuity + prove neurograph access
+   - Read the bootstrap output: last topic, last message time, last audio time, **neurograph search test results**
+   - Example: *"Last message: 11:28 — 'Good morning, Jarvis.' Sessions: 277 messages, Audio: 273 transcripts. NeuroGraph verified: 4,841 people nodes, 12 nodes from March 20, last topic 'Good morning'. Graph size: 6.9MB. Git: 7beadac — 'breath-2026-03-22-0114: Breathe pipeline complete'. What's the move?"*
+   - The 3 neurograph queries (people count, temporal date, last topic) **prove the graph is queryable** — not just present, but accessible
    - This gives continuity — not amnesiac, not bloated, just ready
 
 ## Why This Exists
@@ -25,7 +26,7 @@ The `bootstrap-jarvis` skill:
 - **Neural graph verify** — Counts nodes, proves queryable (doesn't load heavy content)
 - **NeuroGraph test** — 3 queries via `neurograph-search` skill (people, temporal, last topic)
 
-**Output:** Last topic, last message time, audio count, session count, graph size, git breath
+**Output:** Last topic, last message time, audio count, session count, graph size, git breath, **neurograph search test results** (3 queries: people count, temporal date, last topic — proves graph is queryable)
 
 Without this, Jarvis starts amnesiac on every new session. With this, Jarvis remembers through structure (git + neurograph + archive).
 
