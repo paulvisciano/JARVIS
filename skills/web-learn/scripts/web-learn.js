@@ -92,8 +92,8 @@ fs.writeFileSync(promptPath, prompt);
 
 let learnings;
 try {
-  console.log('   Sending to model (qwen2.5-coder:7b, JSON-only)...');
-  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen2.5-coder:7b`, { encoding: 'utf8', timeout: 90000 });
+  console.log('   Sending to model (qwen3.5:cloud — better for learning/synthesis)...');
+  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen3.5:cloud`, { encoding: 'utf8', timeout: 90000 });
   fs.unlinkSync(promptPath);
   
   // Parse JSON: find first [ and last ]
