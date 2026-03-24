@@ -200,7 +200,7 @@ function extractLearnings(learningsDir) {
 // Main extraction
 const sessions = extractSessions(sessionsDir);
 const transcripts = extractTranscripts(audioDir);
-const ocrResults = extractOCR(imagesDir);
+const ocrResults = extractOCR(archiveDir);
 const learnings = extractLearnings(learningsDir);
 
 const context = {
