@@ -34,14 +34,14 @@ console.log(`   Archive: ${ARCHIVE_DIR}\n`);
   }
 });
 
-// === Step 1: Use OpenClaw browser tool to screenshot ===
-console.log('📸 Using OpenClaw browser tool to screenshot...');
+// === Step 1: Use OpenClaw browser tool to screenshot (single tab, navigate to pages) ===
+console.log('📸 Using OpenClaw browser tool to screenshot (single tab)...');
 const domain = URL.split('/')[2].replace('www.', '').replace(/\./g, '-');
 
 let screenshotFiles = [];
 
 try {
-  // Use OpenClaw browser tool (native tool, not skill)
+  // Open browser ONCE
   console.log('   Running: openclaw browser open "${URL}"');
   const browserOutput = execSync(`openclaw browser open "${URL}"`, { encoding: 'utf8', timeout: 30000 });
   
@@ -52,31 +52,54 @@ try {
     throw new Error('Could not parse targetId from browser output');
   }
   const targetId = targetIdMatch[1];
-  console.log(`   ✓ Opened (targetId: ${targetId})`);
+  console.log(`   ✓ Opened (targetId: ${targetId})\n`);
   
-  // Take screenshot (targetId is an argument, not a flag)
-  console.log('   Running: openclaw browser screenshot ${targetId}');
-  const screenshotOutput = execSync(`openclaw browser screenshot "${targetId}"`, { encoding: 'utf8', timeout: 30000 });
+  // Pages to capture (homepage + nav links)
+  const pages = [
+    { path: '', name: 'homepage' },
+    { path: '/about', name: 'about' },
+    { path: '/learn', name: 'learn' },
+    { path: '/tools', name: 'tools' },
+    { path: '/docs', name: 'docs' }
+  ];
   
-  // Parse media path
-  const mediaMatch = screenshotOutput.match(/MEDIA:([^ \n]+)/);
-  if (!mediaMatch) {
-    throw new Error('Could not parse media path from browser output');
+  // Screenshot each page (same tab, navigate between)
+  for (const page of pages) {
+    const pageUrl = page.path ? `${URL}${page.path}` : URL;
+    
+    if (page.path) {
+      console.log(`   Navigating to: ${pageUrl}`);
+      execSync(`openclaw browser navigate "${pageUrl}"`, { encoding: 'utf8', timeout: 10000 });
+    }
+    
+    // Wait for page load
+    execSync('sleep 1');
+    
+    // Screenshot
+    console.log(`   Capturing: ${page.name}`);
+    const screenshotOutput = execSync(`openclaw browser screenshot "${targetId}"`, { encoding: 'utf8', timeout: 30000 });
+    
+    // Parse media path
+    const mediaMatch = screenshotOutput.match(/MEDIA:([^ \n]+)/);
+    if (!mediaMatch) {
+      console.error(`   ⚠️  Failed to capture ${page.name}`);
+      continue;
+    }
+    let mediaPath = mediaMatch[1].trim();
+    if (mediaPath.startsWith('~/')) {
+      mediaPath = path.join(HOME, mediaPath.substring(2));
+    }
+    
+    // Copy to archive
+    const ext = path.extname(mediaPath);
+    const filename = `web-${domain}-${page.name}${ext}`;
+    const archivePath = path.join(IMAGES_DIR, filename);
+    fs.copyFileSync(mediaPath, archivePath);
+    screenshotFiles.push(filename);
+    console.log(`   ✓ ${page.name} (${filename})`);
   }
-  let mediaPath = mediaMatch[1].trim();
-  // Expand tilde to home directory
-  if (mediaPath.startsWith('~/')) {
-    mediaPath = path.join(HOME, mediaPath.substring(2));
-  }
-  console.log(`   ✓ Screenshot: ${mediaPath}`);
   
-  // Copy to archive
-  const ext = path.extname(mediaPath);
-  const filename = `web-${domain}-homepage${ext}`;
-  const archivePath = path.join(IMAGES_DIR, filename);
-  fs.copyFileSync(mediaPath, archivePath);
-  screenshotFiles = [filename];
-  console.log(`   ✓ Saved to archive: ${filename}\n`);
+  console.log(`\n   ✓ Captured ${screenshotFiles.length} page(s)\n`);
   
 } catch (err) {
   console.error('❌ OpenClaw browser tool failed:', err.message);
