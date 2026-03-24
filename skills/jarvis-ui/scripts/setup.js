@@ -5,12 +5,15 @@ const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
 
+const HOME = process.env.HOME || require('os').homedir();
+const INSTALL_PATH = path.join(HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi');
+
 const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
-  installPath: path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi'),
-  uiPath: path.join(CONFIG.installPath, 'apps', 'JARVIS'),
-  neurographPath: path.join(CONFIG.installPath, 'apps', 'neuro-graph'),
-  assetsPath: path.join(CONFIG.uiPath, 'assets'),
+  installPath: INSTALL_PATH,
+  uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS'),
+  neurographPath: path.join(INSTALL_PATH, 'apps', 'neuro-graph'),
+  assetsPath: path.join(INSTALL_PATH, 'apps', 'JARVIS', 'assets'),
   whisperModel: process.env.VOICE_WHISPER_MODEL || 'ggml-large-v3.bin',
   whisperModelUrl: 'https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin'
 };

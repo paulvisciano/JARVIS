@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 // Web Learn — Screenshot-based knowledge capture from websites
+// Called via: node web-learn.js <url>
+// Browser tool calls are made by the parent OpenClaw session
 
 const fs = require('fs');
 const path = require('path');
-const { execSync, spawn } = require('child_process');
+const { execSync } = require('child_process');
 
 const URL = process.argv[2];
 if (!URL) {
@@ -32,48 +34,26 @@ console.log(`   Archive: ${ARCHIVE_DIR}\n`);
   }
 });
 
-// === Step 1: Launch browser + navigate ===
-console.log('🌐 Launching browser...');
-try {
-  execSync(`open "${URL}"`);
-  console.log('✓ Browser opened\n');
-} catch (err) {
-  console.error('❌ Failed to open browser:', err.message);
+// === Step 1: Browser navigation + screenshot (done by parent session) ===
+console.log('📸 Looking for screenshots from parent session...');
+const domain = URL.split('/')[2].replace('www.', '').replace(/\./g, '-');
+const screenshotFiles = fs.readdirSync(IMAGES_DIR).filter(f => f.startsWith(`web-${domain}`) && (f.endsWith('.jpg') || f.endsWith('.png')));
+
+if (screenshotFiles.length === 0) {
+  console.log('   ⚠️  No screenshots found — parent session should screenshot first');
+  console.log('   Expected pattern: web-{domain}-*.{jpg,png}');
   process.exit(1);
 }
 
-// === Step 2: Screenshot pages ===
-console.log('📸 Screenshotting pages...');
-const domain = URL.split('/')[2].replace('www.', '');
-const pages = ['']; // Start with homepage
+console.log(`   ✓ Found ${screenshotFiles.length} screenshot(s)\n`);
 
-pages.forEach((page, i) => {
-  const pageUrl = page ? `${URL}${page}` : URL;
-  const filename = `web-${domain}-${i}.png`;
-  const filepath = path.join(IMAGES_DIR, filename);
-  
-  try {
-    // Wait for page load
-    execSync('sleep 2');
-    
-    // Screenshot (macOS screencapture)
-    execSync(`screencapture -x "${filepath}"`);
-    console.log(`   ✓ ${page || 'homepage'} (${filename})`);
-  } catch (err) {
-    console.error(`   ❌ Failed: ${err.message}`);
-  }
-});
-
-console.log();
-
-// === Step 3: OCR screenshots ===
-console.log('🔍 OCR\'ing screenshots...');
-const screenshotFiles = fs.readdirSync(IMAGES_DIR).filter(f => f.startsWith(`web-${domain}`) && f.endsWith('.png'));
+// === Step 2: OCR screenshot ===
+console.log('🔍 OCR\'ing screenshot...');
 
 const ocrResults = [];
 screenshotFiles.forEach(file => {
   const filepath = path.join(IMAGES_DIR, file);
-  const txtPath = filepath.replace('.png', '.txt');
+  const txtPath = filepath.replace(path.extname(file), '.txt');
   
   try {
     const ocrText = execSync(`tesseract "${filepath}" stdout`, { encoding: 'utf8' });
@@ -87,7 +67,7 @@ screenshotFiles.forEach(file => {
 
 console.log();
 
-// === Step 4: Create learnings ===
+// === Step 3: Create learnings ===
 console.log('🧠 Creating learnings...');
 const combinedText = ocrResults.map(r => r.text).join('\n\n');
 
@@ -104,24 +84,29 @@ For each learning, output JSON:
   "screenshots": [${screenshotFiles.map(f => `"${f}"`).join(', ')}]
 }
 
-Output ONLY JSON array.`;
+Output ONLY JSON array. No thinking, no explanation, just the JSON array.`;
 
 const promptPath = path.join(ARCHIVE_DIR, 'web-learn-prompt.txt');
 fs.writeFileSync(promptPath, prompt);
 
+let learnings;
 try {
-  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen3.5:cloud`, { encoding: 'utf8', timeout: 90000 });
+  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen2.5-coder:7b`, { encoding: 'utf8', timeout: 90000 });
   fs.unlinkSync(promptPath);
   
-  // Parse JSON
-  let learnings;
+  // Parse JSON (strip "Thinking..." prefix and find JSON array)
   try {
-    const jsonMatch = modelOutput.match(/\[[\s\S]*\]/);
-    if (jsonMatch) {
-      learnings = JSON.parse(jsonMatch[0]);
+    // Find JSON array: look for first [ and last ]
+    const firstBracket = modelOutput.indexOf('[');
+    const lastBracket = modelOutput.lastIndexOf(']');
+    if (firstBracket === -1 || lastBracket === -1 || lastBracket <= firstBracket) {
+      throw new Error('No JSON array found in output');
     }
+    const jsonStr = modelOutput.substring(firstBracket, lastBracket + 1);
+    learnings = JSON.parse(jsonStr);
   } catch (e) {
-    console.error('❌ Failed to parse model output');
+    console.error('❌ Failed to parse model output:', e.message);
+    console.log('Raw output:', modelOutput.substring(0, 2000));
     process.exit(1);
   }
   
@@ -140,7 +125,7 @@ try {
   process.exit(1);
 }
 
-// === Step 5: Link neurograph ===
+// === Step 4: Link neurograph ===
 console.log('🔗 Linking neurograph...');
 try {
   // Read existing nodes
@@ -182,7 +167,7 @@ try {
   console.error('❌ Neurograph linking failed:', err.message);
 }
 
-// === Step 6: Save source metadata ===
+// === Step 5: Save source metadata ===
 console.log('💾 Saving source metadata...');
 const sourceMetadata = {
   url: URL,
