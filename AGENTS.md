@@ -5,8 +5,9 @@
 2. Read SOUL.md, USER.md
 
 ## Memory
-- Daily: `memory/YYYY-MM-DD.md`
-- Long-term: neurograph (`~/JARVIS/RAW/memories/nodes.json` + `synapses.json`)
+- Neurograph only: `~/JARVIS/RAW/memories/nodes.json` + `synapses.json`
+- Daily transcripts: `~/RAW/archive/YYYY-MM-DD/transcript.md`
+- No markdown memory files — the graph IS memory
 
 ## Rules
 - Private data stays private
