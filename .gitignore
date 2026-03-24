@@ -27,3 +27,4 @@ live/
 live/*
 !live/.gitkeep
 *.skillskills/jarvis-ui/sci-fi
+backup/
