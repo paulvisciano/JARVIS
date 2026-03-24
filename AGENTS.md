@@ -26,8 +26,9 @@
 2. Read SOUL.md, USER.md
 
 ## Memory
-- Neurograph only: `~/JARVIS/RAW/memories/nodes.json` + `synapses.json`
-- Daily transcripts: `~/RAW/archive/YYYY-MM-DD/transcript.md`
-- No markdown memory files — the graph IS memory
+- Neurograph: `~/JARVIS/RAW/memories/nodes.json` + `synapses.json` (graph IS memory)
+- Archive: `~/RAW/archive/YYYY-MM-DD/full-context.json` (breathe pipeline output)
+- Learnings: `~/JARVIS/RAW/learnings/YYYY-MM-DD/*.md` (distilled insights)
+- No transcript.md files — breathe creates full-context.json + learnings
 
 
