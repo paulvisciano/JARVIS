@@ -161,15 +161,26 @@ try {
   
   try {
     // Extract JSON from output (skip "Thinking..." prefix)
-    const jsonStart = modelOutput.indexOf('{');
-    const jsonEnd = modelOutput.lastIndexOf('}');
-    if (jsonStart >= 0 && jsonEnd > jsonStart) {
-      const jsonStr = modelOutput.substring(jsonStart, jsonEnd + 1);
-      result = JSON.parse(jsonStr);
+    // Look for JSON starting with "learnings", "summary", or "analogies" keys
+    const jsonPattern = /\{[\s\S]*"learnings"[\s\S]*\}/;
+    const match = modelOutput.match(jsonPattern);
+    
+    if (match && match[0]) {
+      result = JSON.parse(match[0]);
+    } else {
+      // Fallback: try to find any valid JSON object
+      const jsonStart = modelOutput.indexOf('{"');
+      const jsonEnd = modelOutput.lastIndexOf('}');
+      if (jsonStart >= 0 && jsonEnd > jsonStart) {
+        const jsonStr = modelOutput.substring(jsonStart, jsonEnd + 1);
+        result = JSON.parse(jsonStr);
+      }
     }
   } catch (err) {
     console.error(`   ⚠️  JSON parse failed: ${err.message}`);
-    console.log(`   Raw output preview: ${modelOutput.substring(0, 800)}...`);
+    console.log(`   Raw output length: ${modelOutput.length} chars`);
+    console.log(`   First 500 chars: ${modelOutput.substring(0, 500)}...`);
+    console.log(`   Last 200 chars: ...${modelOutput.substring(modelOutput.length - 200)}`);
   }
 
   // Process learnings
