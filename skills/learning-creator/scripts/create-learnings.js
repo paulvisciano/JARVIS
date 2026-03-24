@@ -100,11 +100,13 @@ const prompt = `You are extracting learnings from conversations on ${date}.
 This is knowledge origami — fold the context into three layers:
 
 **LAYER 1: Learnings (detailed insights)**
-For each distinct insight/decision/realization/pattern:
+For each genuinely NEW insight/decision/realization/pattern NOT already captured above:
 1. Create a descriptive filename (e.g., "breathe-pipeline-complete.md")
 2. Write a learning .md file with clear content
 
-Create 3-10 individual learning files based on actual insights.
+**Do not duplicate existing learnings.** Only create files for truly new insights.
+If no new insights exist, return an empty learnings array — that's fine.
+Quality > quantity. One meaningful learning is better than ten forced ones.
 
 **LAYER 2: Summary (one paragraph digest)**
 Write ONE paragraph summarizing what was learned during this breath.
