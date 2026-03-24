@@ -44812,5 +44812,68 @@
     "type": "solves",
     "weight": 1,
     "created": "2026-03-24"
+  },
+  {
+    "source": "production-failure-session-bloat",
+    "target": "archive-convo-jarvis-2026-03-24-100311.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "production-failure-session-bloat",
+    "target": "archive-convo-jarvis-2026-03-24-100751.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "production-failure-session-bloat",
+    "target": "archive-convo-jarvis-2026-03-24-121316.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "session-rotation-hardening",
+    "target": "archive-convo-jarvis-2026-03-24-100311.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "session-rotation-hardening",
+    "target": "archive-convo-jarvis-2026-03-24-100751.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "session-rotation-hardening",
+    "target": "archive-convo-jarvis-2026-03-24-121316.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "fallback-model-chain",
+    "target": "archive-convo-jarvis-2026-03-24-100311.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "fallback-model-chain",
+    "target": "archive-convo-jarvis-2026-03-24-100751.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
+  },
+  {
+    "source": "fallback-model-chain",
+    "target": "archive-convo-jarvis-2026-03-24-121316.wav",
+    "type": "references",
+    "weight": 1,
+    "created": "2026-03-24"
   }
 ]
