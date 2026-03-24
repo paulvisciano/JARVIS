@@ -21,11 +21,9 @@
 
 The `bootstrap-jarvis` skill:
 - **Git breath history** — Today's commits (instant context)
-- **Archive collector** — Processes inbox pending files
 - **Recent context** — Last 2 days from `~/RAW/archive/` (full-context.json)
 - **Neural graph verify** — Counts nodes, proves queryable (doesn't load heavy content)
 - **NeuroGraph test** — 3 queries via `neurograph-search` skill (people, temporal, last topic)
-- **Skills auto-discover** — Jarvis workspace skills loaded
 
 **Output:** Last topic, last message time, audio count, session count, graph size, git breath
 

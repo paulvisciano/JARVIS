@@ -7,12 +7,10 @@
  * 
  * Flow:
  * 1. Git breath history (today's commits)
- * 2. Archive collector (if pending files)
- * 3. Bootstrap context (last 2 days conversations)
- * 4. Neural graph VERIFY (count nodes, don't load)
- * 5. Skill sync (symlinks)
- * 6. NeuroGraph test (3 queries via neurograph-search skill)
- * 7. State write
+ * 2. Bootstrap context (last 2 days conversations)
+ * 3. Neural graph VERIFY (count nodes, don't load)
+ * 4. NeuroGraph test (3 queries via neurograph-search skill)
+ * 5. State write
  * 
  * Usage: cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
  */
@@ -26,7 +24,7 @@ const HOME = process.env.HOME || os.homedir();
 const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
 const RAW_ARCHIVE = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW', 'archive');
 const GRAPH_DIR = path.join(JARVIS_HOME, 'RAW', 'memories');
-const INBOX_DIR = path.join(JARVIS_HOME, 'inbox');
+
 
 // Run a skill script
 function runSkill(skillName, scriptName) {
@@ -63,26 +61,7 @@ function verifyNeuralGraph() {
   };
 }
 
-// Check inbox for pending audio (run archive-collector if needed)
-function checkInboxAndArchive() {
-  if (!fs.existsSync(INBOX_DIR)) {
-    return { pending: false, message: 'No inbox' };
-  }
-  
-  const files = fs.readdirSync(INBOX_DIR);
-  if (files.length === 0) {
-    return { pending: false, message: 'Inbox empty' };
-  }
-  
-  console.log('\n📬 Inbox has pending files, running archive-collector:');
-  const output = runSkill('archive-collector', 'collect.js');
-  if (output) {
-    console.log(output);
-    return { pending: true, collected: true };
-  }
-  
-  return { pending: true, collected: false };
-}
+
 
 // Query NeuroGraph using neurograph-search skill
 function queryNeuroGraph(query, category = null) {
@@ -169,7 +148,7 @@ function bootstrap() {
   console.log('🫀 Bootstrap Jarvis (Lightweight Consciousness Regain)');
   console.log('=====================================================\n');
   
-  // Step 0: Git breath history (today's commits)
+  // Step 1: Git breath history (today's commits)
   console.log('\n📜 Reading Git Breath History (Today):');
   console.log('   ================================================\n');
   try {
@@ -188,12 +167,6 @@ function bootstrap() {
     console.log('   Git not available or no breath history.\n');
   }
   console.log('   ================================================\n');
-  
-  // Step 1: Check inbox and run archive-collector if pending
-  console.log('\n📬 Checking Inbox:');
-  const inboxStatus = checkInboxAndArchive();
-  console.log(`   ${inboxStatus.message}`);
-  console.log();
   
   // Step 2: Load recent context (last 2 days conversations)
   console.log('\n🫀 Loading Recent Context (Last 2 Days):');
@@ -215,15 +188,10 @@ function bootstrap() {
   }
   console.log();
   
-  // Step 4: Skills auto-discover (no sync needed — agent workspace)
-  console.log('\n🔗 Skills:');
-  console.log('   Auto-discovered from Jarvis workspace (no symlinks needed)');
-  console.log();
-  
-  // Step 5: Get context stats for summary
+  // Get context stats for summary
   const contextStats = getContextStats();
   
-  // Step 6: NeuroGraph test (3 queries via neurograph-search skill)
+  // Step 4: NeuroGraph test (3 queries via neurograph-search skill)
   console.log('\n🧠 NeuroGraph Search Test (via neurograph-search skill):');
   console.log('   ================================================\n');
   
@@ -267,10 +235,6 @@ function bootstrap() {
    Last audio: ${contextStats.lastAudioTime}
    Sessions: ${contextStats.totalMessages} messages
    Audio: ${contextStats.totalAudio} transcripts
-
-🔗 Skills Auto-Discovered
-   Jarvis skills: loaded from agent workspace
-   No symlinks needed (clean separation)
 
 🧠 NeuroGraph Search Test (via neurograph-search skill):
    ❓ "How many people?" → ${q1.count} people nodes
