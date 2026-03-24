@@ -1,7 +1,7 @@
 ---
 name: breathe
 description: The full memory pipeline — one natural command. Inhale (archive), distill (extract), weave (learnings), exhale (sync). Use when: (1) end-of-day reflection, (2) ready to integrate experiences, (3) want to sync memory without running individual skills.
-metadata: { "openclaw": { "emoji": "🫁", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME", "RAW_ARCHIVE", "NEUROGRAPH_DIR"] }, "execution": { "pattern": "background+poll", "completionMarker": ".breathe-complete.json", "autoReport": true } } } }
+metadata: { "openclaw": { "emoji": "🫁", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME", "RAW_ARCHIVE", "NEUROGRAPH_DIR"] }, "execution": { "pattern": "background+poll", "completionSignal": "git-commit", "autoReport": true } } } }
 ---
 
 # Breathe (Memory Pipeline Orchestrator)
@@ -166,12 +166,13 @@ cd ~/JARVIS
 node skills/breathe/scripts/run-pipeline.js
 ```
 
-**Execution pattern:** Runs in background, reports on completion
+**Execution pattern:** Runs in background, polls git for completion
 
 **What happens:**
 - Skill starts as background process (long-running, ~30-60 seconds)
-- Writes completion marker: `~/JARVIS/.breathe-complete.json`
-- OpenClaw detects completion → auto-reports results to chat
+- Commits to git: `breath-YYYY-MM-DD-HHMM: Breathe pipeline complete...`
+- OpenClaw polls git log for the breath commit
+- If commit exists → breathe completed → report results to chat
 - You get the full breathe summary when done (not silence)
 
 **Full output:**
@@ -195,20 +196,13 @@ Resting into memory...
 ✅ 1:1 mapping verified
 
 🫁 Breathe complete
-📝 Completion marker written: ~/JARVIS/.breathe-complete.json
+✅ Git commit: breath-2026-03-24-1242
 ```
 
-**Completion marker format:**
-```json
-{
-  "status": "complete",
-  "date": "2026-03-24",
-  "timestamp": "2026-03-24T12:42:06.000Z",
-  "breathId": "breath-2026-03-24-1242",
-  "steps": ["Inhale (Archive)", "Hold (Distill)", "Exhale (Weave)", "Rest (Sync)", "Reflect (Git)"],
-  "learningsDir": "~/JARVIS/RAW/learnings/2026-03-24",
-  "graphDir": "~/JARVIS/RAW/memories"
-}
+**Completion signal:** Git commit matching `breath-$(date +%Y-%m-%d)*`
+```bash
+git log --oneline --grep="breath-2026-03-24" -1
+# Output: 749ca40 breath-2026-03-24-1242: Breathe pipeline complete...
 ```
 
 ---
@@ -221,7 +215,7 @@ Resting into memory...
 |--------|---------|
 | `run-pipeline.js` | Orchestrates all 5 steps (Inhale, Hold, Exhale, Rest, Reflect) |
 
-## Execution Pattern (Background + Poll)
+## Execution Pattern (Background + Poll Git)
 
 **How OpenClaw should run breathe:**
 
@@ -231,27 +225,32 @@ Resting into memory...
    ```
    (Don't wait for immediate completion — it's long-running)
 
-2. **Poll for completion:**
-   - Check for `~/JARVIS/.breathe-complete.json`
-   - If exists → read status + summary
-   - If `status: "complete"` → report success to user
-   - If `status: "failed"` → report error to user
+2. **Poll git for completion:**
+   ```bash
+   git log --oneline --grep="breath-$(date +%Y-%m-%d)" -1
+   ```
+   - If commit exists → breathe completed
+   - Parse commit message: `breath-YYYY-MM-DD-HHMM: Breathe pipeline complete...`
+   - Extract breathId, timestamp, what happened
 
 3. **Auto-report results:**
-   - Read completion marker JSON
-   - Format as human summary (what happened, learnings created, git commit)
+   - Format as human summary (breathId, learnings created, git commit message)
    - Send to chat channel (don't leave user in silence)
 
 **Why this pattern:**
 - Breathe takes 30-60 seconds (archive + distill + weave + sync + commit)
 - User shouldn't wait blocking
 - User SHOULD get results when done (not silence)
-- Completion marker is the handoff: skill → OpenClaw → user
+- **Git is the signal** — no extra files, no duplicate state
+- Matches bootstrap pattern (bootstrap already queries git log for breath history)
 
-**Completion marker:** `~/JARVIS/.breathe-complete.json`
-- Written by skill when done (success or failure)
-- OpenClaw polls this file after starting breathe
-- Contains: status, date, breathId, learnings dir, graph dir
+**Completion signal:** Git commit matching `breath-$(date +%Y-%m-%d)*`
+- Commit message format: `breath-YYYY-MM-DD-HHMM: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved`
+- OpenClaw polls: `git log --oneline --grep="breath-2026-03-24" -1`
+- If found → report to user
+- If not found → still running (keep polling or timeout)
+
+**No extra files:** Git is the fingerprint. The commit IS the completion signal.
 
 ---
 
