@@ -9,6 +9,7 @@ const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
   installPath: path.join(process.env.HOME, 'JARVIS', 'skills', 'jarvis-ui', 'sci-fi'),
   uiPath: path.join(CONFIG.installPath, 'apps', 'JARVIS'),
+  neurographPath: path.join(CONFIG.installPath, 'apps', 'neuro-graph'),
   assetsPath: path.join(CONFIG.uiPath, 'assets'),
   whisperModel: process.env.VOICE_WHISPER_MODEL || 'ggml-large-v3.bin',
   whisperModelUrl: 'https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin'
@@ -98,6 +99,27 @@ function generateSSLCerts() {
   }
 }
 
+// === Create symlinks for neuro-graph ===
+function createSymlinks() {
+  const jarvisNeurographLink = path.join(CONFIG.uiPath, 'neuro-graph');
+  
+  if (fs.existsSync(jarvisNeurographLink)) {
+    console.log('✓ Neuro-graph symlink exists');
+    return true;
+  }
+  
+  console.log('🔗 Creating neuro-graph symlink...');
+  
+  try {
+    fs.symlinkSync(CONFIG.neurographPath, jarvisNeurographLink);
+    console.log(`✓ Symlink created: ${jarvisNeurographLink} -> ${CONFIG.neurographPath}`);
+    return true;
+  } catch (err) {
+    console.error('❌ Symlink creation failed:', err.message);
+    return false;
+  }
+}
+
 // === Full setup ===
 function setup() {
   console.log('🔧 Jarvis UI Setup\n');
@@ -107,12 +129,18 @@ function setup() {
   const cloned = clone();
   if (!cloned) return false;
   
+  const symlinksReady = createSymlinks();
   const modelReady = downloadWhisperModel();
   const certsReady = generateSSLCerts();
   
   console.log('\n✅ Setup complete!\n');
   console.log('Ready to run:');
   console.log('  node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open jarvis ui\n');
+  console.log('  node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open neurograph\n');
+  
+  if (!symlinksReady) {
+    console.log('⚠️  Neuro-graph symlink missing — /neuro-graph route will fail');
+  }
   
   if (!modelReady) {
     console.log('⚠️  Whisper model not ready — set VOICE_MODEL_DIR or VOICE_WHISPER_MODEL');
@@ -122,7 +150,7 @@ function setup() {
     console.log('⚠️  SSL certs not ready — HTTPS will fail');
   }
   
-  return modelReady && certsReady;
+  return symlinksReady && modelReady && certsReady;
 }
 
 module.exports = {
