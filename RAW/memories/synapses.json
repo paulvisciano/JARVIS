@@ -44983,5 +44983,150 @@
       "date": "2026-03-24"
     },
     "created": "2026-03-24T10:22:54"
+  },
+  {
+    "source": "autonomous-commit-without-request",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "model-selection-learning-vs-coding",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "neurograph-verification-as-access-proof",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "subagent-isolated-clone-architecture",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "source": "web-learn-single-browser-instance",
+    "target": "temporal-20260324",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-24"
+  },
+  {
+    "id": "syn-autonomous-commit-without-request-to-temporal-20260324",
+    "source": "autonomous-commit-without-request",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-model-selection-learning-vs-coding-to-temporal-20260324",
+    "source": "model-selection-learning-vs-coding",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-neurograph-verification-as-access-proof-to-temporal-20260324",
+    "source": "neurograph-verification-as-access-proof",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-subagent-isolated-clone-architecture-to-temporal-20260324",
+    "source": "subagent-isolated-clone-architecture",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-web-learn-single-browser-instance-to-temporal-20260324",
+    "source": "web-learn-single-browser-instance",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-24 at 5.31.05 PM-to-temporal-20260324",
+    "source": "Screenshot 2026-03-24 at 5.31.05 PM",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-24 at 5.31.05 PM.png-to-temporal-20260324",
+    "source": "Screenshot 2026-03-24 at 5.31.05 PM.png",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-63c6f579-8313-48b0-b92e-e1a8a1796658.jsonl.reset.2026-03-24T10-31-19-to-temporal-20260324",
+    "source": "63c6f579-8313-48b0-b92e-e1a8a1796658.jsonl.reset.2026-03-24T10-31-19",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-efc23bb8-79ba-4451-a8e6-dedcd8da7a11-to-temporal-20260324",
+    "source": "efc23bb8-79ba-4451-a8e6-dedcd8da7a11",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
+  },
+  {
+    "id": "syn-efc23bb8-79ba-4451-a8e6-dedcd8da7a11.jsonl.reset.2026-03-24T10-32-20-to-temporal-20260324",
+    "source": "efc23bb8-79ba-4451-a8e6-dedcd8da7a11.jsonl.reset.2026-03-24T10-32-20",
+    "target": "temporal-20260324",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-24"
+    },
+    "created": "2026-03-24T10:36:26"
   }
 ]
