@@ -29,6 +29,7 @@ if (!DATE_ARG || !/^\d{4}-\d{2}-\d{2}$/.test(DATE_ARG)) {
 const archiveDir = path.join(RAW_ARCHIVE, DATE_ARG);
 const sessionsDir = path.join(archiveDir, 'sessions');
 const audioDir = path.join(archiveDir, 'audio');
+const learningsDir = path.join(JARVIS_HOME, 'RAW', 'learnings', DATE_ARG);
 const outputFile = OUTPUT_ARG || path.join(archiveDir, 'full-context.json');
 
 // Check if archive exists
@@ -174,10 +175,33 @@ function extractOCR(archiveDir) {
   return ocrResults;
 }
 
+// Extract existing learnings for today
+function extractLearnings(learningsDir) {
+  if (!fs.existsSync(learningsDir)) return [];
+  
+  const files = fs.readdirSync(learningsDir).filter(f => f.endsWith('.md'));
+  const learnings = [];
+  
+  files.forEach(f => {
+    const filePath = path.join(learningsDir, f);
+    const content = fs.readFileSync(filePath, 'utf8');
+    const title = content.split('\n')[0]?.replace('#', '').trim() || f;
+    learnings.push({
+      filename: f,
+      title,
+      content,
+      size: content.length
+    });
+  });
+  
+  return learnings;
+}
+
 // Main extraction
 const sessions = extractSessions(sessionsDir);
 const transcripts = extractTranscripts(audioDir);
-const ocrTexts = extractOCR(archiveDir);
+const ocrResults = extractOCR(imagesDir);
+const learnings = extractLearnings(learningsDir);
 
 const context = {
   date: DATE_ARG,
@@ -185,12 +209,14 @@ const context = {
   archivePath: archiveDir,
   sessions,
   transcripts,
-  ocrTexts,
+  ocrTexts: ocrResults,
+  learnings,
   stats: {
     sessionFiles: sessions.length,
     transcriptFiles: transcripts.length,
-    ocrImages: ocrTexts.length,
-    ocrExtracted: ocrTexts.filter(o => o.source === 'extracted').length,
+    ocrImages: ocrResults.length,
+    ocrExtracted: ocrResults.filter(o => o.source === 'extracted').length,
+    learningFiles: learnings.length,
     totalMessages: sessions.reduce((sum, s) => sum + s.messageCount, 0)
   }
 };
@@ -201,6 +227,8 @@ fs.writeFileSync(outputFile, JSON.stringify(context), 'utf8');
 console.log(`✅ Context extracted: ${DATE_ARG}`);
 console.log(`   Sessions: ${sessions.length} files, ${context.stats.totalMessages} messages`);
 console.log(`   Transcripts: ${transcripts.length} files`);
+console.log(`   OCR: ${ocrResults.length} images (${context.stats.ocrExtracted} newly extracted)`);
+console.log(`   Learnings: ${learnings.length} existing for ${DATE_ARG}`);
 console.log(`   OCR: ${context.stats.ocrImages} images (${context.stats.ocrExtracted} newly extracted)`);
 console.log(`   Output: ${outputFile}`);
 console.log(`   Size: ${(fs.statSync(outputFile).size / 1024).toFixed(2)} KB`);

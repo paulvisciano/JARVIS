@@ -51,15 +51,8 @@ const totalOCR = ocrTexts.length;
 console.log(`   Context loaded: ${totalMessages} messages, ${totalTranscripts} transcripts, ${totalOCR} OCR`);
 console.log(`   Learnings directory: ${learningsDir}`);
 
-// === Check existing learnings for today ===
-const existingLearnings = [];
-if (fs.existsSync(learningsDir)) {
-  const files = fs.readdirSync(learningsDir).filter(f => f.endsWith('.md'));
-  files.forEach(f => {
-    const content = fs.readFileSync(path.join(learningsDir, f), 'utf8');
-    existingLearnings.push({ filename: f, title: content.split('\n')[0]?.replace('#', '').trim(), size: content.length });
-  });
-}
+// === Get existing learnings from context (already extracted by context-extractor) ===
+const existingLearnings = context.learnings || [];
 if (existingLearnings.length > 0) {
   console.log(`   📚 Found ${existingLearnings.length} existing learnings for ${date}`);
 } else {
