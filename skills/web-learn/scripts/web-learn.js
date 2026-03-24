@@ -85,15 +85,15 @@ For each learning, output JSON:
   "screenshots": [${screenshotFiles.map(f => `"${f}"`).join(', ')}]
 }
 
-Output ONLY JSON array. No thinking, no explanation, just the JSON array.`;
+Output ONLY JSON array.`;
 
 const promptPath = path.join(ARCHIVE_DIR, 'web-learn-prompt.txt');
 fs.writeFileSync(promptPath, prompt);
 
 let learnings;
 try {
-  console.log('   Sending to model (qwen3.5:cloud)...');
-  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen3.5:cloud`, { encoding: 'utf8', timeout: 90000 });
+  console.log('   Sending to model (qwen2.5-coder:7b, JSON-only)...');
+  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen2.5-coder:7b`, { encoding: 'utf8', timeout: 90000 });
   fs.unlinkSync(promptPath);
   
   // Parse JSON: find first [ and last ]
@@ -105,14 +105,32 @@ try {
   const jsonStr = modelOutput.substring(firstBracket, lastBracket + 1);
   learnings = JSON.parse(jsonStr);
   
-  // Write learnings
-  learnings.forEach((learning, i) => {
-    const filename = `web-learn-${i + 1}.md`;
-    const filepath = path.join(LEARNINGS_DIR, filename);
-    const content = `# ${learning.title}\n\n${learning.summary}\n\n**Source:** ${learning.source_url}\n\n**Screenshots:** ${learning.screenshots.join(', ')}\n`;
-    fs.writeFileSync(filepath, content);
-    console.log(`   ✓ ${filename} (${learning.title})`);
-  });
+  // Write single consolidated learning document
+  const domain = URL.split('/')[2].replace('www.', '').replace(/\./g, '-');
+  const filename = `web-learn-${domain}.md`;
+  const filepath = path.join(LEARNINGS_DIR, filename);
+  
+  const content = `# Learnings from ${URL}
+
+**Date:** ${DATE}
+**Source:** ${URL}
+**Screenshots:** ${screenshotFiles.join(', ')}
+
+---
+
+${learnings.map((l, i) => `## ${l.title}\n\n${l.summary}\n`).join('\n---\n\n')}
+
+## Metadata
+
+- **URL:** ${URL}
+- **Domain:** ${domain}
+- **Date:** ${DATE}
+- **Screenshot files:** ${screenshotFiles.join(', ')}
+- **Learning count:** ${learnings.length}
+`;
+  
+  fs.writeFileSync(filepath, content);
+  console.log(`   ✓ ${filename} (${learnings.length} learnings consolidated)`);
   
   console.log();
 } catch (err) {
@@ -131,28 +149,27 @@ try {
   const nodes = JSON.parse(fs.readFileSync(nodesPath, 'utf8'));
   const synapses = JSON.parse(fs.readFileSync(synapsesPath, 'utf8'));
   
-  // Create learning nodes
-  learnings.forEach((learning, i) => {
-    const nodeId = `web-learn-${i + 1}`;
-    nodes.push({
-      id: nodeId,
-      title: learning.title,
-      type: 'learning',
-      source_url: learning.source_url,
-      screenshots: learning.screenshots,
-      date: DATE
-    });
-    
-    // Link to temporal anchor
-    synapses.push({
-      from: nodeId,
-      to: `temporal-${DATE}`,
-      type: 'temporal'
-    });
-    
-    console.log(`   ✓ Created node: ${nodeId}`);
-    console.log(`   ✓ Linked to: temporal-${DATE}`);
+  // Create single consolidated learning node
+  const nodeId = `web-learn-${domain}`;
+  nodes.push({
+    id: nodeId,
+    title: `Learnings from ${URL}`,
+    type: 'learning',
+    source_url: URL,
+    screenshots: screenshotFiles,
+    learning_count: learnings.length,
+    date: DATE
   });
+  
+  // Link to temporal anchor
+  synapses.push({
+    from: nodeId,
+    to: `temporal-${DATE}`,
+    type: 'temporal'
+  });
+  
+  console.log(`   ✓ Created node: ${nodeId}`);
+  console.log(`   ✓ Linked to: temporal-${DATE}`);
   
   // Save
   fs.writeFileSync(nodesPath, JSON.stringify(nodes, null, 2));
