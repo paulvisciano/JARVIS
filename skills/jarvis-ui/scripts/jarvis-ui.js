@@ -41,6 +41,40 @@ function ensureInstalled() {
   }
 }
 
+// === Pull latest SCI-FI updates ===
+function updateLatest() {
+  console.log('🔄 Pulling latest SCI-FI updates...\n');
+  
+  if (!checkInstalled()) {
+    console.log('⚠️  SCI-FI not installed — run "open jarvis ui" first');
+    return false;
+  }
+  
+  try {
+    const beforeCommit = execSync(`git -C ${INSTALL_PATH} log --oneline -1`, { encoding: 'utf8' }).trim();
+    console.log(`Before: ${beforeCommit}`);
+    
+    execSync(`git -C ${INSTALL_PATH} pull origin main`, { stdio: 'inherit' });
+    
+    const afterCommit = execSync(`git -C ${INSTALL_PATH} log --oneline -1`, { encoding: 'utf8' }).trim();
+    console.log(`\nAfter: ${afterCommit}`);
+    
+    if (beforeCommit === afterCommit) {
+      console.log('\n✓ Already up to date');
+    } else {
+      console.log('\n✓ SCI-FI updated');
+      console.log('\n💡 Server restart needed to apply changes:');
+      console.log('   openclaw gateway restart');
+      console.log('   # or: node ~/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/jarvis-server.js');
+    }
+    
+    return true;
+  } catch (err) {
+    console.error('❌ Pull failed:', err.message);
+    return false;
+  }
+}
+
 // === Parse command ===
 function parseCommand(input) {
   const cmd = input.toLowerCase().trim();
@@ -49,6 +83,8 @@ function parseCommand(input) {
   if (cmd.includes('open') && (cmd.includes('neurograph') || cmd.includes('graph'))) return 'open-neurograph';
   if (cmd.includes('package') && cmd.includes('config')) return 'package-configs';
   if (cmd.includes('update') && (cmd.includes('config') || cmd.includes('settings'))) return 'update-configs';
+  if (cmd.includes('update') && (cmd.includes('sci-fi') || cmd.includes('ui') || cmd.includes('latest'))) return 'update-latest';
+  if (cmd === 'pull' || cmd === 'pull-latest' || cmd === 'sync') return 'update-latest';
   
   return 'unknown';
 }
@@ -221,11 +257,16 @@ switch (action) {
     updateConfigs();
     break;
     
+  case 'update-latest':
+    updateLatest();
+    break;
+    
   default:
     console.log('Usage: node jarvis-ui.js <command>');
     console.log('Commands:');
     console.log('  open jarvis ui     — Open Jarvis UI (user profile for mic)');
     console.log('  open neurograph    — Open NeuroGraph (default browser)');
+    console.log('  update latest      — Pull latest SCI-FI apps (git pull in skill folder)');
     console.log('  package configs    — Package OpenClaw configs (Paul: zip + commit + push)');
     console.log('  update configs     — Update OpenClaw configs (Eric: extract + restart)');
     process.exit(1);
