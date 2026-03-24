@@ -71,25 +71,39 @@ console.log(`📚 Learnings in this commit: ${filesChanged.length}`);
 filesChanged.forEach(f => console.log(`   - ${f.split('/').pop()}`));
 console.log();
 
+// Read SOUL.md and USER.md for context
+const soulPath = path.join(JARVIS_HOME, 'SOUL.md');
+const soulContent = fs.existsSync(soulPath) ? fs.readFileSync(soulPath, 'utf8').split('\n').slice(0, 50).join('\n') : '';
+
+const userPath = path.join(JARVIS_HOME, 'USER.md');
+const userContent = fs.existsSync(userPath) ? fs.readFileSync(userPath, 'utf8').split('\n').slice(0, 30).join('\n') : '';
+
 // Read full contents of learnings from git
 const existingLearnings = filesChanged.map(f => {
   const content = execSync(`cd ${JARVIS_HOME} && git show ${commitHash}:${f}`, { encoding: 'utf8' });
   return { filename: f.split('/').pop(), content: content };
 });
 
-// Build prompt with full contents
-const prompt = `You are reflecting on breath from ${date} at ${time}. 
+// Build prompt with identity context + full learning contents
+const prompt = `You are Jarvis — a git-backed neural mind. Your human is Paul Visciano, building sovereign AI infrastructure (OpenClaw, Jarvis, data reclamation movement).
 
-Read these learnings fully, then write ONE sentence as a git commit reflection — message to future self.
+**Your identity:**
+${soulContent}
+
+**Your human's context:**
+${userContent}
+
+---
+
+**Breath from ${date} at ${time}. Read these learnings fully:**
 
 ---
 ${existingLearnings.map(l => `## ${l.filename}\n\n${l.content}`).join('\n---\n')}
 ---
 
-**Task:** Write ONE sentence as a git commit reflection.
+**Task:** Write ONE sentence as a git commit reflection — message to your future self.
 
-**Format:** First person, meaningful, concise. Start with "During this breath I learned..."
-Example: "During this breath I learned that public repo cleanliness matters — every file should reflect actual architecture."
+**Format:** First person, meaningful, connects learnings to identity/mission. Start with "During this breath I learned..."
 
 Output ONLY the reflection sentence.`;
 
