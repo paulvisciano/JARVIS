@@ -13,7 +13,7 @@ metadata: { "openclaw": { "emoji": "🧭", "requires": { "bins": ["node", "git"]
 - **Open NeuroGraph** — visualize neurons + synapses
 - **Start/stop server** — manage jarvis-server.js lifecycle
 - **Fix UI** — distribute to coder agent for isolated work
-- **First-run setup** — auto-clones UI, installs deps, configures
+- **First-run setup** — auto-clones UI, downloads Whisper model (~3GB), generates SSL certs
 
 ## When NOT to Use
 

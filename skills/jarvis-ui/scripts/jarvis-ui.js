@@ -17,28 +17,24 @@ const CONFIG = {
   port: process.env.VOICE_PORT || 18787
 };
 
+// === Load setup module ===
+const setup = require('./setup.js');
+
 // === Check if SCI-FI is cloned ===
 function checkInstalled() {
   return fs.existsSync(CONFIG.uiPath);
 }
 
-// === Clone SCI-FI on first run ===
+// === Ensure installed + setup (Whisper + SSL) ===
 function ensureInstalled() {
   if (checkInstalled()) {
     console.log('✓ SCI-FI already installed');
     return true;
   }
   
-  console.log('📦 First run — cloning SCI-FI...');
+  console.log('📦 First run — running full setup (clone + Whisper + SSL)...');
   
-  try {
-    execSync(`git clone ${CONFIG.uiRepo} ${INSTALL_PATH}`, { stdio: 'inherit' });
-    console.log('✓ SCI-FI cloned');
-    return true;
-  } catch (err) {
-    console.error('❌ Clone failed:', err.message);
-    return false;
-  }
+  return setup.setup();
 }
 
 // === Pull latest SCI-FI updates ===

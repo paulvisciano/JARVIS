@@ -9,6 +9,16 @@
 openclaw agent --message "open jarvis ui"
 ```
 
+**First-run setup does:**
+1. Clones SCI-FI repo (UI code)
+2. Downloads Whisper model (`ggml-large-v3.bin` ~3.1 GB) — required for transcription
+3. Generates self-signed SSL certs (localhost, 365 days) — required for HTTPS + mobile mic access
+
+**Environment variables (optional):**
+- `VOICE_MODEL_DIR` — Custom Whisper model directory
+- `VOICE_WHISPER_MODEL` — Custom model filename (default: `ggml-large-v3.bin`)
+- `VOICE_PORT` — Server port (default: 18787)
+
 ## Commands
 
 ### Natural Language
