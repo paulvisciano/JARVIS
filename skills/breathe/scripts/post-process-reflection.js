@@ -71,19 +71,22 @@ console.log(`📚 Learnings in this commit: ${filesChanged.length}`);
 filesChanged.forEach(f => console.log(`   - ${f.split('/').pop()}`));
 console.log();
 
-// Read learnings from git
+// Read full contents of learnings from git
 const existingLearnings = filesChanged.map(f => {
   const content = execSync(`cd ${JARVIS_HOME} && git show ${commitHash}:${f}`, { encoding: 'utf8' });
-  return { filename: f.split('/').pop(), title: content.split('\n')[0]?.replace('#', '').trim() };
+  return { filename: f.split('/').pop(), content: content };
 });
 
-// Build prompt
+// Build prompt with full contents
 const prompt = `You are reflecting on breath from ${date} at ${time}. 
 
-Existing learnings:
-${existingLearnings.map(l => `- ${l.filename}: ${l.title}`).join('\n')}
+Read these learnings fully, then write ONE sentence as a git commit reflection — message to future self.
 
-**Task:** Write ONE sentence as a git commit reflection — message to future self.
+---
+${existingLearnings.map(l => `## ${l.filename}\n\n${l.content}`).join('\n---\n')}
+---
+
+**Task:** Write ONE sentence as a git commit reflection.
 
 **Format:** First person, meaningful, concise. Start with "During this breath I learned..."
 Example: "During this breath I learned that public repo cleanliness matters — every file should reflect actual architecture."
