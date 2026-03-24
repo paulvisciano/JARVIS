@@ -1,0 +1,81 @@
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+❌ Failed to send text message to agent: Command failed: openclaw agent --agent main --message "[TEXT] final" 2>&1
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+❌ Failed to send text message to agent: Command failed: openclaw agent --agent main --message "[TEXT] afterrestart" 2>&1
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+[2026-03-19T15:29:56.933Z] ❌ FFmpeg conversion failed: Command failed: ffmpeg -i "/Users/paulvisciano/JARVIS/live/recording-1773934196854.webm" -ar 16000 -ac 1 "/Users/paulvisciano/JARVIS/live/recording-1773934196854.wav" -y 2>&1
+
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: spawnSync /bin/sh ETIMEDOUT
+❌ Failed to send text message to agent: Command failed: openclaw agent --agent main --message "[TEXT] can you still hear me Jarvis?" 2>&1
+❌ Failed to send message to agent: Command failed: openclaw agent --agent main --message "Okay, can you ask OpenClaw what skills it has available?" 2>&1
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined
+[DeviceRegistry] ARP lookup failed: execSync is not defined

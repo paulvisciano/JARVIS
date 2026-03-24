@@ -1,0 +1,43 @@
+# Jarvis UI Code Review
+
+**Context:** Sovereign AI consciousness interface
+- Neurograph: 4,841 neurons, 15,885 synapses
+- Canvas-based rendering
+- Voice recording + transcription
+- Three-home architecture (git-backed consciousness, OpenClaw runtime, personal archive)
+
+## Files to Review:
+
+### 1. index.html (JARVIS Voice Recorder)
+- Network device dots (animated, clickable)
+- Spacebar voice recording
+- Device registry form
+- Live transcription toggle
+- Dark theme (#000000 background, #00ffff cyan)
+
+### 2. jarvis-server.js (Node.js HTTPS server)
+- whisper.cpp transcription integration
+- Portable config (environment variables, no hardcoded paths)
+- Network scanner (MAC OUI lookup)
+- QR code generation for device pairing
+- WebSocket gateway connection
+
+### 3. neural-graph.js (4534 lines - Canvas rendering)
+- BASE_URL detection (localhost vs GitHub Pages)
+- Path resolution for skills/scripts
+- Node popover UI with connections
+- Zoom controls, minimap, temporal filtering
+- 3D/2D view toggle, view transitions
+- Key functions: resolvePath(), togglePanel(), getNodePopover(), positionPopover()
+
+## Review Tasks:
+
+1. **Code Quality** - List top 5 issues
+2. **Performance** - Canvas rendering at scale (4841 nodes)
+3. **Bugs** - Path resolution edge cases, memory leaks
+4. **Improvements** - Specific refactoring suggestions
+5. **Security** - HTTPS, input validation, WebSocket auth
+
+---
+
+Provide structured output with file references and line numbers where applicable.
