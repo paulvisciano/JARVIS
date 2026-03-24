@@ -37,38 +37,52 @@ function ensureInstalled() {
   return setup.setup();
 }
 
-// === Pull latest SCI-FI updates ===
+// === Pull latest JARVIS + SCI-FI updates ===
 function updateLatest() {
-  console.log('🔄 Pulling latest SCI-FI updates...\n');
+  console.log('🔄 Updating Jarvis to latest (JARVIS + SCI-FI)...\n');
   
-  if (!checkInstalled()) {
-    console.log('⚠️  SCI-FI not installed — run "open jarvis ui" first');
-    return false;
-  }
-  
+  // Step 1: Pull JARVIS repo
+  console.log('📦 Pulling JARVIS repo...');
   try {
-    const beforeCommit = execSync(`git -C ${INSTALL_PATH} log --oneline -1`, { encoding: 'utf8' }).trim();
-    console.log(`Before: ${beforeCommit}`);
-    
-    execSync(`git -C ${INSTALL_PATH} pull origin main`, { stdio: 'inherit' });
-    
-    const afterCommit = execSync(`git -C ${INSTALL_PATH} log --oneline -1`, { encoding: 'utf8' }).trim();
-    console.log(`\nAfter: ${afterCommit}`);
-    
-    if (beforeCommit === afterCommit) {
-      console.log('\n✓ Already up to date');
-    } else {
-      console.log('\n✓ SCI-FI updated');
-      console.log('\n💡 Server restart needed to apply changes:');
-      console.log('   openclaw gateway restart');
-      console.log('   # or: node ~/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/jarvis-server.js');
-    }
-    
-    return true;
+    const beforeJarvis = execSync(`git -C ${JARVIS_HOME} log --oneline -1`, { encoding: 'utf8' }).trim();
+    console.log(`Before: ${beforeJarvis}`);
+    execSync(`git -C ${JARVIS_HOME} pull origin main`, { stdio: 'inherit' });
+    const afterJarvis = execSync(`git -C ${JARVIS_HOME} log --oneline -1`, { encoding: 'utf8' }).trim();
+    console.log(`After: ${afterJarvis}`);
+    console.log('✓ JARVIS repo updated\n');
   } catch (err) {
-    console.error('❌ Pull failed:', err.message);
+    console.error('❌ JARVIS pull failed:', err.message);
+    console.log('Resolve conflicts, then run: git -C ~/JARVIS pull --rebase\n');
     return false;
   }
+  
+  // Step 2: Pull SCI-FI (inside jarvis-ui skill)
+  if (checkInstalled()) {
+    console.log('📦 Pulling SCI-FI (jarvis-ui skill)...');
+    try {
+      const beforeScifi = execSync(`git -C ${INSTALL_PATH} log --oneline -1`, { encoding: 'utf8' }).trim();
+      console.log(`Before: ${beforeScifi}`);
+      execSync(`git -C ${INSTALL_PATH} pull origin main`, { stdio: 'inherit' });
+      const afterScifi = execSync(`git -C ${INSTALL_PATH} log --oneline -1`, { encoding: 'utf8' }).trim();
+      console.log(`After: ${afterScifi}`);
+      
+      if (beforeScifi === afterScifi) {
+        console.log('✓ SCI-FI already up to date\n');
+      } else {
+        console.log('✓ SCI-FI updated\n');
+        console.log('💡 Server restart needed to apply UI changes:');
+        console.log('   node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js restart server');
+      }
+    } catch (err) {
+      console.error('⚠️  SCI-FI pull failed:', err.message);
+    }
+  } else {
+    console.log('⊘ SCI-FI not installed yet — run "open jarvis ui" first\n');
+  }
+  
+  console.log('✅ Update complete!');
+  console.log('Test: node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open jarvis ui');
+  return true;
 }
 
 // === Parse command ===
@@ -78,9 +92,10 @@ function parseCommand(input) {
   if (cmd.includes('open') && cmd.includes('jarvis')) return 'open-ui';
   if (cmd.includes('open') && (cmd.includes('neurograph') || cmd.includes('graph'))) return 'open-neurograph';
   if (cmd.includes('package') && cmd.includes('config')) return 'package-configs';
-  if (cmd.includes('update') && (cmd.includes('config') || cmd.includes('settings'))) return 'update-configs';
-  if (cmd.includes('update') && (cmd.includes('sci-fi') || cmd.includes('ui') || cmd.includes('latest'))) return 'update-latest';
-  if (cmd === 'pull' || cmd === 'pull-latest' || cmd === 'sync') return 'update-latest';
+  if (cmd.includes('sync') && cmd.includes('config')) return 'sync-configs';
+  if (cmd.includes('update') && (cmd.includes('config') || cmd.includes('settings'))) return 'sync-configs';
+  if (cmd.includes('update') && (cmd.includes('latest') || cmd.includes('jarvis') || cmd.includes('scifi'))) return 'update-latest';
+  if (cmd === 'pull' || cmd === 'pull-latest') return 'update-latest';
   
   return 'unknown';
 }
@@ -177,15 +192,15 @@ function packageConfigs() {
   }
 }
 
-// === Update configs (Eric's machine) ===
-function updateConfigs() {
-  console.log('🔄 Updating OpenClaw configs...\n');
+// === Sync configs (Eric's machine) ===
+function syncConfigs() {
+  console.log('🔄 Syncing OpenClaw configs...\n');
   
   // Find latest package
   const packagesDir = path.join(JARVIS_HOME, 'packages');
   if (!fs.existsSync(packagesDir)) {
     console.error('❌ No packages directory found');
-    console.log('Paul needs to run "package configs" first\n');
+    console.log('Run "package configs" first\n');
     return false;
   }
   
@@ -193,7 +208,7 @@ function updateConfigs() {
   
   if (files.length === 0) {
     console.error('❌ No config packages found');
-    console.log('Paul needs to run "package configs" first\n');
+    console.log('Run "package configs" first\n');
     return false;
   }
   
@@ -201,27 +216,25 @@ function updateConfigs() {
   const zipPath = path.join(packagesDir, latestZip);
   
   console.log(`📦 Found: ${latestZip}`);
-  console.log(`   Size: ${fs.statSync(zipPath).size} bytes\n`);
+  console.log(`   Size: ${fs.statSync(zipPath).size} bytes`);
+  console.log(`   Created: ${new Date(fs.statSync(zipPath).mtime).toLocaleString()}\n`);
   
   try {
     console.log('🗜️  Extracting...');
     execSync(`unzip -o ${zipPath} -d ${OPENCLAW_HOME}`, { stdio: 'inherit' });
-    console.log('✓ Extracted\n');
+    console.log('✓ Extracted to ~/.openclaw/\n');
     
     console.log('🔄 Restarting Gateway...');
     execSync('openclaw gateway restart', { stdio: 'inherit' });
-    console.log('✓ Restarted\n');
+    console.log('✓ Gateway restarted\n');
     
-    console.log('✅ Configs updated!');
-    console.log(`   Applied: ${latestZip}\n`);
-    
-    console.log('💡 Cleanup (optional):');
-    console.log(`   rm ${zipPath}`);
-    console.log('   git -C ~/JARVIS commit -m "cleanup: extracted configs"\n');
+    console.log('✅ Configs synced!');
+    console.log(`   Applied: ${latestZip}`);
+    console.log('   You\'re running Paul\'s latest config\n');
     
     return true;
   } catch (err) {
-    console.error('❌ Update failed:', err.message);
+    console.error('❌ Sync failed:', err.message);
     return false;
   }
 }
@@ -249,8 +262,8 @@ switch (action) {
     packageConfigs();
     break;
     
-  case 'update-configs':
-    updateConfigs();
+  case 'sync-configs':
+    syncConfigs();
     break;
     
   case 'update-latest':
@@ -262,8 +275,8 @@ switch (action) {
     console.log('Commands:');
     console.log('  open jarvis ui     — Open Jarvis UI (user profile for mic)');
     console.log('  open neurograph    — Open NeuroGraph (default browser)');
-    console.log('  update latest      — Pull latest SCI-FI apps (git pull in skill folder)');
+    console.log('  update latest      — Pull latest JARVIS + SCI-FI (git pull both repos)');
+    console.log('  sync configs       — Extract latest configs + restart gateway');
     console.log('  package configs    — Package OpenClaw configs (Paul: zip + commit + push)');
-    console.log('  update configs     — Update OpenClaw configs (Eric: extract + restart)');
     process.exit(1);
 }

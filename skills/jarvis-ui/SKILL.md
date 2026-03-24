@@ -30,7 +30,8 @@ metadata: { "openclaw": { "emoji": "🧭", "requires": { "bins": ["node", "git"]
 - "start server" → launch jarvis-server.js on port 18787
 - "stop server" → kill running PID
 - "restart server" → stop + start
-- "update latest" → pull latest SCI-FI apps from origin/main
+- "update latest" → pull latest JARVIS + SCI-FI (git pull both repos)
+- "sync configs" → extract latest configs + restart gateway
 - "fix the orb" → distribute UI to coder agent
 - "preview ui changes" → start HTTP server in coder workspace
 
