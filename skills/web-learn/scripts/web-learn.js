@@ -85,24 +85,35 @@ For each learning, output JSON:
   "screenshots": [${screenshotFiles.map(f => `"${f}"`).join(', ')}]
 }
 
-Output ONLY JSON array.`;
+CRITICAL: Output ONLY the JSON array. No thinking, no explanation, no markdown. Start with [ and end with ].`;
 
 const promptPath = path.join(ARCHIVE_DIR, 'web-learn-prompt.txt');
 fs.writeFileSync(promptPath, prompt);
 
 let learnings;
 try {
-  console.log('   Sending to model (qwen3.5:cloud — better for learning/synthesis)...');
-  const modelOutput = execSync(`cat "${promptPath}" | ollama run qwen3.5:cloud`, { encoding: 'utf8', timeout: 90000 });
+  console.log('   Sending to model (llama3.2 — better at JSON-only output)...');
+  const modelOutput = execSync(`cat "${promptPath}" | ollama run llama3.2`, { encoding: 'utf8', timeout: 90000 });
   fs.unlinkSync(promptPath);
   
-  // Parse JSON: find first [ and last ]
+  // Parse JSON: find first [ and last ], strip Thinking..., markdown, etc.
   const firstBracket = modelOutput.indexOf('[');
   const lastBracket = modelOutput.lastIndexOf(']');
   if (firstBracket === -1 || lastBracket === -1 || lastBracket <= firstBracket) {
+    console.error('Raw output:', modelOutput.substring(0, 800));
     throw new Error('No JSON array found in output');
   }
-  const jsonStr = modelOutput.substring(firstBracket, lastBracket + 1);
+  let jsonStr = modelOutput.substring(firstBracket, lastBracket + 1).trim();
+  // Strip markdown code blocks (```json ... ```)
+  jsonStr = jsonStr.replace(/^```json\s*/, '').replace(/```$/, '').trim();
+  // Strip any remaining non-JSON prefix (Thinking..., etc.)
+  if (!jsonStr.startsWith('[')) {
+    const retryFirst = jsonStr.indexOf('[');
+    if (retryFirst > -1) {
+      jsonStr = jsonStr.substring(retryFirst);
+    }
+  }
+  console.log('   Parsed JSON:', jsonStr.substring(0, 200));
   learnings = JSON.parse(jsonStr);
   
   // Write single consolidated learning document
