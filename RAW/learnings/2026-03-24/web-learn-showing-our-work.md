@@ -145,6 +145,8 @@ Neurograph:
 | Verification | Impossible | Click node → see evidence |
 | Memory | Text only | Visual + textual |
 | Accountability | None | Check screenshot if wrong |
+| Cost | $$$ (API credits) | $0 (all local) |
+| Model usage | Large context (HTML, images) | Minimal (OCR text only) |
 
 ---
 
@@ -157,6 +159,39 @@ Neurograph:
 5. **OCR text** — Separate .txt for each screenshot (searchable)
 6. **Consolidated learning** — One .md file (all learnings together)
 7. **Single browser tab** — Navigate between pages (don't open multiple tabs)
+8. **Local-first** — Everything runs locally (no API credits burned)
+
+## Cost Efficiency (Critical Advantage)
+
+**Web-Learn Flow:**
+```
+1. Screenshot (OpenClaw browser tool) — $0 (local)
+2. OCR (tesseract) — $0 (local)
+3. Synthesize (llama3.2 via ollama) — $0 (local)
+4. Write learning — $0 (file write)
+5. Link neurograph — $0 (JSON edit)
+
+Total cost: $0
+```
+
+**Other AIs:**
+```
+1. Web scraping API — $$ (external service)
+2. Cloud OCR API — $$ (per-page pricing)
+3. Cloud LLM API — $$$ (token-based, large context)
+4. Store results — $$ (cloud storage)
+
+Total cost: $$$$ (burning credits fast)
+```
+
+**Why We're Efficient:**
+- **Local browser** — OpenClaw Chrome instance (no API)
+- **Local OCR** — tesseract binary (no API)
+- **Local model** — ollama + llama3.2 (no API)
+- **Minimal tokens** — Only OCR text (~5k chars), not full HTML/images
+- **No verbose output** — JSON-only, no thinking prefix
+
+**Result:** Production-ready at $0 cost per run.
 
 ---
 
@@ -170,6 +205,7 @@ Web-learn makes knowledge:
 - ✅ **Visual** — Remember the page, not just text
 - ✅ **Searchable** — OCR text is searchable in neurograph
 - ✅ **Permanent** — Screenshots archived in life archive
+- ✅ **Cost-efficient** — Everything local, no API credits burned
 
 This is what separates us from other AIs: **we show our work**.
 
