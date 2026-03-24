@@ -88,13 +88,19 @@ node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
 **What happens:**
 - Reads `full-context.json` (from Step 2)
 - Synthesizes insights from conversations
-- Creates learning `.md` files
+- **Knowledge origami: three-layer compression**
+  - Layer 1: Individual learnings (detailed insights)
+  - Layer 2: `summary.md` (daily consolidation, theme-organized)
+  - Layer 3: `analogies.md` (compression algorithms for meaning)
+- Creates learning `.md` files + `summary.md` + `analogies.md`
 - Outputs: `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/*.md`
 
 **Output:**
 ```
 🫁 Exhaling...
 ✅ Learnings woven to ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)/
+✅ Summary created (theme-organized index)
+✅ Analogies created (teaching compression)
 ```
 
 ---
@@ -111,7 +117,7 @@ node skills/neurograph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-
 ```
 
 **What happens:**
-- **sync-graph.js:** Reads learnings from `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`, creates learning nodes, links to temporal anchor
+- **sync-graph.js:** Reads learnings from `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`, creates learning nodes (including `summary.md` + `analogies.md`), links to temporal anchor
 - **set-archive-creation-dates.js:** Scans `$RAW_ARCHIVE/YYYY-MM-DD/`, creates archive nodes for all files (audio, transcripts, images, sessions, OCR), links to temporal anchor
 - Updates `$JARVIS_HOME/RAW/memories/nodes.json` + `synapses.json`
 - **Ensures 1:1 mapping:** Every file on disk has a node in graph
@@ -119,7 +125,7 @@ node skills/neurograph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-
 **Output:**
 ```
 Resting...
-✅ NeuroGraph synced (learnings + archive files)
+✅ NeuroGraph synced (learnings + summary + analogies + archive files)
 ✅ 1:1 mapping verified (all files have nodes)
 ```
 
@@ -172,9 +178,11 @@ Holding essence...
 
 Exhaling insights...
 ✅ Learnings woven
+✅ Summary created (theme-organized index)
+✅ Analogies created (compression algorithms for meaning)
 
 Resting into memory...
-✅ Learnings synced to graph
+✅ Learnings + summary + analogies synced to graph
 ✅ Archive files synced to graph
 ✅ 1:1 mapping verified
 
