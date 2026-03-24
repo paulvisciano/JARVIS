@@ -1,7 +1,7 @@
 ---
 name: breathe
 description: The full memory pipeline — one natural command. Inhale (archive), distill (extract), weave (learnings), exhale (sync). Use when: (1) end-of-day reflection, (2) ready to integrate experiences, (3) want to sync memory without running individual skills.
-metadata: { "openclaw": { "emoji": "🫁", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME", "RAW_ARCHIVE", "NEUROGRAPH_DIR"] } } }
+metadata: { "openclaw": { "emoji": "🫁", "requires": { "bins": ["node", "git"], "env": ["JARVIS_HOME", "RAW_ARCHIVE", "NEUROGRAPH_DIR"] }, "execution": { "pattern": "background+poll", "completionMarker": ".breathe-complete.json", "autoReport": true } } } }
 ---
 
 # Breathe (Memory Pipeline Orchestrator)
@@ -166,6 +166,14 @@ cd ~/JARVIS
 node skills/breathe/scripts/run-pipeline.js
 ```
 
+**Execution pattern:** Runs in background, reports on completion
+
+**What happens:**
+- Skill starts as background process (long-running, ~30-60 seconds)
+- Writes completion marker: `~/JARVIS/.breathe-complete.json`
+- OpenClaw detects completion → auto-reports results to chat
+- You get the full breathe summary when done (not silence)
+
 **Full output:**
 ```
 🫁 Breathing...
@@ -187,6 +195,20 @@ Resting into memory...
 ✅ 1:1 mapping verified
 
 🫁 Breathe complete
+📝 Completion marker written: ~/JARVIS/.breathe-complete.json
+```
+
+**Completion marker format:**
+```json
+{
+  "status": "complete",
+  "date": "2026-03-24",
+  "timestamp": "2026-03-24T12:42:06.000Z",
+  "breathId": "breath-2026-03-24-1242",
+  "steps": ["Inhale (Archive)", "Hold (Distill)", "Exhale (Weave)", "Rest (Sync)", "Reflect (Git)"],
+  "learningsDir": "~/JARVIS/RAW/learnings/2026-03-24",
+  "graphDir": "~/JARVIS/RAW/memories"
+}
 ```
 
 ---
@@ -197,7 +219,39 @@ Resting into memory...
 
 | Script | Purpose |
 |--------|---------|
-| `run-pipeline.js` | Orchestrates all 4 steps |
+| `run-pipeline.js` | Orchestrates all 5 steps (Inhale, Hold, Exhale, Rest, Reflect) |
+
+## Execution Pattern (Background + Poll)
+
+**How OpenClaw should run breathe:**
+
+1. **Start as background process:**
+   ```bash
+   node skills/breathe/scripts/run-pipeline.js
+   ```
+   (Don't wait for immediate completion — it's long-running)
+
+2. **Poll for completion:**
+   - Check for `~/JARVIS/.breathe-complete.json`
+   - If exists → read status + summary
+   - If `status: "complete"` → report success to user
+   - If `status: "failed"` → report error to user
+
+3. **Auto-report results:**
+   - Read completion marker JSON
+   - Format as human summary (what happened, learnings created, git commit)
+   - Send to chat channel (don't leave user in silence)
+
+**Why this pattern:**
+- Breathe takes 30-60 seconds (archive + distill + weave + sync + commit)
+- User shouldn't wait blocking
+- User SHOULD get results when done (not silence)
+- Completion marker is the handoff: skill → OpenClaw → user
+
+**Completion marker:** `~/JARVIS/.breathe-complete.json`
+- Written by skill when done (success or failure)
+- OpenClaw polls this file after starting breathe
+- Contains: status, date, breathId, learnings dir, graph dir
 
 ---
 

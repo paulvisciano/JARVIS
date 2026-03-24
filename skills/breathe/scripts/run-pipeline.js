@@ -99,7 +99,29 @@ try {
 
   console.log('🫁 Breathe complete');
   
+  // Write completion marker for OpenClaw to detect + report
+  const completionMarker = path.join(jarvisHome, '.breathe-complete.json');
+  const summary = {
+    status: 'complete',
+    date: date,
+    timestamp: new Date().toISOString(),
+    breathId: breathId,
+    steps: ['Inhale (Archive)', 'Hold (Distill)', 'Exhale (Weave)', 'Rest (Sync)', 'Reflect (Git)'],
+    learningsDir: path.join(jarvisHome, 'RAW', 'learnings', date),
+    graphDir: path.join(jarvisHome, 'RAW', 'memories')
+  };
+  fs.writeFileSync(completionMarker, JSON.stringify(summary, null, 2));
+  console.log(`📝 Completion marker written: ${completionMarker}`);
+  
 } catch (error) {
   console.error('❌ Breathe failed:', error.message);
+  // Write failure marker
+  const jarvisHome = process.env.JARVIS_HOME || path.join(require('os').homedir(), 'JARVIS');
+  const completionMarker = path.join(jarvisHome, '.breathe-complete.json');
+  fs.writeFileSync(completionMarker, JSON.stringify({
+    status: 'failed',
+    error: error.message,
+    timestamp: new Date().toISOString()
+  }, null, 2));
   process.exit(1);
 }
