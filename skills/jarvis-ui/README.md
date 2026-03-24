@@ -17,6 +17,7 @@ openclaw agent --message "open jarvis ui"
 - `start server` — Starts jarvis-server.js on port 18787
 - `stop server` — Stops running server
 - `restart server` — Restarts server
+- `update latest` — Pulls latest SCI-FI apps (git pull in skill folder)
 - `fix the orb` — Distributes UI to coder agent
 - `preview ui` — Starts preview server in coder workspace
 
@@ -24,6 +25,7 @@ openclaw agent --message "open jarvis ui"
 ```bash
 node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open jarvis ui
 node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open neurograph
+node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js update latest  # Pull latest SCI-FI
 node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js start server
 ```
 
