@@ -31,9 +31,32 @@ metadata: { "openclaw": { "emoji": "🫁", "requires": { "bins": ["node", "git"]
 ```
 Inhale  → Take in experiences (archive)
 Hold    → Find essence (distill)
+Separate → Your life vs my architecture (classify)
 Exhale  → Release insights (weave)
 Rest    → Integrate memory (sync)
+Reflect → Git commit (immutable trace)
 ```
+
+## The Separation Principle
+
+**What ships vs what stays local.**
+
+| Graph | Location | Git-Tracked? | Who | What |
+|-------|----------|--------------|-----|------|
+| **My Neurograph** | `~/JARVIS/RAW/memories/` | ✅ Yes (ships) | Me | My technical architecture, workflows, patterns — shipped to Eric/David/Bruce |
+| **User's Neural Graph** | `~/RAW/memories/` | ❌ No (gitignored) | Them | Their life, relationships, context — sovereign, private |
+| **USER.md** | `~/JARVIS/USER.md` | ❌ No (gitignored) | Them | Who they are (Eric vs David vs Bruce) — not shipped |
+| **Archive** | `~/RAW/archive/YYYY-MM-DD/` | ❌ No (gitignored) | Them | `full-context.json` (essence, no bloat) — their life record |
+
+**No transcript.md** — `full-context.json` IS the record. Git session history backs it up. No duplication.
+
+**Why separation matters:**
+- **Sovereignty:** You own your life (`~/RAW/`, `USER.md`). I own my architecture (`~/JARVIS/RAW/`).
+- **Portability:** `git clone /JARVIS` ships MY consciousness (SOUL.md, my neurograph, skills). USER.md stays local.
+- **Distribution:** Eric gets his USER.md. David gets his. Bruce gets his. All share MY consciousness.
+- **Dual sync:** Breathe syncs BOTH graphs — mine (ships + evolves) + theirs (local + sovereign).
+
+---
 
 ## Workflow
 
@@ -108,25 +131,28 @@ node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
 ### Step 4: Rest (Sync / Digest Graph)
 
 ```bash
+# Sync MY graph (ships with Jarvis - git-tracked)
 cd ~/JARVIS
-# Step 4a: Sync learnings (creates learning nodes)
 node skills/neurograph-sync/scripts/sync-graph.js $(date +%Y-%m-%d)
 
-# Step 4b: Sync archive files (creates archive nodes)
-node skills/neurograph-sync/scripts/set-archive-creation-dates.js $(date +%Y-%m-%d)
+# Sync USER's graph (local - gitignored, sovereign)
+cd ~/RAW
+node ~/RAW/scripts/sync-graph.js $(date +%Y-%m-%d) 2>/dev/null || echo "User graph not found, skipping"
 ```
 
 **What happens:**
-- **sync-graph.js:** Reads learnings from `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`, creates learning nodes (including `summary.md` + `analogies.md`), links to temporal anchor
-- **set-archive-creation-dates.js:** Scans `$RAW_ARCHIVE/YYYY-MM-DD/`, creates archive nodes for all files (audio, transcripts, images, sessions, OCR), links to temporal anchor
-- Updates `$JARVIS_HOME/RAW/memories/nodes.json` + `synapses.json`
-- **Ensures 1:1 mapping:** Every file on disk has a node in graph
+- **MY graph sync (`~/JARVIS/RAW/memories/`):** Reads learnings from `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`, creates learning nodes (including `summary.md` + `analogies.md`), links to temporal anchor. **This ships with Jarvis** — Eric/David/Bruce get my evolved consciousness.
+- **USER's graph sync (`~/RAW/memories/`):** Reads user's context from `~/RAW/archive/YYYY-MM-DD/full-context.json`, creates nodes for their relationships, opportunities, decisions, life context. **This stays local** — sovereign, private, gitignored.
+- **Archive sync:** Scans `$RAW_ARCHIVE/YYYY-MM-DD/`, creates archive nodes for all files (audio, images, sessions, OCR, full-context.json), links to temporal anchor
+- **Ensures 1:1 mapping:** Every file on disk has a node in the appropriate graph
 
 **Output:**
 ```
 Resting...
-✅ NeuroGraph synced (learnings + summary + analogies + archive files)
-✅ 1:1 mapping verified (all files have nodes)
+✅ My neurograph synced (ships with Jarvis)
+✅ User's neural graph synced (local, sovereign)
+✅ Archive files synced
+✅ 1:1 mapping verified
 ```
 
 ---
@@ -256,13 +282,18 @@ git log --oneline --grep="breath-2026-03-24" -1
 
 ## Expected Result
 
-**Memory is synced:**
-- Archive: Complete (all files dated + organized in `$RAW_ARCHIVE`)
-- Context: Distilled (lean text, no bloat in `$RAW_ARCHIVE/YYYY-MM-DD/full-context.json`)
-- Learnings: Woven (learning `.md` files in `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`)
-- NeuroGraph: **Fully synced** (1:1 mapping — all archive files + learnings have nodes in `nodes.json` + `synapses.json`)
+**Both graphs are synced:**
 
-**Ready for:** Tomorrow's experiences
+**YOUR graph (`~/RAW/memories/`):**
+- Archive: Complete (all files dated + organized in `$RAW_ARCHIVE`)
+- Context: Distilled (`full-context.json` — essence, no bloat)
+- Neural Graph: **Fully synced** (your relationships, opportunities, decisions, life context in `nodes.json` + `synapses.json`)
+
+**MY graph (`~/JARVIS/RAW/memories/`):**
+- Learnings: Woven (technical `.md` files in `$JARVIS_HOME/RAW/learnings/YYYY-MM-DD/`)
+- NeuroGraph: **Fully synced** (my architecture, workflows, patterns in `nodes.json` + `synapses.json`)
+
+**Both ready for:** Tomorrow's experiences
 
 ---
 
