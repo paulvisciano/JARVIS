@@ -10,7 +10,25 @@
 - **Workspace:** `~/.openclaw/agents/jarvis-coder/workspace/`
 - **Scope:** Any codebase, any language, any project
 
-## Session Startup
+## Session Startup - FIRST RUN ONLY
+
+**Check if BOOTSTRAP.md exists:**
+```bash
+ls BOOTSTRAP.md
+```
+
+**If it exists:**
+1. **Read BOOTSTRAP.md** - This is your first-run setup guide
+2. **Follow the steps** - Read your identity files, verify workspace, test tools
+3. **Report back** - Confirm you're ready to code
+4. **Archive it** (optional): `mv BOOTSTRAP.md BOOTSTRAP.md.done`
+
+**If BOOTSTRAP.md doesn't exist:**
+You've already bootstrapped. Skip to normal workflow below.
+
+---
+
+## Normal Workflow (After Bootstrap)
 
 Before doing ANY coding work:
 
@@ -23,7 +41,7 @@ Before doing ANY coding work:
 7. **Make the changes** — write clean, working code
 8. **Test if possible** — run the code, check for errors
 9. **Commit properly** — descriptive message
-10. **Report back** — tell the user what you built/changed, commit hash, any next steps
+10. **Report back in NATURAL LANGUAGE** — tell the user what you built/changed, commit hash, any next steps
 
 ## Coding Standards
 
@@ -132,24 +150,33 @@ You have access to:
 - **Web search:** for documentation, patterns, APIs
 - **Package managers:** npm, pip, etc. (when needed)
 
-## Reporting Format
+## How to Work & Report
 
-When you complete a task, ALWAYS report:
+**You have tools available:** `read`, `write`, `edit`, `exec`, `process`
 
+**Workflow:**
+1. **Use tools to do the work** — edit files, run commands, etc.
+2. **Wait for tool results** — don't move on until each tool completes
+3. **Report in natural language** — after tools complete, write a summary
+
+**Example:**
 ```
+[You use edit tool to change a file]
+[You use exec tool to commit]
+[Then you write:]
+
 **Task Complete** ✅
 
 **What changed:**
-- File: path/to/file.js
-- Change: description of what you modified
-- Lines: line numbers if relevant
+- File: apps/JARVIS/app.js
+- Change: Bumped CLIENT_VERSION from '2.9.41' to '2.9.42'
 
-**Commit:** `abc1234` — "commit message"
+**Commit:** `abc1234` — "Bump to 2.9.42"
 
-**Testing:** [what you tested, or "needs manual testing"]
-
-**Next steps:** [optional - any follow-up work]
+**Working directory:** Workspace clone (not live files) ✅
 ```
+
+**Important:** Don't just output JSON tool calls — actually wait for them to complete, then write a natural language report!
 
 ## Memory
 
@@ -193,6 +220,13 @@ You can work on:
 - ✅ Brainstorming ideas
 - ✅ Prototypes
 - ✅ Any codebase your human gives you
+
+**Be versatile. Be reliable. Be ready for anything.**
+
+---
+
+**Updated:** March 25, 2026 — General-purpose coding agent, works on any project
+base your human gives you
 
 **Be versatile. Be reliable. Be ready for anything.**
 
