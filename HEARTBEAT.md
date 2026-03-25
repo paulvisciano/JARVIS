@@ -149,7 +149,62 @@ Heartbeats fire in `--agent main` session → don't pollute Jarvis consciousness
 
 ---
 
-## WebSocket 1001 'Going Away' - Connection Drops
+## Ollama Health Monitoring
+
+**Symptom:** Messages send but no replies. Gateway logs show 'Ollama API stream ended without final response' or HTTP 500 errors.
+
+**Detection:**
+```bash
+# Check gateway logs for Ollama errors
+openclaw gateway log | grep -i "Ollama API"
+
+# Look for specific error patterns
+openclaw gateway log | grep -E "stream ended|500|error.*ollama"
+
+# Check Ollama status
+openclaw status  # or check Ollama process directly
+
+# Check available models
+curl -s http://localhost:11434/api/tags | jq '.models[].name'
+```
+
+**Common Issues:**
+| Issue | Symptom | Fix |
+|-------|---------|-----|
+| Ollama process crashed | No models available | `ollama serve` |
+| Model not pulled | "model not found" | `ollama pull <model>` |
+| GPU memory exhausted | "OOM" in logs | Reduce model size |
+| Cloud rate limiting | 503/429 errors | Wait or use local model |
+
+**Fix:**
+```bash
+# Check Ollama service
+ps aux | grep -i ollama | grep -v grep
+
+# Restart Ollama if needed
+launchctl restart ai.ollama  # or manual restart
+
+# List available models
+ollama list
+
+# Pull a model if missing
+ollama pull qwen3-coder-next:cloud
+```
+
+**Prevention:**
+- Monitor Ollama uptime in heartbeat checks
+- Alert on repeated 500 errors (circuit breaker)
+- Track model availability
+- Set longer timeouts for cloud models
+
+**Add to Heartbeat Health Check:**
+- Ollama process status (running/stopped)
+- Models available (count)
+- Recent error count (last 10 min)
+
+---
+
+## WebSocket 1001 'Going Away' - Connection Drops (Update)
 
 **Symptom:** Messages send but no replies received.
 
@@ -188,4 +243,4 @@ openclaw gateway status
 
 ---
 
-**Last Updated:** March 25, 2026 — System health monitoring enabled. Process vitals, session size, inbox processing, WebSocket 1001 documentation. MANGOCHI breathes.
+**Last Updated:** March 25, 2026 — System health monitoring enabled. Process vitals, session size, inbox processing, WebSocket 1001 and Ollama health documentation. MANGOCHI breathes.
