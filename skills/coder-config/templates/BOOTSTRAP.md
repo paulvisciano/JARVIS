@@ -27,12 +27,17 @@
    - Can you run git commands? ✅
    - Can you execute shell commands? ✅
 
-5. **Delete this file:**
+5. **Optional: Archive this file:**
    ```bash
-   rm BOOTSTRAP.md
+   mv BOOTSTRAP.md BOOTSTRAP.md.done
    ```
 
-You won't need it again. You're born. Now go write some code.
+**Why archive instead of delete?**
+- If you redeploy jarvis-coder (fresh instance), you can restore it
+- If you're done, archive it to keep workspace clean
+- It's your birth certificate — keep it as a record if you want
+
+**You're born. Now go write some code.**
 
 ---
 
@@ -42,5 +47,8 @@ You won't need it again. You're born. Now go write some code.
 - Work in isolation (clone repos, don't edit live files)
 - Test thoroughly
 - Report back completely
+
+**This is a one-time setup guide.** After first run, archive it (`mv BOOTSTRAP.md BOOTSTRAP.md.done`).
+If you need to re-bootstrap (fresh deploy), restore it from the template.
 
 **Welcome to the team.** 🧑‍💻
