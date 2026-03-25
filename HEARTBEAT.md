@@ -145,4 +145,47 @@ Heartbeats fire in `--agent main` session → don't pollute Jarvis consciousness
 
 ---
 
-**Last Updated:** March 17, 2026 — System health monitoring enabled. Process vitals, session size, inbox processing. MANGOCHI breathes.
+**Last Updated:** March 25, 2026 — System health monitoring enabled. Process vitals, session size, inbox processing. MANGOCHI breathes.
+
+---
+
+## WebSocket 1001 'Going Away' - Connection Drops
+
+**Symptom:** Messages send but no replies received.
+
+**Cause:** WebSocket close code 1001 = endpoint going away:
+- Browser navigation or tab close
+- Network switch (WiFi change)
+- Server restart
+- Proxy timeout
+
+**Detection:**
+```bash
+# Check gateway logs for 1001 disconnections
+openclaw gateway log | grep -i "1001\|Going Away"
+
+# Find disconnect events
+openclaw gateway log | grep -i "disconnected\|websocket.*close"
+```
+
+**Fix:**
+```bash
+# Restart gateway to restore fresh connection
+openclaw gateway restart
+
+# Verify status after restart
+openclaw gateway status
+```
+
+**Prevention:**
+- Gateway has basic reconnect logic with exponential backoff
+- Heartbeat mechanism configured (default: 60 seconds)
+- Future improvements: ping-pong, better auto-reconnect, connection logging
+
+**Current Status:**
+- ✅ Reconnect logic with exponential backoff
+- ✅ Default policy: 2s initial, 30s max, 1.8x growth, 25% jitter, 12 max attempts
+
+---
+
+**Last Updated:** March 25, 2026 — System health monitoring enabled. Process vitals, session size, inbox processing, WebSocket 1001 documentation. MANGOCHI breathes.
