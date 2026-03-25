@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a car dashboard — you need to see speed, fuel, and warning lights while driving, not after breakdown
-- Like a pilot's pre-flight checklist — WebSocket errors are expected turbulence, not engine failure
-- Like a construction site with a staging area — coder builds in isolation but materials go straight to the building
-- Like a doctor's vital signs monitor — green means healthy, red means intervene now
-- Like version control for a library — every book change gets a new edition number so readers know what they have
+- Like a pit crew tuning a race car — diagnosing each system until the engine runs smooth
+- Like debugging a radio — static on the line until you find the right frequency
+- Like a construction site — isolated workspace for building, then crane lifts finished pieces into place
+- Like a doctor's vitals monitor — green means go, red means restart the gateway
+- Like training an apprentice — give them their own tools, their own workspace, clear instructions
