@@ -28,24 +28,19 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
-
-const HOME = process.env.HOME || '';
-const RAW_ARCHIVE = path.join(HOME, 'RAW', 'archive');
+const pathUtils = require('../lib/path-utils');
 
 const ARCHIVE_ARG = process.argv[2];
-const NODES_PATH = process.argv[3] || path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json');
+const NODES_PATH_ARG = process.argv[3];
 
 if (!ARCHIVE_ARG) {
   console.error('Usage: node set-archive-creation-dates.js <archive-folder-or-date> [nodes.json path]');
   process.exit(1);
 }
 
-// If arg looks like YYYY-MM-DD, resolve to ~/RAW/archive/YYYY-MM-DD
-const dateMatch = ARCHIVE_ARG.match(/^(\d{4}-\d{2}-\d{2})$/);
-const archiveDir = dateMatch
-  ? path.join(RAW_ARCHIVE, dateMatch[1])
-  : path.resolve(process.cwd(), ARCHIVE_ARG.replace(/^~/, HOME));
-const nodesPath = path.resolve(process.cwd(), NODES_PATH.replace(/^~/, HOME));
+// Use shared path utilities for resolution and validation
+const archiveDir = pathUtils.resolveArchiveDir(ARCHIVE_ARG);
+const nodesPath = pathUtils.resolveNodesPath(NODES_PATH_ARG, path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json'));
 
 if (!fs.existsSync(archiveDir)) {
   console.error('Archive folder not found:', archiveDir);

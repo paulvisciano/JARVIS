@@ -13,10 +13,7 @@
 
 const fs = require('fs');
 const path = require('path');
-
-// Use environment variables for portability
-const HOME = process.env.HOME || require('os').homedir();
-const RAW_ARCHIVE = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW', 'archive');
+const pathUtils = require('../lib/path-utils');
 
 const DATE_ARG = process.argv[2];
 const FIX_MODE = process.argv.includes('--fix');
@@ -26,7 +23,8 @@ if (!DATE_ARG || !/^\d{4}-\d{2}-\d{2}$/.test(DATE_ARG)) {
   process.exit(1);
 }
 
-const archiveDir = path.join(RAW_ARCHIVE, DATE_ARG);
+// Use shared path utilities for resolution and validation
+const archiveDir = pathUtils.resolveArchiveDir(DATE_ARG);
 
 if (!fs.existsSync(archiveDir)) {
   console.error('Archive not found:', archiveDir);

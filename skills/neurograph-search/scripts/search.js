@@ -6,9 +6,12 @@
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 const query = process.argv[2] || '';
-const neurographPath = process.env.NEUROGRAPH_PATH || path.join(process.env.HOME, 'JARVIS', 'RAW', 'memories');
+// Use environment variables with fallbacks for portability
+const JARVIS_HOME = process.env.JARVIS_HOME || path.join(os.homedir(), 'JARVIS');
+const neurographPath = process.env.NEUROGRAPH_PATH || path.join(JARVIS_HOME, 'RAW', 'memories');
 const nodesFile = path.join(neurographPath, 'nodes.json');
 const synapsesFile = path.join(neurographPath, 'synapses.json');
 

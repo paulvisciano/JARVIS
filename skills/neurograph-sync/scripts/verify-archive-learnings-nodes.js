@@ -11,13 +11,16 @@
 
 const fs = require('fs');
 const path = require('path');
+const pathUtils = require('../lib/path-utils');
 
-const HOME = process.env.HOME || '';
-const RAW_ARCHIVE = path.join(HOME, 'RAW', 'archive');
-const JARVIS_LEARNINGS = path.join(HOME, 'JARVIS', 'RAW', 'learnings');
-const JARVIS_SKILLS = path.join(HOME, 'JARVIS', 'skills');
-const NODES_PATH = process.argv.find(a => a.endsWith('nodes.json')) || path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json');
-const nodesPath = path.resolve(process.cwd(), NODES_PATH.replace(/^~/, HOME));
+const HOME = pathUtils.getHome();
+const RAW_ARCHIVE = pathUtils.getRawArchive();
+const JARVIS_LEARNINGS = path.join(pathUtils.getJarvisHome(), 'RAW', 'learnings');
+const JARVIS_SKILLS = path.join(pathUtils.getJarvisHome(), 'skills');
+const NODES_PATH_ARG = process.argv.find(a => a.endsWith('nodes.json'));
+const nodesPath = NODES_PATH_ARG
+  ? pathUtils.resolveNodesPath(NODES_PATH_ARG, path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json'))
+  : pathUtils.getMemoriesDir() + '/nodes.json';
 
 const dates = process.argv.slice(2).filter(a => /^\d{4}-\d{2}-\d{2}$/.test(a));
 const toCheck = dates.length ? dates : ['2026-03-13', '2026-03-14'];

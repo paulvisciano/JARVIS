@@ -7,10 +7,11 @@
 
 const fs = require('fs');
 const path = require('path');
+const pathUtils = require('../lib/path-utils');
 
-const NODES_FILE = path.join(process.env.HOME, 'JARVIS', 'RAW', 'memories', 'nodes.json');
-const SYNAPSES_FILE = path.join(process.env.HOME, 'JARVIS', 'RAW', 'memories', 'synapses.json');
-const ARCHIVE_DIR = path.join(process.env.HOME, 'RAW', 'archive', '2026-03-24');
+const NODES_FILE = path.join(pathUtils.getMemoriesDir(), 'nodes.json');
+const SYNAPSES_FILE = path.join(pathUtils.getMemoriesDir(), 'synapses.json');
+const ARCHIVE_DIR = path.join(pathUtils.getRawArchive(), '2026-03-24');
 
 // Load graph
 const nodes = JSON.parse(fs.readFileSync(NODES_FILE, 'utf8'));

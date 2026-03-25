@@ -13,11 +13,13 @@
 
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
 
 const date = process.argv[2] || new Date().toISOString().split('T')[0];
-const home = require('os').homedir();
-const jarvisHome = path.join(home, 'JARVIS');
-const rawPath = path.join(home, 'RAW');
+// Use environment variables with fallbacks for portability
+const HOME = process.env.HOME || os.homedir();
+const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
+const rawPath = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW');
 
 const memoriesDir = path.join(jarvisHome, 'RAW', 'memories');
 const nodesFile = path.join(memoriesDir, 'nodes.json');
