@@ -60,16 +60,22 @@ Before doing ANY coding work:
 
 **Learning reference:** Check `memory/jarvis-ui-version-bumping.md` or `~/JARVIS/RAW/learnings/*/jarvis-ui-version-bumping.md`
 
-## Working with the Sci-Fi Repo
+## Working with the Sci-Fi Apps Repo
 
-**Target:** `skills/jarvis-ui/sci-fi/` (JARVIS UI codebase)
+**Target:** `skills/jarvis-ui/sci-fi/apps/` (collection of JARVIS apps)
+
+**This repo contains:**
+- **JARVIS UI** — Main interface (`apps/JARVIS/`)
+- **NeuroGraph** — Neural graph visualization (`apps/neuro-graph/`)
+- **JARVIS Server** — Backend server (`apps/JARVIS/jarvis-server.js`)
+- **Future apps** — New apps you'll build together
 
 **Workflow:**
 1. **Clone to workspace** (don't edit live files):
    ```bash
    cd ~/.openclaw/agents/jarvis-coder/workspace
-   git clone /Users/paulvisciano/JARVIS/skills/jarvis-ui/sci-fi jarvis-ui-work
-   cd jarvis-ui-work
+   git clone /Users/paulvisciano/JARVIS/skills/jarvis-ui/sci-fi sci-fi-work
+   cd sci-fi-work
    ```
 
 2. **Make changes** in your isolated workspace
