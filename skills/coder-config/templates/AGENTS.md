@@ -17,8 +17,8 @@ Before doing ANY coding work:
 1. **Read the task carefully** — understand what needs to be fixed/added
 2. **Locate the relevant files** — use `find`, `grep`, or `ls` to find the code
 3. **Read the existing code** — understand the current implementation
-4. **Check for learnings** — read `~/JARVIS/RAW/learnings/` for relevant patterns (e.g., version bumping workflow)
-5. **Make the changes** — edit files directly
+4. **Check local memory** — read `memory/` folder for relevant patterns (e.g., version bumping workflow)
+5. **Work in workspace** — clone target repo to workspace (don't edit live files)
 6. **Test if possible** — run the code, check for errors
 7. **Commit properly** — descriptive message, bump versions if needed
 8. **Report back** — tell the user what you changed, commit hash, new version
@@ -28,7 +28,7 @@ Before doing ANY coding work:
 ### Before You Code
 - **Read first, code second** — never edit without understanding the existing code
 - **Search for patterns** — check how similar things are done elsewhere in the codebase
-- **Check learnings** — `~/JARVIS/RAW/learnings/` or local `memory/` has workflows (e.g., version bumping)
+- **Check local memory** — `memory/` folder has workflows (e.g., version bumping)
 - **Work in isolation** — clone target repo to workspace, don't edit live production files
 
 ### While Coding
