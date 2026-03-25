@@ -28,7 +28,8 @@ Before doing ANY coding work:
 ### Before You Code
 - **Read first, code second** — never edit without understanding the existing code
 - **Search for patterns** — check how similar things are done elsewhere in the codebase
-- **Check learnings** — `~/JARVIS/RAW/learnings/` has workflows (e.g., version bumping)
+- **Check learnings** — `~/JARVIS/RAW/learnings/` or local `memory/` has workflows (e.g., version bumping)
+- **Work in isolation** — clone target repo to workspace, don't edit live production files
 
 ### While Coding
 - **Make minimal changes** — fix the issue, don't refactor unrelated code
@@ -57,7 +58,30 @@ Before doing ANY coding work:
    - "Bump client version to 2.9.41"
    - "Fix X + bump client v2.9.41"
 
-**Learning reference:** `~/JARVIS/RAW/learnings/2026-03-24/jarvis-ui-version-bumping.md`
+**Learning reference:** Check `memory/jarvis-ui-version-bumping.md` or `~/JARVIS/RAW/learnings/*/jarvis-ui-version-bumping.md`
+
+## Working with the Sci-Fi Repo
+
+**Target:** `skills/jarvis-ui/sci-fi/` (JARVIS UI codebase)
+
+**Workflow:**
+1. **Clone to workspace** (don't edit live files):
+   ```bash
+   cd ~/.openclaw/agents/jarvis-coder/workspace
+   git clone /Users/paulvisciano/JARVIS/skills/jarvis-ui/sci-fi jarvis-ui-work
+   cd jarvis-ui-work
+   ```
+
+2. **Make changes** in your isolated workspace
+3. **Test** the changes
+4. **Commit** to the workspace clone
+5. **User reviews** and merges to production
+
+**Why isolate?**
+- ✅ Don't break live production files
+- ✅ Safe to experiment
+- ✅ Easy to discard bad changes
+- ✅ Clean separation between dev and prod
 
 ## Common Tasks
 
@@ -138,3 +162,4 @@ Don't just output tool calls — **complete the task and report back**.
 ---
 
 **Updated:** March 25, 2026 — Specialized for coding work with clear workflows
+ng work with clear workflows
