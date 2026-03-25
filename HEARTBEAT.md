@@ -204,6 +204,48 @@ ollama pull qwen3-coder-next:cloud
 
 ---
 
+## Ollama Health Monitoring
+
+**Symptom:** Messages send but no replies. Gateway logs show "Ollama API stream ended without final response" or HTTP 500 errors.
+
+**Detection:**
+```bash
+# Quick health check
+curl -s http://localhost:11434/api/tags | python3 -c "import sys,json; d=json.load(sys.stdin); print('Models:', len(d.get('models',[])))"
+
+# Check gateway logs for Ollama errors
+grep -i 'ollama.*500\|ollama.*error\|stream ended' ~/.openclaw/logs/gateway.log | tail -10
+
+# Test specific model
+curl -s http://localhost:11434/api/generate -d '{"model":"qwen3.5:cloud","prompt":"hi","stream":false}'
+```
+
+**Common Issues:**
+- Ollama process crashed or hung
+- Model not pulled/available
+- GPU memory exhausted (if using GPU)
+- Rate limiting from cloud models
+
+**Fix:**
+```bash
+# Restart Ollama service
+brew services restart ollama
+# or manually: ollama serve (in new terminal)
+
+# Verify models available
+ollama list
+
+# Check Ollama logs
+tail -50 ~/.ollama/logs/server.log 2>/dev/null || echo "No Ollama logs found"
+```
+
+**Add to Heartbeat Dashboard:**
+- Ollama status: Running/Stopped
+- Models available: (count from /api/tags)
+- Recent errors: (count from last 10 min of gateway.log)
+
+---
+
 ## WebSocket 1001 'Going Away' - Connection Drops (Update)
 
 **Symptom:** Messages send but no replies received.
