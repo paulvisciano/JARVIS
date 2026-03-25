@@ -43,9 +43,14 @@ The client version is set **dynamically by app.js**, not just the HTML. If you o
 - "Fix all code audit issues + bump client v2.9.26, server v2.9.7"
 
 ## Related Files
-- `/Users/paulvisciano/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/app.js`
-- `/Users/paulvisciano/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/jarvis-server.js`
-- `/Users/paulvisciano/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/index.html`
+- `$JARVIS_HOME/skills/jarvis-ui/sci-fi/apps/JARVIS/app.js`
+- `$JARVIS_HOME/skills/jarvis-ui/sci-fi/apps/JARVIS/jarvis-server.js`
+- `$JARVIS_HOME/skills/jarvis-ui/sci-fi/apps/JARVIS/index.html`
+
+Or use tilde expansion:
+- `~/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/app.js`
+- `~/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/jarvis-server.js`
+- `~/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/index.html`
 
 ---
 **Learning ID:** jarvis-ui-version-bumping-2026-03-24

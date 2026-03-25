@@ -85,7 +85,10 @@ cd new-project
 ### For JARVIS Sci-Fi Apps
 ```bash
 cd ~/.openclaw/agents/jarvis-coder/workspace
-git clone /Users/paulvisciano/JARVIS/skills/jarvis-ui/sci-fi sci-fi-work
+# Use environment variable or your actual JARVIS path
+git clone $JARVIS_HOME/skills/jarvis-ui/sci-fi sci-fi-work
+# Or if JARVIS_HOME isn't set, use your actual path:
+# git clone ~/JARVIS/skills/jarvis-ui/sci-fi sci-fi-work
 cd sci-fi-work
 # This repo contains:
 # - JARVIS UI (apps/JARVIS/)
