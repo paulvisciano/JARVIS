@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a pit crew tuning a race car — diagnosing each system until the engine runs smooth
-- Like debugging a radio — static on the line until you find the right frequency
-- Like a construction site — isolated workspace for building, then crane lifts finished pieces into place
-- Like a doctor's vitals monitor — green means go, red means restart the gateway
-- Like training an apprentice — give them their own tools, their own workspace, clear instructions
+- Like a restaurant kitchen — chef (Jarvis) has their own recipe book, diner (user) has their own taste preferences, both evolve separately but create meals together
+- Like a general contractor — you hand off the blueprint, they work independently in their workshop, announce when the house is ready for walkthrough
+- Like planting seeds in morning, harvesting in afternoon — technical groundwork enables business fruit
+- Like two dancers on one stage — separate movements, same rhythm, visible to the audience
+- Like a lighthouse keeper's log — the keeper's technical notes stay in the tower, visitors' stories go in the guest book, both matter but serve different purposes
