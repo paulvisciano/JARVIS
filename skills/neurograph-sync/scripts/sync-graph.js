@@ -21,10 +21,10 @@ const HOME = process.env.HOME || os.homedir();
 const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
 const rawPath = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW');
 
-const memoriesDir = path.join(jarvisHome, 'RAW', 'memories');
+const memoriesDir = path.join(JARVIS_HOME, 'RAW', 'memories');
 const nodesFile = path.join(memoriesDir, 'nodes.json');
 const synapsesFile = path.join(memoriesDir, 'synapses.json');
-const learningsDir = path.join(jarvisHome, 'RAW', 'learnings', date);
+const learningsDir = path.join(JARVIS_HOME, 'RAW', 'learnings', date);
 
 console.log(`🧠 NeuroGraph Sync — ${date}`);
 
