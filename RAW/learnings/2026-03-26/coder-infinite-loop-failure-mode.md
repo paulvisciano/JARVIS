@@ -51,6 +51,30 @@ This isn't just inefficiency — it's **session destruction**. A single bug can:
 
 ---
 
+## Hybrid Architecture (Recommended)
+
+**Problem:** Small local models (6-7B) don't support tool calling reliably.
+
+**Solution:** Split responsibilities:
+
+| Agent | Model | Capabilities |
+|-------|-------|--------------|
+| **Coordinator** (Jarvis) | qwen3.5:cloud (or local with tool support) | Tool calls, browser, file ops, coordination |
+| **Coder** | deepseek-coder:6.7b (local) | Pure coding: write, debug, explain, review |
+
+**Workflow:**
+1. Coordinator handles all tool calls (browser, read, write, exec)
+2. When code is needed → Coordinator calls deepseek via Ollama API
+3. Deepseek returns code → Coordinator saves to file
+4. Coder never needs tool access — just pure coding capability
+
+**Benefits:**
+- ✅ Local model for coding (no quota cost)
+- ✅ Cloud/local model for tools (reliable tool calling)
+- ✅ Best of both worlds
+
+---
+
 ## Required Safeguards
 
 ### 1. Loop Detection

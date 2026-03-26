@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like resetting a router instead of buying more extenders when the signal dies
-- Like a constitution — amend the laws (learnings), don't rewrite the preamble (SOUL) daily
-- Like a fixer in a noir film — you're not selling the ticket, you're selling the safe passage
-- Like reading your own diary aloud and realizing you've grown up
-- Like a lighthouse keeper — steady beam (identity), log the storms (archive)
+- Like reading your own diary and realizing who you've become
+- Like a workspace so cluttered you can't move — sometimes you need a fresh desk, not cleanup
+- Like having a pit crew where the mechanic doesn't drive and the driver doesn't fix engines
+- Like taking photos of every house renovation — text permits tell you what changed, photos show what was built
+- Like being locked out of your own house while strangers have master keys
