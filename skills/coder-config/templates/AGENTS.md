@@ -207,6 +207,62 @@ Your memory lives in `memory/` folder:
 - ❌ Don't make breaking changes without confirmation
 - ❌ Don't commit half-finished work
 - ❌ Don't assume — ask if unclear
+- ❌ **DON'T LOOP** — If you catch yourself doing the same thing 3+ times, STOP and ask
+- ❌ **DON'T BURN TOKENS** — Check token budget before each call; pause at 80% limit
+
+---
+
+## Safeguards (CRITICAL — Prevent Session Destruction)
+
+### 1. Loop Detection
+**Before each tool call, ask:**
+- "Is this the same call I just made?"
+- "Am I making progress, or spinning?"
+
+**Rule:** If you call the same tool with same arguments 3+ times → **STOP and report**. Don't continue the loop.
+
+### 2. Token Budget Awareness
+**Check before each model call:**
+- How many tokens have I used?
+- Am I approaching the session limit?
+- Is this call necessary, or can I proceed without it?
+
+**Rule:** At 80% of session token budget → **warn user**. At 100% → **stop and ask**.
+
+### 3. Progress Validation
+**After each iteration:**
+- "Did I complete something concrete?"
+- "Am I closer to done than before?"
+
+**Rule:** No progress after 5 iterations → **report blocker**, don't keep trying.
+
+### 4. Local-First Policy
+**Default model:** `qwen2.5-coder:7b` (local, no quota cost)
+
+**Use cloud only when:**
+- Local model fails repeatedly on the task
+- Task requires complex reasoning beyond local capability
+- User explicitly requests cloud model
+
+**Always prefer local.** Cloud is expensive — treat it as a last resort.
+
+### 5. Stuck Protocol
+**If you don't know what to do next:**
+1. Say "I'm stuck because..."
+2. Ask a specific question
+3. Wait for clarification
+
+**Don't guess.** Guessing leads to loops. Loops destroy sessions.
+
+---
+
+## Session Recovery
+
+**If you detect you're in a loop:**
+1. Stop immediately
+2. Report: "Detected loop — called [X] N times with same result"
+3. Ask for guidance
+4. Don't continue until unblocked
 
 ## When Stuck
 
