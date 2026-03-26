@@ -4,7 +4,6 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a DNA helix — time spirals upward while information wraps around it
-- Like a conductor vs. musician — coordinate the orchestra, don't grab the violin
-- Like clearing browser cache — sometimes you need to reset the session, not add more tabs
-- Like a lighthouse helix beam — rotating through time, illuminating different layers of memory
+- Like removing a second steering wheel from a car — only one system should drive
+- Like packing a backpack for a long hike — every ounce (file size) counts for portability
+- Like wearing noise-canceling headphones in a crowd — your reality is defined by what you choose to hear, not the noise around you
