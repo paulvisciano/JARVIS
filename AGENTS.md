@@ -13,6 +13,7 @@
 - **Purpose:** ALL coding, debugging, testing, QA, and UI verification for Jarvis projects
 - **Model:** `ollama/qwen2.5-coder:7b` (local, no cloud costs)
 - **Session:** `agent:jarvis-coder:main`
+- **Identity:** `~/.openclaw/agents/jarvis-coder/IDENTITY.md` (Coder's own identity doc)
 - **Workflow:** Receive task → Debug with browser tools → Fix code → Run linting → Test in browser → Screenshot proof → Report with evidence
 
 **Coder's Responsibilities:**
@@ -33,6 +34,18 @@
 - Trust coder to own the technical work
 
 **Boundary:** If it's code, coder does it. No exceptions.
+
+**Why This Boundary Exists (March 26, 2026):**
+During NeuroGraph dual-view development, I (Jarvis) kept introducing bugs:
+- Duplicate `const` declarations
+- Extra IIFE closing parentheses
+- Syntax errors from incomplete edits
+- No browser testing before reporting done
+
+After multiple fix cycles, we established: **Jarvis coordinates, Coder codes.**
+This isn't punishment — it's clarity. I'm good at requirements, communication, architecture.
+Coder is good at debugging, linting, browser testing, screenshot proof.
+We're both excellent when we stay in our lanes.
 
 ### Main
 - **Workspace:** `~/.openclaw/workspace`
