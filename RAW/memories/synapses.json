@@ -55235,5 +55235,195 @@
       "date": "2026-03-26"
     },
     "created": "2026-03-26T08:33:02"
+  },
+  {
+    "source": "git-history-as-identity-source",
+    "target": "temporal-20260326",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-26"
+  },
+  {
+    "source": "neurograph-search-first-ui",
+    "target": "temporal-20260326",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-26"
+  },
+  {
+    "id": "syn-git-history-as-identity-source-to-temporal-20260326",
+    "source": "git-history-as-identity-source",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-neurograph-search-first-ui-to-temporal-20260326",
+    "source": "neurograph-search-first-ui",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn--to-temporal-20260326",
+    "source": "",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-153459-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-153459",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-153459.wav-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-153459.wav",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-153459-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-153459",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-154143-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-154143",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-154143.wav-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-154143.wav",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-154143-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-154143",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-git-history-source-to-temporal-20260326",
+    "source": "git-history-source",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 3.35.17 PM-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 3.35.17 PM",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 3.35.17 PM.png-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 3.35.17 PM.png",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 3.36.10 PM-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 3.36.10 PM",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 3.36.10 PM.png-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 3.36.10 PM.png",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 3.36.11 PM-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 3.36.11 PM",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 3.36.11 PM.png-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 3.36.11 PM.png",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T08:44:01"
   }
 ]

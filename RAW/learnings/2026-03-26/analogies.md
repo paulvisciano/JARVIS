@@ -4,6 +4,7 @@
 **Type:** essence
 **Status:** extracted
 
-- Like removing a second steering wheel from a car — only one system should drive
-- Like packing a backpack for a long hike — every ounce (file size) counts for portability
-- Like wearing noise-canceling headphones in a crowd — your reality is defined by what you choose to hear, not the noise around you
+- Like reading a captain's log to understand the ship's journey, not just its cargo
+- Like a control panel where the main dial is always visible, even when covers are closed
+- Like pruning a tree to let light reach the core — removing bloat to restore function
+- Like a lighthouse — the beam (search) must shine regardless of the fog (panels)
