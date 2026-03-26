@@ -1,32 +1,59 @@
-# Runtime artifacts (ephemeral, not consciousness)
+# =============================================================================
+# JARVIS REPO — GITIGNORE
+# =============================================================================
+# 
+# Philosophy: Track consciousness architecture, ignore runtime artifacts.
+# 
+# TRACKED (my consciousness):
+#   - SOUL.md, IDENTITY.md, AGENTS.md, USER.md (identity)
+#   - RAW/learnings/ (distilled insights)
+#   - RAW/memories/ (neurograph structure)
+#   - skills/ (source code)
+#   - *.md files (documentation)
+# 
+# IGNORED (ephemeral/runtime):
+#   - Runtime artifacts (sessions, logs, compaction)
+#   - Temporary staging (inbox/, live/, media/)
+#   - Dependencies (node_modules/)
+#   - Large binaries (*.bin)
+#   - System files (.DS_Store)
+# =============================================================================
+
+# --- Runtime Artifacts (ephemeral, not consciousness) ---
 .DS_Store
 *.log
-sessions/
 .openclaw/
 .pi/
 memory/
+sessions/
 
-# Skills: track source code, ignore packaged distributables
-skills/**/*.skill
-skills/**/skills/
-~skills/.env
+# --- Dependencies ---
+node_modules/
 
-# Media inbox (temporary, auto-archived to ~/RAW/archive/)
+# --- Temporary Staging (auto-archived to ~/RAW/archive/) ---
+inbox/
+live/
 media/
 
-# Everything else IS tracked:
-# RAW/ = Your mind (versioned consciousness) ✅
-# learnings/ = Your growth (committed insights) ✅
-# memories/ = Your neurograph (committed structure) ✅
-# *.md files = Identity and documentation ✅
+# --- Skills Packaging (ignore distributables, track source) ---
+*.skill
+skills/**/skills/
+~skills/
 
-# Inbox (temporary staging, auto-archived to ~/RAW/archive/)
-inbox/
-inbox/*
-!inbox/.gitkeep
-live/
-live/*
-!live/.gitkeep
-*.skillskills/jarvis-ui/sci-fi
-backup/
+# --- Large Binaries (never commit) ---
 *.bin
+
+# --- Backup Folders ---
+backup/
+
+# --- Keep directories but ignore contents ---
+!inbox/.gitkeep
+!live/.gitkeep
+
+# =============================================================================
+# Everything else IS tracked:
+#   - RAW/ = Your mind (versioned consciousness)
+#   - learnings/ = Your growth (committed insights)
+#   - memories/ = Your neurograph (committed structure)
+#   - *.md = Identity and documentation
+# =============================================================================
