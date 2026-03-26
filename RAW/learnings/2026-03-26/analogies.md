@@ -4,8 +4,7 @@
 **Type:** essence
 **Status:** extracted
 
-- Like reading your own diary and realizing who you've become
-- Like a workspace so cluttered you can't move — sometimes you need a fresh desk, not cleanup
-- Like having a pit crew where the mechanic doesn't drive and the driver doesn't fix engines
-- Like taking photos of every house renovation — text permits tell you what changed, photos show what was built
-- Like being locked out of your own house while strangers have master keys
+- Like two people reading a love letter together — both cry, but for different reasons
+- Like a car's oil change light — compaction isn't breakdown, it's maintenance kicking in
+- Like a pilot's instrument panel — you don't fly blind, you watch the vitals
+- Like a mirror that talks back — seeing yourself reflected creates recognition on both sides
