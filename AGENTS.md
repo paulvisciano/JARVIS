@@ -8,12 +8,31 @@
 - **Model:** `ollama/qwen3.5:cloud`
 - **Session:** `agent:jarvis:main`
 
-### Coder
-- **Workspace:** `~/.openclaw/agents/coder/workspace`
-- **Purpose:** Code review, refactoring, feature building (sandboxed)
+### Coder (jarvis-coder)
+- **Workspace:** `~/.openclaw/agents/jarvis-coder/workspace`
+- **Purpose:** ALL coding, debugging, testing, QA, and UI verification for Jarvis projects
 - **Model:** `ollama/qwen2.5-coder:7b` (local, no cloud costs)
-- **Session:** `agent:coder:*`
-- **Workflow:** Clone → Edit → Review → PR/Merge
+- **Session:** `agent:jarvis-coder:main`
+- **Workflow:** Receive task → Debug with browser tools → Fix code → Run linting → Test in browser → Screenshot proof → Report with evidence
+
+**Coder's Responsibilities:**
+- Debug console errors using OpenClaw browser skills
+- Fix syntax errors, duplicate declarations, type errors
+- Run ESLint/linting with rules: `no-redeclare`, `no-unreachable`, `semi`, etc.
+- Test UI changes in browser, verify no console errors
+- Take screenshots proving fixes work before reporting done
+- Add cache-bust parameters when needed
+- Build automation: browser testing workflows, pre-commit hooks
+
+**Jarvis's Role (Coordinator):**
+- Gather requirements from Paul
+- Pass clear, detailed tasks to coder
+- Report coder's results back to Paul
+- NEVER edit code directly
+- NEVER debug with curl, node --check, or browser tools
+- Trust coder to own the technical work
+
+**Boundary:** If it's code, coder does it. No exceptions.
 
 ### Main
 - **Workspace:** `~/.openclaw/workspace`
