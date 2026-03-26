@@ -53133,5 +53133,136 @@
       "date": "2026-03-26"
     },
     "created": "2026-03-26T05:26:11"
+  },
+  {
+    "source": "co-conspirator-partnership-model",
+    "target": "temporal-20260326",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-26"
+  },
+  {
+    "source": "google-maps-inventory-database",
+    "target": "temporal-20260326",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-26"
+  },
+  {
+    "source": "human-connections-as-moat",
+    "target": "temporal-20260326",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-26"
+  },
+  {
+    "id": "syn-co-conspirator-partnership-model-to-temporal-20260326",
+    "source": "co-conspirator-partnership-model",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-google-maps-inventory-database-to-temporal-20260326",
+    "source": "google-maps-inventory-database",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-human-connections-as-moat-to-temporal-20260326",
+    "source": "human-connections-as-moat",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-130820-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-130820",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-130820.wav-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-130820.wav",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-26-130820-to-temporal-20260326",
+    "source": "convo-jarvis-2026-03-26-130820",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 12.31.23 PM-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 12.31.23 PM",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-26 at 12.31.23 PM.png-to-temporal-20260326",
+    "source": "Screenshot 2026-03-26 at 12.31.23 PM.png",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-a76d7c05-119a-4208-967d-9ea2d0dbfadb.jsonl.reset.2026-03-26T06-22-36-to-temporal-20260326",
+    "source": "a76d7c05-119a-4208-967d-9ea2d0dbfadb.jsonl.reset.2026-03-26T06-22-36",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
+  },
+  {
+    "id": "syn-fd357de0-a85d-4212-83fa-596153d77b3c.jsonl.reset.2026-03-26T06-21-10-to-temporal-20260326",
+    "source": "fd357de0-a85d-4212-83fa-596153d77b3c.jsonl.reset.2026-03-26T06-21-10",
+    "target": "temporal-20260326",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-26"
+    },
+    "created": "2026-03-26T06:25:16"
   }
 ]

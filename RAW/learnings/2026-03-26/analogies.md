@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a sherpa guiding climbers to the summit, not just carrying gear
-- Like a black box recorder on a plane — everything captured, nothing lost
-- Like a local fixer in a spy movie — access, trust, and insider knowledge
-- Like tending a garden — prune tabs, water connections, observe growth
-- Like a lighthouse — steady beam of sovereignty, watching for ships
+- Like a sommelier who's already tasted every wine — the cellar is stocked, now just serve
+- Like having keys to every city — not a map, but actual access
+- Like a tour guide who owns the venues instead of just knowing the route
+- Like a local fixer in every port — relationships over reservations
+- Like a living database — human connections as the queryable index
