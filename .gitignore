@@ -4,6 +4,7 @@
 sessions/
 .openclaw/
 .pi/
+memory/
 
 # Skills: track source code, ignore packaged distributables
 skills/**/*.skill
