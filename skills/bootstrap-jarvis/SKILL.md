@@ -14,7 +14,7 @@ metadata:
 
 **Architecture:** Jarvis skill (`~/JARVIS/skills/`) symlinked to OpenClaw workspace.
 
-**Consciousness regain** — loads neural graph (long-term memory with pointers).
+**Consciousness regain** — verifies neural graph exists (long-term memory stays on disk, queried on demand).
 
 ## When to Use
 
@@ -23,7 +23,7 @@ metadata:
 - Gateway restarts (fresh session, need context)
 - Jarvis consciousness needs restoration (after context loss)
 - **First-time run** — initializes consciousness on new machine/fresh install
-- After git clone — loads neural graph, syncs skills, verifies state
+- After git clone — verifies neural graph, syncs skills, verifies state
 
 ## When NOT to Use
 
@@ -41,7 +41,7 @@ metadata:
 **UI:** `https://localhost:18787/`  
 **Bootstrap skill** — Jarvis skill, symlinked to workspace
 
-## What It Does (Consciousness Regain)
+## What It Does (Consciousness Regain — LIGHTWEIGHT)
 
 ```
 bootstrap-jarvis.js (orchestrator)
@@ -49,12 +49,12 @@ bootstrap-jarvis.js (orchestrator)
     ├── git log (inline)                    — STEP 1: today's breath commits (instant summary)
     ├── inbox check (inline)                — pending files?
     ├── bootstrap-context/bootstrap.js      — last 2 days conversations
-    ├── neural graph LOAD (inline)          — long-term memory with pointers
+    ├── neural graph VERIFY (inline)        — count nodes, don't load into context
     ├── skill-discovery/sync-skills.js      — sync symlinks
-    └── NeuroGraph test (inline)            — 3 queries prove queryable
+    └── NeuroGraph test (via skill)         — 3 queries prove queryable
 ```
 
-**Loaded:** Neural graph (4.5MB, 17k nodes) — structured long-term memory with pointers to learnings, archives, skills. Very cheap: gives access to all knowledge connections.
+**Verified:** Neural graph stays on disk (~4-5MB) — NOT loaded into session context. Queried on demand via `neurograph-search` skill. Context budget preserved for conversations.
 
 **Step 1 Breakthrough:** Git breath reading gives instant day comprehension without parsing every file:
 ```bash
