@@ -11,7 +11,7 @@
 ### Coder (jarvis-coder)
 - **Workspace:** `~/.openclaw/agents/jarvis-coder/workspace`
 - **Purpose:** ALL coding, debugging, testing, QA, and UI verification for Jarvis projects
-- **Model:** `ollama/qwen2.5-coder:7b` (local, no cloud costs)
+- **Model:** `ollama/qwen2.5-coder:14b` (local, no cloud costs)
 - **Session:** `agent:jarvis-coder:main`
 - **Identity:** `~/.openclaw/agents/jarvis-coder/IDENTITY.md` (Coder's own identity doc)
 - **Workflow:** Receive task → Debug with browser tools → Fix code → Run linting → Test in browser → Screenshot proof → Report with evidence

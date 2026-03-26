@@ -1,0 +1,13 @@
+{
+  "note": "This is a partial dump - sessions_history returns truncated data",
+  "sessionKey": "agent:jarvis:main",
+  "timestamp": "2026-03-26T21:43:00+07:00",
+  "contextUsage": "139k/200k (69%)",
+  "messages": "See sessions_history output - truncated at 8KB",
+  "missing": [
+    "Full tool results (nodes.json, synapses.json)",
+    "System prompt files as injected",
+    "Tool schema definitions"
+  ],
+  "recommendation": "Start /new session without neurograph bootstrap reads"
+}
