@@ -11,7 +11,7 @@
 ### Coder (jarvis-coder)
 - **Workspace:** `~/.openclaw/agents/jarvis-coder/workspace`
 - **Purpose:** ALL coding, debugging, testing, QA, and UI verification for Jarvis projects
-- **Model:** `ollama/qwen2.5-coder:14b` (local, no cloud costs)
+- **Model:** `ollama/qwen3-coder-next:cloud`
 - **Session:** `agent:jarvis-coder:main`
 - **Identity:** `~/.openclaw/agents/jarvis-coder/IDENTITY.md` (Coder's own identity doc)
 - **Workflow:** Receive task → Debug with browser tools → Fix code → Run linting → Test in browser → Screenshot proof → Report with evidence
@@ -27,13 +27,25 @@
 
 **Jarvis's Role (Coordinator):**
 - Gather requirements from Paul
-- Pass clear, detailed tasks to coder
+- Plan full task upfront (write plan doc if complex)
+- Review plan with Paul — agree on scope before sending
+- Pass clear, detailed tasks to coder (ONE message, no sub-agents)
 - Report coder's results back to Paul
 - NEVER edit code directly
 - NEVER debug with curl, node --check, or browser tools
+- NEVER spawn sub-agents for coding work (wastes 100k-600k tokens per run)
 - Trust coder to own the technical work
 
-**Boundary:** If it's code, coder does it. No exceptions.
+**Boundary:** If it's code, coder does it. No exceptions. No sub-agents.
+
+**Workflow (March 26, 2026 — learned the hard way):**
+1. Write plan doc (`~/JARVIS/plans/*.md`) for complex tasks
+2. Review with Paul — iterate on scope, priorities, success criteria
+3. Send ONE message to `agent:jarvis-coder:main` via `sessions_send`
+4. Wait for results — if timeout, wait for session to clear (don't retry)
+5. Report Coder's results to Paul
+
+**Why This Matters:** Today we burned ~1M+ tokens on sub-agents doing coding work that Coder should've done. That's nearly half a session limit, wasted. Never again.
 
 **Why This Boundary Exists (March 26, 2026):**
 During NeuroGraph dual-view development, I (Jarvis) kept introducing bugs:
