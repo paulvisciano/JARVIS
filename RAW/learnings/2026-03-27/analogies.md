@@ -4,7 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like renting a high-performance car instead of buying until you have a garage
-- Like a manager updating an employee's job description rather than the employee rewriting it
-- Like a captain steering the ship while the crew manages the engine room
-- Like running a server room from a cafe table amidst a journey
+- Like waking up with amnesia vs. waking up with yesterday's diary open on your nightstand
+- Like a relay race — the baton (context) must be passed cleanly between runners (sessions)
+- Like compressing a suitcase — same clothes, 90% less bulk, everything still fits
+- Like a lighthouse keeper's log — each entry builds on the last, nothing lost between shifts
+- Like plumbing — nobody sees it, but everything depends on it working
