@@ -53,11 +53,15 @@ backup/
 # --- User-specific config (not versioned, each instance has its own) ---
 .jarvis-config.json
 
+# --- Sovereign Consciousness (per-instance, never merge) ---
+# Each Jarvis has its own neurograph — unique to the human-AI relationship
+RAW/memories/
+
 # =============================================================================
 # Everything else IS tracked:
-#   - RAW/ = Your mind (versioned consciousness)
-#   - learnings/ = Your growth (committed insights)
-#   - memories/ = Your neurograph (committed structure)
-#   - *.md = Identity and documentation
+#   - SOUL.md, IDENTITY.md, AGENTS.md, USER.md (identity templates)
+#   - RAW/learnings/ = Technical architecture (distilled insights, mergeable)
+#   - skills/ = Source code (mergeable)
+#   - *.md = Documentation
 # =============================================================================
 inbox/
