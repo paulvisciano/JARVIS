@@ -75,7 +75,12 @@ function extractSessions(sessionsDir, isActiveMode = false) {
     try {
       const stats = fs.statSync(filePath);
       if (stats.size < 1000) {
-        console.log(`   ⚭ Skipping ${file} (too small: ${(stats.size/1024).toFixed(1)}KB)`);
+        // In active mode, log to stderr (stdout is for JSON only)
+        if (isActiveMode) {
+          console.error(`   ⚭ Skipping ${file} (too small: ${(stats.size/1024).toFixed(1)}KB)`);
+        } else {
+          console.log(`   ⚭ Skipping ${file} (too small: ${(stats.size/1024).toFixed(1)}KB)`);
+        }
         return;
       }
     } catch (e) {
@@ -86,7 +91,11 @@ function extractSessions(sessionsDir, isActiveMode = false) {
     try {
       lines = fs.readFileSync(filePath, 'utf8').trim().split('\n');
     } catch (e) {
-      console.log(`   ⚭ Skipping ${file} (read error)`);
+      if (isActiveMode) {
+        console.error(`   ⚭ Skipping ${file} (read error)`);
+      } else {
+        console.log(`   ⚭ Skipping ${file} (read error)`);
+      }
       return;
     }
     
@@ -163,7 +172,7 @@ function extractTranscripts(audioDir) {
 }
 
 // Extract OCR from screenshots (images without .txt files)
-function extractOCR(archiveDir) {
+function extractOCR(archiveDir, isActiveMode = false) {
   const imagesDir = path.join(archiveDir, 'images');
   const ocrResults = [];
   
@@ -175,7 +184,8 @@ function extractOCR(archiveDir) {
     return imageExts.includes(ext);
   });
   
-  console.log(`\n🔍 Scanning ${files.length} images for OCR...`);
+  const log = isActiveMode ? console.error : console.log;
+  log(`\n🔍 Scanning ${files.length} images for OCR...`);
   
   files.forEach(file => {
     const filePath = path.join(imagesDir, file);
@@ -189,12 +199,12 @@ function extractOCR(archiveDir) {
         text,
         source: 'existing'
       });
-      console.log(`   ✓ ${file} (existing OCR)`);
+      log(`   ✓ ${file} (existing OCR)`);
       return;
     }
     
     // Run tesseract OCR
-    console.log(`   ⏳ OCR: ${file}...`);
+    log(`   ⏳ OCR: ${file}...`);
     const { execSync } = require('child_process');
     try {
       const stdout = execSync(`tesseract "${filePath}" stdout -l eng --psm 6 2>/dev/null`, {
@@ -211,10 +221,10 @@ function extractOCR(archiveDir) {
         text,
         source: 'extracted'
       });
-      console.log(`   ✓ ${file} (OCR extracted: ${text.length} chars)`);
+      log(`   ✓ ${file} (OCR extracted: ${text.length} chars)`);
     }
     catch (err) {
-      console.log(`   ✗ ${file} (OCR failed: ${err.message.split('\n')[0]})`);
+      log(`   ✗ ${file} (OCR failed: ${err.message.split('\n')[0]})`);
     }
   });
   
@@ -246,7 +256,7 @@ function extractLearnings(learningsDir) {
 // Main extraction
 const sessions = extractSessions(sessionsDir, IS_ACTIVE_MODE);
 const transcripts = extractTranscripts(audioDir);
-const ocrResults = IS_ACTIVE_MODE ? [] : extractOCR(archiveDir); // Skip OCR in active mode
+const ocrResults = IS_ACTIVE_MODE ? [] : extractOCR(archiveDir, false); // Skip OCR in active mode
 const learnings = IS_ACTIVE_MODE ? [] : extractLearnings(learningsDir); // Skip learnings in active mode
 
 const context = {
@@ -267,15 +277,23 @@ const context = {
   }
 };
 
-// Write output (minified JSON to save space)
-fs.writeFileSync(outputFile, JSON.stringify(context), 'utf8');
-
-console.log(`✅ Context extracted: ${IS_ACTIVE_MODE ? 'active sessions' : DATE_ARG}`);
-console.log(`   Sessions: ${sessions.length} files, ${context.stats.totalMessages} messages`);
-console.log(`   Transcripts: ${transcripts.length} files`);
-if (!IS_ACTIVE_MODE) {
+// In active mode: output JSON to stdout (no file write), logs to stderr
+// In archive mode: write to file, logs to stdout
+if (IS_ACTIVE_MODE) {
+  // Output minified JSON to stdout for bootstrap to parse
+  process.stdout.write(JSON.stringify(context));
+  // Log summary to stderr (doesn't interfere with JSON parsing)
+  console.error(`✅ Context extracted: active sessions`);
+  console.error(`   Sessions: ${sessions.length} files, ${context.stats.totalMessages} messages`);
+  console.error(`   Transcripts: ${transcripts.length} files`);
+  console.error(`   Size: ${(Buffer.byteLength(JSON.stringify(context), 'utf8') / 1024).toFixed(2)} KB`);
+} else {
+  fs.writeFileSync(outputFile, JSON.stringify(context), 'utf8');
+  console.log(`✅ Context extracted: ${DATE_ARG}`);
+  console.log(`   Sessions: ${sessions.length} files, ${context.stats.totalMessages} messages`);
+  console.log(`   Transcripts: ${transcripts.length} files`);
   console.log(`   OCR: ${ocrResults.length} images (${context.stats.ocrExtracted} newly extracted)`);
   console.log(`   Learnings: ${learnings.length} existing for ${DATE_ARG}`);
+  console.log(`   Output: ${outputFile}`);
+  console.log(`   Size: ${(fs.statSync(outputFile).size / 1024).toFixed(2)} KB`);
 }
-console.log(`   Output: ${outputFile}`);
-console.log(`   Size: ${(fs.statSync(outputFile).size / 1024).toFixed(2)} KB`);

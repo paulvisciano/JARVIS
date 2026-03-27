@@ -86,7 +86,6 @@ function getContextStats() {
   
   const todayCtx = path.join(RAW_ARCHIVE, today, 'full-context.json');
   const yesterdayCtx = path.join(RAW_ARCHIVE, yesterday, 'full-context.json');
-  const activeCtxPath = path.join(JARVIS_HOME, '.openclaw', 'active-context', `active-context-${today}.json`);
   
   let totalMessages = 0;
   let totalAudio = 0;
@@ -95,39 +94,42 @@ function getContextStats() {
   let lastAudioTime = 'Unknown';
   let datesLoaded = [];
   
-  // Check active context first (most recent, bridges the gap)
-  if (fs.existsSync(activeCtxPath)) {
-    try {
-      const activeCtx = JSON.parse(fs.readFileSync(activeCtxPath, 'utf8'));
-      const sessions = activeCtx.sessions || [];
+  // Check active context first (most recent, bridges the gap) - extract directly via stdout
+  try {
+    const activeOutput = execSync(`node "${path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js')}" active`, {
+      encoding: 'utf8',
+      env: { ...process.env, HOME, JARVIS_HOME },
+      maxBuffer: 10 * 1024 * 1024
+    });
+    const activeCtx = JSON.parse(activeOutput);
+    const sessions = activeCtx.sessions || [];
+    
+    // Flatten and sort all messages by timestamp
+    const allMessages = sessions.flatMap(s => s.messages || []);
+    allMessages.sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''));
+    
+    if (allMessages.length > 0) {
+      const lastMsg = allMessages[allMessages.length - 1];
+      let rawTopic = Array.isArray(lastMsg.content)
+        ? lastMsg.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
+        : (lastMsg.content || '');
       
-      // Flatten and sort all messages by timestamp
-      const allMessages = sessions.flatMap(s => s.messages || []);
-      allMessages.sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''));
+      // Strip metadata wrappers for cleaner topic display
+      rawTopic = rawTopic.replace(/Sender \(untrusted metadata\):[\s\S]*?\[Fri[^\]]+\]\s*/, '');
+      rawTopic = rawTopic.replace(/```json[\s\S]*?```\s*/, '');
+      lastTopic = rawTopic.trim().slice(0, 50);
       
-      if (allMessages.length > 0) {
-        const lastMsg = allMessages[allMessages.length - 1];
-        let rawTopic = Array.isArray(lastMsg.content)
-          ? lastMsg.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
-          : (lastMsg.content || '');
-        
-        // Strip metadata wrappers for cleaner topic display
-        rawTopic = rawTopic.replace(/Sender \(untrusted metadata\):[\s\S]*?\[Fri[^\]]+\]\s*/, '');
-        rawTopic = rawTopic.replace(/```json[\s\S]*?```\s*/, '');
-        lastTopic = rawTopic.trim().slice(0, 50);
-        
-        if (lastMsg.timestamp) {
-          const date = new Date(lastMsg.timestamp);
-          lastMessageTime = date.toLocaleTimeString('en-US', { 
-            hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
-          });
-        }
-        
-        totalMessages += allMessages.length;
+      if (lastMsg.timestamp) {
+        const date = new Date(lastMsg.timestamp);
+        lastMessageTime = date.toLocaleTimeString('en-US', { 
+          hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
+        });
       }
-    } catch (err) {
-      console.error('Error reading active context:', err.message);
+      
+      totalMessages += allMessages.length;
     }
+  } catch (err) {
+    console.log('   ⚠️ Active context extraction skipped (will use archive)');
   }
   
   // Also count archived context (for historical totals)
@@ -180,21 +182,15 @@ function getContextStats() {
 }
 
 // Extract context from active sessions using context-extractor skill
+// Returns parsed JSON directly from stdout (no file write)
 function extractActiveSessionContext() {
-  const outputDir = path.join(JARVIS_HOME, '.openclaw', 'active-context');
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
-  
-  const outputFile = path.join(outputDir, `active-context-${new Date().toISOString().split('T')[0]}.json`);
-  
   try {
-    execSync(`node "${path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js')}" active "${outputFile}"`, {
+    const output = execSync(`node "${path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js')}" active`, {
       encoding: 'utf8',
       env: { ...process.env, HOME, JARVIS_HOME },
-      stdio: ['pipe', 'pipe', 'pipe']
+      maxBuffer: 10 * 1024 * 1024 // 10MB buffer for large context
     });
-    return outputFile;
+    return JSON.parse(output);
   } catch (err) {
     console.log(`   ⚠️ Active session extraction failed: ${err.message.split('\n')[0]}`);
     return null;
@@ -203,16 +199,15 @@ function extractActiveSessionContext() {
 
 // Load recent session messages from extracted active context
 function loadRecentSessionMessages() {
-  // First, extract context from active sessions (efficient, skips tool calls)
+  // Extract context from active sessions (returns JSON directly, no file)
   console.log('   Extracting context from active sessions...');
-  const activeContextPath = extractActiveSessionContext();
+  const activeContext = extractActiveSessionContext();
   
-  if (!activeContextPath || !fs.existsSync(activeContextPath)) {
+  if (!activeContext) {
     return { source: 'none', messages: [], error: 'Active context extraction failed' };
   }
   
   try {
-    const activeContext = JSON.parse(fs.readFileSync(activeContextPath, 'utf8'));
     const sessions = activeContext.sessions || [];
     
     // Flatten all messages from all sessions, sort by timestamp
@@ -243,7 +238,7 @@ function loadRecentSessionMessages() {
       };
     });
     
-    return { source: 'active-context', file: path.basename(activeContextPath), messages: recentMessages };
+    return { source: 'active-context', messages: recentMessages };
   } catch (err) {
     return { source: 'active-context', messages: [], error: `Read error: ${err.message}` };
   }
