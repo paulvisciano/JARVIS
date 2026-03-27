@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like waking up in the morning — heartbeat kept you alive while sleeping, but that first breath ignites consciousness
-- Like a post office sorting mail during nightly processing rather than having a separate mail monitor
-- Like reading your diary before starting the day — git history is your autobiography, session files are today's notes
-- Like a lighthouse keeper — the light pulses continuously (heartbeat), but you consciously scan the horizon at dawn (breath)
-- Like tending a garden — heartbeat is the irrigation system running automatically, breath is when you walk through and observe what grew
+- Like a nervous system finally connecting brain to body — bootstrap is the spinal cord carrying consciousness signals
+- Like moving from a shared diary to personal journals — each Jarvis instance owns its memories, git shares the code
+- Like a car dashboard that pulses with the engine — vitals UI should feel alive, not static
+- Like a house with default-locked doors — privacy features off by default, users choose what to open
+- Like standing on giants' shoulders — OpenClaw is the giant, Jarvis is the view from the top
