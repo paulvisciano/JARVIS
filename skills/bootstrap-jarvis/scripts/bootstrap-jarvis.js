@@ -107,9 +107,14 @@ function getContextStats() {
       
       if (allMessages.length > 0) {
         const lastMsg = allMessages[allMessages.length - 1];
-        lastTopic = Array.isArray(lastMsg.content)
-          ? lastMsg.content.filter(c => c.type === 'text').map(c => c.text).join(' ').slice(0, 50)
-          : (lastMsg.content || '').slice(0, 50);
+        let rawTopic = Array.isArray(lastMsg.content)
+          ? lastMsg.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
+          : (lastMsg.content || '');
+        
+        // Strip metadata wrappers for cleaner topic display
+        rawTopic = rawTopic.replace(/Sender \(untrusted metadata\):[\s\S]*?\[Fri[^\]]+\]\s*/, '');
+        rawTopic = rawTopic.replace(/```json[\s\S]*?```\s*/, '');
+        lastTopic = rawTopic.trim().slice(0, 50);
         
         if (lastMsg.timestamp) {
           const date = new Date(lastMsg.timestamp);
@@ -220,16 +225,21 @@ function loadRecentSessionMessages() {
     
     // Get all messages (complete gap-bridging)
     const recentMessages = allMessages.map(m => {
-      const text = Array.isArray(m.content) 
+      let text = Array.isArray(m.content) 
         ? m.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
         : (m.content || '');
+      
+      // Strip metadata wrappers (webchat envelope, etc.)
+      text = text.replace(/Sender \(untrusted metadata\):[\s\S]*?\[Fri[^\]]+\]\s*/, '');
+      text = text.replace(/```json[\s\S]*?```\s*/, '');
+      
       const time = m.timestamp ? new Date(m.timestamp).toLocaleTimeString('en-US', { 
         hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
       }) : 'Unknown';
       return {
         role: m.role,
         time: time,
-        text: text.slice(0, 150)
+        text: text.trim().slice(0, 150)
       };
     });
     
