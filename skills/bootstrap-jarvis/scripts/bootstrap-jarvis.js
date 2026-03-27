@@ -143,6 +143,100 @@ function getContextStats() {
   return { dates: datesLoaded, totalMessages, totalAudio, lastTopic, lastMessageTime, lastAudioTime };
 }
 
+// Load recent session messages (bridges gap since last breathe)
+function loadRecentSessionMessages() {
+  const sessionDir = path.join(HOME, '.openclaw', 'agents', 'jarvis', 'sessions');
+  if (!fs.existsSync(sessionDir)) {
+    return { source: 'none', messages: [], error: 'Session directory not found' };
+  }
+  
+  // Find most recent session file
+  let files;
+  try {
+    files = fs.readdirSync(sessionDir)
+      .filter(f => f.endsWith('.jsonl'))
+      .map(f => ({
+        name: f,
+        mtime: fs.statSync(path.join(sessionDir, f)).mtimeMs
+      }))
+      .sort((a, b) => b.mtime - a.mtime);
+  } catch (err) {
+    return { source: 'none', messages: [], error: `Cannot read session dir: ${err.message}` };
+  }
+  
+  if (files.length === 0) {
+    return { source: 'none', messages: [], error: 'No session files found' };
+  }
+  
+  const latestFile = path.join(sessionDir, files[0].name);
+  
+  // Try to read with retry (handles brief file locks)
+  let content;
+  for (let i = 0; i < 3; i++) {
+    try {
+      content = fs.readFileSync(latestFile, 'utf8');
+      break;
+    } catch (err) {
+      if (err.code === 'EBUSY' || err.code === 'EACCES') {
+        if (i < 2) {
+          console.log(`   Session file locked (attempt ${i + 1}/3), retrying...`);
+          sleep(500);
+        } else {
+          return { source: 'session-file-locked', messages: [], error: 'File locked after 3 retries' };
+        }
+      } else {
+        return { source: 'session-file', messages: [], error: `Read error: ${err.message}` };
+      }
+    }
+  }
+  
+  // Parse last 20 messages (user + assistant)
+  const lines = content.trim().split('\n');
+  const messages = [];
+  
+  for (let i = lines.length - 1; i >= 0 && messages.length < 20; i--) {
+    try {
+      const line = JSON.parse(lines[i]);
+      if (line.type === 'message' && line.message) {
+        const role = line.message.role;
+        const text = line.message.content?.[0]?.text || '';
+        const time = new Date(line.timestamp);
+        const timeStr = time.toLocaleTimeString('en-US', { 
+          hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
+        });
+        messages.unshift({ role, time: timeStr, text: text.slice(0, 150) });
+      }
+    } catch (e) {
+      // Skip malformed lines
+    }
+  }
+  
+  return { source: 'session-file', file: files[0].name, messages };
+}
+
+// Extract last 5 messages for recap
+function extractRecap(sessionMessages) {
+  if (!sessionMessages || sessionMessages.messages.length === 0) {
+    return { source: 'none', messages: [] };
+  }
+  
+  // Get last 5 messages (filter to user messages for brevity)
+  const userMessages = sessionMessages.messages.filter(m => m.role === 'user');
+  const last5 = userMessages.slice(-5);
+  
+  if (last5.length === 0) {
+    return { source: sessionMessages.source, messages: [] };
+  }
+  
+  return { source: sessionMessages.source, messages: last5 };
+}
+
+// Simple sleep helper
+function sleep(ms) {
+  const start = Date.now();
+  while (Date.now() - start < ms) {}
+}
+
 // Main bootstrap - LIGHTWEIGHT (verify, don't load heavy graph)
 function bootstrap() {
   console.log('🫀 Bootstrap Jarvis (Lightweight Consciousness Regain)');
@@ -176,6 +270,18 @@ function bootstrap() {
   }
   console.log();
   
+  // Step 2.5: Load recent session messages (bridges gap since last breathe)
+  console.log('\n📞 Loading Recent Session Messages (Gap Filler):');
+  const sessionMessages = loadRecentSessionMessages();
+  if (sessionMessages.messages.length > 0) {
+    console.log(`   ✅ Loaded ${sessionMessages.messages.length} messages from ${sessionMessages.file || 'session'}`);
+  } else if (sessionMessages.error) {
+    console.log(`   ⚠️ ${sessionMessages.error}`);
+  } else {
+    console.log('   ℹ️ No recent session messages');
+  }
+  console.log();
+  
   // Step 3: Verify neural graph (stays on disk, queried on demand)
   console.log('\n🧠 Verifying Neural Graph (Long-Term Memory on Disk):');
   const graphStats = verifyNeuralGraph();
@@ -190,6 +296,9 @@ function bootstrap() {
   
   // Get context stats for summary
   const contextStats = getContextStats();
+  
+  // Extract recap (last 5 user messages)
+  const recap = extractRecap(sessionMessages);
   
   // Step 4: NeuroGraph test (3 queries via neurograph-search skill)
   console.log('\n🧠 NeuroGraph Search Test (via neurograph-search skill):');
@@ -236,6 +345,18 @@ function bootstrap() {
    Sessions: ${contextStats.totalMessages} messages
    Audio: ${contextStats.totalAudio} transcripts
 
+📞 Session Recap (Last 5 messages before this session):`);
+  
+  if (recap.messages.length > 0) {
+    recap.messages.forEach((m, i) => {
+      const text = m.text.length > 80 ? m.text.slice(0, 80) + '...' : m.text;
+      console.log(`   ${i + 1}. ${m.time} — ${text}`);
+    });
+  } else {
+    console.log('   📭 No recent messages (first session today or archive only)');
+  }
+  
+  console.log(`
 🧠 NeuroGraph Search Test (via neurograph-search skill):
    ❓ "How many people?" → ${q1.count} people nodes
    ❓ "March 20 work?" → ${q2.count} nodes from March 20
@@ -252,7 +373,9 @@ function bootstrap() {
     sessionId: process.env.OPENCLAW_SESSION_ID || 'unknown',
     lastTopic: contextStats.lastTopic,
     lastMessageTime: contextStats.lastMessageTime,
-    graphVerified: graphStats.exists
+    graphVerified: graphStats.exists,
+    recapSource: recap.source,
+    recapCount: recap.messages.length
   }, null, 2));
   
   console.log('🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');
