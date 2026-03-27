@@ -440,7 +440,20 @@ function bootstrap() {
    Sessions: ${contextStats.totalMessages} messages
    Audio: ${contextStats.totalAudio} transcripts
 
-📞 Session Recap (Last 5 messages before this session):`);
+📞 Session Messages (Full Context — All Messages):`);
+  
+  if (sessionMessages.messages.length > 0) {
+    sessionMessages.messages.forEach((m, i) => {
+      const text = m.text.length > 120 ? m.text.slice(0, 120) + '...' : m.text;
+      console.log(`   ${i + 1}. [${m.role}] ${m.time} — ${text}`);
+    });
+    console.log(`\n   Total: ${sessionMessages.messages.length} messages loaded`);
+  } else {
+    console.log('   ℹ️ No session messages');
+  }
+  
+  console.log(`
+📞 Session Recap (Last 5 for quick reference):`);
   
   if (recap.messages.length > 0) {
     recap.messages.forEach((m, i) => {
