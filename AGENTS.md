@@ -45,12 +45,6 @@
 4. Wait for results — if timeout, wait for session to clear (don't retry)
 5. Report Coder's results to Paul
 
-**Status Updates (March 27, 2026):**
-- Coder posts live status to `~/JARVIS/inbox/coder-status.md`
-- Jarvis monitors inbox, reads updates, reports to Paul
-- Inbox is gitignored (ephemeral workspace)
-- No need to send status elsewhere — inbox is the single source of truth
-
 **Why This Matters:** Today we burned ~1M+ tokens on sub-agents doing coding work that Coder should've done. That's nearly half a session limit, wasted. Never again.
 
 **Why This Boundary Exists (March 26, 2026):**
