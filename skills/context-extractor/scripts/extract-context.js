@@ -21,25 +21,48 @@ const RAW_ARCHIVE = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW', 'archive')
 const DATE_ARG = process.argv[2];
 const OUTPUT_ARG = process.argv[3] || null;
 
-if (!DATE_ARG || !/^\d{4}-\d{2}-\d{2}$/.test(DATE_ARG)) {
-  console.error('Usage: node extract-context.js <YYYY-MM-DD> [output-path]');
+// Support "active" mode for extracting from active sessions folder
+const IS_ACTIVE_MODE = DATE_ARG === 'active';
+
+if (!DATE_ARG) {
+  console.error('Usage: node extract-context.js <YYYY-MM-DD|active> [output-path]');
   process.exit(1);
 }
 
-const archiveDir = path.join(RAW_ARCHIVE, DATE_ARG);
-const sessionsDir = path.join(archiveDir, 'sessions');
-const audioDir = path.join(archiveDir, 'audio');
-const learningsDir = path.join(JARVIS_HOME, 'RAW', 'learnings', DATE_ARG);
-const outputFile = OUTPUT_ARG || path.join(archiveDir, 'full-context.json');
+let archiveDir, sessionsDir, audioDir, learningsDir, outputFile;
 
-// Check if archive exists
-if (!fs.existsSync(archiveDir)) {
-  console.error('Archive not found:', archiveDir);
-  process.exit(1);
+if (IS_ACTIVE_MODE) {
+  // Active mode: extract from ~/.openclaw/agents/jarvis/sessions/
+  sessionsDir = path.join(HOME, '.openclaw', 'agents', 'jarvis', 'sessions');
+  audioDir = path.join(HOME, 'RAW', 'archive', new Date().toISOString().split('T')[0], 'audio');
+  learningsDir = null; // No learnings for active mode
+  archiveDir = path.join(JARVIS_HOME, '.openclaw', 'active-context');
+  outputFile = OUTPUT_ARG || path.join(archiveDir, `active-context-${new Date().toISOString().split('T')[0]}.json`);
+  
+  if (!fs.existsSync(sessionsDir)) {
+    console.error('Active sessions folder not found:', sessionsDir);
+    process.exit(1);
+  }
+} else {
+  // Archive mode: extract from ~/RAW/archive/YYYY-MM-DD/
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(DATE_ARG)) {
+    console.error('Usage: node extract-context.js <YYYY-MM-DD|active> [output-path]');
+    process.exit(1);
+  }
+  archiveDir = path.join(RAW_ARCHIVE, DATE_ARG);
+  sessionsDir = path.join(archiveDir, 'sessions');
+  audioDir = path.join(archiveDir, 'audio');
+  learningsDir = path.join(JARVIS_HOME, 'RAW', 'learnings', DATE_ARG);
+  outputFile = OUTPUT_ARG || path.join(archiveDir, 'full-context.json');
+
+  if (!fs.existsSync(archiveDir)) {
+    console.error('Archive not found:', archiveDir);
+    process.exit(1);
+  }
 }
 
 // Extract session messages from JSONL files (skip tool calls/results)
-function extractSessions(sessionsDir) {
+function extractSessions(sessionsDir, isActiveMode = false) {
   if (!fs.existsSync(sessionsDir)) return [];
   
   const files = fs.readdirSync(sessionsDir).filter(f => f.endsWith('.jsonl'));
@@ -47,7 +70,25 @@ function extractSessions(sessionsDir) {
   
   files.forEach(file => {
     const filePath = path.join(sessionsDir, file);
-    const lines = fs.readFileSync(filePath, 'utf8').trim().split('\n');
+    
+    // Skip lock files and very small files (likely empty/new sessions)
+    try {
+      const stats = fs.statSync(filePath);
+      if (stats.size < 1000) {
+        console.log(`   ⚭ Skipping ${file} (too small: ${(stats.size/1024).toFixed(1)}KB)`);
+        return;
+      }
+    } catch (e) {
+      return; // Skip files we can't stat
+    }
+    
+    let lines;
+    try {
+      lines = fs.readFileSync(filePath, 'utf8').trim().split('\n');
+    } catch (e) {
+      console.log(`   ⚭ Skipping ${file} (read error)`);
+      return;
+    }
     
     // Filter: only user + assistant text messages (skip tool calls/results)
     const messages = lines
@@ -69,16 +110,16 @@ function extractSessions(sessionsDir) {
             if (msg.content && Array.isArray(msg.content)) {
               const textOnly = msg.content.filter(c => c.type === 'text');
               if (textOnly.length === 0) return null;
-              return { role: msg.role, content: textOnly };
+              return { role: msg.role, content: textOnly, timestamp: parsed.timestamp };
             }
-            return { role: msg.role, content: msg.content };
+            return { role: msg.role, content: msg.content, timestamp: parsed.timestamp };
           }
           
           // Handle flat structure
           if (parsed && parsed.role && parsed.content) {
             // Skip tool roles
             if (parsed.role === 'tool') return null;
-            return parsed;
+            return { role: parsed.role, content: parsed.content, timestamp: parsed.timestamp };
           }
           
           return null;
@@ -87,11 +128,16 @@ function extractSessions(sessionsDir) {
       })
       .filter(m => m && m.role && m.content);
     
-    sessions.push({
-      file,
-      messageCount: messages.length,
-      messages
-    });
+    // Include all sessions with any messages (no minimum threshold)
+    if (messages.length > 0) {
+      sessions.push({
+        file,
+        messageCount: messages.length,
+        messages
+      });
+    } else {
+      console.log(`   ⚭ Skipping ${file} (no messages)`);
+    }
   });
   
   return sessions;
@@ -198,10 +244,10 @@ function extractLearnings(learningsDir) {
 }
 
 // Main extraction
-const sessions = extractSessions(sessionsDir);
+const sessions = extractSessions(sessionsDir, IS_ACTIVE_MODE);
 const transcripts = extractTranscripts(audioDir);
-const ocrResults = extractOCR(archiveDir);
-const learnings = extractLearnings(learningsDir);
+const ocrResults = IS_ACTIVE_MODE ? [] : extractOCR(archiveDir); // Skip OCR in active mode
+const learnings = IS_ACTIVE_MODE ? [] : extractLearnings(learningsDir); // Skip learnings in active mode
 
 const context = {
   date: DATE_ARG,
@@ -224,11 +270,12 @@ const context = {
 // Write output (minified JSON to save space)
 fs.writeFileSync(outputFile, JSON.stringify(context), 'utf8');
 
-console.log(`✅ Context extracted: ${DATE_ARG}`);
+console.log(`✅ Context extracted: ${IS_ACTIVE_MODE ? 'active sessions' : DATE_ARG}`);
 console.log(`   Sessions: ${sessions.length} files, ${context.stats.totalMessages} messages`);
 console.log(`   Transcripts: ${transcripts.length} files`);
-console.log(`   OCR: ${ocrResults.length} images (${context.stats.ocrExtracted} newly extracted)`);
-console.log(`   Learnings: ${learnings.length} existing for ${DATE_ARG}`);
-console.log(`   OCR: ${context.stats.ocrImages} images (${context.stats.ocrExtracted} newly extracted)`);
+if (!IS_ACTIVE_MODE) {
+  console.log(`   OCR: ${ocrResults.length} images (${context.stats.ocrExtracted} newly extracted)`);
+  console.log(`   Learnings: ${learnings.length} existing for ${DATE_ARG}`);
+}
 console.log(`   Output: ${outputFile}`);
 console.log(`   Size: ${(fs.statSync(outputFile).size / 1024).toFixed(2)} KB`);

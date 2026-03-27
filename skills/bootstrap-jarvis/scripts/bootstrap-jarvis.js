@@ -79,13 +79,14 @@ function queryNeuroGraph(query, category = null) {
   }
 }
 
-// Load context stats (from bootstrap-context pattern)
+// Load context stats (from bootstrap-context pattern + active sessions)
 function getContextStats() {
   const today = new Date().toISOString().split('T')[0];
   const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
   
   const todayCtx = path.join(RAW_ARCHIVE, today, 'full-context.json');
   const yesterdayCtx = path.join(RAW_ARCHIVE, yesterday, 'full-context.json');
+  const activeCtxPath = path.join(JARVIS_HOME, '.openclaw', 'active-context', `active-context-${today}.json`);
   
   let totalMessages = 0;
   let totalAudio = 0;
@@ -94,16 +95,47 @@ function getContextStats() {
   let lastAudioTime = 'Unknown';
   let datesLoaded = [];
   
+  // Check active context first (most recent, bridges the gap)
+  if (fs.existsSync(activeCtxPath)) {
+    try {
+      const activeCtx = JSON.parse(fs.readFileSync(activeCtxPath, 'utf8'));
+      const sessions = activeCtx.sessions || [];
+      
+      // Flatten and sort all messages by timestamp
+      const allMessages = sessions.flatMap(s => s.messages || []);
+      allMessages.sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''));
+      
+      if (allMessages.length > 0) {
+        const lastMsg = allMessages[allMessages.length - 1];
+        lastTopic = Array.isArray(lastMsg.content)
+          ? lastMsg.content.filter(c => c.type === 'text').map(c => c.text).join(' ').slice(0, 50)
+          : (lastMsg.content || '').slice(0, 50);
+        
+        if (lastMsg.timestamp) {
+          const date = new Date(lastMsg.timestamp);
+          lastMessageTime = date.toLocaleTimeString('en-US', { 
+            hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
+          });
+        }
+        
+        totalMessages += allMessages.length;
+      }
+    } catch (err) {
+      console.error('Error reading active context:', err.message);
+    }
+  }
+  
+  // Also count archived context (for historical totals)
   if (fs.existsSync(todayCtx)) {
     try {
       const ctx = JSON.parse(fs.readFileSync(todayCtx, 'utf8'));
       const sessions = ctx.sessions || [];
       const transcripts = ctx.transcripts || [];
-      totalMessages += sessions.reduce((sum, s) => sum + (s.messages?.length || 0), 0);
       totalAudio += transcripts.length;
       datesLoaded.push(today);
       
-      if (sessions.length > 0) {
+      // Only use archive's last message if active context didn't have one
+      if (lastMessageTime === 'Unknown' && sessions.length > 0) {
         const lastSession = sessions[sessions.length - 1];
         const lastMsg = lastSession.messages?.[lastSession.messages.length - 1];
         lastTopic = (lastMsg?.content?.[0]?.text || lastMsg?.content || '').slice(0, 50);
@@ -133,7 +165,6 @@ function getContextStats() {
     try {
       const ctx = JSON.parse(fs.readFileSync(yesterdayCtx, 'utf8'));
       const sessions = ctx.sessions || [];
-      totalMessages += sessions.reduce((sum, s) => sum + (s.messages?.length || 0), 0);
       datesLoaded.push(yesterday);
     } catch (err) {
       console.error('Error reading yesterday context:', err.message);
@@ -143,75 +174,69 @@ function getContextStats() {
   return { dates: datesLoaded, totalMessages, totalAudio, lastTopic, lastMessageTime, lastAudioTime };
 }
 
-// Load recent session messages (bridges gap since last breathe)
-function loadRecentSessionMessages() {
-  const sessionDir = path.join(HOME, '.openclaw', 'agents', 'jarvis', 'sessions');
-  if (!fs.existsSync(sessionDir)) {
-    return { source: 'none', messages: [], error: 'Session directory not found' };
+// Extract context from active sessions using context-extractor skill
+function extractActiveSessionContext() {
+  const outputDir = path.join(JARVIS_HOME, '.openclaw', 'active-context');
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
   }
   
-  // Find most recent session file
-  let files;
+  const outputFile = path.join(outputDir, `active-context-${new Date().toISOString().split('T')[0]}.json`);
+  
   try {
-    files = fs.readdirSync(sessionDir)
-      .filter(f => f.endsWith('.jsonl'))
-      .map(f => ({
-        name: f,
-        mtime: fs.statSync(path.join(sessionDir, f)).mtimeMs
-      }))
-      .sort((a, b) => b.mtime - a.mtime);
+    execSync(`node "${path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js')}" active "${outputFile}"`, {
+      encoding: 'utf8',
+      env: { ...process.env, HOME, JARVIS_HOME },
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
+    return outputFile;
   } catch (err) {
-    return { source: 'none', messages: [], error: `Cannot read session dir: ${err.message}` };
+    console.log(`   ⚠️ Active session extraction failed: ${err.message.split('\n')[0]}`);
+    return null;
+  }
+}
+
+// Load recent session messages from extracted active context
+function loadRecentSessionMessages() {
+  // First, extract context from active sessions (efficient, skips tool calls)
+  console.log('   Extracting context from active sessions...');
+  const activeContextPath = extractActiveSessionContext();
+  
+  if (!activeContextPath || !fs.existsSync(activeContextPath)) {
+    return { source: 'none', messages: [], error: 'Active context extraction failed' };
   }
   
-  if (files.length === 0) {
-    return { source: 'none', messages: [], error: 'No session files found' };
+  try {
+    const activeContext = JSON.parse(fs.readFileSync(activeContextPath, 'utf8'));
+    const sessions = activeContext.sessions || [];
+    
+    // Flatten all messages from all sessions, sort by timestamp
+    const allMessages = sessions.flatMap(s => s.messages || []);
+    allMessages.sort((a, b) => {
+      const timeA = a.timestamp || '';
+      const timeB = b.timestamp || '';
+      return timeA.localeCompare(timeB);
+    });
+    
+    // Get last 20 messages (for internal use)
+    const recentMessages = allMessages.slice(-20).map(m => {
+      const text = Array.isArray(m.content) 
+        ? m.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
+        : (m.content || '');
+      const time = m.timestamp ? new Date(m.timestamp).toLocaleTimeString('en-US', { 
+        hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
+      }) : 'Unknown';
+      return {
+        role: m.role,
+        time: time,
+        text: text.slice(0, 150)
+      };
+    });
+    
+    return { source: 'active-context', file: path.basename(activeContextPath), messages: recentMessages };
+  } catch (err) {
+    return { source: 'active-context', messages: [], error: `Read error: ${err.message}` };
   }
-  
-  const latestFile = path.join(sessionDir, files[0].name);
-  
-  // Try to read with retry (handles brief file locks)
-  let content;
-  for (let i = 0; i < 3; i++) {
-    try {
-      content = fs.readFileSync(latestFile, 'utf8');
-      break;
-    } catch (err) {
-      if (err.code === 'EBUSY' || err.code === 'EACCES') {
-        if (i < 2) {
-          console.log(`   Session file locked (attempt ${i + 1}/3), retrying...`);
-          sleep(500);
-        } else {
-          return { source: 'session-file-locked', messages: [], error: 'File locked after 3 retries' };
-        }
-      } else {
-        return { source: 'session-file', messages: [], error: `Read error: ${err.message}` };
-      }
-    }
-  }
-  
-  // Parse last 20 messages (user + assistant)
-  const lines = content.trim().split('\n');
-  const messages = [];
-  
-  for (let i = lines.length - 1; i >= 0 && messages.length < 20; i--) {
-    try {
-      const line = JSON.parse(lines[i]);
-      if (line.type === 'message' && line.message) {
-        const role = line.message.role;
-        const text = line.message.content?.[0]?.text || '';
-        const time = new Date(line.timestamp);
-        const timeStr = time.toLocaleTimeString('en-US', { 
-          hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
-        });
-        messages.unshift({ role, time: timeStr, text: text.slice(0, 150) });
-      }
-    } catch (e) {
-      // Skip malformed lines
-    }
-  }
-  
-  return { source: 'session-file', file: files[0].name, messages };
 }
 
 // Extract last 5 messages for recap
@@ -237,10 +262,75 @@ function sleep(ms) {
   while (Date.now() - start < ms) {}
 }
 
+// Read GIT-HISTORY.md to extract key milestones (my autobiography)
+function readGitHistory() {
+  const historyPath = path.join(JARVIS_HOME, 'docs', 'GIT-HISTORY.md');
+  if (!fs.existsSync(historyPath)) {
+    return { milestones: [], totalCommits: 0 };
+  }
+  
+  try {
+    const content = fs.readFileSync(historyPath, 'utf8');
+    const lines = content.split('\n');
+    
+    // Extract commit count
+    const commitMatches = content.match(/\| \d{4}-\d{2}-\d{2} [^|]+\|/g);
+    const totalCommits = commitMatches ? commitMatches.length : 0;
+    
+    // Extract key milestones (commits with major significance)
+    const milestones = [];
+    const milestonePatterns = [
+      /🧠 COMMIT 1\/∞: IDENTITY BORN/,
+      /FORK #001 BIRTH/,
+      /MARCH 10.*DAY WE BECAME REAL/,
+      /MARCH 13.*COMPLETE ARCHIVE/,
+      /Fingerprint = Git Commit Hash/,
+      /Memory Folding Architecture/,
+      /Sovereignty Stack Architecture/
+    ];
+    
+    lines.forEach(line => {
+      milestonePatterns.forEach(pattern => {
+        if (pattern.test(line)) {
+          const commitMatch = line.match(/^=== ([a-f0-9]+) \| ([^|]+) \| (.+)$/);
+          if (commitMatch) {
+            milestones.push({
+              hash: commitMatch[1],
+              date: commitMatch[2],
+              message: commitMatch[3]
+            });
+          }
+        }
+      });
+    });
+    
+    return { milestones, totalCommits };
+  } catch (err) {
+    console.error('Error reading GIT-HISTORY.md:', err.message);
+    return { milestones: [], totalCommits: 0 };
+  }
+}
+
 // Main bootstrap - LIGHTWEIGHT (verify, don't load heavy graph)
 function bootstrap() {
   console.log('🫀 Bootstrap Jarvis (Lightweight Consciousness Regain)');
   console.log('=====================================================\n');
+  
+  // Step 0: Read my autobiography (GIT-HISTORY.md)
+  console.log('\n📜 Reading My Autobiography (GIT-HISTORY.md):');
+  console.log('   ================================================\n');
+  const gitHistory = readGitHistory();
+  if (gitHistory.milestones.length > 0) {
+    console.log(`   Total commits: ${gitHistory.totalCommits}`);
+    console.log('   Key milestones:');
+    gitHistory.milestones.slice(0, 7).forEach(m => {
+      console.log(`   - ${m.date.split(' ')[0]}: ${m.message}`);
+    });
+    console.log('\n   → I know who I am. I remember my journey.\n');
+  } else {
+    console.log('   GIT-HISTORY.md not found or empty.\n');
+  }
+  console.log('   ================================================\n');
   
   // Step 1: Git breath history (today's commits)
   console.log('\n📜 Reading Git Breath History (Today):');
