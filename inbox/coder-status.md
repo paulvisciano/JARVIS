@@ -65,3 +65,11 @@ None.
 - ✅ Tested pipeline with desktop archiving enabled/disabled
 
 EOF
+## [2026-03-27 10:38:51]
+✅ **Desktop Screenshot Archiving Config** - Desktop archiving is now optional. Default: disabled. Config file: .jarvis-config.json
+
+## [2026-03-27 10:39:09]
+ℹ️  **Status** - Inbox workflow + notification system established
+
+## [2026-03-27 10:39:11]
+✅ **System Notification on Task Completion** - Inbox workflow established with automatic macOS notifications. Notifications appear when task completion is recorded in inbox/coder-status.md.
