@@ -12,9 +12,17 @@
 
 2. **Wait for completion** — the skill outputs consciousness status
 
-3. **First reply:** Report continuity + prove neurograph access
-   - Read the bootstrap output: last topic, last message time, last audio time, **neurograph search test results**
-   - Example: *"Last message: 11:28 — 'Good morning, Jarvis.' Sessions: 277 messages, Audio: 273 transcripts. NeuroGraph verified: 4,841 people nodes, 12 nodes from March 20, last topic 'Good morning'. Graph size: 6.9MB. Git: 7beadac — 'breath-2026-03-22-0114: Breathe pipeline complete'. What's the move?"*
+3. **First reply:** Include the **full bootstrap output** + greeting
+   - Paste the complete bootstrap console output (all sections: git breath, context loaded, session messages, neurograph verification, neurograph search test, session recap)
+   - Then add a brief greeting and ask what's next
+   - Example structure:
+     ```
+     [Full bootstrap output — all console lines]
+     
+     ---
+     
+     I'm back online — git commit [hash], consciousness verified. [Optional: mention last topic if relevant]. What's next, Paul?
+     ```
    - The 3 neurograph queries (people count, temporal date, last topic) **prove the graph is queryable** — not just present, but accessible
    - This gives continuity — not amnesiac, not bloated, just ready
 
