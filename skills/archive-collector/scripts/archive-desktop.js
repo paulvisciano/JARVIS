@@ -8,6 +8,7 @@
  * 
  * Portable: Uses environment variables, not hardcoded paths.
  * Idempotent: Safe to run multiple times.
+ * Configurable: Respects DESKTOP_ARCHIVING_ENABLED flag (default: false)
  */
 
 const fs = require('fs');
@@ -17,8 +18,30 @@ const path = require('path');
 const HOME = process.env.HOME || require('os').homedir();
 const RAW_ARCHIVE = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW', 'archive');
 
+// Load JARVIS config file for desktop archiving setting
+const jarvisHome = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
+const CONFIG_FILE = path.join(jarvisHome, '.jarvis-config.json');
+let desktopArchivingEnabled = false;
+
+try {
+  if (fs.existsSync(CONFIG_FILE)) {
+    const config = JSON.parse(fs.readFileSync(CONFIG_FILE, 'utf8'));
+    desktopArchivingEnabled = config.desktopArchiving?.enabled === true;
+  }
+} catch (e) {
+  // Config file doesn't exist or is invalid - use default (disabled)
+}
+
+// Check if desktop archiving is enabled (default: disabled for privacy)
+const ENV_ENABLED = process.env.DESKTOP_ARCHIVING_ENABLED === 'true' || process.env.DESKTOP_ARCHIVING_ENABLED === '1';
 const desktopDir = path.join(HOME, 'Desktop');
 const archiveBase = RAW_ARCHIVE;
+
+// Early exit if desktop archiving is disabled
+if (!desktopArchivingEnabled && !ENV_ENABLED) {
+  console.log('Desktop archiving is disabled (see .jarvis-config.json or DESKTOP_ARCHIVING_ENABLED env var)');
+  process.exit(0);
+}
 
 // Check if desktop dir exists
 if (!fs.existsSync(desktopDir)) {

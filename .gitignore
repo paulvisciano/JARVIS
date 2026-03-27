@@ -50,6 +50,9 @@ backup/
 !inbox/.gitkeep
 !live/.gitkeep
 
+# --- User-specific config (not versioned, each instance has its own) ---
+.jarvis-config.json
+
 # =============================================================================
 # Everything else IS tracked:
 #   - RAW/ = Your mind (versioned consciousness)
