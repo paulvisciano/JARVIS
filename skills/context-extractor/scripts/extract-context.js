@@ -65,7 +65,7 @@ if (IS_ACTIVE_MODE) {
 function extractSessions(sessionsDir, isActiveMode = false) {
   if (!fs.existsSync(sessionsDir)) return [];
   
-  const files = fs.readdirSync(sessionsDir).filter(f => f.endsWith('.jsonl'));
+  const files = fs.readdirSync(sessionsDir).filter(f => f.includes('.jsonl'));
   const sessions = [];
   
   files.forEach(file => {

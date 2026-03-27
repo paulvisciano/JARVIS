@@ -218,8 +218,8 @@ function loadRecentSessionMessages() {
       return timeA.localeCompare(timeB);
     });
     
-    // Get last 20 messages (for internal use)
-    const recentMessages = allMessages.slice(-20).map(m => {
+    // Get all messages (complete gap-bridging)
+    const recentMessages = allMessages.map(m => {
       const text = Array.isArray(m.content) 
         ? m.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
         : (m.content || '');
