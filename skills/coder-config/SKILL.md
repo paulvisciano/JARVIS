@@ -17,7 +17,56 @@
 - **Deploy script** — Copies identity files to agent workspace
 - **Version tracking** — Config version history
 
-## Installation (Two-Step Process)
+## Installation (One-Command for Eric)
+
+### Quick Setup (Eric's Machine)
+```bash
+# One command: pulls latest + registers coder + deploys config + restarts
+node ~/JARVIS/skills/coder-config/scripts/setup-coder-for-eric.js
+```
+
+**What it does:**
+1. Fetches + checks out `paul` branch (JARVIS repo)
+2. Registers `jarvis-coder` agent in `openclaw.json`
+3. Deploys identity files to coder workspace
+4. Fetches + checks out `paul` branch (SCI-FI apps)
+5. Restarts OpenClaw gateway
+
+**Output:**
+```
+🧠 Setting up Coder for Eric...
+
+═══════════════════════════════════════
+📦 Step 1: Get Latest JARVIS (paul branch)
+═══════════════════════════════════════
+✅ JARVIS updated to paul branch
+
+═══════════════════════════════════════
+🔧 Step 2: Register Coder Agent
+═══════════════════════════════════════
+✅ Coder agent registered in openclaw.json
+
+═══════════════════════════════════════
+📋 Step 3: Deploy Coder Config
+═══════════════════════════════════════
+✅ Coder identity deployed to workspace
+
+═══════════════════════════════════════
+🎨 Step 4: Get Latest SCI-FI Apps (paul branch)
+═══════════════════════════════════════
+✅ SCI-FI apps updated to paul branch
+
+═══════════════════════════════════════
+🔄 Step 5: Restart OpenClaw
+═══════════════════════════════════════
+✅ OpenClaw restarting...
+
+✅ Setup Complete!
+```
+
+---
+
+## Manual Installation (Step-by-Step)
 
 ### Step 1: Register Agent in OpenClaw Config
 ```bash
