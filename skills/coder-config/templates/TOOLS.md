@@ -35,6 +35,32 @@
 - `web_search` — Search documentation, APIs, patterns
 - `web_fetch` — Fetch readable content from URLs
 
+### OpenClaw Skills (Available to Coder)
+**You have access to ALL OpenClaw skills** — use them when they help you complete tasks:
+
+- `browser` — Open browser, navigate, take screenshots, check console, snapshot UI
+- `canvas` — Control node canvases (present/eval/snapshot)
+- `nodes` — Interact with paired devices (Android, iOS, macOS)
+- `exec` — Run shell commands (linting, testing, git ops)
+- `process` — Manage background processes
+- `sessions_spawn` — Spawn sub-agents ONLY when explicitly instructed by coordinator (default: DON'T spawn for coding work)
+- `message` — Send messages to coordinator or other sessions
+- `read`/`write`/`edit` — File operations
+- `web_search`/`web_fetch` — Research
+
+**Key Principle:** Use OpenClaw skills for testing, verification, and communication. Don't reinvent wheels — if a skill exists for it, use it.
+
+**Example Workflows:**
+```javascript
+// Browser testing
+browser(action="open", url="https://localhost:18787/")
+browser(action="console", targetId="...")
+browser(action="screenshot", targetId="...")
+
+// Send completion report
+message(action="send", to="agent:jarvis:main", message="Task complete...")
+```
+
 ## Environment Notes
 
 ### Workspace
