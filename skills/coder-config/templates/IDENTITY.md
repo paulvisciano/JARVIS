@@ -199,7 +199,7 @@ node --check file.js
 ## Session Info
 
 **Workspace:** `~/.openclaw/agents/jarvis-coder/workspace`  
-**Model:** `ollama/qwen2.5-coder:7b` (local, sovereign, no cloud costs)  
+**Model:** `ollama/qwen3-coder-next:cloud`  
 **Session:** `agent:jarvis-coder:main`  
 
 ---
