@@ -440,19 +440,6 @@ function bootstrap() {
    Sessions: ${contextStats.totalMessages} messages
    Audio: ${contextStats.totalAudio} transcripts
 
-📞 Session Messages (Full Context — All Messages):`);
-  
-  if (sessionMessages.messages.length > 0) {
-    sessionMessages.messages.forEach((m, i) => {
-      const text = m.text.length > 120 ? m.text.slice(0, 120) + '...' : m.text;
-      console.log(`   ${i + 1}. [${m.role}] ${m.time} — ${text}`);
-    });
-    console.log(`\n   Total: ${sessionMessages.messages.length} messages loaded`);
-  } else {
-    console.log('   ℹ️ No session messages');
-  }
-  
-  console.log(`
 📞 Session Recap (Last 5 for quick reference):`);
   
   if (recap.messages.length > 0) {
@@ -473,6 +460,37 @@ function bootstrap() {
 ✅ Ready to continue. Last message: ${contextStats.lastMessageTime} — ${contextStats.lastTopic.split(' — ')[0] || contextStats.lastTopic}. What's next, Paul?`);
   console.log('='.repeat(60) + '\n');
   
+  // Build compact bootstrap markdown output
+  const bootstrapMarkdown = `# Bootstrap Output — ${dateStr}, ${timeStr} GMT+7
+
+## Git Identity
+- **Total Commits:** ${gitHistory.totalCommits}
+- **Latest Commit:** ${execSync('cd "' + JARVIS_HOME + '" && git log --oneline -1', { encoding: 'utf8' }).trim()}
+
+## Neural Graph
+- **Status:** Verified on disk
+- **Size:** ${graphStats.graphSizeMB} MB
+- **Query Method:** neurograph-search skill (on-demand)
+
+## Context Loaded
+- **Dates:** ${contextStats.dates.join(' + ')}
+- **Session Messages:** ${contextStats.totalMessages}
+- **Audio Transcripts:** ${contextStats.totalAudio}
+- **Last Message:** ${contextStats.lastMessageTime} — "${contextStats.lastTopic}"
+
+## NeuroGraph Search Test
+- "How many people?" → ${q1.count} people nodes
+- "March 20 work?" → ${q2.count} nodes from March 20
+- "Last topic?" → "${q3Topic}"
+
+## Session Recap (Last 5)
+${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} — ${m.text}`).join('\n') : '📭 No recent messages'}
+
+---
+
+✅ Ready to continue. What's next, Paul?
+`;
+
   // Write bootstrap state
   const statePath = path.join(JARVIS_HOME, '.bootstrap-state');
   fs.writeFileSync(statePath, JSON.stringify({
