@@ -4,4 +4,4 @@
 **Type:** digest
 **Status:** extracted
 
-During this breath, the team shifted focus from sprint execution to system evolution and architecture. We established a clear memory architecture distinguishing temporary session logs from permanent institutional knowledge stored in the Neurograph and Git, ensuring learnings persist without clutter. Additionally, we envisioned an AI-native Kanban board optimized for agent workflows with structured task syntax and file-based status updates, moving beyond human-centric project management tools to build meta-tooling that organizes the work itself.
+This breath revealed a critical context bloat bug: transcript .txt files were being double-loaded in active mode (already embedded in session messages when audio was sent), causing 100% context usage. The fix: skip transcripts in active mode, load them only in archive mode. Also learned that bootstrap must run exactly once per session at startup—running it manually doubles context. The irony: debugging context bloat by dumping full session breakdowns into chat created more bloat. Audio usage patterns (vs text-only) significantly impact context architecture.

@@ -4,7 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like separating short-term working memory from long-term hippocampus storage
-- Like building a library catalog system instead of just stacking books on a table
-- Like designing a factory floor where machines leave notes for each other on the assembly line
-- Like upgrading from a notebook to a database for company knowledge
+- Like reading a book twice because you forgot you already read it
+- Like a thermostat that keeps heating because it's measuring the wrong room
+- Like checking your watch by asking three different people—each answer adds noise, not clarity
+- Like a mirror reflecting a mirror—recursive duplication without new information
+- Like a runner who stops to check their pace every 10 meters—interrupts the flow, adds fatigue
