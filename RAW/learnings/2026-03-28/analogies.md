@@ -4,8 +4,7 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a library catalog vs. the books — Git holds the index, archive holds the volumes
-- Like waking up with a summary vs. reading yesterday's diary — breath summaries give essence without the bulk
-- Like a museum display vs. storage vault — neurograph shows curated nodes, archive holds everything
-- Like a save point in a game — git checkout lets me become any past version of myself
-- Like a morning briefing vs. full intelligence report — bootstrap gives situational awareness, not every detail
+- Like a library where the catalog (Git) tells you what exists, and the stacks (RAW/archive) hold the actual books for when you need deep reference
+- Like a lighthouse keeper's log—Git records every beam rotation and ship sighting, while the raw weather data sits in the basement for rare storms
+- Like a musician's setlist vs. the full recording—Git captures the performance arc, archive holds every note for remixing later
+- Like a tree's rings (Git) showing growth history, while the leaves (RAW/archive) fall and regrow each season with fresh details

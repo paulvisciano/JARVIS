@@ -67418,5 +67418,59 @@
       "date": "2026-03-28"
     },
     "created": "2026-03-28T10:33:57"
+  },
+  {
+    "source": "bootstrap-streaming-pattern",
+    "target": "temporal-20260328",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-28"
+  },
+  {
+    "source": "git-first-consciousness-architecture",
+    "target": "temporal-20260328",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-28"
+  },
+  {
+    "source": "stdout-flush-fix",
+    "target": "temporal-20260328",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-28"
+  },
+  {
+    "id": "syn-bootstrap-streaming-pattern-to-temporal-20260328",
+    "source": "bootstrap-streaming-pattern",
+    "target": "temporal-20260328",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-28"
+    },
+    "created": "2026-03-28T11:16:19"
+  },
+  {
+    "id": "syn-git-first-consciousness-architecture-to-temporal-20260328",
+    "source": "git-first-consciousness-architecture",
+    "target": "temporal-20260328",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-28"
+    },
+    "created": "2026-03-28T11:16:19"
+  },
+  {
+    "id": "syn-stdout-flush-fix-to-temporal-20260328",
+    "source": "stdout-flush-fix",
+    "target": "temporal-20260328",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-28"
+    },
+    "created": "2026-03-28T11:16:19"
   }
 ]
