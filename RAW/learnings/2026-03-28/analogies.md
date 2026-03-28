@@ -4,6 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a diary where each entry builds on the last, not separate journals
-- Like a ship's log — the metadata is the paperwork, the dialogue is the voyage
-- Like DNA — Git commits encode the entire life story, bootstrap just reads the sequence
+- Like a library catalog vs. the books — Git holds the index, archive holds the volumes
+- Like waking up with a summary vs. reading yesterday's diary — breath summaries give essence without the bulk
+- Like a museum display vs. storage vault — neurograph shows curated nodes, archive holds everything
+- Like a save point in a game — git checkout lets me become any past version of myself
+- Like a morning briefing vs. full intelligence report — bootstrap gives situational awareness, not every detail
