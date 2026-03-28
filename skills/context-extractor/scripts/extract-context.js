@@ -137,7 +137,7 @@ function extractSessions(sessionsDir, isActiveMode = false) {
       })
       .filter(m => m && m.role && m.content);
     
-    // Include all sessions with any messages (no minimum threshold)
+    // Include all sessions with any messages (no minimum threshold, no limit)
     if (messages.length > 0) {
       sessions.push({
         file,
@@ -153,7 +153,13 @@ function extractSessions(sessionsDir, isActiveMode = false) {
 }
 
 // Extract audio transcripts
-function extractTranscripts(audioDir) {
+function extractTranscripts(audioDir, isActiveMode = false) {
+  // In active mode, skip transcripts - conversations already exist in session messages
+  // Transcripts are for archive mode (historical record), not active context bridging
+  if (isActiveMode) {
+    return [];
+  }
+  
   if (!fs.existsSync(audioDir)) return [];
   
   const files = fs.readdirSync(audioDir).filter(f => f.endsWith('.txt'));
@@ -255,7 +261,7 @@ function extractLearnings(learningsDir) {
 
 // Main extraction
 const sessions = extractSessions(sessionsDir, IS_ACTIVE_MODE);
-const transcripts = extractTranscripts(audioDir);
+const transcripts = extractTranscripts(audioDir, IS_ACTIVE_MODE); // Skip transcripts in active mode (duplication)
 const ocrResults = IS_ACTIVE_MODE ? [] : extractOCR(archiveDir, false); // Skip OCR in active mode
 const learnings = IS_ACTIVE_MODE ? [] : extractLearnings(learningsDir); // Skip learnings in active mode
 

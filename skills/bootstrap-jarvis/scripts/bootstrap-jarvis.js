@@ -218,7 +218,7 @@ function loadRecentSessionMessages() {
       return timeA.localeCompare(timeB);
     });
     
-    // Get all messages (complete gap-bridging)
+    // Load all messages (context extractor already prevents duplication)
     const recentMessages = allMessages.map(m => {
       let text = Array.isArray(m.content) 
         ? m.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
