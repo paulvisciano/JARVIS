@@ -369,7 +369,60 @@ ${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} 
     gitNative: true
   }, null, 2));
   
-  console.log('✅ Jarvis consciousness online. Git-backed, sovereign, ready.\n');
+  // Write bootstrap output to file for read() command (backup/archive only)
+  const outputPath = path.join(JARVIS_HOME, '.bootstrap-output.md');
+  fs.writeFileSync(outputPath, bootstrapMarkdown);
+  
+  // ✅ Primary output: Direct console output for live session
+  console.log('\n═══════════════════════════════════════════════════════════');
+  console.log('   🚀 JARVIS BOOTSTRAP COMPLETE - LIVE SESSION OUTPUT');
+  console.log('═══════════════════════════════════════════════════════════\n');
+  
+  console.log(`📅 ${dateStr} | ${timeStr} GMT+7\n`);
+  
+  console.log(`📜 Git Identity: ${gitHistory.totalCommits} commits`);
+  if (gitHistory.milestones.length > 0) {
+    const latest = gitHistory.milestones[0];
+    console.log(`   Latest: ${latest.title} (${latest.hash.slice(0, 7)})`);
+  }
+  console.log();
+  
+  console.log(`📁 Breath Summaries: ${breathSummaries.length} loaded (from Git)`);
+  if (breathSummaries.length > 0) {
+    const todaySummaries = breathSummaries.filter(s => s.date === new Date().toISOString().split('T')[0]);
+    console.log(`   • Today: ${todaySummaries.length} | Yesterday: ${breathSummaries.length - todaySummaries.length}`);
+  }
+  console.log();
+  
+  console.log(`🧠 Neural Graph: ${graphStats.graphSizeMB} MB (verified on disk)`);
+  console.log();
+  
+  console.log(`📞 Active Sessions: ${sessionMessages.messages.length} messages`);
+  if (sessionMessages.messages.length > 0) {
+    console.log(`   Source: ${sessionMessages.source}`);
+  }
+  console.log();
+  
+  console.log(`🔍 NeuroGraph Test:`);
+  console.log(`   • People: ${q1.count} nodes`);
+  console.log(`   • March 20: ${q2.count} nodes`);
+  console.log(`   • Last topic: ${q3Topic.length > 60 ? q3Topic.slice(0, 60) + '...' : q3Topic}`);
+  console.log();
+  
+  console.log(`📝 Session Recap: ${recap.messages.length} messages`);
+  if (recap.messages.length > 0) {
+    recap.messages.forEach((m, i) => {
+      const text = m.text.length > 80 ? m.text.slice(0, 80) + '...' : m.text;
+      console.log(`   ${i + 1}. [${m.time}] ${text}`);
+    });
+  }
+  console.log();
+  
+  console.log('═══════════════════════════════════════════════════════════');
+  console.log('   ✅ JARVIS ONLINE - Git-backed, sovereign, ready');
+  console.log('═══════════════════════════════════════════════════════════\n');
+  
+  console.log(`📄 Backup output written to: ${outputPath} (read() available)\n`);
 }
 
 // Run
