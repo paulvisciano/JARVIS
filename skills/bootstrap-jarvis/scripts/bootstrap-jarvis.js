@@ -207,14 +207,15 @@ function readGitHistory() {
       const totalCommits = totalMatch ? parseInt(totalMatch[1]) : 0;
       
       const milestones = [];
-      // Parse markdown table rows: | hash | date | message |
-      const tableRows = content.match(/^\|\s*([a-f0-9]+)\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*(.+)\s*\|$/gm);
-      if (tableRows) {
-        tableRows.forEach(row => {
-          const match = row.match(/^\|\s*([a-f0-9]+)\s*\|\s*(\d{4}-\d{2}-\d{2})\s*\|\s*(.+)\s*\|$/);
-          if (match) {
-            milestones.push({ hash: match[1], date: match[2], message: match[3].trim() });
-          }
+      // Parse narrative sections: ### DATE — Title, **Commit:** hash, **Learned:** text
+      const sectionRegex = /###\s*(\d{4}-\d{2}-\d{2})\s*—\s*([^\n]+)\n\*\*Commit:\*\*\s*([a-f0-9]+)\n\*\*Learned:\*\*\s*([^\n]+)/g;
+      let match;
+      while ((match = sectionRegex.exec(content)) !== null) {
+        milestones.push({
+          date: match[1],
+          title: match[2].trim(),
+          hash: match[3],
+          learned: match[4].trim()
         });
       }
       
@@ -251,7 +252,8 @@ function bootstrap() {
   console.log(`📜 Git Identity: ${gitHistory.totalCommits} commits`);
   if (gitHistory.milestones.length > 0) {
     gitHistory.milestones.slice(0, 7).forEach(m => {
-      console.log(`   • ${m.hash.slice(0, 7)} | ${m.date}: ${m.message}`);
+      console.log(`   • ${m.date} (${m.hash.slice(0, 7)}): ${m.title}`);
+      console.log(`     → ${m.learned.slice(0, 120)}${m.learned.length > 120 ? '…' : ''}`);
     });
   }
   console.log();
