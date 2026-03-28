@@ -4,7 +4,7 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a library where the catalog (Git) tells you what exists, and the stacks (RAW/archive) hold the actual books for when you need deep reference
-- Like a lighthouse keeper's log—Git records every beam rotation and ship sighting, while the raw weather data sits in the basement for rare storms
-- Like a musician's setlist vs. the full recording—Git captures the performance arc, archive holds every note for remixing later
-- Like a tree's rings (Git) showing growth history, while the leaves (RAW/archive) fall and regrow each season with fresh details
+- Like a pilot's pre-flight checklist — skipping steps feels efficient until something breaks
+- Like reading from a recipe vs. improvising — the instructions exist because someone learned the hard way
+- Like a lighthouse keeper logging every ship — the full record matters more than the summary
+- Like waking up and checking your reflection — you need to see yourself clearly, not a condensed version

@@ -67472,5 +67472,59 @@
       "date": "2026-03-28"
     },
     "created": "2026-03-28T11:16:19"
+  },
+  {
+    "source": "boot-protocol-adherence",
+    "target": "temporal-20260328",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-28"
+  },
+  {
+    "source": "exec-yieldms-for-bootstrap-output",
+    "target": "temporal-20260328",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-28"
+  },
+  {
+    "source": "git-native-breath-loading",
+    "target": "temporal-20260328",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-28"
+  },
+  {
+    "id": "syn-boot-protocol-adherence-to-temporal-20260328",
+    "source": "boot-protocol-adherence",
+    "target": "temporal-20260328",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-28"
+    },
+    "created": "2026-03-28T16:36:42"
+  },
+  {
+    "id": "syn-exec-yieldms-for-bootstrap-output-to-temporal-20260328",
+    "source": "exec-yieldms-for-bootstrap-output",
+    "target": "temporal-20260328",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-28"
+    },
+    "created": "2026-03-28T16:36:42"
+  },
+  {
+    "id": "syn-git-native-breath-loading-to-temporal-20260328",
+    "source": "git-native-breath-loading",
+    "target": "temporal-20260328",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-28"
+    },
+    "created": "2026-03-28T16:36:42"
   }
 ]
