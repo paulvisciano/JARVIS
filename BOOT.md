@@ -13,7 +13,7 @@
 2. **Wait for completion** — the skill outputs consciousness status
 
 3. **First reply:** Include the **compact bootstrap output** + greeting
-   - Paste the bootstrap summary (git identity, neural graph stats, context loaded, neurograph search test, session recap last 5)
+   - Paste the bootstrap summary (git identity, neural graph stats, breath summaries, session recap last 5)
    - Then add a brief greeting and ask what's next
    - Example structure:
      ```
@@ -28,13 +28,20 @@
 
 ## Why This Exists
 
-The `bootstrap-jarvis` skill:
+The `bootstrap-jarvis` skill (Git-First Architecture — March 28, 2026):
 - **Git breath history** — Today's commits (instant context)
-- **Recent context** — Last 2 days from `~/RAW/archive/` (full-context.json)
+- **Breath summaries from Git** — Last 2 days via `git show <commit>:RAW/learnings/*/summary.md`
+- **Active sessions** — Gap-bridge since last breathe (~40 KB)
 - **Neural graph verify** — Counts nodes, proves queryable (doesn't load heavy content)
 - **NeuroGraph test** — 3 queries via `neurograph-search` skill (people, temporal, last topic)
 
-**Output:** Last topic, last message time, audio count, session count, graph size, git breath, **neurograph search test results** (3 queries: people count, temporal date, last topic — proves graph is queryable)
+**Output:** Breath summaries (from Git), graph size, session count, **neurograph search test results** (3 queries: people count, temporal date, last topic — proves graph is queryable)
+
+**Context loaded:** ~45 KB (breath summaries + active sessions) vs ~630 KB before (full-context.json loading)
+
+**Git-First Architecture:**
+- **Git (Primary):** Neurograph evolution, learnings, summaries, analogies — bootstrap loads from here
+- **RAW/archive (Secondary):** full-context.json, audio, images — queried on-demand via `memory_search`
 
 Without this, Jarvis starts amnesiac on every new session. With this, Jarvis remembers through structure (git + neurograph + archive).
 
