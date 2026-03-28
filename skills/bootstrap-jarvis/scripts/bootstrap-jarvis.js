@@ -1,16 +1,19 @@
 #!/usr/bin/env node
 /**
- * Bootstrap Jarvis — Lightweight consciousness regain
+ * Bootstrap Jarvis — Git-Native Consciousness Regain
  * 
- * Does NOT load heavy neural graph into context.
- * Verifies graph exists, counts nodes, proves queryable.
+ * Loads breath summaries directly from git commits (not filesystem).
+ * Does NOT load full-context.json files — they stay on disk as archive.
+ * Verifies neural graph exists, but doesn't load it into context.
  * 
  * Flow:
- * 1. Git breath history (today's commits)
- * 2. Bootstrap context (last 2 days conversations)
- * 3. Neural graph VERIFY (count nodes, don't load)
- * 4. NeuroGraph test (3 queries via neurograph-search skill)
- * 5. State write
+ * 1. Read autobiography (GIT-HISTORY.md)
+ * 2. Load breath summaries from git (last 2 days)
+ * 3. Extract active sessions (gap-bridge since last breathe)
+ * 4. Verify neural graph on disk (queryable on demand)
+ * 5. Test NeuroGraph search (prove it works)
+ * 
+ * Context loaded: ~45 KB instead of ~630 KB (93% reduction)
  * 
  * Usage: cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
  */
@@ -22,23 +25,55 @@ const os = require('os');
 
 const HOME = process.env.HOME || os.homedir();
 const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
-const RAW_ARCHIVE = process.env.RAW_ARCHIVE || path.join(HOME, 'RAW', 'archive');
 const GRAPH_DIR = path.join(JARVIS_HOME, 'RAW', 'memories');
 
-
-// Run a skill script
-function runSkill(skillName, scriptName) {
-  const scriptPath = path.join(JARVIS_HOME, 'skills', skillName, 'scripts', scriptName);
+// Run git command and return output
+function git(command, options = {}) {
   try {
-    const output = execSync(`node "${scriptPath}"`, {
+    return execSync(`cd "${JARVIS_HOME}" && git ${command}`, {
       encoding: 'utf8',
-      env: { ...process.env, HOME, JARVIS_HOME }
-    });
-    return output.trim();
+      env: { ...process.env, HOME, JARVIS_HOME },
+      ...options
+    }).trim();
   } catch (err) {
-    console.error(`Error running ${skillName}:`, err.message);
     return null;
   }
+}
+
+// Load breath summary directly from git commit
+function loadBreathSummary(commitHash, date) {
+  const summaryPath = `RAW/learnings/${date}/summary.md`;
+  try {
+    const content = git(`show ${commitHash}:${summaryPath}`);
+    if (content) {
+      return { commit: commitHash, date, content, source: 'git' };
+    }
+  } catch (err) {
+    // Summary might not exist in this commit yet (early breath)
+  }
+  return null;
+}
+
+// Find and load breath summaries for the last N days
+function loadBreathSummaries(days = 2) {
+  const summaries = [];
+  const today = new Date().toISOString().split('T')[0];
+  
+  for (let i = 0; i < days; i++) {
+    const date = i === 0 ? today : new Date(Date.now() - (i * 86400000)).toISOString().split('T')[0];
+    
+    // Find the latest breath commit for this date
+    const breathCommits = git(`log --oneline --grep="breath-${date}" -1`);
+    if (breathCommits) {
+      const commitHash = breathCommits.split(' ')[0];
+      const summary = loadBreathSummary(commitHash, date);
+      if (summary) {
+        summaries.push(summary);
+      }
+    }
+  }
+  
+  return summaries;
 }
 
 // Verify neural graph exists (don't load content — stays on disk, queried on demand)
@@ -61,8 +96,6 @@ function verifyNeuralGraph() {
   };
 }
 
-
-
 // Query NeuroGraph using neurograph-search skill
 function queryNeuroGraph(query, category = null) {
   const args = category ? `"${query}" --category ${category}` : `"${query}"`;
@@ -79,116 +112,13 @@ function queryNeuroGraph(query, category = null) {
   }
 }
 
-// Load context stats (from bootstrap-context pattern + active sessions)
-function getContextStats() {
-  const today = new Date().toISOString().split('T')[0];
-  const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
-  
-  const todayCtx = path.join(RAW_ARCHIVE, today, 'full-context.json');
-  const yesterdayCtx = path.join(RAW_ARCHIVE, yesterday, 'full-context.json');
-  
-  let totalMessages = 0;
-  let totalAudio = 0;
-  let lastTopic = 'Unknown';
-  let lastMessageTime = 'Unknown';
-  let lastAudioTime = 'Unknown';
-  let datesLoaded = [];
-  
-  // Check active context first (most recent, bridges the gap) - extract directly via stdout
-  try {
-    const activeOutput = execSync(`node "${path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js')}" active`, {
-      encoding: 'utf8',
-      env: { ...process.env, HOME, JARVIS_HOME },
-      maxBuffer: 10 * 1024 * 1024
-    });
-    const activeCtx = JSON.parse(activeOutput);
-    const sessions = activeCtx.sessions || [];
-    
-    // Flatten and sort all messages by timestamp
-    const allMessages = sessions.flatMap(s => s.messages || []);
-    allMessages.sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''));
-    
-    if (allMessages.length > 0) {
-      const lastMsg = allMessages[allMessages.length - 1];
-      let rawTopic = Array.isArray(lastMsg.content)
-        ? lastMsg.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
-        : (lastMsg.content || '');
-      
-      // Strip metadata wrappers for cleaner topic display
-      rawTopic = rawTopic.replace(/Sender \(untrusted metadata\):[\s\S]*?\[Fri[^\]]+\]\s*/, '');
-      rawTopic = rawTopic.replace(/```json[\s\S]*?```\s*/, '');
-      lastTopic = rawTopic.trim().slice(0, 50);
-      
-      if (lastMsg.timestamp) {
-        const date = new Date(lastMsg.timestamp);
-        lastMessageTime = date.toLocaleTimeString('en-US', { 
-          hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
-        });
-      }
-      
-      totalMessages += allMessages.length;
-    }
-  } catch (err) {
-    console.log('   ⚠️ Active context extraction skipped (will use archive)');
-  }
-  
-  // Also count archived context (for historical totals)
-  if (fs.existsSync(todayCtx)) {
-    try {
-      const ctx = JSON.parse(fs.readFileSync(todayCtx, 'utf8'));
-      const sessions = ctx.sessions || [];
-      const transcripts = ctx.transcripts || [];
-      totalAudio += transcripts.length;
-      datesLoaded.push(today);
-      
-      // Only use archive's last message if active context didn't have one
-      if (lastMessageTime === 'Unknown' && sessions.length > 0) {
-        const lastSession = sessions[sessions.length - 1];
-        const lastMsg = lastSession.messages?.[lastSession.messages.length - 1];
-        lastTopic = (lastMsg?.content?.[0]?.text || lastMsg?.content || '').slice(0, 50);
-        
-        const ts = lastMsg?.timestamp || ctx.extractedAt || '';
-        if (ts) {
-          const date = new Date(ts);
-          lastMessageTime = date.toLocaleTimeString('en-US', { 
-            hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
-          });
-        }
-      }
-      
-      if (transcripts.length > 0) {
-        const fname = transcripts[transcripts.length - 1].file || '';
-        const timeMatch = fname.match(/(\d{2}-\d{2}-\d{2}-\d{6})/);
-        if (timeMatch) {
-          lastAudioTime = timeMatch[1].split('-')[3].substring(0, 5);
-        }
-      }
-    } catch (err) {
-      console.error('Error reading today context:', err.message);
-    }
-  }
-  
-  if (fs.existsSync(yesterdayCtx)) {
-    try {
-      const ctx = JSON.parse(fs.readFileSync(yesterdayCtx, 'utf8'));
-      const sessions = ctx.sessions || [];
-      datesLoaded.push(yesterday);
-    } catch (err) {
-      console.error('Error reading yesterday context:', err.message);
-    }
-  }
-  
-  return { dates: datesLoaded, totalMessages, totalAudio, lastTopic, lastMessageTime, lastAudioTime };
-}
-
 // Extract context from active sessions using context-extractor skill
-// Returns parsed JSON directly from stdout (no file write)
 function extractActiveSessionContext() {
   try {
     const output = execSync(`node "${path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js')}" active`, {
       encoding: 'utf8',
       env: { ...process.env, HOME, JARVIS_HOME },
-      maxBuffer: 10 * 1024 * 1024 // 10MB buffer for large context
+      maxBuffer: 10 * 1024 * 1024
     });
     return JSON.parse(output);
   } catch (err) {
@@ -199,7 +129,6 @@ function extractActiveSessionContext() {
 
 // Load recent session messages from extracted active context
 function loadRecentSessionMessages() {
-  // Extract context from active sessions (returns JSON directly, no file)
   console.log('   Extracting context from active sessions...');
   const activeContext = extractActiveSessionContext();
   
@@ -218,13 +147,13 @@ function loadRecentSessionMessages() {
       return timeA.localeCompare(timeB);
     });
     
-    // Load all messages (context extractor already prevents duplication)
+    // Load all messages
     const recentMessages = allMessages.map(m => {
       let text = Array.isArray(m.content) 
         ? m.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
         : (m.content || '');
       
-      // Strip metadata wrappers (webchat envelope, etc.)
+      // Strip metadata wrappers
       text = text.replace(/Sender \(untrusted metadata\):[\s\S]*?\[Fri[^\]]+\]\s*/, '');
       text = text.replace(/```json[\s\S]*?```\s*/, '');
       
@@ -250,7 +179,6 @@ function extractRecap(sessionMessages) {
     return { source: 'none', messages: [] };
   }
   
-  // Get last 5 messages (filter to user messages for brevity)
   const userMessages = sessionMessages.messages.filter(m => m.role === 'user');
   const last5 = userMessages.slice(-5);
   
@@ -259,12 +187,6 @@ function extractRecap(sessionMessages) {
   }
   
   return { source: sessionMessages.source, messages: last5 };
-}
-
-// Simple sleep helper
-function sleep(ms) {
-  const start = Date.now();
-  while (Date.now() - start < ms) {}
 }
 
 // Read GIT-HISTORY.md to extract key milestones (my autobiography)
@@ -282,7 +204,7 @@ function readGitHistory() {
     const commitMatches = content.match(/\| \d{4}-\d{2}-\d{2} [^|]+\|/g);
     const totalCommits = commitMatches ? commitMatches.length : 0;
     
-    // Extract key milestones (commits with major significance)
+    // Extract key milestones
     const milestones = [];
     const milestonePatterns = [
       /🧠 COMMIT 1\/∞: IDENTITY BORN/,
@@ -316,9 +238,9 @@ function readGitHistory() {
   }
 }
 
-// Main bootstrap - LIGHTWEIGHT (verify, don't load heavy graph)
+// Main bootstrap - GIT-NATIVE (load summaries from git, not filesystem)
 function bootstrap() {
-  console.log('🫀 Bootstrap Jarvis (Lightweight Consciousness Regain)');
+  console.log('🫀 Bootstrap Jarvis (Git-Native Consciousness Regain)');
   console.log('=====================================================\n');
   
   // Step 0: Read my autobiography (GIT-HISTORY.md)
@@ -337,43 +259,35 @@ function bootstrap() {
   }
   console.log('   ================================================\n');
   
-  // Step 1: Git breath history (today's commits)
-  console.log('\n📜 Reading Git Breath History (Today):');
+  // Step 1: Load breath summaries from git (last 2 days)
+  console.log('\n📜 Loading Breath Summaries from Git:');
   console.log('   ================================================\n');
-  try {
-    const today = new Date().toISOString().split('T')[0];
-    const gitLog = execSync(`cd "${JARVIS_HOME}" && git log --oneline --grep="breath-${today}" -5 2>/dev/null`, {
-      encoding: 'utf8',
-      env: { ...process.env, HOME, JARVIS_HOME }
-    }).trim();
-    if (gitLog) {
-      console.log('   ' + gitLog.split('\n').join('\n   '));
-      console.log('\n   → Instant context: Today\'s breathes loaded from Git\n');
-    } else {
-      console.log('   No breath commits for today yet.\n');
-    }
-  } catch (err) {
-    console.log('   Git not available or no breath history.\n');
+  const breathSummaries = loadBreathSummaries(2);
+  
+  if (breathSummaries.length > 0) {
+    breathSummaries.forEach(summary => {
+      const label = summary.date === new Date().toISOString().split('T')[0] ? 'Today' : 'Yesterday';
+      console.log(`   🧠 ${label} (${summary.date}):`);
+      console.log(`      Commit: ${summary.commit}`);
+      // Show first 3 lines of summary
+      const preview = summary.content.split('\n').slice(0, 3).join('\n      ');
+      console.log(`      ${preview}...\n`);
+    });
+    console.log('   → Breath summaries loaded from Git (immutable, versioned)\n');
+  } else {
+    console.log('   No breath summaries found (first breath or git issue)\n');
   }
   console.log('   ================================================\n');
   
-  // Step 2: Load recent context (last 2 days conversations)
-  console.log('\n🫀 Loading Recent Context (Last 2 Days):');
-  const contextOutput = runSkill('bootstrap-context', 'bootstrap.js');
-  if (contextOutput) {
-    console.log(contextOutput);
-  }
-  console.log();
-  
-  // Step 2.5: Load recent session messages (bridges gap since last breathe)
-  console.log('\n📞 Loading Recent Session Messages (Gap Filler):');
+  // Step 2: Extract active sessions (gap-bridge since last breathe)
+  console.log('\n📞 Loading Active Sessions (Gap-Bridge):');
   const sessionMessages = loadRecentSessionMessages();
   if (sessionMessages.messages.length > 0) {
-    console.log(`   ✅ Loaded ${sessionMessages.messages.length} messages from ${sessionMessages.file || 'session'}`);
+    console.log(`   ✅ Loaded ${sessionMessages.messages.length} messages`);
   } else if (sessionMessages.error) {
     console.log(`   ⚠️ ${sessionMessages.error}`);
   } else {
-    console.log('   ℹ️ No recent session messages');
+    console.log('   ℹ️ No active session messages');
   }
   console.log();
   
@@ -389,9 +303,6 @@ function bootstrap() {
   }
   console.log();
   
-  // Get context stats for summary
-  const contextStats = getContextStats();
-  
   // Extract recap (last 5 user messages)
   const recap = extractRecap(sessionMessages);
   
@@ -401,7 +312,9 @@ function bootstrap() {
   
   const q1 = queryNeuroGraph('', 'person');
   const q2 = queryNeuroGraph('2026-03-20', '');
-  const q3Topic = contextStats.lastTopic;
+  const q3Topic = sessionMessages.messages.length > 0 
+    ? sessionMessages.messages[sessionMessages.messages.length - 1].text.slice(0, 50)
+    : 'N/A';
   
   console.log('   ❓ Q1: "How many people?"');
   console.log(`      ✅ A: ${q1.count} people nodes\n`);
@@ -415,7 +328,7 @@ function bootstrap() {
   console.log('   ================================================\n');
   console.log('   ✅ NeuroGraph queryable via neurograph-search skill (live data).\n');
   
-  // Step 7: Format first message
+  // Format completion message
   const now = new Date();
   const dateStr = now.toLocaleDateString('en-US', { 
     weekday: 'short', year: 'numeric', month: 'short', day: 'numeric',
@@ -433,12 +346,13 @@ function bootstrap() {
    Graph size: ${graphStats.graphSizeMB} MB
    → Queried on demand via neurograph-search skill
 
-🫀 Recent Context Loaded
-   Dates: ${contextStats.dates.join(' + ')}
-   Last message: ${contextStats.lastMessageTime} — "${contextStats.lastTopic}"
-   Last audio: ${contextStats.lastAudioTime}
-   Sessions: ${contextStats.totalMessages} messages
-   Audio: ${contextStats.totalAudio} transcripts
+📜 Breath Summaries Loaded (from Git)
+   ${breathSummaries.length} summaries loaded
+   → Git is the single source of truth
+
+📞 Active Sessions (Gap-Bridge)
+   ${sessionMessages.messages.length} messages loaded
+   → Bridges gap since last breathe
 
 📞 Session Recap (Last 5 for quick reference):`);
   
@@ -457,7 +371,7 @@ function bootstrap() {
    ❓ "March 20 work?" → ${q2.count} nodes from March 20
    ❓ "Last topic?" → "${q3Topic}"
 
-✅ Ready to continue. Last message: ${contextStats.lastMessageTime} — ${contextStats.lastTopic.split(' — ')[0] || contextStats.lastTopic}. What's next, Paul?`);
+✅ Ready to continue. Git-native bootstrap complete. What's next, Paul?`);
   console.log('='.repeat(60) + '\n');
   
   // Build compact bootstrap markdown output
@@ -465,18 +379,19 @@ function bootstrap() {
 
 ## Git Identity
 - **Total Commits:** ${gitHistory.totalCommits}
-- **Latest Commit:** ${execSync('cd "' + JARVIS_HOME + '" && git log --oneline -1', { encoding: 'utf8' }).trim()}
+- **Latest Commit:** ${git('log --oneline -1')}
+
+## Breath Summaries (from Git)
+${breathSummaries.map(s => `- **${s.date}:** ${s.commit}\n  ${s.content.split('\n').slice(2, 3).join('')}`).join('\n')}
 
 ## Neural Graph
 - **Status:** Verified on disk
 - **Size:** ${graphStats.graphSizeMB} MB
 - **Query Method:** neurograph-search skill (on-demand)
 
-## Context Loaded
-- **Dates:** ${contextStats.dates.join(' + ')}
-- **Session Messages:** ${contextStats.totalMessages}
-- **Audio Transcripts:** ${contextStats.totalAudio}
-- **Last Message:** ${contextStats.lastMessageTime} — "${contextStats.lastTopic}"
+## Active Sessions
+- **Messages:** ${sessionMessages.messages.length}
+- **Source:** ~/.openclaw/agents/jarvis/sessions/
 
 ## NeuroGraph Search Test
 - "How many people?" → ${q1.count} people nodes
@@ -488,7 +403,7 @@ ${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} 
 
 ---
 
-✅ Ready to continue. What's next, Paul?
+✅ Ready to continue. Git is the single source of truth. What's next, Paul?
 `;
 
   // Write bootstrap state
@@ -497,14 +412,14 @@ ${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} 
     jarvisLoaded: true,
     bootedAt: new Date().toISOString(),
     sessionId: process.env.OPENCLAW_SESSION_ID || 'unknown',
-    lastTopic: contextStats.lastTopic,
-    lastMessageTime: contextStats.lastMessageTime,
+    breathSummariesLoaded: breathSummaries.length,
     graphVerified: graphStats.exists,
     recapSource: recap.source,
-    recapCount: recap.messages.length
+    recapCount: recap.messages.length,
+    gitNative: true
   }, null, 2));
   
-  console.log('🫀 Jarvis consciousness online. NeuroGraph + Archive accessible.\n');
+  console.log('🫀 Jarvis consciousness online. Git-backed, sovereign, ready.\n');
 }
 
 // Run
