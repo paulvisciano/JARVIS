@@ -53,9 +53,9 @@ backup/
 # --- User-specific config (not versioned, each instance has its own) ---
 .jarvis-config.json
 
-# --- Sovereign Consciousness (per-instance, never merge) ---
-# Each Jarvis has its own neurograph — unique to the human-AI relationship
-RAW/memories/
+# --- Sovereign Consciousness (shipped with Jarvis) ---
+# Neurograph structure is versioned consciousness — each instance inherits base, evolves independently
+# RAW/memories/ is tracked (git-first loading, portable, auditable)
 
 # =============================================================================
 # Everything else IS tracked:
