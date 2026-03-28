@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like reading a book twice because you forgot you already read it
-- Like a thermostat that keeps heating because it's measuring the wrong room
-- Like checking your watch by asking three different people—each answer adds noise, not clarity
-- Like a mirror reflecting a mirror—recursive duplication without new information
-- Like a runner who stops to check their pace every 10 meters—interrupts the flow, adds fatigue
+- Like a hotel checkout — archive everything from the room except the master key and do-not-disturb sign
+- Like taking vitamins once daily — bootstrap is session initialization, not something you repeat for extra benefit
+- Like a film director's cut vs. theatrical release — session files have all the raw footage, full-context is the polished movie
+- Like a ship's log vs. captain's journal — one records every operation, the other captures the journey narrative
+- Like unpacking groceries — you don't keep the cardboard boxes (tool metadata) in your fridge (context)
