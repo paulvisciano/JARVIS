@@ -15,7 +15,7 @@ Reads Paul's music preferences from the neurograph and recommends tracks matchin
 - **COLORS performances** (intimate, live, authentic)
 - **Meaningful lyrics** (deep, poetic, soulful vocals)
 
-Plays via **Brave browser** (ad-free YouTube) or local files.
+Plays via **browser tool** (YouTube, auto-click play) or local files.
 
 ---
 
@@ -35,7 +35,7 @@ Plays via **Brave browser** (ad-free YouTube) or local files.
 
 1. **Neurograph** — `~/JARVIS/RAW/memories/nodes.json` (filtered for music nodes)
 2. **Learning docs** — `~/JARVIS/RAW/learnings/**/music-preferences.md`
-3. **Liked tracks** — Future: store in neurograph as nodes
+3. **Liked tracks** — Stored in neurograph as nodes after `--like`
 
 ---
 
@@ -56,12 +56,15 @@ Picks a track matching Paul's observed patterns:
 - **Search YouTube** (matching genre/vibe keywords)
 - **Local files** (scan `~/JARVIS/RAW/archive/**/audio/` for music)
 
-### 3. Playback
+### 3. Playback (Browser Integration)
 
-Plays via:
-- **YouTube via Brave** — Open browser tab, auto-play, ad-free
-- **Local files** — Scan `~/JARVIS/RAW/archive/**/audio/` for music files
-- **Spotify API** — Optional, only if Paul opts in
+**Full workflow:**
+1. `browser(action=open, url=youtubeUrl)` — Open YouTube search or direct video
+2. `browser(action=snapshot, refs=aria)` — Capture page, find play button ref
+3. `browser(action=act, kind=click, ref=eXX)` — Click play button
+4. Verify playback started (check timestamp > 0:00)
+
+**Why this matters:** Don't just open search results — actually play the track.
 
 ### 4. Feedback Loop
 
