@@ -131,9 +131,9 @@ Neurograph: ${neurographStat}
 
 What does this work reveal?`;
 
-  // Post to jarvis:main session via sessions_send
+  // Post to current chat channel via message send
   try {
-    execSync(`openclaw sessions send --label jarvis:main --message "${chatMessage.replace(/"/g, '\\"')}"`, {
+    execSync(`openclaw message send --message "${chatMessage.replace(/"/g, '\\"')}"`, {
       cwd: jarvisHome,
       encoding: 'utf-8',
       stdio: 'pipe'
