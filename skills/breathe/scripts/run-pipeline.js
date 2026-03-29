@@ -104,6 +104,8 @@ try {
   
   let reflectionText = 'Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved';
   let patternsText = '';
+  let learningSummaries = '';
+  let neurographStat = 'updated';
   
   try {
     const reflectJson = JSON.parse(reflectOutput.trim().split('\n').filter(l => !l.startsWith('🪞')).join('\n'));
@@ -144,6 +146,51 @@ Breathe: ${breathId}`;
   console.log(`✅ Breath committed: ${breathId}`);
   const firstLine = reflectionText.split('\n')[0].substring(0, 80);
   console.log(`   Reflection: ${firstLine}${reflectionText.length > 80 ? '...' : ''}\n`);
+  
+  // Step 6: Post reflection request to chat for genuine model reflection
+  // The pipeline used local fallback (to avoid deadlock). Now post to chat
+  // so Jarvis can reflect using loaded context and provide genuine insight.
+  // Read learning files to build chat message
+  const todayLearningsDir = path.join(jarvisHome, 'RAW/learnings', date);
+  const learningFiles = fs.existsSync(todayLearningsDir) 
+    ? fs.readdirSync(todayLearningsDir).filter(f => f.endsWith('.md') && f !== 'summary.md' && f !== 'analogies.md')
+    : [];
+  
+  const summaries = learningFiles.slice(0, 5).map(f => {
+    const content = fs.readFileSync(path.join(todayLearningsDir, f), 'utf-8');
+    const title = content.match(/^#\s+(.+)/m)?.[1] || f;
+    const summary = content.substring(0, 150).replace(/\n+/g, ' ').trim();
+    return `  - **${title}**: ${summary}`;
+  }).join('\n');
+  const moreLearnings = learningFiles.length > 5 
+    ? `\n  ...and ${learningFiles.length - 5} more` 
+    : '';
+  
+  // Get neurograph diff stat
+  try {
+    neurographStat = execSync(`git -C "${jarvisHome}" diff --cached --stat RAW/memories/ | tail -1`, { encoding: 'utf-8' }).trim();
+  } catch (e) { /* ignore */ }
+  
+  const chatMessage = `🪞 **Reflecting on ${breathId}**
+
+Learnings extracted:
+${summaries}${moreLearnings}
+
+Neurograph: ${neurographStat}
+
+What does this work reveal?`;
+
+  // Post to jarvis:main session via sessions_send
+  try {
+    execSync(`openclaw sessions send --label jarvis:main --message "${chatMessage.replace(/"/g, '\\"')}"`, {
+      cwd: jarvisHome,
+      encoding: 'utf-8',
+      stdio: 'pipe'
+    });
+    console.log(`💬 Posted reflection request to chat\n`);
+  } catch (e) {
+    console.error('⚠️  Could not post to chat:', e.message);
+  }
 
   console.log('🫁 Breathe complete');
   console.log(`✅ Git commit: ${breathId}`);
