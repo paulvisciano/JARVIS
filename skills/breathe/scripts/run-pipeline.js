@@ -139,6 +139,56 @@ What does this work reveal?`;
       stdio: 'pipe'
     });
     console.log(`💬 Posted reflection request to chat\n`);
+    
+    // Wait for Jarvis to reply (poll session transcript)
+    console.log('⏳ Waiting for reflection...');
+    let reflection = null;
+    let attempts = 0;
+    const maxAttempts = 60; // 30 seconds (500ms * 60)
+    
+    while (attempts < maxAttempts && !reflection) {
+      try {
+        // Get last messages from jarvis:main session
+        const sessionsJson = execSync('openclaw sessions --agent jarvis --json --last 3', { encoding: 'utf-8' });
+        const sessions = JSON.parse(sessionsJson);
+        const mainSession = sessions.sessions.find(s => s.key === 'agent:jarvis:main');
+        
+        if (mainSession && mainSession.lastMessages && mainSession.lastMessages.length > 0) {
+          // Find last assistant message (our reflection request was user, so next assistant msg is the reply)
+          for (let i = mainSession.lastMessages.length - 1; i >= 0; i--) {
+            const msg = mainSession.lastMessages[i];
+            if (msg.role === 'assistant' && msg.content && msg.content.length > 50) {
+              reflection = msg.content.trim();
+              break;
+            }
+          }
+        }
+      } catch (e) { /* ignore, keep polling */ }
+      
+      if (!reflection) {
+        attempts++;
+        require('child_process').execSync('sleep 0.5', { stdio: 'ignore' });
+      }
+    }
+    
+    if (reflection) {
+      console.log(`🪞 Received reflection: ${reflection.substring(0, 80)}${reflection.length > 80 ? '...' : ''}\n`);
+      
+      // Amend commit with reflection
+      const amendedMessage = `${breathId}: Breathe complete
+
+REFLECTION:
+${reflection}`;
+      
+      const amendFile = path.join(jarvisHome, '.commit-amend.tmp');
+      fs.writeFileSync(amendFile, amendedMessage);
+      execSync(`git commit --amend -F ${amendFile}`, { cwd: jarvisHome, stdio: 'inherit' });
+      fs.unlinkSync(amendFile);
+      
+      console.log(`✅ Commit amended with reflection\n`);
+    } else {
+      console.log('⚠️  No reflection received (timeout), commit not amended\n');
+    }
   } catch (e) {
     console.error('⚠️  Could not post to chat:', e.message);
   }
