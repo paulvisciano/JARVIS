@@ -68023,5 +68023,110 @@
       "date": "2026-03-29"
     },
     "created": "2026-03-29T08:08:05"
+  },
+  {
+    "source": "dom-reference-timing-bug",
+    "target": "temporal-20260329",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-29"
+  },
+  {
+    "source": "openclaw-tts-file-location",
+    "target": "temporal-20260329",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-29"
+  },
+  {
+    "source": "service-restart-required-for-deploy",
+    "target": "temporal-20260329",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-29"
+  },
+  {
+    "source": "workspace-vs-production-directory",
+    "target": "temporal-20260329",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-29"
+  },
+  {
+    "id": "syn-dom-reference-timing-bug-to-temporal-20260329",
+    "source": "dom-reference-timing-bug",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T08:14:04"
+  },
+  {
+    "id": "syn-openclaw-tts-file-location-to-temporal-20260329",
+    "source": "openclaw-tts-file-location",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T08:14:04"
+  },
+  {
+    "id": "syn-service-restart-required-for-deploy-to-temporal-20260329",
+    "source": "service-restart-required-for-deploy",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T08:14:04"
+  },
+  {
+    "id": "syn-workspace-vs-production-directory-to-temporal-20260329",
+    "source": "workspace-vs-production-directory",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T08:14:04"
+  },
+  {
+    "id": "syn-32147e5e-3703-4329-8e0a-8038fe7fe34d-to-temporal-20260329",
+    "source": "32147e5e-3703-4329-8e0a-8038fe7fe34d",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T08:14:04"
+  },
+  {
+    "id": "syn-8e6bf301-54b5-492b-b987-d9263c7775dd-to-temporal-20260329",
+    "source": "8e6bf301-54b5-492b-b987-d9263c7775dd",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T08:14:04"
+  },
+  {
+    "id": "syn-fbbfd1ab-49ae-4ab5-a9ce-e8ba2c0f2315-to-temporal-20260329",
+    "source": "fbbfd1ab-49ae-4ab5-a9ce-e8ba2c0f2315",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T08:14:04"
   }
 ]
