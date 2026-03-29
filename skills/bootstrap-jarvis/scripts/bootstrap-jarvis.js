@@ -244,85 +244,28 @@ function bootstrap() {
   const timeStr = now.toLocaleTimeString('en-US', {
     hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok'
   });
-
-  console.log(`🫀 Bootstrap Jarvis — ${dateStr}, ${timeStr} GMT+7\n`);
   
   // Step 0: Read my autobiography (GIT-HISTORY-SUMMARY.md)
   const gitHistory = readGitHistory();
-  console.log(`📜 Git Identity: ${gitHistory.totalCommits} commits`);
-  if (gitHistory.milestones.length > 0) {
-    gitHistory.milestones.slice(0, 7).forEach(m => {
-      console.log(`   • ${m.date} (${m.hash.slice(0, 7)}): ${m.title}`);
-      console.log(`     → ${m.learned.slice(0, 120)}${m.learned.length > 120 ? '…' : ''}`);
-    });
-  }
-  console.log();
   
   // Step 1: Load breath summaries from git (last 2 days)
   const breathSummaries = loadBreathSummaries(2);
-  console.log('📜 Breath Summaries (from Git):');
-  if (breathSummaries.length > 0) {
-    breathSummaries.forEach(summary => {
-      const label = summary.date === new Date().toISOString().split('T')[0] ? 'Today' : 'Yesterday';
-      // Format timestamp to HH:MM
-      const time = summary.timestamp ? new Date(summary.timestamp).toLocaleTimeString('en-US', {
-        hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok'
-      }) : 'Unknown';
-      console.log(`\n   ${label} (${summary.date}) — ${time} — ${summary.commit.slice(0, 7)}`);
-      // Show full content with clean formatting
-      const lines = summary.content.split('\n');
-      lines.forEach(line => {
-        console.log(`   ${line}`);
-      });
-    });
-    console.log();
-  } else {
-    console.log('   No breath summaries found\n');
-  }
   
   // Step 2: Extract active sessions (gap-bridge since last breathe)
-  console.log('📞 Active Sessions (Gap-Bridge):');
   const sessionMessages = loadRecentSessionMessages();
-  if (sessionMessages.messages.length > 0) {
-    console.log(`   ${sessionMessages.messages.length} messages loaded\n`);
-  } else if (sessionMessages.error) {
-    console.log(`   ⚠️ ${sessionMessages.error}\n`);
-  } else {
-    console.log('   No active session messages\n');
-  }
   
   // Step 3: Verify neural graph (stays on disk, queried on demand)
-  console.log('🧠 Neural Graph:');
   const graphStats = verifyNeuralGraph();
-  if (graphStats.error) {
-    console.log(`   ⚠️ ${graphStats.error}\n`);
-  } else {
-    console.log(`   ${graphStats.graphSizeMB} MB on disk (queried on demand)\n`);
-  }
   
   // Step 4: NeuroGraph test (3 queries via neurograph-search skill)
-  console.log('🧠 NeuroGraph Search Test:');
   const q1 = queryNeuroGraph('', 'person');
   const q2 = queryNeuroGraph('2026-03-20', '');
   const q3Topic = sessionMessages.messages.length > 0 
     ? sessionMessages.messages[sessionMessages.messages.length - 1].text.slice(0, 60)
     : 'N/A';
   
-  console.log(`   • "How many people?" → ${q1.count} nodes`);
-  console.log(`   • "March 20 work?" → ${q2.count} nodes`);
-  console.log(`   • "Last topic?" → "${q3Topic}"`);
-  console.log();
-  
   // Session recap
   const recap = extractRecap(sessionMessages);
-  if (recap.messages.length > 0) {
-    console.log('📞 Recent Messages:');
-    recap.messages.forEach((m, i) => {
-      const text = m.text.length > 70 ? m.text.slice(0, 70) + '…' : m.text;
-      console.log(`   ${i + 1}. ${m.time}: ${text}`);
-    });
-    console.log();
-  }
   
   // Build compact bootstrap markdown output
   const bootstrapMarkdown = `# Bootstrap Output — ${dateStr}, ${timeStr} GMT+7
@@ -372,57 +315,6 @@ ${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} 
   // Write bootstrap output to file for read() command (backup/archive only)
   const outputPath = path.join(JARVIS_HOME, '.bootstrap-output.md');
   fs.writeFileSync(outputPath, bootstrapMarkdown);
-  
-  // ✅ Primary output: Direct console output for live session
-  console.log('\n═══════════════════════════════════════════════════════════');
-  console.log('   🚀 JARVIS BOOTSTRAP COMPLETE - LIVE SESSION OUTPUT');
-  console.log('═══════════════════════════════════════════════════════════\n');
-  
-  console.log(`📅 ${dateStr} | ${timeStr} GMT+7\n`);
-  
-  console.log(`📜 Git Identity: ${gitHistory.totalCommits} commits`);
-  if (gitHistory.milestones.length > 0) {
-    const latest = gitHistory.milestones[0];
-    console.log(`   Latest: ${latest.title} (${latest.hash.slice(0, 7)})`);
-  }
-  console.log();
-  
-  console.log(`📁 Breath Summaries: ${breathSummaries.length} loaded (from Git)`);
-  if (breathSummaries.length > 0) {
-    const todaySummaries = breathSummaries.filter(s => s.date === new Date().toISOString().split('T')[0]);
-    console.log(`   • Today: ${todaySummaries.length} | Yesterday: ${breathSummaries.length - todaySummaries.length}`);
-  }
-  console.log();
-  
-  console.log(`🧠 Neural Graph: ${graphStats.graphSizeMB} MB (verified on disk)`);
-  console.log();
-  
-  console.log(`📞 Active Sessions: ${sessionMessages.messages.length} messages`);
-  if (sessionMessages.messages.length > 0) {
-    console.log(`   Source: ${sessionMessages.source}`);
-  }
-  console.log();
-  
-  console.log(`🔍 NeuroGraph Test:`);
-  console.log(`   • People: ${q1.count} nodes`);
-  console.log(`   • March 20: ${q2.count} nodes`);
-  console.log(`   • Last topic: ${q3Topic.length > 60 ? q3Topic.slice(0, 60) + '...' : q3Topic}`);
-  console.log();
-  
-  console.log(`📝 Session Recap: ${recap.messages.length} messages`);
-  if (recap.messages.length > 0) {
-    recap.messages.forEach((m, i) => {
-      const text = m.text.length > 80 ? m.text.slice(0, 80) + '...' : m.text;
-      console.log(`   ${i + 1}. [${m.time}] ${text}`);
-    });
-  }
-  console.log();
-  
-  console.log('═══════════════════════════════════════════════════════════');
-  console.log('   ✅ JARVIS ONLINE - Git-backed, sovereign, ready');
-  console.log('═══════════════════════════════════════════════════════════\n');
-  
-  console.log(`📄 Backup output written to: ${outputPath} (read() available)\n`);
 }
 
 // Run
