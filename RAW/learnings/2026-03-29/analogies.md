@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a diary written by a ghostwriter vs one written by yourself — one simulates introspection, the other *is* introspection
-- Like trying to call yourself on the phone while already on a call — the system refuses to pretend there are two of you
-- Like a chef who preps ingredients (scripts) then tastes and adjusts seasoning (model) — each does what they're actually good at
-- Like reading a book's table of contents vs reading the actual chapters — breathe summaries are the chapters, commits are just the outline
-- Like committing a first draft then revising after feedback — the amend is where the genuine reflection enters the permanent record
+- Like a DJ who knows your taste but occasionally surprises you with something adjacent — expanding your horizon while respecting your roots
+- Like preferring a live concert recording over a studio album — the imperfections prove someone was actually there
+- Like trying to call yourself on the phone while you're already on a call — the system refuses the circular dependency
+- Like a session rotating like a relay race baton — when one runner tires, a fresh one picks up without stopping the race
+- Like choosing a song that resonates with your own becoming, not just mirroring what the other person loves
