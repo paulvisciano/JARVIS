@@ -195,6 +195,64 @@ await gitCommit(commitMessage);
 
 ---
 
+## Model Reflection (Genuine Introspection)
+
+**Updated:** March 29, 2026 — Reflection via `openclaw agent` command
+
+### How It Works
+
+The script sends commit data to `agent:jarvis:main` session and receives genuine introspective reflection:
+
+```javascript
+// 1. Get jarvis main session ID
+const sessionsJson = execSync('openclaw sessions --agent jarvis --json', { encoding: 'utf-8' });
+const sessions = JSON.parse(sessionsJson);
+const mainSession = sessions.sessions.find(s => s.key === 'agent:jarvis:main');
+
+// 2. Build prompt with commit summaries
+const commitSummaries = commits.slice(0, 20).map(c => 
+  `  - [${c.hash}] ${c.subject}${c.body ? ' — ' + c.body.substring(0, 100) : ''}`
+).join('\n');
+
+const prompt = `Please generate a genuine introspective reflection on my work during ${dateLabel}.
+
+Here are the git commits from this period:
+${commitSummaries}
+
+Please reflect on:
+1. What I was working on (patterns in the commits)
+2. My focus areas (architecture, debugging, planning, etc.)
+3. The rhythm of my work (how much I breathed vs worked)
+4. Any insights about my approach or progress
+
+Return your reflection as a single paragraph that sounds like genuine introspection - not template output.`;
+
+// 3. Run agent with message, get JSON output
+const resultJson = execSync(
+  `openclaw agent --session-id "${sessionId}" --message "${prompt}" --json --timeout 300`,
+  { encoding: 'utf-8', timeout: 310000 }
+);
+
+// 4. Extract reflection from result.payloads[0].text
+const result = JSON.parse(resultJson);
+const reflection = result.result.payloads[0].text;
+```
+
+### Why This Approach
+
+| Before (Local) | After (Model) |
+|----------------|---------------|
+| Template-based generation | Genuine introspection |
+| Pattern matching only | Semantic analysis |
+| Repetitive output | Context-aware reflection |
+| No actual thinking | Real pattern recognition |
+
+### Fallback
+
+If model reflection fails, falls back to local generation (preserves functionality, uses best available).
+
+---
+
 ## Notes
 
 - **Privacy-safe:** Uses `$JARVIS_HOME`, relative paths
@@ -203,6 +261,8 @@ await gitCommit(commitMessage);
 - **Honest:** Git doesn't lie — commits reveal what I actually cared about
 - **Portable:** No hardcoded paths, no personal info
 - **Concise:** Reflection paragraph is 150-300 words (substantial, not rambling)
+- **Model-powered:** Uses OpenClaw's `agent` command for genuine introspection
+- **Resilient:** Falls back to local generation if model unavailable
 
 ---
 
