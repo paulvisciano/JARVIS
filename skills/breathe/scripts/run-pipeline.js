@@ -93,6 +93,9 @@ try {
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
   // Call reflect skill with --pending flag to reflect on staged changes
+  // Note: This uses fallback local generation when called from within an active session
+  // (model call path would deadlock). For genuine model reflection, run reflect.js
+  // as a standalone command or post reflection request to chat.
   const reflectOutput = execSync(`node ${path.join(jarvisHome, 'skills/reflect/scripts/reflect.js')} --pending`, {
     cwd: jarvisHome,
     encoding: 'utf-8',
