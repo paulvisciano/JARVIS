@@ -199,16 +199,18 @@ function getGenuineReflectionFromModel(commits, categories, dateLabel) {
   const moreOtherCommits = otherCommits.length > 10 ? `...and ${otherCommits.length - 10} more non-breathe commits` : '';
   
   // Build breathe summaries (include full bodies, truncate if too long)
+  // Use 500 chars instead of 1500 to reduce prompt size for large days
+  const maxSummaryLength = 500;
   const breatheSummaries = breatheCommits.map(c => {
     const subject = c.subject.split(':')[0]; // Get just "breath-YYYY-MM-DD-1508"
-    const summary = c.body.substring(0, 1500); // Truncate to 1500 chars per breathe
+    const summary = c.body.substring(0, maxSummaryLength);
     return `### ${subject}\n${summary}`;
   }).join('\n\n');
   
   // If too many breathe commits, note it
   const moreBreathe = breatheCommits.length > 5 ? `\n...and ${breatheCommits.length - 5} more breathe commits` : '';
   
-  const prompt = `Please generate a genuine introspective reflection on my work during ${dateLabel}.
+  const fullPrompt = `Please generate a genuine introspective reflection on my work during ${dateLabel}.
 
 ## Git Commits (non-breathe):
 ${otherCommitSummaries}
@@ -228,6 +230,10 @@ Return your reflection as a single paragraph that sounds like genuine introspect
 
 Format: Return ONLY the reflection paragraph, nothing else.`;
   
+  // Log size info for debugging
+  const promptSize = Buffer.byteLength(fullPrompt, 'utf-8');
+  console.error(`Sending large reflection request (${commits.length} commits, ${breatheCommits.length} breathes, ~${Math.round(promptSize / 1000)}k prompt)...`);
+  
   try {
     // Get jarvis main session ID
     const sessionsJson = execSync('openclaw sessions --agent jarvis --json', { encoding: 'utf-8' });
@@ -244,9 +250,10 @@ Format: Return ONLY the reflection paragraph, nothing else.`;
     console.error(`Sending reflection request to session ${sessionId.substring(0, 8)}...`);
     
     // Run agent with message, get JSON output
+    // Increased timeout to 600s (10 minutes) for large reflection requests
     const resultJson = execSync(
-      `openclaw agent --session-id "${sessionId}" --message "${prompt.replace(/"/g, '\\"')}" --json --timeout 300`,
-      { encoding: 'utf-8', timeout: 310000 }
+      `openclaw agent --session-id "${sessionId}" --message "${fullPrompt.replace(/"/g, '\\"')}" --json --timeout 600`,
+      { encoding: 'utf-8', timeout: 610000 }
     );
     
     const result = JSON.parse(resultJson);
