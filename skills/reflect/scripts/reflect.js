@@ -246,27 +246,32 @@ function getGenuineReflectionFromPrompt(prompt, label) {
     
     console.error(`Sending reflection request to session ${sessionId.substring(0, 8)}...`);
     
-    // Write prompt to temp file
-    const promptFile = path.join(JARVIS_HOME, '.reflect-prompt.tmp');
-    fs.writeFileSync(promptFile, prompt, 'utf-8');
-    
-    // Use sessions_send with --wait to get response
-    // This sends message to the session and waits for reply
-    const response = execSync(
-      `openclaw sessions send --session-id "${sessionId}" --file "${promptFile}" --wait --timeout 600`,
-      { encoding: 'utf-8', timeout: 610000, maxBuffer: 50 * 1024 * 1024 }
+    // Run agent with message, get JSON output
+    // Increased timeout to 600s (10 minutes) for reflection requests
+    const resultJson = execSync(
+      `openclaw agent --session-id "${sessionId}" --message "${prompt.replace(/"/g, '\\"')}" --json --timeout 600`,
+      { encoding: 'utf-8', timeout: 610000 }
     );
     
-    // Clean up temp file
-    fs.unlinkSync(promptFile);
+    const result = JSON.parse(resultJson);
     
-    if (!response || !response.trim()) {
-      console.error('No response from session');
+    // Extract the agent's response from result.payloads[0].text
+    const response = result.result?.payloads?.[0]?.text || '';
+    
+    if (!response) {
+      console.error('No response from model');
       return null;
     }
     
-    console.error('Received reflection from session');
-    return response.trim();
+    // Clean up: remove markdown formatting if present
+    let cleanResponse = response.trim();
+    if (cleanResponse.startsWith('```') && cleanResponse.endsWith('```')) {
+      // Remove markdown code block
+      cleanResponse = cleanResponse.replace(/^```[\w]*\n?|```$/g, '').trim();
+    }
+    
+    console.error('Received reflection from model');
+    return cleanResponse;
     
   } catch (err) {
     console.error('Model reflection failed:', err.message);
