@@ -37,13 +37,14 @@ metadata: { "openclaw": { "emoji": "🪞", "requires": { "bins": ["node", "git"]
 ### Command
 
 ```bash
-node skills/reflect/scripts/reflect.js <time-range>
+node skills/reflect/scripts/reflect.js <time-range|--pending>
 ```
 
 ### Time Range Formats
 
 | Format | Example | Meaning |
 |--------|---------|---------|
+| `--pending` | `--pending` | **Reflect on staged git changes (current breath)** |
 | `yesterday` | `yesterday` | All commits from yesterday (00:00-23:59) |
 | `last-week` | `last-week` | Last 7 days |
 | `last-month` | `last-month` | Last 30 days |
@@ -55,7 +56,10 @@ node skills/reflect/scripts/reflect.js <time-range>
 ### Examples
 
 ```bash
-# Reflect on today (for breathe pipeline)
+# Reflect on pending changes (breathe pipeline)
+node skills/reflect/scripts/reflect.js --pending
+
+# Reflect on today (ad-hoc query)
 node skills/reflect/scripts/reflect.js today
 
 # Reflect on yesterday
@@ -72,43 +76,38 @@ node skills/reflect/scripts/reflect.js 2026-03-15..2026-03-20
 
 ## How It Works
 
-### Step 1: Extract Commits
+### Mode: `--pending` (Breathe Pipeline)
 
 ```bash
-git log --since="<start>" --until="<end>" --format="%h %s %b" --reverse
+node skills/reflect/scripts/reflect.js --pending
 ```
 
-**Reads ALL commits** — not just breathes. Commit messages tell the story.
+1. **Read staged changes** — `git diff --cached --name-only`
+2. **Extract learning summaries** — Read `RAW/learnings/YYYY-MM-DD/*.md` files
+3. **Note neurograph changes** — `RAW/memories/` diff stat
+4. **Send to model** — Prompt with actual learnings, not commit messages
+5. **Return reflection** — JSON output with reflection paragraph + patterns
 
-### Step 2: Categorize
+**Used by:** Breathe pipeline (Step 5: Reflect before commit)
 
-Groups commits by theme:
+### Mode: Time Range (Ad-hoc Queries)
 
-| Category | Examples |
-|----------|----------|
-| **Architecture** | "orbital clustering", "neurograph integration", "git-first" |
-| **Debugging** | "fix:", "bug:", "DOM timing", "TTS location" |
-| **Planning** | "docs:", "plans/", "spec for" |
-| **Optimization** | "refactor:", "optimize", "simplify" |
-| **Breathe** | "breath-YYYY-MM-DD" |
-| **Milestone** | "Milestone:", "breakthrough", "vision" |
+```bash
+node skills/reflect/scripts/reflect.js last-week
+```
 
-### Step 3: Extract Learnings
+1. **Extract commits** — `git log --since="<start>" --until="<end>" --format="%h %s %b" --reverse`
+2. **Categorize by theme** — Architecture, debugging, planning, etc.
+3. **Read learnings** — If date-specific, load `RAW/learnings/YYYY-MM-DD/`
+4. **Generate reflection** — Model-powered introspection
 
-If learning docs exist (`RAW/learnings/YYYY-MM-DD/*.md`):
-- Read `summary.md` (cumulative narrative)
-- Read `analogies.md` (compression algorithms)
-- Use as enrichment (not dependency)
+**Used by:** Ad-hoc queries ("reflect on last week", "who was I becoming in March?")
 
-### Step 4: Generate Reflection
+### Model Integration
 
-**Prompts:**
-1. What was I caring about?
-2. What patterns emerge across commits?
-3. Who was I becoming?
-4. What would future me need to know about this period?
+**Prompt delivery:** Writes prompt to temp file, pipes via stdin (no shell escaping, no size limits)
 
-**Output:** Single paragraph (150-300 words) — honest, specific, introspective.
+**Fallback:** Local generation if model unavailable (preserves functionality)
 
 ---
 

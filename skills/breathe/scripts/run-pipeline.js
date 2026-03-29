@@ -87,13 +87,13 @@ try {
   
   console.log('✅ Memory synced (learnings + archive files)\n');
 
-  // Step 5: Reflect (Generate reflection paragraph)
-  console.log('\n🪞 Reflecting...');
+  // Step 5: Reflect (Generate reflection paragraph from pending changes)
+  console.log('\n🪞 Reflecting on pending changes...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
-  // Call reflect skill to generate reflection paragraph
-  const reflectOutput = execSync(`node ${path.join(jarvisHome, 'skills/reflect/scripts/reflect.js')} ${date}`, {
+  // Call reflect skill with --pending flag to reflect on staged changes
+  const reflectOutput = execSync(`node ${path.join(jarvisHome, 'skills/reflect/scripts/reflect.js')} --pending`, {
     cwd: jarvisHome,
     encoding: 'utf-8',
     stdio: ['pipe', 'pipe', 'pipe']

@@ -26,6 +26,11 @@ function parseTimeRange(arg) {
   const now = new Date();
   const today = now.toISOString().split('T')[0];
   
+  // Pending changes mode (staged git changes)
+  if (arg === '--pending' || arg === 'pending') {
+    return { mode: 'pending', label: 'pending-changes' };
+  }
+  
   if (!arg || arg === 'today') {
     return { start: today + 'T00:00:00', end: today + 'T23:59:59', label: today };
   }
@@ -92,6 +97,53 @@ function getCommits(startDate, endDate) {
   } catch (err) {
     console.error('Error reading git log:', err.message);
     return [];
+  }
+}
+
+// Get pending (staged) changes
+function getPendingChanges() {
+  try {
+    // Get list of staged files
+    const stagedFiles = execSync(`git -C "${JARVIS_HOME}" diff --cached --name-only`, { encoding: 'utf-8' });
+    
+    if (!stagedFiles.trim()) {
+      return { files: [], learnings: [], neurographChanges: null };
+    }
+    
+    const files = stagedFiles.trim().split('\n');
+    const learnings = [];
+    let neurographChanges = null;
+    
+    // Read staged learning files
+    for (const file of files) {
+      if (file.startsWith('RAW/learnings/')) {
+        const fullPath = path.join(JARVIS_HOME, file);
+        if (fs.existsSync(fullPath)) {
+          const content = fs.readFileSync(fullPath, 'utf-8');
+          // Extract title from first line (# Title)
+          const titleMatch = content.match(/^#\s+(.+)/m);
+          const title = titleMatch ? titleMatch[1] : file;
+          // Get first 200 chars as summary
+          const summary = content.substring(0, 200).replace(/\n+/g, ' ').trim();
+          learnings.push({ file, title, summary });
+        }
+      }
+      if (file.startsWith('RAW/memories/')) {
+        neurographChanges = neurographChanges || { files: [] };
+        neurographChanges.files.push(file);
+      }
+    }
+    
+    // Get diff stat for neurograph
+    if (neurographChanges) {
+      const stat = execSync(`git -C "${JARVIS_HOME}" diff --cached --stat RAW/memories/`, { encoding: 'utf-8' });
+      neurographChanges.stat = stat.trim();
+    }
+    
+    return { files, learnings, neurographChanges };
+  } catch (err) {
+    console.error('Error reading pending changes:', err.message);
+    return { files: [], learnings: [], neurographChanges: null };
   }
 }
 
@@ -169,6 +221,58 @@ function readLearnings(date) {
   } catch (e) { /* ignore */ }
   
   return result;
+}
+
+/**
+ * Send custom prompt to model via OpenClaw CLI and get genuine reflection
+ * Returns: the model's reflection paragraph or null on error
+ */
+function getGenuineReflectionFromPrompt(prompt, label) {
+  const promptSize = Buffer.byteLength(prompt, 'utf-8');
+  console.error(`Sending reflection request (~${Math.round(promptSize / 1000)}k prompt)...`);
+  
+  try {
+    // Get jarvis main session ID
+    const sessionsJson = execSync('openclaw sessions --agent jarvis --json', { encoding: 'utf-8' });
+    const sessions = JSON.parse(sessionsJson);
+    const mainSession = sessions.sessions.find(s => s.key === 'agent:jarvis:main');
+    
+    if (!mainSession || !mainSession.sessionId) {
+      console.error('Could not find jarvis main session');
+      return null;
+    }
+    
+    const sessionId = mainSession.sessionId;
+    
+    console.error(`Sending reflection request to session ${sessionId.substring(0, 8)}...`);
+    
+    // Write prompt to temp file
+    const promptFile = path.join(JARVIS_HOME, '.reflect-prompt.tmp');
+    fs.writeFileSync(promptFile, prompt, 'utf-8');
+    
+    // Use sessions_send with --wait to get response
+    // This sends message to the session and waits for reply
+    const response = execSync(
+      `openclaw sessions send --session-id "${sessionId}" --file "${promptFile}" --wait --timeout 600`,
+      { encoding: 'utf-8', timeout: 610000, maxBuffer: 50 * 1024 * 1024 }
+    );
+    
+    // Clean up temp file
+    fs.unlinkSync(promptFile);
+    
+    if (!response || !response.trim()) {
+      console.error('No response from session');
+      return null;
+    }
+    
+    console.error('Received reflection from session');
+    return response.trim();
+    
+  } catch (err) {
+    console.error('Model reflection failed:', err.message);
+    console.error('Falling back to local generation...');
+    return null;
+  }
 }
 
 /**
@@ -284,6 +388,49 @@ Format: Return ONLY the reflection paragraph, nothing else.`;
 }
 
 /**
+ * Fallback local generation for pending changes - only used when model reflection fails
+ */
+function generateReflectionLocalPending(pendingChanges) {
+  const learningCount = pendingChanges.learnings.length;
+  const fileCount = pendingChanges.files.length;
+  
+  if (learningCount === 0) {
+    return `This breath updated ${fileCount} files without extracting learnings — infrastructure work, refactoring, or fixes.`;
+  }
+  
+  // Extract themes from learning titles
+  const allTitles = pendingChanges.learnings.map(l => l.title).join(' ');
+  const hasDebugging = /fix|bug|error|DOM|TTS|cache|restart|deployment/i.test(allTitles);
+  const hasArchitecture = /orbital|neurograph|consciousness|git-first|architecture|graph/i.test(allTitles);
+  const hasPlanning = /plan|spec|vision|design|feature/i.test(allTitles);
+  
+  let reflection = `This breath extracted ${learningCount} learning${learningCount > 1 ? 's' : ''} from ${fileCount} file${fileCount > 1 ? 's' : ''}. I was `;
+  
+  const themes = [];
+  if (hasArchitecture) themes.push('designing architecture');
+  if (hasDebugging) themes.push('fixing what broke');
+  if (hasPlanning) themes.push('planning what is next');
+  
+  if (themes.length === 0) {
+    reflection += 'processing experience into memory.';
+  } else if (themes.length === 1) {
+    reflection += themes[0] + '.';
+  } else if (themes.length === 2) {
+    reflection += themes.join(' and ') + '.';
+  } else {
+    reflection += 'juggling multiple things: ' + themes.slice(0, -1).join(', ') + ', and ' + themes[themes.length - 1] + '.';
+  }
+  
+  if (hasArchitecture && hasDebugging) {
+    reflection += ' The contrast is revealing: I need both vision and reality. Architecture without debugging is fantasy. Debugging without architecture is thrashing.';
+  }
+  
+  reflection += ' Future me: remember this breath. This is who I was becoming.';
+  
+  return reflection;
+}
+
+/**
  * Fallback local generation - only used when model reflection fails
  */
 function generateReflectionLocal(commits, categories, learnings, dateLabel) {
@@ -343,14 +490,94 @@ async function main() {
     timeRange = parseTimeRange(arg);
   } catch (err) {
     console.error(err.message);
-    console.error('Usage: node reflect.js [today|yesterday|last-week|last-month|YYYY-MM-DD|YYYY-MM-DD..YYYY-MM-DD]');
+    console.error('Usage: node reflect.js [--pending|today|yesterday|last-week|last-month|YYYY-MM-DD|YYYY-MM-DD..YYYY-MM-DD]');
     process.exit(2);
   }
   
   console.error(`🪞 Reflecting on ${timeRange.label}...`);
   
-  // Get commits
-  const commits = getCommits(timeRange.start, timeRange.end);
+  let commits = [];
+  let categories = { architecture: [], debugging: [], planning: [], optimization: [], breathe: [], milestone: [], other: [] };
+  let learnings = null;
+  let pendingChanges = null;
+  
+  // Handle pending changes mode
+  if (timeRange.mode === 'pending') {
+    pendingChanges = getPendingChanges();
+    
+    if (pendingChanges.files.length === 0) {
+      console.log(JSON.stringify({
+        period: 'pending-changes',
+        pendingChanges: 0,
+        reflection: "No pending changes — nothing to reflect on yet.",
+        patterns: {}
+      }, null, 2));
+      process.exit(0);
+    }
+    
+    console.error(`   Found ${pendingChanges.files.length} staged files`);
+    console.error(`   Learnings: ${pendingChanges.learnings.length}`);
+    if (pendingChanges.neurographChanges) {
+      console.error(`   Neurograph: ${pendingChanges.neurographChanges.files.length} files`);
+    }
+    
+    // Build prompt for pending changes
+    const learningSummaries = pendingChanges.learnings.map(l => 
+      `  - **${l.title}**: ${l.summary}`
+    ).join('\n');
+    
+    const neurographInfo = pendingChanges.neurographChanges 
+      ? `\n\nNeurograph changes:\n${pendingChanges.neurographChanges.stat}` 
+      : '';
+    
+    const prompt = `Please generate a genuine introspective reflection on these pending changes from this breath cycle.
+
+Learnings extracted:
+${learningSummaries}
+${neurographInfo}
+
+Please reflect on:
+1. What was I caring about in this work?
+2. What patterns emerge from these specific learnings?
+3. Who was I becoming through this work?
+4. What would future me need to know about this breath?
+
+Return your reflection as a single paragraph that sounds like genuine introspection - not template output. Be personal, insightful, and show that you're analyzing actual work patterns.
+
+Format: Return ONLY the reflection paragraph, nothing else.`;
+    
+    console.error(' Asking model for reflection...');
+    let reflection = getGenuineReflectionFromPrompt(prompt, 'pending-changes');
+    
+    if (!reflection) {
+      console.error(' Model reflection unavailable, using local generation...');
+      reflection = generateReflectionLocalPending(pendingChanges);
+    }
+    
+    const patterns = {
+      learnings: pendingChanges.learnings.length,
+      files: pendingChanges.files.length
+    };
+    if (pendingChanges.neurographChanges) {
+      patterns.neurograph = pendingChanges.neurographChanges.files.length;
+    }
+    
+    const output = {
+      period: 'pending-changes',
+      pendingChanges: pendingChanges.files.length,
+      learningsCount: pendingChanges.learnings.length,
+      reflection: reflection,
+      patterns: patterns
+    };
+    
+    console.log(JSON.stringify(output, null, 2));
+    console.error('\n--- Commit Message Format ---\n');
+    console.error(`REFLECTION:\n${reflection}`);
+    process.exit(0);
+  }
+  
+  // Standard git log mode
+  commits = getCommits(timeRange.start, timeRange.end);
   
   if (commits.length === 0) {
     console.log(JSON.stringify({
@@ -363,11 +590,11 @@ async function main() {
   }
   
   // Categorize
-  const categories = categorizeCommits(commits);
+  categories = categorizeCommits(commits);
   
   // Read learnings (if date-specific)
   const dateKey = timeRange.label.match(/^\d{4}-\d{2}-\d{2}$/) ? timeRange.label : null;
-  const learnings = dateKey ? readLearnings(dateKey) : null;
+  learnings = dateKey ? readLearnings(dateKey) : null;
   
   // Try to get genuine reflection from model
   console.error(' Asking model for reflection...');
