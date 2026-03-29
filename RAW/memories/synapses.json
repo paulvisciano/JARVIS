@@ -67526,5 +67526,441 @@
       "date": "2026-03-28"
     },
     "created": "2026-03-28T16:36:42"
+  },
+  {
+    "source": "session-summary",
+    "target": "temporal-20260329",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-29"
+  },
+  {
+    "id": "syn-full-context-to-temporal-20260329",
+    "source": "full-context",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.00.25 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.00.25 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.00.25 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.00.25 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.01.18 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.01.18 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.01.18 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.01.18 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.03.16 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.03.16 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.03.16 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.03.16 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.05.26 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.05.26 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.05.26 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.05.26 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.17.10 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.17.10 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.17.10 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.17.10 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.24.04 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.24.04 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.24.04 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.24.04 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.24.43 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.24.43 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.24.43 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.24.43 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.46.26 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.46.26 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.46.26 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.46.26 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.49.42 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.49.42 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 1.49.42 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 1.49.42 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.51.35 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.51.35 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.51.35 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.51.35 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.52.24 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.52.24 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.52.24 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.52.24 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.54.30 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.54.30 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.54.30 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.54.30 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.54.45 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.54.45 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.54.45 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.54.45 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.56.11 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.56.11 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.56.11 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.56.11 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.58.58 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.58.58 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 12.58.58 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 12.58.58 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.44.38 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.44.38 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.44.38 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.44.38 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.46.43 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.46.43 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.46.43 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.46.43 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.47.05 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.47.05 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.47.05 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.47.05 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.50.49 PM-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.50.49 PM",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
+  },
+  {
+    "id": "syn-Screenshot 2026-03-29 at 2.50.49 PM.png-to-temporal-20260329",
+    "source": "Screenshot 2026-03-29 at 2.50.49 PM.png",
+    "target": "temporal-20260329",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-29"
+    },
+    "created": "2026-03-29T07:55:52"
   }
 ]
