@@ -87,70 +87,20 @@ try {
   
   console.log('✅ Memory synced (learnings + archive files)\n');
 
-  // Step 5: Reflect (Generate reflection paragraph from pending changes)
-  console.log('\n🪞 Reflecting on pending changes...');
+  // Step 5: Commit learnings + neurograph
+  console.log('\n💾 Committing changes...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
-  // Call reflect skill with --pending flag to reflect on staged changes
-  // Note: This uses fallback local generation when called from within an active session
-  // (model call path would deadlock). For genuine model reflection, run reflect.js
-  // as a standalone command or post reflection request to chat.
-  const reflectOutput = execSync(`node ${path.join(jarvisHome, 'skills/reflect/scripts/reflect.js')} --pending`, {
-    cwd: jarvisHome,
-    encoding: 'utf-8',
-    stdio: ['pipe', 'pipe', 'pipe']
-  });
+  const commitMessage = `${breathId}: Breathe complete — learnings distilled, neurograph updated`;
   
-  let reflectionText = 'Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved';
-  let patternsText = '';
-  let learningSummaries = '';
-  let neurographStat = 'updated';
-  
-  try {
-    const reflectJson = JSON.parse(reflectOutput.trim().split('\n').filter(l => !l.startsWith('🪞')).join('\n'));
-    if (reflectJson.reflection) {
-      reflectionText = reflectJson.reflection;
-      if (reflectJson.patterns) {
-        patternsText = Object.entries(reflectJson.patterns)
-          .map(([k, v]) => `${k}: ${v}`)
-          .join(', ');
-      }
-    }
-  } catch (e) {
-    console.error('⚠️  Could not parse reflection, using default message');
-  }
-  
-  // Build commit message with reflection
-  const commitMessage = `${breathId}: Breathe complete
-
-REFLECTION:
-${reflectionText}
-
----
-Learnings: ${date}
-Patterns: ${patternsText || 'see git log for details'}
-Breathe: ${breathId}`;
-
-  // Write commit message to temp file (avoids shell escaping issues)
-  const commitMsgFile = path.join(jarvisHome, '.commit-message.tmp');
-  fs.writeFileSync(commitMsgFile, commitMessage);
-
-  // Commit learnings + neurograph (both ship with Jarvis)
   execSync(`git add RAW/learnings/${date}/ RAW/memories/`, { cwd: jarvisHome, stdio: 'inherit' });
-  execSync(`git commit -F ${commitMsgFile}`, { cwd: jarvisHome, stdio: 'inherit' });
+  execSync(`git commit -m "${commitMessage}"`, { cwd: jarvisHome, stdio: 'inherit' });
   
-  // Clean up temp file
-  fs.unlinkSync(commitMsgFile);
+  console.log(`✅ Breath committed: ${breathId}\n`);
   
-  console.log(`✅ Breath committed: ${breathId}`);
-  const firstLine = reflectionText.split('\n')[0].substring(0, 80);
-  console.log(`   Reflection: ${firstLine}${reflectionText.length > 80 ? '...' : ''}\n`);
-  
-  // Step 6: Post reflection request to chat for genuine model reflection
-  // The pipeline used local fallback (to avoid deadlock). Now post to chat
-  // so Jarvis can reflect using loaded context and provide genuine insight.
-  // Read learning files to build chat message
+  // Step 6: Post reflection request to chat
+  // Jarvis will reflect using loaded context and provide genuine insight
   const todayLearningsDir = path.join(jarvisHome, 'RAW/learnings', date);
   const learningFiles = fs.existsSync(todayLearningsDir) 
     ? fs.readdirSync(todayLearningsDir).filter(f => f.endsWith('.md') && f !== 'summary.md' && f !== 'analogies.md')
@@ -167,8 +117,9 @@ Breathe: ${breathId}`;
     : '';
   
   // Get neurograph diff stat
+  let neurographStat = 'updated';
   try {
-    neurographStat = execSync(`git -C "${jarvisHome}" diff --cached --stat RAW/memories/ | tail -1`, { encoding: 'utf-8' }).trim();
+    neurographStat = execSync(`git -C "${jarvisHome}" diff HEAD --stat RAW/memories/ | tail -1`, { encoding: 'utf-8' }).trim();
   } catch (e) { /* ignore */ }
   
   const chatMessage = `🪞 **Reflecting on ${breathId}**
