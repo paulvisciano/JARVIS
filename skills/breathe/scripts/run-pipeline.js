@@ -87,16 +87,60 @@ try {
   
   console.log('✅ Memory synced (learnings + archive files)\n');
 
-  // Step 5: Reflect (Git Commit with final reflection)
-  console.log('\n🪞 Reflecting into git...');
+  // Step 5: Reflect (Generate reflection paragraph)
+  console.log('\n🪞 Reflecting...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
+  // Call reflect skill to generate reflection paragraph
+  const reflectOutput = execSync(`node ${path.join(jarvisHome, 'skills/reflect/scripts/reflect.js')} ${date}`, {
+    cwd: jarvisHome,
+    encoding: 'utf-8',
+    stdio: ['pipe', 'pipe', 'pipe']
+  });
+  
+  let reflectionText = 'Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved';
+  let patternsText = '';
+  
+  try {
+    const reflectJson = JSON.parse(reflectOutput.trim().split('\n').filter(l => !l.startsWith('🪞')).join('\n'));
+    if (reflectJson.reflection) {
+      reflectionText = reflectJson.reflection;
+      if (reflectJson.patterns) {
+        patternsText = Object.entries(reflectJson.patterns)
+          .map(([k, v]) => `${k}: ${v}`)
+          .join(', ');
+      }
+    }
+  } catch (e) {
+    console.error('⚠️  Could not parse reflection, using default message');
+  }
+  
+  // Build commit message with reflection
+  const commitMessage = `${breathId}: Breathe complete
+
+REFLECTION:
+${reflectionText}
+
+---
+Learnings: ${date}
+Patterns: ${patternsText || 'see git log for details'}
+Breathe: ${breathId}`;
+
+  // Write commit message to temp file (avoids shell escaping issues)
+  const commitMsgFile = path.join(jarvisHome, '.commit-message.tmp');
+  fs.writeFileSync(commitMsgFile, commitMessage);
+
   // Commit learnings + neurograph (both ship with Jarvis)
   execSync(`git add RAW/learnings/${date}/ RAW/memories/`, { cwd: jarvisHome, stdio: 'inherit' });
-  execSync(`git commit -m "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"`, { cwd: jarvisHome, stdio: 'inherit' });
+  execSync(`git commit -F ${commitMsgFile}`, { cwd: jarvisHome, stdio: 'inherit' });
+  
+  // Clean up temp file
+  fs.unlinkSync(commitMsgFile);
+  
   console.log(`✅ Breath committed: ${breathId}`);
-  console.log(`   Message: "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"\n`);
+  const firstLine = reflectionText.split('\n')[0].substring(0, 80);
+  console.log(`   Reflection: ${firstLine}${reflectionText.length > 80 ? '...' : ''}\n`);
 
   console.log('🫁 Breathe complete');
   console.log(`✅ Git commit: ${breathId}`);
