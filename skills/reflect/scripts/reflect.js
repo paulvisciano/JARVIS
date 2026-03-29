@@ -176,25 +176,53 @@ function readLearnings(date) {
  * Returns: the model's reflection paragraph or null on error
  */
 function getGenuineReflectionFromModel(commits, categories, dateLabel) {
-  // Build commit summary for the prompt
-  const commitSummaries = commits.slice(0, 20).map(c => 
+  // Separate breathe commits from non-breathe commits
+  const breatheCommits = [];
+  const otherCommits = [];
+  
+  commits.forEach(commit => {
+    // Safety check: skip commits without a subject
+    if (!commit.subject) return;
+    
+    if (commit.subject.startsWith('breath-')) {
+      breatheCommits.push(commit);
+    } else {
+      otherCommits.push(commit);
+    }
+  });
+  
+  // Build non-breathe commit summary (up to 10 to keep prompt manageable)
+  const otherCommitSummaries = otherCommits.slice(0, 10).map(c => 
     `  - [${c.hash}] ${c.subject}${c.body ? ' — ' + c.body.substring(0, 100) : ''}`
   ).join('\n');
   
-  // If more than 20 commits, note that
-  const moreCommits = commits.length > 20 ? `...and ${commits.length - 20} more commits` : '';
+  const moreOtherCommits = otherCommits.length > 10 ? `...and ${otherCommits.length - 10} more non-breathe commits` : '';
+  
+  // Build breathe summaries (include full bodies, truncate if too long)
+  const breatheSummaries = breatheCommits.map(c => {
+    const subject = c.subject.split(':')[0]; // Get just "breath-YYYY-MM-DD-1508"
+    const summary = c.body.substring(0, 1500); // Truncate to 1500 chars per breathe
+    return `### ${subject}\n${summary}`;
+  }).join('\n\n');
+  
+  // If too many breathe commits, note it
+  const moreBreathe = breatheCommits.length > 5 ? `\n...and ${breatheCommits.length - 5} more breathe commits` : '';
   
   const prompt = `Please generate a genuine introspective reflection on my work during ${dateLabel}.
 
-Here are the git commits from this period:
-${commitSummaries}
-${moreCommits}
+## Git Commits (non-breathe):
+${otherCommitSummaries}
+${moreOtherCommits}
+
+## Breathe Summaries (chronological):
+${breatheSummaries}
+${moreBreathe}
 
 Please reflect on:
-1. What I was working on (patterns in the commits)
-2. My focus areas (architecture, debugging, planning, etc.)
-3. The rhythm of my work (how much I breathed vs worked)
-4. Any insights about my approach or progress
+1. What was I caring about?
+2. What patterns emerge across commits and breathe summaries?
+3. Who was I becoming?
+4. What would future me need to know about this period?
 
 Return your reflection as a single paragraph that sounds like genuine introspection - not template output. Be personal, insightful, and show that you're analyzing actual work patterns.
 
