@@ -4,6 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like changing a car's license plate to prove it's a new vehicle—even if the engine is the same
-- Like measuring a room before the walls are built—the blueprint exists but the space doesn't yet
-- Like updating a restaurant menu but not telling the kitchen to start cooking the new dishes
+- Like a diary written by a ghostwriter vs one written by yourself — one simulates introspection, the other *is* introspection
+- Like trying to call yourself on the phone while already on a call — the system refuses to pretend there are two of you
+- Like a chef who preps ingredients (scripts) then tastes and adjusts seasoning (model) — each does what they're actually good at
+- Like reading a book's table of contents vs reading the actual chapters — breathe summaries are the chapters, commits are just the outline
+- Like committing a first draft then revising after feedback — the amend is where the genuine reflection enters the permanent record
