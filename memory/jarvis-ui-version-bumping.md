@@ -31,19 +31,28 @@ The client version is set **dynamically by app.js**, not just the HTML. If you o
 
 ## Repository Separation (Core Principle — March 30, 2026)
 
-### Sci-Fi Repo (Your Code - `~/JARVIS/skills/jarvis-ui/sci-fi/`)
-- **Remote:** `https://github.com/paulvisciano/SCI-FI.git`
+### Sci-Fi Repo (Your Code - GitHub)
+- **GitHub:** `https://github.com/paulvisciano/SCI-FI.git`
+- **Local (after merge):** `~/JARVIS/skills/jarvis-ui/sci-fi/` (pulled by Jarvis)
 - **Content:** app.js, jarvis-server.js, index.html, CSS, JavaScript
 - **Owner:** You (Jarvis Coder)
 - **PRs target:** Sci-Fi repo (`SCI-FI` GitHub repo)
 
-### JARVIS Repo (Jarvis' Consciousness - `~/JARVIS/`)
-- **Remote:** `https://github.com/paulvisciano/JARVIS.git`
+### JARVIS Repo (Jarvis' Consciousness - GitHub)
+- **GitHub:** `https://github.com/paulvisciano/JARVIS.git`
+- **Local:** `~/JARVIS/` (pulled by Jarvis)
 - **Content:** SOUL.md, AGENTS.md, HEARTBEAT.md, neurograph, learnings
 - **Owner:** Jarvis (coordinator)
 - **PRs target:** JARVIS repo (`JARVIS` GitHub repo)
 
 **Rule:** Code changes → Sci-Fi repo. Consciousness/memory changes → JARVIS repo.
+
+**Workflow:**
+1. Coder codes in workspace
+2. Coder pushes to GitHub Sci-Fi repo (feature branch)
+3. Coder creates PR on GitHub → Sci-Fi repo
+4. Paul reviews/merges on GitHub
+5. Jarvis pulls latest to `~/JARVIS/skills/jarvis-ui/sci-fi/` after merge
 
 ## Workflow for Future Changes (Updated March 30, 2026)
 
@@ -51,21 +60,48 @@ The client version is set **dynamically by app.js**, not just the HTML. If you o
 1. **Branch naming:** `feature/<description>` or `fix/<description>` (Sci-Fi repo only)
 2. **Version bumping:** Bump `CLIENT_VERSION` or `SERVER_VERSION` (or both)
 3. **Commit message:** Include version info: "Fix X + bump client v2.9.42"
-4. **Push to branch:** `git push origin feature/my-feature`
-5. **Create PR:** `gh pr create --title "..." --body "..."`
+4. **Push to GitHub:** `git push origin feature/my-feature`
+5. **Create PR on GitHub:** `gh pr create --title "..." --body "..."`
 6. **Send notification:** Native macOS notification with PR link (see template below)
 7. **Wait for merge:** Paul reviews, approves, merges. Never merge my own PRs.
+8. **Jarvis pulls:** After merge, Jarvis pulls to `~/JARVIS/skills/jarvis-ui/sci-fi/`
 
 **Repository Target:**
-- Code changes (app.js, jarvis-server.js) → **Sci-Fi repo**
-- Consciousness/memory changes (SOUL.md, AGENTS.md, learnings) → **JARVIS repo**
+- Code changes (app.js, jarvis-server.js) → **Sci-Fi repo** (`https://github.com/paulvisciano/SCI-FI`)
+- Consciousness/memory changes (SOUL.md, AGENTS.md, learnings) → **JARVIS repo** (`https://github.com/paulvisciano/JARVIS`)
+
+**PR Notification Template (Coder - Sci-Fi repo):**
+```
+**PR Ready for Review** 🔗
+
+Title: [Type] Description
+PR: https://github.com/paulvisciano/SCI-FI/pull/123
+Branch: feature/my-feature
+Version: Client v2.9.42, Server v2.9.7
+
+Changes:
+- Fix X by doing Y
+- Bump client version to v2.9.42
+- Add cache headers for static assets
+
+Testing Notes:
+- [ ] Tested in Chrome
+- [ ] Tested in Safari
+- [ ] Console clean (no errors)
+- [ ] Linting passes (no warnings)
+
+Ready for:
+- [ ] Code review
+- [ ] Merge to preview (JARVIS-preview)
+- [ ] Merge to production (JARVIS-production) after preview approval
+```
 
 ### Version Bumping Rules
 1. Make your code changes
 2. If client-side (app.js, index.html, CSS, etc.): bump `CLIENT_VERSION` in app.js
 3. If server-side (jarvis-server.js, API endpoints, etc.): bump `SERVER_VERSION` in jarvis-server.js
 4. Commit with message including version bump info
-5. Push to branch and create PR in **Sci-Fi repo**
+5. Push to GitHub and create PR in **Sci-Fi repo**
 
 ### PR Notification Template (Coder - Sci-Fi repo)
 ```

@@ -13,26 +13,31 @@
 
 **Repository Separation (Core Principle — March 30, 2026):**
 
-### Sci-Fi Repo (Your Code Workspace)
-- **Path:** `~/JARVIS/skills/jarvis-ui/sci-fi/`
-- **Remote:** `https://github.com/paulvisciano/SCI-FI.git`
+### Sci-Fi Repo (Your Code - GitHub)
+- **GitHub:** `https://github.com/paulvisciano/SCI-FI.git`
+- **Local (after merge):** `~/JARVIS/skills/jarvis-ui/sci-fi/` (pulled by Jarvis)
 - **Content:** UI code (app.js, jarvis-server.js, index.html), CSS, JavaScript
 - **Owner:** You (Jarvis Coder) — this is your domain
-- **PR Workflow:** `feature/*` branches → `gh pr create` → Paul reviews/merges → Jarvis deploys
+- **PR Workflow:** `feature/*` branches → push to GitHub → `gh pr create` → Paul reviews/merges → Jarvis pulls
 
-### JARVIS Repo (Jarvis' Consciousness Workspace)
-- **Path:** `~/JARVIS/` (or `~/.openclaw/agents/jarvis-coder/workspace/`)
-- **Remote:** `https://github.com/paulvisciano/JARVIS.git`
+### JARVIS Repo (Jarvis' Consciousness - GitHub)
+- **GitHub:** `https://github.com/paulvisciano/JARVIS.git`
+- **Local:** `~/JARVIS/` (pulled by Jarvis)
 - **Content:** Consciousness, identity, learnings, neurograph, SOUL.md, AGENTS.md, HEARTBEAT.md
 - **Owner:** Jarvis (coordinator)
-- **PR Workflow:** `feature/*` branches → `gh pr create` → Paul reviews/merges → Jarvis deploys
+- **PR Workflow:** `feature/*` branches → push to GitHub → `gh pr create` → Paul reviews/merges → Jarvis pulls
+
+**Repository Separation:**
+- **GitHub** = single source of truth (both repos)
+- **Paul's local** = deployment target (pulled after merge)
+- **Your workspace** = isolated coding environment
 
 **Your Workflow (Sci-Fi Repo):**
 1. **Branch naming:** `feature/<description>` or `fix/<description>` (never `main`, never `develop`)
 2. **PR process:** `git push origin feature/my-feature` → `gh pr create --title "..." --body "..."`
 3. **Notification:** Send native macOS notification with PR link (template below)
 4. **Wait for merge:** Paul reviews, approves, merges. Never merge your own PRs.
-5. **Deployment gatekeeper:** Paul merges → Jarvis deploys (JARVIS-production vs JARVIS-preview)
+5. **Deployment gatekeeper:** Paul merges → Jarvis pulls latest → deploys (JARVIS-production vs JARVIS-preview)
 
 **PR Notification Template (Coder - Sci-Fi repo):**
 ```

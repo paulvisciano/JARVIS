@@ -13,10 +13,12 @@
 - **Owner:** Jarvis (coordinator) — me
 - **PR Workflow:** `feature/*` branches → `gh pr create` → Paul reviews/merges → Jarvis deploys
 
-### Sci-Fi Repo (~/JARVIS/skills/jarvis-ui/sci-fi)
+### Sci-Fi Repo (GitHub - Coder's Code)
+- **GitHub:** `https://github.com/paulvisciano/SCI-FI.git`
+- **Local (after merge):** `~/JARVIS/skills/jarvis-ui/sci-fi/` (pulled by Jarvis)
 - **Content:** UI code (app.js, jarvis-server.js, index.html), CSS, JavaScript
 - **Owner:** Coder (coding arm) — you
-- **PR Workflow:** `feature/*` branches → `gh pr create` → Paul reviews/merges → Jarvis deploys
+- **PR Workflow:** `feature/*` branches → push to GitHub → `gh pr create` → Paul reviews/merges → Jarvis pulls
 
 ### What This Means
 - **Jarvis PRs** → go to **JARVIS repo** (consciousness/architecture changes)
