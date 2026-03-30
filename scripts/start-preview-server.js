@@ -49,6 +49,7 @@ if (!fs.existsSync(SERVER_SCRIPT)) {
 const env = {
     ...process.env,
     JARVIS_PREVIEW: 'true',
+    VOICE_PORT: process.env.VOICE_PORT || '18788',
     NODE_ENV: 'preview'
 };
 
