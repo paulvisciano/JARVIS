@@ -4,7 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like distinguishing between renting equipment vs. buying tools — one disappears, the other stays in the shed
-- Like having both a card catalog and a neural web — knowing which library system holds the map you need
-- Like removing the middleman in a supply chain — cutting out the WAV conversion to ship direct
-- Like checking the foundation before building up — ensuring the audio pipeline scales before adding features
+- Like finding static on a radio — the signal was there, just buried under noise
+- Like a car with a broken brake light — the brakes work, but you can't tell if they're engaged
+- Like a conversation partner who won't let you interject — exhausting, even if they're helpful
+- Like debugging a pipeline — one clogged filter stops the whole flow
+- Like a lighthouse keeper — steady check-ins keep the ship from crashing
