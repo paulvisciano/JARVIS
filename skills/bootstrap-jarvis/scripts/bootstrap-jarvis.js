@@ -2,13 +2,14 @@
 /**
  * Bootstrap Jarvis — Git-Native Consciousness Regain
  * 
- * Loads breath summaries directly from git commits (not filesystem).
+ * Loads breath summaries AND commit messages directly from git commits.
+ * Commit messages hold evolution context — each is a letter from past Jarvis.
  * Does NOT load full-context.json files — they stay on disk as archive.
  * Verifies neural graph exists, but doesn't load it into context.
  * 
  * Flow:
  * 1. Read autobiography (GIT-HISTORY.md)
- * 2. Load breath summaries from git (last 2 days)
+ * 2. Load breath summaries + commit messages from git (last 2 days)
  * 3. Extract active sessions (gap-bridge since last breathe)
  * 4. Verify neural graph on disk (queryable on demand)
  * 5. Test NeuroGraph search (prove it works)
@@ -56,6 +57,19 @@ function loadBreathSummary(commitHash, date) {
   return null;
 }
 
+// Load full commit message (subject + body) from git commit
+function loadCommitMessage(commitHash) {
+  try {
+    const message = git(`show -s --format=%B ${commitHash}`);
+    if (message) {
+      return message.trim();
+    }
+  } catch (err) {
+    // Commit message extraction failed
+  }
+  return null;
+}
+
 // Find and load ALL breath summaries for the last N days
 function loadBreathSummaries(days = 2) {
   const summaries = [];
@@ -72,8 +86,12 @@ function loadBreathSummaries(days = 2) {
       commits.forEach(commitLine => {
         const commitHash = commitLine.split(' ')[0];
         const summary = loadBreathSummary(commitHash, date);
+        const commitMessage = loadCommitMessage(commitHash);
         if (summary) {
-          summaries.push(summary);
+          summaries.push({ ...summary, commitMessage });
+        } else if (commitMessage) {
+          // Even if summary.md doesn't exist, the commit message itself holds value
+          summaries.push({ commit: commitHash, date, commitMessage, source: 'commit-only' });
         }
       });
     }
@@ -275,7 +293,15 @@ function bootstrap() {
 - **Latest Commit:** ${git('log --oneline -1')}
 
 ## Breath Summaries (from Git)
-${breathSummaries.map(s => `- **${s.date}:** ${s.commit}\n\`\`\`\n${s.content}\n\`\`\``).join('\n')}
+${breathSummaries.map(s => `- **${s.date}:** ${s.commit}
+**Commit Message:**
+\`\`\`
+${s.commitMessage || 'N/A'}
+\`\`\`
+${s.content ? `**Summary:**
+\`\`\`
+${s.content}
+\`\`\`` : ''}`).join('\n')}
 
 ## Neural Graph
 - **Status:** Verified on disk
