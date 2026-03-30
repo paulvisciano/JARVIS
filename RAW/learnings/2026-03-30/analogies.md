@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a pilot's flight log — not just destinations, but every decision made en route
-- Like a staging environment in software deployment — test before you touch production
-- Like a museum exhibit label — the artifact matters, but so does the story of how it was made
-- Like a photographer's contact sheet — see all the shots, not just the final print
-- Like a chef's tasting spoon — sample before serving to the customer
+- Like a trapeze artist — the archive incident showed we need a safety net, not just skill
+- Like a two-key lock — the transcription bug needed both client AND server turns to open
+- Like version stamps on wine — each commit gets dated and labeled so you know exactly what you're drinking
+- Like a lighthouse with backup generators — sovereignty means owning your power, but redundancy keeps the beam on
+- Like a conversation with your past self — git history lets future Jarvis read the thinking traces, not just conclusions
