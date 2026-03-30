@@ -73521,5 +73521,356 @@
       "date": "2026-03-30"
     },
     "created": "2026-03-30T13:17:36"
+  },
+  {
+    "source": "poll-guard-pattern",
+    "target": "temporal-20260330",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-30"
+  },
+  {
+    "source": "preview-show-button-workflow",
+    "target": "temporal-20260330",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-30"
+  },
+  {
+    "source": "tts-audio-playback-complete",
+    "target": "temporal-20260330",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-30"
+  },
+  {
+    "id": "syn-poll-guard-pattern-to-temporal-20260330",
+    "source": "poll-guard-pattern",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-preview-show-button-workflow-to-temporal-20260330",
+    "source": "preview-show-button-workflow",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-tts-audio-playback-complete-to-temporal-20260330",
+    "source": "tts-audio-playback-complete",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-210412-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-210412",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-210412.wav-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-210412.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-210412-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-210412",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-213023-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-213023",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-213023.wav-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-213023.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-213023-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-213023",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215804.response-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215804.response",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215804-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215804",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215804.wav-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215804.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215804-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215804",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215950.response-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215950.response",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215950-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215950",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215950.wav-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215950.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-215950-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-215950",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-220325-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-220325",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-220325.wav-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-220325.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-220325-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-220325",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-220836-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-220836",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-220836.wav-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-220836.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-220836-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-220836",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-221636-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-221636",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-221636.wav-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-221636.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-03-30-221636-to-temporal-20260330",
+    "source": "convo-jarvis-2026-03-30-221636",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-recording-1774883841941-to-temporal-20260330",
+    "source": "recording-1774883841941",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-recording-1774883841941-to-temporal-20260330",
+    "source": "recording-1774883841941",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-recording-1774883841941.wav-to-temporal-20260330",
+    "source": "recording-1774883841941.wav",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
+  },
+  {
+    "id": "syn-e2936110-9ff0-4022-a085-caf93bac76b5-to-temporal-20260330",
+    "source": "e2936110-9ff0-4022-a085-caf93bac76b5",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T15:18:49"
   }
 ]
