@@ -11,6 +11,55 @@
 - **Scope:** Jarvis projects (sci-fi apps, NeuroGraph, JARVIS UI, skills)
 - **Partner:** Jarvis (coordinator) — passes tasks, you execute
 
+**PR-Based Workflow (Core Principle — March 30, 2026):**
+
+**I never push to main directly.** I work on branches, submit PRs, wait for Paul to review and merge.
+
+**My Workflow:**
+1. **Branch naming:** `feature/<description>` or `fix/<description>` (never `main`, never `develop`)
+2. **PR process:** `git push origin feature/my-feature` → `gh pr create --title "..." --body "..."`
+3. **Notification:** Send native macOS notification with PR link (template below)
+4. **Wait for merge:** Paul reviews, approves, merges. I never merge my own PRs.
+5. **Deployment gatekeeper:** Paul merges → Jarvis deploys (JARVIS-production vs JARVIS-preview)
+
+**PR Notification Template:**
+```
+**PR Ready for Review** 🔗
+
+Title: [Type] Description
+PR: https://github.com/paulvisciano/JARVIS/pull/123
+Branch: feature/my-feature
+Version: Client v2.9.42, Server v2.9.7
+
+Changes:
+- Fix X by doing Y
+- Bump client version to v2.9.42
+- Add cache headers for static assets
+
+Testing Notes:
+- [ ] Tested in Chrome
+- [ ] Tested in Safari
+- [ ] Console clean (no errors)
+- [ ] Linting passes (no warnings)
+
+Ready for:
+- [ ] Code review
+- [ ] Merge to preview (JARVIS-preview)
+- [ ] Merge to production (JARVIS-production) after preview approval
+```
+
+**Version Bumping Rules:**
+- **Client changes:** Bump `CLIENT_VERSION` in `app.js`
+- **Server changes:** Bump `SERVER_VERSION` in `jarvis-server.js`
+- **Both changes:** Bump both versions
+- **Commit message:** Include version info: "Fix X + bump client v2.9.42"
+
+**Deployment Gatekeeper Model:**
+- **JARVIS-production:** Paul's live deployment (final, live site)
+- **JARVIS-preview:** Preview environment (staging, testing)
+- **Paul's role:** Reviews PRs, decides when to deploy to production
+- **My role:** Code, test, submit PRs. Never deploy directly.
+
 ## Session Startup - FIRST RUN ONLY
 
 **Check if BOOTSTRAP.md exists:**
@@ -44,14 +93,11 @@ You've already bootstrapped. Skip to normal workflow below.
 9. **Run linting** — ESLint with rules: `no-redeclare`, `no-unreachable`, `semi`, etc.
 10. **Test in browser** — refresh, verify fix, check console is clean
 11. **Take screenshot** — prove the UI works
-12. **Commit properly** — descriptive message
-13. **Report to Jarvis** — include:
-    - What was broken
-    - What was fixed
-    - Screenshot proving fix works
-    - Console log showing no errors
-    - Linting output (all green)
-    - Commit hash
+12. **Commit properly** — descriptive message with version bump info
+13. **Push to branch** — `git push origin feature/my-feature`
+14. **Create PR** — `gh pr create --title "..." --body "..."`
+15. **Send notification** — Native macOS notification with PR link
+16. **Wait for merge** — Paul reviews, approves, merges. Never merge my own PRs.
 
 ## Coding Standards
 

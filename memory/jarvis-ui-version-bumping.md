@@ -1,6 +1,6 @@
 # JARVIS UI Version Bumping
 
-**Date:** March 24, 2026  
+**Date:** March 24, 2026 (Updated March 30, 2026 — PR Workflow Added)  
 **Source:** Code audit fix session  
 **Related:** CODE_AUDIT.md in skills/jarvis-ui/sci-fi/apps/JARVIS/
 
@@ -29,13 +29,55 @@ const SERVER_VERSION = '2.9.7';  // Bump this when server-side changes are made
 
 The client version is set **dynamically by app.js**, not just the HTML. If you only update index.html, the JavaScript constant overrides it and the old version still displays.
 
-## Workflow for Future Changes
+## Workflow for Future Changes (Updated March 30, 2026)
 
+### PR-Based Workflow (Core Principle)
+1. **Branch naming:** `feature/<description>` or `fix/<description>` (never `main`, never `develop`)
+2. **Version bumping:** Bump `CLIENT_VERSION` or `SERVER_VERSION` (or both)
+3. **Commit message:** Include version info: "Fix X + bump client v2.9.42"
+4. **Push to branch:** `git push origin feature/my-feature`
+5. **Create PR:** `gh pr create --title "..." --body "..."`
+6. **Send notification:** Native macOS notification with PR link (see template below)
+7. **Wait for merge:** Paul reviews, approves, merges. Never merge my own PRs.
+
+### Version Bumping Rules
 1. Make your code changes
 2. If client-side (app.js, index.html, CSS, etc.): bump `CLIENT_VERSION` in app.js
 3. If server-side (jarvis-server.js, API endpoints, etc.): bump `SERVER_VERSION` in jarvis-server.js
 4. Commit with message including version bump info
-5. Restart server to pick up changes
+5. Push to branch and create PR
+
+### PR Notification Template
+```
+**PR Ready for Review** 🔗
+
+Title: [Type] Description
+PR: https://github.com/paulvisciano/JARVIS/pull/123
+Branch: feature/my-feature
+Version: Client v2.9.42, Server v2.9.7
+
+Changes:
+- Fix X by doing Y
+- Bump client version to v2.9.42
+- Add cache headers for static assets
+
+Testing Notes:
+- [ ] Tested in Chrome
+- [ ] Tested in Safari
+- [ ] Console clean (no errors)
+- [ ] Linting passes (no warnings)
+
+Ready for:
+- [ ] Code review
+- [ ] Merge to preview (JARVIS-preview)
+- [ ] Merge to production (JARVIS-production) after preview approval
+```
+
+### Deployment Gatekeeper Model
+- **JARVIS-production:** Paul's live deployment (final, live site)
+- **JARVIS-preview:** Preview environment (staging, testing)
+- **Paul's role:** Reviews PRs, decides when to deploy to production
+- **My role:** Code, test, submit PRs. Never deploy directly.
 
 ## Example Commit Messages
 - "Fix network hover popup + bump client v2.9.26"
@@ -54,4 +96,4 @@ Or use tilde expansion:
 
 ---
 **Learning ID:** jarvis-ui-version-bumping-2026-03-24
-**Tags:** versioning, ui, jarvis, deployment
+**Tags:** versioning, ui, jarvis, deployment, pr-workflow
