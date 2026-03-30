@@ -300,8 +300,8 @@ switch (action) {
     console.log('🧭 Opening NeuroGraph...');
     ensureInstalled();
     startServer(); // Ensure server is running
-    console.log(`🚀 Opening https://localhost:${CONFIG.port}/neuro-graph`);
-    openBrowser(`https://localhost:${CONFIG.port}/neuro-graph`);
+    console.log(`🚀 Opening https://localhost:${CONFIG.port}/ (NeuroGraph is main view)`);
+    openBrowser(`https://localhost:${CONFIG.port}/`);
     break;
     
   case 'package-configs':

@@ -33,7 +33,7 @@ node skills/jarvis-nav/scripts/jarvis-nav.js "2026-03-20"
 
 **What it does:**
 1. **Parses time expressions** → yesterday, today, this week, last week, this month, specific dates
-2. **Builds URL** → `https://localhost:18787/neuro-graph?time=<filter>`
+2. **Builds URL** → `https://localhost:18787/?time=<filter>` (NeuroGraph is root view)
 3. **Reuses existing tab** → checks tabs first, navigates existing, opens new only if needed
 4. **Navigates** → URL drives canvas state (time filter + node hash)
 
@@ -65,7 +65,7 @@ node skills/jarvis-nav/scripts/jarvis-nav.js "show me this learning"
 - **Searchbox is DOM** - type to filter canvas render list (manual type)
 - **Navigation = URL building** - no complex DOM automation needed
 - **Learnings = markdown files** - `~/JARVIS/RAW/learnings/YYYY-MM-DD/<node-id>.md`
-- **NeuroGraph is merged** - Part of unified JARVIS UI at `~/SCI-FI/apps/JARVIS/` (not standalone)
+- **NeuroGraph IS the main UI** - Root `/` shows the graph with overlays (orb, transcript, vitals, voice controls)
 
 **Supported time formats:**
 - "yesterday" → `day%3AYYYY-MM-DD` (calculated)
@@ -78,19 +78,14 @@ node skills/jarvis-nav/scripts/jarvis-nav.js "show me this learning"
 
 ## Quick Start
 
-**Open Neurograph:**
+**Open JARVIS UI (NeuroGraph is the main view):**
 ```
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/neuro-graph)
+browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/)
 ```
 
 **Navigate to specific date:**
 ```
-browser(action=navigate, profile=openclaw, targetId=<id>, url=https://localhost:18787/neuro-graph?time=day%3A2026-03-22)
-```
-
-**Open JARVIS Root:**
-```
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/)
+browser(action=navigate, profile=openclaw, targetId=<id>, url=https://localhost:18787/?time=day%3A2026-03-22)
 ```
 
 **Take Screenshot:**
@@ -105,16 +100,16 @@ browser(action=snapshot, profile=openclaw, targetId=<id>, refs=aria)
 
 ## Navigation Commands
 
-### Open Neurograph (Consciousness Visualization)
+### Open JARVIS UI (NeuroGraph + Overlays)
 
-**First time:**
+**Open UI:**
 ```
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/neuro-graph)
+browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/)
 ```
 
 **Navigate to date:**
 ```
-browser(action=navigate, profile=openclaw, targetId=<id>, url=https://localhost:18787/neuro-graph?time=day%3A2026-03-22)
+browser(action=navigate, profile=openclaw, targetId=<id>, url=https://localhost:18787/?time=day%3A2026-03-22)
 ```
 
 **URL patterns:**
@@ -124,24 +119,11 @@ browser(action=navigate, profile=openclaw, targetId=<id>, url=https://localhost:
 - No param → All memories
 
 Shows:
+- **NeuroGraph canvas** (zoomable, pannable) — main view
 - Neurons + synapses count
 - Temporal/Learnings/Archive filters
 - Node list by category
-- Graph canvas (zoomable, pannable)
-
-### Open JARVIS Root (Landing Page)
-
-```
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/)
-```
-
-Shows:
-- JARVIS version (v2.9.24)
-- Server stats (PID, memory, uptime)
-- Voice recording UI (press space)
-- Live transcription toggle
-- Device registry
-- Archive path browser
+- **Overlays:** Orb, transcript, vitals, voice controls
 
 ### Tab Management
 
@@ -249,7 +231,7 @@ browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=<aria-ref>, 
 
 ## Notes
 
-- **Production URL** → Always `https://localhost:18787/neuro-graph` (NOT localhost:8081)
+- **Production URL** → Always `https://localhost:18787/` (NeuroGraph is root view)
 - **HTTPS required** → Use `https://` not `http://`
 - **Screenshots** → Saved to `~/.openclaw/media/browser/<uuid>.png`
 - **Tab reuse** → Check tabs first, navigate existing, open new only if needed

@@ -26,7 +26,7 @@ metadata: { "openclaw": { "emoji": "🧭", "requires": { "bins": ["node", "git"]
 
 ### Natural Language
 - "open jarvis ui" → setup (if needed) → **ensure server running on 18787** → open user browser (profile="user" for mic)
-- "open neurograph" → **same as open jarvis ui** — NeuroGraph is now part of the main UI at `/neuro-graph/` route
+- "open neurograph" → **same as open jarvis ui** — NeuroGraph IS the main UI (root `/`), with overlays (orb, transcript, vitals, voice controls)
 - "start server" → launch jarvis-server.js on port **18787 only** (production)
 - "stop server" → kill running PID
 - "restart server" → stop + start
