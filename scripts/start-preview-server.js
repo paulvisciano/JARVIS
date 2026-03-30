@@ -21,7 +21,7 @@ const path = require('path');
 const DEFAULT_PORT = 18788;
 const DEFAULT_WORKSPACE = path.join(
     process.env.HOME || '/Users/paulvisciano',
-    '.openclaw/agents/jarvis-coder/workspace-preview/apps/JARVIS'
+    '.openclaw/agents/jarvis-coder/workspace-preview/sci-fi/apps/JARVIS'
 );
 
 const PORT = process.env.PREVIEW_PORT || DEFAULT_PORT;
@@ -48,7 +48,6 @@ if (!fs.existsSync(SERVER_SCRIPT)) {
 // Set environment variables for preview server
 const env = {
     ...process.env,
-    VOICE_PORT: PORT,  // Server reads VOICE_PORT, not JARVIS_PORT
     JARVIS_PREVIEW: 'true',
     NODE_ENV: 'preview'
 };
@@ -60,6 +59,11 @@ const serverProcess = spawn('node', [SERVER_SCRIPT], {
     cwd: WORKSPACE,
     stdio: 'inherit'
 });
+
+// Set process title for preview (distinct from production)
+setTimeout(() => {
+    // Server sets its own process.title internally via JARVIS_PREVIEW env var
+}, 2000);
 
 serverProcess.on('error', (err) => {
     console.error(`[Preview Server] Failed to start server: ${err.message}`);
