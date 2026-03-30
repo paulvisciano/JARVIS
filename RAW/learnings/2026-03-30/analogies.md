@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like waking up with yesterday's newspaper — bootstrap is your morning briefing
-- Like a court stenographer recording both questions AND answers for the official record
-- Like packing a suitcase — how you fold matters more than how much you pack
-- Like a flight recorder — every input and output logged for post-flight analysis
-- Like checking your watch is set to the right timezone before scheduling meetings
+- Like a pilot's flight log — not just destinations, but every decision made en route
+- Like a staging environment in software deployment — test before you touch production
+- Like a museum exhibit label — the artifact matters, but so does the story of how it was made
+- Like a photographer's contact sheet — see all the shots, not just the final print
+- Like a chef's tasting spoon — sample before serving to the customer
