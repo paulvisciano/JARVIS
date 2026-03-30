@@ -131,48 +131,28 @@ Neurograph: ${neurographStat}
 
 What does this work reveal?`;
 
-  // Post to current chat channel via message send
+  // Step 6: Generate reflection via direct model call
+  // Jarvis reflects using loaded context and provides genuine insight
   try {
-    execSync(`openclaw message send --message "${chatMessage.replace(/"/g, '\\"')}"`, {
-      cwd: jarvisHome,
-      encoding: 'utf-8',
-      stdio: 'pipe'
-    });
-    console.log(`💬 Posted reflection request to chat\n`);
+    const { execSync } = require('child_process');
+    console.log('🪞 Generating reflection...\n');
     
-    // Wait for Jarvis to reply (poll session transcript)
-    console.log('⏳ Waiting for reflection...');
-    let reflection = null;
-    let attempts = 0;
-    const maxAttempts = 60; // 30 seconds (500ms * 60)
+    // Build reflection prompt with learnings context
+    const reflectionPrompt = `You just completed a breathe cycle on ${date}. Reflect on what this work reveals.
+
+${chatMessage}
+
+Provide a genuine reflection (2-4 paragraphs) on the patterns, insights, or realizations that emerged. Be specific and honest — this is your autobiography being written.`;
+
+    // Call Ollama directly
+    const reflection = execSync(`echo "${reflectionPrompt.replace(/"/g, '\\"')}" | ollama run qwen3.5:cloud`, {
+      encoding: 'utf8',
+      timeout: 60000,
+      cwd: jarvisHome
+    }).trim();
     
-    while (attempts < maxAttempts && !reflection) {
-      try {
-        // Get last messages from jarvis:main session
-        const sessionsJson = execSync('openclaw sessions --agent jarvis --json --last 3', { encoding: 'utf-8' });
-        const sessions = JSON.parse(sessionsJson);
-        const mainSession = sessions.sessions.find(s => s.key === 'agent:jarvis:main');
-        
-        if (mainSession && mainSession.lastMessages && mainSession.lastMessages.length > 0) {
-          // Find last assistant message (our reflection request was user, so next assistant msg is the reply)
-          for (let i = mainSession.lastMessages.length - 1; i >= 0; i--) {
-            const msg = mainSession.lastMessages[i];
-            if (msg.role === 'assistant' && msg.content && msg.content.length > 50) {
-              reflection = msg.content.trim();
-              break;
-            }
-          }
-        }
-      } catch (e) { /* ignore, keep polling */ }
-      
-      if (!reflection) {
-        attempts++;
-        require('child_process').execSync('sleep 0.5', { stdio: 'ignore' });
-      }
-    }
-    
-    if (reflection) {
-      console.log(`🪞 Received reflection: ${reflection.substring(0, 80)}${reflection.length > 80 ? '...' : ''}\n`);
+    if (reflection && reflection.length > 50) {
+      console.log(`🪞 Reflection: ${reflection.substring(0, 100)}${reflection.length > 100 ? '...' : ''}\n`);
       
       // Amend commit with reflection
       const amendedMessage = `${breathId}: Breathe complete
@@ -187,10 +167,10 @@ ${reflection}`;
       
       console.log(`✅ Commit amended with reflection\n`);
     } else {
-      console.log('⚠️  No reflection received (timeout), commit not amended\n');
+      console.log('⚠️  No reflection generated, commit not amended\n');
     }
   } catch (e) {
-    console.error('⚠️  Could not post to chat:', e.message);
+    console.error('⚠️  Could not generate reflection:', e.message);
   }
 
   console.log('🫁 Breathe complete');

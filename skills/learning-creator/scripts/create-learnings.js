@@ -170,6 +170,10 @@ try {
   // Clean up temp file
   fs.unlinkSync(promptPath);
 
+  // Strip ANSI escape codes from Ollama output (spinners, cursor control, etc.)
+  const ansiRegex = /\x1b\[[0-9;]*[a-zA-Z]/g;
+  const cleanOutput = modelOutput.replace(ansiRegex, '');
+
   // Parse model output and create learning files
   // Expected JSON format from model:
   // {"learnings": [...], "summary": "...", "analogies": [...]}
@@ -181,7 +185,7 @@ try {
     // Extract JSON from output (skip "Thinking..." prefix)
     // Look for JSON starting with "learnings", "summary", or "analogies" keys
     const jsonPattern = /\{[\s\S]*"learnings"[\s\S]*\}/;
-    const match = modelOutput.match(jsonPattern);
+    const match = cleanOutput.match(jsonPattern);
     
     if (match && match[0]) {
       result = JSON.parse(match[0]);
