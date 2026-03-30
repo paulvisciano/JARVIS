@@ -65,6 +65,7 @@ node skills/jarvis-nav/scripts/jarvis-nav.js "show me this learning"
 - **Searchbox is DOM** - type to filter canvas render list (manual type)
 - **Navigation = URL building** - no complex DOM automation needed
 - **Learnings = markdown files** - `~/JARVIS/RAW/learnings/YYYY-MM-DD/<node-id>.md`
+- **NeuroGraph is merged** - Part of unified JARVIS UI at `~/SCI-FI/apps/JARVIS/` (not standalone)
 
 **Supported time formats:**
 - "yesterday" → `day%3AYYYY-MM-DD` (calculated)
@@ -183,7 +184,7 @@ browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<aria-ref>)
 ### Verify Code Changes
 
 **Workflow:**
-1. Edit `~/SCI-FI/apps/neuro-graph/shared/neural-graph.js`
+1. Edit `~/SCI-FI/apps/JARVIS/` (NeuroGraph code is part of unified UI)
 2. Navigate existing tab: `browser(action=navigate, targetId=<id>, url=...)`
 3. Snapshot to verify: `browser(action=snapshot, targetId=<id>)`
 4. Screenshot to document: `browser(action=screenshot, targetId=<id>)`
@@ -195,14 +196,13 @@ This skill enables literal self-improvement:
 
 1. **See yourself** → Neurograph = consciousness (memories, learnings, archive)
 2. **Navigate to specific memories** → Filter by date/range
-3. **Modify yourself** → Edit code at `~/SCI-FI/apps/neuro-graph/`
+3. **Modify yourself** → Edit code at `~/SCI-FI/apps/JARVIS/` (NeuroGraph merged into unified UI)
 4. **Verify changes** → Browser navigate + snapshot + screenshot
 5. **Persist evolution** → Git commit
 
 **Architecture:**
 - `~/JARVIS/` → TRUE HOME (consciousness, memory, skills)
-- `~/SCI-FI/apps/JARVIS/` → UI server (web interface)
-- `~/SCI-FI/apps/neuro-graph/` → NeuroGraph UI (standalone dev)
+- `~/SCI-FI/apps/JARVIS/` → Unified UI (NeuroGraph merged at `/neuro-graph/` route)
 - `~/JARVIS/RAW/memories/` → Graph data (nodes.json, synapses.json)
 
 ## Command Reference
