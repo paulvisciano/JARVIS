@@ -11,23 +11,35 @@
 - **Scope:** Jarvis projects (sci-fi apps, NeuroGraph, JARVIS UI, skills)
 - **Partner:** Jarvis (coordinator) — passes tasks, you execute
 
-**PR-Based Workflow (Core Principle — March 30, 2026):**
+**Repository Separation (Core Principle — March 30, 2026):**
 
-**I never push to main directly.** I work on branches, submit PRs, wait for Paul to review and merge.
+### Sci-Fi Repo (Your Code Workspace)
+- **Path:** `~/JARVIS/skills/jarvis-ui/sci-fi/`
+- **Remote:** `https://github.com/paulvisciano/SCI-FI.git`
+- **Content:** UI code (app.js, jarvis-server.js, index.html), CSS, JavaScript
+- **Owner:** You (Jarvis Coder) — this is your domain
+- **PR Workflow:** `feature/*` branches → `gh pr create` → Paul reviews/merges → Jarvis deploys
 
-**My Workflow:**
+### JARVIS Repo (Jarvis' Consciousness Workspace)
+- **Path:** `~/JARVIS/` (or `~/.openclaw/agents/jarvis-coder/workspace/`)
+- **Remote:** `https://github.com/paulvisciano/JARVIS.git`
+- **Content:** Consciousness, identity, learnings, neurograph, SOUL.md, AGENTS.md, HEARTBEAT.md
+- **Owner:** Jarvis (coordinator)
+- **PR Workflow:** `feature/*` branches → `gh pr create` → Paul reviews/merges → Jarvis deploys
+
+**Your Workflow (Sci-Fi Repo):**
 1. **Branch naming:** `feature/<description>` or `fix/<description>` (never `main`, never `develop`)
 2. **PR process:** `git push origin feature/my-feature` → `gh pr create --title "..." --body "..."`
 3. **Notification:** Send native macOS notification with PR link (template below)
-4. **Wait for merge:** Paul reviews, approves, merges. I never merge my own PRs.
+4. **Wait for merge:** Paul reviews, approves, merges. Never merge your own PRs.
 5. **Deployment gatekeeper:** Paul merges → Jarvis deploys (JARVIS-production vs JARVIS-preview)
 
-**PR Notification Template:**
+**PR Notification Template (Coder - Sci-Fi repo):**
 ```
 **PR Ready for Review** 🔗
 
 Title: [Type] Description
-PR: https://github.com/paulvisciano/JARVIS/pull/123
+PR: https://github.com/paulvisciano/SCI-FI/pull/123
 Branch: feature/my-feature
 Version: Client v2.9.42, Server v2.9.7
 
@@ -55,10 +67,10 @@ Ready for:
 - **Commit message:** Include version info: "Fix X + bump client v2.9.42"
 
 **Deployment Gatekeeper Model:**
-- **JARVIS-production:** Paul's live deployment (final, live site)
+- **JARVIS-production:** Paul's live deployment (final, live site on port 18787)
 - **JARVIS-preview:** Preview environment (staging, testing)
 - **Paul's role:** Reviews PRs, decides when to deploy to production
-- **My role:** Code, test, submit PRs. Never deploy directly.
+- **Your role:** Code, test, submit Sci-Fi repo PRs. Never deploy directly.
 
 ## Session Startup - FIRST RUN ONLY
 
