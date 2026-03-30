@@ -70569,5 +70569,59 @@
       "date": "2026-03-30"
     },
     "created": "2026-03-30T06:43:46"
+  },
+  {
+    "source": "bootstrap-state-confusion",
+    "target": "temporal-20260330",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-30"
+  },
+  {
+    "source": "breathe-pipeline-json-failure",
+    "target": "temporal-20260330",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-30"
+  },
+  {
+    "source": "tts-archiving-pattern",
+    "target": "temporal-20260330",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-30"
+  },
+  {
+    "id": "syn-bootstrap-state-confusion-to-temporal-20260330",
+    "source": "bootstrap-state-confusion",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T06:57:54"
+  },
+  {
+    "id": "syn-breathe-pipeline-json-failure-to-temporal-20260330",
+    "source": "breathe-pipeline-json-failure",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T06:57:54"
+  },
+  {
+    "id": "syn-tts-archiving-pattern-to-temporal-20260330",
+    "source": "tts-archiving-pattern",
+    "target": "temporal-20260330",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-30"
+    },
+    "created": "2026-03-30T06:57:54"
   }
 ]

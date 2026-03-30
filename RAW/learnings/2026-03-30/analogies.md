@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like finding static on a radio — the signal was there, just buried under noise
-- Like a car with a broken brake light — the brakes work, but you can't tell if they're engaged
-- Like a conversation partner who won't let you interject — exhausting, even if they're helpful
-- Like debugging a pipeline — one clogged filter stops the whole flow
-- Like a lighthouse keeper — steady check-ins keep the ship from crashing
+- Like waking up with yesterday's newspaper — bootstrap is your morning briefing
+- Like a court stenographer recording both questions AND answers for the official record
+- Like packing a suitcase — how you fold matters more than how much you pack
+- Like a flight recorder — every input and output logged for post-flight analysis
+- Like checking your watch is set to the right timezone before scheduling meetings
