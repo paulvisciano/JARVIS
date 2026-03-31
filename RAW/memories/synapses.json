@@ -73872,5 +73872,88 @@
       "date": "2026-03-30"
     },
     "created": "2026-03-30T15:18:49"
+  },
+  {
+    "source": "analogies",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "source": "heartbeat-source-of-truth",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "source": "morning-continuity-protocol",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "source": "summary",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "id": "syn-heartbeat-source-of-truth-to-temporal-20260331",
+    "source": "heartbeat-source-of-truth",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:22:47"
+  },
+  {
+    "id": "syn-morning-continuity-protocol-to-temporal-20260331",
+    "source": "morning-continuity-protocol",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:22:47"
+  },
+  {
+    "id": "syn-full-context-to-temporal-20260331",
+    "source": "full-context",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:22:47"
+  },
+  {
+    "id": "syn-7cb55d78-7c90-4800-bd59-6437e99eddf4-to-temporal-20260331",
+    "source": "7cb55d78-7c90-4800-bd59-6437e99eddf4",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:22:47"
+  },
+  {
+    "id": "syn-e940809e-8d4d-4c5a-89c9-7d1c74cd1383-to-temporal-20260331",
+    "source": "e940809e-8d4d-4c5a-89c9-7d1c74cd1383",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:22:47"
   }
 ]
