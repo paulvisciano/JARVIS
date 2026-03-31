@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like giving a contractor a key to the building — GitHub CLI auth lets Coder work autonomously without waiting for access
-- Like a recipe book vs. a cooking show — skills teach the agent how to cook, they don't cook for you directly
-- Like a pilot's pre-flight checklist — WORKFLOW.md ensures Coder doesn't skip critical steps before claiming 'ready for takeoff'
-- Like configuring a new employee's badge access — env vars in openclaw.json give skills the permissions they need to run
-- Like a car's autopilot engaging — once gh auth is set up, Coder can navigate the full workflow without manual intervention
+- Like merging two control rooms into one — same instruments, better coordination
+- Like a transformer toy — one object, multiple configurations, not multiple toys
+- Like a doorbell that rings but also shows a light if you can't hear — graceful fallback
+- Like a doorman opening the door vs the guest walking through — different roles, same entrance
+- Like test-driving a car before selling it — evidence before claiming it works

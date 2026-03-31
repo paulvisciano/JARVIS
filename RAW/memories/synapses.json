@@ -75885,5 +75885,77 @@
       "date": "2026-03-31"
     },
     "created": "2026-03-31T07:15:22"
+  },
+  {
+    "source": "browser-autoplay-policy-handling",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "source": "gateway-vs-ui-concerns-separation",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "source": "neurograph-ui-merger-architecture",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "source": "single-panel-collapsed-expanded-pattern",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "id": "syn-browser-autoplay-policy-handling-to-temporal-20260331",
+    "source": "browser-autoplay-policy-handling",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T07:46:34"
+  },
+  {
+    "id": "syn-gateway-vs-ui-concerns-separation-to-temporal-20260331",
+    "source": "gateway-vs-ui-concerns-separation",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T07:46:34"
+  },
+  {
+    "id": "syn-neurograph-ui-merger-architecture-to-temporal-20260331",
+    "source": "neurograph-ui-merger-architecture",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T07:46:34"
+  },
+  {
+    "id": "syn-single-panel-collapsed-expanded-pattern-to-temporal-20260331",
+    "source": "single-panel-collapsed-expanded-pattern",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T07:46:34"
   }
 ]
