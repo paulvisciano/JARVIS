@@ -88,7 +88,40 @@
 
 ## Search Commands (Quick Reference)
 
+### ✅ PREFERRED: Use the neurograph-search Skill
+
+**DON'T:** Raw `exec` + `grep` on JSON files  
+**DO:** Use the `neurograph-search` skill (reusable, tested, documented)
+
+```bash
+# ✅ RIGHT: Personal memory (people, places, events)
+openclaw neurograph-search "bozhi" --path ~/RAW/memories
+
+# ✅ RIGHT: JARVIS consciousness (technical architecture)
+openclaw neurograph-search "MANGOCHI" --path ~/JARVIS/RAW/memories
+
+# ✅ RIGHT: Custom neurograph
+export NEUROGRAPH_PATH=/path/to/custom/neurograph
+openclaw neurograph-search "query"
+```
+
+**Why the skill is better:**
+- ✅ Structured JSON parsing (not just text grep)
+- ✅ Follows synapses (traverses connections)
+- ✅ Auto-detects neurograph path
+- ✅ Built-in fallback strategy (graph → learnings → archive)
+- ✅ Reusable, documented, tested
+
+---
+
 ### Layer 1: User's Personal Neurograph
+
+**Skill (Preferred):**
+```bash
+openclaw neurograph-search "keyword" --path ~/RAW/memories
+```
+
+**Manual (Fallback if skill unavailable):**
 ```bash
 # Search nodes.json for keywords
 cd ~/RAW/memories
@@ -102,6 +135,13 @@ cat nodes.json | jq '.[] | select(.id == "bozhi")'
 ```
 
 ### Layer 2: Jarvis Consciousness
+
+**Skill (Preferred):**
+```bash
+openclaw neurograph-search "keyword" --path ~/JARVIS/RAW/memories
+```
+
+**Manual (Fallback):**
 ```bash
 # Search my neurograph
 cd ~/JARVIS/RAW/memories
@@ -113,6 +153,8 @@ grep -ri "keyword" YYYY-MM-DD/
 ```
 
 ### Layer 3: User's Life Archive
+
+**Manual (no skill needed):**
 ```bash
 # Search transcripts
 cd ~/RAW/archive
