@@ -39,17 +39,52 @@
 **Why:** Today Coder finished work but never notified. Jarvis had to poll for completion.
 
 ### 4. ALWAYS Create PR Before Marking Complete
+
+**Standard Method: GitHub CLI (Preferred)**
 ```bash
 # Required steps:
 git checkout -b feature/description
 git add .
 git commit -m "feat: description + bump version"
-git push origin feature/description
-gh pr create --title "..." --body "..."
-# THEN send completion notification
+git push -u origin feature/description
+gh pr create --title "feat: Description (vX.Y.Z)" --body "
+**What Changed:**
+- Summary of changes
+- Why it changed
+
+**Files:**
+- list of files
+
+**Testing:**
+- [x] Preview tested
+- [x] Console clean
+- [x] Syntax valid
+
+**Ready for:**
+- [ ] Code review
+- [ ] Merge to preview
+- [ ] Merge to production
+"
+# THEN send completion notification with PR link
+```
+
+**Alternative: GitHub Web UI (Only if CLI unavailable)**
+```
+1. Go to: https://github.com/paulvisciano/SCI-FI/pull/new/feature/your-branch
+2. Fill in title and description (use template above)
+3. Create PR
+4. Copy PR link
+5. Send completion notification with PR link
 ```
 
 **Forbidden:** Direct commits to `main` branch.
+
+**Why CLI is Preferred:**
+- ✅ Scriptable (part of session flow)
+- ✅ Auditable (commands in session history)
+- ✅ Template support (--body flag)
+- ✅ No context switching (stay in terminal)
+- ✅ Faster workflow
 
 ### 5. ALWAYS Bump Versions
 ```javascript
