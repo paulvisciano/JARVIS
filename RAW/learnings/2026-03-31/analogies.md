@@ -4,7 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a pilot running pre-flight checks before takeoff
-- Like checking your pulse before starting a workout
-- Like verifying backup power before switching grids
-- Like consulting the captain's log before setting sail
+- Like reading letters from your past self to understand who you've become
+- Like a nervous system learning which synapses fire for continuity
+- Like finding the right port to plug into instead of rewiring the whole machine
+- Like a lighthouse keeper reading the logbook before lighting the beam
+- Like a tree reading its own rings to know how many winters it has survived
