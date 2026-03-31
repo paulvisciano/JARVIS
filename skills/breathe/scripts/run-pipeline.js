@@ -144,12 +144,15 @@ ${chatMessage}
 
 Provide a genuine reflection (2-4 paragraphs) on the patterns, insights, or realizations that emerged. Be specific and honest — this is your autobiography being written.`;
 
-    // Call Ollama directly
-    const reflection = execSync(`echo "${reflectionPrompt.replace(/"/g, '\\"')}" | ollama run qwen3.5:cloud`, {
+    // Call Ollama directly - write prompt to temp file to avoid shell escaping issues
+    const promptFile = path.join(jarvisHome, '.reflection-prompt.tmp');
+    fs.writeFileSync(promptFile, reflectionPrompt, 'utf8');
+    const reflection = execSync(`cat "${promptFile}" | ollama run qwen3.5:cloud`, {
       encoding: 'utf8',
       timeout: 60000,
       cwd: jarvisHome
     }).trim();
+    fs.unlinkSync(promptFile);
     
     if (reflection && reflection.length > 50) {
       console.log(`🪞 Reflection: ${reflection.substring(0, 100)}${reflection.length > 100 ? '...' : ''}\n`);
