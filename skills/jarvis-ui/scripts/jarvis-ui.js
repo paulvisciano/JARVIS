@@ -147,14 +147,21 @@ function startServer() {
 // === Open browser ===
 function openBrowser(url, forUser = false) {
   if (forUser) {
-    console.log('✓ Opening in user profile (mic access)');
+    console.log('✓ Opening in user browser (mic access)');
+    // Use native open command to ensure it opens in user's actual browser (not OpenClaw sandbox)
     try {
-      execSync(`openclaw browser open ${url} --profile user`, { stdio: 'inherit' });
+      execSync(`open "${url}"`, { stdio: 'inherit' });
+      console.log('✓ Opened in system default browser (user profile)');
       return true;
     } catch (err) {
-      console.log('⚠️  User profile not ready, opening system default...');
-      execSync(`open ${url}`, { stdio: 'inherit' });
-      return true;
+      console.error('❌ Browser open failed:', err.message);
+      // Fallback to openclaw browser
+      try {
+        execSync(`openclaw browser open ${url}`, { stdio: 'inherit' });
+        return true;
+      } catch (err2) {
+        return false;
+      }
     }
   } else {
     console.log('✓ Opening in default browser');
