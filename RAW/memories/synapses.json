@@ -74156,5 +74156,56 @@
       "date": "2026-03-31"
     },
     "created": "2026-03-31T03:52:18"
+  },
+  {
+    "source": "client-side-automation-pattern",
+    "target": "temporal-20260331",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-03-31"
+  },
+  {
+    "id": "syn-client-side-automation-pattern-to-temporal-20260331",
+    "source": "client-side-automation-pattern",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:56:08"
+  },
+  {
+    "id": "syn-recording-1774929209096-to-temporal-20260331",
+    "source": "recording-1774929209096",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:56:08"
+  },
+  {
+    "id": "syn-recording-1774929209096-to-temporal-20260331",
+    "source": "recording-1774929209096",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:56:08"
+  },
+  {
+    "id": "syn-recording-1774929209096.wav-to-temporal-20260331",
+    "source": "recording-1774929209096.wav",
+    "target": "temporal-20260331",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-03-31"
+    },
+    "created": "2026-03-31T03:56:08"
   }
 ]
