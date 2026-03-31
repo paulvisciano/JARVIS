@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like merging two control rooms into one — same instruments, better coordination
-- Like a transformer toy — one object, multiple configurations, not multiple toys
-- Like a doorbell that rings but also shows a light if you can't hear — graceful fallback
-- Like a doorman opening the door vs the guest walking through — different roles, same entrance
-- Like test-driving a car before selling it — evidence before claiming it works
+- Like a camera taking a snapshot at startup — new objects won't appear until you restart
+- Like having a library card but the book isn't in the catalog — exists but can't be found
+- Like checking if a lightbulb works without screwing it in first — null check without initialization
+- Like a bouncer with a guest list — even if you're at the club, you need your name on the list
+- Like assembling furniture — the instructions (config) don't matter if you don't open the box (restart)
