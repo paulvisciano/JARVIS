@@ -1,10 +1,10 @@
 {
   "jarvisLoaded": true,
-  "bootedAt": "2026-03-30T13:17:59.907Z",
+  "bootedAt": "2026-03-30T16:50:14.383Z",
   "sessionId": "unknown",
-  "breathSummariesLoaded": 13,
+  "breathSummariesLoaded": 15,
   "graphVerified": true,
-  "recapSource": "none",
-  "recapCount": 0,
+  "recapSource": "active-context",
+  "recapCount": 5,
   "gitNative": true
 }
