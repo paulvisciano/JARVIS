@@ -1,7 +1,12 @@
 ---
 name: jarvis-ui
 description: Open Jarvis UI (includes NeuroGraph), manage server, distribute to coder. Auto-setup on first run. Portable consciousness interface for any Jarvis instance.
-metadata: { "openclaw": { "emoji": "🧭", "requires": { "bins": ["node", "git"], "env": ["JARVIS_UI_PATH", "JARVIS_MEMORY_PATH"] } } }
+metadata:
+  openclaw:
+    emoji: "🧭"
+    requires:
+      bins: ["node", "git"]
+      env: ["JARVIS_UI_PATH", "JARVIS_MEMORY_PATH"]
 ---
 
 # Jarvis UI Skill

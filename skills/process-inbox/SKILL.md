@@ -1,7 +1,11 @@
 ---
 name: process-inbox
 description: Process inbox audio files (WebM, WAV, etc.) → transcribe with whisper → archive to ~/RAW/archive/YYYY-MM-DD/audio/. Use when: (1) inbox has pending audio, (2) user sends offline recording, (3) batch transcribe needed. Supports all whisper formats (flac, mp3, ogg, wav, webm).
-metadata: { "openclaw": { "emoji": "📬", "requires": { "bins": ["ffmpeg", "whisper-cli"] } } }
+metadata:
+  openclaw:
+    emoji: "📬"
+    requires:
+      bins: ["ffmpeg", "whisper-cli"]
 ---
 
 # Process Inbox (Audio → Transcribe → Archive)
