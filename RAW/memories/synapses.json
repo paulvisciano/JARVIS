@@ -76462,5 +76462,16 @@
       "date": "2026-04-01"
     },
     "created": "2026-04-01T04:33:31"
+  },
+  {
+    "id": "syn-9fd4b65e-bcc0-4b9f-954e-f3b2f1d6d15d-to-temporal-20260401",
+    "source": "9fd4b65e-bcc0-4b9f-954e-f3b2f1d6d15d",
+    "target": "temporal-20260401",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-01"
+    },
+    "created": "2026-04-01T04:36:31"
   }
 ]
