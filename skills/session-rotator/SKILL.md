@@ -1,3 +1,14 @@
+---
+name: session-rotator
+description: Aggressive session rotation to prevent bloat-induced failures (size/time triggers + lock cleanup)
+metadata:
+  openclaw:
+    emoji: "🔄"
+    requires:
+      bins: ["node"]
+      env: ["JARVIS_HOME"]
+---
+
 # Session Rotator Skill
 
 **Purpose:** Aggressive session rotation with size-based + time-based triggers to prevent bloat-induced failures.

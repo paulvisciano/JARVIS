@@ -1,6 +1,6 @@
 ---
 name: skill-discovery
-description: Sync Jarvis skills to OpenClaw workspace. Auto-discover all skills in ~/JARVIS/skills/, ensure symlinks exist in ~/.openclaw/workspace/skills/, remove broken links, verify OpenClaw has access to all Jarvis skills. Use when: (1) new skills created in Jarvis, (2) workspace symlinks corrupt or missing, (3) OpenClaw needs skill access refresh, (4) skills folder out of sync.
+description: Sync Jarvis skills to OpenClaw workspace (auto-discover skills, ensure symlinks exist, remove broken links)
 metadata:
   openclaw:
     emoji: "🔗"

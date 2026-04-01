@@ -1,6 +1,6 @@
 ---
 name: learning-creator
-description: Read extracted context, synthesize insights, create learning nodes + .md files. Use when: (1) context extracted from day's archives, (2) model needs to create distilled learnings, (3) decisions/realizations/commitments need graph capture. I read, think, create — automation just feeds clean text.
+description: Read extracted context, synthesize insights, create learning nodes + .md files
 metadata:
   openclaw:
     emoji: "💡"

@@ -1,6 +1,6 @@
 ---
 name: scifi-app-discovery
-description: Auto-discover Sci-Fi apps from ~/SCI-FI/apps/, sync to NeuroGraph as app nodes. Scan apps folder, compare with NeuroGraph app nodes, create missing nodes with path/purpose/plans_folder/status, verify plans folders exist, keep NeuroGraph registry current. Use when: (1) new apps created in Sci-Fi folder, (2) NeuroGraph needs app registry update, (3) checking app status + plans folders, (4) double-checking latest Sci-Fi apps.
+description: Auto-discover Sci-Fi apps from folder, sync to NeuroGraph as app nodes (registry updates)
 metadata:
   openclaw:
     emoji: "🚀"

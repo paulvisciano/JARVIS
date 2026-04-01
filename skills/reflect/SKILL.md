@@ -1,6 +1,6 @@
 ---
 name: reflect
-description: Generate introspective reflection on any time period by reading git commits. Use when: (1) breathe pipeline needs reflection paragraph for commit message, (2) user asks "reflect on yesterday/last-week/March 15-20", (3) want to see patterns in who I was becoming. Reads ALL commits (not just breathes) — works even without breathe discipline.
+description: Generate introspective reflection on git commits (time period analysis for breathe pipeline + ad-hoc queries)
 metadata:
   openclaw:
     emoji: "🪞"

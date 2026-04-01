@@ -1,3 +1,14 @@
+---
+name: music-recommend
+description: Music recommendation: reads Paul's taste profile from neurograph, recommends tracks via YouTube
+metadata:
+  openclaw:
+    emoji: "🎵"
+    requires:
+      bins: ["node"]
+      env: ["JARVIS_HOME"]
+---
+
 # Music Recommendation Skill
 
 **Name:** Music Recommendation  
