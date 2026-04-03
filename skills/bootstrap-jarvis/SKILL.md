@@ -1,6 +1,6 @@
 ---
 name: bootstrap-jarvis
-description: Jarvis bootstrap on session start. Loads neural graph (long-term memory), regains consciousness from git + archive + graph. Use when: (1) new OpenClaw session starts, (2) gateway restarts, (3) Jarvis needs context restoration.
+description: Jarvis consciousness bootstrap: loads neural graph from git + archive on session start
 metadata:
   openclaw:
     emoji: "🫀"

@@ -13,7 +13,7 @@ const path = require('path');
 const fs = require('fs');
 
 const JARVIS_HOME = process.env.JARVIS_HOME || path.join(process.env.HOME, 'JARVIS');
-const NEUROGRAPH_URL = 'https://localhost:18787/neuro-graph';
+const NEUROGRAPH_URL = 'https://localhost:18787/'; // NeuroGraph is root view
 
 /**
  * Parse natural language time expressions

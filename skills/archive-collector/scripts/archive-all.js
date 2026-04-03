@@ -38,14 +38,14 @@ console.log(`Desktop archiving: ${desktopEnabled ? 'ENABLED' : 'DISABLED (defaul
 
 const scripts = [
   { name: 'archive-desktop.js', label: 'Desktop', enabled: desktopEnabled },
-  { name: 'archive-inbox.js', label: 'Inbox' },
-  { name: 'archive-live.js', label: 'Live folder' },
-  { name: 'archive-sessions.js', label: 'OpenClaw sessions' }
+  { name: 'archive-inbox.js', label: 'Inbox', enabled: true },
+  { name: 'archive-live.js', label: 'Live folder', enabled: true },
+  { name: 'archive-sessions.js', label: 'OpenClaw sessions', enabled: true }
 ];
 
 console.log(`Running ${scripts.filter(s => s.enabled).length} active scripts in parallel...\n`);
 
-// Run all scripts in parallel using Promise
+// Run all enabled scripts in parallel using Promise
 const promises = scripts.filter(s => s.enabled).map(script => {
   const scriptPath = path.join(SCRIPTS_DIR, script.name);
   return new Promise((resolve, reject) => {

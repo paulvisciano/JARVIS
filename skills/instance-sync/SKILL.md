@@ -1,6 +1,6 @@
 ---
 name: instance-sync
-description: Sync JARVIS instance from paul branch to custom branch (e.g., eric). Handles neurograph sovereignty, merge conflicts, and safe updates. Use when: (1) distributing updates to forks (Eric, David, Bruce), (2) merging paul branch into custom branches, (3) preserving sovereign neurographs during updates.
+description: Sync JARVIS instance from paul branch to custom branch (fork updates with neurograph sovereignty)
 metadata:
   openclaw:
     emoji: "🔄"

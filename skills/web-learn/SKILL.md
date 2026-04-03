@@ -1,6 +1,6 @@
 ---
 name: web-learn
-description: Learn from websites by screenshotting + OCR'ing pages. Use when: (1) user provides a URL to learn from, (2) need visual proof of knowledge source, (3) want traceable learnings linked to screenshots. Works with OpenClaw browser tool + tesseract OCR + llama3.2 model synthesis. Saves screenshots to archive, creates consolidated learning .md, links neurograph nodes to source URLs.
+description: Learn from websites via screenshot + OCR + model synthesis (traceable learnings linked to URLs)
 metadata:
   openclaw:
     emoji: "🌐"
