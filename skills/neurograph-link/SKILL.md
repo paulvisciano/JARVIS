@@ -1,7 +1,11 @@
 ---
 name: neurograph-link
-description: Link between neurographs via memory-link nodes. Use when: (1) discovering available graph connections, (2) loading specific nodes from remote graphs, (3) comparing graph metadata. NEVER loads full graphs (3M+ tokens = impossible). Uses local_path when available (fast disk access). Works with neurograph-search for cross-graph queries.
-metadata: { "openclaw": { "emoji": "🔗", "requires": { "bins": ["node"] } } }
+description: Link between neurographs via memory-link nodes (cross-graph traversal, never loads full graphs)
+metadata:
+  openclaw:
+    emoji: "🔗"
+    requires:
+      bins: ["node"]
 ---
 
 # Neurograph Link (Memory-Link Traversal)

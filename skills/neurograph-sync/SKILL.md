@@ -1,6 +1,6 @@
 ---
 name: neurograph-sync
-description: Synchronize neurograph with disk — ensures 1:1 mapping between files and nodes. Use when: (1) verifying graph integrity (all files have nodes), (2) creating missing nodes for archive files + learning .md files + skill files, (3) linking to temporal anchors (YYYY-MM-DD), (4) ensuring files on disk = nodes in graph. Runs verification + creation in one flow. Auto-discovers JARVIS skills and creates openclaw-skill nodes.
+description: Synchronize neurograph with disk (1:1 mapping: files on disk = nodes in graph)
 metadata:
   openclaw:
     emoji: "🔗"

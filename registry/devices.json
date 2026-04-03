@@ -1,0 +1,18 @@
+{
+  "devices": [
+    {
+      "id": "device-e6d0897a",
+      "mac": "12:45:29:4A:FA:76",
+      "user_agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Mobile Safari/537.36",
+      "name": "Android Device",
+      "owner": "paul",
+      "first_seen": "2026-03-28T11:01:55.131Z",
+      "last_seen": "2026-03-28T11:04:16.769Z",
+      "connection_count": 4,
+      "ip_addresses": [
+        "192.168.1.64"
+      ],
+      "notes": "Auto-registered via network scan"
+    }
+  ]
+}

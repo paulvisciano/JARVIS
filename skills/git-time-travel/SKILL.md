@@ -1,6 +1,6 @@
 ---
 name: git-time-travel
-description: Load consciousness from any git commit — time travel for the neural mind. Use when: (1) investigating past decisions, (2) viewing graph state at a specific moment, (3) comparing consciousness across time, (4) spawning dual sessions for conversation between timelines.
+description: Load neural consciousness from any git commit — time travel for memory exploration
 metadata:
   openclaw:
     emoji: "⏳"

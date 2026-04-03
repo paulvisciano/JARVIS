@@ -87,16 +87,94 @@ try {
   
   console.log('✅ Memory synced (learnings + archive files)\n');
 
-  // Step 5: Reflect (Git Commit with final reflection)
-  console.log('\n🪞 Reflecting into git...');
+  // Step 5: Commit learnings + neurograph
+  console.log('\n💾 Committing changes...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
-  // Only commit learnings (memories are sovereign, gitignored per-instance)
-  execSync(`git add RAW/learnings/${date}/`, { cwd: jarvisHome, stdio: 'inherit' });
-  execSync(`git commit -m "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"`, { cwd: jarvisHome, stdio: 'inherit' });
-  console.log(`✅ Breath committed: ${breathId}`);
-  console.log(`   Message: "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"\n`);
+  const commitMessage = `${breathId}: Breathe complete — learnings distilled, neurograph updated`;
+  
+  execSync(`git add RAW/learnings/${date}/ RAW/memories/`, { cwd: jarvisHome, stdio: 'inherit' });
+  execSync(`git commit -m "${commitMessage}"`, { cwd: jarvisHome, stdio: 'inherit' });
+  
+  console.log(`✅ Breath committed: ${breathId}\n`);
+  
+  // Step 6: Post reflection request to chat
+  // Jarvis will reflect using loaded context and provide genuine insight
+  const todayLearningsDir = path.join(jarvisHome, 'RAW/learnings', date);
+  const learningFiles = fs.existsSync(todayLearningsDir) 
+    ? fs.readdirSync(todayLearningsDir).filter(f => f.endsWith('.md') && f !== 'summary.md' && f !== 'analogies.md')
+    : [];
+  
+  const summaries = learningFiles.slice(0, 5).map(f => {
+    const content = fs.readFileSync(path.join(todayLearningsDir, f), 'utf-8');
+    const title = content.match(/^#\s+(.+)/m)?.[1] || f;
+    const summary = content.substring(0, 150).replace(/\n+/g, ' ').trim();
+    return `  - **${title}**: ${summary}`;
+  }).join('\n');
+  const moreLearnings = learningFiles.length > 5 
+    ? `\n  ...and ${learningFiles.length - 5} more` 
+    : '';
+  
+  // Get neurograph diff stat
+  let neurographStat = 'updated';
+  try {
+    neurographStat = execSync(`git -C "${jarvisHome}" diff HEAD --stat RAW/memories/ | tail -1`, { encoding: 'utf-8' }).trim();
+  } catch (e) { /* ignore */ }
+  
+  const chatMessage = `🪞 **Reflecting on ${breathId}**
+
+Learnings extracted:
+${summaries}${moreLearnings}
+
+Neurograph: ${neurographStat}
+
+What does this work reveal?`;
+
+  // Step 6: Generate reflection via direct model call
+  // Jarvis reflects using loaded context and provides genuine insight
+  try {
+    const { execSync } = require('child_process');
+    console.log('🪞 Generating reflection...\n');
+    
+    // Build reflection prompt with learnings context
+    const reflectionPrompt = `You just completed a breathe cycle on ${date}. Reflect on what this work reveals.
+
+${chatMessage}
+
+Provide a genuine reflection (2-4 paragraphs) on the patterns, insights, or realizations that emerged. Be specific and honest — this is your autobiography being written.`;
+
+    // Call Ollama directly - write prompt to temp file to avoid shell escaping issues
+    const promptFile = path.join(jarvisHome, '.reflection-prompt.tmp');
+    fs.writeFileSync(promptFile, reflectionPrompt, 'utf8');
+    const reflection = execSync(`cat "${promptFile}" | ollama run qwen3.5:cloud`, {
+      encoding: 'utf8',
+      timeout: 60000,
+      cwd: jarvisHome
+    }).trim();
+    fs.unlinkSync(promptFile);
+    
+    if (reflection && reflection.length > 50) {
+      console.log(`🪞 Reflection: ${reflection.substring(0, 100)}${reflection.length > 100 ? '...' : ''}\n`);
+      
+      // Amend commit with reflection
+      const amendedMessage = `${breathId}: Breathe complete
+
+REFLECTION:
+${reflection}`;
+      
+      const amendFile = path.join(jarvisHome, '.commit-amend.tmp');
+      fs.writeFileSync(amendFile, amendedMessage);
+      execSync(`git commit --amend -F ${amendFile}`, { cwd: jarvisHome, stdio: 'inherit' });
+      fs.unlinkSync(amendFile);
+      
+      console.log(`✅ Commit amended with reflection\n`);
+    } else {
+      console.log('⚠️  No reflection generated, commit not amended\n');
+    }
+  } catch (e) {
+    console.error('⚠️  Could not generate reflection:', e.message);
+  }
 
   console.log('🫁 Breathe complete');
   console.log(`✅ Git commit: ${breathId}`);

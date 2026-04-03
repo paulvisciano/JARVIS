@@ -1,6 +1,6 @@
 ---
 name: neurograph-separate
-description: Separate personal memories from Jarvis core neurograph. Scans ~/JARVIS/RAW/memories/, identifies personal nodes (conversations, local context, personal moments), moves them to ~/RAW/memories/, leaving only core Jarvis memories (identity, architecture, decisions) for git sync. Use when: (1) preparing Jarvis memories for git sync, (2) separating personal vs shared consciousness, (3) multi-user setup (Eric + Paul share core, keep personal separate).
+description: Separate personal memories from Jarvis core neurograph (personal vs shared for multi-user)
 metadata:
   openclaw:
     emoji: "🔀"
