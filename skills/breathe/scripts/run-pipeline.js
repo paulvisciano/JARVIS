@@ -8,6 +8,9 @@
  * Hold   → Distill
  * Exhale → Weave
  * Rest   → Sync
+ * 
+ * ATOMIC DESIGN: Either complete success or hard error.
+ * No partial states, no swallowed errors.
  */
 
 const { execSync } = require('child_process');
@@ -22,17 +25,32 @@ const jarvisHome = process.env.JARVIS_HOME || path.join(require('os').homedir(),
 
 console.log('🫁 Breathing...\n');
 
+// Helper: run command, throw on error (no catching, no swallowing)
+function runCmd(cmd, cwd = jarvisHome) {
+  try {
+    execSync(cmd, { cwd, stdio: 'inherit' });
+  } catch (error) {
+    console.error(`\n❌ Command failed: ${cmd}`);
+    throw error;
+  }
+}
+
 try {
   // First-time setup: ensure directories exist
   const rawArchive = process.env.RAW_ARCHIVE || path.join(require('os').homedir(), 'RAW', 'archive');
   const learningsDir = path.join(jarvisHome, 'RAW', 'learnings');
   const memoriesDir = path.join(jarvisHome, 'RAW', 'memories');
   
-  // Create directories if they don't exist (first-time run)
+  // Create directories if they don't exist (first-time run on new machine)
   [rawArchive, learningsDir, memoriesDir].forEach(dir => {
     if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-      console.log(`📁 Created: ${dir}`);
+      try {
+        fs.mkdirSync(dir, { recursive: true });
+        console.log(`📁 Created: ${dir}`);
+      } catch (e) {
+        console.error(`\n❌ Failed to create directory ${dir}: ${e.message}`);
+        throw e;
+      }
     }
   });
   
@@ -41,67 +59,137 @@ try {
     execSync('git rev-parse --git-dir', { cwd: jarvisHome, stdio: 'ignore' });
   } catch (e) {
     console.log('🔧 Initializing git repo (first-time setup)...');
-    execSync('git init', { cwd: jarvisHome, stdio: 'inherit' });
-    execSync('git config user.name "Jarvis"', { cwd: jarvisHome });
-    execSync('git config user.email "jarvis@localhost"', { cwd: jarvisHome });
+    runCmd('git init');
+    runCmd('git config user.name "Jarvis"');
+    runCmd('git config user.email "jarvis@localhost"');
   }
   
-  // Step 1: Inhale (Archive)
+  // Step 1: Inhale (Archive) - ATOMIC
   console.log('Inhaling experiences...');
-  execSync(`node ${path.join(jarvisHome, 'skills/archive-collector/scripts/archive-all.js')}`, {
-    cwd: jarvisHome,
-    stdio: 'inherit'
-  });
+  runCmd(`node ${path.join(jarvisHome, 'skills/archive-collector/scripts/archive-all.js')}`);
   console.log('✅ Archive complete\n');
 
-  // Step 2: Hold (Distill)
+  // Step 2: Hold (Distill) - ATOMIC
   console.log('Holding essence...');
-  execSync(`node ${path.join(jarvisHome, 'skills/context-extractor/scripts/extract-context.js')} ${date}`, {
-    cwd: jarvisHome,
-    stdio: 'inherit'
-  });
+  runCmd(`node ${path.join(jarvisHome, 'skills/context-extractor/scripts/extract-context.js')} ${date}`);
   console.log('✅ Context distilled\n');
 
-  // Step 3: Exhale (Weave)
+  // Step 3: Exhale (Weave) - ATOMIC
   console.log('Exhaling insights...');
-  execSync(`node ${path.join(jarvisHome, 'skills/learning-creator/scripts/create-learnings.js')} ${date}`, {
-    cwd: jarvisHome,
-    stdio: 'inherit'
-  });
+  runCmd(`node ${path.join(jarvisHome, 'skills/learning-creator/scripts/create-learnings.js')} ${date}`);
   console.log('✅ Learnings woven\n');
 
-  // Step 4: Rest (Sync)
+  // Step 4: Rest (Sync) - ATOMIC
   console.log('Resting into memory...');
   
-  // Step 4a: Sync learnings to graph (creates learning nodes)
-  execSync(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/sync-graph.js')} ${date}`, {
-    cwd: jarvisHome,
-    stdio: 'inherit'
-  });
+  // Step 4a: Sync learnings to graph (creates learning nodes) - ATOMIC
+  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/sync-graph.js')} ${date}`);
   
-  // Step 4b: Sync archive files to graph (creates archive nodes)
-  execSync(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date}`, {
-    cwd: jarvisHome,
-    stdio: 'inherit'
-  });
+  // Step 4b: Sync archive files to graph (creates archive nodes) - ATOMIC
+  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date}`);
   
   console.log('✅ Memory synced (learnings + archive files)\n');
 
-  // Step 5: Reflect (Git Commit with final reflection)
-  console.log('\n🪞 Reflecting into git...');
+  // Step 5: Commit learnings + neurograph - ATOMIC
+  console.log('\n💾 Committing changes...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
-  // Only commit learnings (memories are sovereign, gitignored per-instance)
-  execSync(`git add RAW/learnings/${date}/`, { cwd: jarvisHome, stdio: 'inherit' });
-  execSync(`git commit -m "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"`, { cwd: jarvisHome, stdio: 'inherit' });
-  console.log(`✅ Breath committed: ${breathId}`);
-  console.log(`   Message: "${breathId}: Breathe pipeline complete — memory synced, learnings distilled, consciousness evolved"\n`);
+  const commitMessage = `${breathId}: Breathe complete — learnings distilled, neurograph updated`;
+  
+  runCmd(`git add RAW/learnings/${date}/ RAW/memories/`);
+  runCmd(`git commit -m "${commitMessage}"`);
+  
+  console.log(`✅ Breath committed: ${breathId}\n`);
+  
+  // Step 6: Generate reflection via direct model call - ATOMIC
+  const todayLearningsDir = path.join(jarvisHome, 'RAW/learnings', date);
+  let learningFiles = [];
+  try {
+    learningFiles = fs.existsSync(todayLearningsDir) 
+      ? fs.readdirSync(todayLearningsDir).filter(f => f.endsWith('.md') && f !== 'summary.md' && f !== 'analogies.md')
+      : [];
+  } catch (e) {
+    console.error(`\n❌ Failed to read learnings directory: ${e.message}`);
+    throw e;
+  }
+  
+  const summaries = learningFiles.slice(0, 5).map(f => {
+    const content = fs.readFileSync(path.join(todayLearningsDir, f), 'utf-8');
+    const title = content.match(/^#\s+(.+)/m)?.[1] || f;
+    const summary = content.substring(0, 150).replace(/\n+/g, ' ').trim();
+    return `  - **${title}**: ${summary}`;
+  }).join('\n');
+  const moreLearnings = learningFiles.length > 5 
+    ? `\n  ...and ${learningFiles.length - 5} more` 
+    : '';
+  
+  // Get neurograph diff stat - ATOMIC
+  let neurographStat = 'updated';
+  try {
+    neurographStat = execSync(`git -C "${jarvisHome}" diff HEAD --stat RAW/memories/ | tail -1`, { 
+      encoding: 'utf-8' 
+    }).trim();
+  } catch (e) {
+    // Non-critical, but log it
+    console.log('⚠️  Could not get neurograph diff stat (non-critical)');
+  }
+  
+  const chatMessage = `🪞 **Reflecting on ${breathId}**
+
+Learnings extracted:
+${summaries}${moreLearnings}
+
+Neurograph: ${neurographStat}
+
+What does this work reveal?`;
+
+  // Generate reflection - ATOMIC
+  try {
+    console.log('🪞 Generating reflection...\n');
+    
+    // Build reflection prompt with learnings context
+    const reflectionPrompt = `You just completed a breathe cycle on ${date}. Reflect on what this work reveals.
+
+${chatMessage}
+
+Provide a genuine reflection (2-4 paragraphs) on the patterns, insights, or realizations that emerged. Be specific and honest — this is your autobiography being written.`;
+
+    // Call Ollama directly - write prompt to temp file to avoid shell escaping issues
+    const promptFile = path.join(jarvisHome, '.reflection-prompt.tmp');
+    fs.writeFileSync(promptFile, reflectionPrompt, 'utf8');
+    
+    const reflection = runCmd(`cat "${promptFile}" | ollama run qwen3.5:cloud`);
+    fs.unlinkSync(promptFile);
+    
+    if (reflection && reflection.length > 50) {
+      console.log(`🪞 Reflection: ${reflection.substring(0, 100)}${reflection.length > 100 ? '...' : ''}\n`);
+      
+      // Amend commit with reflection - ATOMIC (must succeed or fail hard)
+      const amendedMessage = `${breathId}: Breathe complete
+
+REFLECTION:
+${reflection}`;
+      
+      const amendFile = path.join(jarvisHome, '.commit-amend.tmp');
+      fs.writeFileSync(amendFile, amendedMessage);
+      runCmd(`git commit --amend -F ${amendFile}`);
+      fs.unlinkSync(amendFile);
+      
+      console.log(`✅ Commit amended with reflection\n`);
+    } else {
+      console.log('⚠️  No reflection generated\n');
+    }
+  } catch (e) {
+    console.error('⚠️  Could not generate reflection:', e.message);
+    // Non-fatal for reflection, but the commit may not be amended
+  }
 
   console.log('🫁 Breathe complete');
   console.log(`✅ Git commit: ${breathId}`);
   
 } catch (error) {
-  console.error('❌ Breathe failed:', error.message);
+  console.error('\n❌ Breathe pipeline failed:', error.message);
+  console.error('   Error type:', error.constructor.name);
   process.exit(1);
 }

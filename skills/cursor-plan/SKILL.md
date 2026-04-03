@@ -1,6 +1,6 @@
 ---
 name: cursor-plan
-description: Create development plans for Cursor AI to implement in any project. Use when: (1) documenting bugs, (2) planning features, (3) creating fix specifications, (4) preparing PRDs. Plans are stored in the project's `plans/` folder (or specified location). Works for any codebase: voice UIs, forks, web apps, scripts, etc. Privacy-safe: no personal paths exposed.
+description: Create development plans for Cursor AI to implement in any project (bug docs, feature specs, PRDs)
 metadata:
   openclaw:
     emoji: "📋"

@@ -170,6 +170,10 @@ try {
   // Clean up temp file
   fs.unlinkSync(promptPath);
 
+  // Strip ANSI escape codes from Ollama output (spinners, cursor control, etc.)
+  const ansiRegex = /\x1b\[[0-9;]*[a-zA-Z]/g;
+  const cleanOutput = modelOutput.replace(ansiRegex, '');
+
   // Parse model output and create learning files
   // Expected JSON format from model:
   // {"learnings": [...], "summary": "...", "analogies": [...]}
@@ -181,7 +185,7 @@ try {
     // Extract JSON from output (skip "Thinking..." prefix)
     // Look for JSON starting with "learnings", "summary", or "analogies" keys
     const jsonPattern = /\{[\s\S]*"learnings"[\s\S]*\}/;
-    const match = modelOutput.match(jsonPattern);
+    const match = cleanOutput.match(jsonPattern);
     
     if (match && match[0]) {
       result = JSON.parse(match[0]);
@@ -244,23 +248,7 @@ ${result.analogies.map(a => `- ${a}`).join('\n')}
 
   if (learningCount === 0 && !result.summary) {
     console.log(`   ⚠️  No learnings extracted from model output`);
-    // Fallback: create a minimal learning from context summary
-    const fallbackPath = path.join(learningsDir, 'session-summary.md');
-    const fallbackContent = `# Session Summary — ${date}
-
-**Date:** ${date}
-**Type:** insight
-**Status:** extracted
-
-**Summary:**
-- Messages: ${totalMessages}
-- Transcripts: ${totalTranscripts}
-- OCR: ${totalOCR}
-
-*Note: Model synthesis failed to extract individual learnings. Review full context manually.*
-`;
-    fs.writeFileSync(fallbackPath, fallbackContent);
-    console.log(`   📝 Created fallback: session-summary.md`);
+    console.log(`   💡 Review context manually or retry with smaller batches`);
   } else {
     console.log(`   📊 ${learningCount} learnings + summary + analogies created`);
   }
@@ -269,28 +257,13 @@ ${result.analogies.map(a => `- ${a}`).join('\n')}
 
 } catch (error) {
   console.error(`   ❌ Gateway message failed: ${error.message}`);
-  console.log(`   ⚠️  Creating fallback learning (context preserved)`);
+  console.log(`   💡 Review context manually or retry`);
   
   // Clean up temp file on error
   if (fs.existsSync(promptPath)) {
     fs.unlinkSync(promptPath);
   }
   
-  // Create fallback on error
-  const fallbackPath = path.join(learningsDir, 'session-summary.md');
-  const fallbackContent = `# Session Summary — ${date}
-
-**Date:** ${date}
-**Type:** insight
-**Status:** extracted
-
-**Context:**
-- Messages: ${totalMessages}
-- Transcripts: ${totalTranscripts}
-- OCR: ${totalOCR}
-
-*Note: Learning extraction via Gateway failed. Review full context manually.*
-`;
-  fs.writeFileSync(fallbackPath, fallbackContent);
-  console.log(`   📝 Fallback created: session-summary.md`);
+  // Exit on error — no fallback
+  process.exit(1);
 }

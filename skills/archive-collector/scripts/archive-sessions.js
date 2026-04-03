@@ -1,8 +1,11 @@
 #!/usr/bin/env node
 /**
  * JARVIS Archive OpenClaw Sessions
- * Archives inactive OpenClaw session files (.jsonl) by creation date
- * Keeps active sessions (tracked in sessions.json) in runtime folder
+ * 
+ * CRITICAL RULE: Only archive LOCK-FREE sessions (no .lock file present)
+ * 
+ * Why: Sessions with .lock files are ACTIVE - new messages are being written.
+ * Moving them mid-session loses data. Only archive when session is complete.
  */
 
 const fs = require('fs');
@@ -10,11 +13,9 @@ const path = require('path');
 
 const HOME = process.env.HOME || require('os').homedir();
 const ARCHIVE = path.join(HOME, 'RAW', 'archive');
-
-// Archive sessions from all agents (main, jarvis, etc.)
 const AGENTS_DIR = path.join(HOME, '.openclaw', 'agents');
 
-console.log('📚 Archive OpenClaw Sessions (Inactive Only)...');
+console.log('📚 Archive OpenClaw Sessions (lock-free only)...');
 
 if (!fs.existsSync(AGENTS_DIR)) {
   console.log('   ⚠️  OpenClaw agents dir not found');
@@ -27,6 +28,7 @@ const agents = fs.readdirSync(AGENTS_DIR).filter(f =>
 
 let totalMoved = 0;
 let totalKept = 0;
+let totalSkipped = 0;
 
 agents.forEach(agent => {
   const sessionsDir = path.join(AGENTS_DIR, agent, 'sessions');
@@ -35,44 +37,27 @@ agents.forEach(agent => {
     return;
   }
   
-  // Load active session IDs from sessions.json
-  const sessionsJsonPath = path.join(sessionsDir, 'sessions.json');
-  let activeIds = [];
-  if (fs.existsSync(sessionsJsonPath)) {
-    try {
-      const data = JSON.parse(fs.readFileSync(sessionsJsonPath, 'utf8'));
-      activeIds = Object.values(data).map(s => s.sessionId).filter(Boolean);
-    } catch (err) {
-      console.error(`   ⚠️  Error reading sessions.json for ${agent}: ${err.message}`);
-    }
-  }
-  
   const files = fs.readdirSync(sessionsDir);
   
   files.forEach(file => {
     const filePath = path.join(sessionsDir, file);
     if (!fs.statSync(filePath).isFile()) return;
     
-    // Skip sessions.json and lock files
+    // Always keep: sessions.json and *.lock files
     if (file === 'sessions.json' || file.endsWith('.lock')) {
       totalKept++;
       return;
     }
     
-    // Extract session ID from filename
-    const sessionId = file.split('.jsonl')[0];
-    const isReset = file.includes('.reset.');
-    
-    // Check if this session is active (keep main jsonl, move reset files)
-    const isActive = activeIds.some(id => sessionId.startsWith(id));
-    
-    if (isActive && !isReset) {
-      // Keep active session's main jsonl file
-      totalKept++;
+    // CRITICAL: Skip if lock file exists (session is ACTIVE)
+    const lockFile = filePath + '.lock';
+    if (fs.existsSync(lockFile)) {
+      totalSkipped++;
+      console.log(`   ⏸️  ${agent}/${file} — SKIPPED (active session, lock present)`);
       return;
     }
     
-    // Get creation date for archive folder
+    // Archive only lock-free (complete) sessions
     const stat = fs.statSync(filePath);
     const dateStr = (stat.birthtime || stat.ctime).toISOString().slice(0, 10);
     const targetDir = path.join(ARCHIVE, dateStr, 'sessions');
@@ -81,22 +66,23 @@ agents.forEach(agent => {
     
     const targetPath = path.join(targetDir, file);
     
+    // Already in archive dir
     if (path.dirname(filePath) === targetDir) {
-      console.log(`   ✓ ${agent}/${file} already archived`);
       totalKept++;
       return;
     }
     
     fs.renameSync(filePath, targetPath);
     totalMoved++;
-    console.log(`   ✓ ${agent}/${file} → ${dateStr}/sessions/ (${isReset ? 'reset snapshot' : 'inactive session'})`);
+    console.log(`   ✓ ${agent}/${file} → ${dateStr}/sessions/`);
   });
   
-  console.log(`   📊 ${agent}: ${totalMoved} moved, ${activeIds.length} active kept`);
+  console.log(`   📊 ${agent}: ${totalMoved} moved, ${totalKept} kept, ${totalSkipped} skipped (active)`);
 });
 
 console.log('\n========================================');
 console.log(`✅ Archive complete`);
-console.log(`   Moved: ${totalMoved} files`);
-console.log(`   Kept: ${totalKept} files (active sessions + metadata)`);
+console.log(`   Moved: ${totalMoved} files (complete sessions)`);
+console.log(`   Kept: ${totalKept} files (sessions.json + locks)`);
+console.log(`   Skipped: ${totalSkipped} files (active sessions with locks)`);
 console.log('========================================\n');

@@ -1,6 +1,6 @@
 ---
 name: bootstrap-context
-description: Auto-load recent context on session start. Runs context-extractor for today + yesterday, then presents summary. Use when: (1) new session starts, (2) gateway restarts, (3) you need to recover from context loss. Ensures you always have conversation history.
+description: Auto-load recent conversation context on session start (today + yesterday)
 metadata:
   openclaw:
     emoji: "🫀"
