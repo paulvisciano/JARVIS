@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a camera taking a snapshot at startup — new objects won't appear until you restart
-- Like having a library card but the book isn't in the catalog — exists but can't be found
-- Like checking if a lightbulb works without screwing it in first — null check without initialization
-- Like a bouncer with a guest list — even if you're at the club, you need your name on the list
-- Like assembling furniture — the instructions (config) don't matter if you don't open the box (restart)
+- Like an air traffic controller — managing multiple systems (UI, memory, browser, travel) while keeping everything on course
+- Like merging two rivers into one channel — the NeuroGraph and Jarvis UI now flow as a single unified interface
+- Like a co-pilot reading instruments while navigating turbulence — system health checks (heartbeat) running while handling real-world chaos
+- Like a librarian with two catalog systems — one for technical knowledge (JARVIS graph), one for life moments (personal memory)
+- Like fixing a car while driving it — debugging console errors and null references while the UI remains operational
