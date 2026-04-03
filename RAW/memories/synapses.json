@@ -78809,5 +78809,59 @@
       "date": "2026-04-03"
     },
     "created": "2026-04-03T06:43:20"
+  },
+  {
+    "source": "archive-sessions-rename-bug",
+    "target": "temporal-20260403",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-03"
+  },
+  {
+    "source": "atomic-fail-fast-pipeline",
+    "target": "temporal-20260403",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-03"
+  },
+  {
+    "source": "lock-free-session-archiving-pattern",
+    "target": "temporal-20260403",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-03"
+  },
+  {
+    "id": "syn-archive-sessions-rename-bug-to-temporal-20260403",
+    "source": "archive-sessions-rename-bug",
+    "target": "temporal-20260403",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-03"
+    },
+    "created": "2026-04-03T06:57:33"
+  },
+  {
+    "id": "syn-atomic-fail-fast-pipeline-to-temporal-20260403",
+    "source": "atomic-fail-fast-pipeline",
+    "target": "temporal-20260403",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-03"
+    },
+    "created": "2026-04-03T06:57:33"
+  },
+  {
+    "id": "syn-lock-free-session-archiving-pattern-to-temporal-20260403",
+    "source": "lock-free-session-archiving-pattern",
+    "target": "temporal-20260403",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-03"
+    },
+    "created": "2026-04-03T06:57:33"
   }
 ]

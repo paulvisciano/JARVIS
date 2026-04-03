@@ -4,6 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like planting seeds — having the seed (skill file) isn't enough; you need the right soil (symlinks) and sun (gateway restart)
-- Like a microphone cable — if the plug isn't in (AirPods), the signal won't reach the mixer (Whisper)
-- Like a mailing address — sending to the street (~/RAW) won't deliver the package; you need the apartment number (~/RAW/archive)
+- Like a librarian shelving books — only shelve when the reader puts the book down, not while they're still reading
+- Like a relay race — the baton (session file) can't be passed until the runner (gateway) finishes their leg
+- Like a construction site — lock files are the 'wet concrete' signs that say 'don't touch until set'
+- Like a restaurant kitchen — dishes go to the pass only when complete, not while still being plated
+- Like a photographer's darkroom — don't move the film until development is complete, or you lose the image
