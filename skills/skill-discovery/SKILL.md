@@ -1,30 +1,28 @@
 ---
 name: skill-discovery
-description: Sync Jarvis skills to OpenClaw workspace (auto-discover skills, ensure symlinks exist, remove broken links)
+description: Verify Jarvis skills are discoverable by OpenClaw (no symlinks needed — direct discovery)
 metadata:
   openclaw:
     emoji: "🔗"
     requires:
-      bins: ["ln", "find"]
+      bins: ["ls", "openclaw"]
 ---
 
-# Skill Discovery (Jarvis Skills → OpenClaw Workspace Sync)
+# Skill Discovery (Jarvis Skills → OpenClaw Direct Discovery)
 
 ## When to Use
 
 ✅ **USE this skill when:**
 - New skills created in `~/JARVIS/skills/`
-- Workspace symlinks corrupt or missing (e.g., `processing-inbox` → `process-inbox` issue)
-- OpenClaw needs skill access refresh
-- `~/.openclaw/workspace/skills/` out of sync with Jarvis skills
+- Verifying OpenClaw can discover skills without symlinks
 - After skill creation or updates
+- Debugging skill availability issues
 
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
-- Skills already synced (idempotent — safe but unnecessary)
-- OpenClaw system skills (`/usr/local/lib/node_modules/openclaw/skills/`) — those are separate
 - No changes to Jarvis skills folder
+- Only checking OpenClaw system skills (`/usr/local/lib/node_modules/openclaw/skills/`) — those are separate
 
 ## Workflow
 
@@ -35,117 +33,110 @@ ls ~/JARVIS/skills/
 # Lists all skill folders
 ```
 
-### Step 2: Compare with Workspace
+### Step 2: Verify OpenClaw Discovery
 
 ```bash
-ls -la ~/.openclaw/workspace/skills/
-# Shows symlinks (or missing)
+openclaw skills list
+# Shows all discovered skills with status
 ```
 
-### Step 3: Sync Symlinks
+### Step 3: Compare Counts
 
 ```bash
-cd ~/.openclaw/workspace/skills/
+# Count Jarvis skill folders
+JARVIS_COUNT=$(ls -d ~/JARVIS/skills/*/ 2>/dev/null | wc -l)
 
-# Remove all existing symlinks
-rm -f *
+# Count ready skills from openclaw (filter for openclaw-extra source)
+OPENCLAW_COUNT=$(openclaw skills list 2>&1 | grep "openclaw-extra" | wc -l)
 
-# Recreate symlinks for all Jarvis skills
-for skill in ~/JARVIS/skills/*/; do
-  ln -s ~/JARVIS/skills/$(basename $skill) .
-done
-
-# Verify
-ls -la
+echo "Jarvis skills: $JARVIS_COUNT"
+echo "Discovered by OpenClaw: $OPENCLAW_COUNT"
 ```
 
-### Step 4: Remove Broken Symlinks
-
-```bash
-# Find and remove broken symlinks
-find ~/.openclaw/workspace/skills/ -xtype l -delete
-```
-
-### Step 5: Report
+### Step 4: Report
 
 ```
 ✅ Skill Discovery Complete
    Jarvis skills: N folders
-   Workspace symlinks: M created
-   Broken removed: K
-   Status: synced
+   OpenClaw discovered: M ready
+   Status: verified (no symlinks needed)
 ```
 
 ## Commands
 
-### Full Sync (One-Liner)
+### Verify Discovery (One-Liner)
 ```bash
-cd ~/.openclaw/workspace/skills/ && rm -f * && for skill in ~/JARVIS/skills/*/; do ln -s ~/JARVIS/skills/$(basename $skill) .; done && echo "✅ Synced $(ls | wc -l) skills"
+echo "Jarvis: $(ls -d ~/JARVIS/skills/*/ 2>/dev/null | wc -l)" && openclaw skills list 2>&1 | grep -c "✓ ready.*openclaw-extra" && echo "✅ Skills discoverable without symlinks"
 ```
 
-### Verify Sync
+### List Jarvis Skills
 ```bash
-# Compare counts
-echo "Jarvis: $(ls ~/JARVIS/skills/ | wc -l)"
-echo "Workspace: $(ls -la ~/.openclaw/workspace/skills/ | grep -v total | wc -l)"
+ls ~/JARVIS/skills/
 ```
 
-### Check Broken Links
+### Check OpenClaw Discovery
 ```bash
-find ~/.openclaw/workspace/skills/ -xtype l
-# Lists broken symlinks (if any)
+openclaw skills list 2>&1 | grep "openclaw-extra"
 ```
 
 ## Error Handling
 
-**If symlink fails:**
-- Check source exists: `test -d ~/JARVIS/skills/skill-name`
+**If skill not discovered:**
+- Check skill folder exists: `test -d ~/JARVIS/skills/skill-name`
+- Check SKILL.md present: `test -f ~/JARVIS/skills/skill-name/SKILL.md`
 - Check permissions: `ls -ld ~/JARVIS/skills/`
-- Check workspace writable: `test -w ~/.openclaw/workspace/skills/`
+- Restart gateway: `openclaw gateway restart`
 
 **If count mismatch:**
-- Re-run sync
-- Check for hidden files: `ls -A`
-- Verify symlinks point to correct targets: `readlink`
+- Re-run `openclaw skills list`
+- Check for hidden files: `ls -A ~/JARVIS/skills/`
+- Verify SKILL.md valid in each folder
 
 ## Notes
 
-- **Idempotent:** Safe to run multiple times
-- **Destructive:** Removes all workspace symlinks before recreating
-- **Portable:** Uses `~` for home directory
-- **Fast:** ~15 skills = instant sync
-- **Auto-discovers:** No manual skill list needed
+- **No symlinks needed:** OpenClaw auto-discovers skills from `~/JARVIS/skills/` directly
+- **Workspace clean:** `~/.openclaw/workspace/skills/` can be empty
+- **Single source of truth:** Skills live in `~/JARVIS/skills/` only
+- **Auto-discovers:** No manual skill list or linking needed
+- **Fast verification:** Instant check with `openclaw skills list`
 
 ## Example Output
 
 ```
 ✅ Skill Discovery Complete
-   Jarvis skills: 15 folders
-   Workspace symlinks: 15 created
-   Broken removed: 0
-   Status: synced
+   Jarvis skills: 26 folders
+   OpenClaw discovered: 26 ready (openclaw-extra)
+   Status: verified (no symlinks needed)
 
-Skills synced:
+Skills verified:
   - archive-collector
   - bootstrap-context
   - bootstrap-jarvis
   - breathe
+  - coder-config
   - context-extractor
   - cursor-plan
+  - git-time-travel
+  - instance-sync
+  - jarvis-nav
+  - jarvis-ui
   - learning-creator
-  - neurograph-load
-  - neurograph-search
-  - neurograph-sync
   - neurograph-link
+  - neurograph-search
+  - neurograph-separate
+  - neurograph-sync
   - ocr
   - process-inbox
-  - skill-creator
+  - reflect
   - scifi-app-discovery
+  - session-rotator
+  - skill-creator
+  - web-learn
 ```
 
 ---
 
 **Created:** March 21, 2026  
+**Updated:** April 3, 2026 — Removed symlink logic (direct discovery verified)  
 **Location:** `~/JARVIS/skills/skill-discovery/`  
-**Auto-symlink:** Runs itself after creation  
 **Idempotent:** Safe to run anytime
