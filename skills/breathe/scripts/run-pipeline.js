@@ -17,6 +17,22 @@ const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
+// Load environment variables from .env file (simple parser, no dotenv dependency)
+const dotenvPath = path.join(__dirname, '../../.env');
+if (fs.existsSync(dotenvPath)) {
+  const dotenvContent = fs.readFileSync(dotenvPath, 'utf8');
+  dotenvContent.split('\n').forEach(line => {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#')) {
+      const [key, ...valueParts] = trimmed.split('=');
+      if (key && valueParts.length > 0) {
+        const value = valueParts.join('=').replace(/^~/, require('os').homedir());
+        process.env[key.trim()] = value.trim();
+      }
+    }
+  });
+}
+
 // Get date from args or default to today
 const date = process.argv[2] || new Date().toISOString().split('T')[0];
 
@@ -159,7 +175,11 @@ Provide a genuine reflection (2-4 paragraphs) on the patterns, insights, or real
     const promptFile = path.join(jarvisHome, '.reflection-prompt.tmp');
     fs.writeFileSync(promptFile, reflectionPrompt, 'utf8');
     
-    const reflection = runCmd(`cat "${promptFile}" | ollama run qwen3.5:cloud`);
+    // Capture ollama output (don't use runCmd - it inherits stdio and doesn't return output)
+    const reflection = execSync(`cat "${promptFile}" | ollama run qwen3.5:cloud`, { 
+      encoding: 'utf-8',
+      cwd: jarvisHome 
+    });
     fs.unlinkSync(promptFile);
     
     if (reflection && reflection.length > 50) {
