@@ -80405,5 +80405,59 @@
       "date": "2026-04-04"
     },
     "created": "2026-04-04T13:39:44"
+  },
+  {
+    "source": "breath-vs-cold-commits",
+    "target": "temporal-20260404",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-04"
+  },
+  {
+    "source": "fallback-recording-resilience",
+    "target": "temporal-20260404",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-04"
+  },
+  {
+    "source": "tts-resilience-pattern",
+    "target": "temporal-20260404",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-04"
+  },
+  {
+    "id": "syn-breath-vs-cold-commits-to-temporal-20260404",
+    "source": "breath-vs-cold-commits",
+    "target": "temporal-20260404",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-04"
+    },
+    "created": "2026-04-04T13:47:18"
+  },
+  {
+    "id": "syn-fallback-recording-resilience-to-temporal-20260404",
+    "source": "fallback-recording-resilience",
+    "target": "temporal-20260404",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-04"
+    },
+    "created": "2026-04-04T13:47:18"
+  },
+  {
+    "id": "syn-tts-resilience-pattern-to-temporal-20260404",
+    "source": "tts-resilience-pattern",
+    "target": "temporal-20260404",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-04"
+    },
+    "created": "2026-04-04T13:47:18"
   }
 ]
