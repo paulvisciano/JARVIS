@@ -250,7 +250,7 @@ neuro-graph-search(query="learning", date="2026-03-22", category="learning")
 # e.g., "self-observation-loop-closed"
 
 # Step 3: Open NeuroGraph (if not already open)
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/neuro-graph?time=day%3A2026-03-22)
+browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/?time=day%3A2026-03-22)
 
 # Step 4: Check tabs, get targetId
 browser(action=tabs, profile=openclaw)

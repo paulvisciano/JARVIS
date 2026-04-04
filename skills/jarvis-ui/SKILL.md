@@ -31,7 +31,7 @@ metadata:
 
 ### Natural Language
 - "open jarvis ui" → setup (if needed) → **ensure server running on 18787** → open user browser (profile="user" for mic)
-- "open neurograph" → **same as open jarvis ui** — NeuroGraph IS the main UI (root `/`), with overlays (orb, transcript, vitals, voice controls)
+- "open neurograph" → **same as open jarvis ui** — NeuroGraph IS the main UI (root `/`), with overlays (orb, transcript, vitals, voice controls). **No separate route** — fully merged.
 - "start server" → launch jarvis-server.js on port **18787 only** (production)
 - "stop server" → kill running PID
 - "restart server" → stop + start

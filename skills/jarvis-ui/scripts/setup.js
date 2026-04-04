@@ -12,7 +12,6 @@ const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
   installPath: INSTALL_PATH,
   uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS'),
-  neurographPath: path.join(INSTALL_PATH, 'apps', 'neuro-graph'),
   assetsPath: path.join(INSTALL_PATH, 'apps', 'JARVIS', 'assets'),
   whisperModel: process.env.VOICE_WHISPER_MODEL || 'ggml-large-v3.bin',
   whisperModelUrl: 'https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large-v3.bin'
@@ -25,7 +24,7 @@ function checkInstalled() {
 
 // === Clone ===
 function clone() {
-  console.log('📦 Cloning SCI-FI...');
+  console.log('📦 Cloning SCI-FI...\n');
   
   if (!fs.existsSync(CONFIG.installPath)) {
     fs.mkdirSync(CONFIG.installPath, { recursive: true });
@@ -33,7 +32,7 @@ function clone() {
   
   try {
     execSync(`git clone ${CONFIG.uiRepo} ${CONFIG.installPath}`, { stdio: 'inherit' });
-    console.log('✓ SCI-FI cloned');
+    console.log('\n✓ SCI-FI cloned\n');
     return true;
   } catch (err) {
     console.error('❌ Clone failed:', err.message);
@@ -59,9 +58,9 @@ function downloadWhisperModel() {
     return true;
   }
   
-  console.log(`📥 Downloading Whisper model: ${CONFIG.whisperModel}...`);
+  console.log(`\n📥 Downloading Whisper model: ${CONFIG.whisperModel}...`);
   console.log(`   URL: ${CONFIG.whisperModelUrl}`);
-  console.log(`   Size: ~3.1 GB (this may take a few minutes)`);
+  console.log(`   Size: ~3.1 GB (this may take a few minutes)\n`);
   
   try {
     execSync(`curl -L -o "${modelPath}" "${CONFIG.whisperModelUrl}"`, { stdio: 'inherit' });
@@ -88,7 +87,7 @@ function generateSSLCerts() {
     return true;
   }
   
-  console.log('🔑 Generating self-signed SSL certs...');
+  console.log('\n🔑 Generating self-signed SSL certs...');
   
   try {
     execSync(`openssl req -x509 -newkey rsa:4096 -keyout "${keyPath}" -out "${certPath}" -days 365 -nodes -subj "/CN=localhost"`, { stdio: 'inherit' });
@@ -102,27 +101,6 @@ function generateSSLCerts() {
   }
 }
 
-// === Create symlinks for neuro-graph ===
-function createSymlinks() {
-  const jarvisNeurographLink = path.join(CONFIG.uiPath, 'neuro-graph');
-  
-  if (fs.existsSync(jarvisNeurographLink)) {
-    console.log('✓ Neuro-graph symlink exists');
-    return true;
-  }
-  
-  console.log('🔗 Creating neuro-graph symlink...');
-  
-  try {
-    fs.symlinkSync(CONFIG.neurographPath, jarvisNeurographLink);
-    console.log(`✓ Symlink created: ${jarvisNeurographLink} -> ${CONFIG.neurographPath}`);
-    return true;
-  } catch (err) {
-    console.error('❌ Symlink creation failed:', err.message);
-    return false;
-  }
-}
-
 // === Full setup ===
 function setup() {
   console.log('🔧 Jarvis UI Setup\n');
@@ -132,18 +110,15 @@ function setup() {
   const cloned = clone();
   if (!cloned) return false;
   
-  const symlinksReady = createSymlinks();
   const modelReady = downloadWhisperModel();
   const certsReady = generateSSLCerts();
   
   console.log('\n✅ Setup complete!\n');
   console.log('Ready to run:');
-  console.log('  node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open jarvis ui\n');
-  console.log('  node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open neurograph\n');
-  
-  if (!symlinksReady) {
-    console.log('⚠️  Neuro-graph symlink missing — /neuro-graph route will fail');
-  }
+  console.log('  node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open jarvis ui');
+  console.log('  node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open neurograph');
+  console.log('');
+  console.log('Note: NeuroGraph is now the main UI (merged into root view /)\n');
   
   if (!modelReady) {
     console.log('⚠️  Whisper model not ready — set VOICE_MODEL_DIR or VOICE_WHISPER_MODEL');
@@ -153,7 +128,7 @@ function setup() {
     console.log('⚠️  SSL certs not ready — HTTPS will fail');
   }
   
-  return symlinksReady && modelReady && certsReady;
+  return modelReady && certsReady;
 }
 
 module.exports = {

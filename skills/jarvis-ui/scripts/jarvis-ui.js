@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Jarvis UI Skill — Orchestrator
-// Commands: open-ui, open-neurograph, package-configs, update-configs
+// Commands: open-ui, preview, package-configs, update-configs
+// Note: NeuroGraph is merged into main UI (no separate route)
 
 const fs = require('fs');
 const path = require('path');
@@ -15,8 +16,11 @@ const CONFIG = {
   installPath: INSTALL_PATH,
   uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS'),
   serverPath: path.join(INSTALL_PATH, 'apps', 'JARVIS', 'jarvis-server.js'),
-  port: process.env.VOICE_PORT || 18787,
-  serverLog: '/tmp/jarvis-server.log'
+  previewPath: path.join(OPENCLAW_HOME, 'agents/jarvis-coder/workspace/sci-fi-work/apps/JARVIS'),
+  productionPort: 18787,
+  previewPort: 18788,
+  productionLog: '/tmp/jarvis-production.log',
+  previewLog: '/tmp/jarvis-preview.log'
 };
 
 // === Load setup module ===
@@ -93,19 +97,35 @@ function parseCommand(input) {
   
   if (cmd.includes('open') && cmd.includes('jarvis')) return 'open-ui';
   if (cmd.includes('open') && (cmd.includes('neurograph') || cmd.includes('graph'))) return 'open-neurograph';
+  if (cmd.includes('preview') || (cmd.includes('open') && cmd.includes('preview'))) return 'preview';
   if (cmd.includes('package') && cmd.includes('config')) return 'package-configs';
   if (cmd.includes('sync') && cmd.includes('config')) return 'sync-configs';
   if (cmd.includes('update') && (cmd.includes('config') || cmd.includes('settings'))) return 'sync-configs';
   if (cmd.includes('update') && (cmd.includes('latest') || cmd.includes('jarvis') || cmd.includes('scifi'))) return 'update-latest';
   if (cmd === 'pull' || cmd === 'pull-latest') return 'update-latest';
+  if (cmd.includes('restart') && cmd.includes('server')) return 'restart-server';
+  if (cmd.includes('stop') && cmd.includes('server')) return 'stop-server';
+  if (cmd.includes('start') && cmd.includes('server')) return 'start-server';
   
   return 'unknown';
 }
 
-// === Check server health ===
-function checkServerHealth() {
+// === Kill server on port ===
+function killServer(port) {
   try {
-    const result = execSync(`lsof -i :${CONFIG.port} 2>&1 | grep LISTEN`, { encoding: 'utf8' });
+    execSync(`lsof -i :${port} | grep LISTEN | awk '{print $2}' | xargs kill 2>/dev/null`);
+    console.log(`✓ Killed server on port ${port}`);
+    return true;
+  } catch (err) {
+    // No server running on this port
+    return false;
+  }
+}
+
+// === Check server health ===
+function checkServerHealth(port) {
+  try {
+    const result = execSync(`lsof -i :${port} 2>&1 | grep LISTEN`, { encoding: 'utf8' });
     if (result && result.includes('LISTEN')) {
       return true;
     }
@@ -115,31 +135,64 @@ function checkServerHealth() {
   return false;
 }
 
-// === Start server ===
-function startServer() {
-  if (checkServerHealth()) {
-    console.log(`✓ Server already running on port ${CONFIG.port}`);
+// === Start production server ===
+function startProductionServer() {
+  const port = CONFIG.productionPort;
+  
+  if (checkServerHealth(port)) {
+    console.log(`✓ Production server already running on port ${port}`);
     return true;
   }
   
-  console.log(`🚀 Starting Jarvis server on port ${CONFIG.port}...`);
+  console.log(`🚀 Starting production server on port ${port}...`);
   try {
-    execSync(`cd ${CONFIG.uiPath} && nohup node jarvis-server.js > ${CONFIG.serverLog} 2>&1 &`);
+    execSync(`cd ${CONFIG.uiPath} && nohup node jarvis-server.js > ${CONFIG.productionLog} 2>&1 &`);
     // Wait for server to start
     let attempts = 0;
-    while (!checkServerHealth() && attempts < 10) {
+    while (!checkServerHealth(port) && attempts < 10) {
       execSync('sleep 1');
       attempts++;
     }
-    if (checkServerHealth()) {
-      console.log(`✅ Server started (port ${CONFIG.port})`);
+    if (checkServerHealth(port)) {
+      console.log(`✅ Production server started (port ${port})`);
       return true;
     } else {
-      console.error('❌ Server failed to start');
+      console.error('❌ Production server failed to start');
       return false;
     }
   } catch (err) {
-    console.error('❌ Server start failed:', err.message);
+    console.error('❌ Production server start failed:', err.message);
+    return false;
+  }
+}
+
+// === Start preview server ===
+function startPreviewServer() {
+  const port = CONFIG.previewPort;
+  
+  if (checkServerHealth(port)) {
+    console.log(`✓ Preview server already running on port ${port}`);
+    return true;
+  }
+  
+  console.log(`🚀 Starting preview server on port ${port}...`);
+  try {
+    execSync(`cd ${CONFIG.previewPath} && VOICE_PORT=${port} JARVIS_PREVIEW=true nohup node jarvis-server.js > ${CONFIG.previewLog} 2>&1 &`);
+    // Wait for server to start
+    let attempts = 0;
+    while (!checkServerHealth(port) && attempts < 10) {
+      execSync('sleep 1');
+      attempts++;
+    }
+    if (checkServerHealth(port)) {
+      console.log(`✅ Preview server started (port ${port})`);
+      return true;
+    } else {
+      console.error('❌ Preview server failed to start');
+      return false;
+    }
+  } catch (err) {
+    console.error('❌ Preview server start failed:', err.message);
     return false;
   }
 }
@@ -200,39 +253,27 @@ function packageConfigs() {
   const existingConfigs = configs.filter(f => fs.existsSync(path.join(OPENCLAW_HOME, f)));
   
   if (existingConfigs.length === 0) {
-    console.error('❌ No config files found');
+    console.error('❌ No config files found to package');
     return false;
   }
   
   try {
-    execSync(`cd ${OPENCLAW_HOME} && zip -r ${zipPath} ${existingConfigs.join(' ')}`, { stdio: 'inherit' });
-    console.log(`✓ Created ${zipName}\n`);
-    
-    console.log('✅ Package complete!\n');
-    console.log(`📦 ${zipName}`);
-    console.log(`   Location: ${zipPath}`);
-    console.log(`   Size: ${fs.statSync(zipPath).size} bytes\n`);
-    
-    console.log('🔒 PRIVATE — Do NOT commit to git!\n');
-    console.log('📋 Send via WhatsApp or private channel:\n');
-    console.log('   1. Attach zip file to message');
-    console.log('   2. Send to recipient (Eric, David, etc.)');
-    console.log('   3. Recipient extracts + runs setup-paths.js\n');
-    
-    console.log('📋 Recipient instructions:\n');
-    console.log('   # Extract configs');
-    console.log(`   unzip -o configs-${timestamp}.zip -d ~/.openclaw/`);
+    console.log('📦 Files to package:');
+    existingConfigs.forEach(f => console.log(`   - ${f}`));
     console.log('');
-    console.log('   # Setup paths (fixes workspace paths for their machine)');
-    console.log('   node ~/JARVIS/skills/sync-configs/scripts/setup-paths.js');
-    console.log('');
-    console.log('   # Restart');
-    console.log('   openclaw gateway restart\n');
     
-    console.log('💡 Config sections included:');
-    console.log('   - openclaw.json (agents, channels, gateway)');
-    console.log('   - agents/jarvis/models.json (qwen3.5:cloud)');
-    console.log('   - agents/coder/ (coder agent config)');
+    // Create zip
+    const filesStr = existingConfigs.join(' ');
+    execSync(`cd ${OPENCLAW_HOME} && zip -r ${zipPath} ${filesStr}`, { stdio: 'inherit' });
+    
+    console.log('');
+    console.log(`✅ Packaged to: ${zipPath}`);
+    console.log(`   Size: ${fs.statSync(zipPath).size} bytes`);
+    console.log('');
+    console.log('📤 Next steps:');
+    console.log('   1. Commit zip to your personal repo (NOT JARVIS repo)');
+    console.log('   2. Push to GitHub');
+    console.log('   3. On Eric\'s machine: run "sync configs"');
     console.log('');
     console.log('   setup-paths.js auto-fixes paths for their machine.\n');
     
@@ -290,25 +331,87 @@ function syncConfigs() {
   }
 }
 
+// === Restart server ===
+function restartServer() {
+  console.log('🔄 Restarting production server...\n');
+  
+  // Kill existing
+  killServer(CONFIG.productionPort);
+  
+  // Wait for port to free up
+  execSync('sleep 1');
+  
+  // Start new
+  startProductionServer();
+  
+  console.log('');
+  console.log('✅ Server restarted!');
+  console.log(`   URL: https://localhost:${CONFIG.productionPort}`);
+  console.log('   Test: node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open jarvis ui\n');
+  
+  return true;
+}
+
+// === Stop server ===
+function stopServer() {
+  console.log('🛑 Stopping production server...\n');
+  
+  if (killServer(CONFIG.productionPort)) {
+    console.log('✅ Server stopped\n');
+    return true;
+  } else {
+    console.log('⊘ No server was running\n');
+    return false;
+  }
+}
+
+// === Start server ===
+function startServer() {
+  console.log('🚀 Starting production server...\n');
+  
+  if (startProductionServer()) {
+    console.log('');
+    console.log('✅ Server started!');
+    console.log(`   URL: https://localhost:${CONFIG.productionPort}`);
+    console.log('   Test: node ~/JARVIS/skills/jarvis-ui/scripts/jarvis-ui.js open jarvis ui\n');
+    return true;
+  }
+  return false;
+}
+
 // === Main ===
-const command = process.argv[2];
+const command = process.argv.slice(2).join(' ');
 const action = parseCommand(command || '');
 
 switch (action) {
   case 'open-ui':
-    console.log('🧭 Opening Jarvis UI...');
+    console.log('🧭 Opening Jarvis UI (Production)...\n');
     ensureInstalled();
-    startServer(); // Ensure server is running
-    console.log(`🚀 Opening https://localhost:${CONFIG.port}`);
-    openBrowser(`https://localhost:${CONFIG.port}`, true);
+    
+    // Start production server (doesn't affect preview - they run independently)
+    startProductionServer();
+    console.log(`\n🚀 Opening https://localhost:${CONFIG.productionPort}`);
+    openBrowser(`https://localhost:${CONFIG.productionPort}`, true);
     break;
     
   case 'open-neurograph':
-    console.log('🧭 Opening NeuroGraph...');
+    console.log('🧭 Opening NeuroGraph (Production)...\n');
+    console.log('ℹ️  Note: NeuroGraph is now the main UI (merged into root view)\n');
     ensureInstalled();
-    startServer(); // Ensure server is running
-    console.log(`🚀 Opening https://localhost:${CONFIG.port}/ (NeuroGraph is main view)`);
-    openBrowser(`https://localhost:${CONFIG.port}/`);
+    
+    // Start production server (doesn't affect preview - they run independently)
+    startProductionServer();
+    console.log(`\n🚀 Opening https://localhost:${CONFIG.productionPort}/`);
+    openBrowser(`https://localhost:${CONFIG.productionPort}/`);
+    break;
+    
+  case 'preview':
+    console.log('🧭 Opening Preview Server...\n');
+    
+    // Start preview server (doesn't affect production - they run independently)
+    startPreviewServer();
+    console.log(`\n🚀 Opening https://localhost:${CONFIG.previewPort}`);
+    openBrowser(`https://localhost:${CONFIG.previewPort}`);
     break;
     
   case 'package-configs':
@@ -323,13 +426,35 @@ switch (action) {
     updateLatest();
     break;
     
+  case 'restart-server':
+    restartServer();
+    break;
+    
+  case 'stop-server':
+    stopServer();
+    break;
+    
+  case 'start-server':
+    startServer();
+    break;
+    
   default:
     console.log('Usage: node jarvis-ui.js <command>');
+    console.log('');
     console.log('Commands:');
     console.log('  open jarvis ui     — Open Jarvis UI (user profile for mic, auto-starts server)');
     console.log('  open neurograph    — Open NeuroGraph (default browser, auto-starts server)');
+    console.log('  preview            — Open preview server (port 18788, for testing UI changes)');
+    console.log('  start server       — Start production server (port 18787)');
+    console.log('  stop server        — Stop production server');
+    console.log('  restart server     — Restart production server');
     console.log('  update latest      — Pull latest JARVIS + SCI-FI (git pull both repos)');
     console.log('  sync configs       — Extract latest configs + restart gateway');
     console.log('  package configs    — Package OpenClaw configs (Paul: zip + commit + push)');
+    console.log('');
+    console.log('Port mapping:');
+    console.log('  Production: 18787 (default, "open jarvis ui")');
+    console.log('  Preview:    18788 (explicit request, "preview")');
+    console.log('');
     process.exit(1);
 }
