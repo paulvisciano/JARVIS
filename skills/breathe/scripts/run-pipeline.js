@@ -205,6 +205,37 @@ ${reflection}`;
     // Non-fatal for reflection, but the commit may not be amended
   }
 
+  // Step 7: Run git-scanner to refresh the graph (creates/updates temporal nodes)
+  console.log('\n🔍 Refreshing consciousness graph (git-scanner)...');
+  try {
+    runCmd(`node ${path.join(jarvisHome, 'skills/bootstrap-jarvis/scripts/git-scanner.js')}`);
+    console.log('✅ Graph refreshed — new commits visible in visualization\n');
+  } catch (e) {
+    console.error('⚠️  Git-scanner failed (non-critical, but graph may not show new commits):', e.message);
+  }
+
+  // Step 8: Generate TTS recap of what was learned during this breath
+  console.log('🔊 Generating TTS recap of breath learnings...');
+  try {
+    // Build recap from learnings
+    const recapText = `Breath ${breathId} complete. Created ${learningFiles.length} new learnings: ${learningFiles.slice(0, 3).map(f => f.replace('.md', '')).join(', ')}${learningFiles.length > 3 ? `, and ${learningFiles.length - 3} more` : ''}. NeuroGraph updated with new nodes and synapses. Graph refreshed — new commits are now visible in the visualization.`;
+    
+    const recapFile = path.join(jarvisHome, '.tts-recap.tmp');
+    fs.writeFileSync(recapFile, recapText, 'utf8');
+    
+    // Call TTS via openclaw gateway
+    execSync(`openclaw tts --text "$(cat "${recapFile}")"`, {
+      encoding: 'utf-8',
+      cwd: jarvisHome,
+      stdio: 'inherit'
+    });
+    
+    fs.unlinkSync(recapFile);
+    console.log('✅ TTS recap delivered\n');
+  } catch (e) {
+    console.error('⚠️  TTS recap failed (non-critical):', e.message);
+  }
+
   console.log('🫁 Breathe complete');
   console.log(`✅ Git commit: ${breathId}`);
   

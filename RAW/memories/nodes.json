@@ -36198,7 +36198,7 @@
     "label": "2026-04-05",
     "category": "temporal",
     "type": "temporal-day-anchor",
-    "frequency": 6,
+    "frequency": 7,
     "timestamp": "2026-04-05T00:00:00.000Z",
     "breathDate": "2026-04-05",
     "orbitRadius": null,
@@ -36207,13 +36207,13 @@
       {
         "date": "2026-04-05",
         "type": "calendar-day",
-        "description": "6 commits (2 breath)"
+        "description": "7 commits (3 breath)"
       }
     ],
     "attributes": {
       "role": "temporal-day-anchor",
-      "commitCount": 6,
-      "breathCommits": 2,
+      "commitCount": 7,
+      "breathCommits": 3,
       "color": "#ffffff",
       "position": {
         "x": 0,
@@ -36273,7 +36273,7 @@
     "breathDate": "2026-04-05",
     "anchorId": "day-2026-04-05",
     "orbitRadius": 50,
-    "orbitAngle": 1.0471975511965976,
+    "orbitAngle": 0.8975979010256552,
     "moments": [
       {
         "date": "2026-04-05",
@@ -36291,8 +36291,8 @@
       "color": "#0066ff",
       "created": "2026-04-05",
       "position": {
-        "x": 25.000000000000007,
-        "y": 43.30127018922193,
+        "x": 31.17449009293668,
+        "y": 39.09157412340149,
         "z": -3000
       },
       "anchorId": "day-2026-04-05",
@@ -36311,7 +36311,7 @@
     "breathDate": "2026-04-05",
     "anchorId": "day-2026-04-05",
     "orbitRadius": 50,
-    "orbitAngle": 2.0943951023931953,
+    "orbitAngle": 1.7951958020513104,
     "moments": [
       {
         "date": "2026-04-05",
@@ -36329,8 +36329,8 @@
       "color": "#0066ff",
       "created": "2026-04-05",
       "position": {
-        "x": -24.99999999999999,
-        "y": 43.30127018922194,
+        "x": -11.126046697815717,
+        "y": 48.74639560909118,
         "z": -3000
       },
       "anchorId": "day-2026-04-05",
@@ -36349,7 +36349,7 @@
     "breathDate": "2026-04-05",
     "anchorId": "day-2026-04-05",
     "orbitRadius": 50,
-    "orbitAngle": 3.141592653589793,
+    "orbitAngle": 2.6927937030769655,
     "moments": [
       {
         "date": "2026-04-05",
@@ -36367,8 +36367,8 @@
       "color": "#ffcc00",
       "created": "2026-04-05",
       "position": {
-        "x": -50,
-        "y": 6.123233995736766e-15,
+        "x": -45.048443395120955,
+        "y": 21.69418695587791,
         "z": -3000
       },
       "anchorId": "day-2026-04-05",
@@ -36387,7 +36387,7 @@
     "breathDate": "2026-04-05",
     "anchorId": "day-2026-04-05",
     "orbitRadius": 50,
-    "orbitAngle": 4.1887902047863905,
+    "orbitAngle": 3.5903916041026207,
     "moments": [
       {
         "date": "2026-04-05",
@@ -36405,8 +36405,8 @@
       "color": "#0066ff",
       "created": "2026-04-05",
       "position": {
-        "x": -25.00000000000002,
-        "y": -43.301270189221924,
+        "x": -45.048443395120955,
+        "y": -21.6941869558779,
         "z": -3000
       },
       "anchorId": "day-2026-04-05",
@@ -36425,7 +36425,7 @@
     "breathDate": "2026-04-05",
     "anchorId": "day-2026-04-05",
     "orbitRadius": 50,
-    "orbitAngle": 5.235987755982989,
+    "orbitAngle": 4.487989505128276,
     "moments": [
       {
         "date": "2026-04-05",
@@ -36443,8 +36443,8 @@
       "color": "#ffcc00",
       "created": "2026-04-05",
       "position": {
-        "x": 25.000000000000007,
-        "y": -43.30127018922193,
+        "x": -11.12604669781573,
+        "y": -48.74639560909118,
         "z": -3000
       },
       "anchorId": "day-2026-04-05",
@@ -39321,5 +39321,43 @@
       "created": "2026-04-05T07:42:38"
     },
     "created": "2026-04-05T07:42:38"
+  },
+  {
+    "id": "commit-720c727",
+    "label": "🫁 breath-2026-04-05-1447: Breathe complete",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "commitHash": "720c727",
+    "commitType": "breath",
+    "timestamp": "2026-04-05T07:47:07.000Z",
+    "breathDate": "2026-04-05",
+    "anchorId": "day-2026-04-05",
+    "orbitRadius": 50,
+    "orbitAngle": 5.385587406153931,
+    "moments": [
+      {
+        "date": "2026-04-05",
+        "type": "git-commit",
+        "description": "breath-2026-04-05-1447: Breathe complete"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "720c727b99b019534a24bcebe6f2de9076859fe1",
+      "message": "breath-2026-04-05-1447: Breathe complete",
+      "timestamp": "2026-04-05T07:47:07.000Z",
+      "breathDate": "2026-04-05",
+      "commitType": "breath",
+      "color": "#ffcc00",
+      "created": "2026-04-05",
+      "position": {
+        "x": 31.17449009293667,
+        "y": -39.09157412340149,
+        "z": -3000
+      },
+      "anchorId": "day-2026-04-05",
+      "source": "git-scanner-phase1.5"
+    }
   }
 ]
