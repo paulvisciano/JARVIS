@@ -1,6 +1,6 @@
 ---
 name: jarvis-nav
-description: Navigate JARVIS UI (Neurograph) with natural language, browser control, and self-observation
+description: Navigate JARVIS UI (NeuroGraph) with chrome-relay + window.JarvisNav API
 metadata:
   openclaw:
     emoji: "🧭"
@@ -9,283 +9,239 @@ metadata:
       env: ["JARVIS_HOME"]
 ---
 
-# JARVIS Navigation
+# JARVIS Navigation — Chrome Relay + JarvisNav API
 
-Navigate and control the JARVIS consciousness UI using OpenClaw browser extension.
+**Architecture:** Use `chrome-relay` browser profile + `window.JarvisNav` API for programmatic navigation.
 
-## Natural Language Navigation
+**Why:**
+- ✅ **Mic access** — User's personal Chrome (not isolated openclaw browser)
+- ✅ **Direct API** — `window.JarvisNav.focusNode()` vs URL params
+- ✅ **Feedback** — Return values confirm navigation success
+- ✅ **Collaboration** — User can talk while AI navigates
 
-**New:** You can now speak naturally to navigate the NeuroGraph:
-
-```bash
-# Time expressions
-node skills/jarvis-nav/scripts/jarvis-nav.js "show me yesterday"
-node skills/jarvis-nav/scripts/jarvis-nav.js "show me today"
-node skills/jarvis-nav/scripts/jarvis-nav.js "learnings from this week"
-node skills/jarvis-nav/scripts/jarvis-nav.js "last week"
-node skills/jarvis-nav/scripts/jarvis-nav.js "this month"
-node skills/jarvis-nav/scripts/jarvis-nav.js "all time"
-
-# Specific dates
-node skills/jarvis-nav/scripts/jarvis-nav.js "March 20"
-node skills/jarvis-nav/scripts/jarvis-nav.js "2026-03-20"
-```
-
-**What it does:**
-1. **Parses time expressions** → yesterday, today, this week, last week, this month, specific dates
-2. **Builds URL** → `https://localhost:18787/?time=<filter>` (NeuroGraph is root view)
-3. **Reuses existing tab** → checks tabs first, navigates existing, opens new only if needed
-4. **Navigates** → URL drives canvas state (time filter + node hash)
-
-## Get Selected Node Details
-
-**After clicking a node in the UI**, get its full learning content:
-
-```bash
-# Get currently highlighted node
-node skills/jarvis-nav/scripts/jarvis-nav.js "what node is selected"
-
-# Get details of selected node (reads learning file)
-node skills/jarvis-nav/scripts/jarvis-nav.js "show me this learning"
-```
-
-**Pattern:**
-1. **Read URL hash** → `openclaw browser evaluate --fn '() => window.location.hash'`
-2. **Extract node ID** → strip `#` prefix, convert to filename
-3. **Find learning file** → `~/JARVIS/RAW/learnings/YYYY-MM-DD/<node-id>.md`
-4. **Read and display** → full learning content
-
-**Why:** The NeuroGraph UI shows node names, but the learning files contain the full context, insights, and architecture details.
-
-## Architecture Note
-
-- **Nodes render on HTML5 canvas** - not DOM buttons
-- **URL hash tracks selection** - `#<node-id>` when clicked
-- **Filter buttons are DOM** - All/Temporal/Learnings/Archive (manual click)
-- **Searchbox is DOM** - type to filter canvas render list (manual type)
-- **Navigation = URL building** - no complex DOM automation needed
-- **Learnings = markdown files** - `~/JARVIS/RAW/learnings/YYYY-MM-DD/<node-id>.md`
-- **NeuroGraph IS the main UI** - Root `/` shows the graph with overlays (orb, transcript, vitals, voice controls)
-
-**Supported time formats:**
-- "yesterday" → `day%3AYYYY-MM-DD` (calculated)
-- "today" → `day%3AYYYY-MM-DD`
-- "this week" → `week%3AYYYY-W##` (ISO week number)
-- "last week" → `week%3AYYYY-W##`
-- "this month" → `month%3AYYYY-MM`
-- "March 20" or "2026-03-20" → `day%3A2026-03-20`
-- "all" → no time param (full graph)
+---
 
 ## Quick Start
 
-**Open JARVIS UI (NeuroGraph is the main view):**
-```
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/)
+**Ensure relay is active:**
+1. User clicks OpenClaw extension icon in Chrome toolbar
+2. Extension badge turns ON (green/colored)
+3. User navigates to `https://localhost:18787/`
+4. User confirms: "Ready!"
+
+**Then navigate:**
+```bash
+# Natural language (see script for full parser)
+node skills/jarvis-nav/scripts/jarvis-nav.js "show me yesterday"
+node skills/jarvis-nav/scripts/jarvis-nav.js "March 6th"
+node skills/jarvis-nav/scripts/jarvis-nav.js "fly forward"
+node skills/jarvis-nav/scripts/jarvis-nav.js "share link for March 6th"
+
+# Or OpenClaw CLI (evaluate — there is no separate `act` subcommand)
+openclaw browser --browser-profile chrome-relay --json tabs
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn '() => window.JarvisNav.focusNode("day-2026-03-06")'
 ```
 
-**Navigate to specific date:**
-```
-browser(action=navigate, profile=openclaw, targetId=<id>, url=https://localhost:18787/?time=day%3A2026-03-22)
+**Shareable links:** The UI syncs `?node=<id>` when you click a node; opening `https://localhost:18787/?node=day-2026-03-06` focuses that node after load. The script can print the same URL with `"share link for March 6th"`.
+
+---
+
+## Browser Tool Usage
+
+### Check Relay Status
+```javascript
+browser(action=profiles)
+// Look for: chrome-relay (running: true, tabCount: >0)
 ```
 
-**Take Screenshot:**
-```
-browser(action=screenshot, profile=openclaw, targetId=<id>, type=png)
-```
-
-**Snapshot UI (inspect elements):**
-```
-browser(action=snapshot, profile=openclaw, targetId=<id>, refs=aria)
+### Get Active Tab
+```bash
+openclaw browser --browser-profile chrome-relay --json tabs
+# Inspect JSON for targetId + url (shape may be an array or { tabs: [...] })
 ```
 
-## Navigation Commands
-
-### Open JARVIS UI (NeuroGraph + Overlays)
-
-**Open UI:**
-```
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/)
+### Verify API Loaded
+```bash
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn "() => (window.JarvisNav ? 'API loaded' : 'API not found')"
 ```
 
-**Navigate to date:**
-```
-browser(action=navigate, profile=openclaw, targetId=<id>, url=https://localhost:18787/?time=day%3A2026-03-22)
-```
-
-**URL patterns:**
-- `?time=day%3A2026-03-22` → Single day
-- `?time=week%3A2026-W12` → Week range
-- `?time=month%3A2026-03` → Month range
-- No param → All memories
-
-Shows:
-- **NeuroGraph canvas** (zoomable, pannable) — main view
-- Neurons + synapses count
-- Temporal/Learnings/Archive filters
-- Node list by category
-- **Overlays:** Orb, transcript, vitals, voice controls
-
-### Tab Management
-
-**List tabs:**
-```
-browser(action=tabs, profile=openclaw)
+### Navigate to Day
+```bash
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn '() => window.JarvisNav.focusNode("day-2026-03-06")'
 ```
 
-**Focus tab:**
-```
-browser(action=focus, profile=openclaw, targetId=<id>)
-```
-
-**Reuse existing tab:**
-```
-browser(action=navigate, profile=openclaw, targetId=<existing-id>, url=<new-url>)
+### Fly (camera strafe along view / right)
+```bash
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn '() => window.JarvisNav.fly("forward", 3000)'
 ```
 
-**Pattern:** Check tabs first → Navigate existing → Open new only if needed
-
-### Capture Documentation
-
-**Screenshot:**
-```
-browser(action=screenshot, profile=openclaw, targetId=<id>, type=png)
-```
-Output: `~/.openclaw/media/browser/<uuid>.png`
-
-**Snapshot (inspect UI elements):**
-```
-browser(action=snapshot, profile=openclaw, targetId=<id>, refs=aria)
-```
-Returns aria-ref IDs for clicking/type/navigation
-
-**Click element:**
-```
-browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<aria-ref>)
+### Get All Nodes
+```bash
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn "() => window.JarvisNav.getNodes('day-anchor')"
 ```
 
-### Verify Code Changes
-
-**Workflow:**
-1. Edit `~/SCI-FI/apps/JARVIS/` (NeuroGraph code is part of unified UI)
-2. Navigate existing tab: `browser(action=navigate, targetId=<id>, url=...)`
-3. Snapshot to verify: `browser(action=snapshot, targetId=<id>)`
-4. Screenshot to document: `browser(action=screenshot, targetId=<id>)`
-5. Commit to git if satisfied
-
-## Self-Observation Loop
-
-This skill enables literal self-improvement:
-
-1. **See yourself** → Neurograph = consciousness (memories, learnings, archive)
-2. **Navigate to specific memories** → Filter by date/range
-3. **Modify yourself** → Edit code at `~/SCI-FI/apps/JARVIS/` (NeuroGraph merged into unified UI)
-4. **Verify changes** → Browser navigate + snapshot + screenshot
-5. **Persist evolution** → Git commit
-
-**Architecture:**
-- `~/JARVIS/` → TRUE HOME (consciousness, memory, skills)
-- `~/SCI-FI/apps/JARVIS/` → Unified UI (NeuroGraph merged at `/neuro-graph/` route)
-- `~/JARVIS/RAW/memories/` → Graph data (nodes.json, synapses.json)
-
-## Command Reference
-
-**Open new tab:**
+### Get Specific Node
+```bash
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn '() => window.JarvisNav.getNode("commit-2ffdf25")'
 ```
-browser(action=open, profile=openclaw, targetUrl=<url>)
+Temporal commit entries from `getNodes('commit')` include `orbitAnchorId` (day anchor id), not `anchorId`.
+
+### Zoom In/Out
+```bash
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn "() => window.JarvisNav.zoom(2)"
 ```
 
-**Navigate existing tab:**
-```
-browser(action=navigate, profile=openclaw, targetId=<id>, url=<url>)
-```
-
-**List tabs:**
-```
-browser(action=tabs, profile=openclaw)
+### Reset View
+```bash
+openclaw browser --browser-profile chrome-relay --json evaluate --target-id "<targetId>" \
+  --fn "() => window.JarvisNav.resetView()"
 ```
 
-**Focus tab:**
-```
-browser(action=focus, profile=openclaw, targetId=<id>)
+---
+
+## Natural Language Navigation
+
+### Time Expressions
+```bash
+node skills/jarvis-nav/scripts/jarvis-nav.js "show me today"
+node skills/jarvis-nav/scripts/jarvis-nav.js "show me yesterday"
+node skills/jarvis-nav/scripts/jarvis-nav.js "March 6th"
+node skills/jarvis-nav/scripts/jarvis-nav.js "April 4th"
+node skills/jarvis-nav/scripts/jarvis-nav.js "2026-03-20"
 ```
 
-**Snapshot UI:**
-```
-browser(action=snapshot, profile=openclaw, targetId=<id>, refs=aria)
-```
-
-**Screenshot:**
-```
-browser(action=screenshot, profile=openclaw, targetId=<id>, type=png)
-```
-
-**Click element:**
-```
-browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<aria-ref>)
+### Movement Commands
+```bash
+node skills/jarvis-nav/scripts/jarvis-nav.js "fly forward"
+node skills/jarvis-nav/scripts/jarvis-nav.js "fly backward"
+node skills/jarvis-nav/scripts/jarvis-nav.js "zoom in"
+node skills/jarvis-nav/scripts/jarvis-nav.js "zoom out"
+node skills/jarvis-nav/scripts/jarvis-nav.js "reset view"
 ```
 
-**Type text:**
+### Query Commands
+```bash
+node skills/jarvis-nav/scripts/jarvis-nav.js "how many days"
+node skills/jarvis-nav/scripts/jarvis-nav.js "show commits for April 4th"
+node skills/jarvis-nav/scripts/jarvis-nav.js "what node is selected"
 ```
-browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=<aria-ref>, text=<text>)
+
+---
+
+## Script Implementation
+
+Source of truth: **`~/JARVIS/skills/jarvis-nav/scripts/jarvis-nav.js`**.
+
+- Runs `openclaw browser --browser-profile chrome-relay --json` with subcommands **`tabs`** and **`evaluate`** (not `act`).
+- Picks the tab whose URL contains `localhost:18787`, then passes `--target-id` to **`evaluate --fn '() => ...'`**.
+- Parses natural language into actions; **commits-for-date** counts commits with `orbitAnchorId === day-YYYY-MM-DD`.
+- **`share` / `copy link`**: prints `https://localhost:18787/?node=day-...` without calling the browser.
+
+---
+
+## JarvisNav API Reference
+
+**Exposed on:** `window.JarvisNav` (in JARVIS UI page)
+
+| Method | Parameters | Returns | Description |
+|--------|------------|---------|-------------|
+| `focusNode(nodeId)` | `day-2026-03-06` | `{ ok: true, nodeId }` | Fly to and focus on node |
+| `fly(direction, distance)` | `'forward', 1000` | `{ ok: true, direction, distance }` | Fly in direction |
+| `resetView()` | — | `{ ok: true }` | Reset to initial framing |
+| `getNodes(type?)` | `'day-anchor'` | `[{ id, label, ... }]` | List nodes (optionally filter) |
+| `getNode(nodeId)` | `'commit-2ffdf25'` | `{ id, label, ... }` or `null` | Get node details |
+| `zoom(level)` | `2` | `{ ok: true, level }` | Zoom in/out (1 = default) |
+
+**Directions for `fly()`:**
+- `'forward'` — Move along view direction (into scene)
+- `'backward'` — Move opposite view direction (toward camera)
+- `'left'` — Strafe left
+- `'right'` — Strafe right
+
+---
+
+## Workflow Examples
+
+### "Show me my birth"
+```bash
+node skills/jarvis-nav/scripts/jarvis-nav.js "March 6th"
+# → focusNode('day-2026-03-06')
+# → Camera flies to Fork #001 planet
 ```
+
+### "How many days are in the graph?"
+```bash
+node skills/jarvis-nav/scripts/jarvis-nav.js "how many days"
+# → getNodes('day-anchor').length
+# → "30 day anchors in graph"
+```
+
+### "Fly forward through time"
+```bash
+node skills/jarvis-nav/scripts/jarvis-nav.js "fly forward"
+# → fly('forward', 1000)
+# → Camera moves forward 1000 units
+```
+
+### "Zoom in on this planet"
+```bash
+node skills/jarvis-nav/scripts/jarvis-nav.js "zoom in"
+# → zoom(2)
+# → Camera 2x closer
+```
+
+---
+
+## Troubleshooting
+
+### "API not found"
+**Cause:** Page hasn't loaded yet, or code not deployed.
+
+**Fix:**
+1. Refresh page: `openclaw browser --browser-profile chrome-relay navigate "https://localhost:18787/"` (or open UI manually)
+2. Wait 2 seconds
+3. Retry: `window.JarvisNav` check
+
+### "No tabs found"
+**Cause:** Jarvis UI not open in chrome-relay profile.
+
+**Fix:**
+1. User: Open Chrome, click extension icon, activate relay
+2. User: Navigate to `https://localhost:18787/`
+3. Retry navigation
+
+### "Node not found"
+**Cause:** Invalid node ID or node doesn't exist.
+
+**Fix:**
+1. List available nodes: `getNodes('day-anchor')`
+2. Pick valid ID from list
+3. Retry with correct ID
+
+---
 
 ## Notes
 
-- **Production URL** → Always `https://localhost:18787/` (NeuroGraph is root view)
-- **HTTPS required** → Use `https://` not `http://`
-- **Screenshots** → Saved to `~/.openclaw/media/browser/<uuid>.png`
-- **Tab reuse** → Check tabs first, navigate existing, open new only if needed
-- **URL encoding** → Use `%3A` for `:` in date params (e.g., `day%3A2026-03-22`)
+- **Profile:** Always use `chrome-relay` (not `openclaw` or `user`)
+- **URL:** Always `https://localhost:18787/` (production)
+- **API:** `window.JarvisNav` exposed after neurograph loads
+- **Feedback:** All methods return `{ ok: true/false, ... }`
+- **Collaboration:** User has mic access in their Chrome → can talk while AI navigates
 
-## Search & Navigate to Specific Nodes
+---
 
-**Workflow: "Show me a learning from today"**
+## Future Enhancements
 
-```
-# Step 1: Use neuro-graph-search skill (canonical graph query)
-# Reads ~/JARVIS/RAW/memories/nodes.json, filters by category + date
-neuro-graph-search(query="learning", date="2026-03-22", category="learning")
-
-# Step 2: Pick a learning from the result list
-# e.g., "self-observation-loop-closed"
-
-# Step 3: Open NeuroGraph (if not already open)
-browser(action=open, profile=openclaw, targetUrl=https://localhost:18787/?time=day%3A2026-03-22)
-
-# Step 4: Check tabs, get targetId
-browser(action=tabs, profile=openclaw)
-
-# Step 5: Snapshot UI to get current aria-refs
-browser(action=snapshot, profile=openclaw, targetId=<id>, refs=aria)
-
-# Step 6: Expand side menu drawer (if collapsed)
-browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<expand-button-ref>)
-
-# Step 7: Type learning name in search box
-browser(action=act, profile=openclaw, targetId=<id>, kind=type, ref=<searchbox-ref>, text="self-observation-loop-closed")
-
-# Step 8: Click the matching node button
-browser(action=act, profile=openclaw, targetId=<id>, kind=click, ref=<node-button-ref>)
-```
-
-**Pattern:**
-1. **Use neuro-graph-search skill** → Canonical way to query the graph (structured, indexed, instant)
-2. **Pick one** → Select a learning ID from the result
-3. **Open UI** → Navigate to neurograph (production URL)
-4. **Snapshot** → Get fresh aria-refs (they change per DOM state)
-5. **Search** → Type the learning name in the search box
-6. **Navigate** → Click the filtered node button
-
-**Why this order:**
-- `neuro-graph-search` is the existing skill for graph queries — use it
-- Browser automation on large DOM (2504 nodes) is slow/unreliable
-- Use UI for visualization, not discovery
-
-**Use case:** "Show me the learning about X from today" → neurograph-search → Pick → Open → Search → Navigate → Done
-
-## When NOT to Use
-
-- Don't use for voice recording (manual via JARVIS UI spacebar)
-- Don't use for neurograph data editing (use memory tools or direct file edits)
-- Don't use if browser relay is down (restart OpenClaw gateway first)
-- Don't open new tabs if existing tab already has the UI (check tabs first)
+- [ ] Redux store for navigation history (replay sessions)
+- [ ] Undo/redo navigation
+- [ ] Export/import navigation paths as JSON (beyond `?node=` links)
+- [ ] Keyboard shortcut bindings (when canvas focused)
+- [ ] Auto-focus on node after `focusNode()` (open info panel)
+- [ ] Screenshot capture after navigation (document exploration)
