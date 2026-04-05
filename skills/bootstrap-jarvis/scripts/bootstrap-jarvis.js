@@ -24,6 +24,8 @@ const { execSync } = require('child_process');
 const path = require('path');
 const os = require('os');
 
+const { mergeTemporalAnchorsFromGit } = require('./git-scanner.js');
+
 const HOME = process.env.HOME || os.homedir();
 const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
 const GRAPH_DIR = path.join(JARVIS_HOME, 'RAW', 'memories');
@@ -274,7 +276,26 @@ function bootstrap() {
   
   // Step 3: Verify neural graph (stays on disk, queried on demand)
   const graphStats = verifyNeuralGraph();
-  
+
+  // Step 3b: Git temporal anchors — merge commit anchors into nodes.json (Phase 1, last 30 days)
+  let anchorSync = { added: 0, updated: 0, totalAnchors: 0, totalDayAnchors: 0, totalCommits: 0 };
+  try {
+    anchorSync = mergeTemporalAnchorsFromGit({ days: 30 });
+    if (anchorSync.error) {
+      console.warn('[bootstrap] Temporal anchor sync:', anchorSync.error);
+    }
+  } catch (err) {
+    console.warn('[bootstrap] Temporal anchor sync failed:', err.message);
+    anchorSync = {
+      added: 0,
+      updated: 0,
+      totalAnchors: 0,
+      totalDayAnchors: 0,
+      totalCommits: 0,
+      error: err.message
+    };
+  }
+
   // Step 4: NeuroGraph test (3 queries via neurograph-search skill)
   const q1 = queryNeuroGraph('', 'person');
   const q2 = queryNeuroGraph('2026-03-20', '');
@@ -307,6 +328,7 @@ ${s.content}
 - **Status:** Verified on disk
 - **Size:** ${graphStats.graphSizeMB} MB
 - **Query Method:** neurograph-search skill (on-demand)
+- **Git temporal graph (Phase 1.5):** ${anchorSync.error ? `error: ${anchorSync.error}` : `+${anchorSync.added} added, ${anchorSync.updated} updated (${anchorSync.totalDayAnchors ?? '?'} days + ${anchorSync.totalCommits ?? '?'} commits / 30d)`}
 
 ## Active Sessions
 - **Messages:** ${sessionMessages.messages.length}

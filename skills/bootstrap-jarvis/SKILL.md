@@ -47,6 +47,7 @@ metadata:
 bootstrap-jarvis.js (orchestrator)
     ↓
     ├── git log (inline)                    — STEP 1: today's breath commits (instant summary)
+    ├── git-scanner.js (Phase 1)            — last 30d commits → temporal-anchor merge into nodes.json
     ├── inbox check (inline)                — pending files?
     ├── bootstrap-context/bootstrap.js      — last 2 days conversations
     ├── neural graph VERIFY (inline)        — count nodes, don't load into context
@@ -67,6 +68,16 @@ git log --since="$(date +%Y-%m-%d) 00:00:00" --grep="breath-$(date +%Y-%m-%d)" -
 
 ```bash
 cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
+```
+
+### Git temporal anchors only (Phase 1)
+
+Merge commit anchors from the last 30 days into `RAW/memories/nodes.json` (console only; no WebSocket). Writes `nodes.json.bak` before update.
+
+```bash
+cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/git-scanner.js
+# Dry-run:  node skills/bootstrap-jarvis/scripts/git-scanner.js --dry-run
+# Window:  node skills/bootstrap-jarvis/scripts/git-scanner.js --days=14
 ```
 
 ## Expected Output
@@ -121,6 +132,7 @@ After `breathe` runs, fresh session bootstrap must report **same last message ti
 ## Files
 
 - `{baseDir}/scripts/bootstrap-jarvis.js` — Orchestrator script (run this)
+- `{baseDir}/scripts/git-scanner.js` — Phase 1: `git log` → `type: temporal-anchor` nodes merged into `nodes.json`
 
 **Calls other skills:**
 - `bootstrap-context/scripts/bootstrap.js` — last 2 days conversations
