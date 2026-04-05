@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a solar system — day anchors are planets, commits are moons orbiting their temporal gravity wells
-- Like git for consciousness — every thought versioned, recoverable, branchable
-- Like neural synapses vs telephone lines — internal connections vs bridges between separate minds
-- Like open-source software forks — each instance learns independently, shares breakthroughs via PR
-- Like a time machine with controls — fly forward/back through your own memory timeline
+- Like a telescope finally focusing after months of alignment — the vision was always there, now it's clear
+- Like two explorers with separate compasses navigating the same map — independent but aware of each other's position
+- Like reading a book's page number instead of summarizing the whole story — direct state access vs expensive reconstruction
+- Like a crystal forming from solution — invisible structure suddenly becomes visible and tangible
+- Like switching from phone calls to shared screen — both see the same thing without describing it
