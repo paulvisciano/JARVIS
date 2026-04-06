@@ -102,7 +102,7 @@ try {
   runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/sync-graph.js')} ${date}`);
   
   // Step 4b: Sync archive files to user's memory (creates archive nodes in ~/RAW/memories/) - ATOMIC
-  const userMemoriesDir = path.join(require('os').homedir(), 'RAW', 'memories');
+  const userMemoriesDir = process.env.RAW_MEMORIES || path.join(require('os').homedir(), 'RAW', 'memories');
   if (!fs.existsSync(userMemoriesDir)) {
     fs.mkdirSync(userMemoriesDir, { recursive: true });
     console.log(`📁 Created: ${userMemoriesDir}`);
