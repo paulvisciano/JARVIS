@@ -43,12 +43,12 @@ if (!ARCHIVE_ARG) {
 // Use shared path utilities for resolution and validation
 const archiveDir = pathUtils.resolveArchiveDir(ARCHIVE_ARG);
 
-// Resolve nodes path: CLI arg > USER_MEMORIES_DIR env > default to ~/RAW/memories/
+// Resolve nodes path: CLI arg > RAW_MEMORIES env > default to ~/RAW/memories/
 let nodesPath;
 if (NODES_PATH_ARG) {
   nodesPath = pathUtils.resolveNodesPath(NODES_PATH_ARG, path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json'));
 } else {
-  const userMemoriesDir = process.env.USER_MEMORIES_DIR || path.join(require('os').homedir(), 'RAW', 'memories');
+  const userMemoriesDir = process.env.RAW_MEMORIES || path.join(require('os').homedir(), 'RAW', 'memories');
   nodesPath = path.join(userMemoriesDir, 'nodes.json');
 }
 
