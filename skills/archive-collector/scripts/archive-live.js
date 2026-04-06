@@ -13,6 +13,22 @@
 const fs = require('fs');
 const path = require('path');
 
+// Load environment variables from .env file
+const dotenvPath = path.join(__dirname, '../../.env');
+if (fs.existsSync(dotenvPath)) {
+  const dotenvContent = fs.readFileSync(dotenvPath, 'utf8');
+  dotenvContent.split('\n').forEach(line => {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#')) {
+      const [key, ...valueParts] = trimmed.split('=');
+      if (key && valueParts.length > 0) {
+        const value = valueParts.join('=').replace(/^~/, require('os').homedir());
+        process.env[key.trim()] = value.trim();
+      }
+    }
+  });
+}
+
 // Use environment variables for portability
 const HOME = process.env.HOME || require('os').homedir();
 const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');

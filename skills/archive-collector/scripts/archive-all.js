@@ -12,8 +12,25 @@ const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
+// Load environment variables from .env file
+const dotenvPath = path.join(__dirname, '../../.env');
+if (fs.existsSync(dotenvPath)) {
+  const dotenvContent = fs.readFileSync(dotenvPath, 'utf8');
+  dotenvContent.split('\n').forEach(line => {
+    const trimmed = line.trim();
+    if (trimmed && !trimmed.startsWith('#')) {
+      const [key, ...valueParts] = trimmed.split('=');
+      if (key && valueParts.length > 0) {
+        const value = valueParts.join('=').replace(/^~/, require('os').homedir());
+        process.env[key.trim()] = value.trim();
+      }
+    }
+  });
+}
+
 const HOME = process.env.HOME || require('os').homedir();
-const SCRIPTS_DIR = path.join(HOME, 'JARVIS', 'skills', 'archive-collector', 'scripts');
+const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
+const SCRIPTS_DIR = path.join(JARVIS_HOME, 'skills', 'archive-collector', 'scripts');
 
 // Check if desktop archiving is enabled
 // Priority: env var > config file > default (disabled)
