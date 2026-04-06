@@ -17,15 +17,14 @@
  *   node set-archive-creation-dates.js /Users/paulvisciano/RAW/archive/2026-03-14
  *   node set-archive-creation-dates.js 2026-03-14 ~/RAW/memories/nodes.json
  *
- * Default nodes path: ~/RAW/memories/nodes.json (user's memory)
- * (canonical: $HOME/RAW/memories/)
+ * Default nodes path: ~/RAW/memories/nodes.json
+ * (canonical: ~/RAW/memories/)
  *
  * Week view = same graph as 24h view: one temporal node per day; learnings/archives
  * orbit that day's temporal node. Run this script (and set-learning-creation-dates.js)
  * per day to organize memory for that date.
  *
- * NOTE: Archive nodes go to user's memory (~/RAW/memories/), NOT Jarvis's graph.
- * Configurable via USER_MEMORIES_DIR environment variable.
+ * NOTE: Archive nodes go to ~/RAW/memories/, NOT Jarvis's graph (~/JARVIS/RAW/memories/).
  */
 
 const fs = require('fs');
