@@ -17,14 +17,15 @@
  *   node set-archive-creation-dates.js /Users/paulvisciano/RAW/archive/2026-03-14
  *   node set-archive-creation-dates.js 2026-03-14 ~/RAW/memories/nodes.json
  *
- * Default nodes path: ~/RAW/memories/nodes.json (Paul's memory)
- * (canonical: /Users/paulvisciano/RAW/memories/)
+ * Default nodes path: ~/RAW/memories/nodes.json (user's memory)
+ * (canonical: $HOME/RAW/memories/)
  *
  * Week view = same graph as 24h view: one temporal node per day; learnings/archives
  * orbit that day's temporal node. Run this script (and set-learning-creation-dates.js)
- * per day to organize memory for that date. So far run for: 2026-03-13, 2026-03-14.
+ * per day to organize memory for that date.
  *
- * NOTE: Archive nodes go to Paul's memory (~/RAW/memories/), NOT Jarvis's graph.
+ * NOTE: Archive nodes go to user's memory (~/RAW/memories/), NOT Jarvis's graph.
+ * Configurable via USER_MEMORIES_DIR environment variable.
  */
 
 const fs = require('fs');
@@ -42,7 +43,15 @@ if (!ARCHIVE_ARG) {
 
 // Use shared path utilities for resolution and validation
 const archiveDir = pathUtils.resolveArchiveDir(ARCHIVE_ARG);
-const nodesPath = pathUtils.resolveNodesPath(NODES_PATH_ARG, path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json'));
+
+// Resolve nodes path: CLI arg > USER_MEMORIES_DIR env > default to ~/RAW/memories/
+let nodesPath;
+if (NODES_PATH_ARG) {
+  nodesPath = pathUtils.resolveNodesPath(NODES_PATH_ARG, path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json'));
+} else {
+  const userMemoriesDir = process.env.USER_MEMORIES_DIR || path.join(require('os').homedir(), 'RAW', 'memories');
+  nodesPath = path.join(userMemoriesDir, 'nodes.json');
+}
 
 if (!fs.existsSync(archiveDir)) {
   console.error('Archive folder not found:', archiveDir);

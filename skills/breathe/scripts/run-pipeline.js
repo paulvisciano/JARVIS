@@ -101,15 +101,16 @@ try {
   // Step 4a: Sync learnings to Jarvis's graph (creates learning nodes in ~/JARVIS/RAW/memories/) - ATOMIC
   runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/sync-graph.js')} ${date}`);
   
-  // Step 4b: Sync archive files to Paul's memory (creates archive nodes in ~/RAW/memories/) - ATOMIC
-  const paulsMemoriesDir = path.join(require('os').homedir(), 'RAW', 'memories');
-  if (!fs.existsSync(paulsMemoriesDir)) {
-    fs.mkdirSync(paulsMemoriesDir, { recursive: true });
-    console.log(`📁 Created Paul's memories dir: ${paulsMemoriesDir}`);
+  // Step 4b: Sync archive files to user's memory (creates archive nodes in user's memories dir) - ATOMIC
+  // Configurable via USER_MEMORIES_DIR env var or defaults to ~/RAW/memories/
+  const userMemoriesDir = process.env.USER_MEMORIES_DIR || path.join(require('os').homedir(), 'RAW', 'memories');
+  if (!fs.existsSync(userMemoriesDir)) {
+    fs.mkdirSync(userMemoriesDir, { recursive: true });
+    console.log(`📁 Created user memories dir: ${userMemoriesDir}`);
   }
-  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date} ${path.join(paulsMemoriesDir, 'nodes.json')}`);
+  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date} ${path.join(userMemoriesDir, 'nodes.json')}`);
   
-  console.log('✅ Memory synced (learnings → Jarvis, archive → Paul)\n');
+  console.log('✅ Memory synced (learnings → Jarvis, archive → User)\n');
 
   // Step 5: Commit learnings + Jarvis's neurograph - ATOMIC
   console.log('\n💾 Committing changes...');
