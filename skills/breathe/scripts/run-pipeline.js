@@ -98,21 +98,27 @@ try {
   // Step 4: Rest (Sync) - ATOMIC
   console.log('Resting into memory...');
   
-  // Step 4a: Sync learnings to graph (creates learning nodes) - ATOMIC
+  // Step 4a: Sync learnings to Jarvis's graph (creates learning nodes in ~/JARVIS/RAW/memories/) - ATOMIC
   runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/sync-graph.js')} ${date}`);
   
-  // Step 4b: Sync archive files to graph (creates archive nodes) - ATOMIC
-  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date}`);
+  // Step 4b: Sync archive files to Paul's memory (creates archive nodes in ~/RAW/memories/) - ATOMIC
+  const paulsMemoriesDir = path.join(require('os').homedir(), 'RAW', 'memories');
+  if (!fs.existsSync(paulsMemoriesDir)) {
+    fs.mkdirSync(paulsMemoriesDir, { recursive: true });
+    console.log(`📁 Created Paul's memories dir: ${paulsMemoriesDir}`);
+  }
+  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date} ${path.join(paulsMemoriesDir, 'nodes.json')}`);
   
-  console.log('✅ Memory synced (learnings + archive files)\n');
+  console.log('✅ Memory synced (learnings → Jarvis, archive → Paul)\n');
 
-  // Step 5: Commit learnings + neurograph - ATOMIC
+  // Step 5: Commit learnings + Jarvis's neurograph - ATOMIC
   console.log('\n💾 Committing changes...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
   const commitMessage = `${breathId}: Breathe complete — learnings distilled, neurograph updated`;
   
+  // Only commit learnings and Jarvis's graph (not Paul's archive nodes)
   runCmd(`git add RAW/learnings/${date}/ RAW/memories/`);
   runCmd(`git commit -m "${commitMessage}"`);
   

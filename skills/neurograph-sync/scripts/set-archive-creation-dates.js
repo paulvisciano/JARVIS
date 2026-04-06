@@ -15,14 +15,16 @@
  * Examples:
  *   node set-archive-creation-dates.js 2026-03-14
  *   node set-archive-creation-dates.js /Users/paulvisciano/RAW/archive/2026-03-14
- *   node set-archive-creation-dates.js 2026-03-14 ~/Personal/paulvisciano.github.io/memory/nodes.json
+ *   node set-archive-creation-dates.js 2026-03-14 ~/RAW/memories/nodes.json
  *
- * Default nodes path: JARVIS/RAW/memories/nodes.json
- * (canonical: /Users/paulvisciano/JARVIS/RAW/memories/)
+ * Default nodes path: ~/RAW/memories/nodes.json (Paul's memory)
+ * (canonical: /Users/paulvisciano/RAW/memories/)
  *
  * Week view = same graph as 24h view: one temporal node per day; learnings/archives
  * orbit that day's temporal node. Run this script (and set-learning-creation-dates.js)
  * per day to organize memory for that date. So far run for: 2026-03-13, 2026-03-14.
+ *
+ * NOTE: Archive nodes go to Paul's memory (~/RAW/memories/), NOT Jarvis's graph.
  */
 
 const fs = require('fs');

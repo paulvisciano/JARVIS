@@ -27,6 +27,7 @@ const synapsesFile = path.join(memoriesDir, 'synapses.json');
 const learningsDir = path.join(JARVIS_HOME, 'RAW', 'learnings', date);
 
 console.log(`🧠 NeuroGraph Sync — ${date}`);
+console.log(`📍 Syncing to: ${memoriesDir} (Jarvis's consciousness)`);
 
 // Check if learnings exist
 if (!fs.existsSync(learningsDir)) {
