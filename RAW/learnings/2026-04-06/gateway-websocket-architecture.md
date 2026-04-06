@@ -181,6 +181,35 @@ gatewayWS.send(JSON.stringify({
 
 ---
 
+## 📚 **Research Sources (Added 2026-04-06 11:59)**
+
+**Question:** "Do we need to register as a channel in OpenClaw?"
+
+**Answer:** **NO!** WebChat and Control UI already do this — they're direct WebSocket clients.
+
+**Docs consulted:**
+
+1. **[Chat Channels](https://docs.openclaw.ai/channels/index.md)**
+   - Lists all supported channels (Discord, Telegram, WhatsApp, etc.)
+   - **WebChat** is listed as a built-in channel
+   - Channels can run simultaneously
+
+2. **[WebChat](https://docs.openclaw.ai/web/webchat.md)**
+   - *"A native chat UI for the gateway (no embedded browser and no local static server)"*
+   - *"Uses the same sessions and routing rules as other channels"*
+   - **Methods:** `chat.send`, `chat.history`, `chat.inject`
+   - **Events:** `chat` (delta/final), `lifecycle`, `tool`
+   - **No channel registration needed** — just connect to Gateway WS
+
+3. **[Messages](https://docs.openclaw.ai/concepts/messages.md)**
+   - Message flow: Inbound → routing → session → queue → agent run → outbound
+   - Sessions owned by gateway, not clients
+   - Multiple devices can map to same session
+
+**Key insight:** Jarvis UI should follow the **WebChat pattern**, not create a new channel. Connect directly to Gateway WebSocket, use `chat.send` / `chat.history`, listen for events. Done.
+
+---
+
 ## 🏞️ **Context**
 
 **This learning was created during:**
