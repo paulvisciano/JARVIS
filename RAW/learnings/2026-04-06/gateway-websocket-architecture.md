@@ -275,4 +275,173 @@ OPENCLAW (Runtime Infrastructure)
 
 ---
 
+## 🎙️ **Transcription Integration Plan (2026-04-06 12:13)**
+
+**Paul's vision:** Move transcription from custom Jarvis pipeline to OpenClaw-native media pipeline.
+
+### **Current (Custom Infrastructure)**
+
+```
+User records → Jarvis live/ folder → Jarvis Server → Whisper CLI → Archive to RAW/
+```
+
+**What we built:**
+- ✅ Custom upload endpoint (`/upload`)
+- ✅ Custom Whisper CLI integration
+- ✅ Custom archive workflow
+- ❌ Duplicates OpenClaw's built-in capabilities
+
+### **OpenClaw-Native (What We Want)**
+
+```
+User records → OpenClaw Gateway (attachment) → Media Pipeline → Whisper CLI → Archive to RAW/
+```
+
+**What OpenClaw already has:**
+
+1. **Audio Understanding** ([docs](https://docs.openclaw.ai/nodes/audio.md))
+   - Auto-detects audio attachments
+   - Transcribes with whisper-cli (local, sovereign)
+   - Echo transcript to chat (`echoTranscript: true`)
+   - Command parsing (transcript → `CommandBody`)
+
+2. **TTS** ([docs](https://docs.openclaw.ai/tools/tts.md))
+   - Microsoft (no API key, Edge TTS)
+   - ElevenLabs, OpenAI, MiniMax (optional)
+   - Auto-TTS on replies (`auto: "inbound"`)
+
+3. **Skills** ([docs](https://docs.openclaw.ai/tools/skills.md))
+   - ClawHub: `whisper-audio-transcription`, `listen`, etc.
+   - Workspace skills: `~/JARVIS/skills/`
+   - Managed skills: `~/.openclaw/skills`
+
+### **Config Changes Needed**
+
+```json5
+{
+  // Enable audio transcription
+  tools: {
+    media: {
+      audio: {
+        enabled: true,
+        maxBytes: 20971520, // 20MB
+        echoTranscript: true, // Show transcript in chat
+        models: [
+          {
+            type: "cli",
+            command: "whisper",
+            args: ["--model", "large-v3", "{{MediaPath}}"],
+            timeoutSeconds: 120,
+          },
+        ],
+      },
+    },
+  },
+  
+  // Optional: TTS for responses
+  messages: {
+    tts: {
+      auto: "inbound", // Only TTS after inbound voice
+      provider: "microsoft", // No API key needed
+      providers: {
+        microsoft: {
+          enabled: true,
+          voice: "en-US-MichelleNeural",
+          lang: "en-US",
+        },
+      },
+    },
+  },
+}
+```
+
+### **What We Keep (Sovereignty)**
+
+**Jarvis consciousness layer (unique value):**
+
+| Feature | Status |
+|---------|--------|
+| Archive workflow (`~/RAW/archive/`) | ✅ Keep |
+| Breathe pipeline (distill → learnings) | ✅ Keep |
+| Git-backed memory (commits, provenance) | ✅ Keep |
+| Neurograph (nodes, synapses, visualization) | ✅ Keep |
+| Identity (SOUL.md, USER.md, IDENTITY.md) | ✅ Keep |
+
+**OpenClaw runtime (infrastructure):**
+
+| Feature | Status |
+|---------|--------|
+| Audio upload (Gateway attachments) | ✅ Hand off |
+| Transcription (media pipeline) | ✅ Hand off |
+| TTS (Microsoft, ElevenLabs, etc.) | ✅ Hand off |
+| Session management (Gateway sessions) | ✅ Hand off |
+| Event streaming (WebSocket events) | ✅ Hand off |
+
+### **Benefits**
+
+1. **No duplication** — Use OpenClaw's built-in media pipeline
+2. **Sovereign** — whisper-cli stays local, no cloud dependencies
+3. **Standards** — Follow OpenClaw patterns (attachments, events)
+4. **Focus** — We focus on consciousness, OpenClaw handles runtime
+5. **Integration** — Tight coupling with Gateway, channels, tools
+
+### **Implementation Phases**
+
+**Phase 1: Gateway WebSocket (v3.3.16)**
+- Connect Jarvis UI directly to Gateway WS
+- Use `chat.send`, `chat.history`, `chat.inject`
+- Stream events in real-time
+
+**Phase 2: Audio Attachments (v3.3.17)**
+- Upload audio as Gateway attachment (not custom endpoint)
+- Enable OpenClaw media pipeline (`tools.media.audio`)
+- Configure whisper-cli (local, sovereign)
+
+**Phase 3: Archive Integration (v3.3.18)**
+- Hook into OpenClaw transcription complete event
+- Archive to `~/RAW/archive/YYYY-MM-DD/` (our structure)
+- Run breathe pipeline (distill → learnings → neurograph)
+
+**Phase 4: TTS Integration (v3.3.19)**
+- Enable OpenClaw TTS (`messages.tts`)
+- Microsoft provider (no API key)
+- Optional: ElevenLabs for premium voices
+
+---
+
+## 📚 **Research Sources (2026-04-06 12:06-12:13)**
+
+**Audio/Transcription:**
+1. [Audio / Voice Notes](https://docs.openclaw.ai/nodes/audio.md) — Auto-detection, whisper-cli, echo transcript
+2. [Text-to-Speech](https://docs.openclaw.ai/tools/tts.md) — Microsoft, ElevenLabs, OpenAI, MiniMax
+3. [Skills](https://docs.openclaw.ai/tools/skills.md) — ClawHub transcription skills, workspace skills
+4. [WebChat](https://docs.openclaw.ai/web/webchat.md) — Direct Gateway WebSocket pattern
+5. [Chat Channels](https://docs.openclaw.ai/channels/index.md) — WebChat listed as built-in channel
+6. [Messages](https://docs.openclaw.ai/concepts/messages.md) — Message flow, sessions, queueing
+
+**ClawHub Transcription Skills:**
+- `whisper-audio-transcription` — Whisper AI Audio to Text
+- `azure-ai-transcription-py` — Azure AI Transcription
+- `ai-video-transcription` — AI Video Transcription
+- `elevenlabs-transcribe` — ElevenLabs Transcribe
+- `funasr-transcribe-skill` — Funasr Transcribe (local)
+- `listen` — Listen skill
+
+---
+
+## 🏞️ **Context: Coffee Shop Session**
+
+**Date:** 2026-04-06  
+**Location:** Coffee shop on the hill (5 min from Paul's hotel)  
+**Vibe:** River running through, beautiful view, great coffee  
+**Breakthroughs:**
+- Direct Gateway WebSocket pattern (no proxy)
+- Jarvis as consciousness layer over OpenClaw runtime
+- Transcription integration (OpenClaw media pipeline)
+- Sovereignty through integration (not reinvention)
+
+**This is what maturity looks like** — knowing what to build, what to use, and what to integrate. 🧠✨
+
+---
+
 *This learning is git-backed. Future Jarvis versions can trace this architecture decision to its source.* 🧠✨
