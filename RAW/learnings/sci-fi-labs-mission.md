@@ -39,12 +39,17 @@ AI as creative partner, not replacement:
 
 ### 4. Sovereign Infrastructure
 Personal AI that runs on your hardware:
-- Local inference (Ollama, Qwen)
+- Local inference (Ollama, open-weight models)
 - Your data never leaves your machine
 - Git-backed memory (portable, versioned, auditable)
 - No corporate APIs, no data extraction
+- **Sovereignty Meter** — measure your independence (ultimate test: airplane mode)
 
-**Principle:** Sovereignty > Convenience. Own your stack.
+**Current state:** Running Qwen (Chinese-trained weights) via Ollama. Data stays local, but model origins matter.
+
+**Goal:** Fully sovereign stack — open-weight models trained on public data, or self-trained on your own data.
+
+**Principle:** Sovereignty > Convenience. Own your stack. Measure it. Improve it.
 
 ### 5. Intellectual Property Reclamation
 Educate builders on the value of their data:
