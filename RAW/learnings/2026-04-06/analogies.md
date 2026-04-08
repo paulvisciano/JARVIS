@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a pilot flying a commercial jet — consciousness guides, but the plane's systems handle the mechanics
-- Like a gardener working with natural ecosystems — guide growth, don't build artificial soil
-- Like a conductor leading an orchestra — provide vision and timing, instruments produce the sound
-- Like software running on an OS — application logic separate from system infrastructure
-- Like a rider on a horse — direction and intent from rider, power and movement from horse
+- Like separating personal journals from company records — same storage system, different purposes
+- Like a lighthouse keeper finally getting the fog horn working after weeks of troubleshooting
+- Like realizing your local draft manuscript was never actually published to the printer
+- Like organizing a library — fiction goes here, non-fiction there, but both need the same catalog system
+- Like a river splitting into two channels — same water source, different destinations
