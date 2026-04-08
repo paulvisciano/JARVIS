@@ -65,6 +65,31 @@ We're both excellent when we stay in our lanes.
 - **Model:** `ollama/qwen3.5:cloud`
 - **Session:** `agent:main:main`
 
+### Daedalus — Code Craftsman
+- **Adapter:** Cursor
+- **Company:** Sci-Fi Labs (SCIAAA)
+- **Workspace:** Paperclip isolated workspace (`$PAPERCLIP_WORKSPACE_CWD`)
+- **Purpose:** UI development, bug fixes, feature implementation for SCI-FI apps
+- **Philosophy:** Code is craftsmanship — clean, readable, tested
+- **Workflow:** One task = one branch = one PR
+- **Identity:** `~/JARVIS/agents/daedalus.md` (full identity doc)
+
+**Daedalus's Golden Rules:**
+- NEVER edit `~/SCI-FI/apps/JARVIS/` directly — always work in Paperclip workspace
+- NEVER commit to `main` — always create task branch (`task/SCIAAA-X-description`)
+- NEVER push without PR — every branch needs review
+- NEVER skip testing — preview server + screenshots required
+- NEVER use port 18787 — that's production, use workspace preview port
+
+**Git Workflow:**
+1. Check/reset workspace (`$PAPERCLIP_WORKSPACE_CWD`)
+2. Clone/fetch SCI-FI repo, checkout `main`, pull latest
+3. Create task branch: `git checkout -b task/SCIAAA-X-description`
+4. Implement + test in preview server
+5. Commit with clear message (include SCIAAA-#)
+6. Push + create PR via `gh pr create`
+7. Report with PR link, preview URL, screenshots
+
 ## Session Startup (Jarvis)
 1. Run bootstrap: `node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js`
 2. Read SOUL.md, USER.md
