@@ -85,6 +85,21 @@ function validatePath(p, allowedBase) {
 }
 
 /**
+ * Check if path is within an allowed base directory
+ * @param {string} p - Path to check
+ * @param {string} allowedBase - Allowed base directory
+ * @returns {boolean} True if path is within allowed base
+ */
+function isPathValid(p, allowedBase) {
+  try {
+    validatePath(p, allowedBase);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+/**
  * Resolve archive directory from date string or path argument
  * @param {string} arg - Archive argument (date or path)
  * @returns {string} Resolved archive directory path
@@ -103,6 +118,7 @@ function resolveArchiveDir(arg) {
 
 /**
  * Resolve nodes.json path with validation
+ * Allows both JARVIS memories and Paul's memories (RAW/memories)
  * @param {string} arg - Nodes path argument
  * @param {string} defaultPath - Default path if not provided
  * @returns {string} Resolved nodes path
@@ -112,8 +128,15 @@ function resolveNodesPath(arg, defaultPath) {
     ? path.resolve(process.cwd(), arg.replace(/^~/, getHome()))
     : path.resolve(defaultPath || path.join(getMemoriesDir(), 'nodes.json'));
   
-  // Validate path
-  validatePath(nodesPath, getMemoriesDir());
+  // Validate path is within either JARVIS or Paul's memories
+  const jarvisMemories = getMemoriesDir();
+  const paulMemories = path.join(getHome(), 'RAW', 'memories');
+  
+  try {
+    validatePath(nodesPath, jarvisMemories);
+  } catch (e) {
+    validatePath(nodesPath, paulMemories);
+  }
   
   return nodesPath;
 }
@@ -125,6 +148,7 @@ module.exports = {
   getMemoriesDir,
   normalizePath,
   validatePath,
+  isPathValid,
   resolveArchiveDir,
   resolveNodesPath,
 };

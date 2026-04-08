@@ -47,6 +47,8 @@ const archiveDir = pathUtils.resolveArchiveDir(ARCHIVE_ARG);
 let nodesPath;
 if (NODES_PATH_ARG) {
   nodesPath = pathUtils.resolveNodesPath(NODES_PATH_ARG, path.join(__dirname, '..', '..', '..', 'RAW', 'memories', 'nodes.json'));
+  console.log('DEBUG: NODES_PATH_ARG =', NODES_PATH_ARG);
+  console.log('DEBUG: nodesPath =', nodesPath);
 } else {
   const userMemoriesDir = process.env.RAW_MEMORIES || path.join(require('os').homedir(), 'RAW', 'memories');
   nodesPath = path.join(userMemoriesDir, 'nodes.json');
