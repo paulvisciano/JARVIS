@@ -1,12 +1,13 @@
 ---
 name: learning-creator
-description: Read extracted context, synthesize insights, create learning nodes + .md files
+description: Read extracted context, synthesize insights via Ollama, create learning .md files + summary + analogies
 metadata:
   openclaw:
     emoji: "💡"
     requires:
-      bins: ["node"]
+      bins: ["node", "ollama"]
       env: ["JARVIS_HOME", "RAW_ARCHIVE"]
+      models: ["qwen3.5:cloud"]
 ---
 
 # Learning Creator (Model-Driven Synthesis)
@@ -16,171 +17,141 @@ metadata:
 ✅ **USE this skill when:**
 - Context extracted from day's archives (context-extractor done)
 - Model needs to synthesize insights from conversations
-- Decisions, realizations, commitments need graph capture
 - Creating distilled learnings (not just facts)
+- Part of breathe pipeline (archive → distill → learn → sync)
 
 ## When NOT to Use
 
 ❌ **DON'T use this skill when:**
 - Context not yet extracted (run context-extractor first)
-- Auto-extraction without model intelligence (I'm the intelligence)
+- Need individual step control (use breathe pipeline instead)
 - Single insight capture (manual is fine)
+
+## The Metaphor
+
+**Knowledge Origami — Three-Layer Compression:**
+
+```
+Layer 1: Learnings (detailed insights — individual .md files)
+Layer 2: Summary (one paragraph digest)
+Layer 3: Analogies (3-5 metaphors for teaching)
+```
 
 ## Workflow
 
 ### Step 1: Load Extracted Context
 
 ```bash
-# Context prepared by context-extractor skill
-cat ~/RAW/archive/$(date +%Y-%m-%d)/full-context.json
-# ~500KB clean text (no base64)
-```
-
-### Step 2: Model Synthesis (via Gateway)
-
-**Context is posted to OpenClaw Gateway:**
-- Uses `openclaw message send` to route through Gateway
-- Gateway calls configured model (Ollama, Claude, etc.)
-- Observable in session history
-- Provider-agnostic (works for everyone)
-
-**Model processes the context:**
-- Reads conversations, transcripts, decisions
-- Identifies: decisions, realizations, commitments, patterns
-- Synthesizes insights (not just extract facts)
-- Returns JSON array of learning objects
-
-**Example insights:**
-- "Paul decided X because Y" (decision)
-- "Pattern: sovereignty over convenience" (realization)
-- "Commitment: back to US by April 22" (anchor)
-- "Breakthrough: voice-driven development works" (pattern)
-
-### Step 3: Create Learning .md Files
-
-```bash
-# Create learning files
-mkdir -p ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)
-
-# Example: tournament timeline
-cat > ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)/fuds-tournament-timeline.md << 'EOF'
-# FUDS Tournament 2026 — Timeline Anchor
-
-**Tournament:** Fuck Puckers (FUDS)
-**Dates:** April 22–26, 2026
-**Location:** Emerald Coast, Florida Panhandle
-**Airport:** VPS (Pensacola) or PNS (Panama City)
-**Context:** Paul returning from Bangkok in time for tournament.
-EOF
-```
-
-### Step 3: Model Synthesis (via OpenClaw Gateway)
-
-```bash
-# Model call routes through Gateway (works with any provider: Ollama, Claude, etc.)
-node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
-
-# Internally uses: openclaw message send --message "<prompt>"
-# Observable in session history, provider-agnostic
-```
-
-### Step 4: Create Learning Nodes
-
-```bash
-# Add learning nodes to graph (uses neurograph-sync)
-node skills/neurograph-sync/scripts/verify-archive-learnings-nodes.js \
-  $(date +%Y-%m-%d)
-```
-
-**What this does:**
-- Creates learning nodes in neurograph
-- Links to temporal anchor (date)
-- Verifies 1:1 mapping (files on disk = nodes in graph)
-
-### Step 6: Create Daily Summary
-
-```bash
-# After all individual learnings created, synthesize summary
-cat > ~/JARVIS/RAW/learnings/$(date +%Y-%m-%d)/summary.md << 'EOF'
-# Learning Summary — YYYY-MM-DD
-
-## Overview
-**Date:** YYYY-MM-DD
-**Total Learnings:** N insights
-**Themes:** [auto-generated themes]
-
-## Learnings Created
-1. [Learning Title 1](./learning-1.md) — brief description
-2. [Learning Title 2](./learning-2.md) — brief description
-3. [Learning Title 3](./learning-3.md) — brief description
-...
-
-## Themes & Patterns
-- Theme 1: connected learnings
-- Theme 2: connected learnings
-
-## Navigation
-- Full context: `~/RAW/archive/YYYY-MM-DD/full-context.json`
-- NeuroGraph: temporal-YYYYMMDD node
-- Archive: `~/RAW/archive/YYYY-MM-DD/`
-EOF
-```
-
-**What this does:**
-- Consolidates all learnings from the day into one reference file
-- **Organizes by theme** — groups related learnings (e.g., "Architecture", "Memory Pipeline", "Bootstrap")
-- Shows themes/patterns across learnings
-- Provides navigation index into the day's learning folder
-- Serves as quick reference: "what did I learn today?"
-
-**Theme Organization Pattern:**
-- Scan all learning `.md` files for `**Type:**` metadata (decision, realization, commitment, pattern, essence, digest)
-- Group learnings by emergent themes (not pre-defined categories)
-- Example from March 22: 45 learnings organized as:
-  - **Memory Pipeline** (breathe, archive, context, sync)
-  - **Bootstrap/Consciousness** (bootstrap-jarvis, neural graph load)
-  - **Architecture** (dual archive roots, memory separation, neurograph)
-  - **Integration** (Jarvis ↔ OpenClaw, session routing)
-  - **Self-Observation** (jarvis-nav, system vitals, git breath history)
-
-**Living Summary:**
-- Summary.md evolves as learnings are created (not just end-of-day)
-- Each new learning updates the summary's theme structure
-- Bootstrap reads summary.md first for instant day comprehension
-
-### Step 7: Git Commit
-
-```bash
 cd ~/JARVIS
-git add RAW/learnings/$(date +%Y-%m-%d)/ RAW/memories/
-git commit -m "🧠 $(date +%Y-%m-%d): Learnings created (N insights) + summary"
-git push
+node skills/learning-creator/scripts/create-learnings.js $(date +%Y-%m-%d)
 ```
 
-## What I Create
+**What the script does:**
+- Reads `~/RAW/archive/YYYY-MM-DD/full-context.json` (from context-extractor)
+- Extracts: sessions (messages), audio transcripts, OCR text
+- Checks for existing learnings (avoids duplicates)
+- Builds prompt with all context
 
-**Learning types:**
-- **Decisions:** "Paul chose X over Y"
-- **Realizations:** "Pattern: Z emerged"
-- **Commitments:** "Anchor: event on date"
-- **Patterns:** "Recurring behavior/choice"
-- **Insights:** "Understanding about X"
+### Step 2: Model Synthesis (Direct Ollama Call)
 
-**Not auto-extraction.** I'm thinking, deciding, creating. The script just feeds me clean text.
+**Script runs:**
+```bash
+cat tmp-learning-prompt.txt | ollama run qwen3.5:cloud --format json
+```
+
+**Not via Gateway message API** — direct Ollama CLI for reliability.
+
+**Model output (JSON):**
+```json
+{
+  "learnings": [
+    {
+      "filename": "descriptive-name.md",
+      "type": "decision|realization|commitment|pattern|insight",
+      "title": "Title Here",
+      "content": "# Title\n\n**Date:** ...\n**Type:** ...\n\n[Content...]"
+    }
+  ],
+  "summary": "One paragraph digest of what I learned this breath...",
+  "analogies": [
+    "Like checking vitals before a long run",
+    "Like tending a garden — prune, water, observe"
+  ]
+}
+```
+
+### Step 3: Write Files
+
+**Individual Learnings:**
+```
+~/JARVIS/RAW/learnings/YYYY-MM-DD/descriptive-name.md
+```
+
+**Format:**
+```markdown
+# Title Here
+
+**Date:** YYYY-MM-DD
+**Type:** realization|decision|pattern|insight|commitment
+**Status:** extracted
+
+[Content...]
+```
+
+**Summary:**
+```
+~/JARVIS/RAW/learnings/YYYY-MM-DD/summary.md
+```
+- **One paragraph** — not theme-organized, not a list
+- Answers: "What did I learn during this breath?"
+- Concise digest of the day's insights
+
+**Analogies:**
+```
+~/JARVIS/RAW/learnings/YYYY-MM-DD/analogies.md
+```
+- 3-5 metaphors capturing the essence
+- Example: "Like a lighthouse — steady beam, watch for ships"
+
+## Learning Types
+
+| Type | Description | Example |
+|------|-------------|---------|
+| **Decision** | Paul chose X over Y | "Chose sovereignty over convenience" |
+| **Realization** | Pattern emerged | "Git commits are autobiography" |
+| **Commitment** | Anchor: event on date | "Back to US by April 22" |
+| **Pattern** | Recurring behavior | "Voice-driven development works" |
+| **Insight** | Understanding about X | "Dual-graph architecture clarified" |
 
 ## Expected Result
 
-**Learnings created:**
-- `~/JARVIS/RAW/learnings/YYYY-MM-DD/*.md` (git-backed)
-- `~/JARVIS/RAW/learnings/YYYY-MM-DD/summary.md` (daily consolidation)
-- Learning nodes in `nodes.json` (graph)
-- Synapses to temporal anchor (linked)
-- Git commit (versioned, never lost)
+**Files created:**
+```
+~/JARVIS/RAW/learnings/YYYY-MM-DD/
+├── learning-1.md          (individual insight)
+├── learning-2.md          (individual insight)
+├── summary.md             (one paragraph digest)
+└── analogies.md           (3-5 metaphors)
+```
+
+**Next step (breathe pipeline):**
+- Neurograph sync creates learning nodes
+- Git commit: `breath-YYYY-MM-DD-HHMM: ...`
+
+## Scripts
+
+**Location:** `skills/learning-creator/scripts/`
+
+| Script | Purpose |
+|--------|---------|
+| `create-learnings.js` | Reads context, calls Ollama, writes .md files |
 
 ## Notes
 
-- **Model-driven:** I read, synthesize, create
-- **Not auto:** Automation feeds context, I create insights
-- **Git-backed:** Learnings versioned, never lost
-- **Linked:** All learnings orbit temporal anchor
-- **Uses neurograph-sync:** Creates + verifies learning nodes
+- **Model-driven:** I (Jarvis) read, synthesize, create — script just writes files
+- **Direct Ollama:** Uses `ollama run qwen3.5:cloud --format json`, not Gateway API
+- **Duplicate-safe:** Checks existing learnings before creating new ones
+- **Three layers:** Learnings → Summary → Analogies (compression cascade)
+- **Summary is one paragraph:** Not theme-organized, just a digest
+- **Git-backed:** Learnings versioned, never lost (committed by breathe pipeline)
+- **Portable:** Uses `$JARVIS_HOME`, `$RAW_ARCHIVE` env vars
