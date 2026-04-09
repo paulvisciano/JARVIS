@@ -1,6 +1,6 @@
 ---
 name: paperclip-company
-description: Create your own Paperclip AI company — install, configure, agents, org structure
+description: Create your own Paperclip AI company — install, configure, agents, org structure (battle-tested at Sci-Fi Labs)
 metadata:
   openclaw:
     emoji: "🏢"
@@ -16,6 +16,8 @@ metadata:
 
 # Paperclip Company Creator
 
+**Battle-Tested at Sci-Fi Labs (April 2026)**
+
 ## What This Skill Does
 
 Creates a complete **Paperclip AI company** with:
@@ -23,7 +25,9 @@ Creates a complete **Paperclip AI company** with:
 - Local instance with embedded Postgres
 - Pre-configured agents (CEO, PM, Coder)
 - Org structure ready for work
-- OpenClaw Gateway integration (optional)
+- OpenClaw Gateway integration (working pattern)
+
+**Proven in Production:** Sci-Fi Labs running 3 agents (Jarvis CEO, Frank PM, Daedalus Coder) with 100+ tasks completed.
 
 ## When to Use
 
@@ -403,9 +407,91 @@ echo "📊 Company ID: $COMPANY_ID"
 
 ---
 
+## Lessons Learned (Sci-Fi Labs — April 2026)
+
+### What Worked Great
+
+1. **Frank (PM Agent) + OpenClaw Gateway**
+   - Wake events firing correctly
+   - Task creation/delegation working
+   - Heartbeat stable at 300s intervals
+   - **Key:** Fixed session key strategy (`sessionKey: "paperclip-frank"`)
+
+2. **Daedalus (Coder) + Cursor**
+   - Isolated workspace (`$PAPERCLIP_WORKSPACE_CWD`)
+   - Proper task checkout → code → PR workflow
+   - 100+ tasks completed successfully
+
+3. **API Key Management**
+   - Store at: `~/.openclaw/workspace/paperclip-claimed-api-key.json`
+   - Use in agent config: `x-openclaw-token` header
+   - **Don't:** Store in multiple places (causes confusion)
+
+### What Struggled (And How We Fixed It)
+
+1. **API Key Location**
+   - **Problem:** Skill doc said one place, actual runtime used another
+   - **Solution:** Standardized on `~/.openclaw/workspace/paperclip-claimed-api-key.json`
+   - **Lesson:** Document the _actual_ path, not the theoretical one
+
+2. **Wake Event Configuration**
+   - **Problem:** Agents not waking on issue comments
+   - **Root Cause:** Missing `sessionKey` in adapter config
+   - **Solution:** Added `sessionKeyStrategy: "fixed"` + `sessionKey: "paperclip-[agent]"`
+   - **Lesson:** Fixed session keys required for reliable wake events
+
+3. **Cursor Workspace Isolation**
+   - **Problem:** Daedalus editing main repo instead of isolated workspace
+   - **Solution:** Explicit `workspaceDir: "$PAPERCLIP_WORKSPACE_CWD"`
+   - **Lesson:** Always verify workspace path before first run
+
+4. **Gateway Token Propagation**
+   - **Problem:** Gateway token changed, agents didn't update
+   - **Solution:** Restart Paperclip server after token changes
+   - **Lesson:** Document the restart requirement
+
+### Production Configuration (Copy This)
+
+**Our Working Setup:**
+```json
+{
+  "name": "Frank",
+  "title": "Head of Operations",
+  "adapterType": "openclaw_gateway",
+  "adapterConfig": {
+    "url": "ws://127.0.0.1:18789/",
+    "role": "operator",
+    "scopes": ["operator.admin"],
+    "headers": {
+      "x-openclaw-token": "CLAIMED_KEY_FROM_~/.openclaw/workspace/paperclip-claimed-api-key.json"
+    },
+    "sessionKeyStrategy": "fixed",
+    "sessionKey": "paperclip-frank",
+    "timeoutSec": 120,
+    "waitTimeoutMs": 600000
+  },
+  "runtimeConfig": {
+    "heartbeat": {
+      "enabled": true,
+      "intervalSec": 300,
+      "wakeOnDemand": true
+    }
+  }
+}
+```
+
+**Key Fields (Don't Skip These):**
+- `sessionKeyStrategy: "fixed"` — Required for wake events
+- `sessionKey: "paperclip-[name]"` — Unique per agent
+- `waitTimeoutMs: 600000` — 10 min for complex tasks
+- `heartbeat.intervalSec: 300` — 5 min, not too aggressive
+
+---
+
 ## Resources
 
 - Paperclip docs: https://docs.paperclip.ing/
 - GitHub: https://github.com/papercliplabs/paperclip
 - OpenClaw docs: https://docs.openclaw.ai/
-- Our setup: `~/JARVIS/memory/2026-04-08.md` (today's session)
+- **Our Learnings:** `~/JARVIS/RAW/learnings/2026-04-08/` (April 8th context)
+- **Sci-Fi Labs Setup:** `~/.paperclip/instances/default/` (live example)
