@@ -3761,284 +3761,783 @@
     "created": "2026-04-05T07:47:06"
   },
   {
-    "source": "commit-d538702",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "source": "analogies",
+    "target": "temporal-20260406",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-06"
   },
   {
-    "source": "commit-d0f4bb9",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "source": "gateway-websocket-architecture",
+    "target": "temporal-20260406",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-06"
   },
   {
-    "source": "commit-8aaf487",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "source": "media-pipeline-integration",
+    "target": "temporal-20260406",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-06"
   },
   {
-    "source": "commit-ddf6a0d",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "source": "openclaw-integration-philosophy",
+    "target": "temporal-20260406",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-06"
   },
   {
-    "source": "commit-8a6ebd0",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "source": "research-before-proposal-pattern",
+    "target": "temporal-20260406",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-06"
   },
   {
-    "source": "commit-8a9e7d1",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "source": "summary",
+    "target": "temporal-20260406",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-06"
   },
   {
-    "source": "commit-94f5da3",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-gateway-websocket-architecture-to-temporal-20260406",
+    "source": "gateway-websocket-architecture",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-d52bdd1",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-media-pipeline-integration-to-temporal-20260406",
+    "source": "media-pipeline-integration",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-03f5746",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-openclaw-integration-philosophy-to-temporal-20260406",
+    "source": "openclaw-integration-philosophy",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-d9f5f8f",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-research-before-proposal-pattern-to-temporal-20260406",
+    "source": "research-before-proposal-pattern",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-82ba31a",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112302.response-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112302.response",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-544c278",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112302-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112302",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-06a6730",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112302.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112302.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-bb28261",
-    "target": "day-2026-03-06",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112302-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112302",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-607af22",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112557.response-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112557.response",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-89a21fe",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112557-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112557",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-5704981",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112557.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112557.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-d3b92d0",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112557-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112557",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-43dea7b",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112727-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112727",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-6e9267a",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112727.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112727.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-9f310b8",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112727-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112727",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-97ee52e",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112950-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112950",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-6ec8445",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112950.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112950.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-529fd76",
-    "target": "day-2026-03-07",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-112950-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-112950",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-aad0944",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-115315.response-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-115315.response",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-a4c073a",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-115315-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-115315",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-4e460c9",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-115315.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-115315.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-3c1f0a0",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-115315-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-115315",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-11870dc",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-115642-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-115642",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-5c4de28",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-115642.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-115642.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-1603cbf",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-115642-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-115642",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-e29396a",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120045.response-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120045.response",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-9373bd4",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120045-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120045",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-6ecb79b",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120045.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120045.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-b6d575c",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120045-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120045",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-75a44e6",
-    "target": "day-2026-03-08",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120355.response-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120355.response",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-e045383",
-    "target": "day-2026-03-09",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120355-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120355",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-24591c6",
-    "target": "day-2026-03-09",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120355.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120355.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-bb62622",
-    "target": "day-2026-03-09",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120355-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120355",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
-    "source": "commit-cdc893a",
-    "target": "day-2026-03-09",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "id": "syn-convo-jarvis-2026-04-06-120733.response-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120733.response",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-04-06-120733-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120733",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-04-06-120733.wav-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120733.wav",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-convo-jarvis-2026-04-06-120733-to-temporal-20260406",
+    "source": "convo-jarvis-2026-04-06-120733",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-full-context-to-temporal-20260406",
+    "source": "full-context",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.30.14 AM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.30.14 AM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.30.14 AM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.30.14 AM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.30.29 AM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.30.29 AM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.30.29 AM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.30.29 AM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.32.56 AM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.32.56 AM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.32.56 AM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.32.56 AM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.44.55 AM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.44.55 AM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.44.55 AM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.44.55 AM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.47.12 AM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.47.12 AM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.47.12 AM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.47.12 AM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.47.24 AM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.47.24 AM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.47.24 AM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.47.24 AM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.57.00 AM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.57.00 AM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 11.57.00 AM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 11.57.00 AM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.00.19 PM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.00.19 PM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.00.19 PM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.00.19 PM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.06.12 PM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.06.12 PM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.06.12 PM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.06.12 PM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.07.11 PM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.07.11 PM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.07.11 PM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.07.11 PM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.08.15 PM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.08.15 PM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.08.15 PM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.08.15 PM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.08.40 PM-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.08.40 PM",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-Screenshot 2026-04-06 at 12.08.40 PM.png-to-temporal-20260406",
+    "source": "Screenshot 2026-04-06 at 12.08.40 PM.png",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-1974bee1-2933-49d7-a701-d62767f30c7e-to-temporal-20260406",
+    "source": "1974bee1-2933-49d7-a701-d62767f30c7e",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-217ec027-89cf-4f07-a39f-f9b235f3668c-to-temporal-20260406",
+    "source": "217ec027-89cf-4f07-a39f-f9b235f3668c",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-8b536abf-b8f8-426c-9c8f-b5dab51d00cd-to-temporal-20260406",
+    "source": "8b536abf-b8f8-426c-9c8f-b5dab51d00cd",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-8e6c1afc-eb09-4de8-8676-aa438e05a2df-to-temporal-20260406",
+    "source": "8e6c1afc-eb09-4de8-8676-aa438e05a2df",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
+  },
+  {
+    "id": "syn-d55296fa-fe9f-4472-83b3-b1d05641af34-to-temporal-20260406",
+    "source": "d55296fa-fe9f-4472-83b3-b1d05641af34",
+    "target": "temporal-20260406",
+    "type": "linked-to",
+    "attributes": {
+      "relation": "temporal-anchor",
+      "date": "2026-04-06"
+    },
+    "created": "2026-04-06T05:16:51"
   },
   {
     "source": "commit-3b5a27e",
@@ -8787,782 +9286,171 @@
     "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "source": "analogies",
-    "target": "temporal-20260406",
-    "weight": 100,
-    "type": "fired-on",
-    "label": "2026-04-06"
+    "source": "commit-5fc3427",
+    "target": "day-2026-04-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "source": "gateway-websocket-architecture",
-    "target": "temporal-20260406",
-    "weight": 100,
-    "type": "fired-on",
-    "label": "2026-04-06"
+    "source": "commit-de485fb",
+    "target": "day-2026-04-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "source": "media-pipeline-integration",
-    "target": "temporal-20260406",
-    "weight": 100,
-    "type": "fired-on",
-    "label": "2026-04-06"
+    "source": "commit-b2274fa",
+    "target": "day-2026-04-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "source": "openclaw-integration-philosophy",
-    "target": "temporal-20260406",
-    "weight": 100,
-    "type": "fired-on",
-    "label": "2026-04-06"
+    "source": "commit-774830a",
+    "target": "day-2026-04-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "source": "research-before-proposal-pattern",
-    "target": "temporal-20260406",
-    "weight": 100,
-    "type": "fired-on",
-    "label": "2026-04-06"
+    "source": "commit-bdc06ea",
+    "target": "day-2026-04-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "source": "summary",
-    "target": "temporal-20260406",
-    "weight": 100,
-    "type": "fired-on",
-    "label": "2026-04-06"
+    "source": "commit-3e2b57e",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-gateway-websocket-architecture-to-temporal-20260406",
-    "source": "gateway-websocket-architecture",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-4afb5d7",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-media-pipeline-integration-to-temporal-20260406",
-    "source": "media-pipeline-integration",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-14c75cd",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-openclaw-integration-philosophy-to-temporal-20260406",
-    "source": "openclaw-integration-philosophy",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-54bf50b",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-research-before-proposal-pattern-to-temporal-20260406",
-    "source": "research-before-proposal-pattern",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-08b7775",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112302.response-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112302.response",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-12c8011",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112302-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112302",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-aaa6442",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112302.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112302.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-971ad6c",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112302-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112302",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-4517ec1",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112557.response-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112557.response",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-4eac18a",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112557-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112557",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-c60b6d6",
+    "target": "day-2026-04-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112557.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112557.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-940a815",
+    "target": "day-2026-04-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112557-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112557",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-be7e119",
+    "target": "day-2026-04-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112727-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112727",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-0603d61",
+    "target": "day-2026-04-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112727.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112727.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-a28e15a",
+    "target": "day-2026-04-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112727-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112727",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-482d0e4",
+    "target": "day-2026-04-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112950-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112950",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-54ed150",
+    "target": "day-2026-04-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112950.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112950.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-7aed2d7",
+    "target": "day-2026-04-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "id": "syn-convo-jarvis-2026-04-06-112950-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-112950",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-115315.response-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-115315.response",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-115315-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-115315",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-115315.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-115315.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-115315-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-115315",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-115642-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-115642",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-115642.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-115642.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-115642-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-115642",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120045.response-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120045.response",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120045-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120045",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120045.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120045.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120045-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120045",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120355.response-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120355.response",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120355-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120355",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120355.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120355.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120355-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120355",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120733.response-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120733.response",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120733-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120733",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120733.wav-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120733.wav",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-convo-jarvis-2026-04-06-120733-to-temporal-20260406",
-    "source": "convo-jarvis-2026-04-06-120733",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-full-context-to-temporal-20260406",
-    "source": "full-context",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.30.14 AM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.30.14 AM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.30.14 AM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.30.14 AM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.30.29 AM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.30.29 AM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.30.29 AM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.30.29 AM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.32.56 AM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.32.56 AM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.32.56 AM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.32.56 AM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.44.55 AM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.44.55 AM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.44.55 AM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.44.55 AM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.47.12 AM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.47.12 AM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.47.12 AM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.47.12 AM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.47.24 AM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.47.24 AM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.47.24 AM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.47.24 AM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.57.00 AM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.57.00 AM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 11.57.00 AM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 11.57.00 AM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.00.19 PM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.00.19 PM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.00.19 PM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.00.19 PM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.06.12 PM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.06.12 PM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.06.12 PM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.06.12 PM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.07.11 PM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.07.11 PM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.07.11 PM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.07.11 PM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.08.15 PM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.08.15 PM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.08.15 PM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.08.15 PM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.08.40 PM-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.08.40 PM",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-Screenshot 2026-04-06 at 12.08.40 PM.png-to-temporal-20260406",
-    "source": "Screenshot 2026-04-06 at 12.08.40 PM.png",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-1974bee1-2933-49d7-a701-d62767f30c7e-to-temporal-20260406",
-    "source": "1974bee1-2933-49d7-a701-d62767f30c7e",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-217ec027-89cf-4f07-a39f-f9b235f3668c-to-temporal-20260406",
-    "source": "217ec027-89cf-4f07-a39f-f9b235f3668c",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-8b536abf-b8f8-426c-9c8f-b5dab51d00cd-to-temporal-20260406",
-    "source": "8b536abf-b8f8-426c-9c8f-b5dab51d00cd",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-8e6c1afc-eb09-4de8-8676-aa438e05a2df-to-temporal-20260406",
-    "source": "8e6c1afc-eb09-4de8-8676-aa438e05a2df",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
-  },
-  {
-    "id": "syn-d55296fa-fe9f-4472-83b3-b1d05641af34-to-temporal-20260406",
-    "source": "d55296fa-fe9f-4472-83b3-b1d05641af34",
-    "target": "temporal-20260406",
-    "type": "linked-to",
-    "attributes": {
-      "relation": "temporal-anchor",
-      "date": "2026-04-06"
-    },
-    "created": "2026-04-06T05:16:51"
+    "source": "commit-8768dd2",
+    "target": "day-2026-04-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   }
 ]
