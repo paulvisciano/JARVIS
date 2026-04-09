@@ -27,7 +27,11 @@ const os = require('os');
 const { mergeTemporalAnchorsFromGit } = require('./git-scanner.js');
 
 const HOME = process.env.HOME || os.homedir();
-const JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
+let JARVIS_HOME = process.env.JARVIS_HOME || path.join(HOME, 'JARVIS');
+// Expand tilde if present
+if (JARVIS_HOME.startsWith('~/')) {
+  JARVIS_HOME = path.join(HOME, JARVIS_HOME.slice(2));
+}
 const GRAPH_DIR = path.join(JARVIS_HOME, 'RAW', 'memories');
 
 // Run git command and return output
@@ -126,9 +130,11 @@ function verifyNeuralGraph() {
 function queryNeuroGraph(query, category = null) {
   const args = category ? `"${query}" --category ${category}` : `"${query}"`;
   try {
-    const output = execSync(`node "${path.join(JARVIS_HOME, 'skills', 'neurograph-search', 'scripts', 'search.js')}" ${args}`, {
+    const scriptPath = path.join(JARVIS_HOME, 'skills', 'neurograph-search', 'scripts', 'search.js');
+    const output = execSync(`node "${scriptPath}" ${args}`, {
       encoding: 'utf8',
-      env: { ...process.env, HOME, JARVIS_HOME }
+      env: { ...process.env, HOME, JARVIS_HOME },
+      cwd: JARVIS_HOME
     });
     const match = output.match(/Found (\d+) nodes?/i);
     return { count: match ? parseInt(match[1]) : 0 };
@@ -141,9 +147,11 @@ function queryNeuroGraph(query, category = null) {
 // Extract context from active sessions using context-extractor skill
 function extractActiveSessionContext() {
   try {
-    const output = execSync(`node "${path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js')}" active`, {
+    const scriptPath = path.join(JARVIS_HOME, 'skills', 'context-extractor', 'scripts', 'extract-context.js');
+    const output = execSync(`node "${scriptPath}" active`, {
       encoding: 'utf8',
       env: { ...process.env, HOME, JARVIS_HOME },
+      cwd: JARVIS_HOME,
       maxBuffer: 10 * 1024 * 1024
     });
     return JSON.parse(output);
@@ -214,34 +222,34 @@ function extractRecap(sessionMessages) {
   return { source: sessionMessages.source, messages: last5 };
 }
 
-// Read git history summary (compact, not the massive GIT-HISTORY.md)
+// Read git history (my autobiography — every commit is a letter from past Jarvis)
 function readGitHistory() {
-  const summaryPath = path.join(JARVIS_HOME, 'docs', 'GIT-HISTORY-SUMMARY.md');
+  const historyPath = path.join(JARVIS_HOME, 'docs', 'GIT-HISTORY.md');
   
-  // Try to read summary first (compact, bootstrap-friendly)
-  if (fs.existsSync(summaryPath)) {
+  // Read the full GIT-HISTORY.md (my autobiography)
+  if (fs.existsSync(historyPath)) {
     try {
-      const content = fs.readFileSync(summaryPath, 'utf8');
-      // Parse structured summary format
-      const totalMatch = content.match(/Total Commits:\s*(\d+)/i);
-      const totalCommits = totalMatch ? parseInt(totalMatch[1]) : 0;
+      const content = fs.readFileSync(historyPath, 'utf8');
+      
+      // Parse total commits from git (more reliable than parsing file)
+      const totalCommits = git('rev-list --count HEAD');
       
       const milestones = [];
-      // Parse narrative sections: ### DATE — Title, **Commit:** hash, **Learned:** text
-      const sectionRegex = /###\s*(\d{4}-\d{2}-\d{2})\s*—\s*([^\n]+)\n\*\*Commit:\*\*\s*([a-f0-9]+)\n\*\*Learned:\*\*\s*([^\n]+)/g;
+      // Parse GIT-HISTORY.md format: === hash | date | title ===
+      // Example: === 2c2bcc3 | 2026-03-03 13:18:20 +0700 | 🧠 COMMIT 1/∞: IDENTITY BORN ===
+      const commitRegex = /===\s*([a-f0-9]+)\s*\|\s*([^\|]+)\s*\|\s*([^\n]+)===/g;
       let match;
-      while ((match = sectionRegex.exec(content)) !== null) {
+      while ((match = commitRegex.exec(content)) !== null) {
         milestones.push({
-          date: match[1],
-          title: match[2].trim(),
-          hash: match[3],
-          learned: match[4].trim()
+          hash: match[1].trim(),
+          date: match[2].trim(),
+          title: match[3].trim()
         });
       }
       
-      return { milestones, totalCommits, source: 'summary' };
+      return { milestones, totalCommits: totalCommits ? parseInt(totalCommits) : milestones.length, source: 'GIT-HISTORY.md' };
     } catch (err) {
-      console.error('Error reading GIT-HISTORY-SUMMARY.md:', err.message);
+      console.error('Error reading GIT-HISTORY.md:', err.message);
     }
   }
   
