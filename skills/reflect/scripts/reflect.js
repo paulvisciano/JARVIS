@@ -281,6 +281,44 @@ function getGenuineReflectionFromPrompt(prompt, label) {
 }
 
 /**
+ * Read learnings from files (summary.md, analogies.md, detailed learnings)
+ * Returns: { summary, analogies, learnings: [{title, excerpt}] }
+ */
+function readLearningsContent(dateLabel) {
+  const learningsDir = path.join(JARVIS_HOME, 'RAW/learnings', dateLabel);
+  const result = { summary: null, analogies: null, learnings: [] };
+  
+  try {
+    if (fs.existsSync(path.join(learningsDir, 'summary.md'))) {
+      result.summary = fs.readFileSync(path.join(learningsDir, 'summary.md'), 'utf-8').trim();
+    }
+  } catch (e) { /* ignore */ }
+  
+  try {
+    if (fs.existsSync(path.join(learningsDir, 'analogies.md'))) {
+      result.analogies = fs.readFileSync(path.join(learningsDir, 'analogies.md'), 'utf-8').trim();
+    }
+  } catch (e) { /* ignore */ }
+  
+  try {
+    if (fs.existsSync(learningsDir)) {
+      const files = fs.readdirSync(learningsDir)
+        .filter(f => f.endsWith('.md') && f !== 'summary.md' && f !== 'analogies.md');
+      
+      result.learnings = files.map(f => {
+        const content = fs.readFileSync(path.join(learningsDir, f), 'utf-8');
+        const titleMatch = content.match(/^#\s+(.+)/m);
+        const title = titleMatch ? titleMatch[1] : f;
+        const excerpt = content.substring(0, 300).replace(/\n+/g, ' ').trim();
+        return { file: f, title, excerpt };
+      });
+    }
+  } catch (e) { /* ignore */ }
+  
+  return result;
+}
+
+/**
  * Send commits to model via OpenClaw CLI and get genuine reflection
  * Returns: the model's reflection paragraph or null on error
  */
@@ -307,14 +345,33 @@ function getGenuineReflectionFromModel(commits, categories, dateLabel) {
   
   const moreOtherCommits = otherCommits.length > 10 ? `...and ${otherCommits.length - 10} more non-breathe commits` : '';
   
-  // Build breathe summaries (include full bodies, truncate if too long)
-  // Use 500 chars instead of 1500 to reduce prompt size for large days
-  const maxSummaryLength = 500;
-  const breatheSummaries = breatheCommits.map(c => {
-    const subject = c.subject.split(':')[0]; // Get just "breath-YYYY-MM-DD-1508"
-    const summary = c.body.substring(0, maxSummaryLength);
-    return `### ${subject}\n${summary}`;
-  }).join('\n\n');
+  // Read learnings from files (more reliable than commit bodies)
+  const learningsContent = readLearningsContent(dateLabel);
+  
+  // Build breathe summaries from learnings files (not commit bodies)
+  let breatheSummaries = '';
+  if (learningsContent.summary || learningsContent.learnings.length > 0) {
+    if (learningsContent.summary) {
+      breatheSummaries += `**Summary:** ${learningsContent.summary}\n\n`;
+    }
+    if (learningsContent.analogies) {
+      breatheSummaries += `**Analogies:** ${learningsContent.analogies}\n\n`;
+    }
+    if (learningsContent.learnings.length > 0) {
+      breatheSummaries += `**Learnings:**\n`;
+      learningsContent.learnings.forEach(l => {
+        breatheSummaries += `- **${l.title}**: ${l.excerpt}...\n`;
+      });
+    }
+  } else {
+    // Fallback to commit bodies (old behavior)
+    const maxSummaryLength = 500;
+    breatheSummaries = breatheCommits.map(c => {
+      const subject = c.subject.split(':')[0];
+      const summary = c.body ? c.body.substring(0, maxSummaryLength) : '(no body in commit)';
+      return `### ${subject}\n${summary}`;
+    }).join('\n\n');
+  }
   
   // If too many breathe commits, note it
   const moreBreathe = breatheCommits.length > 5 ? `\n...and ${breatheCommits.length - 5} more breathe commits` : '';
