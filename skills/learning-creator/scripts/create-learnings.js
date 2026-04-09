@@ -147,11 +147,11 @@ ${existingLearningsText}
 ${contextText}
 `;
 
-// Write prompt to temp file for OpenClaw to read
+// Write prompt to temp file for Ollama to read
 const promptPath = path.join(jarvisHome, 'tmp-learning-prompt.txt');
 fs.writeFileSync(promptPath, prompt, 'utf8');
 
-console.log(`   🧠 Sending to OpenClaw Gateway for model synthesis...`);
+console.log(`   🧠 Running model synthesis via Ollama...`);
 
 try {
   // Use Ollama directly with --format json for structured output
