@@ -3,11 +3,13 @@
 /**
  * Learning Creator
  * 
- * Reads extracted context, synthesizes insights via model through OpenClaw Gateway,
- * creates individual learning .md files with descriptive names.
+ * Reads extracted context, synthesizes insights via direct Ollama call,
+ * creates individual learning .md files + summary + analogies.
  * 
  * Model-driven: I read, synthesize, create — automation feeds clean text.
- * Uses OpenClaw Gateway for model calls (works with any provider: Ollama, Claude, etc.)
+ * Direct Ollama: Uses `ollama run qwen3.5:cloud --format json` (not Gateway API)
+ * 
+ * Part of breathe pipeline: Inhale → Hold → Exhale (this script) → Rest → Reflect
  */
 
 const fs = require('fs');
