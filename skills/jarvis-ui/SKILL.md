@@ -35,12 +35,14 @@ metadata:
 - "start server" → launch jarvis-server.js on port **18787 only** (production)
 - "stop server" → kill running PID
 - "restart server" → stop + start
-- "update latest" → pull latest JARVIS + SCI-FI (git pull both repos)
+- "update latest" → **run automated update script** (pulls latest, handles renames, syncs assets, restarts server)
 - "sync configs" → extract latest configs + restart gateway
 - "fix the orb" → distribute UI to coder agent
 - "preview ui changes" → start preview server on port **18788** (coder workspace)
 
 **Auto-start:** Server health check runs before opening UI/NeuroGraph — if server is down, auto-starts it on **18787**.
+
+**Automated Updates:** Run `~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh` for seamless updates. Handles git pull, directory renames, asset sync, and server restart automatically. See `README-UPDATE.md` for details.
 
 ### Memory Scan Order
 1. `~/JARVIS/RAW/memories/nodes.json`
