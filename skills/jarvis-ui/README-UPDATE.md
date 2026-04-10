@@ -8,7 +8,7 @@
 
 ```bash
 # Update JARVIS UI to latest version
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js
 ```
 
 **That's it!** The script will:
@@ -41,22 +41,22 @@
 
 ### **Standard Update:**
 ```bash
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js
 ```
 
 ### **Dry Run (Preview Changes):**
 ```bash
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh --dry-run
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js --dry-run
 ```
 
 ### **Force Restart (Even If Up To Date):**
 ```bash
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh --force-restart
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js --force-restart
 ```
 
 ### **Both Options:**
 ```bash
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh --dry-run --force-restart
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js --dry-run --force-restart
 ```
 
 ---
@@ -141,7 +141,7 @@ curl -k https://localhost:18787/health | jq '.version'
 
 | File | Location |
 |------|----------|
-| **Update Script** | `~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh` |
+| **Update Script** | `~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js` |
 | **Update Log** | `/tmp/jarvis-ui-update.log` |
 | **Server Log** | `/tmp/jarvis-ui-latest.log` |
 | **Server PID** | `/tmp/jarvis-ui.pid` |
@@ -196,7 +196,7 @@ https://localhost:18787/
 ### **Script Says "Already up to date" but UI looks old:**
 ```bash
 # Force restart the server
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh --force-restart
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js --force-restart
 ```
 
 ### **Server won't start:**
@@ -211,7 +211,7 @@ lsof -i :18787
 kill -9 $(lsof -t -i :18787)
 
 # Try again
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh --force-restart
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js --force-restart
 ```
 
 ### **Assets missing (SSL error):**
@@ -221,7 +221,7 @@ cp -r ~/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS/assets/* \
       ~/JARVIS/skills/jarvis-ui/sci-fi/apps/JARVIS-UI/assets/
 
 # Restart
-~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.sh --force-restart
+node ~/JARVIS/skills/jarvis-ui/scripts/update-jarvis-ui.js --force-restart
 ```
 
 ---
