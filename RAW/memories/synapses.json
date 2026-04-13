@@ -4540,6 +4540,769 @@
     "created": "2026-04-06T05:16:51"
   },
   {
+    "source": "commit-2c2bcc3",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-fb7c07c",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-84d40e9",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-0c2ff69",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-8a9c1cd",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-9df6405",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-c9d4eb1",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-61e97ea",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-70880b6",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-43d0f21",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-726f5cd",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-8312257",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-f8b0ec3",
+    "target": "day-2026-03-03",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-78f4ec3",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-6746712",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-6589891",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-70e4e2d",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-133361d",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-44e017d",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-a4d4a39",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-0b72d2f",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-f9eb660",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-259d647",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-620ab0f",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-ee23a20",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-778a094",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-5f3075e",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-809d337",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-dc1b00c",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-ef18700",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-a9dc721",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-f5cf761",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-b9bc0a1",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-2779289",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-a985c34",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-0b06af2",
+    "target": "day-2026-03-04",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-6cc761b",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-47729de",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-313b3a4",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-cbd2f2e",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-d3ee395",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-642167e",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-f5db680",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-92497d2",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-e7476f4",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-1fb89a4",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-28b7249",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-eac408a",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-397ce0b",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-ab33779",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-144d74b",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-980f92b",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-74d03d1",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-3670935",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-3fc291d",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-c96361f",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-a802aef",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-0e9fce1",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-b4d6c77",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-aa83373",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-49bdc1f",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-8750d1c",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-31236d7",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-335765e",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-9efddb6",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-0f493b1",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-4eea134",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-97f264c",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-bf41d61",
+    "target": "day-2026-03-05",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-d538702",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-d0f4bb9",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-8aaf487",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-ddf6a0d",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-8a6ebd0",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-8a9e7d1",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-94f5da3",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-d52bdd1",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-03f5746",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-d9f5f8f",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-82ba31a",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-544c278",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-06a6730",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-bb28261",
+    "target": "day-2026-03-06",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-607af22",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-89a21fe",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-5704981",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-d3b92d0",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-43dea7b",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-6e9267a",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-9f310b8",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-97ee52e",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-6ec8445",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-529fd76",
+    "target": "day-2026-03-07",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-aad0944",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-a4c073a",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-4e460c9",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-3c1f0a0",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-11870dc",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-5c4de28",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-1603cbf",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-e29396a",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-9373bd4",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-6ecb79b",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-b6d575c",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-75a44e6",
+    "target": "day-2026-03-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-e045383",
+    "target": "day-2026-03-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-24591c6",
+    "target": "day-2026-03-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-bb62622",
+    "target": "day-2026-03-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-cdc893a",
+    "target": "day-2026-03-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
     "source": "commit-3b5a27e",
     "target": "day-2026-03-10",
     "type": "commit-to-day-anchor",
@@ -9449,6 +10212,125 @@
   {
     "source": "commit-8768dd2",
     "target": "day-2026-04-08",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-c2ecd4a",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-afb34a5",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-ad83289",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-c6da7f7",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-1dcd401",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-4e43bbc",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-b2c8a3b",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-3bd3ca2",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-8091fed",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-fd41de5",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-630fa9e",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-34d28da",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-fa09de7",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-a53ea09",
+    "target": "day-2026-04-09",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-60abbdb",
+    "target": "day-2026-04-10",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-60cf54b",
+    "target": "day-2026-04-10",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-4a183fc",
+    "target": "day-2026-04-10",
     "type": "commit-to-day-anchor",
     "weight": 1,
     "sourceTag": "git-scanner-phase1.5"

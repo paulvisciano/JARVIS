@@ -20,7 +20,7 @@ const NODES_PATH = path.join(GRAPH_DIR, 'nodes.json');
 const SYNAPSES_PATH = path.join(GRAPH_DIR, 'synapses.json');
 
 const BREATH_FIRST_LINE_RE = /^breath-\d{4}-\d{2}-\d{2}-\d{4}:\s*Breathe complete/;
-const DEFAULT_DAYS = 30;
+const DEFAULT_DAYS = 365; // Scan full history (all commits since genesis)
 /** Orbit radius in graph units (commits around day anchor in XY, same Z as day) */
 const COMMIT_ORBIT_RADIUS = 50;
 const SYNAPSE_TYPE_COMMIT_TO_DAY = 'commit-to-day-anchor';
@@ -179,7 +179,8 @@ function buildCommitNode(c) {
     category: 'temporal',
     type: 'temporal-commit',
     frequency: 1,
-    commitHash: c.hashShort,
+    gitHash: c.hashFull,  // Full 40-char hash for lookup
+    gitHashShort: c.hashShort,  // 7-char short hash for display
     commitType: c.commitType,
     timestamp: c.timestamp,
     breathDate: c.breathDate,
@@ -196,6 +197,7 @@ function buildCommitNode(c) {
     attributes: {
       role: 'git-commit-satellite',
       commitHashFull: c.hashFull,
+      commitHash: c.hashShort,
       message: c.subject,
       timestamp: c.timestamp,
       breathDate: c.breathDate,

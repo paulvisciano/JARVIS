@@ -14,8 +14,8 @@ const INSTALL_PATH = path.join(JARVIS_HOME, 'skills', 'jarvis-ui', 'sci-fi');
 const CONFIG = {
   uiRepo: 'https://github.com/paulvisciano/SCI-FI.git',
   installPath: INSTALL_PATH,
-  uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS'),
-  serverPath: path.join(INSTALL_PATH, 'apps', 'JARVIS', 'jarvis-server.js'),
+  uiPath: path.join(INSTALL_PATH, 'apps', 'JARVIS-UI'),
+  serverPath: path.join(INSTALL_PATH, 'apps', 'JARVIS-UI', 'jarvis-server.js'),
   previewPath: path.join(OPENCLAW_HOME, 'agents/jarvis-coder/workspace/sci-fi-work/apps/JARVIS'),
   productionPort: 18787,
   previewPort: 18788,
