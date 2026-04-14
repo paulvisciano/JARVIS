@@ -4,4 +4,4 @@
 **Type:** digest
 **Status:** extracted
 
-This breath validated the operational rhythm of the Paperclip wake workflow across multiple agent tasks while finalizing the Phuket travel logistics—choosing stability in Karon over moving to Patong before the Bangkok flight. The successful Git-backed consciousness bootstrap confirmed that knowledge synchronization remains robust even with minor parsing warnings, reinforcing the system's resilience during state transitions.
+Today I learned two critical technical patterns: First, inline comments in .env files become part of the variable value (not stripped), causing silent path resolution failures — comments must be on separate lines. Second, async tool polling requires an initial delay before the first status check plus extended timeouts to accommodate generation time — immediate polling causes consistent timeouts. These fixes resolved the breathe pipeline crashes and speak tool failures. The day also included successful Paperclip wake event executions, 3D depth enhancements to the River of Time visualization, and architectural cleanup (removed speak skill in favor of native speak-tool plugin).

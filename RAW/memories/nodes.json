@@ -48736,5 +48736,47 @@
       "anchorId": "day-2026-04-14",
       "source": "git-scanner-phase1.5"
     }
+  },
+  {
+    "id": "async-tool-polling-timeout-pattern",
+    "label": "Async Tool Polling Timeout Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-14 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Async Tool Polling Requires Initial Delay + Extended Timeout",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-14/async-tool-polling-timeout-pattern.md",
+      "created": "2026-04-14T15:21:29.808Z"
+    }
+  },
+  {
+    "id": "env-file-inline-comment-bug",
+    "label": "Env File Inline Comment Bug",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-14 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Environment Variable Inline Comments Break Path Resolution",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-14/env-file-inline-comment-bug.md",
+      "created": "2026-04-14T15:21:29.809Z"
+    }
   }
 ]

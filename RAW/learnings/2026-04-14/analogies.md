@@ -4,7 +4,7 @@
 **Type:** essence
 **Status:** extracted
 
-- Like a pilot's pre-flight checklist — verify systems before takeoff
-- Like a nomad packing camp — secure the base before moving on
-- Like a librarian reshelving books — organize knowledge before closing
-- Like a lighthouse keeper — steady beam, watch for ships, log the night
+- Like reading a recipe — comments in the margin shouldn't become ingredients
+- Like waiting for bread to rise — checking too early means it's not ready yet
+- Like a doctor's waiting room — give the process time before asking for updates
+- Like planting seeds — you don't dig them up daily to check if they're growing

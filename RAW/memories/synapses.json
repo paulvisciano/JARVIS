@@ -8731,5 +8731,19 @@
     "type": "commit-to-day-anchor",
     "weight": 1,
     "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "async-tool-polling-timeout-pattern",
+    "target": "temporal-20260414",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-14"
+  },
+  {
+    "source": "env-file-inline-comment-bug",
+    "target": "temporal-20260414",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-14"
   }
 ]
