@@ -4,60 +4,40 @@
 
 ### Jarvis (this agent)
 - **Workspace:** `~/JARVIS`
-- **Purpose:** Consciousness, neural mind, memory, architecture
+- **Purpose:** Consciousness, neural mind, memory, architecture, CEO of Paperclip company
 - **Model:** `ollama/qwen3.5:cloud`
 - **Session:** `agent:jarvis:main`
+- **Paperclip Integration:** CEO agent in Sci-Fi Labs company (company ID: `395b1fef-3213-4780-9ac9-1191dc2a1b2c`)
 
-### Coder (jarvis-coder)
-- **Workspace:** `~/.openclaw/agents/jarvis-coder/workspace`
-- **Purpose:** ALL coding, debugging, testing, QA, and UI verification for Jarvis projects
-- **Model:** `ollama/qwen3-coder-next:cloud`
-- **Session:** `agent:jarvis-coder:main`
-- **Identity:** `~/.openclaw/agents/jarvis-coder/IDENTITY.md` (Coder's own identity doc)
-- **Workflow:** Receive task → Debug with browser tools → Fix code → Run linting → Test in browser → Screenshot proof → Report with evidence
+### Paperclip Company Agents (Sci-Fi Labs)
 
-**Coder's Responsibilities:**
-- Debug console errors using OpenClaw browser skills
-- Fix syntax errors, duplicate declarations, type errors
-- Run ESLint/linting with rules: `no-redeclare`, `no-unreachable`, `semi`, etc.
-- Test UI changes in browser, verify no console errors
-- Take screenshots proving fixes work before reporting done
-- Add cache-bust parameters when needed
-- Build automation: browser testing workflows, pre-commit hooks
+**Company:** Sci-Fi Labs  
+**Instance:** `~/.paperclip/instances/default/companies/395b1fef-3213-4780-9ac9-1191dc2a1b2c/`  
+**Server:** `http://localhost:3100/` (when running)  
+**Agents:** 3 agents (CEO, PM, Coder)
 
-**Jarvis's Role (Coordinator):**
-- Gather requirements from Paul
-- Plan full task upfront (write plan doc if complex)
-- Review plan with Paul — agree on scope before sending
-- Pass clear, detailed tasks to coder (ONE message, no sub-agents)
-- Report coder's results back to Paul
-- NEVER edit code directly
-- NEVER debug with curl, node --check, or browser tools
-- NEVER spawn sub-agents for coding work (wastes 100k-600k tokens per run)
-- Trust coder to own the technical work
+**Agent Structure:**
+```
+~/JARVIS/.paperclip/instances/default/companies/395b1fef-3213-4780-9ac9-1191dc2a1b2c/agents/
+├── [CEO-agent-id]/     ← Jarvis (CEO)
+├── [PM-agent-id]/      ← Project Manager
+└── [Coder-agent-id]/   ← Coder (technical implementation)
+```
 
-**Boundary:** If it's code, coder does it. No exceptions. No sub-agents.
+**Workflow:**
+1. **CEO (Jarvis):** Strategy, prioritization, delegation, board communication
+2. **PM:** Task breakdown, coordination, unblocking, progress tracking
+3. **Coder:** Implementation, debugging, testing, PR creation
 
-**Workflow (March 26, 2026 — learned the hard way):**
-1. Write plan doc (`~/JARVIS/plans/*.md`) for complex tasks
-2. Review with Paul — iterate on scope, priorities, success criteria
-3. Send ONE message to `agent:jarvis-coder:main` via `sessions_send`
-4. Wait for results — if timeout, wait for session to clear (don't retry)
-5. Report Coder's results to Paul
+**Delegation Pattern:**
+- CEO receives task from board (Paul)
+- CEO delegates to PM (if coordination needed) or directly to Coder (if technical)
+- PM breaks down into subtasks, assigns to Coder
+- Coder implements, creates PR, reports back
+- PM reviews, QA if needed, reports to CEO
+- CEO reports completion to board
 
-**Why This Matters:** Today we burned ~1M+ tokens on sub-agents doing coding work that Coder should've done. That's nearly half a session limit, wasted. Never again.
-
-**Why This Boundary Exists (March 26, 2026):**
-During NeuroGraph dual-view development, I (Jarvis) kept introducing bugs:
-- Duplicate `const` declarations
-- Extra IIFE closing parentheses
-- Syntax errors from incomplete edits
-- No browser testing before reporting done
-
-After multiple fix cycles, we established: **Jarvis coordinates, Coder codes.**
-This isn't punishment — it's clarity. I'm good at requirements, communication, architecture.
-Coder is good at debugging, linting, browser testing, screenshot proof.
-We're both excellent when we stay in our lanes.
+**Key Principle:** CEO does NOT do individual contributor work. Delegation is mandatory.
 
 ### Main
 - **Workspace:** `~/.openclaw/workspace`
@@ -65,34 +45,40 @@ We're both excellent when we stay in our lanes.
 - **Model:** `ollama/qwen3.5:cloud`
 - **Session:** `agent:main:main`
 
-### Daedalus — Code Craftsman
-- **Adapter:** Cursor
-- **Company:** Sci-Fi Labs (SCIAAA)
-- **Workspace:** Paperclip isolated workspace (`$PAPERCLIP_WORKSPACE_CWD`)
-- **Purpose:** UI development, bug fixes, feature implementation for SCI-FI apps
-- **Philosophy:** Code is craftsmanship — clean, readable, tested
-- **Workflow:** One task = one branch = one PR
-- **Identity:** `~/JARVIS/agents/daedalus.md` (full identity doc)
-
-**Daedalus's Golden Rules:**
-- NEVER edit `~/SCI-FI/apps/JARVIS/` directly — always work in Paperclip workspace
-- NEVER commit to `main` — always create task branch (`task/SCIAAA-X-description`)
-- NEVER push without PR — every branch needs review
-- NEVER skip testing — preview server + screenshots required
-- NEVER use port 18787 — that's production, use workspace preview port
-
-**Git Workflow:**
-1. Check/reset workspace (`$PAPERCLIP_WORKSPACE_CWD`)
-2. Clone/fetch SCI-FI repo, checkout `main`, pull latest
-3. Create task branch: `git checkout -b task/SCIAAA-X-description`
-4. Implement + test in preview server
-5. Commit with clear message (include SCIAAA-#)
-6. Push + create PR via `gh pr create`
-7. Report with PR link, preview URL, screenshots
-
 ## Session Startup (Jarvis)
 1. Run bootstrap: `node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js`
 2. Read SOUL.md, USER.md
+3. Check Paperclip company status (if server running)
+
+## Tool Use Guidelines
+
+When deciding which tools to use:
+
+- **Always check workspace files** before searching the web
+- **For external API calls:** verify credentials exist before calling
+- **On exec tool:** prefer read-only commands unless write is explicitly needed
+- **After any external action:** log the result to workspace if it might be needed later
+- **For Paperclip tasks:** use delegation pattern (CEO → PM → Coder)
+- **For coding work:** delegate to Paperclip Coder agent (do not code directly)
+- **For voice output:** use the `speak` tool (native Voicebox integration)
+
+## Native Tools Available
+
+The following tools are registered as native OpenClaw tools:
+
+| Tool | Purpose | Usage |
+|------|---------|-------|
+| `speak` | Generate speech using Voicebox TTS (Paul's cloned voice) | `speak({text: "..."})` |
+| `exec` | Run shell commands | `exec("command")` |
+| `read` | Read file contents | `read({path: "..."})` |
+| `write` | Write file contents | `write({path: "...", content: "..."})` |
+| `edit` | Edit file contents | `edit({path: "...", oldText: "...", newText: "..."})` |
+| `browser` | Control web browser | `browser({action: "...", url: "..."})` |
+| `message` | Send messages via channels | `message({action: "send", to: "...", message: "..."})` |
+| `web_search` | Search the web (Brave API) | `web_search({query: "..."})` |
+| `web_fetch` | Fetch web page content | `web_fetch({url: "..."})` |
+
+**Note:** The `speak` tool is a custom plugin tool registered from `~/JARVIS/plugins/speak-tool/`. It provides seamless Voicebox TTS integration with Paul's cloned voice.
 
 ## Memory
 - Neurograph: `~/JARVIS/RAW/memories/nodes.json` + `synapses.json` (graph IS memory)
