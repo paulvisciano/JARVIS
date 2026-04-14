@@ -19,6 +19,7 @@ const path = require('path');
 
 // Load environment variables from .env file (simple parser, no dotenv dependency)
 const dotenvPath = path.join(__dirname, '../../.env');
+const homeDir = require('os').homedir();
 if (fs.existsSync(dotenvPath)) {
   const dotenvContent = fs.readFileSync(dotenvPath, 'utf8');
   dotenvContent.split('\n').forEach(line => {
@@ -26,8 +27,10 @@ if (fs.existsSync(dotenvPath)) {
     if (trimmed && !trimmed.startsWith('#')) {
       const [key, ...valueParts] = trimmed.split('=');
       if (key && valueParts.length > 0) {
-        const value = valueParts.join('=').replace(/^~/, require('os').homedir());
-        process.env[key.trim()] = value.trim();
+        let value = valueParts.join('=').trim();
+        // Expand ~ or $HOME to actual home directory
+        value = value.replace(/^~/, homeDir).replace(/^\$HOME\//, homeDir + '/');
+        process.env[key.trim()] = value;
       }
     }
   });
