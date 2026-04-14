@@ -8710,5 +8710,12 @@
     "type": "commit-to-day-anchor",
     "weight": 1,
     "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "knowledge-bootstrap-verification",
+    "target": "temporal-20260414",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-14"
   }
 ]
