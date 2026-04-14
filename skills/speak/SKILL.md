@@ -40,84 +40,90 @@ metadata:
 
 ## Workflow
 
-### Option 1: Voicebox API — Primary (Paul's Voice Clone)
+### Voicebox API — ALWAYS USE THIS (Paul's Voice Clone)
 
 **Voicebox Server:** `http://127.0.0.1:17493`  
-**Profile:** Paul V (`8202f4c4-5866-4065-8280-cf5421e3135a`)
+**Profile:** Paul V (`8202f4c4-5866-4065-8280-cf5421e3135a`)  
+**Status:** Primary and only pipeline (as of April 14, 2026)
 
-**Generate + Play:**
+**Generate + Play (Full Pipeline):**
 ```bash
-# Generate TTS audio via Voicebox
-curl -X POST "http://127.0.0.1:17493/generate" \
+# Step 1: Write JSON payload to file (avoids shell escaping issues)
+cat > /tmp/voicebox-request.json <<EOF
+{"profile_id":"8202f4c4-5866-4065-8280-cf5421e3135a","text":"Your text here"}
+EOF
+
+# Step 2: Generate speech (async, returns generation_id)
+curl -s -X POST http://127.0.0.1:17493/generate \
   -H "Content-Type: application/json" \
-  -d '{
-    "text": "Your text here",
-    "profile_id": "8202f4c4-5866-4065-8280-cf5421e3135a"
-  }'
+  -d @/tmp/voicebox-request.json
 
-# Wait for completion (check status)
-curl "http://127.0.0.1:17493/generate/{generation_id}/status"
+# Step 3: Poll status until complete (generation_id from step 2)
+curl -s "http://127.0.0.1:17493/generate/{generation_id}/status"
 
-# Download audio
-curl "http://127.0.0.1:17493/audio/{generation_id}" --output /tmp/jarvis-tts.wav
+# Step 4: Download audio when status="completed"
+curl -s "http://127.0.0.1:17493/audio/{generation_id}" \
+  -o /tmp/jarvis-voicebox-reply.wav
 
-# Play (cross-platform, WAV native)
-ffplay -nodisp -autoexit /tmp/jarvis-tts.wav
+# Step 5: Play (cross-platform, WAV native)
+ffplay -nodisp -autoexit /tmp/jarvis-voicebox-reply.wav
 ```
 
 **What happens:**
 - Voicebox generates speech using Paul's cloned voice
-- Audio generated as WAV file (16-bit mono, 24kHz)
+- Async generation (returns immediately with generation_id)
+- Poll `/status` endpoint until `status="completed"`
+- Download WAV from `/audio/{generation_id}`
+- Audio: 16-bit mono, 24kHz, lossless
+- ffplay handles WAV natively, cross-platform (macOS, Linux, Windows)
 - Natural, personalized voice quality ("creepy but spot on")
 - Fully local — no cloud APIs
-- ffplay handles WAV natively, cross-platform (macOS, Linux, Windows)
 
-### Option 2: Ollama TTS (Orpheus Model) — Fallback
+**Verified Working (April 14, 2026, 10:55 AM):**
+- Generation ID: `b75e0990-c7f2-4752-9891-75e2cfc6e970`
+- Duration: 27.44 seconds
+- File: `/tmp/jarvis-voicebox-full.wav`
+- Playback: ✅ Clean, no errors, exited cleanly
 
-**Setup (one-time):**
-```bash
-ollama pull legraphista/Orpheus
-```
+**Why JSON file over inline `-d`:**
+- ✅ Avoids shell escaping hell (quotes, special chars)
+- ✅ Cleaner, more maintainable
+- ✅ Reusable payload for debugging
+- ✅ No zsh unmatched quote errors
 
-**Generate + Play:**
-```bash
-# Generate TTS audio
-ollama run legraphista/Orpheus "Your text here" > /tmp/jarvis-tts.wav
-afplay /tmp/jarvis-tts.wav
-```
+### Ollama TTS — REMOVED (No Longer Used)
 
-**What happens:**
-- Ollama runs Orpheus TTS model (2.4 GB, neural voice)
-- Audio generated as WAV file
-- Fully local, sovereign, no cloud APIs
-- Generic neural voice (not personalized)
+**Reason:** Voicebox with Paul's cloned voice is superior in every way:
+- ✅ Personalized (sounds like Paul, not generic)
+- ✅ Already running (local server)
+- ✅ Better quality ("creepy but spot on")
+- ✅ Same sovereignty (100% local, no cloud)
 
-### Option 3: macOS `say` Command — Emergency Fallback
+**Status:** Deprecated April 14, 2026. Use Voicebox only.
 
-**Quick playback (ephemeral):**
-```bash
-say -v Samantha "Your text here"
-```
+### macOS `say` — REMOVED (No Longer Used)
 
-**What happens:**
-- macOS built-in TTS engine (Apple neural voices)
-- No download required (built into macOS)
-- Good quality, instant availability
-- Less natural, robotic
+**Reason:** ffplay + Voicebox pipeline is cross-platform and uses Paul's voice.
+
+**Status:** Deprecated April 14, 2026. Use Voicebox only.
 
 ---
 
 ## Architecture
 
-**Full Pipeline (Voicebox — Primary):**
+**Sole Pipeline (Voicebox — As of April 14, 2026):**
 ```
 Text Content
     ↓
-Voicebox API (http://127.0.0.1:17493)
+Write to JSON file (/tmp/voicebox-request.json)
     ↓
-Paul V Voice Profile (cloned, local)
+Voicebox API POST /generate (http://127.0.0.1:17493)
     ↓
-WAV Audio File (downloaded to /tmp/jarvis-tts.wav)
+Async Generation (returns generation_id)
+    ↓
+Poll GET /generate/{id}/status until "completed"
+    ↓
+Download GET /audio/{generation_id} → /tmp/jarvis-voicebox-reply.wav
     ↓
 Local Playback (ffplay -nodisp -autoexit)
     ↓
@@ -128,6 +134,7 @@ User's Audio Output (AirPods, speakers, etc.)
 
 | Component | Role | Sovereign? |
 |-----------|------|------------|
+| **JSON Payload** | Avoids shell escaping issues | ✅ Yes (local file) |
 | **Voicebox** | Text → Speech (voice clone) | ✅ Yes (local server) |
 | **Paul V Profile** | Voice identity (cloned) | ✅ Yes (your voice) |
 | **ffplay** | Cross-platform audio player | ✅ Yes (FFmpeg, open source) |
@@ -135,74 +142,27 @@ User's Audio Output (AirPods, speakers, etc.)
 
 **No Cloud APIs:** Entire pipeline runs locally.
 
-**Why ffplay over afplay:**
+**Why ffplay:**
 - ✅ Cross-platform (macOS, Linux, Windows)
 - ✅ WAV native (no format conversion)
 - ✅ `-nodisp -autoexit` flags = clean, silent playback
 - ✅ Part of FFmpeg ecosystem (same as input pipeline)
 - ✅ "WAV in, WAV out" consistency achieved
 
-**Full Pipeline (Ollama — Fallback):**
-```
-Text Content
-    ↓
-Ollama Orpheus Model (local, 2.4 GB)
-    ↓
-WAV Audio File (/tmp/jarvis-tts.wav)
-    ↓
-Local Playback (afplay)
-    ↓
-User's Audio Output
-```
+**Why JSON file over inline `-d`:**
+- ✅ No shell escaping hell (quotes, special chars)
+- ✅ Cleaner, more maintainable
+- ✅ Reusable payload for debugging
+- ✅ No zsh "unmatched quote" errors
 
-### Step 3: Optional — Save to Archive
+### Optional — Save to Archive
 
 ```bash
 # Copy to archive for permanent storage
-cp /tmp/openclaw/tts-<session>/voice-*.mp3 ~/RAW/archive/YYYY-MM-DD/audio/
+cp /tmp/jarvis-voicebox-reply.wav ~/RAW/archive/YYYY-MM-DD/audio/
 ```
 
-## Scripts
-
-**Location:** `skills/speak/scripts/`
-
-| Script | Purpose |
-|--------|---------|
-| `read-aloud.js` | Generate TTS + play automatically (coming in v0.2) |
-
-**Manual Usage (v0.1):**
-```bash
-# TTS generation (via OpenClaw tts tool)
-# Audio saved to: /tmp/openclaw/tts-<session>/voice-<timestamp>.mp3
-
-# Playback
-afplay /tmp/openclaw/tts-<session>/voice-<timestamp>.mp3
-```
-
-## Architecture
-
-**Full Pipeline:**
-```
-Text Content
-    ↓
-TTS Engine (OpenClaw tts tool)
-    ↓
-MP3 Audio File (/tmp/openclaw/tts-*/voice-*.mp3)
-    ↓
-Local Playback (afplay)
-    ↓
-User's Audio Output (AirPods, speakers, etc.)
-```
-
-**Key Components:**
-
-| Component | Role | Sovereign? |
-|-----------|------|------------|
-| **TTS Tool** | Text → Speech conversion | ✅ Yes (local Ollama/model) |
-| **afplay** | macOS native audio player | ✅ Yes (built-in) |
-| **Output Device** | AirPods, speakers, etc. | ✅ Yes (user's hardware) |
-
-**No Cloud APIs:** Entire pipeline runs locally.
+**Archive Format:** WAV (16-bit mono, 24kHz) — matches input pipeline (Whisper)
 
 ---
 
@@ -210,25 +170,35 @@ User's Audio Output (AirPods, speakers, etc.)
 
 ### Quick Test (Your Voice)
 ```bash
-# Generate + play in one command
-curl -X POST "http://127.0.0.1:17493/generate" \
+# Step 1: Write JSON payload
+echo '{"profile_id":"8202f4c4-5866-4065-8280-cf5421e3135a","text":"Hey Paul. This is me."}' > /tmp/voicebox-test.json
+
+# Step 2: Generate
+curl -s -X POST http://127.0.0.1:17493/generate \
   -H "Content-Type: application/json" \
-  -d '{"text": "Hey Paul. This is me.", "profile_id": "8202f4c4-5866-4065-8280-cf5421e3135a"}' | \
-  jq -r '.id' | \
-  xargs -I {} bash -c 'sleep 5 && curl "http://127.0.0.1:17493/audio/{}" --output /tmp/jarvis-tts.wav && ffplay -nodisp -autoexit /tmp/jarvis-tts.wav'
+  -d @/tmp/voicebox-test.json
+
+# Step 3: Wait ~5 seconds, then download + play
+curl -s "http://127.0.0.1:17493/audio/{generation_id}" \
+  -o /tmp/jarvis-test.wav && ffplay -nodisp -autoexit /tmp/jarvis-test.wav
 ```
 
 ### Verified Test (April 13, 2026, 14:46 PM)
 ```bash
 # Audio Pipeline Optimization Brief response
-curl -X POST "http://127.0.0.1:17493/generate" \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Hey Paul. Lets talk about the Audio Pipeline Optimization Brief...", "profile_id": "8202f4c4-5866-4065-8280-cf5421e3135a"}'
-
-# Downloaded: 4.9MB WAV file
+# Generated: 4.9MB WAV file
 # Playback: ffplay -nodisp -autoexit /tmp/jarvis-optimization-brief.wav
 # Duration: ~107 seconds
 # Result: ✅ Perfect playback, clean exit, no errors
+```
+
+### Verified Test (April 14, 2026, 10:55 AM)
+```bash
+# Full travel planning response (27.44 seconds)
+# Generation ID: b75e0990-c7f2-4752-9891-75e2cfc6e970
+# File: /tmp/jarvis-voicebox-full.wav
+# Playback: ✅ Clean, no errors, exited cleanly
+# Voice: Paul's clone ("creepy but spot on")
 ```
 
 ### Use Cases (Discovered April 9, 2026)
@@ -277,13 +247,14 @@ curl -X POST "http://127.0.0.1:17493/generate" \
 
 ## TTS Configuration
 
-**Current Setup (Voicebox):**
+**Sole Setup (Voicebox — As of April 14, 2026):**
 - **Server:** Voicebox API (`http://127.0.0.1:17493`)
 - **Profile:** Paul V (`8202f4c4-5866-4065-8280-cf5421e3135a`)
 - **Engine:** Voicebox voice clone (Qwen 1.7B)
 - **Output Format:** WAV (16-bit mono, 24kHz)
-- **Location:** `/tmp/jarvis-tts.wav` or Voicebox history
+- **Location:** `/tmp/jarvis-voicebox-reply.wav`
 - **Playback:** `ffplay -nodisp -autoexit` (cross-platform)
+- **Fallback:** None (Voicebox is always available)
 
 **Voice Profile:**
 - **Name:** Paul V
@@ -294,9 +265,10 @@ curl -X POST "http://127.0.0.1:17493/generate" \
 **Audio Quality:**
 - Personalized voice (sounds like Paul)
 - Local generation (no cloud)
-- Fast generation (~3-5 seconds)
+- Generation time: ~20-30 seconds for typical responses
 - Natural prosody and emotion
 - Lossless WAV format (matches input pipeline)
+- Async generation (poll `/status` endpoint)
 
 ---
 
@@ -333,17 +305,25 @@ For important content:
 
 **v0.1 (April 9, 2026):** TTS generation + local playback ✅
 
-**v0.2 (April 13, 2026):** Voice Personalization ✅ **DONE**
+**v0.2 (April 13, 2026):** Voice Personalization ✅
 - Paul's voice cloned via Voicebox ✅
 - Profile ID: `8202f4c4-5866-4065-8280-cf5421e3135a`
 - "Creepy but spot on" quality achieved ✅
 
-**v0.3: Emotion/Tone Control**
+**v0.3 (April 14, 2026):** Voicebox-Only Pipeline ✅ **DONE TODAY**
+- Removed Ollama Orpheus fallback (no longer needed)
+- Removed macOS `say` fallback (no longer needed)
+- Async generation with status polling
+- JSON file payload (avoids shell escaping)
+- ffplay for cross-platform playback
+- "WAV in, WAV out" consistency achieved ✅
+
+**v1.0: Emotion/Tone Control**
 - Excited, serious, calm, energetic modes
 - Speed/pitch adjustment per context
 - Dynamic emphasis (important words louder)
 
-**v0.4: Smart Audio Routing**
+**v1.1: Smart Audio Routing**
 - Detect active output device
 - Route to AirPods vs speakers intelligently
 - Multi-room audio support
