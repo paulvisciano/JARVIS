@@ -101,31 +101,26 @@ try {
   // Step 4: Rest (Sync) - ATOMIC
   console.log('Resting into memory...');
   
-  // Step 4a: Sync learnings to Jarvis's graph (creates learning nodes in ~/JARVIS/RAW/memories/) - ATOMIC
-  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/sync-graph.js')} ${date}`);
-  
-  // Step 4b: Sync archive files to user's memory (creates archive nodes in ~/RAW/memories/) - ATOMIC
+  // Step 4a: Sync archive files to user's memory (creates archive nodes in ~/RAW/memories/) - ATOMIC
   const userMemoriesDir = process.env.RAW_MEMORIES || path.join(require('os').homedir(), 'RAW', 'memories');
   if (!fs.existsSync(userMemoriesDir)) {
     fs.mkdirSync(userMemoriesDir, { recursive: true });
     console.log(`📁 Created: ${userMemoriesDir}`);
   }
   const nodesJsonPath = path.join(userMemoriesDir, 'nodes.json');
-  console.log(`DEBUG: userMemoriesDir=${userMemoriesDir}`);
-  console.log(`DEBUG: nodesJsonPath=${nodesJsonPath}`);
   runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date} ${nodesJsonPath}`);
   
-  console.log('✅ Memory synced (learnings → Jarvis, archive → User)\n');
+  console.log('✅ Archive synced to user memory (graph built from git commits)\n');
 
-  // Step 5: Commit learnings + Jarvis's neurograph - ATOMIC
+  // Step 5: Commit learnings (graph built from git by git-scanner) - ATOMIC
   console.log('\n💾 Committing changes...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
-  const commitMessage = `${breathId}: Breathe complete — learnings distilled, neurograph updated`;
+  const commitMessage = `${breathId}: Breathe complete — learnings distilled, graph built from git`;
   
-  // Only commit learnings and Jarvis's graph (not Paul's archive nodes)
-  runCmd(`git add RAW/learnings/${date}/ RAW/memories/`);
+  // Only commit learnings (graph is built from git commits by git-scanner)
+  runCmd(`git add RAW/learnings/${date}/`);
   runCmd(`git commit -m "${commitMessage}"`);
   
   console.log(`✅ Breath committed: ${breathId}\n`);
@@ -152,23 +147,21 @@ try {
     ? `\n  ...and ${learningFiles.length - 5} more` 
     : '';
   
-  // Get neurograph diff stat - ATOMIC
-  let neurographStat = 'updated';
+  // Get learnings diff stat - ATOMIC
+  let learningsStat = '';
   try {
-    neurographStat = execSync(`git -C "${jarvisHome}" diff HEAD --stat RAW/memories/ | tail -1`, { 
+    learningsStat = execSync(`git -C "${jarvisHome}" diff HEAD --stat RAW/learnings/${date}/ | tail -1`, { 
       encoding: 'utf-8' 
     }).trim();
   } catch (e) {
     // Non-critical, but log it
-    console.log('⚠️  Could not get neurograph diff stat (non-critical)');
+    console.log('⚠️  Could not get learnings diff stat (non-critical)');
   }
   
   const chatMessage = `🪞 **Reflecting on ${breathId}**
 
 Learnings extracted:
 ${summaries}${moreLearnings}
-
-Neurograph: ${neurographStat}
 
 What does this work reveal?`;
 

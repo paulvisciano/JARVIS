@@ -25,6 +25,8 @@ const DEFAULT_DAYS = 365; // Scan full history (all commits since genesis)
 const COMMIT_ORBIT_RADIUS = 50;
 const SYNAPSE_TYPE_COMMIT_TO_DAY = 'commit-to-day-anchor';
 const SYNAPSE_SOURCE_TAG = 'git-scanner-phase1.5';
+/** Learning node orbit radius (outer ring around day anchor) */
+const LEARNING_ORBIT_RADIUS = 75;
 
 function git(command) {
   try {
@@ -81,7 +83,7 @@ function scanGitCommits(days = DEFAULT_DAYS) {
     if (!p) continue;
     const commitType = detectCommitType(p.subject);
     const breathDate = breathDateFromAuthorDate(p.authorDate);
-    commits.push({
+    const commit = {
       hashFull: p.hashFull,
       hashShort: p.hashFull.slice(0, 7),
       authorDate: p.authorDate,
@@ -89,9 +91,47 @@ function scanGitCommits(days = DEFAULT_DAYS) {
       subject: p.subject,
       commitType,
       breathDate
-    });
+    };
+    // Extract learning files from breath commits
+    if (commitType === 'breath') {
+      commit.learningFiles = extractLearningFiles(p.hashFull);
+    }
+    commits.push(commit);
   }
   return commits;
+}
+
+/**
+ * Extract learning file names from a breath commit.
+ * @param {string} hashFull - Full git commit hash
+ * @returns {string[]} Array of learning file names (without .md extension)
+ */
+function extractLearningFiles(hashFull) {
+  try {
+    // Get files changed in this commit (only RAW/learnings/*.md)
+    const changedFiles = git(`diff-tree --no-commit-id --name-only -r ${hashFull}`);
+    if (!changedFiles) return [];
+    
+    const learningFiles = [];
+    const learningsPattern = /^RAW\/learnings\/(\d{4}-\d{2}-\d{2})\/(.+\.md)$/;
+    
+    for (const file of changedFiles.split('\n')) {
+      if (!file.trim()) continue;
+      const match = file.match(learningsPattern);
+      if (match) {
+        const filename = match[2];
+        // Skip summary and analogies files
+        if (filename === 'summary.md' || filename === 'analogies.md') continue;
+        // Extract filename without .md extension
+        learningFiles.push(filename.replace('.md', ''));
+      }
+    }
+    
+    return learningFiles;
+  } catch (e) {
+    console.warn(`[git-scanner] Failed to extract learning files from ${hashFull.slice(0, 7)}:`, e.message);
+    return [];
+  }
 }
 
 /**
@@ -211,6 +251,53 @@ function buildCommitNode(c) {
   };
 }
 
+/**
+ * Build learning node from a learning file extracted from a breath commit.
+ * @param {string} filename - Learning filename (without .md)
+ * @param {string} breathDate - Date of the breath commit
+ * @param {number} dayIndex - Day index for Z position
+ * @param {number} learningIndex - Index of this learning among all learnings for this day
+ * @param {number} totalLearnings - Total learnings for this day (for angle calculation)
+ * @param {string} commitHashShort - Short hash of the breath commit
+ * @returns {object} Learning node
+ */
+function buildLearningNode(filename, breathDate, dayIndex, learningIndex, totalLearnings, commitHashShort) {
+  const id = filename;
+  // Position: outer ring around day anchor (larger radius than commits)
+  const angle = totalLearnings > 0 ? (learningIndex / totalLearnings) * Math.PI * 2 : 0;
+  const z = -dayIndex * 100;
+  
+  return {
+    id,
+    label: filename.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+    category: 'learning',
+    type: 'insight',
+    frequency: 1,
+    moments: [
+      {
+        date: breathDate,
+        type: 'learning',
+        description: `Learning extracted from ${breathDate} context`
+      }
+    ],
+    attributes: {
+      role: 'distilled insight',
+      description: filename.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
+      color: '#10b981',
+      sourceDocument: `~/JARVIS/RAW/learnings/${breathDate}/${filename}.md`,
+      created: `${breathDate}T00:00:00.000Z`,
+      position: {
+        x: Math.cos(angle) * LEARNING_ORBIT_RADIUS,
+        y: Math.sin(angle) * LEARNING_ORBIT_RADIUS,
+        z
+      },
+      source: SYNAPSE_SOURCE_TAG,
+      anchorId: `day-${breathDate}`,
+      linkedCommit: commitHashShort
+    }
+  };
+}
+
 function mergeNode(existing, incoming) {
   const out = { ...existing, ...incoming };
   out.attributes = {
@@ -233,6 +320,41 @@ function buildIncomingNodeMap(commits, sortedDays, byDay) {
     incomingById.set(dayNode.id, dayNode);
   });
 
+  // Collect all learning files by day first (to calculate positions)
+  const learningsByDay = new Map();
+  for (const c of commits) {
+    if (c.learningFiles && c.learningFiles.length > 0) {
+      if (!learningsByDay.has(c.breathDate)) {
+        learningsByDay.set(c.breathDate, []);
+      }
+      c.learningFiles.forEach(f => {
+        learningsByDay.get(c.breathDate).push({
+          filename: f,
+          commitHashShort: c.hashShort
+        });
+      });
+    }
+  }
+
+  // Build learning nodes for each day
+  learningsByDay.forEach((learnings, breathDate) => {
+    const dayIndex = sortedDays.indexOf(breathDate);
+    const totalLearnings = learnings.length;
+    
+    learnings.forEach((learning, idx) => {
+      const node = buildLearningNode(
+        learning.filename,
+        breathDate,
+        dayIndex,
+        idx,
+        totalLearnings,
+        learning.commitHashShort
+      );
+      incomingById.set(node.id, node);
+    });
+  });
+
+  // Build commit nodes
   for (const c of commits) {
     const node = buildCommitNode(c);
     incomingById.set(node.id, node);
@@ -243,6 +365,19 @@ function buildIncomingNodeMap(commits, sortedDays, byDay) {
 
 function buildCommitDaySynapses(commits) {
   const syn = [];
+  
+  // Collect learning files by day
+  const learningsByDay = new Map();
+  for (const c of commits) {
+    if (c.learningFiles && c.learningFiles.length > 0) {
+      if (!learningsByDay.has(c.breathDate)) {
+        learningsByDay.set(c.breathDate, []);
+      }
+      c.learningFiles.forEach(f => learningsByDay.get(c.breathDate).push(f));
+    }
+  }
+  
+  // Commit → day anchor synapses
   for (const c of commits) {
     const commitId = `commit-${c.hashShort}`;
     const dayId = `day-${c.breathDate}`;
@@ -254,6 +389,23 @@ function buildCommitDaySynapses(commits) {
       sourceTag: SYNAPSE_SOURCE_TAG
     });
   }
+  
+  // Learning → day anchor synapses (fired-on relationship)
+  learningsByDay.forEach((learnings, breathDate) => {
+    // Day anchor ID format: day-YYYY-MM-DD
+    const dayId = `day-${breathDate}`;
+    learnings.forEach(filename => {
+      syn.push({
+        source: filename,
+        target: dayId,
+        type: 'fired-on',
+        weight: 100,
+        label: breathDate,
+        sourceTag: SYNAPSE_SOURCE_TAG
+      });
+    });
+  });
+  
   return syn;
 }
 
