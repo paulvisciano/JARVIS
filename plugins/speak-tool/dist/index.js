@@ -127,10 +127,12 @@ async function generateSpeech(text, profileId, voiceboxUrl, pollIntervalMs, maxP
         let status = generateData.status;
         let attempts = 0;
         let duration = 0;
+        // Initial delay - Voicebox needs ~5 seconds to start generating
+        await sleep(5000);
         while (status === "generating" && attempts < maxPollAttempts) {
-            await sleep(pollIntervalMs);
             attempts++;
-            const statusCmd = `curl -s --max-time 10 "${voiceboxUrl}/generate/${generationId}/status"`;
+            // Increased timeout from 10s to 30s to handle slower generation
+            const statusCmd = `curl -s --max-time 30 "${voiceboxUrl}/generate/${generationId}/status"`;
             const statusResult = execSync(statusCmd, { encoding: "utf8", stdio: ["pipe", "pipe", "ignore"] });
             // Parse SSE format (data: {...})
             const jsonMatch = statusResult.match(/\{[^}]+\}/);
@@ -138,6 +140,9 @@ async function generateSpeech(text, profileId, voiceboxUrl, pollIntervalMs, maxP
                 const statusData = JSON.parse(jsonMatch[0]);
                 status = statusData.status;
                 duration = statusData.duration || 0;
+            }
+            if (status === "generating") {
+                await sleep(pollIntervalMs);
             }
         }
         if (status !== "completed") {
