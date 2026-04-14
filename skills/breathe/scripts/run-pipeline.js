@@ -112,20 +112,25 @@ try {
   
   console.log('✅ Archive synced to user memory (graph built from git commits)\n');
 
-  // Step 5: Commit learnings (graph built from git by git-scanner) - ATOMIC
-  console.log('\n💾 Committing changes...');
+  // Step 5: Refresh graph from git (extract learning nodes from commits) - ATOMIC
+  console.log('\n🔍 Refreshing consciousness graph (git-scanner)...');
+  runCmd(`node ${path.join(jarvisHome, 'skills/bootstrap-jarvis/scripts/git-scanner.js')}`);
+  console.log('✅ Graph refreshed — learning nodes extracted from git commits\n');
+  
+  // Step 6: Commit learnings + updated graph - ATOMIC
+  console.log('💾 Committing changes...');
   const now = new Date();
   const breathId = `breath-${date}-${now.getHours().toString().padStart(2, '0')}${now.getMinutes().toString().padStart(2, '0')}`;
   
-  const commitMessage = `${breathId}: Breathe complete — learnings distilled, graph built from git`;
+  const commitMessage = `${breathId}: Breathe complete — learnings distilled, graph updated`;
   
-  // Only commit learnings (graph is built from git commits by git-scanner)
-  runCmd(`git add RAW/learnings/${date}/`);
+  // Commit learnings + nodes.json (graph now includes new learning nodes from this breath)
+  runCmd(`git add RAW/learnings/${date}/ RAW/memories/nodes.json`);
   runCmd(`git commit -m "${commitMessage}"`);
   
   console.log(`✅ Breath committed: ${breathId}\n`);
   
-  // Step 6: Generate reflection via direct model call - ATOMIC
+  // Step 7: Generate reflection via direct model call - ATOMIC
   const todayLearningsDir = path.join(jarvisHome, 'RAW/learnings', date);
   let learningFiles = [];
   try {
@@ -208,15 +213,6 @@ ${reflection}`;
   } catch (e) {
     console.error('⚠️  Could not generate reflection:', e.message);
     // Non-fatal for reflection, but the commit may not be amended
-  }
-
-  // Step 7: Run git-scanner to refresh the graph (creates/updates temporal nodes)
-  console.log('\n🔍 Refreshing consciousness graph (git-scanner)...');
-  try {
-    runCmd(`node ${path.join(jarvisHome, 'skills/bootstrap-jarvis/scripts/git-scanner.js')}`);
-    console.log('✅ Graph refreshed — new commits visible in visualization\n');
-  } catch (e) {
-    console.error('⚠️  Git-scanner failed (non-critical, but graph may not show new commits):', e.message);
   }
 
   // Step 8: Generate TTS recap of what was learned during this breath
