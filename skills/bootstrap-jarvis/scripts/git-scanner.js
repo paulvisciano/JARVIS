@@ -25,8 +25,8 @@ const DEFAULT_DAYS = 365; // Scan full history (all commits since genesis)
 const COMMIT_ORBIT_RADIUS = 50;
 /** Learning node orbit radius (outer ring around day anchor) */
 const LEARNING_ORBIT_RADIUS = 75;
-/** Synapses removed 2026-04-14 — relationships now implicit from git + node attributes */
-const SYNAPSES_DEPRECATED = true;
+/** Source tag for git-scanner nodes (synapses deprecated 2026-04-14) */
+const SYNAPSE_SOURCE_TAG = 'git-scanner-phase1.5';
 
 function git(command) {
   try {
@@ -553,14 +553,14 @@ module.exports = {
   assignHierarchyPositions,
   buildDayAnchorNode,
   buildCommitNode,
+  buildLearningNode,
   buildIncomingNodeMap,
   mergeTemporalAnchorsFromGit,
   mergeNode,
-  mergeSynapses,
   DEFAULT_DAYS,
   COMMIT_ORBIT_RADIUS,
+  LEARNING_ORBIT_RADIUS,
   GRAPH_DIR,
   NODES_PATH,
-  SYNAPSES_PATH,
-  SYNAPSE_TYPE_COMMIT_TO_DAY
+  SYNAPSES_PATH // Deprecated but kept for backward compatibility
 };

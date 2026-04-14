@@ -48048,7 +48048,7 @@
     "label": "2026-04-14",
     "category": "temporal",
     "type": "temporal-day-anchor",
-    "frequency": 19,
+    "frequency": 21,
     "timestamp": "2026-04-14T00:00:00.000Z",
     "breathDate": "2026-04-14",
     "orbitRadius": null,
@@ -48057,12 +48057,12 @@
       {
         "date": "2026-04-14",
         "type": "calendar-day",
-        "description": "19 commits (2 breath)"
+        "description": "21 commits (2 breath)"
       }
     ],
     "attributes": {
       "role": "temporal-day-anchor",
-      "commitCount": 19,
+      "commitCount": 21,
       "breathCommits": 2,
       "color": "#ffffff",
       "position": {
@@ -48366,7 +48366,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 0.3306939635357677,
+    "orbitAngle": 0.299199300341885,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48385,8 +48385,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 47.29086208503173,
-        "y": 16.234973460234173,
+        "x": 47.77864028930704,
+        "y": 14.737758720545207,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48406,7 +48406,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 0.6613879270715354,
+    "orbitAngle": 0.59839860068377,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48425,8 +48425,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 39.457025469819676,
-        "y": 30.710635634483392,
+        "x": 41.31193871579975,
+        "y": 28.1660029031811,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48446,7 +48446,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 0.992081890607303,
+    "orbitAngle": 0.8975979010256552,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48465,8 +48465,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 27.347407906121347,
-        "y": 41.858323913126426,
+        "x": 31.17449009293668,
+        "y": 39.09157412340149,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48569,7 +48569,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 1.3227758541430708,
+    "orbitAngle": 1.19679720136754,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48588,8 +48588,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 12.274274357039962,
-        "y": 48.47001329696652,
+        "x": 18.26705121831976,
+        "y": 46.543687432210206,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48609,7 +48609,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 1.6534698176788385,
+    "orbitAngle": 1.4959965017094252,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48628,8 +48628,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -4.128967273616613,
-        "y": 49.829224650333494,
+        "x": 3.7365046793212198,
+        "y": 49.860189859059005,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48649,7 +48649,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 1.984163781214606,
+    "orbitAngle": 1.7951958020513104,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48668,8 +48668,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -20.084771232648464,
-        "y": 45.788666332752875,
+        "x": -11.126046697815717,
+        "y": 48.74639560909118,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48689,7 +48689,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 2.3148577447503738,
+    "orbitAngle": 2.0943951023931953,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48708,8 +48708,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -33.864078581287046,
-        "y": 36.78619553365658,
+        "x": -24.99999999999999,
+        "y": 43.30127018922194,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48750,7 +48750,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 2.6455517082861415,
+    "orbitAngle": 2.39359440273508,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48769,8 +48769,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -43.97368756032445,
-        "y": 23.797369651853685,
+        "x": -36.6525935914913,
+        "y": 34.008636888545986,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48790,7 +48790,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 2.9762456718219092,
+    "orbitAngle": 2.6927937030769655,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48809,8 +48809,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -49.318065170136116,
-        "y": 8.229729514036702,
+        "x": -45.048443395120955,
+        "y": 21.69418695587791,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48830,7 +48830,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 3.306939635357677,
+    "orbitAngle": 2.9919930034188504,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48849,8 +48849,8 @@
       "color": "#ffcc00",
       "created": "2026-04-14",
       "position": {
-        "x": -49.31806517013612,
-        "y": -8.22972951403669,
+        "x": -49.44154131125643,
+        "y": 7.452113308808736,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48928,7 +48928,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 3.6376335988934447,
+    "orbitAngle": 3.291192303760736,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48947,8 +48947,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -43.97368756032446,
-        "y": -23.797369651853675,
+        "x": -49.44154131125643,
+        "y": -7.452113308808723,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48968,7 +48968,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 3.968327562429212,
+    "orbitAngle": 3.5903916041026207,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48987,8 +48987,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -33.864078581287075,
-        "y": -36.78619553365656,
+        "x": -45.048443395120955,
+        "y": -21.6941869558779,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -49008,7 +49008,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 4.29902152596498,
+    "orbitAngle": 3.889590904444506,
     "moments": [
       {
         "date": "2026-04-14",
@@ -49027,8 +49027,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -20.084771232648492,
-        "y": -45.78866633275286,
+        "x": -36.65259359149131,
+        "y": -34.00863688854597,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -49048,7 +49048,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 4.6297154895007475,
+    "orbitAngle": 4.1887902047863905,
     "moments": [
       {
         "date": "2026-04-14",
@@ -49067,8 +49067,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -4.128967273616637,
-        "y": -49.829224650333494,
+        "x": -25.00000000000002,
+        "y": -43.301270189221924,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -49088,7 +49088,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 4.960409453036515,
+    "orbitAngle": 4.487989505128276,
     "moments": [
       {
         "date": "2026-04-14",
@@ -49107,8 +49107,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 12.274274357039939,
-        "y": -48.47001329696653,
+        "x": -11.12604669781573,
+        "y": -48.74639560909118,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -49128,7 +49128,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 5.291103416572283,
+    "orbitAngle": 4.78718880547016,
     "moments": [
       {
         "date": "2026-04-14",
@@ -49147,8 +49147,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 27.34740790612133,
-        "y": -41.85832391312644,
+        "x": 3.736504679321174,
+        "y": -49.86018985905901,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -49168,7 +49168,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 5.621797380108051,
+    "orbitAngle": 5.086388105812046,
     "moments": [
       {
         "date": "2026-04-14",
@@ -49187,8 +49187,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 39.45702546981967,
-        "y": -30.710635634483403,
+        "x": 18.267051218319725,
+        "y": -46.54368743221022,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -49208,7 +49208,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 5.9524913436438185,
+    "orbitAngle": 5.385587406153931,
     "moments": [
       {
         "date": "2026-04-14",
@@ -49227,8 +49227,8 @@
       "color": "#ffcc00",
       "created": "2026-04-14",
       "position": {
-        "x": 47.29086208503173,
-        "y": -16.234973460234187,
+        "x": 31.17449009293667,
+        "y": -39.09157412340149,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -51901,6 +51901,86 @@
       "source": "git-scanner-phase1.5",
       "anchorId": "day-2026-04-08",
       "linkedCommit": "0603d61"
+    }
+  },
+  {
+    "id": "commit-b7b430b",
+    "label": "🫁 Git-first graph architecture — learning nodes extracted from commits, sync-graph removed from breathe",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "b7b430be55c59a5dde82953adf58df5a85d2e17b",
+    "gitHashShort": "b7b430b",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T15:53:25.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 5.684786706495816,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🫁 Git-first graph architecture — learning nodes extracted from commits, sync-graph removed from breathe"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "b7b430be55c59a5dde82953adf58df5a85d2e17b",
+      "commitHash": "b7b430b",
+      "message": "🫁 Git-first graph architecture — learning nodes extracted from commits, sync-graph removed from breathe",
+      "timestamp": "2026-04-14T15:53:25.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": 41.31193871579975,
+        "y": -28.1660029031811,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-7fa9546",
+    "label": "🧠 Remove synapses.json — relationships now implicit from git + node attributes (anchorId, position, linkedCommit). Archived to ~/RAW/archive/2026-04-14/",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "7fa9546d69babfda30c7c24a3f2f22fd1db799f8",
+    "gitHashShort": "7fa9546",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T16:23:51.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 5.983986006837701,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🧠 Remove synapses.json — relationships now implicit from git + node attributes (anchorId, position, linkedCommit). Archived to ~/RAW/archive/2026-04-14/"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "7fa9546d69babfda30c7c24a3f2f22fd1db799f8",
+      "commitHash": "7fa9546",
+      "message": "🧠 Remove synapses.json — relationships now implicit from git + node attributes (anchorId, position, linkedCommit). Archived to ~/RAW/archive/2026-04-14/",
+      "timestamp": "2026-04-14T16:23:51.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": 47.77864028930703,
+        "y": -14.737758720545235,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
     }
   }
 ]
