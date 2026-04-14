@@ -1,0 +1,35 @@
+{
+  "id": "speak-tool",
+  "name": "Speak",
+  "description": "Generate speech from text using Voicebox TTS (Paul's cloned voice) and play locally",
+  "author": "Paul Visciano",
+  "license": "MIT",
+  "homepage": "https://github.com/paulvisciano/JARVIS",
+  "repository": "github:paulvisciano/JARVIS",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "voiceboxUrl": {
+        "type": "string",
+        "default": "http://127.0.0.1:17493",
+        "description": "Voicebox API server URL"
+      },
+      "profileId": {
+        "type": "string",
+        "default": "8202f4c4-5866-4065-8280-cf5421e3135a",
+        "description": "Voicebox profile ID (Paul's cloned voice)"
+      },
+      "pollIntervalMs": {
+        "type": "integer",
+        "default": 2000,
+        "description": "Polling interval for generation status (ms)"
+      },
+      "maxPollAttempts": {
+        "type": "integer",
+        "default": 30,
+        "description": "Maximum poll attempts before timeout"
+      }
+    }
+  }
+}
