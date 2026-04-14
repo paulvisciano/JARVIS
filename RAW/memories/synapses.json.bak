@@ -8682,33 +8682,5 @@
     "type": "commit-to-day-anchor",
     "weight": 1,
     "sourceTag": "git-scanner-phase1.5"
-  },
-  {
-    "source": "commit-22dc4c0",
-    "target": "day-2026-04-14",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
-  },
-  {
-    "source": "commit-a5cf967",
-    "target": "day-2026-04-14",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
-  },
-  {
-    "source": "commit-589e636",
-    "target": "day-2026-04-14",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
-  },
-  {
-    "source": "commit-57ec5af",
-    "target": "day-2026-04-14",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
   }
 ]

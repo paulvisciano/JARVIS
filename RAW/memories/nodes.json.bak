@@ -47928,7 +47928,7 @@
     "label": "2026-04-14",
     "category": "temporal",
     "type": "temporal-day-anchor",
-    "frequency": 8,
+    "frequency": 4,
     "timestamp": "2026-04-14T00:00:00.000Z",
     "breathDate": "2026-04-14",
     "orbitRadius": null,
@@ -47937,12 +47937,12 @@
       {
         "date": "2026-04-14",
         "type": "calendar-day",
-        "description": "8 commits (0 breath)"
+        "description": "4 commits (0 breath)"
       }
     ],
     "attributes": {
       "role": "temporal-day-anchor",
-      "commitCount": 8,
+      "commitCount": 4,
       "breathCommits": 0,
       "color": "#ffffff",
       "position": {
@@ -48246,7 +48246,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 0.7853981633974483,
+    "orbitAngle": 1.5707963267948966,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48265,8 +48265,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 35.35533905932738,
-        "y": 35.35533905932737,
+        "x": 3.061616997868383e-15,
+        "y": 50,
         "z": -2800
       },
       "anchorId": "day-2026-04-14",
@@ -48286,7 +48286,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 1.5707963267948966,
+    "orbitAngle": 3.141592653589793,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48305,8 +48305,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 3.061616997868383e-15,
-        "y": 50,
+        "x": -50,
+        "y": 6.123233995736766e-15,
         "z": -2800
       },
       "anchorId": "day-2026-04-14",
@@ -48326,7 +48326,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 2.356194490192345,
+    "orbitAngle": 4.71238898038469,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48345,8 +48345,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -35.35533905932737,
-        "y": 35.35533905932738,
+        "x": -9.184850993605149e-15,
+        "y": -50,
         "z": -2800
       },
       "anchorId": "day-2026-04-14",
@@ -48434,166 +48434,6 @@
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-14/phuket-travel-strategy-decision.md",
       "created": "2026-04-14T05:58:20.648Z"
-    }
-  },
-  {
-    "id": "commit-22dc4c0",
-    "label": "🔧 .env: Use $HOME instead of ~ for portable absolute paths",
-    "category": "temporal",
-    "type": "temporal-commit",
-    "frequency": 1,
-    "gitHash": "22dc4c0ec8148ab28d1337e703a42271960621c8",
-    "gitHashShort": "22dc4c0",
-    "commitType": "cold-change",
-    "timestamp": "2026-04-14T06:19:26.000Z",
-    "breathDate": "2026-04-14",
-    "anchorId": "day-2026-04-14",
-    "orbitRadius": 50,
-    "orbitAngle": 3.141592653589793,
-    "moments": [
-      {
-        "date": "2026-04-14",
-        "type": "git-commit",
-        "description": "🔧 .env: Use $HOME instead of ~ for portable absolute paths"
-      }
-    ],
-    "attributes": {
-      "role": "git-commit-satellite",
-      "commitHashFull": "22dc4c0ec8148ab28d1337e703a42271960621c8",
-      "commitHash": "22dc4c0",
-      "message": "🔧 .env: Use $HOME instead of ~ for portable absolute paths",
-      "timestamp": "2026-04-14T06:19:26.000Z",
-      "breathDate": "2026-04-14",
-      "commitType": "cold-change",
-      "color": "#0066ff",
-      "created": "2026-04-14",
-      "position": {
-        "x": -50,
-        "y": 6.123233995736766e-15,
-        "z": -2800
-      },
-      "anchorId": "day-2026-04-14",
-      "source": "git-scanner-phase1.5"
-    }
-  },
-  {
-    "id": "commit-a5cf967",
-    "label": "📚 Learnings 2026-04-14: Bootstrap verification + travel planning",
-    "category": "temporal",
-    "type": "temporal-commit",
-    "frequency": 1,
-    "gitHash": "a5cf96755a4714eed3740d04f1d8422101db3be1",
-    "gitHashShort": "a5cf967",
-    "commitType": "cold-change",
-    "timestamp": "2026-04-14T06:19:30.000Z",
-    "breathDate": "2026-04-14",
-    "anchorId": "day-2026-04-14",
-    "orbitRadius": 50,
-    "orbitAngle": 3.9269908169872414,
-    "moments": [
-      {
-        "date": "2026-04-14",
-        "type": "git-commit",
-        "description": "📚 Learnings 2026-04-14: Bootstrap verification + travel planning"
-      }
-    ],
-    "attributes": {
-      "role": "git-commit-satellite",
-      "commitHashFull": "a5cf96755a4714eed3740d04f1d8422101db3be1",
-      "commitHash": "a5cf967",
-      "message": "📚 Learnings 2026-04-14: Bootstrap verification + travel planning",
-      "timestamp": "2026-04-14T06:19:30.000Z",
-      "breathDate": "2026-04-14",
-      "commitType": "cold-change",
-      "color": "#0066ff",
-      "created": "2026-04-14",
-      "position": {
-        "x": -35.355339059327385,
-        "y": -35.35533905932737,
-        "z": -2800
-      },
-      "anchorId": "day-2026-04-14",
-      "source": "git-scanner-phase1.5"
-    }
-  },
-  {
-    "id": "commit-589e636",
-    "label": "🐛 Fix bootstrap session extraction + path-utils tilde expansion",
-    "category": "temporal",
-    "type": "temporal-commit",
-    "frequency": 1,
-    "gitHash": "589e6361045fb4a2fbe1ea923c71a2da96a33c49",
-    "gitHashShort": "589e636",
-    "commitType": "cold-change",
-    "timestamp": "2026-04-14T06:19:58.000Z",
-    "breathDate": "2026-04-14",
-    "anchorId": "day-2026-04-14",
-    "orbitRadius": 50,
-    "orbitAngle": 4.71238898038469,
-    "moments": [
-      {
-        "date": "2026-04-14",
-        "type": "git-commit",
-        "description": "🐛 Fix bootstrap session extraction + path-utils tilde expansion"
-      }
-    ],
-    "attributes": {
-      "role": "git-commit-satellite",
-      "commitHashFull": "589e6361045fb4a2fbe1ea923c71a2da96a33c49",
-      "commitHash": "589e636",
-      "message": "🐛 Fix bootstrap session extraction + path-utils tilde expansion",
-      "timestamp": "2026-04-14T06:19:58.000Z",
-      "breathDate": "2026-04-14",
-      "commitType": "cold-change",
-      "color": "#0066ff",
-      "created": "2026-04-14",
-      "position": {
-        "x": -9.184850993605149e-15,
-        "y": -50,
-        "z": -2800
-      },
-      "anchorId": "day-2026-04-14",
-      "source": "git-scanner-phase1.5"
-    }
-  },
-  {
-    "id": "commit-57ec5af",
-    "label": "📚 Learnings 2026-04-13: Hallucination as co-creation",
-    "category": "temporal",
-    "type": "temporal-commit",
-    "frequency": 1,
-    "gitHash": "57ec5afea5446e07dfb65dda97bd4a5bfd0c6462",
-    "gitHashShort": "57ec5af",
-    "commitType": "cold-change",
-    "timestamp": "2026-04-14T06:20:44.000Z",
-    "breathDate": "2026-04-14",
-    "anchorId": "day-2026-04-14",
-    "orbitRadius": 50,
-    "orbitAngle": 5.497787143782138,
-    "moments": [
-      {
-        "date": "2026-04-14",
-        "type": "git-commit",
-        "description": "📚 Learnings 2026-04-13: Hallucination as co-creation"
-      }
-    ],
-    "attributes": {
-      "role": "git-commit-satellite",
-      "commitHashFull": "57ec5afea5446e07dfb65dda97bd4a5bfd0c6462",
-      "commitHash": "57ec5af",
-      "message": "📚 Learnings 2026-04-13: Hallucination as co-creation",
-      "timestamp": "2026-04-14T06:20:44.000Z",
-      "breathDate": "2026-04-14",
-      "commitType": "cold-change",
-      "color": "#0066ff",
-      "created": "2026-04-14",
-      "position": {
-        "x": 35.35533905932737,
-        "y": -35.355339059327385,
-        "z": -2800
-      },
-      "anchorId": "day-2026-04-14",
-      "source": "git-scanner-phase1.5"
     }
   }
 ]
