@@ -4624,11 +4624,11 @@
     "label": "2026-04-14"
   },
   {
-    "source": "commit-6e6f295",
-    "target": "day-2026-03-15",
-    "type": "commit-to-day-anchor",
-    "weight": 1,
-    "sourceTag": "git-scanner-phase1.5"
+    "source": "knowledge-bootstrap-verification",
+    "target": "temporal-20260414",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-14"
   },
   {
     "source": "commit-aac53e6",
@@ -8712,10 +8712,24 @@
     "sourceTag": "git-scanner-phase1.5"
   },
   {
-    "source": "knowledge-bootstrap-verification",
-    "target": "temporal-20260414",
-    "weight": 100,
-    "type": "fired-on",
-    "label": "2026-04-14"
+    "source": "commit-8c6e651",
+    "target": "day-2026-04-14",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-d1ad476",
+    "target": "day-2026-04-14",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
+  },
+  {
+    "source": "commit-311737d",
+    "target": "day-2026-04-14",
+    "type": "commit-to-day-anchor",
+    "weight": 1,
+    "sourceTag": "git-scanner-phase1.5"
   }
 ]
