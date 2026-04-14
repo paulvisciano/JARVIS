@@ -5,13 +5,12 @@ metadata:
   openclaw:
     emoji: "🏢"
     requires:
-      bins: ["node", "pnpm"]
+      bins: ["node", "npm"]
     install:
-      - id: pnpm-install
+      - id: paperclip-npm
         kind: npm
-        package: "pnpm"
-        bins: ["pnpm"]
-        label: "Install pnpm (required by Paperclip)"
+        package: "@paperclipai/server"
+        label: "Install Paperclip server"
 ---
 
 # Paperclip Company Creator
@@ -38,8 +37,8 @@ Creates a complete **Paperclip AI company** with:
 - Onboarding new team members to Paperclip
 
 ❌ **DON'T use when:**
-- Paperclip already installed (use `pnpm paperclipai configure` instead)
-- Just need to start existing instance (use `pnpm paperclipai run`)
+- Paperclip already installed (use `npx @paperclipai/server configure` instead)
+- Just need to start existing instance (use `npx @paperclipai/server run`)
 - Company already exists (skip to agent setup)
 
 ---
@@ -47,8 +46,8 @@ Creates a complete **Paperclip AI company** with:
 ## Workflow
 
 ```
-1. Install pnpm (prerequisite)
-2. Quickstart: pnpm paperclipai onboard --yes
+1. Install @paperclipai/server (npm global or use npx)
+2. Quickstart: npx @paperclipai/server onboard --yes
 3. Create company in web UI
 4. Create agents (CEO, PM, Coder)
 5. Configure OpenClaw Gateway (optional)
@@ -60,22 +59,11 @@ Creates a complete **Paperclip AI company** with:
 
 ## Commands
 
-### Prerequisites
-
-```bash
-# Node.js 20+ required
-node --version
-
-# Install pnpm (Paperclip's package manager)
-npm install -g pnpm
-pnpm --version
-```
-
 ### Quickstart (Recommended)
 
 ```bash
-# One-command onboarding + auto-start
-pnpm paperclipai onboard --yes
+# One-command onboarding + auto-start (no global install needed)
+npx @paperclipai/server onboard --yes
 
 # This does:
 # 1. Creates ~/.paperclip/instances/default/
@@ -85,17 +73,31 @@ pnpm paperclipai onboard --yes
 # 5. Opens browser to dashboard
 ```
 
+### Global Install (Optional)
+
+```bash
+# Install globally for easier access
+npm install -g @paperclipai/server
+
+# Then use directly (no npx needed)
+paperclipai onboard --yes
+paperclipai run
+```
+
 ### Start Existing Instance
 
 ```bash
-# Start default instance
-pnpm paperclipai run
+# With npx (no global install)
+npx @paperclipai/server run
+
+# Or if installed globally
+paperclipai run
 
 # Start specific instance
-pnpm paperclipai run --instance dev
+npx @paperclipai/server run --instance dev
 
 # With custom data dir
-pnpm paperclipai run --data-dir ./tmp/paperclip-dev
+npx @paperclipai/server run --data-dir ./tmp/paperclip-dev
 ```
 
 ### Health Checks
@@ -106,24 +108,24 @@ curl http://localhost:3100/api/health
 # -> {"status":"ok"}
 
 # Run diagnostics
-pnpm paperclipai doctor
-pnpm paperclipai doctor --repair  # Auto-fix issues
+npx @paperclipai/server doctor
+npx @paperclipai/server doctor --repair  # Auto-fix issues
 ```
 
 ### Configuration
 
 ```bash
 # Update server config
-pnpm paperclipai configure --section server
+npx @paperclipai/server configure --section server
 
 # Update secrets
-pnpm paperclipai configure --section secrets
+npx @paperclipai/server configure --section secrets
 
 # Show resolved env config
-pnpm paperclipai env
+npx @paperclipai/server env
 
 # Allow private hostname (for Tailscale/network access)
-pnpm paperclipai allowed-hostname my-macbook
+npx @paperclipai/server allowed-hostname my-macbook
 ```
 
 ### Server Management
@@ -357,14 +359,14 @@ After setup, verify:
 lsof -i :3100
 
 # Run diagnostics with auto-repair
-pnpm paperclipai doctor --repair
+npx @paperclipai/server doctor --repair
 
 # Check logs
 tail -100 ~/.paperclip/instances/default/logs/server.log
 
 # Reset dev data (nuclear option)
 rm -rf ~/.paperclip/instances/default/db
-pnpm paperclipai run
+npx @paperclipai/server run
 ```
 
 ### Server Stopped Unexpectedly
@@ -374,7 +376,7 @@ pnpm paperclipai run
 tail -100 ~/.paperclip/instances/default/logs/server.log | grep -i "stop\|error\|shutdown"
 
 # Restart
-pnpm paperclipai run
+npx @paperclipai/server run
 
 # Verify
 curl http://localhost:3100/api/health
@@ -405,10 +407,10 @@ ls -la ~/.paperclip/instances/default/data/backups/
 
 ```bash
 # Enable Tailscale auth mode
-pnpm dev --tailscale-auth
+npx @paperclipai/server dev --tailscale-auth
 
 # Allow specific hostname
-pnpm paperclipai allowed-hostname my-macbook
+npx @paperclipai/server allowed-hostname my-macbook
 
 # Check allowed hostnames
 cat ~/.paperclip/instances/default/config.json | jq '.server.allowedHostnames'
@@ -454,7 +456,7 @@ Agents must follow this sequence:
 #!/bin/bash
 
 # Quickstart (recommended)
-pnpm paperclipai onboard --yes
+npx @paperclipai/server onboard --yes
 
 # Wait for server to start
 sleep 5
@@ -533,9 +535,9 @@ curl -X POST "http://localhost:3100/api/companies" \
 
 1. **Server Start Command**
    - **Problem:** Skill doc said `paperclipai run`, but that command didn't exist
-   - **Reality:** Need `pnpm paperclipai run` (pnpm is required, not npm)
-   - **Solution:** Updated skill to reflect pnpm requirement
-   - **Lesson:** Paperclip uses pnpm, not npm — install it first
+   - **Reality:** Official docs use `pnpm paperclipai run` but npm works fine
+   - **Solution:** Use `npx @paperclipai/server run` (no global install needed)
+   - **Lesson:** npm works — no need to install pnpm unless you want dev mode
 
 2. **API Key Location**
    - **Problem:** Skill doc said one place, actual runtime used another
@@ -555,7 +557,7 @@ curl -X POST "http://localhost:3100/api/companies" \
 
 5. **Server Stopped Unexpectedly**
    - **Problem:** Server gracefully shutdown ("Stopping embedded PostgreSQL")
-   - **Solution:** `pnpm paperclipai run` to restart
+   - **Solution:** `npx @paperclipai/server run` to restart
    - **Lesson:** Add troubleshooting section for restart procedures
 
 ### Production Configuration (Copy This)
