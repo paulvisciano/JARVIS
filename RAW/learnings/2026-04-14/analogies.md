@@ -4,8 +4,8 @@
 **Type:** essence
 **Status:** extracted
 
-- Like choosing a built-in appliance over a separate gadget — plugins are native, skills are add-ons
-- Like using a universal remote instead of learning each device — npx works everywhere, pnpm requires setup
-- Like a river flowing away from you into mist — present is near, past recedes into foggy depth
-- Like a lighthouse keeper checking the beacon hourly — wake events confirm the system is watching
-- Like pruning a tree to remove duplicate branches — removing the speak skill cleaned the architecture
+- Like tuning a car engine — small adjustments to timing and timeouts make everything run smoother
+- Like a lighthouse keeper checking the horizon — heartbeat wakes scan for ships (issues), empty seas mean all is well
+- Like organizing a workshop — splitting one messy pile into labeled drawers makes finding tools easier
+- Like removing training wheels — native plugins replace skills once the system is mature enough
+- Like adjusting a camera lens — moving the viewpoint creates depth where there was only flat surface
