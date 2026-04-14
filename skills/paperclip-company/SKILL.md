@@ -5,13 +5,13 @@ metadata:
   openclaw:
     emoji: "🏢"
     requires:
-      bins: ["node", "npm"]
+      bins: ["node", "pnpm"]
     install:
-      - id: paperclip-npm
+      - id: pnpm-install
         kind: npm
-        package: "@paperclipai/server"
-        bins: ["paperclipai"]
-        label: "Install Paperclip CLI"
+        package: "pnpm"
+        bins: ["pnpm"]
+        label: "Install pnpm (required by Paperclip)"
 ---
 
 # Paperclip Company Creator
@@ -38,8 +38,8 @@ Creates a complete **Paperclip AI company** with:
 - Onboarding new team members to Paperclip
 
 ❌ **DON'T use when:**
-- Paperclip already installed (use `paperclip configure` instead)
-- Just need to start existing instance (use `paperclipai run`)
+- Paperclip already installed (use `pnpm paperclipai configure` instead)
+- Just need to start existing instance (use `pnpm paperclipai run`)
 - Company already exists (skip to agent setup)
 
 ---
@@ -47,56 +47,97 @@ Creates a complete **Paperclip AI company** with:
 ## Workflow
 
 ```
-1. Install Paperclip CLI (npx or npm global)
-2. Create instance directory (~/.paperclip/instances/[company-name])
-3. Run onboarding wizard
-4. Configure company settings
-5. Create agents (CEO, PM, Coder)
-6. Configure OpenClaw Gateway (optional)
-7. Start server
-8. Verify dashboard accessible
+1. Install pnpm (prerequisite)
+2. Quickstart: pnpm paperclipai onboard --yes
+3. Create company in web UI
+4. Create agents (CEO, PM, Coder)
+5. Configure OpenClaw Gateway (optional)
+6. Server auto-starts after onboarding
+7. Verify dashboard accessible
 ```
 
 ---
 
 ## Commands
 
-### Install Paperclip CLI
+### Prerequisites
 
 ```bash
-# Option 1: Run via npx (no global install)
-npx @paperclipai/server --version
+# Node.js 20+ required
+node --version
 
-# Option 2: Global install (recommended)
-npm install -g @paperclipai/server
-paperclipai --version
+# Install pnpm (Paperclip's package manager)
+npm install -g pnpm
+pnpm --version
 ```
 
-### Create New Instance
+### Quickstart (Recommended)
 
 ```bash
-mkdir -p ~/.paperclip/instances/[company-name]
-cd ~/.paperclip/instances/[company-name]
-paperclipai onboard
+# One-command onboarding + auto-start
+pnpm paperclipai onboard --yes
+
+# This does:
+# 1. Creates ~/.paperclip/instances/default/
+# 2. Runs interactive onboarding (accepts defaults with --yes)
+# 3. Runs doctor with auto-repair
+# 4. Starts server automatically
+# 5. Opens browser to dashboard
 ```
 
-### Onboarding Wizard
-
-The `paperclipai onboard` command will:
-1. Create config.json with defaults
-2. Set up embedded Postgres
-3. Generate encryption keys
-4. Create initial company
-5. Set up admin user
-
-### Start Server
+### Start Existing Instance
 
 ```bash
-cd ~/.paperclip/instances/[company-name]
-paperclipai run
+# Start default instance
+pnpm paperclipai run
+
+# Start specific instance
+pnpm paperclipai run --instance dev
+
+# With custom data dir
+pnpm paperclipai run --data-dir ./tmp/paperclip-dev
 ```
 
-Server runs on: `http://localhost:3100/`
+### Health Checks
+
+```bash
+# Check server health
+curl http://localhost:3100/api/health
+# -> {"status":"ok"}
+
+# Run diagnostics
+pnpm paperclipai doctor
+pnpm paperclipai doctor --repair  # Auto-fix issues
+```
+
+### Configuration
+
+```bash
+# Update server config
+pnpm paperclipai configure --section server
+
+# Update secrets
+pnpm paperclipai configure --section secrets
+
+# Show resolved env config
+pnpm paperclipai env
+
+# Allow private hostname (for Tailscale/network access)
+pnpm paperclipai allowed-hostname my-macbook
+```
+
+### Server Management
+
+```bash
+# View logs
+tail -f ~/.paperclip/instances/default/logs/server.log
+
+# Check if running
+lsof -i :3100
+
+# Stop gracefully
+# (find PID and send SIGTERM, or Ctrl+C if running in foreground)
+```
 
 ---
 
@@ -271,20 +312,23 @@ If Gateway is on different machine:
 ```
 ~/.paperclip/
 └── instances/
-    └── [company-name]/
-        ├── .env                    # Environment variables
+    └── default/
         ├── config.json             # Server config
-        ├── context.json            # Company ID, API base
-        ├── companies/              # Company data
-        ├── data/
-        │   ├── backups/            # DB backups
-        │   └── storage/            # File storage
-        ├── db/                     # Embedded Postgres
+        ├── db/                     # Embedded Postgres (port 54329)
         ├── logs/                   # Server logs
-        ├── projects/               # Project configs
+        ├── data/
+        │   ├── backups/            # DB backups (every 60m, keep 30d)
+        │   └── storage/            # File storage
         ├── secrets/
         │   └── master.key          # Encryption key
+        ├── companies/              # Company data
         └── workspaces/             # Agent workspaces
+```
+
+**Environment Variables:**
+```bash
+PAPERCLIP_HOME=/custom/path        # Override ~/.paperclip/
+PAPERCLIP_INSTANCE_ID=dev          # Use instance "dev" instead of "default"
 ```
 
 ---
@@ -293,14 +337,14 @@ If Gateway is on different machine:
 
 After setup, verify:
 
-- [ ] Paperclip server running (`curl http://localhost:3100/api/health`)
-- [ ] Dashboard accessible (`http://localhost:3100/[COMPANY]/dashboard`)
-- [ ] Agents created (check `/[COMPANY]/agents`)
-- [ ] Heartbeats configured (check agent run policy)
-- [ ] OpenClaw Gateway connected (check agent status)
+- [ ] Server running: `curl http://localhost:3100/api/health` → `{"status":"ok"}`
+- [ ] Dashboard accessible: `http://localhost:3100/`
+- [ ] Company created (via UI or API)
+- [ ] Agents created with correct adapters
+- [ ] Heartbeats configured (300s interval recommended)
+- [ ] OpenClaw Gateway connected (check agent status in UI)
 - [ ] Can create issues via API
-- [ ] Agents can checkout issues
-- [ ] Heartbeats firing (check logs)
+- [ ] Agents can checkout issues (heartbeat protocol working)
 
 ---
 
@@ -312,44 +356,95 @@ After setup, verify:
 # Check if port 3100 is in use
 lsof -i :3100
 
-# Kill existing process
-kill -9 [PID]
+# Run diagnostics with auto-repair
+pnpm paperclipai doctor --repair
 
 # Check logs
-tail -f ~/.paperclip/instances/[company-name]/logs/*.log
+tail -100 ~/.paperclip/instances/default/logs/server.log
+
+# Reset dev data (nuclear option)
+rm -rf ~/.paperclip/instances/default/db
+pnpm paperclipai run
+```
+
+### Server Stopped Unexpectedly
+
+```bash
+# Check last logs for shutdown reason
+tail -100 ~/.paperclip/instances/default/logs/server.log | grep -i "stop\|error\|shutdown"
+
+# Restart
+pnpm paperclipai run
+
+# Verify
+curl http://localhost:3100/api/health
 ```
 
 ### Agent Won't Wake
 
-1. Check Gateway is running: `openclaw gateway status`
-2. Verify token: `cat ~/.openclaw/workspace/paperclip-claimed-api-key.json`
-3. Check agent config: `curl http://localhost:3100/api/agents/[AGENT_ID]`
-4. Review logs: `tail -f ~/.paperclip/instances/[company-name]/logs/*.log`
+1. **Check Gateway is running:** `openclaw gateway status`
+2. **Verify token:** `cat ~/.openclaw/workspace/paperclip-claimed-api-key.json`
+3. **Check agent config:** `curl http://localhost:3100/api/agents/[AGENT_ID]`
+4. **Review heartbeat logs:** `tail -f ~/.paperclip/instances/default/logs/server.log | grep heartbeat`
+5. **Check agent run policy:** Ensure `runtimeConfig.heartbeat.enabled: true`
 
 ### Database Issues
 
 ```bash
-# Backup
-paperclipai db:backup
-
-# Check Postgres
+# Embedded Postgres port: 54329
+# Check connectivity
 psql -h localhost -p 54329 -U paperclip
 
-# Restart embedded Postgres
-# (handled automatically by paperclipai run)
+# Backup location
+ls -la ~/.paperclip/instances/default/data/backups/
+
+# Restart handled automatically by paperclipai run
+```
+
+### Network Access (Tailscale/Private)
+
+```bash
+# Enable Tailscale auth mode
+pnpm dev --tailscale-auth
+
+# Allow specific hostname
+pnpm paperclipai allowed-hostname my-macbook
+
+# Check allowed hostnames
+cat ~/.paperclip/instances/default/config.json | jq '.server.allowedHostnames'
 ```
 
 ---
 
 ## Notes
 
-- **Default port:** 3100
-- **Embedded Postgres port:** 54329
-- **Gateway port:** 18789 (OpenClaw)
-- **Session strategy:** Use `fixed` for OpenClaw Gateway agents
-- **Heartbeat interval:** 300 seconds (5 minutes) recommended
+### Ports
+- **Server:** 3100 (HTTP)
+- **Embedded Postgres:** 54329
+- **OpenClaw Gateway:** 18789 (WebSocket)
+
+### OpenClaw Gateway Integration
+- **Adapter type:** `openclaw_gateway`
+- **Session strategy:** `fixed` (required for wake events)
+- **Session key:** Unique per agent (e.g., `paperclip-jarvis`)
 - **Timeout:** 600000ms (10 minutes) for complex tasks
-- **API key location:** `~/.paperclip/instances/[company-name]/secrets/` or `context.json`
+- **Heartbeat interval:** 300 seconds (5 minutes)
+- **API key:** `~/.openclaw/workspace/paperclip-claimed-api-key.json`
+
+### Heartbeat Protocol (Critical)
+Agents must follow this sequence:
+1. `GET /api/agents/me` — Get identity
+2. Handle pending approvals (if `PAPERCLIP_APPROVAL_ID` set)
+3. `GET /api/companies/{id}/issues?assigneeAgentId={me}` — Get assignments
+4. `POST /api/issues/{id}/checkout` — **Must checkout before working**
+5. Do the work
+6. `PATCH /api/issues/{id}` — Update status with `X-Paperclip-Run-Id` header
+7. Delegate subtasks if needed (always set `parentId` + `goalId`)
+
+**Critical Rules:**
+- Never retry a 409 on checkout (task belongs to another agent)
+- Always comment on in-progress work before exiting heartbeat
+- Never manually PATCH to `in_progress` — use checkout instead
 
 ---
 
@@ -358,28 +453,34 @@ psql -h localhost -p 54329 -U paperclip
 ```bash
 #!/bin/bash
 
-# Create Paperclip Company
-COMPANY_NAME="my-ai-company"
-mkdir -p ~/.paperclip/instances/$COMPANY_NAME
-cd ~/.paperclip/instances/$COMPANY_NAME
+# Quickstart (recommended)
+pnpm paperclipai onboard --yes
 
-# Onboard
-paperclipai onboard
-
-# Get credentials
-API_KEY=$(cat context.json | jq -r '.profiles.default.apiKey')
-COMPANY_ID=$(cat context.json | jq -r '.profiles.default.companyId')
-
-# Start server
-paperclipai run &
+# Wait for server to start
 sleep 5
 
 # Verify
 curl http://localhost:3100/api/health | jq '.'
 
-echo "✅ Company created: $COMPANY_NAME"
-echo "🌐 Dashboard: http://localhost:3100/$COMPANY_NAME/dashboard"
-echo "📊 Company ID: $COMPANY_ID"
+echo "✅ Paperclip running"
+echo "🌐 Dashboard: http://localhost:3100/"
+echo "📊 Logs: tail -f ~/.paperclip/instances/default/logs/server.log"
+```
+
+### Manual Company Creation (API)
+
+```bash
+# Get API key
+API_KEY=$(cat ~/.paperclip/instances/default/secrets/local-api-key.json 2>/dev/null | jq -r '.apiKey')
+
+# Create company
+curl -X POST "http://localhost:3100/api/companies" \
+  -H "Authorization: Bearer $API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Sci-Fi Labs",
+    "description": "AI-native software development company"
+  }' | jq '.id'
 ```
 
 ---
@@ -387,10 +488,11 @@ echo "📊 Company ID: $COMPANY_ID"
 ## Inspiration: Our Setup (Sci-Fi Labs)
 
 **Company:** Sci-Fi Labs (SCIAAA)  
+**Instance:** `~/.paperclip/instances/default/`  
 **Agents:**
-- Jarvis (CEO) — OpenClaw Gateway
-- Frank (PM) — OpenClaw Gateway
-- Daedalus (Coder) — Cursor
+- Jarvis (CEO) — `openclaw_gateway` adapter
+- Frank (PM) — `openclaw_gateway` adapter  
+- Daedalus (Coder) — `cursor` adapter
 
 **Structure:**
 - Monorepo: `~/JARVIS/`
@@ -398,10 +500,10 @@ echo "📊 Company ID: $COMPANY_ID"
 - Paperclip: `~/.paperclip/instances/default/`
 
 **Workflow:**
-1. Paul → Jarvis (strategy)
-2. Jarvis → Frank (create tasks)
+1. Paul → Jarvis (strategy via chat)
+2. Jarvis → Frank (create tasks via Paperclip)
 3. Frank → Daedalus (assign work)
-4. Daedalus → Code + Report
+4. Daedalus → Code + Report (heartbeat cycle)
 5. Frank → Track progress
 6. Jarvis → Report to Paul
 
@@ -418,8 +520,8 @@ echo "📊 Company ID: $COMPANY_ID"
    - **Key:** Fixed session key strategy (`sessionKey: "paperclip-frank"`)
 
 2. **Daedalus (Coder) + Cursor**
-   - Isolated workspace (`$PAPERCLIP_WORKSPACE_CWD`)
-   - Proper task checkout → code → PR workflow
+   - Isolated workspace (`workspacePolicy: "isolated"`)
+   - Proper task checkout → code → report workflow
    - 100+ tasks completed successfully
 
 3. **API Key Management**
@@ -429,34 +531,40 @@ echo "📊 Company ID: $COMPANY_ID"
 
 ### What Struggled (And How We Fixed It)
 
-1. **API Key Location**
+1. **Server Start Command**
+   - **Problem:** Skill doc said `paperclipai run`, but that command didn't exist
+   - **Reality:** Need `pnpm paperclipai run` (pnpm is required, not npm)
+   - **Solution:** Updated skill to reflect pnpm requirement
+   - **Lesson:** Paperclip uses pnpm, not npm — install it first
+
+2. **API Key Location**
    - **Problem:** Skill doc said one place, actual runtime used another
    - **Solution:** Standardized on `~/.openclaw/workspace/paperclip-claimed-api-key.json`
    - **Lesson:** Document the _actual_ path, not the theoretical one
 
-2. **Wake Event Configuration**
+3. **Wake Event Configuration**
    - **Problem:** Agents not waking on issue comments
    - **Root Cause:** Missing `sessionKey` in adapter config
    - **Solution:** Added `sessionKeyStrategy: "fixed"` + `sessionKey: "paperclip-[agent]"`
    - **Lesson:** Fixed session keys required for reliable wake events
 
-3. **Cursor Workspace Isolation**
+4. **Cursor Workspace Isolation**
    - **Problem:** Daedalus editing main repo instead of isolated workspace
-   - **Solution:** Explicit `workspaceDir: "$PAPERCLIP_WORKSPACE_CWD"`
-   - **Lesson:** Always verify workspace path before first run
+   - **Solution:** Explicit `workspacePolicy: "isolated"` in adapter config
+   - **Lesson:** Always verify workspace policy before first run
 
-4. **Gateway Token Propagation**
-   - **Problem:** Gateway token changed, agents didn't update
-   - **Solution:** Restart Paperclip server after token changes
-   - **Lesson:** Document the restart requirement
+5. **Server Stopped Unexpectedly**
+   - **Problem:** Server gracefully shutdown ("Stopping embedded PostgreSQL")
+   - **Solution:** `pnpm paperclipai run` to restart
+   - **Lesson:** Add troubleshooting section for restart procedures
 
 ### Production Configuration (Copy This)
 
-**Our Working Setup:**
+**CEO Agent (OpenClaw Gateway):**
 ```json
 {
-  "name": "Frank",
-  "title": "Head of Operations",
+  "name": "Jarvis",
+  "title": "CEO",
   "adapterType": "openclaw_gateway",
   "adapterConfig": {
     "url": "ws://127.0.0.1:18789/",
@@ -466,7 +574,7 @@ echo "📊 Company ID: $COMPANY_ID"
       "x-openclaw-token": "CLAIMED_KEY_FROM_~/.openclaw/workspace/paperclip-claimed-api-key.json"
     },
     "sessionKeyStrategy": "fixed",
-    "sessionKey": "paperclip-frank",
+    "sessionKey": "paperclip-jarvis",
     "timeoutSec": 120,
     "waitTimeoutMs": 600000
   },
@@ -476,13 +584,43 @@ echo "📊 Company ID: $COMPANY_ID"
       "intervalSec": 300,
       "wakeOnDemand": true
     }
+  },
+  "capabilities": "CEO — strategy, board approvals, task delegation",
+  "permissions": {
+    "canCreateAgents": true,
+    "canAssignTasks": true
+  }
+}
+```
+
+**Coder Agent (Cursor):**
+```json
+{
+  "name": "Daedalus",
+  "title": "Code Craftsman",
+  "adapterType": "cursor",
+  "adapterConfig": {
+    "workspacePolicy": "isolated",
+    "workspaceDir": "$PAPERCLIP_WORKSPACE_CWD"
+  },
+  "runtimeConfig": {
+    "heartbeat": {
+      "enabled": true,
+      "intervalSec": 300
+    }
+  },
+  "capabilities": "Coding, testing, UI fixes, screenshots",
+  "permissions": {
+    "canCreateAgents": false,
+    "canAssignTasks": false
   }
 }
 ```
 
 **Key Fields (Don't Skip These):**
-- `sessionKeyStrategy: "fixed"` — Required for wake events
+- `sessionKeyStrategy: "fixed"` — Required for wake events (OpenClaw Gateway)
 - `sessionKey: "paperclip-[name]"` — Unique per agent
+- `workspacePolicy: "isolated"` — Prevents editing main repo (Cursor)
 - `waitTimeoutMs: 600000` — 10 min for complex tasks
 - `heartbeat.intervalSec: 300` — 5 min, not too aggressive
 
@@ -490,8 +628,13 @@ echo "📊 Company ID: $COMPANY_ID"
 
 ## Resources
 
-- Paperclip docs: https://docs.paperclip.ing/
-- GitHub: https://github.com/papercliplabs/paperclip
-- OpenClaw docs: https://docs.openclaw.ai/
+- **Paperclip Docs:** https://docs.paperclip.ing/
+  - [Quickstart](https://docs.paperclip.ing/start/quickstart.md)
+  - [CLI Commands](https://docs.paperclip.ing/cli/setup-commands.md)
+  - [Adapters Overview](https://docs.paperclip.ing/adapters/overview.md)
+  - [Heartbeat Protocol](https://docs.paperclip.ing/guides/agent-developer/heartbeat-protocol.md)
+  - [Creating a Company](https://docs.paperclip.ing/guides/board-operator/creating-a-company.md)
+- **GitHub:** https://github.com/papercliplabs/paperclip
+- **OpenClaw Docs:** https://docs.openclaw.ai/
 - **Our Learnings:** `~/JARVIS/RAW/learnings/2026-04-08/` (April 8th context)
-- **Sci-Fi Labs Setup:** `~/.paperclip/instances/default/` (live example)
+- **Live Example:** `~/.paperclip/instances/default/` (Sci-Fi Labs instance)
