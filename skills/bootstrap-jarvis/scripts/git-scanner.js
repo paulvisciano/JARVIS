@@ -23,10 +23,10 @@ const BREATH_FIRST_LINE_RE = /^breath-\d{4}-\d{2}-\d{2}-\d{4}:\s*Breathe complet
 const DEFAULT_DAYS = 365; // Scan full history (all commits since genesis)
 /** Orbit radius in graph units (commits around day anchor in XY, same Z as day) */
 const COMMIT_ORBIT_RADIUS = 50;
-const SYNAPSE_TYPE_COMMIT_TO_DAY = 'commit-to-day-anchor';
-const SYNAPSE_SOURCE_TAG = 'git-scanner-phase1.5';
 /** Learning node orbit radius (outer ring around day anchor) */
 const LEARNING_ORBIT_RADIUS = 75;
+/** Synapses removed 2026-04-14 — relationships now implicit from git + node attributes */
+const SYNAPSES_DEPRECATED = true;
 
 function git(command) {
   try {
@@ -363,50 +363,13 @@ function buildIncomingNodeMap(commits, sortedDays, byDay) {
   return incomingById;
 }
 
+/**
+ * Synapses deprecated 2026-04-14.
+ * Relationships now implicit from git + node attributes (anchorId, position, linkedCommit).
+ * Kept for backward compatibility only.
+ */
 function buildCommitDaySynapses(commits) {
-  const syn = [];
-  
-  // Collect learning files by day
-  const learningsByDay = new Map();
-  for (const c of commits) {
-    if (c.learningFiles && c.learningFiles.length > 0) {
-      if (!learningsByDay.has(c.breathDate)) {
-        learningsByDay.set(c.breathDate, []);
-      }
-      c.learningFiles.forEach(f => learningsByDay.get(c.breathDate).push(f));
-    }
-  }
-  
-  // Commit → day anchor synapses
-  for (const c of commits) {
-    const commitId = `commit-${c.hashShort}`;
-    const dayId = `day-${c.breathDate}`;
-    syn.push({
-      source: commitId,
-      target: dayId,
-      type: SYNAPSE_TYPE_COMMIT_TO_DAY,
-      weight: 1,
-      sourceTag: SYNAPSE_SOURCE_TAG
-    });
-  }
-  
-  // Learning → day anchor synapses (fired-on relationship)
-  learningsByDay.forEach((learnings, breathDate) => {
-    // Day anchor ID format: day-YYYY-MM-DD
-    const dayId = `day-${breathDate}`;
-    learnings.forEach(filename => {
-      syn.push({
-        source: filename,
-        target: dayId,
-        type: 'fired-on',
-        weight: 100,
-        label: breathDate,
-        sourceTag: SYNAPSE_SOURCE_TAG
-      });
-    });
-  });
-  
-  return syn;
+  return []; // No longer generating synapses — relationships are implicit
 }
 
 function mergeSynapses(existingSynapses, newGitSynapses) {
@@ -535,22 +498,8 @@ function mergeTemporalAnchorsFromGit(options = {}) {
     console.log(`[git-scanner] created directory: ${GRAPH_DIR}`);
   }
 
-  let existingSynapses = [];
-  if (fs.existsSync(SYNAPSES_PATH)) {
-    try {
-      const sraw = fs.readFileSync(SYNAPSES_PATH, 'utf8');
-      const parsed = JSON.parse(sraw);
-      if (Array.isArray(parsed)) existingSynapses = parsed;
-    } catch (e) {
-      console.warn('[git-scanner] synapses.json parse failed, resetting:', e.message);
-      existingSynapses = [];
-    }
-  }
-
-  const mergedSynapses = mergeSynapses(existingSynapses, newSynapses);
-
+  // Synapses deprecated 2026-04-14 — relationships now implicit from node attributes
   const backupPath = path.join(GRAPH_DIR, 'nodes.json.bak');
-  const synBackupPath = path.join(GRAPH_DIR, 'synapses.json.bak');
   if (hadExistingNodesFile && fs.existsSync(NODES_PATH)) {
     try {
       fs.copyFileSync(NODES_PATH, backupPath);
@@ -558,27 +507,16 @@ function mergeTemporalAnchorsFromGit(options = {}) {
       console.warn('[git-scanner] nodes backup failed (continuing):', e.message);
     }
   }
-  if (fs.existsSync(SYNAPSES_PATH)) {
-    try {
-      fs.copyFileSync(SYNAPSES_PATH, synBackupPath);
-    } catch (e) {
-      console.warn('[git-scanner] synapses backup failed (continuing):', e.message);
-    }
-  }
 
   const tmpPath = path.join(GRAPH_DIR, 'nodes.json.tmp');
   fs.writeFileSync(tmpPath, JSON.stringify(nodes, null, 2), 'utf8');
   fs.renameSync(tmpPath, NODES_PATH);
 
-  const synTmp = path.join(GRAPH_DIR, 'synapses.json.tmp');
-  fs.writeFileSync(synTmp, JSON.stringify(mergedSynapses, null, 2), 'utf8');
-  fs.renameSync(synTmp, SYNAPSES_PATH);
-
   console.log(
-    `[git-scanner] merged: +${added} added, ${updated} updated (${totalDayAnchors} day anchors + ${totalCommits} commits, ${mergedSynapses.length} synapses total)`
+    `[git-scanner] merged: +${added} added, ${updated} updated (${totalDayAnchors} day anchors + ${totalCommits} commits)`
   );
   if (hadExistingNodesFile) console.log(`[git-scanner] backup: ${backupPath}`);
-  console.log(`[git-scanner] synapses: ${newSynapses.length} commit→day links (${SYNAPSE_TYPE_COMMIT_TO_DAY})`);
+  console.log(`[git-scanner] synapses.json deprecated — relationships implicit from node attributes`);
 
   return {
     added,
@@ -587,7 +525,7 @@ function mergeTemporalAnchorsFromGit(options = {}) {
     totalAnchors,
     totalDayAnchors,
     totalCommits,
-    synapsesWritten: mergedSynapses.length,
+    synapsesWritten: 0, // Deprecated
     dryRun: false
   };
 }

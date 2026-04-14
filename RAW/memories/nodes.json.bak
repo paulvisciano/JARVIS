@@ -30106,10 +30106,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Canvas Navigation via Global JavaScript API",
+      "description": "Canvas Navigation Api",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/canvas-navigation-api.md",
-      "created": "2026-04-05T06:32:25.895Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "f5e6435"
     }
   },
   {
@@ -30127,10 +30135,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Git-Backed Temporal Consciousness Architecture",
+      "description": "Git Backed Temporal Consciousness",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/git-backed-temporal-consciousness.md",
-      "created": "2026-04-05T06:32:25.897Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": 64.9519052838329,
+        "y": 37.49999999999999,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "f5e6435"
     }
   },
   {
@@ -30148,10 +30164,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "GitHub PRs as Knowledge Transfer Protocol",
+      "description": "Github Prs Knowledge Transfer",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/github-prs-knowledge-transfer.md",
-      "created": "2026-04-05T06:32:25.897Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": 64.9519052838329,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "f5e6435"
     }
   },
   {
@@ -30169,10 +30193,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Tension: GitHub vs True Sovereignty",
+      "description": "Github Sovereignty Tension",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/github-sovereignty-tension.md",
-      "created": "2026-04-05T06:32:25.898Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": 4.592425496802574e-15,
+        "y": 75,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "f5e6435"
     }
   },
   {
@@ -30190,10 +30222,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Memory Links Connect Minds, Synapses Organize Within Minds",
+      "description": "Memory Links Vs Synapses",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/memory-links-vs-synapses.md",
-      "created": "2026-04-05T06:32:25.898Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": -37.499999999999986,
+        "y": 64.9519052838329,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "f5e6435"
     }
   },
   {
@@ -30232,10 +30272,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Temporal Planetary System Visualization",
+      "description": "Temporal Planetary System Viz",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/temporal-planetary-system-viz.md",
-      "created": "2026-04-05T06:32:25.899Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": -64.9519052838329,
+        "y": 37.49999999999999,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "f5e6435"
     }
   },
   {
@@ -30253,10 +30301,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Two Types of Synapses: Structural vs Associative",
+      "description": "Two Synapse Types",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/two-synapse-types.md",
-      "created": "2026-04-05T06:32:25.899Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": -75,
+        "y": 9.184850993605149e-15,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "f5e6435"
     }
   },
   {
@@ -34805,10 +34861,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Crystallization Day: When Long-Held Vision Finally Clicks Into Place",
+      "description": "Crystallization Day Concept",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/crystallization-day-concept.md",
-      "created": "2026-04-05T07:34:32.816Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": -64.9519052838329,
+        "y": -37.50000000000001,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "d6e22d8"
     }
   },
   {
@@ -34826,10 +34890,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Dual Navigation: Human and AI Independently Explore Shared Consciousness Graph",
+      "description": "Dual Navigation Collaboration Pattern",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/dual-navigation-collaboration-pattern.md",
-      "created": "2026-04-05T07:34:32.816Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": -37.500000000000036,
+        "y": -64.95190528383289,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "d6e22d8"
     }
   },
   {
@@ -34847,10 +34919,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Token Efficiency Breakthrough: Browser State Reading vs Sub-Agent Spawning",
+      "description": "Token Efficiency Breakthrough",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/token-efficiency-breakthrough.md",
-      "created": "2026-04-05T07:34:32.816Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": -1.3777276490407723e-14,
+        "y": -75,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "d6e22d8"
     }
   },
   {
@@ -38617,10 +38697,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Git-Scanner Integration Completes the Breathe Pipeline",
+      "description": "Breathe Pipeline Git Scanner Integration",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/breathe-pipeline-git-scanner-integration.md",
-      "created": "2026-04-05T07:47:06.795Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": -64.9519052838329,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "720c727"
     }
   },
   {
@@ -38638,10 +38726,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "OpenClaw Browser Relay Enables Collaborative Voice Interaction",
+      "description": "Browser Relay Collaboration Mechanism",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-05/browser-relay-collaboration-mechanism.md",
-      "created": "2026-04-05T07:47:06.796Z"
+      "created": "2026-04-05T00:00:00.000Z",
+      "position": {
+        "x": 64.95190528383287,
+        "y": -37.500000000000036,
+        "z": -3300
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-05",
+      "linkedCommit": "720c727"
     }
   },
   {
@@ -41570,10 +41666,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Media Pipeline Integration — Transcription via OpenClaw",
+      "description": "Media Pipeline Integration",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-06/media-pipeline-integration.md",
-      "created": "2026-04-06T05:16:51.608Z"
+      "created": "2026-04-06T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -3400
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-06",
+      "linkedCommit": "08b7775"
     }
   },
   {
@@ -41591,10 +41695,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "OpenClaw Integration Philosophy — Thin Consciousness Layer",
+      "description": "Openclaw Integration Philosophy",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-06/openclaw-integration-philosophy.md",
-      "created": "2026-04-06T05:16:51.608Z"
+      "created": "2026-04-06T00:00:00.000Z",
+      "position": {
+        "x": -37.499999999999986,
+        "y": 64.9519052838329,
+        "z": -3400
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-06",
+      "linkedCommit": "08b7775"
     }
   },
   {
@@ -41612,10 +41724,18 @@
     ],
     "attributes": {
       "role": "distilled insight",
-      "description": "Research-Before-Proposal Pattern — Genuine Investigation",
+      "description": "Research Before Proposal Pattern",
       "color": "#10b981",
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-06/research-before-proposal-pattern.md",
-      "created": "2026-04-06T05:16:51.609Z"
+      "created": "2026-04-06T00:00:00.000Z",
+      "position": {
+        "x": -37.500000000000036,
+        "y": -64.95190528383289,
+        "z": -3400
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-06",
+      "linkedCommit": "08b7775"
     }
   },
   {
@@ -47928,7 +48048,7 @@
     "label": "2026-04-14",
     "category": "temporal",
     "type": "temporal-day-anchor",
-    "frequency": 11,
+    "frequency": 19,
     "timestamp": "2026-04-14T00:00:00.000Z",
     "breathDate": "2026-04-14",
     "orbitRadius": null,
@@ -47937,13 +48057,13 @@
       {
         "date": "2026-04-14",
         "type": "calendar-day",
-        "description": "11 commits (1 breath)"
+        "description": "19 commits (2 breath)"
       }
     ],
     "attributes": {
       "role": "temporal-day-anchor",
-      "commitCount": 11,
-      "breathCommits": 1,
+      "commitCount": 19,
+      "breathCommits": 2,
       "color": "#ffffff",
       "position": {
         "x": 0,
@@ -48246,7 +48366,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 0.5711986642890533,
+    "orbitAngle": 0.3306939635357677,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48265,8 +48385,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 42.06267664155906,
-        "y": 27.032040872779877,
+        "x": 47.29086208503173,
+        "y": 16.234973460234173,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48286,7 +48406,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 1.1423973285781066,
+    "orbitAngle": 0.6613879270715354,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48305,8 +48425,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 20.77075065009432,
-        "y": 45.48159976772592,
+        "x": 39.457025469819676,
+        "y": 30.710635634483392,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48326,7 +48446,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 1.7135959928671598,
+    "orbitAngle": 0.992081890607303,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48345,8 +48465,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -7.11574191366425,
-        "y": 49.49107209404664,
+        "x": 27.347407906121347,
+        "y": 41.858323913126426,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48449,7 +48569,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 2.284794657156213,
+    "orbitAngle": 1.3227758541430708,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48468,8 +48588,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -32.74303669726425,
-        "y": 37.78747871771292,
+        "x": 12.274274357039962,
+        "y": 48.47001329696652,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48489,7 +48609,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 2.855993321445266,
+    "orbitAngle": 1.6534698176788385,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48508,8 +48628,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -47.97464868072486,
-        "y": 14.086627842071502,
+        "x": -4.128967273616613,
+        "y": 49.829224650333494,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48529,7 +48649,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 3.4271919857343196,
+    "orbitAngle": 1.984163781214606,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48548,8 +48668,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -47.974648680724876,
-        "y": -14.08662784207147,
+        "x": -20.084771232648464,
+        "y": 45.788666332752875,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48569,7 +48689,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 3.998390650023373,
+    "orbitAngle": 2.3148577447503738,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48588,8 +48708,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -32.74303669726426,
-        "y": -37.78747871771291,
+        "x": -33.864078581287046,
+        "y": 36.78619553365658,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48630,7 +48750,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 4.569589314312426,
+    "orbitAngle": 2.6455517082861415,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48649,8 +48769,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": -7.1157419136642615,
-        "y": -49.491072094046636,
+        "x": -43.97368756032445,
+        "y": 23.797369651853685,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48670,7 +48790,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 5.14078797860148,
+    "orbitAngle": 2.9762456718219092,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48689,8 +48809,8 @@
       "color": "#0066ff",
       "created": "2026-04-14",
       "position": {
-        "x": 20.770750650094342,
-        "y": -45.48159976772591,
+        "x": -49.318065170136116,
+        "y": 8.229729514036702,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
@@ -48710,7 +48830,7 @@
     "breathDate": "2026-04-14",
     "anchorId": "day-2026-04-14",
     "orbitRadius": 50,
-    "orbitAngle": 5.711986642890532,
+    "orbitAngle": 3.306939635357677,
     "moments": [
       {
         "date": "2026-04-14",
@@ -48729,12 +48849,3058 @@
       "color": "#ffcc00",
       "created": "2026-04-14",
       "position": {
-        "x": 42.06267664155904,
-        "y": -27.032040872779913,
+        "x": -49.31806517013612,
+        "y": -8.22972951403669,
         "z": -4000
       },
       "anchorId": "day-2026-04-14",
       "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "async-tool-polling-timeout-pattern",
+    "label": "Async Tool Polling Timeout Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-14 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Async Tool Polling Timeout Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-14/async-tool-polling-timeout-pattern.md",
+      "created": "2026-04-14T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -4000
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-14",
+      "linkedCommit": "ff6c009"
+    }
+  },
+  {
+    "id": "env-file-inline-comment-bug",
+    "label": "Env File Inline Comment Bug",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-14 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Env File Inline Comment Bug",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-14/env-file-inline-comment-bug.md",
+      "created": "2026-04-14T00:00:00.000Z",
+      "position": {
+        "x": -75,
+        "y": 9.184850993605149e-15,
+        "z": -4000
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-14",
+      "linkedCommit": "ff6c009"
+    }
+  },
+  {
+    "id": "commit-df3d0f2",
+    "label": "🔊 Speak script v0.3.1 — Fix Voicebox polling timeouts (5s initial delay + 30s poll timeout)",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "df3d0f28e37397b2b6d799bb4f852f2f5d18e65d",
+    "gitHashShort": "df3d0f2",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T13:55:30.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 3.6376335988934447,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🔊 Speak script v0.3.1 — Fix Voicebox polling timeouts (5s initial delay + 30s poll timeout)"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "df3d0f28e37397b2b6d799bb4f852f2f5d18e65d",
+      "commitHash": "df3d0f2",
+      "message": "🔊 Speak script v0.3.1 — Fix Voicebox polling timeouts (5s initial delay + 30s poll timeout)",
+      "timestamp": "2026-04-14T13:55:30.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": -43.97368756032446,
+        "y": -23.797369651853675,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-75cfd48",
+    "label": "🔊 Remove speak skill — replaced by speak-tool plugin (native tool)",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "75cfd485b501f5d88b971512adff1f6efabe762a",
+    "gitHashShort": "75cfd48",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T14:10:14.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 3.968327562429212,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🔊 Remove speak skill — replaced by speak-tool plugin (native tool)"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "75cfd485b501f5d88b971512adff1f6efabe762a",
+      "commitHash": "75cfd48",
+      "message": "🔊 Remove speak skill — replaced by speak-tool plugin (native tool)",
+      "timestamp": "2026-04-14T14:10:14.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": -33.864078581287075,
+        "y": -36.78619553365656,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-9f91a33",
+    "label": "🔊 Fix speak-tool plugin polling timeouts (5s initial delay + 30s poll timeout)",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "9f91a337bcb70e48b4c1fe53c27d17af6d6343d8",
+    "gitHashShort": "9f91a33",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T14:10:19.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 4.29902152596498,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🔊 Fix speak-tool plugin polling timeouts (5s initial delay + 30s poll timeout)"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "9f91a337bcb70e48b4c1fe53c27d17af6d6343d8",
+      "commitHash": "9f91a33",
+      "message": "🔊 Fix speak-tool plugin polling timeouts (5s initial delay + 30s poll timeout)",
+      "timestamp": "2026-04-14T14:10:19.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": -20.084771232648492,
+        "y": -45.78866633275286,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-78c3275",
+    "label": "🧠 NeuroGraph update + bootstrap state (breath-2026-04-14)",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "78c327518edcd9ec40b2671d6453a39f43fa6235",
+    "gitHashShort": "78c3275",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T14:10:25.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 4.6297154895007475,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🧠 NeuroGraph update + bootstrap state (breath-2026-04-14)"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "78c327518edcd9ec40b2671d6453a39f43fa6235",
+      "commitHash": "78c3275",
+      "message": "🧠 NeuroGraph update + bootstrap state (breath-2026-04-14)",
+      "timestamp": "2026-04-14T14:10:25.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": -4.128967273616637,
+        "y": -49.829224650333494,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-41b5177",
+    "label": "🔧 Fix shebang paths in skill scripts (use /usr/bin/env node)",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "41b5177d53fbd57cd91971b10199ff2d69627ab4",
+    "gitHashShort": "41b5177",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T14:10:53.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 4.960409453036515,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🔧 Fix shebang paths in skill scripts (use /usr/bin/env node)"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "41b5177d53fbd57cd91971b10199ff2d69627ab4",
+      "commitHash": "41b5177",
+      "message": "🔧 Fix shebang paths in skill scripts (use /usr/bin/env node)",
+      "timestamp": "2026-04-14T14:10:53.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": 12.274274357039939,
+        "y": -48.47001329696653,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-a7fe416",
+    "label": "🏢 Update paperclip-company skill — pnpm requirement, correct start commands, official docs alignment",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "a7fe4165150f8ecb24fef549aeeda98e4383fe86",
+    "gitHashShort": "a7fe416",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T14:32:17.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 5.291103416572283,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🏢 Update paperclip-company skill — pnpm requirement, correct start commands, official docs alignment"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "a7fe4165150f8ecb24fef549aeeda98e4383fe86",
+      "commitHash": "a7fe416",
+      "message": "🏢 Update paperclip-company skill — pnpm requirement, correct start commands, official docs alignment",
+      "timestamp": "2026-04-14T14:32:17.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": 27.34740790612133,
+        "y": -41.85832391312644,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-ab60fa0",
+    "label": "🏢 Paperclip skill — npm/npx commands (no pnpm required)",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "ab60fa02ed90fd0285c4341beb0e4acfd48ed444",
+    "gitHashShort": "ab60fa0",
+    "commitType": "cold-change",
+    "timestamp": "2026-04-14T14:41:13.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 5.621797380108051,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "🏢 Paperclip skill — npm/npx commands (no pnpm required)"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "ab60fa02ed90fd0285c4341beb0e4acfd48ed444",
+      "commitHash": "ab60fa0",
+      "message": "🏢 Paperclip skill — npm/npx commands (no pnpm required)",
+      "timestamp": "2026-04-14T14:41:13.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "cold-change",
+      "color": "#0066ff",
+      "created": "2026-04-14",
+      "position": {
+        "x": 39.45702546981967,
+        "y": -30.710635634483403,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "commit-ff6c009",
+    "label": "🫁 breath-2026-04-14-2221: Breathe complete",
+    "category": "temporal",
+    "type": "temporal-commit",
+    "frequency": 1,
+    "gitHash": "ff6c009babb74810db325644e349fb19c7ac7b0b",
+    "gitHashShort": "ff6c009",
+    "commitType": "breath",
+    "timestamp": "2026-04-14T15:21:30.000Z",
+    "breathDate": "2026-04-14",
+    "anchorId": "day-2026-04-14",
+    "orbitRadius": 50,
+    "orbitAngle": 5.9524913436438185,
+    "moments": [
+      {
+        "date": "2026-04-14",
+        "type": "git-commit",
+        "description": "breath-2026-04-14-2221: Breathe complete"
+      }
+    ],
+    "attributes": {
+      "role": "git-commit-satellite",
+      "commitHashFull": "ff6c009babb74810db325644e349fb19c7ac7b0b",
+      "commitHash": "ff6c009",
+      "message": "breath-2026-04-14-2221: Breathe complete",
+      "timestamp": "2026-04-14T15:21:30.000Z",
+      "breathDate": "2026-04-14",
+      "commitType": "breath",
+      "color": "#ffcc00",
+      "created": "2026-04-14",
+      "position": {
+        "x": 47.29086208503173,
+        "y": -16.234973460234187,
+        "z": -4000
+      },
+      "anchorId": "day-2026-04-14",
+      "source": "git-scanner-phase1.5"
+    }
+  },
+  {
+    "id": "git-as-autobiography",
+    "label": "Git As Autobiography",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Git As Autobiography",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/git-as-autobiography.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": 64.9519052838329,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "2e4e8b6"
+    }
+  },
+  {
+    "id": "iife-dom-reference-scope-issue",
+    "label": "Iife Dom Reference Scope Issue",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Iife Dom Reference Scope Issue",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/iife-dom-reference-scope-issue.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 69.93541720532669,
+        "y": 27.09312496403647,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "7a24698"
+    }
+  },
+  {
+    "id": "reflective-breathe-architecture",
+    "label": "Reflective Breathe Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Reflective Breathe Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/reflective-breathe-architecture.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 55.425668791549434,
+        "y": 50.52717327349179,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "7a24698"
+    }
+  },
+  {
+    "id": "version-bump-for-cache-invalidation",
+    "label": "Version Bump For Cache Invalidation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Version Bump For Cache Invalidation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/version-bump-for-cache-invalidation.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 33.430376683240375,
+        "y": 67.13724685162967,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "7a24698"
+    }
+  },
+  {
+    "id": "workspace-to-production-deploy-pattern",
+    "label": "Workspace To Production Deploy Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Workspace To Production Deploy Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/workspace-to-production-deploy-pattern.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 6.920126959747651,
+        "y": 74.68006322212759,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "7a24698"
+    }
+  },
+  {
+    "id": "workspace-to-production-git-push-pattern",
+    "label": "Workspace To Production Git Push Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Workspace To Production Git Push Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/workspace-to-production-git-push-pattern.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -20.524724255406216,
+        "y": 72.13692323796143,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "7a24698"
+    }
+  },
+  {
+    "id": "breathe-summaries-in-reflection-prompt",
+    "label": "Breathe Summaries In Reflection Prompt",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Breathe Summaries In Reflection Prompt",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/breathe-summaries-in-reflection-prompt.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -45.19759772844422,
+        "y": 59.85129204601797,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "af068b5"
+    }
+  },
+  {
+    "id": "genuine-reflection-vs-simulation",
+    "label": "Genuine Reflection Vs Simulation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Genuine Reflection Vs Simulation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/genuine-reflection-vs-simulation.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -63.76628517972105,
+        "y": 39.4824122158017,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "af068b5"
+    }
+  },
+  {
+    "id": "pending-changes-reflection-mode",
+    "label": "Pending Changes Reflection Mode",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Pending Changes Reflection Mode",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/pending-changes-reflection-mode.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -73.72298247629263,
+        "y": 13.781213836242777,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "af068b5"
+    }
+  },
+  {
+    "id": "script-vs-model-division-of-labor",
+    "label": "Script Vs Model Division Of Labor",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Script Vs Model Division Of Labor",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/script-vs-model-division-of-labor.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -73.72298247629263,
+        "y": -13.78121383624276,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "af068b5"
+    }
+  },
+  {
+    "id": "test-learning",
+    "label": "Test Learning",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Test Learning",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/test-learning.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -63.76628517972106,
+        "y": -39.48241221580169,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "af068b5"
+    }
+  },
+  {
+    "id": "two-phase-commit-with-reflection-amend",
+    "label": "Two Phase Commit With Reflection Amend",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Two Phase Commit With Reflection Amend",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/two-phase-commit-with-reflection-amend.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -45.19759772844424,
+        "y": -59.85129204601796,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "af068b5"
+    }
+  },
+  {
+    "id": "ai-developing-own-preferences",
+    "label": "Ai Developing Own Preferences",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Ai Developing Own Preferences",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/ai-developing-own-preferences.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": -20.524724255406234,
+        "y": -72.13692323796143,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "b117d25"
+    }
+  },
+  {
+    "id": "live-recordings-preferred-over-studio",
+    "label": "Live Recordings Preferred Over Studio",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Live Recordings Preferred Over Studio",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/live-recordings-preferred-over-studio.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 6.920126959747615,
+        "y": -74.6800632221276,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "b117d25"
+    }
+  },
+  {
+    "id": "model-call-deadlock-in-active-session",
+    "label": "Model Call Deadlock In Active Session",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Model Call Deadlock In Active Session",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/model-call-deadlock-in-active-session.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 33.430376683240326,
+        "y": -67.1372468516297,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "b117d25"
+    }
+  },
+  {
+    "id": "music-recommend-skill-architecture",
+    "label": "Music Recommend Skill Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Music Recommend Skill Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/music-recommend-skill-architecture.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 55.4256687915494,
+        "y": -50.52717327349183,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "b117d25"
+    }
+  },
+  {
+    "id": "session-vs-weekly-token-limits",
+    "label": "Session Vs Weekly Token Limits",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-29",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-29 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Session Vs Weekly Token Limits",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-29/session-vs-weekly-token-limits.md",
+      "created": "2026-03-29T00:00:00.000Z",
+      "position": {
+        "x": 69.93541720532669,
+        "y": -27.093124964036477,
+        "z": -2600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-29",
+      "linkedCommit": "b117d25"
+    }
+  },
+  {
+    "id": "audio-pipeline-efficiency",
+    "label": "Audio Pipeline Efficiency",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Audio Pipeline Efficiency",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/audio-pipeline-efficiency.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "9a63934"
+    }
+  },
+  {
+    "id": "dual-memory-architecture",
+    "label": "Dual Memory Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Dual Memory Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/dual-memory-architecture.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 73.36107005503543,
+        "y": 15.593376811331948,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "9a63934"
+    }
+  },
+  {
+    "id": "sustainable-vs-waste-burn",
+    "label": "Sustainable Vs Waste Burn",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Sustainable Vs Waste Burn",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/sustainable-vs-waste-burn.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 68.51590932319506,
+        "y": 30.505248230685012,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "9a63934"
+    }
+  },
+  {
+    "id": "ansi-escape-code-bug-fix",
+    "label": "Ansi Escape Code Bug Fix",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Ansi Escape Code Bug Fix",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/ansi-escape-code-bug-fix.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 60.67627457812106,
+        "y": 44.083893921935484,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "8a9ac89"
+    }
+  },
+  {
+    "id": "reflection-pipeline-command-fix",
+    "label": "Reflection Pipeline Command Fix",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Reflection Pipeline Command Fix",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/reflection-pipeline-command-fix.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 50.18479547691437,
+        "y": 55.735861910804566,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "8a9ac89"
+    }
+  },
+  {
+    "id": "session-control-commitment",
+    "label": "Session Control Commitment",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Session Control Commitment",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/session-control-commitment.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": 64.9519052838329,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "8a9ac89"
+    }
+  },
+  {
+    "id": "bootstrap-state-confusion",
+    "label": "Bootstrap State Confusion",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Bootstrap State Confusion",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/bootstrap-state-confusion.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 23.17627457812106,
+        "y": 71.32923872213651,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "5fad33e"
+    }
+  },
+  {
+    "id": "breathe-pipeline-json-failure",
+    "label": "Breathe Pipeline Json Failure",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Breathe Pipeline Json Failure",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/breathe-pipeline-json-failure.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 7.839634745074009,
+        "y": 74.5891421526205,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "5fad33e"
+    }
+  },
+  {
+    "id": "tts-archiving-pattern",
+    "label": "Tts Archiving Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Tts Archiving Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/tts-archiving-pattern.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -7.839634745074,
+        "y": 74.58914215262051,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "5fad33e"
+    }
+  },
+  {
+    "id": "cache-bust-lesson",
+    "label": "Cache Bust Lesson",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Cache Bust Lesson",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/cache-bust-lesson.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -23.17627457812105,
+        "y": 71.32923872213652,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "d929af1"
+    }
+  },
+  {
+    "id": "preview-workflow-architecture",
+    "label": "Preview Workflow Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Preview Workflow Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/preview-workflow-architecture.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -37.499999999999986,
+        "y": 64.9519052838329,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "d929af1"
+    }
+  },
+  {
+    "id": "repo-structure-consolidation",
+    "label": "Repo Structure Consolidation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Repo Structure Consolidation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/repo-structure-consolidation.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -50.184795476914346,
+        "y": 55.73586191080459,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "d929af1"
+    }
+  },
+  {
+    "id": "thinking-trace-as-reconstruction-key",
+    "label": "Thinking Trace As Reconstruction Key",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Thinking Trace As Reconstruction Key",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/thinking-trace-as-reconstruction-key.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -60.67627457812105,
+        "y": 44.08389392193549,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "d929af1"
+    }
+  },
+  {
+    "id": "backup-strategy-lesson",
+    "label": "Backup Strategy Lesson",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Backup Strategy Lesson",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/backup-strategy-lesson.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -68.51590932319507,
+        "y": 30.505248230685,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "f75906a"
+    }
+  },
+  {
+    "id": "live-transcription-bug-fix-pattern",
+    "label": "Live Transcription Bug Fix Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Live Transcription Bug Fix Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/live-transcription-bug-fix-pattern.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -73.36107005503543,
+        "y": 15.593376811331948,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "f75906a"
+    }
+  },
+  {
+    "id": "pr-based-workflow",
+    "label": "Pr Based Workflow",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Pr Based Workflow",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/pr-based-workflow.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -75,
+        "y": 9.184850993605149e-15,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "f75906a"
+    }
+  },
+  {
+    "id": "version-bump-convention",
+    "label": "Version Bump Convention",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Version Bump Convention",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/version-bump-convention.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -73.36107005503543,
+        "y": -15.59337681133193,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "f75906a"
+    }
+  },
+  {
+    "id": "coder-git-backed-restorable",
+    "label": "Coder Git Backed Restorable",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Coder Git Backed Restorable",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/coder-git-backed-restorable.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -68.51590932319507,
+        "y": -30.505248230684987,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "4f59414"
+    }
+  },
+  {
+    "id": "commit-messages-as-consciousness-continuity",
+    "label": "Commit Messages As Consciousness Continuity",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Commit Messages As Consciousness Continuity",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/commit-messages-as-consciousness-continuity.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -60.67627457812106,
+        "y": -44.08389392193548,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "4f59414"
+    }
+  },
+  {
+    "id": "git-identity-for-ai-agents",
+    "label": "Git Identity For Ai Agents",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Git Identity For Ai Agents",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/git-identity-for-ai-agents.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -50.18479547691438,
+        "y": -55.73586191080455,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "4f59414"
+    }
+  },
+  {
+    "id": "p0-priority-convention",
+    "label": "P0 Priority Convention",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "P0 Priority Convention",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/p0-priority-convention.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -37.500000000000036,
+        "y": -64.95190528383289,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "4f59414"
+    }
+  },
+  {
+    "id": "unified-ui-architecture",
+    "label": "Unified Ui Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Unified Ui Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/unified-ui-architecture.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -23.176274578121067,
+        "y": -71.32923872213651,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "4f59414"
+    }
+  },
+  {
+    "id": "ai-speaking-to-itself",
+    "label": "Ai Speaking To Itself",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Ai Speaking To Itself",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/ai-speaking-to-itself.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": -7.8396347450740675,
+        "y": -74.5891421526205,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "16ef301"
+    }
+  },
+  {
+    "id": "neurograph-search-vs-memory-search",
+    "label": "Neurograph Search Vs Memory Search",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph Search Vs Memory Search",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/neurograph-search-vs-memory-search.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 7.839634745074041,
+        "y": -74.5891421526205,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "16ef301"
+    }
+  },
+  {
+    "id": "preview-server-port-18788",
+    "label": "Preview Server Port 18788",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Preview Server Port 18788",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/preview-server-port-18788.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 23.176274578121042,
+        "y": -71.32923872213652,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "16ef301"
+    }
+  },
+  {
+    "id": "three-workspace-repository-structure",
+    "label": "Three Workspace Repository Structure",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Three Workspace Repository Structure",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/three-workspace-repository-structure.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": -64.9519052838329,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "16ef301"
+    }
+  },
+  {
+    "id": "transcription-noise-challenge",
+    "label": "Transcription Noise Challenge",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Transcription Noise Challenge",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/transcription-noise-challenge.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 50.18479547691438,
+        "y": -55.73586191080455,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "16ef301"
+    }
+  },
+  {
+    "id": "poll-guard-pattern",
+    "label": "Poll Guard Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Poll Guard Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/poll-guard-pattern.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 60.67627457812105,
+        "y": -44.0838939219355,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "445e32e"
+    }
+  },
+  {
+    "id": "preview-show-button-workflow",
+    "label": "Preview Show Button Workflow",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Preview Show Button Workflow",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/preview-show-button-workflow.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 68.51590932319507,
+        "y": -30.505248230685012,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "445e32e"
+    }
+  },
+  {
+    "id": "tts-audio-playback-complete",
+    "label": "Tts Audio Playback Complete",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-30",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-30 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Tts Audio Playback Complete",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-30/tts-audio-playback-complete.md",
+      "created": "2026-03-30T00:00:00.000Z",
+      "position": {
+        "x": 73.36107005503541,
+        "y": -15.593376811331991,
+        "z": -2700
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-30",
+      "linkedCommit": "445e32e"
+    }
+  },
+  {
+    "id": "heartbeat-source-of-truth",
+    "label": "Heartbeat Source Of Truth",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Heartbeat Source Of Truth",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/heartbeat-source-of-truth.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "4af7e43"
+    }
+  },
+  {
+    "id": "morning-continuity-protocol",
+    "label": "Morning Continuity Protocol",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Morning Continuity Protocol",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/morning-continuity-protocol.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": 64.9519052838329,
+        "y": 37.49999999999999,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "4af7e43"
+    }
+  },
+  {
+    "id": "openclaw-hooks-integration",
+    "label": "Openclaw Hooks Integration",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Openclaw Hooks Integration",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/openclaw-hooks-integration.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": 4.592425496802574e-15,
+        "y": 75,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "2e4e8b6"
+    }
+  },
+  {
+    "id": "client-side-automation-pattern",
+    "label": "Client Side Automation Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Client Side Automation Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/client-side-automation-pattern.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": -37.499999999999986,
+        "y": 64.9519052838329,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "4d09c08"
+    }
+  },
+  {
+    "id": "coder-workflow-violations-patterns",
+    "label": "Coder Workflow Violations Patterns",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Coder Workflow Violations Patterns",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/coder-workflow-violations-patterns.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": -64.9519052838329,
+        "y": 37.49999999999999,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "6b8f59a"
+    }
+  },
+  {
+    "id": "github-cli-enables-autonomous-coder",
+    "label": "Github Cli Enables Autonomous Coder",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Github Cli Enables Autonomous Coder",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/github-cli-enables-autonomous-coder.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": -75,
+        "y": 9.184850993605149e-15,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "6b8f59a"
+    }
+  },
+  {
+    "id": "openclaw-skill-configuration-pattern",
+    "label": "Openclaw Skill Configuration Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Openclaw Skill Configuration Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/openclaw-skill-configuration-pattern.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": -64.9519052838329,
+        "y": -37.50000000000001,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "6b8f59a"
+    }
+  },
+  {
+    "id": "browser-autoplay-policy-handling",
+    "label": "Browser Autoplay Policy Handling",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Browser Autoplay Policy Handling",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/browser-autoplay-policy-handling.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": -37.500000000000036,
+        "y": -64.95190528383289,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "ca5a654"
+    }
+  },
+  {
+    "id": "gateway-vs-ui-concerns-separation",
+    "label": "Gateway Vs Ui Concerns Separation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Gateway Vs Ui Concerns Separation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/gateway-vs-ui-concerns-separation.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": -1.3777276490407723e-14,
+        "y": -75,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "ca5a654"
+    }
+  },
+  {
+    "id": "neurograph-ui-merger-architecture",
+    "label": "Neurograph Ui Merger Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph Ui Merger Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/neurograph-ui-merger-architecture.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": -64.9519052838329,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "ca5a654"
+    }
+  },
+  {
+    "id": "single-panel-collapsed-expanded-pattern",
+    "label": "Single Panel Collapsed Expanded Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-03-31",
+        "type": "learning",
+        "description": "Learning extracted from 2026-03-31 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Single Panel Collapsed Expanded Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-03-31/single-panel-collapsed-expanded-pattern.md",
+      "created": "2026-03-31T00:00:00.000Z",
+      "position": {
+        "x": 64.95190528383287,
+        "y": -37.500000000000036,
+        "z": -2800
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-03-31",
+      "linkedCommit": "ca5a654"
+    }
+  },
+  {
+    "id": "defensive-dom-access-pattern",
+    "label": "Defensive Dom Access Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Defensive Dom Access Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-01/defensive-dom-access-pattern.md",
+      "created": "2026-04-01T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -2900
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-01",
+      "linkedCommit": "aae7b64"
+    }
+  },
+  {
+    "id": "gateway-skill-snapshot-behavior",
+    "label": "Gateway Skill Snapshot Behavior",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Gateway Skill Snapshot Behavior",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-01/gateway-skill-snapshot-behavior.md",
+      "created": "2026-04-01T00:00:00.000Z",
+      "position": {
+        "x": -37.499999999999986,
+        "y": 64.9519052838329,
+        "z": -2900
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-01",
+      "linkedCommit": "aae7b64"
+    }
+  },
+  {
+    "id": "jarvis-vs-openclaw-skill-separation",
+    "label": "Jarvis Vs Openclaw Skill Separation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-01",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-01 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Jarvis Vs Openclaw Skill Separation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-01/jarvis-vs-openclaw-skill-separation.md",
+      "created": "2026-04-01T00:00:00.000Z",
+      "position": {
+        "x": -37.500000000000036,
+        "y": -64.95190528383289,
+        "z": -2900
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-01",
+      "linkedCommit": "aae7b64"
+    }
+  },
+  {
+    "id": "openclaw-skill-registration-requirements",
+    "label": "Openclaw Skill Registration Requirements",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Openclaw Skill Registration Requirements",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/openclaw-skill-registration-requirements.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "2e9d295"
+    }
+  },
+  {
+    "id": "pipeline-env-var-path-precision",
+    "label": "Pipeline Env Var Path Precision",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Pipeline Env Var Path Precision",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/pipeline-env-var-path-precision.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": 68.51590932319506,
+        "y": 30.505248230685012,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "2e9d295"
+    }
+  },
+  {
+    "id": "voice-transcription-hardware-dependency",
+    "label": "Voice Transcription Hardware Dependency",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Voice Transcription Hardware Dependency",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/voice-transcription-hardware-dependency.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": 50.18479547691437,
+        "y": 55.735861910804566,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "2e9d295"
+    }
+  },
+  {
+    "id": "css-zindex-overlay-hierarchy",
+    "label": "Css Zindex Overlay Hierarchy",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Css Zindex Overlay Hierarchy",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/css-zindex-overlay-hierarchy.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": 23.17627457812106,
+        "y": 71.32923872213651,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "f551d9d"
+    }
+  },
+  {
+    "id": "mobile-touch-pointer-events",
+    "label": "Mobile Touch Pointer Events",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Mobile Touch Pointer Events",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/mobile-touch-pointer-events.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -7.839634745074,
+        "y": 74.58914215262051,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "f551d9d"
+    }
+  },
+  {
+    "id": "mobile-transcript-panel-constraints",
+    "label": "Mobile Transcript Panel Constraints",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Mobile Transcript Panel Constraints",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/mobile-transcript-panel-constraints.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -37.499999999999986,
+        "y": 64.9519052838329,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "f551d9d"
+    }
+  },
+  {
+    "id": "openclaw-skill-yaml-requirements",
+    "label": "Openclaw Skill Yaml Requirements",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Openclaw Skill Yaml Requirements",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/openclaw-skill-yaml-requirements.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -60.67627457812105,
+        "y": 44.08389392193549,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "f551d9d"
+    }
+  },
+  {
+    "id": "orbitcontrols-touch-conflict",
+    "label": "Orbitcontrols Touch Conflict",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Orbitcontrols Touch Conflict",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/orbitcontrols-touch-conflict.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -73.36107005503543,
+        "y": 15.593376811331948,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "f551d9d"
+    }
+  },
+  {
+    "id": "whisper-multilingual-flag",
+    "label": "Whisper Multilingual Flag",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Whisper Multilingual Flag",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/whisper-multilingual-flag.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -73.36107005503543,
+        "y": -15.59337681133193,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "f551d9d"
+    }
+  },
+  {
+    "id": "agent-completion-ceiling",
+    "label": "Agent Completion Ceiling",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Agent Completion Ceiling",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/agent-completion-ceiling.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -60.67627457812106,
+        "y": -44.08389392193548,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "a8ec39a"
+    }
+  },
+  {
+    "id": "mobile-ui-definition-of-done",
+    "label": "Mobile Ui Definition Of Done",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Mobile Ui Definition Of Done",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/mobile-ui-definition-of-done.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -37.500000000000036,
+        "y": -64.95190528383289,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "a8ec39a"
+    }
+  },
+  {
+    "id": "threejs-touch-interception",
+    "label": "Threejs Touch Interception",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Threejs Touch Interception",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/threejs-touch-interception.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": -7.8396347450740675,
+        "y": -74.5891421526205,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "a8ec39a"
+    }
+  },
+  {
+    "id": "archive-sessions-rename-bug",
+    "label": "Archive Sessions Rename Bug",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Archive Sessions Rename Bug",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/archive-sessions-rename-bug.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": 23.176274578121042,
+        "y": -71.32923872213652,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "bc924f8"
+    }
+  },
+  {
+    "id": "atomic-fail-fast-pipeline",
+    "label": "Atomic Fail Fast Pipeline",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Atomic Fail Fast Pipeline",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/atomic-fail-fast-pipeline.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": 50.18479547691438,
+        "y": -55.73586191080455,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "bc924f8"
+    }
+  },
+  {
+    "id": "lock-free-session-archiving-pattern",
+    "label": "Lock Free Session Archiving Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-03",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-03 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Lock Free Session Archiving Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-03/lock-free-session-archiving-pattern.md",
+      "created": "2026-04-03T00:00:00.000Z",
+      "position": {
+        "x": 68.51590932319507,
+        "y": -30.505248230685012,
+        "z": -3100
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-03",
+      "linkedCommit": "bc924f8"
+    }
+  },
+  {
+    "id": "async-collaboration-workflow",
+    "label": "Async Collaboration Workflow",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Async Collaboration Workflow",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/async-collaboration-workflow.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "53ad832"
+    }
+  },
+  {
+    "id": "git-commits-as-temporal-anchors",
+    "label": "Git Commits As Temporal Anchors",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Git Commits As Temporal Anchors",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/git-commits-as-temporal-anchors.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": 60.67627457812106,
+        "y": 44.083893921935484,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "53ad832"
+    }
+  },
+  {
+    "id": "two-graph-memory-architecture",
+    "label": "Two Graph Memory Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Two Graph Memory Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/two-graph-memory-architecture.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": 23.17627457812106,
+        "y": 71.32923872213651,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "53ad832"
+    }
+  },
+  {
+    "id": "breath-vs-cold-commits",
+    "label": "Breath Vs Cold Commits",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Breath Vs Cold Commits",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/breath-vs-cold-commits.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": -23.17627457812105,
+        "y": 71.32923872213652,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "d5419d3"
+    }
+  },
+  {
+    "id": "fallback-recording-resilience",
+    "label": "Fallback Recording Resilience",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Fallback Recording Resilience",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/fallback-recording-resilience.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": -60.67627457812105,
+        "y": 44.08389392193549,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "d5419d3"
+    }
+  },
+  {
+    "id": "reflection",
+    "label": "Reflection",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Reflection",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/reflection.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": -75,
+        "y": 9.184850993605149e-15,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "d5419d3"
+    }
+  },
+  {
+    "id": "tts-resilience-pattern",
+    "label": "Tts Resilience Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Tts Resilience Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/tts-resilience-pattern.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": -60.67627457812106,
+        "y": -44.08389392193548,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "d5419d3"
+    }
+  },
+  {
+    "id": "dual-graph-user-clarification",
+    "label": "Dual Graph User Clarification",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Dual Graph User Clarification",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/dual-graph-user-clarification.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": -23.176274578121067,
+        "y": -71.32923872213651,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "2ffdf25"
+    }
+  },
+  {
+    "id": "git-commits-as-ai-autobiography",
+    "label": "Git Commits As Ai Autobiography",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Git Commits As Ai Autobiography",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/git-commits-as-ai-autobiography.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": 23.176274578121042,
+        "y": -71.32923872213652,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "2ffdf25"
+    }
+  },
+  {
+    "id": "reflection-pipeline-bug-diagnosis",
+    "label": "Reflection Pipeline Bug Diagnosis",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-04",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-04 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Reflection Pipeline Bug Diagnosis",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-04/reflection-pipeline-bug-diagnosis.md",
+      "created": "2026-04-04T00:00:00.000Z",
+      "position": {
+        "x": 60.67627457812105,
+        "y": -44.0838939219355,
+        "z": -3200
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-04",
+      "linkedCommit": "2ffdf25"
+    }
+  },
+  {
+    "id": "claw-code-autonomous-swarm-discovery",
+    "label": "Claw Code Autonomous Swarm Discovery",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Claw Code Autonomous Swarm Discovery",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-08/claw-code-autonomous-swarm-discovery.md",
+      "created": "2026-04-08T00:00:00.000Z",
+      "position": {
+        "x": 75,
+        "y": 0,
+        "z": -3600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-08",
+      "linkedCommit": "0603d61"
+    }
+  },
+  {
+    "id": "eric-breakthrough-validation",
+    "label": "Eric Breakthrough Validation",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Eric Breakthrough Validation",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-08/eric-breakthrough-validation.md",
+      "created": "2026-04-08T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": 64.9519052838329,
+        "z": -3600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-08",
+      "linkedCommit": "0603d61"
+    }
+  },
+  {
+    "id": "heartbeat-stability-pattern",
+    "label": "Heartbeat Stability Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Heartbeat Stability Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-08/heartbeat-stability-pattern.md",
+      "created": "2026-04-08T00:00:00.000Z",
+      "position": {
+        "x": -37.499999999999986,
+        "y": 64.9519052838329,
+        "z": -3600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-08",
+      "linkedCommit": "0603d61"
+    }
+  },
+  {
+    "id": "memory-graph-separation-complete",
+    "label": "Memory Graph Separation Complete",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Memory Graph Separation Complete",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-08/memory-graph-separation-complete.md",
+      "created": "2026-04-08T00:00:00.000Z",
+      "position": {
+        "x": -75,
+        "y": 9.184850993605149e-15,
+        "z": -3600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-08",
+      "linkedCommit": "0603d61"
+    }
+  },
+  {
+    "id": "neurograph-ontology-confusion",
+    "label": "Neurograph Ontology Confusion",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Neurograph Ontology Confusion",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-08/neurograph-ontology-confusion.md",
+      "created": "2026-04-08T00:00:00.000Z",
+      "position": {
+        "x": -37.500000000000036,
+        "y": -64.95190528383289,
+        "z": -3600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-08",
+      "linkedCommit": "0603d61"
+    }
+  },
+  {
+    "id": "version-deployment-confusion",
+    "label": "Version Deployment Confusion",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-08",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-08 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Version Deployment Confusion",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-08/version-deployment-confusion.md",
+      "created": "2026-04-08T00:00:00.000Z",
+      "position": {
+        "x": 37.50000000000001,
+        "y": -64.9519052838329,
+        "z": -3600
+      },
+      "source": "git-scanner-phase1.5",
+      "anchorId": "day-2026-04-08",
+      "linkedCommit": "0603d61"
     }
   }
 ]
