@@ -6,7 +6,7 @@ metadata:
     emoji: "🔊"
     requires:
       bins: ["ffplay", "curl"]
-      env: ["JARVIS_HOME", "VOICEBOX_PROFILE_ID"]
+      env: ["JARVIS_HOME"]
 ---
 
 # 🔊 Speak
