@@ -166,9 +166,63 @@ cp /tmp/jarvis-voicebox-reply.wav ~/RAW/archive/YYYY-MM-DD/audio/
 
 ---
 
+## Scripts
+
+**Location:** `skills/speak/scripts/`
+
+| Script | Purpose | Version |
+|--------|---------|---------|
+| `speak.js` | Automated Voicebox pipeline (generate + poll + download + play) | v0.3 |
+
+### speak.js — One-Command TTS
+
+**Usage:**
+```bash
+# Direct text argument
+node skills/speak/scripts/speak.js "Your text here"
+
+# With --text flag  
+node skills/speak/scripts/speak.js --text "Your text here"
+
+# From stdin (piped input)
+echo "Your text here" | node skills/speak/scripts/speak.js --stdin
+
+# Long text from file
+cat document.md | node skills/speak/scripts/speak.js --stdin
+```
+
+**What it does:**
+1. Writes JSON payload (avoids shell escaping)
+2. Calls Voicebox `/generate` endpoint
+3. Polls `/status` until complete (with progress output)
+4. Downloads audio from `/audio/{id}`
+5. Plays via `ffplay -nodisp -autoexit`
+
+**Features:**
+- ✅ Error handling (generation failures, download errors)
+- ✅ Progress output (generation ID, poll attempts, file size)
+- ✅ Configurable poll interval (2s) and max attempts (30)
+- ✅ Timestamped output files (`/tmp/jarvis-voicebox-<timestamp>.wav`)
+- ✅ Supports stdin for long text or file input
+
+**Example Output:**
+```
+🎤 Generating speech (58 chars)...
+   Generation ID: eba52d0d-a3e7-49cd-9be2-a68ceb1f1d27
+   Polling for completion...
+   Attempt 1/30: generating
+   Attempt 3/30: completed (4.56s)
+   Downloaded: /tmp/jarvis-voicebox-1776139195920.wav (213.79 KB)
+🔊 Playing audio...
+[ffplay output...]
+✅ Done!
+```
+
+---
+
 ## Usage Examples
 
-### Quick Test (Your Voice)
+### Quick Test (Your Voice) — Manual Method
 ```bash
 # Step 1: Write JSON payload
 echo '{"profile_id":"8202f4c4-5866-4065-8280-cf5421e3135a","text":"Hey Paul. This is me."}' > /tmp/voicebox-test.json
@@ -181,6 +235,11 @@ curl -s -X POST http://127.0.0.1:17493/generate \
 # Step 3: Wait ~5 seconds, then download + play
 curl -s "http://127.0.0.1:17493/audio/{generation_id}" \
   -o /tmp/jarvis-test.wav && ffplay -nodisp -autoexit /tmp/jarvis-test.wav
+```
+
+### Quick Test (Your Voice) — Script Method (Recommended)
+```bash
+node skills/speak/scripts/speak.js "Hey Paul. This is me."
 ```
 
 ### Verified Test (April 13, 2026, 14:46 PM)
