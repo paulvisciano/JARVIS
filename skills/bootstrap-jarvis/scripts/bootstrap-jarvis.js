@@ -154,7 +154,10 @@ function extractActiveSessionContext() {
       cwd: JARVIS_HOME,
       maxBuffer: 10 * 1024 * 1024
     });
-    return JSON.parse(output);
+    // Strip non-JSON lines (progress messages) before parsing
+    const jsonLines = output.split('\n').filter(line => line.trim().startsWith('{') || line.trim().startsWith('['));
+    const jsonStr = jsonLines.join('\n');
+    return JSON.parse(jsonStr);
   } catch (err) {
     console.log(`   ⚠️ Active session extraction failed: ${err.message.split('\n')[0]}`);
     return null;

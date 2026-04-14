@@ -107,7 +107,10 @@ try {
     fs.mkdirSync(userMemoriesDir, { recursive: true });
     console.log(`📁 Created: ${userMemoriesDir}`);
   }
-  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date} ${path.join(userMemoriesDir, 'nodes.json')}`);
+  const nodesJsonPath = path.join(userMemoriesDir, 'nodes.json');
+  console.log(`DEBUG: userMemoriesDir=${userMemoriesDir}`);
+  console.log(`DEBUG: nodesJsonPath=${nodesJsonPath}`);
+  runCmd(`node ${path.join(jarvisHome, 'skills/neurograph-sync/scripts/set-archive-creation-dates.js')} ${date} ${nodesJsonPath}`);
   
   console.log('✅ Memory synced (learnings → Jarvis, archive → User)\n');
 

@@ -26,7 +26,12 @@ function getHome() {
  * @returns {string} JARVIS home directory path
  */
 function getJarvisHome() {
-  return process.env.JARVIS_HOME || path.join(getHome(), 'JARVIS');
+  const envPath = process.env.JARVIS_HOME;
+  if (envPath) {
+    // Expand tilde if present
+    return envPath.startsWith('~/') ? path.join(getHome(), envPath.slice(2)) : envPath;
+  }
+  return path.join(getHome(), 'JARVIS');
 }
 
 /**
@@ -34,7 +39,12 @@ function getJarvisHome() {
  * @returns {string} RAW archive directory path
  */
 function getRawArchive() {
-  return process.env.RAW_ARCHIVE || path.join(getHome(), 'RAW', 'archive');
+  const envPath = process.env.RAW_ARCHIVE;
+  if (envPath) {
+    // Expand tilde if present
+    return envPath.startsWith('~/') ? path.join(getHome(), envPath.slice(2)) : envPath;
+  }
+  return path.join(getHome(), 'RAW', 'archive');
 }
 
 /**
