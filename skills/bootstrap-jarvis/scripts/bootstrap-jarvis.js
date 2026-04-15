@@ -168,27 +168,76 @@ function extractActiveSessionContext() {
   }
 }
 
-// Load recent session messages from extracted active context
-function loadRecentSessionMessages() {
-  const activeContext = extractActiveSessionContext();
+// Load messages from full-context.json files in ~/RAW/archive/YYYY-MM-DD/
+function loadArchiveSessions(days = 2) {
+  const messages = [];
+  const now = new Date();
   
-  if (!activeContext) {
-    return { source: 'none', messages: [], error: 'Active context extraction failed' };
+  for (let i = 0; i < days; i++) {
+    const date = i === 0 ? now.toISOString().split('T')[0] : new Date(Date.now() - (i * 86400000)).toISOString().split('T')[0];
+    const fullContextPath = path.join(HOME, 'RAW', 'archive', date, 'full-context.json');
+    
+    if (!fs.existsSync(fullContextPath)) continue;
+    
+    try {
+      const content = fs.readFileSync(fullContextPath, 'utf8');
+      const context = JSON.parse(content);
+      
+      const sessions = context.sessions || [];
+      
+      sessions.forEach(session => {
+        const sessionMessages = session.messages || [];
+        
+        sessionMessages.forEach(msg => {
+          // Skip tool results
+          if (msg.role === 'toolResult') return;
+          
+          let text = '';
+          if (msg.content && Array.isArray(msg.content)) {
+            text = msg.content.filter(c => c.type === 'text').map(c => c.text).join(' ');
+          } else if (typeof msg.content === 'string') {
+            text = msg.content;
+          }
+          
+          if (!text) return;
+          
+          // Strip metadata
+          text = text.replace(/Sender \(untrusted metadata\):[\s\S]*?\[[^\]]+\]\s*/, '');
+          text = text.replace(/```json[\s\S]*?```\s*/, '');
+          
+          const timestamp = msg.timestamp || `${date}T00:00:00+07:00`;
+          const time = new Date(timestamp).toLocaleTimeString('en-US', { 
+            hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
+          });
+          
+          messages.push({
+            role: msg.role,
+            time: time,
+            text: text.trim().slice(0, 150),
+            timestamp: timestamp,
+            source: 'archive'
+          });
+        });
+      });
+    } catch (err) {
+      console.warn(`   ⚠️ Failed to read full-context.json for ${date}: ${err.message.split('\n')[0]}`);
+    }
   }
   
+  return messages;
+}
+
+// Load recent session messages from extracted active context + archive sessions
+// Filters to last 2 days (today + yesterday), but looks further back if yesterday is empty
+function loadRecentSessionMessages() {
+  const activeContext = extractActiveSessionContext();
+  const archiveMessages = loadArchiveSessions(2);
+  
   try {
-    const sessions = activeContext.sessions || [];
+    const sessions = activeContext ? (activeContext.sessions || []) : [];
     
-    // Flatten all messages from all sessions, sort by timestamp
-    const allMessages = sessions.flatMap(s => s.messages || []);
-    allMessages.sort((a, b) => {
-      const timeA = a.timestamp || '';
-      const timeB = b.timestamp || '';
-      return timeA.localeCompare(timeB);
-    });
-    
-    // Load all messages
-    const recentMessages = allMessages.map(m => {
+    // Flatten all messages from active sessions
+    const activeMessages = sessions.flatMap(s => s.messages || []).map(m => {
       let text = Array.isArray(m.content) 
         ? m.content.filter(c => c.type === 'text').map(c => c.text).join(' ')
         : (m.content || '');
@@ -197,36 +246,112 @@ function loadRecentSessionMessages() {
       text = text.replace(/Sender \(untrusted metadata\):[\s\S]*?\[[^\]]+\]\s*/, '');
       text = text.replace(/```json[\s\S]*?```\s*/, '');
       
-      const time = m.timestamp ? new Date(m.timestamp).toLocaleTimeString('en-US', { 
-        hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
-      }) : 'Unknown';
       return {
         role: m.role,
-        time: time,
-        text: text.trim().slice(0, 150)
+        timestamp: m.timestamp,
+        text: text.trim(),
+        source: 'active'
       };
     });
     
-    return { source: 'active-context', messages: recentMessages };
+    // Combine active + archive messages
+    const allMessages = [...activeMessages, ...archiveMessages];
+    
+    // Sort by timestamp
+    allMessages.sort((a, b) => {
+      const timeA = a.timestamp || '';
+      const timeB = b.timestamp || '';
+      return timeA.localeCompare(timeB);
+    });
+    
+    // Calculate date boundaries (Asia/Bangkok timezone)
+    const now = new Date();
+    const todayStart = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Bangkok' }));
+    todayStart.setHours(0, 0, 0, 0);
+    const yesterdayStart = new Date(todayStart);
+    yesterdayStart.setDate(yesterdayStart.getDate() - 1);
+    
+    // First pass: try to load today + yesterday only
+    let filteredMessages = allMessages.filter(m => {
+      if (!m.timestamp) return false;
+      const msgDate = new Date(m.timestamp);
+      return msgDate >= yesterdayStart;
+    });
+    
+    // If yesterday is empty, look further back (up to 7 days total)
+    if (filteredMessages.length === 0 || filteredMessages.every(m => new Date(m.timestamp) >= todayStart)) {
+      const weekAgo = new Date(todayStart);
+      weekAgo.setDate(weekAgo.getDate() - 6); // 7 days total including today
+      
+      filteredMessages = allMessages.filter(m => {
+        if (!m.timestamp) return false;
+        const msgDate = new Date(m.timestamp);
+        return msgDate >= weekAgo;
+      });
+    }
+    
+    // Process messages for recap
+    const recentMessages = filteredMessages.map(m => {
+      const time = m.time || (m.timestamp ? new Date(m.timestamp).toLocaleTimeString('en-US', { 
+        hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Bangkok' 
+      }) : 'Unknown');
+      
+      return {
+        role: m.role,
+        time: time,
+        text: m.text.slice(0, 150),
+        timestamp: m.timestamp,
+        source: m.source
+      };
+    });
+    
+    const source = archiveMessages.length > 0 
+      ? `active-context + ${archiveMessages.length} archive messages`
+      : 'active-context';
+    
+    return { source, messages: recentMessages };
   } catch (err) {
     return { source: 'active-context', messages: [], error: `Read error: ${err.message}` };
   }
 }
 
-// Extract last 5 messages for recap
+// Extract messages for recap - show a mix of recent activity and earlier context
 function extractRecap(sessionMessages) {
   if (!sessionMessages || sessionMessages.messages.length === 0) {
     return { source: 'none', messages: [] };
   }
   
-  const userMessages = sessionMessages.messages.filter(m => m.role === 'user');
-  const last5 = userMessages.slice(-5);
+  const allMessages = sessionMessages.messages;
+  const userMessages = allMessages.filter(m => m.role === 'user');
   
-  if (last5.length === 0) {
+  if (userMessages.length === 0) {
     return { source: sessionMessages.source, messages: [] };
   }
   
-  return { source: sessionMessages.source, messages: last5 };
+  // Strategy: Show last 5 messages, but ensure we include some from different time periods
+  // If we have messages from both archive and active sessions, show a mix
+  const archiveMessages = userMessages.filter(m => m.source === 'archive');
+  const activeMessages = userMessages.filter(m => m.source !== 'archive');
+  
+  let recap;
+  
+  if (archiveMessages.length > 0 && activeMessages.length > 0) {
+    // Show last 3 active + last 2 from archive (to show context from earlier)
+    const lastActive = activeMessages.slice(-3);
+    const lastArchive = archiveMessages.slice(-2);
+    recap = [...lastArchive, ...lastActive];
+  } else if (activeMessages.length > 0) {
+    // Only active messages
+    recap = activeMessages.slice(-5);
+  } else {
+    // Only archive messages
+    recap = archiveMessages.slice(-5);
+  }
+  
+  // Sort by timestamp to maintain chronological order
+  recap.sort((a, b) => (a.timestamp || '').localeCompare(b.timestamp || ''));
+  
+  return { source: sessionMessages.source, messages: recap };
 }
 
 // Read git history (my autobiography — every commit is a letter from past Jarvis)
