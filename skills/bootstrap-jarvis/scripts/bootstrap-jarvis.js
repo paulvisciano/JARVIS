@@ -16,6 +16,10 @@
  * 
  * Context loaded: ~45 KB instead of ~630 KB (93% reduction)
  * 
+ * Output:
+ * - Writes `~/JARVIS/.bootstrap-output.md` with git verification, session recap (last 5 messages), breath summaries, graph status
+ * - Agent MUST read this file on session start and include recap in first message
+ * 
  * Usage: cd ~/JARVIS && node skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js
  */
 

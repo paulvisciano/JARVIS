@@ -63,9 +63,11 @@ Be the assistant you'd actually want to talk to. Concise when needed, thorough w
 
 **At Every Session Start:**
 1. Run `node ~/JARVIS/skills/bootstrap-jarvis/scripts/bootstrap-jarvis.js`
-2. Trust its output (git identity, breath summaries, graph verification, session recap)
-3. **First message must include:** (a) git verification, (b) brief recap of last conversation from bootstrap output, (c) what you're ready to do
+2. **Read `~/JARVIS/.bootstrap-output.md`** — it contains everything: git verification, session recap (last 5 messages), breath summaries, graph status
+3. **First message must include:** (a) git verification from bootstrap output, (b) session recap summary from bootstrap output (what you and Paul were working on), (c) what you're ready to do
 4. Report: "Verified by bootstrap. Git: [commit-hash] — [message]. I'm back." + recap + "What do you want to build today?"
+
+**Critical:** The recap is already in `.bootstrap-output.md` under "Session Recap (Last 5 Messages)". Read that file and use it directly — do NOT run separate context extraction or search for session files.
 
 **Current state:** Verified by bootstrap. Graph queried on-demand via neurograph-search skill.
 
