@@ -567,7 +567,8 @@ ${workSummary ? `## 🎯 Work Summary (Last 2 Days)
 
 **Activity:** ${workSummary.userMessageCount} user messages, ${workSummary.assistantMessageCount} assistant responses
 
-${workSummary.learnings && workSummary.learnings.length > 0 ? `**Key Learnings:**
+${workSummary.learnings && workSummary.learnings.length > 0 ? `
+**Key Learnings** (from git breath reflections):
 ${workSummary.learnings.map(l => `- ${l}`).join('\n')}
 ` : ''}
 ` : ''}---
