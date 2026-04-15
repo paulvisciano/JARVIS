@@ -394,13 +394,61 @@ function generateWorkSummary(sessionMessages, breathSummaries) {
   const breathCount = breathSummaries.length;
   const breathDates = breathSummaries.map(b => b.date).join(', ');
   
+  // Extract key learnings from breath summaries - use full summary text, truncated cleanly
+  const learnings = breathSummaries
+    .filter(s => s.content)
+    .map(s => {
+      // Extract the summary section content (skip the **Date:**, **Type:**, **Status:** headers)
+      const summaryMatch = s.content.match(/# Breath Summary[\s\S]*?\n\n\*\*Date:\*\*[\s\S]*?\n\n([\s\S]*?)(?:\n\n##|\n\n$|$)/);
+      if (summaryMatch) {
+        let summary = summaryMatch[1].trim();
+        // Remove markdown bold headers like **Date:**, **Type:**, **Status:**
+        summary = summary.replace(/\*\*[^*]+\*\*/g, '').trim();
+        // Truncate to 300 chars and ensure we end on a sentence boundary
+        if (summary.length > 300) {
+          const truncated = summary.slice(0, 300);
+          const lastPeriod = truncated.lastIndexOf('.');
+          if (lastPeriod > 250) {
+            summary = truncated.slice(0, lastPeriod + 1);
+          } else {
+            summary = truncated + '...';
+          }
+        }
+        return summary;
+      }
+      return null;
+    })
+    .filter(l => l && l.length > 20);
+  
+  // Deduplicate learnings (remove near-duplicates)
+  const uniqueLearnings = [];
+  const seen = new Set();
+  learnings.forEach(l => {
+    const normalized = l.toLowerCase().replace(/\s+/g, ' ').slice(0, 100);
+    if (!seen.has(normalized)) {
+      seen.add(normalized);
+      uniqueLearnings.push(l);
+    }
+  });
+  
   return {
     topics,
     userMessageCount: userMessages.length,
     assistantMessageCount: assistantMessages.length,
     breathCount,
     breathDates,
-    breathSummaries
+    breathSummaries,
+    learnings: uniqueLearnings.slice(0, 5)
+  };
+  
+  return {
+    topics,
+    userMessageCount: userMessages.length,
+    assistantMessageCount: assistantMessages.length,
+    breathCount,
+    breathDates,
+    breathSummaries,
+    learnings
   };
 }
 
@@ -519,6 +567,9 @@ ${workSummary ? `## 🎯 Work Summary (Last 2 Days)
 
 **Activity:** ${workSummary.userMessageCount} user messages, ${workSummary.assistantMessageCount} assistant responses
 
+${workSummary.learnings && workSummary.learnings.length > 0 ? `**Key Learnings:**
+${workSummary.learnings.map(l => `- ${l}`).join('\n')}
+` : ''}
 ` : ''}---
 
 ## Git Identity
