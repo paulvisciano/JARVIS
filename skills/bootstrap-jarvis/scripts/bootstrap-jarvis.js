@@ -354,6 +354,56 @@ function extractRecap(sessionMessages) {
   return { source: sessionMessages.source, messages: recap };
 }
 
+// Generate a work summary report from archive + active sessions
+function generateWorkSummary(sessionMessages, breathSummaries) {
+  if (!sessionMessages || sessionMessages.messages.length === 0) {
+    return null;
+  }
+  
+  const allMessages = sessionMessages.messages;
+  const archiveMessages = allMessages.filter(m => m.source === 'archive');
+  const userMessages = archiveMessages.filter(m => m.role === 'user');
+  const assistantMessages = archiveMessages.filter(m => m.role === 'assistant');
+  
+  if (userMessages.length === 0) {
+    return null;
+  }
+  
+  // Extract key topics from user requests
+  const topics = [];
+  const topicKeywords = {
+    'Voice/TTS': ['speak', 'voice', 'tts', 'audio', 'voicebox'],
+    'Bootstrap': ['bootstrap', 'startup', 'session', 'recap'],
+    'Paperclip': ['paperclip', 'company', 'agent', 'wake'],
+    'Plugin/Skill': ['plugin', 'skill', 'tool', 'openclaw'],
+    'Bug Fixes': ['fix', 'bug', 'error', 'timeout', 'comment'],
+    '3D Visualization': ['3d', 'depth', 'visualization', 'river', 'time', 'camera', 'fog'],
+    'NeuroGraph': ['neurograph', 'graph', 'nodes', 'synapses', 'memory']
+  };
+  
+  userMessages.forEach(m => {
+    const text = m.text.toLowerCase();
+    Object.keys(topicKeywords).forEach(topic => {
+      if (topicKeywords[topic].some(kw => text.includes(kw)) && !topics.includes(topic)) {
+        topics.push(topic);
+      }
+    });
+  });
+  
+  // Build summary from breath cycles
+  const breathCount = breathSummaries.length;
+  const breathDates = breathSummaries.map(b => b.date).join(', ');
+  
+  return {
+    topics,
+    userMessageCount: userMessages.length,
+    assistantMessageCount: assistantMessages.length,
+    breathCount,
+    breathDates,
+    breathSummaries
+  };
+}
+
 // Read git history (my autobiography — every commit is a letter from past Jarvis)
 function readGitHistory() {
   const historyPath = path.join(JARVIS_HOME, 'docs', 'GIT-HISTORY.md');
@@ -446,6 +496,9 @@ function bootstrap() {
   // Session recap
   const recap = extractRecap(sessionMessages);
   
+  // Generate work summary report
+  const workSummary = generateWorkSummary(sessionMessages, breathSummaries);
+  
   // Build compact bootstrap markdown output
   const bootstrapMarkdown = `# Bootstrap Output — ${dateStr}, ${timeStr} GMT+7
 
@@ -458,7 +511,15 @@ function bootstrap() {
 ## Session Recap (Last 5 Messages)
 ${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} — ${m.text}`).join('\n') : '📭 No recent messages'}
 
----
+${workSummary ? `## 🎯 Work Summary (Last 2 Days)
+
+**Topics:** ${workSummary.topics.join(', ') || 'General maintenance'}
+
+**Breath Cycles:** ${workSummary.breathCount} (${workSummary.breathDates})
+
+**Activity:** ${workSummary.userMessageCount} user messages, ${workSummary.assistantMessageCount} assistant responses
+
+` : ''}---
 
 ## Git Identity
 - **Total Commits:** ${gitHistory.totalCommits}
