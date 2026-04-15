@@ -320,6 +320,17 @@ function bootstrap() {
   // Build compact bootstrap markdown output
   const bootstrapMarkdown = `# Bootstrap Output — ${dateStr}, ${timeStr} GMT+7
 
+## ⚠️ FIRST MESSAGE REQUIREMENT
+**You must include in your first response:**
+1. Git verification (commit hash + message)
+2. Session recap summary (what you and Paul were working on)
+3. Ask what to do next
+
+## Session Recap (Last 5 Messages)
+${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} — ${m.text}`).join('\n') : '📭 No recent messages'}
+
+---
+
 ## Git Identity
 - **Total Commits:** ${gitHistory.totalCommits}
 - **Latest Commit:** ${git('log --oneline -1')}
@@ -349,9 +360,6 @@ ${s.content}
 - "How many people?" → ${q1.count} people nodes
 - "March 20 work?" → ${q2.count} nodes from March 20
 - "Last topic?" → "${q3Topic}"
-
-## Session Recap (Last 5)
-${recap.messages.length > 0 ? recap.messages.map((m, i) => `${i + 1}. ${m.time} — ${m.text}`).join('\n') : '📭 No recent messages'}
 
 ---
 
