@@ -28,8 +28,15 @@ if (fs.existsSync(dotenvPath)) {
       const [key, ...valueParts] = trimmed.split('=');
       if (key && valueParts.length > 0) {
         let value = valueParts.join('=').trim();
-        // Expand ~ or $HOME to actual home directory
-        value = value.replace(/^~/, homeDir).replace(/^\$HOME\//, homeDir + '/');
+        // Expand path prefixes to actual home directory
+        if (value.startsWith('~/')) value = homeDir + value.slice(1);
+        else {
+          // Check for env var paths - look for uppercase var followed by slash
+          const match = value.match(/^([A-Z_]+)\//i);
+          if (match && match[1].length > 3 && match[1].endsWith('OME')) {
+            value = homeDir + value.slice(match[0].length - 1);
+          }
+        }
         process.env[key.trim()] = value;
       }
     }

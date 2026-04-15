@@ -4,12 +4,15 @@
  * Native tool for generating speech using Voicebox API (Paul's cloned voice)
  * and playing it back locally via ffplay.
  * 
+ * Uses /generate/stream for real-time streaming (no disk I/O, instant playback).
+ * Falls back to /generate + polling for long-form content.
+ * 
  * Usage:
  *   speak({text: "Good morning Paul"})
  *   speak({text: "Hello", profile_id: "custom-profile-id"})
  */
 
-import { execSync } from "child_process";
+import { execSync, spawn } from "child_process";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -18,7 +21,9 @@ const DEFAULT_CONFIG = {
   voiceboxUrl: "http://127.0.0.1:17493",
   profileId: "8202f4c4-5866-4065-8280-cf5421e3135a", // Paul V
   pollIntervalMs: 2000,
-  maxPollAttempts: 30,
+  maxPollAttempts: 90, // 3 minutes max (90 * 2s)
+  streamingEnabled: true,
+  streamingMaxLength: Infinity, // Always use streaming (no length limit)
 };
 
 // Plugin registration
@@ -69,36 +74,61 @@ export default {
         const { text, profile_id = config.profileId, auto_play = true, save_path } = params;
 
         try {
-          // Step 1: Generate speech
-          const generationResult = await generateSpeech(
-            text,
-            profile_id,
-            config.voiceboxUrl,
-            config.pollIntervalMs,
-            config.maxPollAttempts
-          );
+          // Use streaming for short text, batch for long-form
+          const useStreaming = config.streamingEnabled && text.length <= config.streamingMaxLength;
+          
+          if (useStreaming) {
+            // Streaming mode: instant playback, no disk I/O
+            const duration = await streamAndPlay(
+              text,
+              profile_id,
+              config.voiceboxUrl,
+              auto_play,
+              save_path
+            );
+            
+            return {
+              content: [
+                {
+                  type: "text",
+                  text: `✅ Speech streamed and played successfully\n` +
+                        `   Duration: ${duration}s\n` +
+                        `   Mode: streaming (real-time)`,
+                },
+              ],
+            };
+          } else {
+            // Batch mode: generate, download, play
+            const generationResult = await generateSpeech(
+              text,
+              profile_id,
+              config.voiceboxUrl,
+              config.pollIntervalMs,
+              config.maxPollAttempts
+            );
 
-          // Step 2: Download audio
-          const audioPath = save_path || generationResult.audioPath;
-          await downloadAudio(generationResult.generationId, audioPath, config.voiceboxUrl);
+            // Step 2: Download audio
+            const audioPath = save_path || generationResult.audioPath;
+            await downloadAudio(generationResult.generationId, audioPath, config.voiceboxUrl);
 
-          // Step 3: Play audio (if requested)
-          if (auto_play) {
-            await playAudio(audioPath);
+            // Step 3: Play audio (if requested)
+            if (auto_play) {
+              await playAudio(audioPath);
+            }
+
+            // Return success response
+            return {
+              content: [
+                {
+                  type: "text",
+                  text: `✅ Speech generated and played successfully\n` +
+                        `   Duration: ${generationResult.duration}s\n` +
+                        `   File: ${audioPath}\n` +
+                        `   Size: ${(fs.statSync(audioPath).size / 1024).toFixed(2)} KB`,
+                },
+              ],
+            };
           }
-
-          // Return success response
-          return {
-            content: [
-              {
-                type: "text",
-                text: `✅ Speech generated and played successfully\n` +
-                      `   Duration: ${generationResult.duration}s\n` +
-                      `   File: ${audioPath}\n` +
-                      `   Size: ${(fs.statSync(audioPath).size / 1024).toFixed(2)} KB`,
-              },
-            ],
-          };
         } catch (error: any) {
           // Return error response
           return {
@@ -230,4 +260,81 @@ async function playAudio(audioPath: string): Promise<void> {
  */
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+/**
+ * Stream speech and play in real-time via stdin pipe to ffplay
+ */
+async function streamAndPlay(
+  text: string,
+  profileId: string,
+  voiceboxUrl: string,
+  autoPlay: boolean,
+  savePath?: string
+): Promise<number> {
+  const timestamp = Date.now();
+  const jsonPath = path.join("/tmp", `voicebox-stream-${timestamp}.json`);
+  
+  // Write JSON payload
+  const payload = {
+    profile_id: profileId,
+    text: text,
+    language: "en",
+    normalize: true,
+  };
+  fs.writeFileSync(jsonPath, JSON.stringify(payload, null, 2));
+  
+  try {
+    if (autoPlay) {
+      // Stream directly to ffplay via stdin
+      const ffplay = spawn("ffplay", ["-nodisp", "-autoexit", "-"], {
+        stdio: ["pipe", "inherit", "inherit"],
+      });
+      
+      // Pipe curl output to ffplay stdin
+      const curl = spawn("curl", [
+        "-s",
+        "-X", "POST",
+        `${voiceboxUrl}/generate/stream`,
+        "-H", "Content-Type: application/json",
+        "-d", `@${jsonPath}`,
+      ]);
+      
+      curl.stdout.pipe(ffplay.stdin);
+      
+      // Wait for ffplay to finish
+      await new Promise<void>((resolve, reject) => {
+        ffplay.on("close", (code) => {
+          if (code === 0) resolve();
+          else reject(new Error(`ffplay exited with code ${code}`));
+        });
+        ffplay.on("error", reject);
+      });
+      
+      // Optionally save a copy
+      if (savePath) {
+        const saveCmd = `curl -s -X POST "${voiceboxUrl}/generate/stream" -H "Content-Type: application/json" -d @${jsonPath} -o "${savePath}"`;
+        execSync(saveCmd);
+      }
+      
+      // Estimate duration from text length (~150 chars/sec for normal speech)
+      return Math.ceil(text.length / 150);
+    } else {
+      // Just save to file without playing
+      const audioPath = savePath || path.join("/tmp", `voicebox-stream-${timestamp}.wav`);
+      const saveCmd = `curl -s -X POST "${voiceboxUrl}/generate/stream" -H "Content-Type: application/json" -d @${jsonPath} -o "${audioPath}"`;
+      execSync(saveCmd);
+      
+      const stats = fs.statSync(audioPath);
+      if (stats.size < 1000) {
+        throw new Error(`Streaming failed: file too small (${stats.size} bytes)`);
+      }
+      
+      // Estimate duration from file size (384kbps = 48KB/s)
+      return Math.round(stats.size / 48000 * 10) / 10;
+    }
+  } finally {
+    // Cleanup temp JSON
+    try { fs.unlinkSync(jsonPath); } catch {}
+  }
 }

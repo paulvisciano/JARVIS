@@ -627,4 +627,8 @@ ${s.content}
 }
 
 // Run
+const IS_DRY_RUN = process.argv.includes('--dry-run');
+if (IS_DRY_RUN) {
+  console.log('=== DRY RUN MODE ===\n');
+}
 bootstrap();

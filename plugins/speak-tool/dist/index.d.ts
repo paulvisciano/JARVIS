@@ -4,6 +4,9 @@
  * Native tool for generating speech using Voicebox API (Paul's cloned voice)
  * and playing it back locally via ffplay.
  *
+ * Uses /generate/stream for real-time streaming (no disk I/O, instant playback).
+ * Falls back to /generate + polling for long-form content.
+ *
  * Usage:
  *   speak({text: "Good morning Paul"})
  *   speak({text: "Hello", profile_id: "custom-profile-id"})
