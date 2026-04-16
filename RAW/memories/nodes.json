@@ -52701,5 +52701,130 @@
       "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-16/respect-agent-boundaries.md",
       "created": "2026-04-16T03:05:11.954Z"
     }
+  },
+  {
+    "id": "temporal-20260415",
+    "label": "2026-04-15",
+    "category": "temporal",
+    "type": "anchor",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-15",
+        "type": "day-anchor",
+        "description": "Daily anchor for 2026-04-15"
+      }
+    ],
+    "attributes": {
+      "role": "temporal anchor",
+      "description": "All learnings, files, conversations from 2026-04-15",
+      "color": "#3b82f6",
+      "created": "2026-04-16T03:09:40.689Z"
+    }
+  },
+  {
+    "id": "bootstrap-recap-from-archive",
+    "label": "Bootstrap Recap From Archive",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-15",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-15 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Bootstrap Recap Must Load From full-context.json Archive",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-15/bootstrap-recap-from-archive.md",
+      "created": "2026-04-16T03:09:40.691Z"
+    }
+  },
+  {
+    "id": "frontend-backend-decoupling-pattern",
+    "label": "Frontend Backend Decoupling Pattern",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-15",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-15 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Frontend-Backend Decoupling Pattern",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-15/frontend-backend-decoupling-pattern.md",
+      "created": "2026-04-16T03:09:40.691Z"
+    }
+  },
+  {
+    "id": "paperclip-api-ownership-enforcement",
+    "label": "Paperclip Api Ownership Enforcement",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-15",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-15 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Paperclip API Strict Ownership Enforcement",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-15/paperclip-api-ownership-enforcement.md",
+      "created": "2026-04-16T03:09:40.691Z"
+    }
+  },
+  {
+    "id": "three-layer-consciousness-architecture",
+    "label": "Three Layer Consciousness Architecture",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-15",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-15 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "Three-Layer Consciousness Architecture",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-15/three-layer-consciousness-architecture.md",
+      "created": "2026-04-16T03:09:40.691Z"
+    }
+  },
+  {
+    "id": "tts-streaming-endpoint-discovery",
+    "label": "Tts Streaming Endpoint Discovery",
+    "category": "learning",
+    "type": "insight",
+    "frequency": 1,
+    "moments": [
+      {
+        "date": "2026-04-15",
+        "type": "learning",
+        "description": "Learning extracted from 2026-04-15 context"
+      }
+    ],
+    "attributes": {
+      "role": "distilled insight",
+      "description": "TTS Streaming Endpoint Discovery",
+      "color": "#10b981",
+      "sourceDocument": "~/JARVIS/RAW/learnings/2026-04-15/tts-streaming-endpoint-discovery.md",
+      "created": "2026-04-16T03:09:40.691Z"
+    }
   }
 ]
