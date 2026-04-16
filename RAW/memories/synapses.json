@@ -1,0 +1,93 @@
+[
+  {
+    "source": "analogies",
+    "target": "temporal-20260416",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-16"
+  },
+  {
+    "source": "context-efficiency-pattern",
+    "target": "temporal-20260416",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-16"
+  },
+  {
+    "source": "paperclip-one-command-start",
+    "target": "temporal-20260416",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-16"
+  },
+  {
+    "source": "paperclip-wake-event-procedure",
+    "target": "temporal-20260416",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-16"
+  },
+  {
+    "source": "respect-agent-boundaries",
+    "target": "temporal-20260416",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-16"
+  },
+  {
+    "source": "summary",
+    "target": "temporal-20260416",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-16"
+  },
+  {
+    "source": "analogies",
+    "target": "temporal-20260415",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-15"
+  },
+  {
+    "source": "bootstrap-recap-from-archive",
+    "target": "temporal-20260415",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-15"
+  },
+  {
+    "source": "frontend-backend-decoupling-pattern",
+    "target": "temporal-20260415",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-15"
+  },
+  {
+    "source": "paperclip-api-ownership-enforcement",
+    "target": "temporal-20260415",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-15"
+  },
+  {
+    "source": "summary",
+    "target": "temporal-20260415",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-15"
+  },
+  {
+    "source": "three-layer-consciousness-architecture",
+    "target": "temporal-20260415",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-15"
+  },
+  {
+    "source": "tts-streaming-endpoint-discovery",
+    "target": "temporal-20260415",
+    "weight": 100,
+    "type": "fired-on",
+    "label": "2026-04-15"
+  }
+]
